@@ -2,6 +2,8 @@
 ---
 **Date:** YYYY-MM-DD
 
+## Preparation
+
 >[!TODO] HOMEWORK
 >- [ ] 
 
@@ -20,3 +22,4 @@
 
 
 ---
+#lecture 
