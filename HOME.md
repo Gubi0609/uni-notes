@@ -2,7 +2,7 @@
 ## Recent
 ``` dataview
 table
-file.mtime as "Redigeret"
+file.mtime as "Edited"
 from "/"
 sort file.mtime desc
 limit 5
