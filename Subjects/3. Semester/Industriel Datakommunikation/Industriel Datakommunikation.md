@@ -1,4 +1,3 @@
-# <% tp.file.title %>
 
 ---
 
@@ -10,17 +9,16 @@
 ## Resources
 - Books / Links
 ## Lectures
-
 ``` dataview
 list
-from "<% tp.file.folder() %>/Lectures"
+from "Subjects/3. Semester/Industriel Datakommunikation/Lectures"
 sort file.name
 ```
 
 ## Topics
 ``` dataview
 list
-from "/Topics"
+from "Subjects/3. Semester/Industriel Datakommunikation/Topics"
 sort file.name
 ```
 ---
