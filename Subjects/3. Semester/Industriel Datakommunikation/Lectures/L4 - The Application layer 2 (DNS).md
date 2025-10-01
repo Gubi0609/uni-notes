@@ -1,4 +1,5 @@
 
+
 ---
 **Date:** YYYY-MM-DD
 
@@ -190,6 +191,33 @@ Now let’s play with nslookup.
 	2. Source port for response er også 53
 ![[Pasted image 20251001100720.png]]
 rg
-
+2. To what IP address is the DNS query message sent? Is this the IP address of your default local DNS server?
+    
+    1. Destination IP for query er 10.170.8.11.
+    2. Jeg fandt min default local DNS server således. Vi kan se, at 10.170.8.11 er en af de DNS servere der står på listen. Altså er det den samme.
+    
+    ```bash
+    $ resolvectl status
+    Global
+             Protocols: -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+      resolv.conf mode: stub
+    
+    Link 2 (enp2s0)
+        Current Scopes: none
+             Protocols: -DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+    
+    Link 3 (wlo1)
+        Current Scopes: DNS
+             Protocols: +DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+    Current DNS Server: 10.170.8.12
+           DNS Servers: 10.170.8.11 10.170.8.12
+    ```
+    
+3. Examine the DNS query message. What “Type” of DNS query is it? Does the query message contain any “answers”?
+    
+    1. Det er en type A, som kan ses på billedet her. På billedet nedenunder kan man se hvad den indeholder, og den ser ikke ud til at have nogle “Answer”s.
+![[Pasted image 20251001115047.png]]
+4. Examine the DNS response message to the query message. How many “questions” does this DNS response message contain? How many “answers”?
+    1. Hvis vi kigger på response, kan vi se at der både er ét answer og ét question
 ---
 #lecture 
