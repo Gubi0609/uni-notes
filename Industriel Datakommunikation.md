@@ -1,6 +1,4 @@
-# <% tp.file.title %>
 
----
 
 > [!help]- Learning goals
 > - Viden
