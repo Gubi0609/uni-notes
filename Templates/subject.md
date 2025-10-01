@@ -13,7 +13,7 @@
 
 ``` dataview
 list
-from "./Lectures"
+from "{{}}"
 sort file.name
 ```
 

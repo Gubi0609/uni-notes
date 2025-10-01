@@ -1,5 +1,4 @@
 
-
 > [!help]- Learning goals
 > - Viden
 > - Færdigheder
