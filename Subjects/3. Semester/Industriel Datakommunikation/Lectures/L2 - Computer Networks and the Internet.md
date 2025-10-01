@@ -42,6 +42,6 @@ To answer the following two questions, you’ll need to select the TCP packet co
     1. Destination port: 80
 ![[Pasted image 20251001095415.png]]
 3. Print the two HTTP messages (GET and OK) referred to in question 2 above. To do so, select Print from the Wireshark File command menu, and select the “Selected Packet Only” and “Print as displayed” radial buttons, and then click OK
-
+![[Pasted image 20251001095502.png]]
 ---
 #lecture 
