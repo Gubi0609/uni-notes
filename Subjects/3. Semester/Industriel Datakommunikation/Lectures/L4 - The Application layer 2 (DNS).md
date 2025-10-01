@@ -219,5 +219,20 @@ rg
 ![[Pasted image 20251001115047.png]]
 4. Examine the DNS response message to the query message. How many “questions” does this DNS response message contain? How many “answers”?
     1. Hvis vi kigger på response, kan vi se at der både er ét answer og ét question
+![[Pasted image 20251001115112.png]]
+
+#### Opgave 5
+
+Last, let’s use nslookup to issue a command that will return a type NS DNS record, Enter the following command: nslookup –type=NS [umass.edu](http://umass.edu/) and then answer the following questions :
+
+1. To what IP address is the DNS query message sent? Is this the IP address of your default local DNS server?
+    1. query message bliver sendt til 10.170.8.12. Det er nærmest den samme IP-adresse som sidst der var det her spørgsmål (med undtagelse af 11 der nu er 12). Vi kan se fra forrige opgave med lignende problemstilling, at 10.170.8.12 også er på listen af DNS servere.
+2. Examine the DNS query message. How many questions does the query have? Does the query message contain any “answers”?
+    1. Ligesom før er der kun ét question og nul answer
+![[Pasted image 20251001115148.png]]
+3. Examine the DNS response message. How many answers does the response have? What information is contained in the answers? How many additional resource records are returned? What additional information is included in these additional resource records?
+    1. Vi kan se, at der nu er 3 answers i vores response message. Desuden kan vi se på billedet under, hvad de Answers indeholder, hvilket er name serverne for [umass.edu](http://umass.edu), deres levetid, typen osv osv.
+![[Pasted image 20251001115210.png]]
+
 ---
-#lecture 
+#lecture #dns
