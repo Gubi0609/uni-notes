@@ -13,14 +13,14 @@
 
 ``` dataview
 list
-from "{{}}"
+from "<% tp.file.folder() %>/Lectures"
 sort file.name
 ```
 
 ## Topics
 ``` dataview
 list
-from "./Topics"
+from "/Topics"
 sort file.name
 ```
 ---

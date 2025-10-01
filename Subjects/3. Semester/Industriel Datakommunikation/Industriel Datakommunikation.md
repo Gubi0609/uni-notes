@@ -1,3 +1,6 @@
+# <% tp.file.title %>
+
+---
 
 > [!help]- Learning goals
 > - Viden
@@ -10,14 +13,14 @@
 
 ``` dataview
 list
-from "./Lectures"
+from "<% tp.file.folder() %>/Lectures"
 sort file.name
 ```
 
 ## Topics
 ``` dataview
 list
-from "./Topics"
+from "/Topics"
 sort file.name
 ```
 ---
