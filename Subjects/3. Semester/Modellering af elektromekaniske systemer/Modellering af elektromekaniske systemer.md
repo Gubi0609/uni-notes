@@ -7,18 +7,18 @@
 > - Kompetencer
 
 ## Resources
-- [[Computer Networking A Top-Down Approach.pdf]]
+- Books / Links
 ## Lectures
 ``` dataview
 list
-from "Subjects/3. Semester/Industriel Datakommunikation/Lectures"
+from "Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures"
 sort file.name
 ```
 
 ## Topics
 ``` dataview
 list
-from "Subjects/3. Semester/Industriel Datakommunikation/Topics"
+from "Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics"
 sort file.name
 ```
 ---
