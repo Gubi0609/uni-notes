@@ -165,7 +165,31 @@ sudo resolvectl flush-caches
     1. 10.220.2.24
 11. Examine the DNS query message. How many “questions” does this DNS message contain? How many “answers” answers does it contain?
 ![[Pasted image 20251001100458.png]]
+12. Examine the DNS response message to the initial query message. How many “questions” does this DNS message contain? How many “answers” answers does it contain?
+![[Pasted image 20251001100528.png]]
+13. The web page for the base file [http://gaia.cs.umass.edu/kurose_ross/](http://gaia.cs.umass.edu/kurose_ross/) references the image object [http://gaia.cs.umass.edu/kurose_ross/header_graphic_book_8E_2.jpg](http://gaia.cs.umass.edu/kurose_ross/header_graphic_book_8E_2.jpg) , which, like the base webpage, is on [gaia.cs.umass.edu](http://gaia.cs.umass.edu/). What is the packet number in the trace for the initial HTTP GET request for the base file [http://gaia.cs.umass.edu/kurose_ross/](http://gaia.cs.umass.edu/kurose_ross/)? What is the packet number in the trace of the DNS query made to resolve [gaia.cs.umass.edu](http://gaia.cs.umass.edu/) so that this initial HTTP request can be sent to the [gaia.cs.umass.edu](http://gaia.cs.umass.edu/) IP address? What is the packet number in the trace of the received DNS response? What is the packet number in the trace for the HTTP GET request for the image object [http://gaia.cs.umass.edu/kurose_ross/header_graphic_book_8E2.jpg](http://gaia.cs.umass.edu/kurose_ross/header_graphic_book_8E2.jpg)? What is the packet number in the DNS query made to resolve [gaia.cs.umass.edu](http://gaia.cs.umass.edu/) so that this second HTTP request can be sent to the [gaia.cs.umass.edu](http://gaia.cs.umass.edu/) IP address? Discuss how DNS caching affects the answer to this last question.
+    1. Jeg kørte programmet igen, fordi jeg kom til at søge med https i stedet for http. Derfor passer nogle af tallene ikke helt
+        1. Første DNS query for at få hjemmesiden har packet nr. 4.
+        2. HTTP GET har packet nr 10.
+        3. DNS resolve HTTP har også packet nr. 4, da HTTP bruger den IP-adresse vi fik fra den første DNS query
+        4. DNS response har packet nr. 6
+        5. HTTP GET for billedet har packet nr. 443
+        6. DNS resolve HTTP nr. 2 har også packet nr. 4, da den bare bruger den IP-adresse fra før, da destinationen er den samme, og den er gemt i cache.
+    2. DNS caching påvirker det ved at vi så ikke skal sende en DNS query hver evig eneste gang vi skal få noget fra hjemmesiden, men kun første gang, og så refererer vi til den IP-adresse fremover for samme domain navn.
+![[Pasted image 20251001100601.png]]
+#### Opgave 4
+Now let’s play with nslookup.
 
+- Start packet capture.
+- Do an nslookup on [www.cs.umass.edu](http://www.cs.umass.edu/)
+- Stop packet capture.
+
+1. What is the destination port for the DNS query message? What is the source port of the DNS response message?
+    1. Destination port for query er 53
+![[Pasted image 20251001100637.png]]
+	2. Source port for response er også 53
+![[Pasted image 20251001100720.png]]
+rg
 
 ---
 #lecture 
