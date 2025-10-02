@@ -1,5 +1,5 @@
 Fourier transform kan laves til laplace transform
-$$X(\omega)=\int^\infty_{-\infty} x(t)*e^{-j\omega t} dt \Rightarrow X(\sigma , \omega) = \int^\infty_{-\infty} [x(t)*e^{-\sigma t}]e^{-j\omega t} dt$$
+## $$X(\omega)=\int^\infty_{-\infty} x(t)*e^{-j\omega t} dt \Rightarrow X(\sigma , \omega) = \int^\infty_{-\infty} [x(t)*e^{-\sigma t}]e^{-j\omega t} dt = \int^\infty_{-\infty} x(t)*e^{-(\sigma+j\omega) t} dt = \int^\infty_{-\infty} x(t)*e^{-st} dt, s = \sigma+j\omega$$
 ![[Pasted image 20251002082542.png]]
 
 ---
