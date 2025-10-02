@@ -19,7 +19,7 @@ Ud fra den formel der står på billedet for z, kan vi se hvordan radius og vink
 
 Hvis systemet er stabilt, er vores "poler" (???) på venstre side af s-domænet, hvor $\sigma<0 \rightarrow |z|=e^{\sigma/f_s} < 1$. Det betyder, at værdierne ligger på indersiden af cirklen i z-domænet, så de altså er en del af cirklens areal. 
 
-> [!HELP]
+> [!HELP]- Exercise
 ![[Pasted image 20251002091919.png]]
 
 
