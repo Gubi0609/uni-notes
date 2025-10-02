@@ -8,7 +8,7 @@
 >- [ ] 
 
 > [!DANGER] EXERCISES
-> - [ ] 
+> - [ ]  [[Exercise - s domain z domain.pdf]]
 
 > [!QUESTION] Questions
 > - 
@@ -21,6 +21,7 @@
 [[Time signal]]
 [[Laplace transform]]
 [[Z-transform]]
+[[Transfer function]]
 
 # Notes
 
