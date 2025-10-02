@@ -19,7 +19,8 @@
 [[Exercise - s domain z domain.pdf]] 
 # Topics
 [[Time signal]]
-
+[[Laplace transform]]
+[[Z-transform]]
 
 # Notes
 
