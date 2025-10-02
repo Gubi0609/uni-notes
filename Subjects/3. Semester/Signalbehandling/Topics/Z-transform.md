@@ -17,7 +17,9 @@ Hvis vi kun fokuserer på den reelle del af s-domænet, vil $\omega = 0$ i stede
 Vi kan se på spiral pilene i z-domænet, at placeringen på den reelle akse af s-domænet påvirker distancen fra centrum af cirklen i z-domænet.
 
 Hvis systemet er stabilt, er vores "poler" (???) på venstre side af s-domænet, hvor $\sigma<0 \rightarrow |z|=e^{\sigma/f_s} < 1$. Det betyder, at værdierne ligger på indersiden af cirklen i z-domænet, så de altså er en del af cirklens areal. 
-p
+
+![[Pasted image 20251002091919.png]]
+
 
 ---
 #signalprocessing #z-transform
