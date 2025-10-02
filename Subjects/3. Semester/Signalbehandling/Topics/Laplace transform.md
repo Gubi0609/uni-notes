@@ -5,7 +5,7 @@ Fourier transform kan laves til laplace transform
 ## S domain
 s domænet er defineret ud fra $s = \sigma + j\omega$ hvor man har den reelle del ud af x-aksen og den imaginære del op af y-aksen
 ![[Pasted image 20251002083226.png]]
-
+**Se også [[Z-transform]] for mere info om s-domænet.**
 
 
 ---
