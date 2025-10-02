@@ -27,6 +27,7 @@ Hvis systemet er stabilt, er vores "poler" (???) på venstre side af s-domænet,
 Vi bruger ofte regel Z1 og Z2 i dette [[Signalbehandling|kursus]].
 
 ![[Pasted image 20251002094601.png]]
+![[Pasted image 20251002095618.png]]
 
 
 ---
