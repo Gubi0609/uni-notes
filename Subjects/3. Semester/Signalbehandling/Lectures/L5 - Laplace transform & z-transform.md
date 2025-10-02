@@ -1,6 +1,6 @@
 
 ---
-**Date:** YYYY-MM-DD
+**Date:** 2025-10-02
 
 ## Preparation
 
@@ -15,9 +15,10 @@
 
 ---
 # Relevant documents
-
-
+[[Lecture - Z transform.pdf]]
+[[Exercise - s domain z domain.pdf]] 
 # Topics
+[[Time signal]]
 
 
 # Notes
