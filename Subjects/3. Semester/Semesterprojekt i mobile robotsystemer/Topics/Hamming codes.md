@@ -68,7 +68,12 @@ This can be rephrased as a parity check. Just like before.
 
 Now, we can use this by XOR'ing the positions of our hamming code, that contains a 1.
 ![[Pasted image 20251005133629.png|400]]
-The result of this XOR should be 0000, if there isn't an error, and if there is an error, 
+The result of this XOR should be 0000, if there isn't an error, and if there is an error, the XOR will display the binary position of it.
+
+The idea, that the result should be 0000 is used by the sender to determine which (if any) control bits should be set to 1, because the XOR function will display the place(s) where, they should be 1.
+If the XOR for example returns 1000 at the point of encoding, position 1000 should be set to 1. If it instead returns 1100, then both position 1000 and 0100 should be set to 1.
+
+This seems rather simple, but for systems, where there are more than 1 error, we should perform some extra checks first, as the XOR might instead point to a position tha
 
 ---
 #data-communication #error-detection
