@@ -73,7 +73,24 @@ The result of this XOR should be 0000, if there isn't an error, and if there is 
 The idea, that the result should be 0000 is used by the sender to determine which (if any) control bits should be set to 1, because the XOR function will display the place(s) where, they should be 1.
 If the XOR for example returns 1000 at the point of encoding, position 1000 should be set to 1. If it instead returns 1100, then both position 1000 and 0100 should be set to 1.
 
-This seems rather simple, but for systems, where there are more than 1 error, we should perform some extra checks first, as the XOR might instead point to a position tha
+**This seems rather simple, but for systems, where there are more than 1 error, we should perform some extra checks first, as the XOR might instead point to a position that doesn't need to be changed.**
+
+## Interleaving
+Errors often come in bursts instead of single bit errors. That means, that in a bit-string, there might not only be 1 error, but 4 errors in quick succesion.
+
+If 01000110 is sent out, a burst error might result in 0**0111**110 being received. This would totally mess with the hamming code rendering it useless.
+
+This is where interleaving comes in. Say again, that you have a message of 30 bit blocks each of 16-bit extended hamming codes
+The bits would then be (simplified):
+B1 = b10 b11 b12 b13 ... b115
+B2 = b20 b21 b22 b23 ... b215
+B3 = b30 b31 b32 b33 ... b315
+...
+B30 = b300 b301 b302 b303 ... b3015
+
+Instead of sending them out in this order, the bits would be mixed somewhat like this:
+
+b10 b20 b30 ... b300 
 
 ---
 #data-communication #error-detection
