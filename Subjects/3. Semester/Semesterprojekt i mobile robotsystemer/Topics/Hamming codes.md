@@ -40,9 +40,18 @@ In that way, we can detect if we have an even or odd number of errors. We can st
 That can be used to request a bit block from the sender again. Say for example, that you have some data of 30 bits blocks, each split up into 16 bit extended hamming codes. If there is an error in one of the blocks, that can't be corrected by the receiver, that specific block can be requested again instead of all 30 blocks.
 
 ## Positions represented by bits
-If each of the parity checks are made, so that NO_ERROR = 1 and ERROR = 0, these results can be combined to the bit
+If each of the parity checks are made, so that NO_ERROR = 0 and ERROR = 1, these results can be combined to the bit-value of the position, where the flipped bit is.
 
+See this:
+![[Pasted image 20251005132245.png|300]]
 
+Here Q1, Q2, Q3 all produce an error, and so their result is set to 1. Q4 doesn't produce an error, and so its value is set to 0.
+Then these results can be combined with Q4 being MSB (Most Significant Bit) and Q1 being LSB (Least Significant Bit) in to the bit value of the flipped bit's position:
+### $$0111_2 = 7_{10}$$
+This can be extended, if we represent all the positions using binary instead of decimal:
+![[Pasted image 20251005132640.png|400]]
+
+Then we can also see, why the control bits are placed in positions, that are a pos
 
 ---
 #data-communication #error-detection
