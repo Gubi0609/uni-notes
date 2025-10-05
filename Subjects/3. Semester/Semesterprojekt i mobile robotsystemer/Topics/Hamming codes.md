@@ -28,6 +28,8 @@ In the above image, the control bits are used to perform parity checks in the bl
 
 When encoding the hamming code, the parity checks are used to determine whether the control bit should be a 0 or 1. If the data in the blue area belonging to the control bit already has an even number of 1's, the control bit is set to 0. Else it is set to 1.
 
+For a larger size of hamming code (eg. 256 bits) the parity checks might look like this:
+![[Pasted image 20251005132025.png|500]]
 ## Extended Hamming Codes
 The above works fine for detecting a single bit error. But what if we have more than one?
 Using Extended Hamming Codes, we utilize the unused bit in a parity check for the whole table.
@@ -35,7 +37,12 @@ Using Extended Hamming Codes, we utilize the unused bit in a parity check for th
 We count up the number of 1's in the whole table, and just like before we want the number of 1's to be even. If it is even, the extended hamming bit is set to 0. Else it is set to 1.
 
 In that way, we can detect if we have an even or odd number of errors. We can still only correct for one error, but at least we can now _detect_ more than one error.
-That can be used to request 
+That can be used to request a bit block from the sender again. Say for example, that you have some data of 30 bits blocks, each split up into 16 bit extended hamming codes. If there is an error in one of the blocks, that can't be corrected by the receiver, that specific block can be requested again instead of all 30 blocks.
+
+## Positions represented by bits
+If each of the parity checks are made, so that NO_ERROR = 1 and ERROR = 0, these results can be combined to the bit
+
+
 
 ---
 #data-communication #error-detection
