@@ -59,7 +59,16 @@ This holds true for all control bits including 0100 (4) and 1000 (8).
 This makes it easy to scale Hamming Codes to larger bit-sizes as each control bit only needs to ask "Does the amount of 1's in the positions, that also contains a binary 1 in the same position as me, equal an even or odd number?"
 
 ## XOR (Exclusive Or)
+Now that we have determined an easy way to display the positions in binary and use parity checks to determine the binary position of an error, is there then an easier way to use Hamming Codes?
+Well yes, of course there is.
 
+![[Pasted image 20251005133340.png|200]]
+XOR returns 1 if and _only if_ the amount of 1's be XOR'ed is odd. If there are no 1's, or if the number of 1's are even, XOR returns 0.
+This can be rephrased as a parity check. Just like before.
+
+Now, we can use this by XOR'ing the positions of our hamming code, that contains a 1.
+![[Pasted image 20251005133629.png|400]]
+The result of this XOR should be 0000, if there isn't an error, and if there is an error, 
 
 ---
 #data-communication #error-detection
