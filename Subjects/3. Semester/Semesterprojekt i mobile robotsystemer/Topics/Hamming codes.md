@@ -90,7 +90,11 @@ B30 = b300 b301 b302 b303 ... b3015
 
 Instead of sending them out in this order, the bits would be mixed somewhat like this:
 
-b10 b20 b30 ... b300 
+b10 b20 b30 ... b300 b11 b21 b31 ... b301 ... b115 b215 b315 ... b3015
+
+If the receiver then knows, that the sender intends for this to be 16-bit hamming code blocks, the receiver can de-interleave the data.
+
+In this way, a burst might only affect 1 single bit in 4 different hamming codes, instead of affecting 4 bits in one single hamming code.
 
 ---
 #data-communication #error-detection
