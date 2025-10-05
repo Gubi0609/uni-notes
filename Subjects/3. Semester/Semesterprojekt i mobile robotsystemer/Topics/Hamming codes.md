@@ -51,7 +51,15 @@ Then these results can be combined with Q4 being MSB (Most Significant Bit) and 
 This can be extended, if we represent all the positions using binary instead of decimal:
 ![[Pasted image 20251005132640.png|400]]
 
-Then we can also see, why the control bits are placed in positions, that are a pos
+Then we can also see, why the control bits are placed in positions, that are a power of 2.
+The control bit in position 0001 (1) is performing a parity check on all the positions that end with a 1 (the only bit in that positions binary value, that is a 1 is at the end)
+The same holds true for position 0010 (2), only here, it performs a parity check on all the positions, that has a 1 (binary position) in the same spot as that control bit.
+This holds true for all control bits including 0100 (4) and 1000 (8).
+
+This makes it easy to scale Hamming Codes to larger bit-sizes as each control bit only needs to ask "Does the amount of 1's in the positions, that also contains a binary 1 in the same position as me, equal an even or odd number?"
+
+## XOR (Exclusive Or)
+
 
 ---
 #data-communication #error-detection
