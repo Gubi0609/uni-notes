@@ -28,6 +28,8 @@ Det kan ses for et HTTP POST protokol i wireshark hvilke TCP pakker der indehold
 Her ses de TCP pakker der står for handshake (31 og 32) samt den pakke, der begynder at sende filen. Vi kan se at det er den, der begynder at sende filen, fordi den har en længde på xxxx bytes
 ![[Pasted image 20251006133256.png]]
 
+### TCP Basics
+
 1. What is the IP address and TCP port number used by the client computer (source) that is transferring the alice.txt file to gaia.cs.umass.edu? To answer this question, it’s probably easiest to select an HTTP message and explore the details of the TCP packet used to carry this HTTP message, using the “details of the selected packet header window” (refer to Figure 2 in the “Getting Started with Wireshark” Lab if you’re uncertain about the Wireshark windows).
 	1. Her kan ses TCP port nummeret på Source er 42600. Min IP adresse kan ses på billedet ovenover, hvor den er 10.126.105.132
 	2. ![[Pasted image 20251006133456.png]]
@@ -73,7 +75,13 @@ Her ses de TCP pakker der står for handshake (31 og 32) samt den pakke, der beg
 8. What is the minimum amount of available buffer space advertised to the client by gaia.cs.umass.edu among these first four data-carrying TCP segments? Does the lack of receiver buffer space ever throttle the sender for these first four data- carrying segments?
 	1. Vi kan se, at Window (som er bufferen) er på 502 bytes. Da det er under længden på hver TCP segment går jeg lidt ud fra at jeg bliver throttled...
 	2. ![[Pasted image 20251006142419.png]]
-9. 
+9. Are there any retransmitted segments in the trace file? What did you check for (in the trace) in order to answer this question?
+	1. Nej det er der ikke. **Jeg kiggede på farven i "listing of captured packets" vinduet. Hvis der var en pakke, der var sort eller rød, betyder det at der er sket en fejl eller at den er en duplikat af en anden pakke. Der var ikke nogen af de røde/sorte pakker som indeholdte tekst filen i dens data. Derfor kan jeg konkluderer at tekst filens pakker gik igennem i første forsøg.**
+10. How much data does the receiver typically acknowledge in an ACK among the first ten data-carrying segments sent from the client to gaia.cs.umass.edu? Can you identify cases where the receiver is ACKing every other received segment (see Table 3.2 in the text) among these first ten data-carrying segments? 
+11. What is the throughput (bytes transferred per unit time) for the TCP connection? Explain how you calculated this value.
+
+### TCP congestion control in action
+
 
 ---
 #lecture #tcp 
