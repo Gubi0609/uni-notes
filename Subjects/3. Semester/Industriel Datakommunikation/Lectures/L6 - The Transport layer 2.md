@@ -66,11 +66,14 @@ Her ses de TCP pakker der står for handshake (31 og 32) samt den pakke, der beg
 		2. Vi prøver at sætte EstimatedRTT på højre side til at være den RTT jeg udregnede:
 		3. $EstimatedRTT = (1-0.125)*0.10328702+0.125*0.103270277=0.103284927$
 7. What is the length (header plus payload) of each of the first four data-carrying TCP segments?
-	1. 1238
-	2. 1238
-	3. 1238
-	4. 1238
+	1. 1238 + 32 = 1270
+	2. 1238 + 32 = 1270
+	3. 1238 + 32 = 1270
+	4. 1238 + 32 = 1270
 8. What is the minimum amount of available buffer space advertised to the client by gaia.cs.umass.edu among these first four data-carrying TCP segments? Does the lack of receiver buffer space ever throttle the sender for these first four data- carrying segments?
+	1. Vi kan se, at Window (som er bufferen) er på 502 bytes. Da det er under længden på hver TCP segment går jeg lidt ud fra at jeg bliver throttled...
+	2. ![[Pasted image 20251006142419.png]]
+9. 
 
 ---
 #lecture #tcp 
