@@ -40,8 +40,14 @@ Her ses de TCP pakker der står for handshake (31 og 32) samt den pakke, der beg
 	4. ![[Pasted image 20251006133944.png]]
 4. What is the sequence number of the SYNACK segment sent by gaia.cs.umass.edu to the client computer in reply to the SYN? What is it in the segment that identifies the segment as a SYNACK segment? What is the value of the Acknowledgement field in the SYNACK segment? How did gaia.cs.umass.edu determine that value?
 	1. Vi kan se at SYNACK har et raw sequence number på 1832525081
-	2. Vi kan se at den har et (SYN, ACK) flag, og at både S
-	3. ![[Pasted image 20251006134322.png]]
+	2. Vi kan se at den har et (SYN, ACK) flag, og at både Syn og Acknowledgement er sat til 1.
+	3. Raw ACK value er 243244490. Vi kan se at den er lige nøjagtig **1** højere end raw SYN sequence number fra forrige spørgsmål.
+	4. Den bestemte nok den værdi ved at lægge én til SYN's raw sequence number
+	5. ![[Pasted image 20251006134322.png]]
+5. What is the sequence number of the TCP segment containing the header of the HTTP POST command? Note that in order to find the POST message header, you’ll need to dig into the packet content field at the bottom of the Wireshark window, looking for a segment with the ASCII text “POST” within its DATA field. How many bytes of data are contained in the payload (data) field of this TCP segment? Did all of the data in the transferred file alice.txt fit into this single segment?
+	1. Vi kan se i det markeret med blå, at der i DATA feltet står POST.
+	2. Den har et raw sequence number på 24324449
+	3. ![[Pasted image 20251006134847.png]]
 
 ---
 #lecture #tcp 
