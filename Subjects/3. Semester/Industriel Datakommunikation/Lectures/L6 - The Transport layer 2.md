@@ -8,7 +8,7 @@
 >- [ ] p. 286 - 314
 
 > [!DANGER] EXERCISES
-> - [ ] 
+> - [ ] [[Wireshark_TCP_v8.1.pdf]]
 
 > [!QUESTION] Questions
 > - 
