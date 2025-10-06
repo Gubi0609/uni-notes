@@ -8,7 +8,7 @@
 >- [ ] p. 286 - 314
 
 > [!DANGER] EXERCISES
-> - [ ] [[Wireshark_TCP_v8.1.pdf]]
+> - [x] [[Wireshark_TCP_v8.1.pdf]]
 
 > [!QUESTION] Questions
 > - 
@@ -81,6 +81,7 @@ Her ses de TCP pakker der står for handshake (31 og 32) samt den pakke, der beg
 11. What is the throughput (bytes transferred per unit time) for the TCP connection? Explain how you calculated this value.
 
 ### TCP congestion control in action
+Mangler lige at sætte spørgsmålene ind her...
 
 
 ---
