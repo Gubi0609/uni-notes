@@ -46,8 +46,17 @@ Her ses de TCP pakker der står for handshake (31 og 32) samt den pakke, der beg
 	5. ![[Pasted image 20251006134322.png]]
 5. What is the sequence number of the TCP segment containing the header of the HTTP POST command? Note that in order to find the POST message header, you’ll need to dig into the packet content field at the bottom of the Wireshark window, looking for a segment with the ASCII text “POST” within its DATA field. How many bytes of data are contained in the payload (data) field of this TCP segment? Did all of the data in the transferred file alice.txt fit into this single segment?
 	1. Vi kan se i det markeret med blå, at der i DATA feltet står POST.
-	2. Den har et raw sequence number på 24324449
-	3. ![[Pasted image 20251006134847.png]]
+	2. Den har et raw sequence number på 243244490, hvilket er samme som ACK nummeret fra forrige.
+	3. Vi kan se på tredje nederste linje i venstre side af vinduet, at der er en TCP payload på 1238 bytes. Da filen er 148.5 kB, må det betyde at hele filen _**ikke**_ er i den her ene besked.
+	4. ![[Pasted image 20251006134847.png]]
+6. Consider the TCP segment containing the HTTP “POST” as the first segment in the data transfer part of the TCP connection.
+	1. At what time was the first segment (the one containing the HTTP POST) in the data-transfer part of the TCP connection sent?
+		1. Anden kolonne af ovenstående billede (den "grønne" del) har tiden **18.391998827**.
+	2. At what time was the ACK for this first data-containing segment received? 
+		1. 
+	3. What is the RTT for this first data-containing segment?
+	4. What is the RTT value the second data-carrying TCP segment and its ACK? 
+	5. What is the EstimatedRTT value (see Section 3.5.3, in the text) after the ACK for the second data-carrying segment is received? Assume that in making this calculation after the received of the ACK for the second segment,
 
 ---
 #lecture #tcp 
