@@ -53,9 +53,13 @@ Her ses de TCP pakker der står for handshake (31 og 32) samt den pakke, der beg
 	1. At what time was the first segment (the one containing the HTTP POST) in the data-transfer part of the TCP connection sent?
 		1. Anden kolonne af ovenstående billede (den "grønne" del) har tiden **18.391998827**.
 	2. At what time was the ACK for this first data-containing segment received? 
-		1. 
+		1. Jeg går ud fra at det er pakke 44 her, da det er den første ACK _til_ min computer. Den blev modtaget til tiden **18.495285847**.
+		2. ![[Pasted image 20251006135521.png|1500]]
 	3. What is the RTT for this first data-containing segment?
-	4. What is the RTT value the second data-carrying TCP segment and its ACK? 
+		1. $RTT = 18.495285847-18.391998827 = 0.10328702$
+	4. What is the RTT value the second data-carrying TCP segment and its ACK?
+		1. Jeg går ud fra at det er de her to.
+		2. ![[Pasted image 20251006135941.png|1500]]
 	5. What is the EstimatedRTT value (see Section 3.5.3, in the text) after the ACK for the second data-carrying segment is received? Assume that in making this calculation after the received of the ACK for the second segment,
 
 ---
