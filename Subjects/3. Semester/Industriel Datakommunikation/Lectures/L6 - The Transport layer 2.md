@@ -62,6 +62,15 @@ Her ses de TCP pakker der står for handshake (31 og 32) samt den pakke, der beg
 		2. $RTT = 18.495285847-18.392015570=0.103270277$
 		3. ![[Pasted image 20251006140743.png|1500]]
 	5. What is the EstimatedRTT value (see Section 3.5.3, in the text) after the ACK for the second data-carrying segment is received? Assume that in making this calculation after the received of the ACK for the second segment, that the initial value of EstimatedRTT is equal to the measured RTT for the first segment, and then is computed using the EstimatedRTT equation on page 242, and a value of α = 0.125. Note: Wireshark has a nice feature that allows you to plot the RTT for each of the TCP segments sent. Select a TCP segment in the “listing of captured packets” window that is being sent from the client to the gaia.cs.umass.edu server. Then select: Statistics->TCP Stream Graph- >Round Trip Time Graph.
+		1. $EstimatedRTT = (1-\alpha)*EstimatedRTT + \alpha*SampleRTT$
+		2. Vi prøver at sætte EstimatedRTT på højre side til at være den RTT jeg udregnede:
+		3. $EstimatedRTT = (1-0.125)*0.10328702+0.125*0.103270277=0.103284927$
+7. What is the length (header plus payload) of each of the first four data-carrying TCP segments?
+	1. 1238
+	2. 1238
+	3. 1238
+	4. 1238
+8. What is the minimum amount of available buffer space advertised to the client by gaia.cs.umass.edu among these first four data-carrying TCP segments? Does the lack of receiver buffer space ever throttle the sender for these first four data- carrying segments?
 
 ---
 #lecture #tcp 
