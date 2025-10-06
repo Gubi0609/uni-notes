@@ -1,6 +1,6 @@
 
 ---
-**Date:** YYYY-MM-DD
+**Date:** 2025-10-06
 
 ## Preparation
 
@@ -15,7 +15,7 @@
 
 ---
 # Relevant documents
-
+[[TCP_continued.pdf]]
 
 # Topics
 
