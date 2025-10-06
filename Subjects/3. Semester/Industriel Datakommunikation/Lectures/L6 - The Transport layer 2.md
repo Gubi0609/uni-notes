@@ -58,8 +58,9 @@ Her ses de TCP pakker der står for handshake (31 og 32) samt den pakke, der beg
 	3. What is the RTT for this first data-containing segment?
 		1. $RTT = 18.495285847-18.391998827 = 0.10328702$
 	4. What is the RTT value the second data-carrying TCP segment and its ACK?
-		1. Jeg går ud fra at det er de her to.
-		2. ![[Pasted image 20251006135941.png|1500]]
+		1. Jeg går ud fra at det er de her to. **Jeg har indset at jeg lavede en fejl i mit forrige svar, men jeg ved ikke hvordan jeg skal rette op på den. ACK fra modtageren skal passe med SEQ fra senderen.** Vi kan se, at Seq på pakke 36 er 2477 og at Ack på pakke 44 er 2477. Altså passer de sammen.
+		2. $RTT = 18.495285847-18.392015570
+		3. ![[Pasted image 20251006140743.png|1500]]
 	5. What is the EstimatedRTT value (see Section 3.5.3, in the text) after the ACK for the second data-carrying segment is received? Assume that in making this calculation after the received of the ACK for the second segment,
 
 ---
