@@ -22,7 +22,7 @@
 [[Congestion control]]
 
 # Notes
-
+Det kan ses for et HTTP POST protokol i wireshark hvilke TCP pakker der indeholder file
 
 ---
 #lecture #tcp 
