@@ -8,7 +8,7 @@
 >- [ ] 
 
 > [!DANGER] EXERCISES
-> - [ ]  5-2, 5-7, 5-5 (start med at opskrive en uendelig sum)
+> - [x]  5-2, 5-7, 5-5 (start med at opskrive en uendelig sum)
 
 > [!QUESTION] Questions
 > - 
