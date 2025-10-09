@@ -3,7 +3,7 @@
 ``` dataview
 table
 file.mtime as "Edited"
-from "/"
+from "/" and -"External"
 sort file.mtime desc
 limit 5
 ```
@@ -14,6 +14,6 @@ limit 5
 > 
 > ``` dataview
 > list
-> from #subject and -"Templates/subject.md"
+> from #subject and -"Templates/subject.md" and -"External"
 > sort file.name
 > ```
