@@ -29,6 +29,9 @@ Vi konkluderer fra ovenstående ligning, at Newtons 2. lov kun virker i et henf�
 ## $$ m\vec a' = \vec F_{natur} - m\vec a_o = \vec F_{natur} - \vec F_{fiktiv}\quad [N]$$
 For et accelererende henførelsessystem, der _**ikke**_ roterer hedder den fiktive kraft **elevationskraften**.
 ## $$m\vec a' = \vec F_{natur} - \vec F_{ev} \quad [N]$$
+Hvor $\vec F_{ev}$ er elevationskraften.
+![[Pasted image 20251009124729.png]]
+
 
 
 ---
