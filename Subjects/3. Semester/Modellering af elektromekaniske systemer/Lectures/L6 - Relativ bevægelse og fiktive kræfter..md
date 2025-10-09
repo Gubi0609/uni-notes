@@ -6,9 +6,10 @@
 
 >[!TODO] HOMEWORK
 >- [ ] Kapitel 6 i "Mekanik"
+>- [x] Videoer på itsLearning
 
 > [!DANGER] EXERCISES
-> - [ ] 
+> - [x]  6-1 og 6-4
 
 > [!QUESTION] Questions
 > - 
