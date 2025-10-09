@@ -11,6 +11,25 @@ Bevægelsen af partikel $P$ i henførelsessystemet $S'$ kan beskrives ved
 ## $$\vec a' = \frac {d^2\vec x'}{dt^2}\vec e'_x + \frac {d^2\vec y'}{dt^2}\vec e'_y + \frac {d^2\vec z'}{dt^2}\vec e'_z$$
 Bemærk at $\vec v' \neq d\vec r'/{dt}$ og at $\vec a' \neq d\vec v'/dt$.
 
+> [!example]- Udledning
+> Hastighed
+> ![[Pasted image 20251009131915.png|800]]
+>Acceleration
+>![[Pasted image 20251009132000.png|800]]
+>![[Pasted image 20251009132045.png|800]]
+>![[Pasted image 20251009132129.png|800]]
+
+
+### Hastighed
+![[Pasted image 20251009131915.png|800]]
+
+### Acceleration
+![[Pasted image 20251009132000.png|800]]
+![[Pasted image 20251009132045.png|800]]
+
+
+![[Pasted image 20251009132154.png]]
+
 
 ---
 #physics #fictive-forces
