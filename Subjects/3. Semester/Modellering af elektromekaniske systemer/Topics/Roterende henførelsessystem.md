@@ -8,7 +8,8 @@ Bevægelsen af partikel $P$ i henførelsessystemet $S$ kan beskrives ved
 Bevægelsen af partikel $P$ i henførelsessystemet $S'$ kan beskrives ved
 ## $$ \vec r' = x'\vec e'_x + y'\vec e'_y + z'\vec e'_z$$
 ## $$\vec v' = \frac {dx'}{dt}\vec e'_x + \frac {dy'}{dt}\vec e'_y + \frac {dz'}{dt}\vec e'_z$$
-## $$\vec a' = \frac {d\vec v'_x}{dt}\vec e'_x + \frac {d\vec v'_y}{dt}\vec e'_y + \frac {d\vec v'_z}{dt}\vec e'_z$$
+## $$\vec a' = \frac {d^2\vec x'}{dt^2}\vec e'_x + \frac {d^2\vec y'}{dt^2}\vec e'_y + \frac {d^2\vec z'}{dt^2}\vec e'_z$$
+Bemærk at $\vec v' \neq d\vec r'/{dt}$ og at $\vec a' \neq d\vec v'/dt$.
 
 
 ---
