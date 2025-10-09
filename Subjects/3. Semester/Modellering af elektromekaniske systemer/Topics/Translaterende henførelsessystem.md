@@ -14,7 +14,16 @@ Eftersom at accelerationen er den samme, må Newtons 2. lov gælde i begge syste
 
 ## Accelererende system
 Hvis $S'$ accelererer, kan vi ligesom før skrive
-## $$\vec r = \vec r_o + \vec r' \quad \textrm{og} \quad \vec v = \vec v_o + \
+## $$\vec r = \vec r_o + \vec r' \quad \textrm{og} \quad \vec v = \vec v_o + \vec v'$$
+Hvor $\vec v'$ (der er en lille apostrof) er den **relative hastighed** $[m/s]$  og $\vec v_o$ er **medføringshastigheden** $[m/s]$
+
+Vi differensiere udtrykket for $\vec v$ og får
+## $$\vec a = \vec a_o + \vec a' \quad [m/s]$$
+Hvor $\vec a'$ (lille apostrof) er den **relative acceleration**.
+
+Vi bruger Newtons 2. lov (der kun kan bruges i $S$ da $S'$ er et henførelsessystem) og får
+## $$ m\vec a = m\vec a_o + m\vec a' = \vec F_{natur} \quad [N]$$
+Hvor $\vec F_{natur}$ er den resulterende kraft, der påvirker partiklen.
 
 ---
 #physics #fictive-forces
