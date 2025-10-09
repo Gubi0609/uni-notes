@@ -8,7 +8,7 @@
 >- [ ] 
 
 > [!DANGER] EXERCISES
-> - [ ]  [[Exercise - system analysis.pdf]]
+> - [x]  [[Exercise - system analysis.pdf]]
 
 > [!QUESTION] Questions
 > - 
