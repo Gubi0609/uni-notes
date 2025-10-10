@@ -12,7 +12,8 @@
 > [1] [[Structured Computer Organization .pdf]]
 
 > [!DANGER] EXERCISES
-> - [ ]  ![[Pasted image 20251010102653.png]]
+> - [x]  ![[Pasted image 20251010102653.png]]
+> - [ ] ![[Pasted image 20251010105950.png]]
 
 > [!QUESTION] Questions
 > - 
