@@ -12,14 +12,14 @@
 > [1] [[Structured Computer Organization .pdf]]
 
 > [!DANGER] EXERCISES
-> - [ ] 
+> - [ ]  ![[Pasted image 20251010102653.png]]
 
 > [!QUESTION] Questions
 > - 
 
 ---
 # Relevant documents
-
+[[COS_lecture06.pdf]]
 
 # Topics
 
