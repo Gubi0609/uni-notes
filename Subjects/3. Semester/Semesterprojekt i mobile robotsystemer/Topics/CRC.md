@@ -45,6 +45,15 @@ Since our MSB is 0, we perform the next XOR operation with _all 0's_. This ensur
 
 Now the MSB is not 0, and so we use our control key for the XOR operation again.
 
+![[Pasted image 20251011121744.png]]
+
+We continue like this, and end up with our remainder, when we have no more bits in our prepared data string to append. **The remainder for this calculation is in the red box.**
+We now append this remainder to our data string _instead of_ the 0's we put there before, and end up with the following:
+
+**Data string (before preparation):** 101100101101 (12 bits)
+**Data string (after preparation):** 101100101101*0000* (16 bits)
+**Data string (after encoding)
+
 # Code implementation
 
 
