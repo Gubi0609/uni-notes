@@ -142,7 +142,30 @@ When the loop finishes:
 
 This means, that shifted is actually our CRC code, and we extract it by applying a mask, just like before (AND operation) with `0xF` = `0b111`.
 
-Lastly, we shift our data block 4 bits to the left again with `splitBinaryData[i] << 4` and append our CRC code using an OR operation
+Lastly, we shift our data block 4 bits to the left again with `splitBinaryData[i] << 4` and append our CRC code using an OR operation `datablock | crc`. Since the last four bits of our shifted data block are 0, the effectively means, that the CRC code gets appended.
+
+## Checking for errors
+```cpp
+bool CRC::verify(uint16_t received) {
+    const uint16_t generator = vec2bin(denominator);
+    uint16_t temp = received;
+
+    // Perform modulo-2 division
+    for (int i = 15; i >= 4; --i) {
+        if (temp & (1 << i)) {
+            temp ^= generator << (i - 4);
+        }
+    }
+
+    // If remainder == 0, CRC is valid
+    return (temp & 0xF) == 0;
+}
+```
+
+This performs modulo 2 division (polynomial division) just like before. ([See Encoding](#Encoding))
+
+Like before, our remainder is stored in `temp` and we check, that it is 0, by performing an AND operation with `0xF` = `0b
+
 
 ---
 ## Recourses
