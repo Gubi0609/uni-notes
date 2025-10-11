@@ -30,10 +30,16 @@ Polynomial division works just like an XOR operation, when we're performing it o
 
 We start from the MSB in our prepared data block, and perform an XOR operation on each bit. In this case we end with **00101** as the result of that XOR.
 
-![[Pasted image 20251011115311.png]]
+![[Pasted image 20251011120109.png]]
 
-The MSB of our result is then moved to the _Quotient_ of the calculation. **This part is ignored in the final result, so feel free to pass over it.**
-Next we move the next bit in our prepared data block to sit as the LSB of the next XOR operation. The MSB of our previous result is ignored for this operation.
+We ignore the otherwise MSB of our result, and therefore we do not write it.
+Next we move the next bit in our prepared data block to sit as the LSB of the next XOR operation.
+
+Now, we can se that the MSB of our next operation is a 0. In this case, something interesting happens.
+
+![[Pasted image 20251011120349.png]]
+
+Since our MSB is 0, we perform the next XOR operation 
 
 # Code implementation
 
