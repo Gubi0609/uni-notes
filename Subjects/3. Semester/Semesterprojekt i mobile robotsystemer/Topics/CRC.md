@@ -113,16 +113,21 @@ vector<uint16_t> CRC::encode1216(vector<uint16_t> splitBinaryData) {
 }
 ```
 
-We first define our result vector called _encodedData_. We can see, that it contains objects of _uint16_t_. This means "Unsigned Int" (16 bit). More precisely it means "Unsigned Short".
+We first define our result vector called `encodedData`. We can see, that it contains objects of _uint16_t_. This means "Unsigned Int" (16 bit). More precisely it means "Unsigned Short".
 Next, our control key is defined. This is in my code defined as a class attribute. When defining it, it is defined as a vector of 1's and 0's, and we now only redefine it as an uint16_t.
 
 Next, we go through our vector of 12 bit data, that needs to be encoded.
 
-We first check, if the data really only _is_ 12 bits by applying a mask `0x0FFF` 
+We first check, if the data really only _is_ 12 bits by applying a mask `0x0FFF`.
 	The first part of the mask `0x`means, that we are writing a hexidecimal number. 
 	The next part `0FFF`is a hexidecimal, and in binary it is written `0b 0000 1111 1111 1111`. Meaning that 12 bits of it is 1's.
 This results in only using the 12 first bits of our data block (remember, that LSB is the last bit in our bit string).
 	The operation `&=`really means, that we are performing a bitwise AND operation, and storing it in `splitBinaryData[i]`.
+
+We then append 4 zeros (because our control key is 5 bits) by shifting our data block left by 4 bits.
+
+Next, we begin our modulo 2 division (polynomial division).
+We start by only focusing on 1 bit at a time. We perform a bitwise AND operation on our prepared data block (`shifted`) and on 1 shifted left by `i` bits.
 
 ---
 ## Recourses
