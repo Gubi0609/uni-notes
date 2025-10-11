@@ -75,7 +75,49 @@ We can then choose to request this single block from the sender again, and check
 **In the meantime, we can buffer the rest of the data, until we receive the corrected version of this block. In that way, the sender can send eg. 30 blocks of data, we request 4 corrupted blocks again while buffering the rest, and afterwards we decode all 30 blocks, while only 4 blocks had to be send again, instead of all 30.**
 
 # Code implementation
+I will now explain how the above explanation is implemented in code.
 
+## Encoding
+``` cpp
+vector<uint16_t> CRC::encode1216(vector<uint16_t> splitBinaryData) {
+    
+    vector<uint16_t> encodedData;
+
+    // Generator polynomial for class denominator
+    const uint16_t generator = vec2bin(denominator);
+
+    for(int i = 0; i < splitBinaryData.size(); i++) {
+        // We only use 12 bits of data
+        splitBinaryData[i] &= 0x0FFF;
+
+        // Append 4 zeros (shift left by 4 bits)
+        uint16_t shifted = splitBinaryData[i] << 4;
+
+        // Perform modulo-2 division
+        for (int i = 15; i >= 4; --i) { // from MSB to bit 4
+            if (shifted & (1 << i)) {
+                shifted ^= generator << (i - 4);
+            }
+        }
+
+        // Remainder is in the lowest 4 bits
+        uint16_t crc = shifted & 0xF;
+
+        // Encoded 16-bit word: data (12 bits) + crc (4 bits)
+        encodedData.push_back((splitBinaryData[i] << 4) | crc);
+
+    }
+
+    return encodedData;
+
+}
+```
+
+We first define our result vector called _encodedData_. We can see, that it contains objects of _uint16_t_. This means "Unsigned Int" (16 bit). More precisely it means "Unsigned Short".
+Next, our control key is defined. This is in my code defined as a class attribute. When defining it, it is defined as a vector of 1's and 0's, and we now only redefine it as an uint16_t.
+
+Next, we go through our vector of 12 bit data, that needs to be encoded.
+We first check, if the data really only _is_ 12 bits by applying a mask
 
 ---
 ## Recourses
