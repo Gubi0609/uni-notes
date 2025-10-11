@@ -52,7 +52,15 @@ We now append this remainder to our data string _instead of_ the 0's we put ther
 
 **Data string (before preparation):** 101100101101 (12 bits)
 **Data string (after preparation):** 101100101101*0000* (16 bits)
-**Data string (after encoding)
+**Data string (after encoding):** 101100101101*1101* (16 bits)
+
+Finally we have the bit string 1011001011011101, that we send of into our communication channel.
+
+## Receiver end
+On the receiver end, we receive the bit string 1011001011011101, and now want to check if the data, we received is correct.
+This is done in the same way as when encoding (by polynomial division).
+We want to end up with a remainder of 0000. If we end up with _anything else_, we know, the data has been corrupted.
+
 
 # Code implementation
 
