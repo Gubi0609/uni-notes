@@ -18,7 +18,13 @@ Thus, we in this example end with **10011** as our control key.
 Before performing our polynomial division, we want to prepare our binary data string. This is done by appending $n = length(control\quad key)-1$ number of 0's. In this case, our control key is 5 bits long, so we would append $5-1=4$ 0's to our data.
 
 **Data string (before preparation):** 101100101101 (12 bits)
-**Data string (after preparation):** 101100101101*0000* 
+**Data string (after preparation):** 101100101101*0000* (16 bits)
+
+And so, our data is ready for polynomial division.
+**It is important to note, that _you_ can decide what length your final "encoded" block should be, by choosing the length of your actual data (in this case 12 bits) and the length of your polynomial. I have chosen the two, so that we end up with an encoded CRC block of 16 bits.**
+
+## Polynomial division
+
 
 # Code implementation
 
