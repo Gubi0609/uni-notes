@@ -131,7 +131,18 @@ Next, we begin our modulo 2 division (polynomial division). We loop through our 
 	`if (shifted & ( 1 << i))`We start by checking if our i-th bit is 1, by using AND operation with a shifted 1 (shifted left by `i` bits). If the current bit _is_ 1, it means that the current leading bit matches our control key, and we can perform an XOR operation (just like the polynomial division example, where the leading bit needed to be 1, for us to use our control key.)
 		We can now perform our XOR operation using `^=` (`^` is the XOR operation = simply stores it in shifted). `generator << (i - 4)` aligns the generator polynomial with the current highest set bit (`i`). `-4` comes from the length of our final CRC code.
 		**This effectively clears the most significant 1 bit in `shifted`, just like long division.**
-	
+To summarize the loop:
+Each iteration:
+- Checks if the current bit (starting from MSB) is 1.
+- If yes, aligns the generator and XORs it away (subtracts in mod-2).
+- If no, it moves one bit down.
+When the loop finishes:
+- The **upper bits have been cleared**.
+- The **lower 4 bits (0–3)** of `shifted` now contain the **remainder** — the CRC.
+
+This means, that shifted is actually our CRC code, and we extract it by applying a mask, just like before (AND operation) with `0xF` = `0b111`.
+
+Lastly, we shift our data block 4 bits to the left again with `splitBinaryData[i] << 4` and append our CRC code using an OR operation
 
 ---
 ## Recourses
