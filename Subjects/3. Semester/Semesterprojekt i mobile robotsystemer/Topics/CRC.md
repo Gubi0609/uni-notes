@@ -140,7 +140,7 @@ When the loop finishes:
 - The **upper bits have been cleared**.
 - The **lower 4 bits (0–3)** of `shifted` now contain the **remainder** — the CRC.
 
-This means, that shifted is actually our CRC code, and we extract it by applying a mask, just like before (AND operation) with `0xF` = `0b111`.
+This means, that shifted is actually our CRC code, and we extract it by applying a mask, just like before (AND operation) with `0xF` = `0b1111`.
 
 Lastly, we shift our data block 4 bits to the left again with `splitBinaryData[i] << 4` and append our CRC code using an OR operation `datablock | crc`. Since the last four bits of our shifted data block are 0, the effectively means, that the CRC code gets appended.
 
@@ -164,11 +164,35 @@ bool CRC::verify(uint16_t received) {
 
 This performs modulo 2 division (polynomial division) just like before. ([See Encoding](#Encoding))
 
-Like before, our remainder is stored in `temp` and we check, that it is 0, by performing an AND operation with `0xF` = `0b
+Like before, our remainder is stored in `temp` and we check, that it is 0, by performing an AND operation with `0xF` = `0b1111`. The result of this AND operation should be 0, and if it is, we return TRUE. If not, we return FALSE
+
+## Decoding
+```cpp
+uint16_t CRC::decode1612(uint16_t encodedBinaryData) {
+    
+    
+    // Check CRC first
+    bool isValid = verify(encodedBinaryData);
+
+    if (isValid) {
+        // Extract 12-bit data regardless
+        return (encodedBinaryData >> 4) & 0x0FFF;
+    } else {
+        return 0x0000;
+    }
+
+}
+```
+
+We decode only _one_ data block at a time instead of a whole list, as when we encoded.
+
+We first verify, that the data is correct by using the function described above.
+
+If it is correct, we extract the actual data bits, by first shifting to the right by 4 bits (effectively removing the 4 last bits (the CRC code)). We then take this and apply a 12 bit mask using the AND operation
 
 
 ---
-## Recourses
+## Resources
 https://en.wikipedia.org/wiki/Cyclic_redundancy_check
 https://www.geeksforgeeks.org/dsa/modulo-2-binary-division/
 https://youtu.be/A9g6rTMblz4
