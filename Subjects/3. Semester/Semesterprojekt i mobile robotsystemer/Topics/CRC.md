@@ -126,8 +126,8 @@ This results in only using the 12 first bits of our data block (remember, that L
 
 We then append 4 zeros (because our control key is 5 bits) by shifting our data block left by 4 bits.
 
-Next, we begin our modulo 2 division (polynomial division).
-We start by only focusing on 1 bit at a time. We perform a bitwise AND operation on our prepared data block (`shifted`) and on 1 shifted left by `i` bits.
+Next, we begin our modulo 2 division (polynomial division). We loop through our prepared data block (`shifted`) from MSB (bit 15 (because the first bit is in position 0)) to bit 4 (where our appended 0's begin). This results in our remainder being 4 bits long.
+	We start by checking if our i-th bit is 1, by using AND operation with a shifted 1 (shifted left by `i` bits). If the current bit _is_ 1, it means that the current leading bit matches our 
 
 ---
 ## Recourses
