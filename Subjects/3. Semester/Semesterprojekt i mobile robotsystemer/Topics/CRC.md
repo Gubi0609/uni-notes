@@ -63,6 +63,7 @@ We want to end up with a remainder of 0000. If we end up with _anything else_, w
 ![[Pasted image 20251011122535.png]]
 
 Here, we can see, that we end up with a remainder of 0000, and we then know, that the data is correct.
+Since we know, that it is correct, we remove the last 4 bits of the received bit string and end up with our original data string.
 
 ### Example of corrupted data
 In this example, I have changed one single bit to be incorrect.
@@ -127,7 +128,10 @@ This results in only using the 12 first bits of our data block (remember, that L
 We then append 4 zeros (because our control key is 5 bits) by shifting our data block left by 4 bits.
 
 Next, we begin our modulo 2 division (polynomial division). We loop through our prepared data block (`shifted`) from MSB (bit 15 (because the first bit is in position 0)) to bit 4 (where our appended 0's begin). This results in our remainder being 4 bits long.
-	We start by checking if our i-th bit is 1, by using AND operation with a shifted 1 (shifted left by `i` bits). If the current bit _is_ 1, it means that the current leading bit matches our 
+	`if (shifted & ( 1 << i))`We start by checking if our i-th bit is 1, by using AND operation with a shifted 1 (shifted left by `i` bits). If the current bit _is_ 1, it means that the current leading bit matches our control key, and we can perform an XOR operation (just like the polynomial division example, where the leading bit needed to be 1, for us to use our control key.)
+		We can now perform our XOR operation using `^=` (`^` is the XOR operation = simply stores it in shifted). `generator << (i - 4)` aligns the generator polynomial with the current highest set bit (`i`). `-4` comes from the length of our final CRC code.
+		**This effectively clears the most significant 1 bit in `shifted`, just like long division.**
+	
 
 ---
 ## Recourses
