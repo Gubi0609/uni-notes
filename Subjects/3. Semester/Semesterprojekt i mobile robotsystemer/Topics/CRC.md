@@ -1,4 +1,3 @@
-
 # What is it?
 CRC (Cyclic Redundancy Check) is a form of error detection, that can detects upward of **99%** of all errors in a bit string.
 It works a bit like a checksum, where it performs some binary math, and checks if it ends with the expected value (000..). If it does not, it knows that there is an error in the data-block.
@@ -65,7 +64,7 @@ We want to end up with a remainder of 0000. If we end up with _anything else_, w
 
 Here, we can see, that we end up with a remainder of 0000, and we then know, that the data is correct.
 
-## Example of corrupted data
+### Example of corrupted data
 In this example, I have changed one single bit to be incorrect.
 
 ![[Pasted image 20251011122742.png]]
@@ -73,7 +72,7 @@ In this example, I have changed one single bit to be incorrect.
 We can see, that we end up with a non-zero remainder, and we then know, that the data block is corrupted.
 We can then choose to request this single block from the sender again, and check if this new block is corrupted.
 
-In the meantime, we can buffer
+**In the meantime, we can buffer the rest of the data, until we receive the corrected version of this block. In that way, the sender can send eg. 30 blocks of data, we request 4 corrupted blocks again while buffering the rest, and afterwards we decode all 30 blocks, while only 4 blocks had to be send again, instead of all 30.**
 
 # Code implementation
 
