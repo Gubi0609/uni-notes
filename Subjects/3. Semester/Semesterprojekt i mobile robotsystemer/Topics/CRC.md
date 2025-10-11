@@ -24,7 +24,15 @@ And so, our data is ready for polynomial division.
 **It is important to note, that _you_ can decide what length your final "encoded" block should be, by choosing the length of your actual data (in this case 12 bits) and the length of your polynomial. I have chosen the two, so that we end up with an encoded CRC block of 16 bits.**
 
 ## Polynomial division
+Polynomial division works just like an XOR operation, when we're performing it on bit-level
 
+![[Pasted image 20251011115003.png]]
+
+We start from MSB in our prepared data block, and perform an XOR operation on each bit. In this case we end with **00101** as the result of that XOR.
+
+![[Pasted image 20251011115311.png]]
+
+The MSB of our result is then moved to the _Quotient_ of the calculation. **This part is ignored
 
 # Code implementation
 
