@@ -39,7 +39,11 @@ Now, we can se that the MSB of our next operation is a 0. In this case, somethin
 
 ![[Pasted image 20251011120349.png]]
 
-Since our MSB is 0, we perform the next XOR operation 
+Since our MSB is 0, we perform the next XOR operation with _all 0's_. This ensures that we ignore the 0 (for the next XOR operation), and just like before we move the next bit in our prepared data string to be the LSB of the next XOR operation.
+
+![[Pasted image 20251011120648.png]]
+
+Now the MSB is not 0, and so we use our control key for the XOR operation again.
 
 # Code implementation
 
