@@ -61,6 +61,19 @@ On the receiver end, we receive the bit string 1011001011011101, and now want to
 This is done in the same way as when encoding (by polynomial division).
 We want to end up with a remainder of 0000. If we end up with _anything else_, we know, the data has been corrupted.
 
+![[Pasted image 20251011122535.png]]
+
+Here, we can see, that we end up with a remainder of 0000, and we then know, that the data is correct.
+
+## Example of corrupted data
+In this example, I have changed one single bit to be incorrect.
+
+![[Pasted image 20251011122742.png]]
+
+We can see, that we end up with a non-zero remainder, and we then know, that the data block is corrupted.
+We can then choose to request this single block from the sender again, and check if this new block is corrupted.
+
+In the meantime, we can buffer
 
 # Code implementation
 
