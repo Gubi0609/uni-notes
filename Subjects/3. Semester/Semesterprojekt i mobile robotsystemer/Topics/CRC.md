@@ -188,7 +188,9 @@ We decode only _one_ data block at a time instead of a whole list, as when we en
 
 We first verify, that the data is correct by using the function described above.
 
-If it is correct, we extract the actual data bits, by first shifting to the right by 4 bits (effectively removing the 4 last bits (the CRC code)). We then take this and apply a 12 bit mask using the AND operation
+If it is correct, we extract the actual data bits, by first shifting to the right by 4 bits (effectively removing the 4 last bits (the CRC code)). We then take this and apply a 12 bit mask (`0x0FFF` = `0b 0000 1111 1111 1111`) using the AND operation. This effectively makes it into a 12 bit integer (actually 16 bit because of uint16_t, but the first 4 bits are 0's).
+
+If the data is corrupted, we return `0000 0000 0000 0000`, which we can use later in the code, to decide if we should request that data block again.
 
 
 ---
