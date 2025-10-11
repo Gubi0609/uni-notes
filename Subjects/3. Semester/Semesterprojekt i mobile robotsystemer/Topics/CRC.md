@@ -11,7 +11,14 @@ CRC works a bit like polynomial division. You have a numerator (your data) and a
 ## How to select a control key
 Say, that you want a control key of 5 bits. You would then set up a fourth-order polynomial like so
 ## $$ x^4+0x^3+0x^2+x^1+x^0=x^4+x+1$$
-This would translate into a binary control key like this (10011) where each bit is tied to the value of 
+This would translate into a binary control key like this (10011) where each bit is tied to the value of each part of the polynomial. MSB (Most significant bit) is in this case tied to $x^4$ and LSB (Least Significant Bit) is tied to $x^0$.
+Thus, we in this example end with **10011** as our control key.
+
+## Preparing data
+Before performing our polynomial division, we want to prepare our binary data string. This is done by appending $n = length(control\quad key)-1$ number of 0's. In this case, our control key is 5 bits long, so we would append $5-1=4$ 0's to our data.
+
+**Data string (before preparation):** 101100101101 (12 bits)
+**Data string (after preparation):** 101100101101*0000* 
 
 # Code implementation
 
