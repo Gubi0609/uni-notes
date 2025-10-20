@@ -23,6 +23,8 @@
 # Notes
 ## Python lab 2
 
+### UDP
+
 `UDPClient.py`
 ```python
 from socket import *
@@ -71,6 +73,8 @@ Vi kan her se min besked til Elias (packet 387)
 
 Og hans svar
 ![[Pasted image 20251020091038.png]]
+
+### TCP
 
 
 ---
