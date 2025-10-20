@@ -131,5 +131,11 @@ Og her er mit svar
 ![[Pasted image 20251020093558.png]]
 
 
+### Part 3
+Man skal ændre hvad man svarer tilbage med (fx at tælle antal tegn i modtaget besked), men det er simpelthen alt for nemt til at jeg gider.
+
+## Python lab 3
+
+
 ---
 #lecture 
