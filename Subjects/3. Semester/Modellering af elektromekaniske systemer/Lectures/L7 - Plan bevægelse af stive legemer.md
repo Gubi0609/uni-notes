@@ -8,7 +8,7 @@
 >- [ ] 
 
 > [!DANGER] EXERCISES
-> - [ ]  [[Lecture 7 - Exercise.pdf]]
+> - [x]  [[Lecture 7 - Exercise.pdf]]
 
 > [!QUESTION] Questions
 > - 
@@ -22,7 +22,7 @@
 
 
 # Notes
-
+For opgaver, se matlab
 
 ---
 #lecture 
