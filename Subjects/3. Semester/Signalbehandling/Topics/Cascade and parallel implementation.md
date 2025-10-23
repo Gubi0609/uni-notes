@@ -37,7 +37,7 @@ Når vi kigger på diagrammet her, setter vi sub-systemerne i orden efter hvor b
 For at undgå _overflow_ af sub-systemerne og i sidste ende hoved-systemet, kan vi gøre brug af skalerings-faktorer, for at begrænse sub-systemerne.
 ![[Pasted image 20251023100051.png]]
 
-## Parallel Realization
+# Parallel Realization
 Et højere ordens system kan også realiseres på parallel form
 ![[Pasted image 20251023100153.png]]
 ![[Pasted image 20251023100200.png]]
@@ -66,8 +66,14 @@ Vi kan så lave følgende blok diagram
 Læg mærke til at de værdier, der står i tællerne igen er defineret som $a_N$ og at dem i nævnerne igen er $-b_N$.
 Se desuden at den $a_{22}$ i det grønne felt egentlig er kan udelades, da der ikke er en tredje værdi i tælleren, og burde betegnes som $=0$.
 
-## Cascade VS Parallel
+# Cascade VS Parallel
 ![[Pasted image 20251023102054.png]]
+
+# Signal flow graph
+Indtil videre har vi snakket om blok-diagrammer. Vi har dog også **Signal flow graph**
+![[Pasted image 20251023102435.png]]
+
+![[Pasted image 20251023102500.png]]
 
 
 ---
