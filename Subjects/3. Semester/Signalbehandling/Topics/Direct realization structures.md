@@ -51,5 +51,8 @@ Hvorfor bruger vi så ikke _hele tiden_ type II?
 Hvis vi tager eksemplet fra før (sammensætning af type I til type II) hvor vi havde værdien $3,43$. Hvis vi har en rounding error, kunne det blive $3,4$ hvilket gør at vi mister værdien på andet decimals plads.
 I sidste ende kan det ende med at vores system opfører sig på en _helt anden_ måde. Derfor skal man passe på med dette.
 
+![[Pasted image 20251023090958.png]]
+Da systemet er et loop, kan _én enkelt_ rounding error ende med en større og større fejl, desto højere ordenen af systemet er.
+
 ---
 #signalprocessing 
