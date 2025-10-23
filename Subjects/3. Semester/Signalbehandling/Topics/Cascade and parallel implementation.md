@@ -37,6 +37,23 @@ Når vi kigger på diagrammet her, setter vi sub-systemerne i orden efter hvor b
 For at undgå _overflow_ af sub-systemerne og i sidste ende hoved-systemet, kan vi gøre brug af skalerings-faktorer, for at begrænse sub-systemerne.
 ![[Pasted image 20251023100051.png]]
 
+## Parallel Realization
+Et højere ordens system kan også realiseres på parallel form
+![[Pasted image 20251023100153.png]]
+![[Pasted image 20251023100200.png]]
+![[Pasted image 20251023100251.png]]
+
+**Læg mærke til forskellen her**:
+- Cascade realization bliver _ganget_ sammen.
+- Parallel realization bliver _plusset_ sammen.
+
+Vi tager her et lille eksempel af det
+![[Pasted image 20251023100320.png]]
+Se her, at vi bruger _partial brøkopdeling_ (er det det, det hedder??) til at opdele i forhold til før, som var faktorisering.
+![[Pasted image 20251023100433.png]]
+![[Pasted image 20251023100410.png]]
+
+
 
 ---
 #signalprocessing 
