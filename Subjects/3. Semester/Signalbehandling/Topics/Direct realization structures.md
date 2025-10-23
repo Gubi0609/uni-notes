@@ -9,6 +9,9 @@ For linjerne mellem hver _blok_ er den enhed, der "flyder" på linjen den samme 
 Det kan generelt set skrives således:
 ![[Pasted image 20251023083650.png]]
 
+Another example
+![[Pasted image 20251023084543.png]]
+
 
 
 ---
