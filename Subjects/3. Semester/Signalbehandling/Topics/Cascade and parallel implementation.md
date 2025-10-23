@@ -14,7 +14,10 @@ Her kan vi se et eksempel på hvordan et tredje-ordens system bliver faktorisere
 ![[Pasted image 20251023093816.png]]
 ![[Pasted image 20251023093756.png]]
 
+Normalt, vil vi gerne have at ordenen af tæller og nævner i de opdelte systemer er **den samme**.
+Vi kan se i vores ovenstående eksempel af de to systemer _ikke_ har samme orden som den anden, **men ordenen af hvert systems tæller og nævner er den samme**.
 
+Vi vil desuden også gerne have, at systemets poler og nuller er organiseret således, at de kommer i samme sub-system. Det vil s
 
 ---
 #signalprocessing 
