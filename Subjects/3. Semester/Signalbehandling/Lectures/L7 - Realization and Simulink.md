@@ -20,7 +20,8 @@
 [[Matlab tutorial Simulink.pdf]]
 
 # Topics
-
+[[Direct realization structures]]
+[[Cascade and parallel implementation]]
 
 # Notes
 
