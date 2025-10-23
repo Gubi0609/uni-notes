@@ -12,7 +12,15 @@ Det kan generelt set skrives således:
 Another example
 ![[Pasted image 20251023084543.png]]
 
+Dette
+![[Pasted image 20251023085133.png]]
 
+bliver omskrevet til dette
+![[Pasted image 20251023085153.png]]
+Læg mærke til at tælleren bliver til alle dem der har noget med $x(n)$ at gøre, og at nævneren bliver **negativ** og er alle dem, der har med $y(n)$ at gøre.
+Se
+
+Som vi så kan tegne et blok diagram af (som kommer til at ligne det øverste blok diagram med blå og grønne felter. Denne gang indsætter vi bare værdier for $a_N$ og $-b_N$ ).
 
 ---
 #signalprocessing 
