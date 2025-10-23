@@ -1,3 +1,4 @@
+## Direct type I
 ![[Pasted image 20251023083034.png]]
 På ovenstående billede, er det fint farve koordineret, hvordan hver del passer ind i diagrammet. Det "+" markeret med rød, er faktisk det minus, vi ser i udtrykket for $y(n)$, men da den grønne del er negativ, bliver det et minus.
 Vi kan se, at SUM tegnet i ligningen bliver gjort til en summerings-række af alle de $a_ix(n-i)$ enheder, der er (hvor firkanten med $z^{-1}$ er delay og trekanten med $a_N$ eller $-b_N$ (læg mærke til negativ fortegn på $b_N$) er multiplikation).
@@ -26,8 +27,27 @@ Det samme system kan også omskrives/om-tegnes for at være det "spejlvendte"
 ![[Pasted image 20251023085608.png]]
 **Der er en lille fejl i ovenstående billede, hvor $a$ og $b$ har byttet plads. Det burde selvfølgelig være $a$ der er positiv og $b$ der er negativ.**
 
-På det her billede, har den øverste streg i den røde blok, samt de to streger der går ned derfra samme værdi. Vi kalder detten en **Double-value**(???).
+## Direct type II
+På det her billede, har den øverste streg i den røde blok, samt de to streger der går ned derfra samme værdi. Vi kalder detten en **w-value** ($w(n)$).
 ![[Pasted image 20251023085847.png]]
+
+Og vi kan sammensætter disse linjer, da det er det samme.
+![[Pasted image 20251023090001.png]]
+
+På den måde kan vi både simplificere vores diagram OG bruge mindre hukommelse på vores computer, når det skal udregnes.
+
+**Når de sammensættes på denne måde kaldes det _Direct type II_.**
+
+Her kan vi se hvordan de sammensættes
+![[Pasted image 20251023090305.png]]
+
+- The type I structure uses 2N delay elements, i.e. 2N values must pass through the filter.
+- The type II structure uses only N delay elements, which requires less memory.
+
+Hvorfor bruger vi så ikke _hele tiden_ type II?
+![[Pasted image 20251023090428.png]]
+
+
 
 ---
 #signalprocessing 
