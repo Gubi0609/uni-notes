@@ -54,5 +54,9 @@ I sidste ende kan det ende med at vores system opfører sig på en _helt anden_ 
 ![[Pasted image 20251023090958.png]]
 Da systemet er et loop, kan _én enkelt_ rounding error ende med en større og større fejl, desto højere ordenen af systemet er.
 
+## Problems with direct realization
+Normalt, når vi skal realisere (realize) et digital filter med _høj_ orden bruger vi IKKE Direct type I eller Direct type II.
+I stedet opdeler vi normalt fileteret i sektioner af _lav_ orden (første eller anden orden) og re
+
 ---
 #signalprocessing 
