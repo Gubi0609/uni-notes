@@ -31,7 +31,11 @@ På Pole-Zero Map her ser det ud som om der kun er ét nul. Det er dog **5 nulle
 På ovenstående billede bliver de poler, der ligger _over for hinanden_ (spejlet i x-aksen) grupperet. I følge regel 2, kommer de tilhørende nuller så i samme system som deres poler.
 
 ![[Pasted image 20251023095300.png]]
-Når vi kigger på diagrammet her, setter vi systemerne i orden efter hvor blød (???) kurven er. Så vi sætter altså den midterste
+Når vi kigger på diagrammet her, setter vi sub-systemerne i orden efter hvor blød (???) kurven er. Så vi sætter altså den midterste linje (sub-system) som den første i rækken og så derefter sætter vi den høje bue som den næste i rækken. Dette gør vi fordi at den midterste bue ved $\omega_a=1$ har en forstærkning på $-5 dB$. Dette er et ret svagt signal, så vi forstærker den. Til sidst tager vi den svage bue. På den måde får det mest stabile system.
+**Jeg forstår ikke helt den her del...**
+
+For at undgå _overflow_ af sub-systemerne og i sidste ende hoved-systemet, kan vi gøre brug af skalerings-faktorer, for at begrænse sub-systemerne.
+![[Pasted image 20251023100051.png]]
 
 
 ---
