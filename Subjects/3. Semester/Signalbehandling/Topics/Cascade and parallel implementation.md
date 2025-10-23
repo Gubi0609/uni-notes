@@ -61,6 +61,13 @@ Heldigvis kan vi også gøre det i MatLab! Her er et eksempel, hvor vi finder de
 ![[Pasted image 20251023101016.png]]
 Her bruger vi funktionerne `residues` og `residuez` til at omskrive transfer funktionen.
 
+Vi kan så lave følgende blok diagram
+![[Pasted image 20251023101745.png]]
+Læg mærke til at de værdier, der står i tællerne igen er defineret som $a_N$ og at dem i nævnerne igen er $-b_N$.
+Se desuden at den $a_{22}$ i det grønne felt egentlig er kan udelades, da der ikke er en tredje værdi i tælleren, og burde betegnes som $=0$.
+
+## Cascade VS Parallel
+![[Pasted image 20251023102054.png]]
 
 
 ---
