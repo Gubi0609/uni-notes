@@ -52,7 +52,13 @@ Vi tager her et lille eksempel af det
 Se her, at vi bruger _partial brøkopdeling_ (er det det, det hedder??) til at opdele i forhold til før, som var faktorisering.
 ![[Pasted image 20251023100433.png]]
 ![[Pasted image 20251023100410.png]]
+![[Pasted image 20251023100850.png]]
 
+Puha, det var godt nok et langt eksempel. **Måske jeg fanger det senere, men lige nu er det lidt uoverskueligt**.
+
+### MatLab Example
+Heldigvis kan vi også gøre det i MatLab! Her er et eksempel, hvor vi finder det i MatLab:
+![[Pasted image 20251023101016.png]]
 
 
 ---
