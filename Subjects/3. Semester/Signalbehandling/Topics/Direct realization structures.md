@@ -47,7 +47,9 @@ Her kan vi se hvordan de sammensættes
 Hvorfor bruger vi så ikke _hele tiden_ type II?
 ![[Pasted image 20251023090428.png]]
 
-
+## Rounding errors
+Hvis vi tager eksemplet fra før (sammensætning af type I til type II) hvor vi havde værdien $3,43$. Hvis vi har en rounding error, kunne det blive $3,4$ hvilket gør at vi mister værdien på andet decimals plads.
+I sidste ende kan det ende med at vores system opfører sig på en _helt anden_ måde. Derfor skal man passe på med dette.
 
 ---
 #signalprocessing 
