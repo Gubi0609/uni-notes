@@ -59,6 +59,8 @@ Puha, det var godt nok et langt eksempel. **Måske jeg fanger det senere, men li
 ### MatLab Example
 Heldigvis kan vi også gøre det i MatLab! Her er et eksempel, hvor vi finder det i MatLab:
 ![[Pasted image 20251023101016.png]]
+Her bruger vi funktionerne `residues` og `residuez` til at omskrive transfer funktionen.
+
 
 
 ---
