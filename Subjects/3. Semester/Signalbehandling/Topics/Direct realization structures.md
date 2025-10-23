@@ -56,7 +56,9 @@ Da systemet er et loop, kan _én enkelt_ rounding error ende med en større og s
 
 ## Problems with direct realization
 Normalt, når vi skal realisere (realize) et digital filter med _høj_ orden bruger vi IKKE Direct type I eller Direct type II.
-I stedet opdeler vi normalt fileteret i sektioner af _lav_ orden (første eller anden orden) og re
+I stedet opdeler vi normalt fileteret i sektioner af _lav_ orden (første eller anden orden) og realiserer så HELE systemet vi enten
+* [[Cascade and parallel implementation|Cascade structure]] eller
+* [[Cascade and parallel implementation|Parallel structure]]
 
 ---
 #signalprocessing 
