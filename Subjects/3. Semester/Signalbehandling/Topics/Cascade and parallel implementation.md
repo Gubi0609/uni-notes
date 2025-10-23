@@ -22,13 +22,11 @@ Her kan vi se et eksempel på hvordan et tredje-ordens system bliver faktorisere
 
 3. Den sidste regel, er at poler og nuller, der er **tæt på hinanden** (når vi plotter dem i enhedscirklen), skal i samme sub-system.
    ![[Pasted image 20251023094742.png]]
-
+På ovenstående billede bliver de poler, der ligger _over for hinanden_ (spejlet i x-aksen) grupperet. I følge regel 2, kommer de tilhørende nuller så i samme system som deres poler.
 ### MatLab Example
 Her kan vi se et eksempel på hvordan vi opdeler et femte-ordens system til 3 mindre systemer.
 ![[Pasted image 20251023094846.png]]
 På Pole-Zero Map her ser det ud som om der kun er ét nul. Det er dog **5 nuller** der ligger meget meget tæt på hinanden.
-
-På ovenstående billede bliver de poler, der ligger _over for hinanden_ (spejlet i x-aksen) grupperet. I følge regel 2, kommer de tilhørende nuller så i samme system som deres poler.
 
 ![[Pasted image 20251023095300.png]]
 Når vi kigger på diagrammet her, setter vi sub-systemerne i orden efter hvor blød (???) kurven er. Så vi sætter altså den midterste linje (sub-system) som den første i rækken og så derefter sætter vi den høje bue som den næste i rækken. Dette gør vi fordi at den midterste bue ved $\omega_a=1$ har en forstærkning på $-5 dB$. Dette er et ret svagt signal, så vi forstærker den. Til sidst tager vi den svage bue. På den måde får det mest stabile system.
