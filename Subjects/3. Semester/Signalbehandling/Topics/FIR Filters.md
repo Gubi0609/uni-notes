@@ -134,6 +134,9 @@ When designing an FIR filter, the following must be specified
 ## Determination of filter order
 When designing an FIR filter, its length cannot be determined exactly in advance.
 Normally, we try different values and see whether the filter can achieve our desired filter specifications.
+![[Pasted image 20251030105320.png]]
+![[Pasted image 20251030105509.png]]
+
 
 
 ---
