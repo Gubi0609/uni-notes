@@ -77,6 +77,12 @@ $M = 5$ fordi vi starter fra 0, så midten er $0,1,2,3,4,5$.
 ![[Pasted image 20251030101957.png]]
 
 # Window functions in FIR
+![[Pasted image 20251030102930.png]]
+Betyder basically, at vi bare koncentrerer os på _et vindue_ af vores signal. Jeg vil gå ud fra, at det er fordi signalet bare en periodisk gentagelse af dette vindue.
+
+**Truncate betyder, at hvis man har et signal/noget som helst, så beholder man noget af det (vinduet...) og fjerner resten** Total mindblowing.
+
+
 
 ---
 #signalprocessing  #filter
