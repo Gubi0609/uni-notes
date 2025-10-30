@@ -60,6 +60,8 @@ $M = 5$ fordi vi starter fra 0, så midten er $0,1,2,3,4,5$.
 ### Example
 ![[Pasted image 20251030100945.png]]
 **FEJL: Når vi omskriver integralet til ikke at gå fra $-f_s/2$ til $f_s/2$ om til $0$ til $f_0$ skal der egentlig stå $f_a$ i stedet for $f_0$.**
+![[Pasted image 20251030101357.png]]
+![[Pasted image 20251030101703.png]]
 
 
 
