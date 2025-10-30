@@ -29,6 +29,14 @@ Vi kan se, at Gausian FIR filter, virker som et low pass filter, da signalet _li
 ## Poles and Zeros
 ![[Pasted image 20251030092052.png]]
 
+Det følgende eksempel er for et ottende ordens FIR filter
+![[Pasted image 20251030092310.png]]
+
+## Linear phase
+Et FIR filter med $N\geq 2$  samples, har _linear phase_, hvis den er symmetrisk om midtpunktet
+![[Pasted image 20251030092546.png]]
+
+
 
 ---
 #signalprocessing  #filter
