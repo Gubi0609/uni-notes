@@ -38,7 +38,11 @@ Et FIR filter med $N\geq 2$  samples, har _linear phase_, hvis den er symmetrisk
 
 ## Amplitude and Phase
 ![[Pasted image 20251030093639.png]]
-hvor $\gamma = f/f_0
+hvor $\gamma = f/f_0$ og $f_0$ er Nyquist frekvensen.
+
+## Example
+![[Pasted image 20251030094207.png]]
+
 
 ---
 #signalprocessing  #filter
