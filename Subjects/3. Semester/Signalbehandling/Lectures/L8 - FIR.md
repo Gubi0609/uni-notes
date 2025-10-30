@@ -8,7 +8,9 @@
 >- [ ] 
 
 > [!DANGER] EXERCISES
-> - [ ] 
+> - [ ]  [[Exercise - FIR.pdf]]
+> - [ ]  [[Exercise - PPG _ FIR filter.pdf]]
+
 
 > [!QUESTION] Questions
 > - 
