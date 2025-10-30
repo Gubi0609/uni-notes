@@ -42,6 +42,8 @@ hvor $\gamma = f/f_0$ og $f_0$ er Nyquist frekvensen.
 
 ## Example
 ![[Pasted image 20251030094207.png]]
+$M = 5$ fordi vi starter fra 0, så midten er $0,1,2,3,4,5$.
+
 
 
 ---
