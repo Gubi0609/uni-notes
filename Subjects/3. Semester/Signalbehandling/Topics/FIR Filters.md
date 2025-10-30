@@ -17,6 +17,11 @@ Hvis vi tager invers z-transformation af ovenstående $Y(z)$, får vi følgende 
 
 **BEMÆRK AT I DET OVENSTÅENDE, skal der i toppen af summen stå $N$ og ikke $N-1$.**
 **Det er fordi at der her er tale om antal _samples_, mens der normalt bruges $N$ til at tale om orden af filteret.**
+Når man laver et filter, er det derfor vigtigt at definere, hvad N står for, da der er forskellige metoder at gøre det på.
+
+### Matlab funktion
+##### `conv(input_sig, fir_filter, 'same');`
+![[Pasted image 20251030085536.png]]
 
 
 
