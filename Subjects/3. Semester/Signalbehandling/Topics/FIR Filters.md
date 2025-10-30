@@ -76,6 +76,7 @@ $M = 5$ fordi vi starter fra 0, så midten er $0,1,2,3,4,5$.
 ### Example Bandstop filter
 ![[Pasted image 20251030101957.png]]
 
+# Window functions in FIR
 
 ---
 #signalprocessing  #filter
