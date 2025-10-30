@@ -36,7 +36,9 @@ Det følgende eksempel er for et ottende ordens FIR filter
 Et FIR filter med $N\geq 2$  samples, har _linear phase_, hvis den er symmetrisk om midtpunktet
 ![[Pasted image 20251030092546.png]]
 
-
+## Amplitude and Phase
+![[Pasted image 20251030093639.png]]
+hvor $\gamma = f/f_0
 
 ---
 #signalprocessing  #filter
