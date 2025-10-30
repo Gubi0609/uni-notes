@@ -39,11 +39,15 @@ Et FIR filter med $N\geq 2$  samples, har _linear phase_, hvis den er symmetrisk
 ## Amplitude and Phase
 ![[Pasted image 20251030093639.png]]
 hvor $\gamma = f/f_0$ og $f_0$ er Nyquist frekvensen.
+Nyquist: $f_0 = f_s/2$ 
+
+$a_M$ i midterste ligning, er amplituden af den midterste værdi.
 
 ## Example
 ![[Pasted image 20251030094207.png]]
 $M = 5$ fordi vi starter fra 0, så midten er $0,1,2,3,4,5$.
 
+![[Pasted image 20251030095126.png]]
 
 
 ---
