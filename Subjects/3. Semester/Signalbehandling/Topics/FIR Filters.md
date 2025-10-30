@@ -53,6 +53,8 @@ $M = 5$ fordi vi starter fra 0, så midten er $0,1,2,3,4,5$.
 ## Design of FIR filter
 **Fourier transform of impulse response = frequency response of the desire filter**
 
+# Fourier transform of a FIR filter
+![[Pasted image 20251030100037.png]]
 
 
 ---
