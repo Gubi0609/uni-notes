@@ -48,6 +48,11 @@ $a_M$ i midterste ligning, er amplituden af den midterste værdi.
 $M = 5$ fordi vi starter fra 0, så midten er $0,1,2,3,4,5$.
 
 ![[Pasted image 20251030095126.png]]
+![[Pasted image 20251030095345.png]]
+
+## Design of FIR filter
+**Fourier transform of impulse response = frequency response of the desire filter**
+
 
 
 ---
