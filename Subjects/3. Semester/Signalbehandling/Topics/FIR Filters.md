@@ -4,8 +4,12 @@
 
 The filter, then has _N_ coefficients $a_n$ for $n=0,1,...,N-1$
 ![[Pasted image 20251030083853.png]]
+For et 6th ordens filter som på billedet, kan vi se, at man har **7** parametre, der kan ændres på. Tænk på ligesom i polynomier, hvor man også har en "konstant" til sidst, som udgør én værdi mere end polynomiets orden.
 
-I modsat til [[Direct realization structures]], har vi 
+I modsat til [[Direct realization structures]], har vi $b_n = 0$, så vores filter er kun afhængigt af vores input
+![[Pasted image 20251030084438.png]]
+
+
 
 ---
 #signalprocessing  #filter
