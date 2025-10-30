@@ -82,12 +82,40 @@ Betyder basically, at vi bare koncentrerer os på _et vindue_ af vores signal. J
 
 **Truncate betyder, at hvis man har et signal/noget som helst, så beholder man noget af det (vinduet...) og fjerner resten** Total mindblowing.
 
+### Typical window functions
+ Rectangular window
+ Bartlett window
+ Hamming window
+ Hanning window
+ Kaiser window
+
 # Frequency response
 ![[Pasted image 20251030103711.png]]
 ![[Pasted image 20251030103821.png]]
 ![[Pasted image 20251030103859.png]]
 ![[Pasted image 20251030103909.png]]
 
+# Window functions continued
+### Rectangle window
+![[Pasted image 20251030104419.png]]
+
+### Bartlett window
+![[Pasted image 20251030104432.png]]
+
+### Hamming and Hanning window
+![[Pasted image 20251030104452.png]]
+![[Pasted image 20251030104510.png]]
+**Der er en meget lille forskel på de to billeder her, men kig på stavelsen ud for grafen, og at der er en _lille bitte_ forskel på begge grafer.** Fuck det her.
+
+### Kaiser window
+![[Pasted image 20251030104635.png]]
+![[Pasted image 20251030104644.png]]
+
+### MatLab functions
+- `bartlett(L)`
+- `hammming(L)`
+- `hann(L)`
+- `kaise
 
 
 ---
