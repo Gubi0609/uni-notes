@@ -9,6 +9,15 @@ For et 6th ordens filter som på billedet, kan vi se, at man har **7** parametre
 I modsat til [[Direct realization structures]], har vi $b_n = 0$, så vores filter er kun afhængigt af vores input
 ![[Pasted image 20251030084438.png]]
 
+## Impulse response
+![[Pasted image 20251030084932.png]]
+
+Hvis vi tager invers z-transformation af ovenstående $Y(z)$, får vi følgende resultat
+![[Pasted image 20251030085036.png]]
+
+**BEMÆRK AT I DET OVENSTÅENDE, skal der i toppen af summen stå $N$ og ikke $N-1$.**
+**Det er fordi at der her er tale om antal _samples_, mens der normalt bruges $N$ til at tale om orden af filteret.**
+
 
 
 ---
