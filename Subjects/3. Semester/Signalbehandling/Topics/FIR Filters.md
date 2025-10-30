@@ -115,7 +115,25 @@ Betyder basically, at vi bare koncentrerer os på _et vindue_ af vores signal. J
 - `bartlett(L)`
 - `hammming(L)`
 - `hann(L)`
-- `kaise
+- `kaiser(L, beta)`
+
+## Design procedure
+The construction of an FIR filter can proceed according to the following procedure
+1. **Select window.** This selection is made according to the specified stopband and passband ripple.
+2. **Determine filter order.** The filter order 2𝑀𝑀 is determined from the transition band ∆𝑓𝑓𝑎𝑎
+3. **Calculate filter coefficients.** The filter coefficients are calculated as $𝑎_𝑖 = 𝑐_{m−i} \omega_{𝑀−𝑖}$
+4. **Verification.** The amplitude characteristic of the filter is checked and, if necessary, the filter redesigned (M-value is corrected).
+
+## Specs of a FIR filter
+When designing an FIR filter, the following must be specified
+1. The cut-off frequency $f_a$
+2. Maximum permissible width o transition area $\Delta f_a$ 
+3. Maximum permissible stopband gain $H_s$
+4. Maximum permissible pass band ripple $H_r$ 
+
+## Determination of filter order
+When designing an FIR filter, its length cannot be determined exactly in advance.
+Normally, we try different values and see whether the filter can achieve our desired filter specifications.
 
 
 ---
