@@ -141,6 +141,9 @@ Normally, we try different values and see whether the filter can achieve our des
 ![[Pasted image 20251030105320.png]]
 ![[Pasted image 20251030105509.png]]
 
+## Example Design of lowpass filter
+![[Pasted image 20251030111743.png]]
+![[Pasted image 20251030111731.png]]
 
 
 ---
