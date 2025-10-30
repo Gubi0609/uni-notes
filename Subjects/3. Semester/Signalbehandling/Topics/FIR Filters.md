@@ -5,7 +5,7 @@
 The filter, then has _N_ coefficients $a_n$ for $n=0,1,...,N-1$
 ![[Pasted image 20251030083853.png]]
 
-
+I modsat til [[Direct realization structures]], har vi 
 
 ---
 #signalprocessing  #filter
