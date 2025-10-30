@@ -1,5 +1,9 @@
 > A **_finite impulse response filter (FIR filter)_** has a finite impulse response which defines the size of the filter. **An (N-1)th order discrete time FIR filter has N samples.** Its impulse response sequence is defined as follows
 
+# FIR Design summary
+![[Pasted image 20251030102033.png]]
+
+# FIR filter
 ![[Pasted image 20251030083748.png]]
 
 The filter, then has _N_ coefficients $a_n$ for $n=0,1,...,N-1$
@@ -57,12 +61,20 @@ $M = 5$ fordi vi starter fra 0, så midten er $0,1,2,3,4,5$.
 ![[Pasted image 20251030100037.png]]
 ![[Pasted image 20251030100243.png]]
 
-### Example
+### Example Low pass filter
 ![[Pasted image 20251030100945.png]]
 **FEJL: Når vi omskriver integralet til ikke at gå fra $-f_s/2$ til $f_s/2$ om til $0$ til $f_0$ skal der egentlig stå $f_a$ i stedet for $f_0$.**
 ![[Pasted image 20251030101357.png]]
 ![[Pasted image 20251030101703.png]]
 
+### Example High pass filter
+![[Pasted image 20251030101919.png]]
+
+### Example Bandpass filter
+![[Pasted image 20251030101941.png]]
+
+### Example Bandstop filter
+![[Pasted image 20251030101957.png]]
 
 
 ---
