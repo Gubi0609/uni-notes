@@ -3,6 +3,10 @@
 # FIR Design summary
 ![[Pasted image 20251030102033.png]]
 
+# Find $B_n$ for different [[#Window functions in FIR|Window Functions]]
+![[Pasted image 20251030111308.png]]
+
+---
 # FIR filter
 ![[Pasted image 20251030083748.png]]
 
@@ -127,7 +131,7 @@ The construction of an FIR filter can proceed according to the following procedu
 ## Specs of a FIR filter
 When designing an FIR filter, the following must be specified
 1. The cut-off frequency $f_a$
-2. Maximum permissible width o transition area $\Delta f_a$ 
+2. Maximum permissible width of transition area $\Delta f_a$ 
 3. Maximum permissible stopband gain $H_s$
 4. Maximum permissible pass band ripple $H_r$ 
 
