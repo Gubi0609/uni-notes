@@ -84,6 +84,10 @@ Betyder basically, at vi bare koncentrerer os på _et vindue_ af vores signal. J
 
 # Frequency response
 ![[Pasted image 20251030103711.png]]
+![[Pasted image 20251030103821.png]]
+![[Pasted image 20251030103859.png]]
+![[Pasted image 20251030103909.png]]
+
 
 
 ---
