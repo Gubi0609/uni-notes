@@ -143,7 +143,14 @@ Normally, we try different values and see whether the filter can achieve our des
 
 ## Example Design of lowpass filter
 ![[Pasted image 20251030111743.png]]
+Vi vælger Hamming ud fra $H_s < -50dB$ (se [[#Find $B_n$ for different Window functions in FIR Window Functions|tabellen i toppen]]) og fordi den ligner den på [[#Hamming and Hanning window|tegningen]].
+
 ![[Pasted image 20251030111731.png]]
+Vi vælger $N=32 \vee N=33$ fordi det skal være det dobbelte af $M=16$.
+
+### Matlab code
+![[Pasted image 20251030112255.png]]
+![[Pasted image 20251030112306.png]]
 
 
 ---
