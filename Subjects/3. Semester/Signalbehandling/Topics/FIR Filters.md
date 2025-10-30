@@ -55,6 +55,8 @@ $M = 5$ fordi vi starter fra 0, så midten er $0,1,2,3,4,5$.
 
 # Fourier transform of a FIR filter
 ![[Pasted image 20251030100037.png]]
+![[Pasted image 20251030100243.png]]
+
 
 
 ---
