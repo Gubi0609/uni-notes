@@ -23,7 +23,8 @@ Når man laver et filter, er det derfor vigtigt at definere, hvad N står for, d
 ##### `conv(input_sig, fir_filter, 'same');`
 ![[Pasted image 20251030085536.png]]
 
-
+Vi kan se, at Gausian FIR filter, virker som et low pass filter, da signalet _ligner_ vores originale signal, bare uden høj frekvens støj.
+1st Differential FIR viser hvor vi har en "kant" i signalet. Vi kan se, at den ligger omkring 0, indtil vores signal har en kant _op_, så er der en lille spike i filteret. Det samme sker, når vi går _ned_ og _op_ i midten, og _ned_ hen mod enden.
 
 ---
 #signalprocessing  #filter
