@@ -82,6 +82,8 @@ Betyder basically, at vi bare koncentrerer os på _et vindue_ af vores signal. J
 
 **Truncate betyder, at hvis man har et signal/noget som helst, så beholder man noget af det (vinduet...) og fjerner resten** Total mindblowing.
 
+# Frequency response
+![[Pasted image 20251030103711.png]]
 
 
 ---
