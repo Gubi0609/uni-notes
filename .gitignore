@@ -1,0 +1,7 @@
+.obsidian
+Books/
+.trash/
+*.autosave.*
+.vscode
+conflict-files-obsidian-git.md
+External/
