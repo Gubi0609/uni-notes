@@ -51,5 +51,7 @@ This is for the OK HTTP response message
 	1. **`_gateway (10.126.96.1) at 48:a1:70:a8:79:02 [ether] on wlo1`**
 	2. 
 
+==JEG MANGLER STADIG RESTEN....==
+
 ---
 #lecture 
