@@ -32,10 +32,17 @@ Vi snakkede om Error detection. Se dine noter til [[CRC]] og [[Hamming codes]] f
 	1. **53 bytes in**
 	2. ![[Pasted image 20251117111925.png]]
 
-5. What is the value of the Ethernet source address? Is this the address of your computer, or of gaia.cs.umass.edu (Hint: the answer is no). What device has this as its Ethernet address?
-6. What is the destination address in the Ethernet frame? Is this the Ethernet address of your computer?
-7. Give the hexadecimal value for the two-byte Frame type field. What upper layer protocol does this correspond to?
-8. How many bytes from the very start of the Ethernet frame does the ASCII “O” in “OK” (i.e., the HTTP response code) appear in the Ethernet frame?
+
+This is for the OK HTTP response message
+1. What is the value of the Ethernet source address? Is this the address of your computer, or of gaia.cs.umass.edu (Hint: the answer is no). What device has this as its Ethernet address?
+	1. **`48:a1:70:a8:79:02`**
+	2. This is the address of the switch, that I am connected to.
+2. What is the destination address in the Ethernet frame? Is this the Ethernet address of your computer?
+	1. LiteonTechno_6b:05:b9 **`c0:35:32:6b:05:b9`**
+	2. This is the address of my computer.
+3. Give the hexadecimal value for the two-byte Frame type field. What upper layer protocol does this correspond to?
+	1. **`0x0800`** corresponds to IPv4 protocol
+4. How many bytes from the very start of the Ethernet frame does the ASCII “O” in “OK” (i.e., the HTTP response code) appear in the Ethernet frame?
 
 
 
