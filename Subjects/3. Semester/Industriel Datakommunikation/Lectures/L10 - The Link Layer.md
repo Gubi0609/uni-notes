@@ -15,7 +15,7 @@
 [[09 - The Link Layer.pdf]]
 
 # Topics
-
+Vi snakkede om Error detection. Se dine noter til [[CRC]] og [[Hamming codes]] for forklaring på CRC (selvfølgelig) og 2-dimensional parity bit
 
 # Notes
 
