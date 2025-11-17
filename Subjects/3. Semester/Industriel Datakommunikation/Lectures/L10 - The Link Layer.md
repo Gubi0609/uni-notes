@@ -19,6 +19,9 @@ Vi snakkede om Error detection. Se dine noter til [[CRC]] og [[Hamming codes]] f
 
 # Notes
 
+## Capturing and analyzing Ethernet frames
+
+
 
 ---
 #lecture 
