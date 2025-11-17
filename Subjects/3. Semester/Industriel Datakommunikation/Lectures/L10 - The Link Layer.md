@@ -47,7 +47,9 @@ This is for the OK HTTP response message
 	2. ![[Pasted image 20251117112853.png]]
 
 ## The Address Resolution Protocol
-
+9. Write down the contents of your computer’s ARP cache. What is the meaning of each column value?
+	1. **`_gateway (10.126.96.1) at 48:a1:70:a8:79:02 [ether] on wlo1`**
+	2. 
 
 ---
 #lecture 
