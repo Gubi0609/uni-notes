@@ -43,7 +43,10 @@ This is for the OK HTTP response message
 3. Give the hexadecimal value for the two-byte Frame type field. What upper layer protocol does this correspond to?
 	1. **`0x0800`** corresponds to IPv4 protocol
 4. How many bytes from the very start of the Ethernet frame does the ASCII “O” in “OK” (i.e., the HTTP response code) appear in the Ethernet frame?
+	1. **63 bytes in**
+	2. ![[Pasted image 20251117112853.png]]
 
+## The Address Resolution Protocol
 
 
 ---
