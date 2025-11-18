@@ -33,7 +33,15 @@ Af dette får vi
 
 Parametrene kan bestemmes ved brug af mindste kvadraters metode ud fra de fire ligninger fra før.
 
-**Hvis du nu blot kigger på de
+**Hvis du nu blot kigger på de første målinger (to øverste rækker af venstre matrix), kan du se at som man rykker til højre i første række, passer det med hvad man ganger på parametrene (gående nedad) fra forrige ligninger. (for ubelastet motor) Så er de to første rækker i resultat vektor resultatet for ligningerne fra før.**
+
+## Eksperimentel bestemmelse af $R_a$ og $L_a$
+![[Pasted image 20251118132437.png]]
+
+Det ovenstående er et første ordens system med overføringsfunktionen
+![[Pasted image 20251118132535.png]]
+
+
 
 ---
 #physics 
