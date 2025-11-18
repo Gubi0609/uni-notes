@@ -12,7 +12,17 @@ For et DC kredsløb er frekvensen $0$. Vi ved at $s=j\omega$ og hvis frekvensen 
 Systemet har en pol i 
 ## $$s = -\frac 1 \tau$$
 
-hvilket betyder ,
+hvilket betyder, at jo mindre tidskonstant, jo hurtigere er systemet.
+
+## Impulsrespons
+Impulsresponsen for et første ordens system er
+![[Pasted image 20251118124706.png]]
+
+## Step response
+Step responset af et første ordens system er 
+![[Pasted image 20251118124733.png]]
+
+
 
 ---
 #physics
