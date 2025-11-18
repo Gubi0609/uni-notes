@@ -18,8 +18,19 @@ Her ser vi to eksempler på punkter. **Prikken** indikerer at vi peger _ud_ af s
 
 > [!example]- Eksempel: Biot-Savarts lov
 > ![[Pasted image 20251118123017.png]]
+> Læg mærke til her, at der er et punkt i hvert spole "knæk". På højre side peger de _ind_ på venstre side peger de _ud_.
+> Læg desuden også mærke til hvordan denne formel stammer fra den førstnævnte formel.
 
 # Magnetisk fluks
+Den magnetiske fluks, der strømmer igennem en overflade S i et magnetisk felt er
+![[Pasted image 20251118123303.png]]
+
+I det tilfælde at B er uniform over fladen S, så kan den magnetiske fluks udregnes via
+![[Pasted image 20251118123334.png]]
+
+## Magnetisk fluks i solenoid
+![[Pasted image 20251118123417.png]]
+
 
 
 
