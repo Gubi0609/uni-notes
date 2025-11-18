@@ -5,7 +5,7 @@ En ladning, der bevæger sig med hastighed $v$ i både et elektrisk felt $E$ og 
 $q$ er ladningen af elektronen.
 
 Det er dette, der får en DC motor til at køre ved at  elektronen kører fra + til - og vi har et magnetfelt i området.
-Det sætter 
+Det sætter gang i en kraft, som skaber en bevægelse (acceleration).
 
 ![[Pasted image 20251118124102.png]]
 
