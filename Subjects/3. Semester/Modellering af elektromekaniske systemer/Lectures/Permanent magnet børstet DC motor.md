@@ -42,6 +42,15 @@ Det ovenstående er et første ordens system med overføringsfunktionen
 ![[Pasted image 20251118132535.png]]
 
 
+![[Pasted image 20251118132934.png]]
+For tidskonstanterne for elektrisk, mekanisk og termisk energi, vil tidskonstanten være _mindst_ for elektrisk, dernæst mekanisk og til sidst termisk.
+
+Som eksempel:
+Man skruer **meget** hurtigt på en radiator (mekanisk). Dette er en _lille_ tidskonstant. Der går dog lige nogle timer inden man kan se at den termiske energi for rummet har ændret sig. Dette er en _stor_ tidskonstant.
+
+## Eksperimentel bestemmelse af inertimomentet $J$
+![[Pasted image 20251118133012.png]]
+
 
 ---
 #physics 
