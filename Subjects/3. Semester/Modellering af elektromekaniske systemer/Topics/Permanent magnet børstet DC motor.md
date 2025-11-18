@@ -50,7 +50,8 @@ Man skruer **meget** hurtigt på en radiator (mekanisk). Dette er en _lille_ tid
 ![[Pasted image 20251118130121.png]]
 ![[Pasted image 20251118130133.png]]
 
-Da der er den fjeder i mellem de to vinkler, er der
+Da der er den fjeder i mellem de to vinkler, er der mulighed for deformation. Det betyder også at der ikke bare er én frihedsgrad, da $\theta_j$ ikke er direkte afhængig af $\theta_m$.
+$N_g$ er drivtoget (gearingen). Altså konstanten derfra, som vi ganger på.
 
 ---
 #physics 
