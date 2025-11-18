@@ -25,7 +25,8 @@
 
 
 # Notes
-
+Første del (den teoretiske del) af opgaverne er svaret på. Kig i Uni/Semester 3/Modellering.../Lektion 10.
+Deri ligger en håndskrevet note med svar.
 
 ---
 #lecture 
