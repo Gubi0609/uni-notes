@@ -17,6 +17,10 @@
 [[Lektion 10 - Opgave.pdf]]
 
 # Topics
+[[Biot Savarts lov]]
+[[Lorentz kraft]]
+[[Faradays induktionslov]]
+[[Førsteordens systemer]]
 
 
 # Notes
