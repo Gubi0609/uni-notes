@@ -10,18 +10,12 @@ Nu haves udtryk for motorens kraftmoment og spændingen over motoren (givet af d
 
 Vigtigt at bemærke, at $b$ er friktionen.
 
-![[Pasted image 20251118130121.png]]
-
-
 ## $$ \mu_a=R_aI_a+L_a \frac {dI}{dt} + K\omega$$
 hvor
 ## $$ K\omega = emf$$
 
 Vi kan også opstille følgende ligning for dynamikken af en DC motor.
 ## $$ I_m\dot\omega = kI_a-b\omega=\tau_m-b\omega$$
-![[Pasted image 20251118130133.png]]
-
-
 # Bestemmelse af parametre
 Kan være nødvendigt da datablade enten ikke indeholder alle værdier vi skal bruge, eller fordi der kan være stor variation i parametrene for motorer af samme type.
 
@@ -51,6 +45,12 @@ Man skruer **meget** hurtigt på en radiator (mekanisk). Dette er en _lille_ tid
 ## Eksperimentel bestemmelse af inertimomentet $J$
 ![[Pasted image 20251118133012.png]]
 
+
+# Gearing
+![[Pasted image 20251118130121.png]]
+![[Pasted image 20251118130133.png]]
+
+Da der er den fjeder i mellem de to vinkler, er der
 
 ---
 #physics 
