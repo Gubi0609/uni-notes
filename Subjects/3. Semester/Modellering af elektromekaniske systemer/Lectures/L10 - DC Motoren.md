@@ -21,6 +21,7 @@
 [[Lorentz kraft]]
 [[Faradays induktionslov]]
 [[Førsteordens systemer]]
+[[Permanent magnet børstet DC motor]]
 
 
 # Notes
