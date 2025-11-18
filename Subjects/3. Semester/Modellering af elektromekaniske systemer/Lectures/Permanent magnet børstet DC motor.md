@@ -21,5 +21,9 @@ Vi kan også opstille følgende ligning for dynamikken af en DC motor.
 ## $$ I_m\dot\omega = kI_a-b\omega=\tau_m-b\omega$$
 ![[Pasted image 20251118130133.png]]
 
+
+# Bestemmelse af parametre
+
+
 ---
 #physics 
