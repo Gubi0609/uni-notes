@@ -33,5 +33,7 @@ Af dette får vi
 
 Parametrene kan bestemmes ved brug af mindste kvadraters metode ud fra de fire ligninger fra før.
 
+**Hvis du nu blot kigger på de
+
 ---
 #physics 
