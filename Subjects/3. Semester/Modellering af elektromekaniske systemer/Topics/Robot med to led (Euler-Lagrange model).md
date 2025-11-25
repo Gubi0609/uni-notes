@@ -1,3 +1,5 @@
+
+# Kinematik
 ![[Pasted image 20251125133028.png]]
 
 Vi definerer først DH-parametrene for robotten
@@ -22,3 +24,9 @@ For massemidtpunktet for Link 2 i ramme 0 er proceduren ret meget det samme
 ![[Pasted image 20251125134400.png]]
 **Det er vigtigt at bemærke, at vi stadig kun går ud til massemidtpunktet**.
 
+![[Pasted image 20251125134718.png]]
+![[Pasted image 20251125134827.png]]
+
+# Potentiel energi
+![[Pasted image 20251125135023.png]]
+![[Pasted image 20251125135032.png]]
