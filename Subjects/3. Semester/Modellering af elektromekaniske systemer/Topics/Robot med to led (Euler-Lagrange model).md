@@ -17,3 +17,8 @@ Vi ender med at bruge $l_{cl1}$ som er længden til massemidtpunktet (se illustr
 
 For massemidtpunktet for Link 2 i ramme 0 er proceduren ret meget det samme
 ![[Pasted image 20251125133801.png]]
+
+![[Pasted image 20251125134348.png]]
+![[Pasted image 20251125134400.png]]
+**Det er vigtigt at bemærke, at vi stadig kun går ud til massemidtpunktet**.
+
