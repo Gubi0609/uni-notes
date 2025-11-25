@@ -17,7 +17,7 @@
 
 # Topics
 [[Euler-Lagrange modellering]]
-[[Robot med to led]]
+[[Robot med to led (Euler-Lagrange model)]]
 
 # Notes
 
