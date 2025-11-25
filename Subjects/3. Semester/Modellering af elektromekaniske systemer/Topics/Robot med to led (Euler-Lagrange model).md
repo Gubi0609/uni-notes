@@ -59,6 +59,7 @@ Det udtryk bliver til
 ## $$B(q)\ddot q+C(q,\dot q)+g(q)=\tau$$
 ## $$\ddot q = B^{-1}(q)(\tau-C(q,\dot q)\dot q-g(q))$$
 Hvor $B(q)$ er matricen for kinetisk energi.
+**Alle $q$ er en vektor af vinkler, men jeg gad ikke lige skrive dem alle sådan.**
 
 
 Hvis en ikke-konservativ kraft (eg. friktionskraft) skal tilføjes, tilføjes de på højre side af lighedstegnet fra før. Altså fx  $=\tau_1 + \text{ikke-konservativ kraft}$
