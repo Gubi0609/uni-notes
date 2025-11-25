@@ -33,6 +33,9 @@ Bemærk at hele systemet er afhængig af vektorer og _0_ her er en **nul vektor*
 
 > [!example]- Eksempel: Masse-fjeder system
 > ![[Pasted image 20251125123438.png]]
+> $m\ddot x = f_{net}$
 
-> [!]
+> [!example]- Eksempel: Roterende masse-fjeder system
+> ![[Pasted image 20251125123515.png]]
+> ![[Pasted image 20251125123522.png]]
 # Ikke-konservative systemer
