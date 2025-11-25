@@ -38,7 +38,9 @@ For massemidtpunktet for Link 2 i ramme 0 er proceduren ret meget det samme
 ![[Pasted image 20251125135149.png]]
 
 ![[Pasted image 20251125135200.png]]
-Vi finder $\textbf {p_i}$ 
+Vi finder $\dot{\textbf{p}_i}$ ved at kigge på jakobianten for det givne led således:
+
+## $$\dot{\textbf{p}_{li}} = J_{pi}\dot{\textbf{q}}$$
 
 ![[Pasted image 20251125135213.png]]
 
@@ -46,3 +48,12 @@ Vi finder $\textbf {p_i}$
 ![[Pasted image 20251125135223.png]]
 
 ![[Pasted image 20251125135233.png]]
+
+![[Pasted image 20251125135904.png]]
+
+
+# Dynamik
+![[Pasted image 20251125135919.png]]
+
+Det udtryk bliver til
+## $$B(q)\ddot q+C(q,\dot q)+g(q)=\tau$$
