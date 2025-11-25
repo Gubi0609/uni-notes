@@ -1,6 +1,6 @@
 
 ---
-**Date:** YYYY-MM-DD
+**Date:** 2025-11-25
 
 ## Preparation
 
@@ -16,7 +16,8 @@
 [[Lecture 11 - Exercise.pdf]]
 
 # Topics
-
+[[Euler-Lagrange modellering]]
+[[Robot med to led]]
 
 # Notes
 
