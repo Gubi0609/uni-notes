@@ -44,4 +44,11 @@ Lagrangian er noget, der bliver udledt/opstillet for _hele det samlede system_ o
 > Vær lige opmærksom på, at når man opstiller $I_1\ddot\theta_1$ er det **MEGET** vigtigt at rækkefølgen af theta trukket fra hinanden er rigtig. For $E_{pot}$ er det ligemeget, fordi det alligevel bliver opløftet i 2.
 > 
 > ![[Pasted image 20251125123522.png]]
+
+> [!example]- Eksempel: Pendul på Vogn
+> ![[Pasted image 20251125125428.png]]
+> Svar: 2. Rotational og translatorisk
+>
+
+
 # Ikke-konservative systemer
