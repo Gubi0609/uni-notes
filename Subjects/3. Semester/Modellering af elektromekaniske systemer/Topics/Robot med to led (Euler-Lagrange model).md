@@ -57,3 +57,10 @@ Vi finder $\dot{\textbf{p}_i}$ ved at kigge på jakobianten for det givne led s�
 
 Det udtryk bliver til
 ## $$B(q)\ddot q+C(q,\dot q)+g(q)=\tau$$
+## $$\ddot q = B^{-1}(q)(\tau-C(q,\dot q)\dot q-g(q))$$
+Hvor $B(q)$ er matricen for kinetisk energi.
+
+
+Hvis en ikke-konservativ kraft (eg. friktionskraft) skal tilføjes, tilføjes de på højre side af lighedstegnet fra før. Altså fx  $=\tau_1 + \text{ikke-konservativ kraft}$
+
+Hvis en konservativ kraft (eg. fjederkraft) skal tilføjes, tilføjes de i $\mathscr{L}$. Mere specifikt i $E_{pot}$.
