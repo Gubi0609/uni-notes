@@ -41,6 +41,7 @@ Lagrangian er noget, der bliver udledt/opstillet for _hele det samlede system_ o
 > [!example]- Eksempel: Roterende masse-fjeder system
 > ![[Pasted image 20251125123515.png]]
 > $I_1\ddot \theta_1 = I_1\dot\omega_1 = \tau_{net}$
+> Vær lige opmærksom på, at når man opstiller $I_1\ddot\theta_1$ er det **MEGET** vigtigt at rækkefølgen af theta trukket fra hinanden er rigtig. For $E_{pot}$ er det ligemeget, fordi det alligevel bliver opløftet i 2.
 > 
 > ![[Pasted image 20251125123522.png]]
 # Ikke-konservative systemer
