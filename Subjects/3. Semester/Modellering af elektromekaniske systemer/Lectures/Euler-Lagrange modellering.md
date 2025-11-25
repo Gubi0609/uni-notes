@@ -48,7 +48,14 @@ Lagrangian er noget, der bliver udledt/opstillet for _hele det samlede system_ o
 > [!example]- Eksempel: Pendul på Vogn
 > ![[Pasted image 20251125125428.png]]
 > Svar: 2. Rotational og translatorisk
+> 
+>![[Pasted image 20251125125505.png]]
+>På fritlegeme-diagrammet kan vi se de to frihedsgrader.
+>Bemærk at $E_{pot}$ indeholder $y_p$ som altså er y koordinatet for pendulet.
+>For den kinetiske energi, har den ledet $\frac 1 2 J_p \dot \theta ^2$. Det kan fjernes hvis man ikke tager højde for stangens inertimoment.
 >
+>![[Pasted image 20251125125551.png]]
+>![[Pasted image 20251125125603.png]]
 
 
 # Ikke-konservative systemer
