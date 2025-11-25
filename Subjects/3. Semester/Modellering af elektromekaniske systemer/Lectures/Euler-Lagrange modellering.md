@@ -1,9 +1,12 @@
-## $$\frac d {dt}*\delta L /\delta \dot q - \delta L / \delta q = Q$$
+## $$\frac d {dt}*\frac {\delta L} {\delta \dot q} -\frac {\delta L} {\delta q} = Q$$
 
 # Konservative systemer
 Indeholder konservative krafter
 	Uafhængigt af vejen vil summen af krafter være 0, når du starter og slutter samme sted (tyngdekraften, fjederkraft osv)
 
+
+For konservative systemer er
+## $$Q=0$$
 ## Newton-Euler Modellering
 ## $$ W = \int^B_AF(x)\quad dx$$
 > [!example]- Eksempel med fjederkraft
@@ -65,6 +68,8 @@ Fysiske systemer er ofte påvirket af eksterne styrbare kræfter og dissipative 
 _Udvidelsen herover kaldes **Lagrange-D'Alemberts princip**_.
 
 ![[Pasted image 20251125131746.png]]
+
+Når man sætter en ikke-konservativ kraft på (eg masse-fjeder til masse-fjeder-dæmper) ændrer venstre side af udtrykket sig _på ingen måde_. Det eneste der ændrer sig er den generaliseret kraft $\textbf Q$.
 
 > [!example]- Eksempel Masse-fjeder-dæmper system
 > ![[Pasted image 20251125131824.png]]
