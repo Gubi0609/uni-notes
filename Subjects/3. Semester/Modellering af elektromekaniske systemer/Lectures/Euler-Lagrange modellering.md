@@ -1,3 +1,4 @@
+## $$\frac d {dt}*\delta L /\delta \dot q - \delta L / \delta q = Q$$
 
 # Konservative systemer
 Indeholder konservative krafter
@@ -59,3 +60,12 @@ Lagrangian er noget, der bliver udledt/opstillet for _hele det samlede system_ o
 
 
 # Ikke-konservative systemer
+Fysiske systemer er ofte påvirket af eksterne styrbare kræfter og dissipative kræfter som friktion. Derfor udvides Euler-Lagrange ligning med generaliserede kræfter $\textbf{Q}$, der ikke nødvendigvis er konservative.
+
+_Udvidelsen herover kaldes **Lagrange-D'Alemberts princip**_.
+
+![[Pasted image 20251125131746.png]]
+
+> [!example]- Eksempel Masse-fjeder-dæmper system
+> ![[Pasted image 20251125131824.png]]
+
