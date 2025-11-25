@@ -30,3 +30,19 @@ For massemidtpunktet for Link 2 i ramme 0 er proceduren ret meget det samme
 # Potentiel energi
 ![[Pasted image 20251125135023.png]]
 ![[Pasted image 20251125135032.png]]
+
+![[Pasted image 20251125135051.png]]
+![[Pasted image 20251125135103.png]]
+
+# Kinetisk energi
+![[Pasted image 20251125135149.png]]
+
+![[Pasted image 20251125135200.png]]
+Vi finder $\textbf {p_i}$ 
+
+![[Pasted image 20251125135213.png]]
+
+
+![[Pasted image 20251125135223.png]]
+
+![[Pasted image 20251125135233.png]]
