@@ -31,11 +31,16 @@ _Skal overholde specifikke krav, men er i dette kursus bare positioner og vinkle
 ![[Pasted image 20251125123159.png]]
 Bemærk at hele systemet er afhængig af vektorer og _0_ her er en **nul vektor**.
 
+Lagrangian er noget, der bliver udledt/opstillet for _hele det samlede system_ og IKKE for _punkter_ eller _delsystemer_ i systemet.
+
 > [!example]- Eksempel: Masse-fjeder system
 > ![[Pasted image 20251125123438.png]]
 > $m\ddot x = f_{net}$
+> Læg mærke til at det endelige udtryk indeholder $m\ddot x$. Det er fordi vi tager den tidsafledte af $m\dot x$.
 
 > [!example]- Eksempel: Roterende masse-fjeder system
 > ![[Pasted image 20251125123515.png]]
+> $I_1\ddot \theta_1 = I_1\dot\omega_1 = \tau_{net}$
+> 
 > ![[Pasted image 20251125123522.png]]
 # Ikke-konservative systemer
