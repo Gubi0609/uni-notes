@@ -29,15 +29,17 @@ Exam is AT LEAST 2 hours. Dom't know yet
 
 
 
-|        | S-domain                                                 | Z-domain                                                 | Time domain                          |
-| ------ | -------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------ |
-|        | Analog<br>Continuous time                                | Digital<br>Discrete time                                 |                                      |
-| Signal | ![[Pasted image 20251127090951.png]]                     | ![[Pasted image 20251127090940.png]]                     | ![[Pasted image 20251127091007.png]] |
-| System | $H(s)=Y(s)/X(s)$<br>![[Pasted image 20251127091205.png]] | $H(z)=Y(z)/X(z)$<br>![[Pasted image 20251127091150.png]] |                                      |
+|        | S-domain                                                 | Z-domain                                                 | Time domain                                                                  |
+| ------ | -------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------- |
+|        | Analog<br>Continuous time                                | Digital<br>Discrete time                                 |                                                                              |
+| Signal | ![[Pasted image 20251127090951.png]]                     | ![[Pasted image 20251127090940.png]]                     | ![[Pasted image 20251002081940.png]]<br>![[Pasted image 20251002081949.png]] |
+| System | $H(s)=Y(s)/X(s)$<br>![[Pasted image 20251127091205.png]] | $H(z)=Y(z)/X(z)$<br>![[Pasted image 20251127091150.png]] |                                                                              |
 
 ![[Pasted image 20251127093714.png]]
 Hedder et _chirp signal_. Low $\rightarrow$ High.
 Can also be High $\rightarrow$ Low.
+
+
 
 ---
 #lecture 
