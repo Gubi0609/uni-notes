@@ -28,5 +28,12 @@ No exam preparation will be released. Only exercises from class will be necessar
 Exam is AT LEAST 2 hours. Dom't know yet
 
 
+
+|     | S-domain                  | Z-domain | Time domain |
+| --- | ------------------------- | -------- | ----------- |
+|     | Analog<br>Continuous time | Digital  |             |
+|     |                           |          |             |
+
+
 ---
 #lecture 
