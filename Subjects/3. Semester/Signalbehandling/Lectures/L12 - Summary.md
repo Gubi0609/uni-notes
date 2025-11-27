@@ -25,7 +25,7 @@
 
 No exam preparation will be release. Only exercises from class will be necessary.
 
-Exam is AT LEAST 2 hours
+Exam is AT LEAST 2 hours. Dom't know yet
 
 
 ---
