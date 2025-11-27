@@ -23,7 +23,7 @@
 - 10 Selection Choice (Multiple choice??)
 - 5 Calculation
 
-No exam preparation will be release. Only exercises from class will be necessary.
+No exam preparation will be released. Only exercises from class will be necessary.
 
 Exam is AT LEAST 2 hours. Dom't know yet
 
