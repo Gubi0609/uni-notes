@@ -18,7 +18,7 @@
 # Topics
 [[Contiguous Memory Allocation]]
 [[Subjects/3. Semester/Computerarkitektur og operativsystemer/Topics/Paging|Paging]]
-[[Swaoo]]
+[[Swapping]]
 
 # Notes
 
