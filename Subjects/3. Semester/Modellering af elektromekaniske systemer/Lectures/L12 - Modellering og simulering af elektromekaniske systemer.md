@@ -18,6 +18,7 @@
 
 
 # Notes
+$$E_{kin} = 1/2 m*v^T*v+1/2*\omega^T*I*\omega$$
 
 
 ---
