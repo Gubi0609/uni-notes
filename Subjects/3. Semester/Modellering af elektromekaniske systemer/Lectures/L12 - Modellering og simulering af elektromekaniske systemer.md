@@ -1,6 +1,6 @@
 
 ---
-**Date:** YYYY-MM-DD
+**Date:** 2025-12-02
 
 ## Preparation
 
@@ -12,7 +12,7 @@
 
 ---
 # Relevant documents
-
+[[Lektion 12 - Modellering og simulering af elektromekaniske systemer.pdf]]
 
 # Topics
 
