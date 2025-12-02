@@ -13,6 +13,7 @@
 ---
 # Relevant documents
 [[Lektion 12 - Modellering og simulering af elektromekaniske systemer.pdf]]
+[[Eksamensbeskrivelse.pdf]]
 
 # Topics
 
