@@ -17,7 +17,15 @@
 - Architectures [[TheApplicationLayer_I.pdf#page=13]]
 	- Client-Server
 		- Server: Always on host, permanent IP dresss, Data centers for scaling [[TheApplicationLayer_I.pdf#page=14|L3 page 14]]
-		- Client:
+		- Client: Communicate with server, maybe intermittently connected, dynamic IP, not direct P2P communication (always Client-Server-Client)
 	- P2P
+		- _Not_ always on server, different end systems communicate directly, Peers request from other peers (provides service to other peers in return) **Self scalability**, dynamic IP adresses and intermittently connected peers. [[TheApplicationLayer_I.pdf#page=15|L3 page 15]]
 	- Publisher-Subscriber (IoT)
+		- Register _Topic_ at _Message Broker_. Example MQTT (used by ROS i think)
+			- Lightweight and efficient
+			- Scalable
+			- Bi-directional Communication
+		- [[TheApplicationLayer_I.pdf#page=17|L3 page 17]]
 	- Cloud
+		- Decentralized "virtual" srver, dynamic resource management, scalable, complex [[TheApplicationLayer_I.pdf#page=16|L3 page 16]]
+- 
