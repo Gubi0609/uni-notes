@@ -66,3 +66,12 @@
 	- Persistent HTTP
 		- Multiple objects can be sent over a single TCP connection between client and server
 		- Just on RTT for all the referenced objects
+
+
+- DNS: domain name → IP [[Lecture 4 - DNS.pdf]]
+	- Like Name → Address [[Lecture 4 - DNS.pdf#page=5|L4 page 5]]
+	- Multiple Domain Names can be on same IP (server centers) *Host aliasing* [[Lecture 4 - DNS.pdf#page=9|L4 page 9]]
+	- One Domain Name can have multiple IP (like google, that have servers around the world)
+		- *Load distribution* [[Lecture 4 - DNS.pdf#page=9|L4 page 9]]
+	- **Implemented as application-layer protocol**
+	- 
