@@ -55,9 +55,14 @@
 		- Client is a browser that _requests_ and _displays_ Web objects
 		- Server _sends_ objects in _response_ to requests
 		- Both use HTTP
+
+==MAYBE MORE RELEVANT FOR [[Subjects/3. Semester/Industriel Datakommunikation/Exam/Transport Layer|Transport Layer]]==
 - Non-Persistent HTTP versus Persistent HTTP [[TheApplicationLayer_I.pdf#page=33|L3 page 33]]
 	- Non-Persistent
 		- Open and Closes TCP connection for _each_ object sent.
 		- More overhead in opening and closing for each object.
+		- Response time for _one_ object: 2 RTT + file transmission time [[TheApplicationLayer_I.pdf#page=36|L3 page 36]]
+		- Browsers often open _parallel_ TCP connections to fetch referenced objects
 	- Persistent HTTP
 		- Multiple objects can be sent over a single TCP connection between client and server
+		- Just on RTT for all the referenced objects
