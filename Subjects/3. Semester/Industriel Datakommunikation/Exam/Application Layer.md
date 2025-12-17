@@ -59,7 +59,7 @@
 - HTTP (**H**yper**T**ext **T**ransfer **P**rotocol) [[TheApplicationLayer_I.pdf#page=31|L3 page 31]]
 	- Text with hyperlinks
 	- Web's application layer protocol
-	- Also HTTPS where **S** stands for _Secure_
+	- Also HTTPS where **S** stands for _Secure_ (This is more relevant for the [[Subjects/3. Semester/Industriel Datakommunikation/Exam/Transport Layer|Transport Layer]])
 	- Client-Server:
 		- Client is a browser that _requests_ and _displays_ Web objects
 		- Server _sends_ objects in _response_ to requests
