@@ -87,4 +87,19 @@
 - DNS caching [[Lecture 4 - DNS.pdf#page=17|L4 page 17]]
 	- Once any server learns a mapping (eg. amazon.com → IP) it _caches_ that mapping
 		- An entry is associated with a TTL (Time To Live) and is deleted after said time
-	- TLD (Top Level Domain (.com, .edu, .or))
+	- TLD (Top Level Domain (.com, .edu, .org ...)) are usually cached in local DNS server
+		- Root name servers not often visited because of this
+	- **Caching used for speed**
+	- Cached entry also has _type_ which is used to determine the type of application. Fx:
+		- type=a
+			- name is hostname
+			- value is IP address
+		- type=cname 
+			- name is alias name 
+			- value is canonical name
+			- (eg www.ibm.com is really servereast.backup2.ibm.com)
+		- type=mx is a mailserver
+			- **value** is name of mailserver associated with **name**
+			- Mailserver can have same as a webserver
+		- type=ns 
+			- **nis domain (eg. foo.com)
