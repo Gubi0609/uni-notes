@@ -17,7 +17,9 @@
 
 ---
 # Relevant documents
-
+[[Lecture 4 - DNS.pdf]]
+[[2025_PythonLab01.pdf]]
+[[Wireshark Lab 3.pdf]]
 
 # Topics
 

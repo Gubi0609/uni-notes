@@ -15,7 +15,8 @@
 
 ---
 # Relevant documents
-
+[[PythonLab2.pdf]]
+[[Python Lab 3.pdf]]
 
 # Topics
 
