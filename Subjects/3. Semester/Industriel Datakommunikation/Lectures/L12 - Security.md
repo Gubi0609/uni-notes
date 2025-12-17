@@ -5,17 +5,14 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ]  p. 111 - 155
+>- [ ] 
 
 > [!DANGER] EXERCISES
 > - [ ] 
 
-> [!QUESTION] Questions
-> - 
-
 ---
 # Relevant documents
-[[TheApplicationLayer_I.pdf]]
+[[12 - An Introduction to Security.pdf]]
 
 # Topics
 

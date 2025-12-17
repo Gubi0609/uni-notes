@@ -15,7 +15,8 @@
 
 ---
 # Relevant documents
-
+[[02 - The Internet.pdf]]
+[[Wireshark Lab1.pdf]]
 
 # Topics
 
