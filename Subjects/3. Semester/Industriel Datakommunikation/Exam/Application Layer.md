@@ -47,4 +47,17 @@
 	- Message semantics (meaning of information in fields)
 	- Rules for when and how processes send/respond to messages
 	- (Open protocols defined in RFCs and allows for interoperability) Don't think this is necessary tho.
-- 
+- HTTP (**H**yper**T**ext **T**ransfer **P**rotocol) [[TheApplicationLayer_I.pdf#page=31|L3 page 31]]
+	- Text with hyperlinks
+	- Web's application layer protocol
+	- Also HTTPS where **S** stands for _Secure_
+	- Client-Server:
+		- Client is a browser that _requests_ and _displays_ Web objects
+		- Server _sends_ objects in _response_ to requests
+		- Both use HTTP
+- Non-Persistent HTTP versus Persistent HTTP [[TheApplicationLayer_I.pdf#page=33|L3 page 33]]
+	- Non-Persistent
+		- Open and Closes TCP connection for _each_ object sent.
+		- More overhead in opening and closing for each object.
+	- Persistent HTTP
+		- Multiple objects can be sent over a single TCP connection between client and server
