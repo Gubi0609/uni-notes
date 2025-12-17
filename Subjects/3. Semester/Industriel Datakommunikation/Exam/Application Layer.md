@@ -28,4 +28,14 @@
 		- [[TheApplicationLayer_I.pdf#page=17|L3 page 17]]
 	- Cloud
 		- Decentralized "virtual" srver, dynamic resource management, scalable, complex [[TheApplicationLayer_I.pdf#page=16|L3 page 16]]
-- 
+- Processes [[TheApplicationLayer_I.pdf#page=19|L3 page 19]]
+	- _Client_ process: Process that initiates communicaiton
+	- _Server_ process: Process that waits to be contacted
+- Sockets: [[TheApplicationLayer_I.pdf#page=20|L3 page 20]] to [[TheApplicationLayer_I.pdf#page=21|page 21]]
+	- Like a door. Is a gateway to other layer (transport layer)
+	- Process sends/receives messages to/from its socket
+	- Processes rely on transport infrastructure on other side of socket to actually deliver/receive anything.
+	- Sending process basically shoves message out of the door
+	- Receiving process gets message from the door
+- Identifier [[TheApplicationLayer_I.pdf#page=22|L3 page 22]]
+	- IP address is only eno
