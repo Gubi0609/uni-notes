@@ -38,4 +38,13 @@
 	- Sending process basically shoves message out of the door
 	- Receiving process gets message from the door
 - Identifier [[TheApplicationLayer_I.pdf#page=22|L3 page 22]]
-	- IP address is only eno
+	- IP address is only enough to identify device. To identify process on device _port number_ is used.
+	- Example port numbers: HTTP server **80**, mail server **25**.
+	- Need both IP and port number to communicate with process. This is called an _identifier_
+- Application layer Protocol defines ([[TheApplicationLayer_I.pdf#page=23|L3 page 23]])
+	- Type of message exchanged (eg. request, response etc.)
+	- Message syntax (What fields are relevant in message and how are fields defined)
+	- Message semantics (meaning of information in fields)
+	- Rules for when and how processes send/respond to messages
+	- (Open protocols defined in RFCs and allows for interoperability) Don't think this is necessary tho.
+- 
