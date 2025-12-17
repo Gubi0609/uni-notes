@@ -69,9 +69,14 @@
 
 
 - DNS: domain name → IP [[Lecture 4 - DNS.pdf]]
-	- Like Name → Address [[Lecture 4 - DNS.pdf#page=5|L4 page 5]]
-	- Multiple Domain Names can be on same IP (server centers) *Host aliasing* [[Lecture 4 - DNS.pdf#page=9|L4 page 9]]
+	- Like Name → Address [[Lecture 4 - DNS.pdf#page=3|L4 page 3]]
+	- Multiple Domain Names can be on same IP (server centers) *Host aliasing* [[Lecture 4 - DNS.pdf#page=7|L4 page 7]]
 	- One Domain Name can have multiple IP (like google, that have servers around the world)
-		- *Load distribution* [[Lecture 4 - DNS.pdf#page=9|L4 page 9]]
+		- *Load distribution* [[Lecture 4 - DNS.pdf#page=7|L4 page 7]]
 	- **Implemented as application-layer protocol**
-	- 
+- DNS is a distributed, hierarchical database [[Lecture 4 - DNS.pdf#page=10|L4 page 10]]
+	- Root DNS
+	- .com DNS, .org DNS, .edu DNS
+	- facebook.com DNS, amazon.com DNS, pbs.org DNS, nye.edu DNS, umass.edu DNS
+	- Client queries root → root queries .com → .com queries amazon.com → return IP to client
+- Local DNS name server 
