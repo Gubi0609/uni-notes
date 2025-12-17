@@ -79,4 +79,12 @@
 	- .com DNS, .org DNS, .edu DNS
 	- facebook.com DNS, amazon.com DNS, pbs.org DNS, nye.edu DNS, umass.edu DNS
 	- Client queries root → root queries .com → .com queries amazon.com → return IP to client
-- Local DNS name server 
+- Local DNS name server [[Lecture 4 - DNS.pdf#page=13|L4 page 13]]
+	- Does _not_ strictly belong to hierachy
+	- Each ISP (Internet Service Provider) has one (residential ISP, company, university)
+		- Also called _default name server_'
+	- Acts as proxy, forwards query into hierarchy
+- DNS caching [[Lecture 4 - DNS.pdf#page=17|L4 page 17]]
+	- Once any server learns a mapping (eg. amazon.com → IP) it _caches_ that mapping
+		- An entry is associated with a TTL (Time To Live) and is deleted after said time
+	- TLD (Top Level Domain (.com, .edu, .or))
