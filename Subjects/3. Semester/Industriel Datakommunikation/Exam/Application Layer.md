@@ -102,4 +102,8 @@
 			- **value** is name of mailserver associated with **name**
 			- Mailserver can have same as a webserver
 		- type=ns 
-			- **nis domain (eg. foo.com)
+			- **name** is domain (eg. foo.com)
+			- **value** is hostname of autoritative name server for this domain
+				- eg. punktum.dk hosts .dk domains
+- DNS uses UDP 
+- Decentralized netværk er oftest bedre end centralized, da du så har flere servere spredt over hele verdenen. På den måde skal folk fra USA ikke kommunikere med en DNS server i europa for at få IP adressen for en hjemmeside i USA. Og hvis én server går ned, er der stadig flere serverer der er oppe.
