@@ -3,6 +3,15 @@
 - [[L3 - The Application layer 1]]
 - [[L4 - The Application layer 2 (DNS)]]
 
+# Relevant Materials
+- L3: p 111 - 155
+- L4: p. 155 - 198
+- https://www.youtube.com/watch?v=abeupgK5z48 Application Layer Principles
+- https://www.youtube.com/watch?v=S9GEPaQ1lFs HTTP
+- https://www.youtube.com/watch?v=S9GEPaQ1lFs HTTP
+- https://www.youtube.com/watch?v=6lRcMh5Yphg DNS
+- https://www.youtube.com/watch?v=_iHMMo7SDfQ Sockets
+
 # Relevant Themes
 - OSI model [[L1 - Introduction]]
 - Application: Supporting network applications [[TheApplicationLayer_I.pdf]]
