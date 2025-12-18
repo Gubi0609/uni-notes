@@ -161,9 +161,18 @@
 		- If a packet is lost due to a full buffer, the sender retransmits it
 		- **Problem:** The sender might retransmit to early (before packet is actually lost), so duplicates occur in the network
 			- Wastes bandwith and reduces effective throughput (useful data transferred per second)
-	- Sub Scenario: **Perfect knowledge**
+	- Sub Scenario: **Perfect knowledge** [[TCP_continued.pdf#page=20|L6 page 20]]
 		- The sender know exactly when the router's buffer is full and only retransmits packets that are actually lost
 		- **Result**
 			- No unnecessary retransmissions.
-		- _Ideal but un_
+		- _Ideal but unrealistic_, because sender doesn't have perfect knowledge of the network state
+	- Sub Scenario: **_Some_ perfect knowledge** [[TCP_continued.pdf#page=21|L6 page 21]]
+		- The sender knows when a packet is dropped, but doesn't know the exact state of the router's buffer
+		- **Result**
+			- The sender retransmits _only_ when it _knows_ a packet is lost (eg receiving a signal or timeout)
+			- _Still a risk of unnecessary retransmissions_ if the sender misinterprets delays as packet loss
+	- **Realistic** scenario: Unneeded Duplicates [[TCP_continued.pdf#page=23|L6 page 23]]
+		- The sender cannot _perfectly_ detect whether a packet is lost or just delayed
+		- **Result**
+			- 
 - Scenario 3: Multi.hop paths [[]]
