@@ -44,4 +44,13 @@
 - Reliable data transfer: **No ("best effort")**
 	- Error Detection: Checksum
 	- Error recovery: No
-	- I
+	- In order delivery No
+- Timing: None
+- Throughput
+	- Flow control: None
+	- Congestion Control: None
+- UDP Header [[TransportLayer 1.pdf#page=19|L5 page 19]]
+	- Source port: Socket of sender (16 bits)
+	- Destination Port: Socket of receiver (16 bits)
+	- Length: Length, in bytes, of UDP segment, including header (16 bits)
+	- Checksum (16 bits)
