@@ -115,3 +115,16 @@
 	- Simultaneous FIN exchange can be handled
 
 ### TCP Timeout
+- Should be longer than RTT (Round Trip Time)
+	- But RTT varies
+	- _Too short:_ premature timeout. Unnecessary retransmissions
+	- _To long:_ Slow reaction to segment loss
+- Take **SampleRTT** which is measured time from segment transmission to ACK receipt
+	- Ignore retransmissions
+	- Will still vary, so want smoother estimate
+		- Average _several_ **recent** measurements, not just current
+- $\text{EstimatedRTT}=(1-\alpha)*\text{EstimatedRTT}+\alpha*\text{SampleRTT}$
+	- **EWMA** *E*xponential *W*eighted *M*oving *A*verage
+	- Influence of past samles decreases exponentially fast
+	- Typical value: $\alpha=0.125
+  
