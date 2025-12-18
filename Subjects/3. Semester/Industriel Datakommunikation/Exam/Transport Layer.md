@@ -131,4 +131,10 @@
 	- $\text{TimeoutInterval}=\text{EstimatedRTT}+4*\text{DevRTT}$
 	- $\text{DevRTT}=(1-\beta)*\text{DevRTT}+\beta*|\text{SampleRTT}-\text{EstimatedRTT}|$
 		- EWMA of SampleRTT deviation from EstimatedRTT
+
+### TCP Flow Control
+- Receiver controls sender, so sender won't overflow receiver's buffer by transmitting too much, too fast [[TCP_continued.pdf#page=13|L6 page 13]]
+- Receiver advertises free buffer space by including **rwnd** value in _Receive window_ field in TCP header [[TCP_continued.pdf#page=14|L6 page 14]]
+- Sender then limits amount of unACKed (in-flight) data to receiver's **rwnd** value
+	- This guarantees buffer will not overflow
 - 
