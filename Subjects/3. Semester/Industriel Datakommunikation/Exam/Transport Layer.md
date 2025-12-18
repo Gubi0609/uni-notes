@@ -113,4 +113,5 @@
 	- Respond to received FIN with ACK
 		- Can be combined with own FIN when receving FIN. Thus sending FIN and ACK
 	- Simultaneous FIN exchange can be handled
-- 
+
+### TCP Timeout
