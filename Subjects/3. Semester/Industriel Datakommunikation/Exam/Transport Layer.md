@@ -55,6 +55,7 @@
 	- Destination Port: Socket of receiver (16 bits)
 	- Length: Length, in bytes, of UDP segment, including header (16 bits)
 	- Checksum (16 bits)
+- Connectionless demultiplexing: Different communication partners will all direct communication to _same_ socket on receiver [[TransportLayer 1.pdf#page=18|L5 page 18]]
 
 ## TCP
 - Must have:
@@ -94,4 +95,5 @@
 - Sequence number: Byte stream number of first byte in segment's data [[TransportLayer 1.pdf#page=16|L5 page 26]]
 - Acknowledgments: Seq number of next byte expected from other side [[TransportLayer 1.pdf#page=16|L5 page 26]]
 	- Cumulative ACK
-- 
+	- Example: Sender (Seq=42, ACK=79) → Receiver (Seq=79, ACK=43) → Sender (Seq=43, ACK=80) [[TransportLayer 1.pdf#page=27|L5 page 27]]
+- Connection-oriented demux
