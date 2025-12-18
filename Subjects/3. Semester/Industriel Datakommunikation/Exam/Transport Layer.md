@@ -12,4 +12,22 @@
 	- Upper: _Socket_ to Application Layer. Sends and delivers messages through socket
 	- Lower: Sends and receives segments to and from remote host
 - Packets at this level is called **Segments** [[TransportLayer 1.pdf#page=7|L5 page 7]]
-- What transport service does an app need? [[TransportLayer 1.pdf]]
+- What transport service does an app need? [[TransportLayer 1.pdf#page=10|L5 page 10]]
+	- Reliable data transfer
+	- Timing
+	- Throughput
+	- Security
+- What can be expected of Transport Layer? [[TransportLayer 1.pdf#page=11|L5 page 11]]
+	- Must haves:
+		- Breaking messages into _segments_.
+		- Multiplexing/demultiplexing
+	- Connection management
+	- Reliable data transfer
+		- Error detection and recovery
+		- In order delivery (packet1, packet2, ... )
+	- Timing
+	- Throughput
+		- Flow control
+		- Congestion control
+	- Security
+- In contrast to Network Layer (that focuses on communication between hosts), Transport Layer focuses on communication between _processes_ [[TransportLayer 1.pdf#page=12|L5 page 12]]
