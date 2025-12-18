@@ -105,4 +105,7 @@
 	- Retransmissions triggered by:
 		- Timeout events
 		- Duplicate Acks
+- If Sender sends (Seq=92, Seq=100, Seq=..., Seq=..., Seq=...) and receives ACK=100, ACK=100, ACK=100, ACK=100, It is likely that Seq=100 got lost, so retransmit. [[TransportLayer 1.pdf#page=page=34|L5 page 34]]
+- Handshake before transmission of data [[TransportLayer 1.pdf#page=35|L5 page 35]]
+- Closing TCP connection [[TransportLayer 1.pdf#page=38|L5 page 38]]
 - 
