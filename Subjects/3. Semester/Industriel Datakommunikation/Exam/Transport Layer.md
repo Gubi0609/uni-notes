@@ -32,4 +32,16 @@
 	- Security
 - In contrast to Network Layer (that focuses on communication between hosts), Transport Layer focuses on communication between _processes_ [[TransportLayer 1.pdf#page=12|L5 page 12]]
 	- Uses IP and Port numbers
-- **Sender side:** Receives message from App layer → Breaks message into segments → Passes to Network layer [[Transpo]]
+- **Sender side:** Receives message from App layer → Breaks message into segments → Passes to Network layer [[TransportLayer 1.pdf#page=14|L5 page 14]]
+- **Receiver side:** Receives segments from Network layer → Reassembles segments to message → passes to App layer [[TransportLayer 1.pdf#page=14|L5 page 14]]
+- Most common protocols on internet: TCP and UDP [[TransportLayer 1.pdf#page=14|L5 page 14]]
+
+## UDP
+- Must have:
+	- Breaking messages into segments: **Yes**
+	- Multiplexing/demultiplexing: **Yes**
+- Connection management: Connectionless communication (doesn't establish channel before sending segments)
+- Reliable data transfer: **No ("best effort")**
+	- Error Detection: Checksum
+	- Error recovery: No
+	- I
