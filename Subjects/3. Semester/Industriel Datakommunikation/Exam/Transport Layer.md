@@ -174,5 +174,15 @@
 	- **Realistic** scenario: Unneeded Duplicates [[TCP_continued.pdf#page=23|L6 page 23]]
 		- The sender cannot _perfectly_ detect whether a packet is lost or just delayed
 		- **Result**
-			- 
-- Scenario 3: Multi.hop paths [[]]
+			- The sender's timeout timer might expire **prematurely** (before packet is actually lost)
+			- The sender retransmits the packet. _This results in duplicates of the same packet_
+		- **Cost**
+			- _Wasted bandwidth:_ The network carries multiple copies of the same packet
+			- _Reduced effective throughput:_ Bandwith is used for redundant data instead of new data
+	- **VISUALIZATION**
+		- You send a letter (packet) to a friend
+		- If the letter takes too long, you assume it's lost and send another copy
+		- If the original letter arrives, your friend has **two copies** of the same letter
+		- _This wastes resources (paper, postage) and clogs the postal system._
+			- Doesn't hold true for *one* missing letter, but might clog if **everyone** did the same thing
+- Scenario 3: Multi.hop paths [[TCP_continued.pdf#page=25|L6 page 2]]
