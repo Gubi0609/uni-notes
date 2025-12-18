@@ -71,4 +71,13 @@
 	- Congestion control: Yes
 - Security: None
 - Point-to-point (one sender, one receiver) [[TransportLayer 1.pdf#page=24|L5 page 24]]
-- Reliable
+- Reliable, in-order _byte steam_ (No message boundaries) [[TransportLayer 1.pdf#page=24|L5 page 24]]
+- Pipelined (Does not have to wait to send next packet) [[TransportLayer 1.pdf#page=24|L5 page 24]]
+- Full duplex data: (Bi-directional data flow in same connection) [[TransportLayer 1.pdf#page=24|L5 page 24]]
+	- MSS: Maximum segment size
+- Connection-oriented (Handshake initializes sender-receiver state before data exchange) [[TransportLayer 1.pdf#page=24|L5 page 24]]
+- Flow controlled (Sender will not overwhelm receiver) [[TransportLayer 1.pdf#page=24|L5 page 24]]
+- TCP Header [[TransportLayer 1.pdf#page=25|L5 page 25]]
+	- Source port: Socket of sender (16 bits)
+	- Destination port: Socket of receiver (16 bits)
+	- Sequence number:  Segment(32 bits)
