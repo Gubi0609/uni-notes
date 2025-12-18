@@ -141,7 +141,17 @@
 ### TCP Congestion Control
 #### Why?
 - Congestion is _Too many sources sending too much data too fast for **network** to handle_
-	- Different from flow control
+	- Different from flow control, which prevents _sender_ from overwhelming _receiver_
+	- Congestion is about **network capacity**, not just the receiver's buffer
 - Manifestations: [[TCP_continued.pdf#page=17|L6 page 17]]
 	- Lost packets (buffer overflow at routers)
 	- Long delays (qeueing in router buffers)
+- Scenario 1: **Infinite buffers** [[TCP_continued.pdf#page=18|L6 page 18]]
+	- Assumption:
+		- One router with infinte buffers
+		- Two flows (sources sending data)
+		- No retransmissions needed
+	- Result:
+		- The network can handle all trafic, so no congestion occurs
+- Scenario 2: **Finite buffers** [[TCP_continued.pdf#page=19|L6 page 19]]
+	- Assumptio
