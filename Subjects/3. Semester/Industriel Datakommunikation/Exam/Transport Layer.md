@@ -185,4 +185,20 @@
 		- If the original letter arrives, your friend has **two copies** of the same letter
 		- _This wastes resources (paper, postage) and clogs the postal system._
 			- Doesn't hold true for *one* missing letter, but might clog if **everyone** did the same thing
-- Scenario 3: Multi.hop paths [[TCP_continued.pdf#page=25|L6 page 2]]
+- Scenario 3: **Multi-hop paths** [[TCP_continued.pdf#page=25|L6 page 25]]
+	- Assumption:
+		- Multiple senders and multi-hop paths
+		- Timeout and retransmission mechanisms are active
+	- What happens?
+		- As the input load ($\lambda_{in}$) increases, packets are dropped at upstream queues
+		- **Result**: The troughput of some flows can drop to _zero_ because their packeets are always dropped
+		- **Cost**: Bandwidth and buffering used for lost packets are wasted
+
+**Summary** [[TCP_continued.pdf#page=27|L6 page 27]]
+- Throughput can never exceed capacity
+- Delay increases as capacity is approached
+- Loss/Retransmission decreases effective throughput
+- Unneeded duplicates further decreases effective throughput
+- Upstream transmission capacity/buffering wasted for packets lost downstream
+
+#### How?
