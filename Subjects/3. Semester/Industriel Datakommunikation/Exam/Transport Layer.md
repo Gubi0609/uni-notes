@@ -115,7 +115,7 @@
 	- Simultaneous FIN exchange can be handled
 
 ### TCP Timeout
-- Should be longer than RTT (Round Trip Time)
+- Should be longer than RTT (Round Trip Time) [[TCP_continued.pdf#page=9|L6 page 9]]
 	- But RTT varies
 	- _Too short:_ premature timeout. Unnecessary retransmissions
 	- _To long:_ Slow reaction to segment loss
@@ -123,8 +123,12 @@
 	- Ignore retransmissions
 	- Will still vary, so want smoother estimate
 		- Average _several_ **recent** measurements, not just current
-- $\text{EstimatedRTT}=(1-\alpha)*\text{EstimatedRTT}+\alpha*\text{SampleRTT}$
+- $\text{EstimatedRTT}=(1-\alpha)*\text{EstimatedRTT}+\alpha*\text{SampleRTT}$ [[TCP_continued.pdf#page=10|L6 page 10]]
 	- **EWMA** *E*xponential *W*eighted *M*oving *A*verage
 	- Influence of past samles decreases exponentially fast
-	- Typical value: $\alpha=0.125
-  
+	- Typical value: $\alpha=0.125$
+- Timeout interval is then EstimatedRTT plus safety margin [[TCP_continued.pdf#page=11|L6 page 11]]
+	- $\text{TimeoutInterval}=\text{EstimatedRTT}+4*\text{DevRTT}$
+	- $\text{DevRTT}=(1-\beta)*\text{DevRTT}+\beta*|\text{SampleRTT}-\text{EstimatedRTT}|$
+		- EWMA of SampleRTT deviation from EstimatedRTT
+- 
