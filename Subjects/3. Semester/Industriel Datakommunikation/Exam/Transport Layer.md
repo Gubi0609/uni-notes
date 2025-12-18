@@ -80,4 +80,18 @@
 - TCP Header [[TransportLayer 1.pdf#page=25|L5 page 25]]
 	- Source port: Socket of sender (16 bits)
 	- Destination port: Socket of receiver (16 bits)
-	- Sequence number:  Segment(32 bits)
+	- Sequence number:  Segment sequence (32 bits)
+	- Acknowledgment number: Ack sequence number (32 bits)
+	- Header length (5 bits (I think))
+	- URG: Urgent data (generally not used) (1 bit)
+	- ACK number valid (1 bit)
+	- PSH push data now (generally not used) (1 bit)
+	- RST, SYN, FIN: connection establishment (setup, teardown commands) (1 bit each)
+	- Receive window: Number of bytes receiver is willing to accept (for flow control) (16 bits)
+	- Checksum (16 bits)
+	- URG data pointer (16 bits)
+	- Options (variable length, but each "block" is 32 bits)
+- Sequence number: Byte stream number of first byte in segment's data [[TransportLayer 1.pdf#page=16|L5 page 26]]
+- Acknowledgments: Seq number of next byte expected from other side [[TransportLayer 1.pdf#page=16|L5 page 26]]
+	- Cumulative ACK
+- 
