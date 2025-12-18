@@ -46,11 +46,29 @@
 	- Error recovery: No
 	- In order delivery No
 - Timing: None
-- Throughput
+- Throughput: No
 	- Flow control: None
 	- Congestion Control: None
+- Security: None
 - UDP Header [[TransportLayer 1.pdf#page=19|L5 page 19]]
 	- Source port: Socket of sender (16 bits)
 	- Destination Port: Socket of receiver (16 bits)
 	- Length: Length, in bytes, of UDP segment, including header (16 bits)
 	- Checksum (16 bits)
+
+## TCP
+- Must have:
+	- Breaking messages into segments: **Yes**
+	- Multi-/demultiplexing: **Yes**
+- Connection management: Connection-oriented communication (establishes connection bfore sending segments)
+- Reliable data transfer: **Yes**
+	- Error detection: Checksum
+	- Error recovery: Yes
+	- In order deliver: Yes
+- Timing: None
+- Throughput: No
+	- Flow control: Yes
+	- Congestion control: Yes
+- Security: None
+- Point-to-point (one sender, one receiver) [[TransportLayer 1.pdf#page=24|L5 page 24]]
+- Reliable
