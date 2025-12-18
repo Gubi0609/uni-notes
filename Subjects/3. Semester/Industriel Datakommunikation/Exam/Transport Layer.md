@@ -8,4 +8,8 @@
 - L6: p. 286 - 314
 
 # Relevant Themes
-- 
+- Surrounding layers [[TransportLayer 1.pdf#page=7|L5 page 7]]
+	- Upper: _Socket_ to Application Layer. Sends and delivers messages through socket
+	- Lower: Sends and receives segments to and from remote host
+- Packets at this level is called **Segments** [[TransportLayer 1.pdf#page=7|L5 page 7]]
+- What transport service does an app need? [[TransportLayer 1.pdf]]

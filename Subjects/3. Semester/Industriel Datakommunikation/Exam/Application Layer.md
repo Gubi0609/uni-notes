@@ -13,6 +13,9 @@
 - https://www.youtube.com/watch?v=_iHMMo7SDfQ Sockets
 
 # Relevant Themes
+
+FTP, SMTP, HTTP
+
 - OSI model [[L1 - Introduction]]
 - Application: Supporting network applications [[TheApplicationLayer_I.pdf]]
 - Protocols
