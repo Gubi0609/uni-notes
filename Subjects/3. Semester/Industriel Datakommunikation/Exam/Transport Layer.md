@@ -31,3 +31,4 @@
 		- Congestion control
 	- Security
 - In contrast to Network Layer (that focuses on communication between hosts), Transport Layer focuses on communication between _processes_ [[TransportLayer 1.pdf#page=12|L5 page 12]]
+- 
