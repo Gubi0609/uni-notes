@@ -201,4 +201,5 @@
 - Unneeded duplicates further decreases effective throughput
 - Upstream transmission capacity/buffering wasted for packets lost downstream
 
-#### How?
+#### How? [[TCP_continued.pdf#page=28|L6 page 28]]
+- 
