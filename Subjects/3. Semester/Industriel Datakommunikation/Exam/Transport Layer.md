@@ -148,10 +148,22 @@
 	- Long delays (qeueing in router buffers)
 - Scenario 1: **Infinite buffers** [[TCP_continued.pdf#page=18|L6 page 18]]
 	- Assumption:
-		- One router with infinte buffers
+		- One router with *infinite* buffers
 		- Two flows (sources sending data)
 		- No retransmissions needed
 	- Result:
 		- The network can handle all trafic, so no congestion occurs
 - Scenario 2: **Finite buffers** [[TCP_continued.pdf#page=19|L6 page 19]]
-	- Assumptio
+	- Assumption
+		- One router with _finite_ buffers
+		- Sender retransmit lost packets after a timout
+	- Result:
+		- If a packet is lost due to a full buffer, the sender retransmits it
+		- **Problem:** The sender might retransmit to early (before packet is actually lost), so duplicates occur in the network
+			- Wastes bandwith and reduces effective throughput (useful data transferred per second)
+	- Sub Scenario: **Perfect knowledge**
+		- The sender know exactly when the router's buffer is full and only retransmits packets that are actually lost
+		- **Result**
+			- No unnecessary retransmissions.
+		- _Ideal but un_
+- Scenario 3: Multi.hop paths [[]]
