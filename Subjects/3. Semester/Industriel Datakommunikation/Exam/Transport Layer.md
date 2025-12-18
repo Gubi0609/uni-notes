@@ -96,4 +96,13 @@
 - Acknowledgments: Seq number of next byte expected from other side [[TransportLayer 1.pdf#page=16|L5 page 26]]
 	- Cumulative ACK
 	- Example: Sender (Seq=42, ACK=79) → Receiver (Seq=79, ACK=43) → Sender (Seq=43, ACK=80) [[TransportLayer 1.pdf#page=27|L5 page 27]]
-- Connection-oriented demux
+- Connection-oriented demux: Different communcation partners will all direct messages to same _port_ (eg. port 80) but for different communications, the port is split into different _sockets_. [[TransportLayer 1.pdf#page=29|L5 page 29]]
+	- Can also be a threaded server ?? see [[TransportLayer 1.pdf#page=30|L5 page 30]]
+- TCP ensures reliable data transfer on top of IP's unreliable service [[TransportLayer 1.pdf#page=31|L5 page 31]]
+	- Pipelined segments
+	- Cumulative ACKs
+	- Single retransmission timer
+	- Retransmissions triggered by:
+		- Timeout events
+		- Duplicate Acks
+- 
