@@ -145,4 +145,4 @@
 - Manifestations: [[TCP_continued.pdf#page=17|L6 page 17]]
 	- Lost packets (buffer overflow at routers)
 	- Long delays (qeueing in router buffers)
-- 
+
