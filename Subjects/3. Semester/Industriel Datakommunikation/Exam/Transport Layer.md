@@ -202,4 +202,6 @@
 - Upstream transmission capacity/buffering wasted for packets lost downstream
 
 #### How? [[TCP_continued.pdf#page=28|L6 page 28]]
+- Uses a congestion window **cwmnd**, that is equal to "sent, but not yet ACKed" + "available but not used)" [[TCP_continued.pdf#page=29|L6 page 29]]
+	- $\text{TCP rate}\approx \text{cmwnd}/\text{RTT} \quad \text{bytes}/\text{sec}$ 
 - 
