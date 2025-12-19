@@ -206,4 +206,6 @@
 	- $\text{TCP rate}\approx \text{cmwnd}/\text{RTT} \quad \text{bytes}/\text{sec}$ 
 - TCP sender limits transmissions $\text{LastByteSent}-\text{LastByteACKed} \leq \text{cwnd}$ [[TCP_continued.pdf#page=29|L6 page 29]]
 - **cwnd** is dynamically adjusted in response to observed network congestion [[TCP_continued.pdf#page=29|L6 page 29]]
-- 
+- **AIMD** (**A**dditive **I**ncrease **M**ultiplicative **D**ecrease) is used by sender to increase transmission rate (window size) and probe for usable bandwidth until loss occurs [[TCP_continued.pdf#page=]]
+	- **Additive increase:** increase **cwnd** by 1 MSS (Max Segment Size) every RTT until loss detected
+	- **Multiplicative decrease:** cuts **cwnd** in half after loss
