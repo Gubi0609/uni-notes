@@ -48,3 +48,10 @@
 
 - Could be great with lots of guarantees (delivery, bounded delay etc.), but is **Best-effort service** [[07 - NetworkLayerDataPlane.pdf#page=14|L8 page 14]]
 
+## The router
+- Has a _forwarding data plane_ (hardware) which operates in nanosecond timeframe [[07 - NetworkLayerDataPlane.pdf#page=17|L8 page 17]]
+	- Router _input_ ports
+	- High-speed _switching fabric_
+	- Router _output_ ports
+- Has a _routing, management control plane_  (software) which operates in millisecond timeframe [[07 - NetworkLayerDataPlane.pdf#page=17|L8 page 17]]
+	- _Routing processor_. Communicates with
