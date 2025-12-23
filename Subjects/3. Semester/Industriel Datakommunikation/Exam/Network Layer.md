@@ -257,7 +257,7 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 - _Decentralized_
 	- Router knows physically-connected neighbors, link costs to neighbors
 	- Iterative process of computation, exchange of info with neighbors
-	- "Distance Vector" (**DS**) algorithms
+	- "Distance Vector" (**DV**) algorithms
 
 - _Static_
 	- Routes change _slowly_ over time
@@ -284,13 +284,33 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 **Basically, we start from one node, and check all neighbors. Then choose _least cost path_. Then check _new_ node and choose _least cost path_, that takes us _further_ from start node.**
 
 ###  Bellman-Ford equation (Dynamic Programming)
-- A distance vector (DS) routing algorithm
+- A distance vector (DV) routing algorithm
 - Let $d_x(y)$ be the least-cost path from _x_ to _y_ [[NetworkLayerControlPlane.pdf#page=13|L9 page 13]]
-- Then $d_x(y)=min_v(c(x,v)+d_v(y))$
+- Then $d_x(y)=min_v(c(x,v)+d_v(y))$ [[NetworkLayerControlPlane.pdf#page=13|L9 page 13]]
 	- $min_v$ is minimum taken over all neighbors _v_ of _x_
 	- $c(x,v)$ is cost from _x_ to neighbor _v_
 	- $d_v(y)$ is least-cost from neighbor _v_ to destination _y_
 
 I **think** that some $d_x(y)$ are known, and thus it's easier to choose a path, as you just have to find your way to _x_ that knows the shortest path to _y_
 
-- **Iterative, asynchronous:**
+- **Iterative, asynchronous:** [[NetworkLayerControlPlane.pdf#page=15|L9 page 15]]
+	- Each local iteration caused by:
+	- Local link cost change
+	- DV update message from neighbor
+- **Distributed** [[NetworkLayerControlPlane.pdf#page=15|L9 page 15]]
+	- Each node notifies neighbors only when its DV changes
+	- Neighbors then notify _their_ neighbors **ONLY** if necessary
+
+### Comparing LS and DV algorithms [[NetworkLayerControlPlane.pdf#page=18|L9 page 18]]
+**Message complexity**
+- **LS** with _n_ nodes, _E_ links, _O(nE)_ msgs sent
+- **DV** exchange between neighbors _only_
+	- Convergence time varies
+
+**Speed of convergence**
+- **LS** $O(n^2)$ algorithm as requires _O(nE)_ msgs
+- **DV** convergence time varies
+	- may be routing loops
+	- count-to-infinity problem
+
+**Robustness
