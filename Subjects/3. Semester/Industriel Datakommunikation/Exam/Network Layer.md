@@ -205,3 +205,24 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 		- NAT possibility must be taken into account by app designers e.g. P2P applications
 - **Port forwarding** can be used to access hosts within NAT network from outside the network
 	- E.g. running a web-applications on a home network. Can be accessed from static IP using port forwarding
+
+## IPv6
+- **Motivation** [[07 - NetworkLayerDataPlane.pdf#page=50|L8 page 50]]
+	- 32-bit address space completely allocated
+	- Header format helps speed processing/forwarding
+	- Header changes to facilitate QoS (Quality of Service)
+- _IPv6 datagram format_ [[07 - NetworkLayerDataPlane.pdf#page=50|L8 page 50]]
+	- Fixed-length 40 byte header
+	- No fragmentation allowed
+	- No checksum
+	- No options
+	
+	- Version
+	- _Priority:_ Identify priority among datagrams in flow
+	- _Flow label:_ identify datagrams in same "flow" (concept of "flow" not well defined)
+	- Payload length (length of payload)
+	- 
+- _ICMPv6_ new version of ICMP [[07 - NetworkLayerDataPlane.pdf#page=50|L8 page 50]]
+	- Additional message types e.g. "Packet Too Big"
+	- Multicast group management functions
+- 
