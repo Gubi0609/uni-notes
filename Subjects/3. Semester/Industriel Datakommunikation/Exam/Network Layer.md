@@ -313,4 +313,23 @@ I **think** that some $d_x(y)$ are known, and thus it's easier to choose a path,
 	- may be routing loops
 	- count-to-infinity problem
 
-**Robustness
+**Robustness**: What happens if router malfunctions?
+- **LS** node can advertise incorrect _link_ cost
+	- each node computes its _own_ table
+- **DV** node can advertise incorrect _path_ cost (black-holing)
+	- Each node's table used by others
+		- Error _propagate_ through network
+
+
+## Intra Autonomous System Routing
+As the communication of node changes would take up _very much_ real estate in the network, it would clog up communications
+
+And with _billions_ of destinations, we can't store all destinations in routing tables [[NetworkLayerControlPlane.pdf#page=20|L9 page 20]]
+
+**Administrative autonomy** [[NetworkLayerControlPlane.pdf#page=20|L9 page 20]]
+- Internet = Network of networks
+- Each network admin may want to control routing in its own network
+
+- Routers are aggregated into regions know as **AS** (**A**utonomous **S**ystems) a.k.a. _domains_
+
+**Intra AS routing* [[]]
