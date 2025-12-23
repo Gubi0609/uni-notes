@@ -11,7 +11,7 @@
 	- Retrieves and delivers _segments_ from/to Transport Layer
 	- Comply with network layer protocols
 		- Data plane: IP (IPv4, IPv6)
-		- Control plane: e.g. ICMP
+		- Control plane: e.g. ICMP (error reporting, router "signaling")
 	- Sends and receives _datagrams_ to/from other layer 3 (Network Layer) devices through the Link Layer
 - Protocol/Role at **router** [[07 - NetworkLayerDataPlane.pdf#page=8|L8 page 8]]
 	- Comply with network layer protocols
@@ -115,3 +115,15 @@
 	- **Tail drop:** drop arriving packet
 	- **Priority:** drop/remove on priority basis
 	- **Random:** drop/remove randomly
+
+## Internet Protocol Addressing
+**IP datagram format**
+- Length of words = 32 bits
+- IP protocol version number
+- Header length (number of 32 bit words)
+- Type of service (type of data)
+- Length (total datagram length (bytes))
+- 16-bit identifier **For fragmentation/reassembly**
+- Flags **For fragmentation/reassembly**
+- Fragment offset **For fragmentation/reassembly**
+- TTL (max number of rema)
