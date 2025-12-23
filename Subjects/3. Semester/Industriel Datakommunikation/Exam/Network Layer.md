@@ -88,3 +88,13 @@
 	- 11001000 00010111 00010**110 10100001** goes to interface **0** because it has the _longest_ matching prefix
 	- 11001000 00010111 00011**000 10101010** goes to interface **1** because it has the _longest_ matching prefix. Notice, that interface **2** ALSO matches, but since interface **1** has a longer prefix, that is chosen.
 
+### Switching fabrics
+- Three types of _switching fabrics_ [[07 - NetworkLayerDataPlane.pdf#page=22|L8 page 22]]
+	- Transfers packets from input buffer to appropriate output buffer
+	- Switching rate is rate at which packets can be transferred from input to output
+	- **Memory switching**
+	- **Bus switching**
+	- **Crossbar switching**
+- Input port queuing occurs if switching fabric is slower than input ports _combined_
+	- Queuing delay and *loss* due to input buffer overflow
+- Head of the Line (HOL) blocking
