@@ -113,4 +113,5 @@
 - **FIFO** scheduling: Send in order of arrival to queue
 	- Discard policy: If packets arrive to full queue, who to discard?
 	- **Tail drop:** drop arriving packet
-	- **Priority**
+	- **Priority:** drop/remove on priority basis
+	- **Random:** drop/remove randomly
