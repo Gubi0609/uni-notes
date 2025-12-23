@@ -73,4 +73,10 @@
 **Destination-based forwarding** [[07 - NetworkLayerDataPlane.pdf#page=20|L8 page 20]]
 - Has a _forwarding table_ with destination address ranges and corresponding link interfaces
 - Example:
-	- 11001000 00010111 00010**00
+	- 11001000 00010111 00010**00 00000000** through 11001000 0010111 00010**111 11111111** goes to Link Interface **0**
+	- 11001000 00010111 00011000 **00000000** through 11001000 00010111 00011000 **11111111** goes to Link Interface **1**
+	- 11001000 00010111 00011001 **00000000** through 11001000 00010111 00011111 **11111111** goes to Link Interface **2**
+	- Otherwise Link Interface **3**
+
+- To increase speed (i think?) when looking for forwarding table entry for given destination address, use _longest_ address prefix, that matches destination address. [[07 - NetworkLayerDataPlane.pdf#page=21|L8 page 21]]
+- Example: We have the following Destination Address Ranges (with the # representing the)
