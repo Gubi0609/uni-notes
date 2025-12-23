@@ -167,4 +167,19 @@ Each IP node on LAN has **ARP table** [[09 - The Link Layer.pdf#page=18|L10 page
 	- Error detected: Frame is dropped [[09 - The Link Layer.pdf#page=28|L10 page 28]]
 
 Ethernet is **connectionless** meaning that no handshaking between sending and receiving NICs [[09 - The Link Layer.pdf#page=29|L10 page 29]]
-Also **unreliable** because receiving NIC doesn't send ACKs or NACKs to sending NIC [[09]]
+Also **unreliable** because receiving NIC doesn't send ACKs or NACKs to sending NIC [[09 - The Link Layer.pdf#page=29|L10 page 29]]
+
+Ethernet's MAC protocol: unslotted **CSMA/CD** (Carrier-Sense Multiple Access with Collision Detection) **with backoff** [[09 - The Link Layer.pdf#page=29|L10 page 29]]
+- Is however handled by _switches_ in modern Access control
+	- Seperate physical connections
+	- MAC forwarding tables
+
+### Ethernet switch
+**Link Layer device** [[09 - The Link Layer.pdf#page=31|L10 page 31]]
+- Store and forward Ethernet _frames_
+- Examine incoming frame's MAC address, **selectively** forward frame to _one or more_ outgoing links when frame is to be forwarded on segment
+
+**Transparent** [[09 - The Link Layer.pdf"page=31|L10 page 31]]
+- Hosts are unaware of presence of switches
+
+**
