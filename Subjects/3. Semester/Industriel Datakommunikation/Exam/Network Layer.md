@@ -386,3 +386,17 @@ Like everything else in networking, OSPF is hierarchical [[NetworkLayerControlPl
 - _Area border router(s)_ connected to
 - _Internal (area) routers_
 
+### Inter-AS routing
+- **BGP** (**B**order **G**ateway **P**rotocol) [[NetworkLayerControlPlane.pdf#page=28|L9 page 28]]
+	- The de facto inter-domain routing protocol. _Glue that holds the Internet together_
+- BGP provides AS a means to: [[NetworkLayerControlPlane.pdf#page=28|L9 page 28]]
+	- Obtain subnet reachability information from neighboring AS'es (**eBGP** (external BGP))
+	- Determine routes to other networks bas on reachability information and **policy**
+	- Propagate reachability information to all AS-internal routers (**iBGP** (internal BGP))
+- Allows subnets to advertise its existence to rest of Internet (**"I am here"**) [[NetworkLayerControlPlane.pdf#page=28|L9 page 28]]
+	- IF IT WANTS TO
+
+**Gateway routers run both eBGP and iBGP** as eBGP is used to communicate with _other_ AS'es and iBGP is used to communicate with routers in own AS. [[NetworkLayerControlPlane.pdf#page=29|L9 pa]]
+All routers in AS communicate with _each and every other_ router in AS using iBGP
+
+
