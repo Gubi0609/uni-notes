@@ -349,4 +349,20 @@ And with _billions_ of destinations, we can't store all destinations in routing 
 - Router in AS1 receives datagram destined outside AS1.
 - **AS1 must** [[NetworkLayerControlPlane.pdf#page=23|L9 page 23]]
 	- Learn which destinations are reachable through connected AS2 and AS3
-	- Propagate this reachreachability ability info to _all_ routers in AS1
+	- Propagate this reachability info to _all_ routers in AS1
+
+**Kind of like highways and islands I think**
+- You come from _Vejle, Jylland_ and need to reach _København_ (example)
+- Your local city tells you, you must take the highway to _Fyn_. 
+- *Fyn* tells you, you must continue on highway towards _Sjælland_.
+- _Sjælland_ knows, that _København_ is on its island, so it routes you towards _København_
+
+### Intra-AS routing
+- Also known as _interior gateway protocols (IGP)_
+- Most common intra-AS routing protocols:
+	- **RIP** **R**outing **I**nformation **P**rotocol
+		- Classic DV: DVs exchanged every 30 secs
+		- No longer widely used
+	- **EIGRP** **E**nhanced **I**nterior **G**ateway **R**outing **P**rotocol
+		- DV based
+		- Formerly 
