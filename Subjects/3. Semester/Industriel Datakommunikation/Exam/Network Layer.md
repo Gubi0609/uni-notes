@@ -248,3 +248,23 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 	- Two approaches:
 	- _per router control_ (traditional)
 	- _logically centralized control_ (software defined networking)
+- **Goal:** Determine _good paths_ from sending hosts to receving host through network of routers [[NetworkLayerControlPlane.pdf#page=5|L9 page 5]]
+
+**Routing algorithm classifications** [[NetworkLayerControlPlane.pdf#page=8|L9 page 8]]
+- _Global_
+	- All routers have complete topology, link cost info
+	- "Link state" (**LS**) algorithms
+- _Decentralized_
+	- Router knows physically-connected neighbors, link costs to neighbors
+	- Iterative process of computation, exchange of info with neighbors
+	- "Distance Vector" (**DS**) algorithms
+
+- _Static_
+	- Routes change _slowly_ over time
+- _Dynamic_
+	- routes change more _quickly_
+		- Periodic updates
+		- In response to link cost changes
+
+### Dijkstra's Algorithm 
+- Net topology, link costs known to _all_ nodes
