@@ -35,4 +35,24 @@
 - **Error correction**
 	- Receiver identifies and correct bit error(s) without resorting to retransmission (2D parity bits (Hamming Codes))
 - **Half-duplex and full-duplex**
-	- With half
+	- With half-duplex nodes at both ends of link can transmit but not at same time. With full-duplex can do at same time
+
+Link layer is implemented in each and every host and router.
+Implemented in _adapter_ [[09 - The Link Layer.pdf#page=7|L10 page 7]]
+- Network Interface Card (**NIC**) or on a chip
+	- Ethernet card, 802.11 card; Ethernet chipset
+	- Implements Link **AND** physical layer
+- Attaches into host's system buses
+- Combination of hardware, software, firmware.
+- All upper layers are handled by CPU, which communicates with **NIC**, which transmits to network
+
+- **Sending side NIC** [[09 - The Link Layer.pdf#page=8|L10 page 8]]
+	- Encapsulates datagram in _frame_
+	- Adds error checking bits, RDT, flow control etc
+- **Receiving side NIC** [[09 - The Link Layer.pdf#page=8|L10 page 8]]
+	- Looks for errors, RDT, flow control etc.
+	- Extracts datagram, passes to upper layer at receiving side
+
+## Error detection and correction
+**EDC** (**E**rror **D**etection and **C**orrection bits) (redundancy)
+**
