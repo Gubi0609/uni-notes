@@ -18,8 +18,21 @@
 - Each link protocol provides different services
 	- E.g. may or may not provide RDT (**R**eliablie **D**ata **T**ransfer) over link
 
-- **Framing, link access:** Encapsulates datagram into frame, adding _header_ and _trailer_ [[0]]
+- **Framing, link access:** Encapsulates datagram into frame, adding _header_ and _trailer_ [[09 - The Link Layer.pdf#page=5|L10 page 5]]
 - Channel access if shared medium
 - **MAC** (**M**edia **A**ccess **C**ontrol) adresses used in frame headers to identify source and destination _nodes_
 	- **Different from IP address**
-	- 
+- **Reliable delivery between adjacent nodes** [[09 - The Link Layer.pdf#page=5|L10 page 5]]
+	- Seldom used on low bit-error link (e.g. fiber or some twisted pair)
+	- Wireles has _high_ error rates
+
+**Link layer services** [[09 - The Link Layer.pdf#page=6|L10 page 6]]
+- **Flow control**
+	- Pacing between adjacent sending and receiving nodes
+- **Error detection**
+	- Errors caused by signal attenuation, noise
+	- Receiver detects presence of errors and _signals sender for retransmission or drops frame_
+- **Error correction**
+	- Receiver identifies and correct bit error(s) without resorting to retransmission (2D parity bits (Hamming Codes))
+- **Half-duplex and full-duplex**
+	- With half
