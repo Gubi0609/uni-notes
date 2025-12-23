@@ -359,10 +359,30 @@ And with _billions_ of destinations, we can't store all destinations in routing 
 
 ### Intra-AS routing
 - Also known as _interior gateway protocols (IGP)_
-- Most common intra-AS routing protocols:
+- Most common intra-AS routing protocols: [[NetworkLayerControlPlane.pdf#page=24|L9 page 24]]
 	- **RIP** **R**outing **I**nformation **P**rotocol
 		- Classic DV: DVs exchanged every 30 secs
 		- No longer widely used
 	- **EIGRP** **E**nhanced **I**nterior **G**ateway **R**outing **P**rotocol
 		- DV based
-		- Formerly 
+		- Formerly Cisco-proprietary for decades (became open in 2013)
+	- **OSPF** **O**pen **S**hortest **P**ath **F**irst
+		- LS routing
+		- IS-IS protocol (ISO standard, not RFC standard) essentially same as OSPF
+
+**OSPF** [[NetworkLayerControlPlane.pdf#page=25|L9 page 25]]
+- Open: _publically available_
+- Uses LS algorithm (Dijktra)
+	- Link state packet dissemination
+	- Topology map at each node
+	- Route computation using Dijktra's algorithm
+- Router floods ESPF link-state advertisements to all other routers in _entire_ AS
+	- Carried OSPF messages directly over IP (rather than TCP or UDP)
+	- Link state for each attached link
+
+Like everything else in networking, OSPF is hierarchical [[NetworkLayerControlPlane.pdf#page=26|L9 page 26]]
+- Has _boundary_ router connected to
+- _Backbone router(s)_ connected to
+- _Area border router(s)_ connected to
+- _Internal (area) routers_
+
