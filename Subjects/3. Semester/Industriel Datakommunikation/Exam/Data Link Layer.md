@@ -11,4 +11,15 @@
 	- Wired or Wireless Links
 	- LANs
 - Layer-2 packet is a _frame_
-- **Data-Link Layer has responsibility of transferring datagrams from one node to _physically adjacant_ node o
+- **Data-Link Layer has responsibility of transferring datagrams from one node to _physically adjacent_ node over a link** [[09 - The Link Layer.pdf#page=3|L10 page 3]]
+
+- Datagram may be transferred by _different link protocols_ over _different links_ [[09 - The Link Layer.pdf#page=4|L10 page 4]]
+	- E.g. Ethernet on first link, frame realy on intermediate links, WiFi on last link
+- Each link protocol provides different services
+	- E.g. may or may not provide RDT (**R**eliablie **D**ata **T**ransfer) over link
+
+- **Framing, link access:** Encapsulates datagram into frame, adding _header_ and _trailer_ [[0]]
+- Channel access if shared medium
+- **MAC** (**M**edia **A**ccess **C**ontrol) adresses used in frame headers to identify source and destination _nodes_
+	- **Different from IP address**
+	- 
