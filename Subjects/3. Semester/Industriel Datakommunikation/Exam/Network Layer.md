@@ -148,3 +148,11 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 - **IP addresses associated with each interface**
 	- Hosts connected to same router will have similar IP
 
+- Devices on same _subnet_ can physically reach each other _without intervening router_ [[07 - NetworkLayerDataPlane.pdf#page=33|L8 page 33]]
+	- Eg. Devices in the same house will be able to communicate with each other without needing to reach residential router
+- To determine subnets, detach each interface from its host or router, creating islands of isolated networks [[07 - NetworkLayerDataPlane.pdf#page=34|L8 page 34]]
+	- Each isolated network is called a _subnet_
+
+- **CIDR** (**C**lassless **I**nter**D**omain **R**outing) [[07 - NetworkLayerDataPlane.pdf#page=35|L8 page 35]]
+	- Subnet portion of address of arbitrary length
+	- Address format: _a.b.c.d/x_ where _x_ is number of bits in subnet portion of ad
