@@ -213,3 +213,10 @@ If _not_ in table, the switch uses flooding
 **Flooding** works by sending the frame to _all_ the switch's interfaces, ensuring that the frame reaches the intended host (each host checks if it is their _own_ MAC address in frame. If not, it is just ignored)
 The switch then stores the correct MAC/interface mapping to use next time [[09 - The Link Layer.pdf#page=36|L10 page 36]]
 
+**Switches differ from routers** [[09 - The Link Layer.pdf#page=37|L10 page 37]]
+- _Routers:_ Network Layer devices
+- _Switches:_ Link Layer devices
+
+_Both have forwarding tables_
+- _Routers:_ Compute tables using *routing algorithms* → learning _IP addresses_
+- _Switches:_ Learn forwarding table using _flooding_ → learning _MAC addresses_
