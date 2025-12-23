@@ -396,7 +396,15 @@ Like everything else in networking, OSPF is hierarchical [[NetworkLayerControlPl
 - Allows subnets to advertise its existence to rest of Internet (**"I am here"**) [[NetworkLayerControlPlane.pdf#page=28|L9 page 28]]
 	- IF IT WANTS TO
 
-**Gateway routers run both eBGP and iBGP** as eBGP is used to communicate with _other_ AS'es and iBGP is used to communicate with routers in own AS. [[NetworkLayerControlPlane.pdf#page=29|L9 pa]]
-All routers in AS communicate with _each and every other_ router in AS using iBGP
+**Gateway routers run both eBGP and iBGP** as eBGP is used to communicate with _other_ AS'es and iBGP is used to communicate with routers in own AS. [[NetworkLayerControlPlane.pdf#page=29|L9 page 29]]
+All routers in AS communicate with _each and every other_ router in AS using iBGP  [[NetworkLayerControlPlane.pdf#page=29|L9 page 29]]
 
+### BGP basics [[NetworkLayerControlPlane.pdf#page=30|L9 page 30]]
+- **BGP session:** two BGP routers (peers) exchange BGP messages over TCP
+	- Advertising _paths_ to different destination network prefices
+	- **BGP is a path vector protocol**
+- When _AS3_ gateway router advertises path _AS3,X_ (route through AS3 to X) to _AS2_ gateway router
+	- AS3 **promises** to AS2 it will forward datagrams towards _X_
 
+BGP advertises attributes: _prefix + attributes = "route"_ [[NetworkLayerControlPlane.pdf#page=31|L9 page 31]]
+- 
