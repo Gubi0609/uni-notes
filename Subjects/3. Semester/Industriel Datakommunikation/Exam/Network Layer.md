@@ -162,4 +162,8 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 
 **How to get IP address** [[07 - NetworkLayerDataPlane.pdf#page=37|L8 page 37]]
 - Hard-coded by system admin in a file (static IP. Typically for servers I think)
-- DHCP (**D**ynamic **H**ost **C**onfiguration **P**rotocol): Dynamically get address from server
+- DHCP (**D**ynamic **H**ost **C**onfiguration **P**rotocol): Dynamically get address from server [[07 - NetworkLayerDataPlane.pdf#page=38|L8 page 38]]
+	- **Goal:** Allow host to _dynamically_ obtain its IP address from network server when it joins network
+		- Can renew its "lease" on address in use
+		- Allows reuse of addresses (only hold address while connected/"on")
+		- Support for mobile users who want to join network
