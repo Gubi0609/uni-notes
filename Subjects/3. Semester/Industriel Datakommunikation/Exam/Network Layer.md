@@ -235,4 +235,10 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 	- IPv6 datagram carried as _payload_ in IPv4 datagram among IPv4 routers
 	- Automatically packaged by IPv6 router when sending to IPv4 router. And unpacked again by IPv6 router when receiving from IPv4 router
 - IPv6 has been 25 years (and counting) under way for deployment [[07 - NetworkLayerDataPlane.pdf#page=54|L8 page 54]]
-	- Maybe because of outdated hardware, that is not capable of running IPv6, so IPv4 is still used on thos
+	- Maybe because of outdated hardware, that is not capable of running IPv6, so IPv4 is still used on those
+
+## Forwarding
+- Per-router Control Plane [[07 - NetworkLayerDataPlane.pdf#page=56|L8 page 56]]
+	- Each router has a _routing algorithm_ and it interacts with each and every router
+- SDN [[07 - NetworkLayerDataPlane.pdf#page=57|L8 page 57]]
+	- Each router contains a _flow table_ that is computed and distributed by a _logically centralized_ routing controller
