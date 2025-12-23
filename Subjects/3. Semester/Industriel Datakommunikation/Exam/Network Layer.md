@@ -167,3 +167,18 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 		- Can renew its "lease" on address in use
 		- Allows reuse of addresses (only hold address while connected/"on")
 		- Support for mobile users who want to join network
+- DHCP _protocol_ [[07 - NetworkLayerDataPlane.pdf#page=38|L8 page 38]]
+	- Host broadcasts _"DHCP discover"_ msh (optional)
+		- _Is there a DHCP server out there?_
+	- DHCP server respondes with _"DHCP offer"_ msg (optional)
+		- _Yes, that is me_
+	- Host requests IP address _""DHCP request"_ msg
+		- _Do you have an available IP address?_
+	- DHCP server sends address _"DHCP ack"_ msg
+		- _Yes, here is an available IP address for you_
+- DHCP can also return _more_ than just IP addresses [[07 - NetworkLayerDataPlane.pdf#page=40|L8 page 40]]
+	- Address of first-hop router for client
+	- Name and IP address of DNS server
+	- Network Mask (indicating network versus host portion of address (_a.b.c.d/x_))
+- A _network_ gets the subent part of its IP address from _ISP_'s address space [[07 - NetworkLayerDataPlane.pdf#page=41|L8 page 41]]
+- An _ISP_ gets block of addresses from **ICAN
