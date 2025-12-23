@@ -96,4 +96,14 @@ IP address is used for forwarding and routing in _Network Layer_
 - Represented in base 16. E.g. 1A-2F-BB-76-0-AD
 
 _Each_ adapter (NIC for example) on **LAN** (**L**ocal **A**rea **N**etwork) has _unique_ LAN address [[09 - The Link Layer.pdf#page=16|L10 page 16]]
-MAC address allocation administered by IEEE
+
+MAC address allocation administered by IEEE (**I**nstitute of **E**lectrical and **E**lectonics **E**ngineers) [[09 - The Link Layer.pdf#page=17|L10 page 17]]
+- Manufacturer buys portion of MAC address space (to ensure uniqueness)
+
+_Both_ IP and MAC are needed, as they serve different purposes. IP is used to route through the network, while MAC is used to communicate between nodes
+MAC is also **STATIC** so it is like Social Security Number, while IP is **DYNAMIC** like postal address (based on your current location) [[09 - The Link Layer.pdf#page=17|L10 page 17]]
+
+### ARP
+Each IP node on LAN has **ARP table** [[09 - The Link Layer.pdf#page=18|L10 page 18]]
+- IP/MAC mapping for some LAN nodes
+	- **<
