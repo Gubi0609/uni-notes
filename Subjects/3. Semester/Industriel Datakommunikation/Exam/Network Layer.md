@@ -61,7 +61,7 @@
 	- Physical layer: bit-level reception
 - _Link layer protocol (receive)_ [[07 - NetworkLayerDataPlane.pdf#page=18|L8 page 18]]
 	- Data Link Layer: e.g. Ethernet
-- _Lookup forwarding queuing_ [[07 - NetworkLayerDataPlane.pdf#page=18|L8 page 18]]
+- _Lookup, forwarding, queuing_ [[07 - NetworkLayerDataPlane.pdf#page=18|L8 page 18]]
 	- Decentralized switching
 		- Using **header field** values, _lookup_ output port using forwarding table in input port memory ("_match plus action_")
 		- **Goal**: Complete input port processing at 'line speed'
@@ -95,6 +95,9 @@
 	- **Memory switching**
 	- **Bus switching**
 	- **Crossbar switching**
-- Input port queuing occurs if switching fabric is slower than input ports _combined_
+- Input port queuing occurs if switching fabric is slower than input ports _combined_ [[07 - NetworkLayerDataPlane.pdf#page=23|L8 page 23]]
 	- Queuing delay and *loss* due to input buffer overflow
-- Head of the Line (HOL) blocking
+- Head of the Line (HOL) blocking occurs when a datagram at front of queue prevents others in queue from moving forward
+	- Eg. Port 1 and 3 both have **red** datagram, for **red** output port. The cannot both do it at the same time, so port 1 goes first. Now port 3 has both a **red** and a **green** datagram, but the **green** can't reach its output port before **red** datagram is removed.
+
+### Output ports
