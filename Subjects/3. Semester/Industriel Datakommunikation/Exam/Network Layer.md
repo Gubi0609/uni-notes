@@ -407,4 +407,19 @@ All routers in AS communicate with _each and every other_ router in AS using iBG
 	- AS3 **promises** to AS2 it will forward datagrams towards _X_
 
 BGP advertises attributes: _prefix + attributes = "route"_ [[NetworkLayerControlPlane.pdf#page=31|L9 page 31]]
+- Prefix: destination
+- Two important attributes:
+	- **AS-PATH** list of AS'es through which prefix advertisements has passed
+	- **NEXT-HOP** indicates specific internal-AS router to next-hop AS
+
+**Policy-based routing** [[NetworkLayerControlPlane.pdf#page=31|L9 page 31]]
+- Gateway receiving route advertisement uses**import policy** to accept/decline path (eg. never route through AS Y)
+- AS policy also determines whether to **advertise** path to other neighboring AS'es
+
+**BGP path advertisement** [[NetworkLayerControlPlane.pdf#page=32|L9 page 32]]
+- AS2 gateway router receives path advertisement _AS3,X_ from AS3 gateway router
+- Based on AS2 plicy, AS2 gateway router accepts path AS3,X and propagates to _all_ AS2 routers
+- Based on AS2 policy, other AS2 gateway router advertises path _AS2, AS3, X_ to AS1 gateway router
+
+Gateway router may learn about _multiple_ paths to destination [[NetworkLayerControlPlane.pdf#page=33|L9 page 33]]
 - 
