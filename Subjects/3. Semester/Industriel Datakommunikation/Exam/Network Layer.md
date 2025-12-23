@@ -28,4 +28,15 @@
 - Network Layer protocols in _every_ host and router
 - Router examines **header fields** in _all_ IP datagrams passing through it
 
-- **Forwarding*
+- **Forwarding** is moving packets from router's input to appropriate router output [[07 - NetworkLayerDataPlane.pdf#page=10|L8 page 10]]
+- **Routing** determines route taken by packets from source to destination [[07 - NetworkLayerDataPlane.pdf#page=10|L8 page 10]]
+- Like taking a trip. _Forwarding_ is the current intersection, _Routing_ is the planning of the trip
+
+**Data plane** [[07 - NetworkLayerDataPlane.pdf#page=11|L8 page 11]]
+- Local, per-router function
+- Determines how datagram arriving on router input port is forwarded to router output port
+- _Forwarding_ function
+
+**Control plane** [[07 - NetworkLayerDataPlane.pdf#page=11|L8 page 11]]
+- Network-wide logic
+- Determines how datagram is routed among routers along E2E path from source host to destination host
