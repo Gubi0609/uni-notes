@@ -100,4 +100,17 @@
 - Head of the Line (HOL) blocking occurs when a datagram at front of queue prevents others in queue from moving forward
 	- Eg. Port 1 and 3 both have **red** datagram, for **red** output port. The cannot both do it at the same time, so port 1 goes first. Now port 3 has both a **red** and a **green** datagram, but the **green** can't reach its output port before **red** datagram is removed.
 
-### Output ports
+### Output ports [[07 - NetworkLayerDataPlane.pdf#page=24|L8 page 24]]
+- _Datagram buffer, queuing_
+	- **Buffering** is required when datagrams arrive from fabric _faster_ than the transmission rate
+		- Datagrams can be lost due to congestion/lack of buffers
+- _Link layer protocol (send)_
+	- **Scheduling discipline** chooses among queued datagrams for transmission
+		- Priority scheduling: Who gets best performance?
+- _Line termination_
+
+- Scheduling chooses next packet to send on link [[07 - NetworkLayerDataPlane.pdf#page=25|L8 page 25]]
+- **FIFO** scheduling: Send in order of arrival to queue
+	- Discard policy: If packets arrive to full queue, who to discard?
+	- **Tail drop:** drop arriving packet
+	- **Priority**
