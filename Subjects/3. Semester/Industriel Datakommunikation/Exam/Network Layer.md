@@ -267,4 +267,18 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 		- In response to link cost changes
 
 ### Dijkstra's Algorithm 
-- Net topology, link costs known to _all_ nodes
+- Net topology, link costs known to _all_ nodes [[NetworkLayerControlPlane.pdf#page=9|L9 page 9]]
+	- Accomplished via **LS** broadcast
+	- All nodes have same info
+- Computes _least cost paths_ from one node ('source') to _all other_ nodes
+	- Gives _forwarding table_ for that node
+- **Iterative**
+	- After _k_ iterations, know least cost path to _k_ destinations
+
+**Notation:** [[NetworkLayerControlPlane.pdf#page=9|L9 page 9]]
+- *c(x,y)* link cost from node _x_ to _y_ = $\infty$ if not direct neighbors
+- _D(v)_ current value of cost path from source to destination _v_
+- *p(v)* predecessor node along path from source to _v_
+- _N'_ set of nodes whose least cost path definitively known
+
+**Basically, we start from one node, and check all neighbors. Then choose _least cost path_. Then check _new_ node and choose _least cost path_, that takes us _further_ from start node.**
