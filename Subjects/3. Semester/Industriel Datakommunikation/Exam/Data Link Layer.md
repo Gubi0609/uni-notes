@@ -135,3 +135,22 @@ Each IP node on LAN has **ARP table** [[09 - The Link Layer.pdf#page=18|L10 page
 - **B** unpacks, sees its own IP, and processes further
 
 ## Ethernet
+- Single chip, multiple speeds [[09 - The Link Layer.pdf#page=25|L10 page 25]]
+- First widely used LAN technology
+- Simpler, cheap
+- Kept up with speed race: 10Mbps - 10 Gbps
+
+**Physical Topology** [[09 - The Link Layer.pdf#page=26|L10 page 26]]
+- _Bus_
+	- All nodes in same collision domain (can collide with each other)
+	- Popular through mid 90s
+- _Star_
+	- Active **switch** in center
+	- Each connection point runs a (seperate) Ethernet protocol (nodes do _not_ collide with each other)
+	- Prevails today
+
+**Ethernet Frame Structure**
+- Sending adapter (e.g. NIC) encapsulates IP datagram (or other network layer protocol packet) in **Ethernet frame** [[09 - The Link Layer.pdf#page=27|L10 page 27]]
+- Consists of:
+- Preamble
+	- / bits with pattern 10101010 followed 
