@@ -54,4 +54,17 @@
 	- High-speed _switching fabric_
 	- Router _output_ ports
 - Has a _routing, management control plane_  (software) which operates in millisecond timeframe [[07 - NetworkLayerDataPlane.pdf#page=17|L8 page 17]]
-	- _Routing processor_. Communicates with
+	- _Routing processor_. Communicates with switching fabric
+
+### Input port
+- _Line termination_ [[07 - NetworkLayerDataPlane.pdf#page=18|L8 page 18]]
+	- Physical layer: bit-level reception
+- _Link layer protocol (receive)_ [[07 - NetworkLayerDataPlane.pdf#page=18|L8 page 18]]
+	- Data Link Layer: e.g. Ethernet
+- _Lookup forwarding queuing_ [[07 - NetworkLayerDataPlane.pdf#page=18|L8 page 18]]
+	- Decentralized switching
+		- Using **header field** values, _lookup_ output port using forwarding table in input port memory ("_match plus action_")
+		- **Goal**: Complete input port processing at 'line speed'
+		- Queuing occurs of datagrams arrive faster than forwarding rate into switch fabric
+		
+		- _Destination-based forwarding_
