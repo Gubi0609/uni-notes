@@ -332,4 +332,21 @@ And with _billions_ of destinations, we can't store all destinations in routing 
 
 - Routers are aggregated into regions know as **AS** (**A**utonomous **S**ystems) a.k.a. _domains_
 
-**Intra AS routing* [[]]
+**Intra AS routing** [[NetworkLayerControlPlane.pdf#page=21|L9 page 21]]
+- Routing among hosts and routers in _same_ AS
+- All routers in AS must run _same_ intra-domain protocol
+- Routers in _different_ AS can run _different_ intra-domain routing protocol
+- **Gateway router** at _edge_ of its own AS has link(s) to router(s) in other AS'es
+
+**Inter AS routing** [[NetworkLayerControlPlane.pdf#page=21|L9 page 21]]
+- Routing among AS'es
+- **Gateway routers** perfrom inter-domain routing (_as well as_ intra-domain routing)
+
+
+- Forwarding table configured by both intra- and inter-AS routing algorithm [[NetworkLayerControlPlane.pdf#page=22|L9 page 22]]
+
+
+- Router in AS1 receives datagram destined outside AS1.
+- **AS1 must** [[NetworkLayerControlPlane.pdf#page=23|L9 page 23]]
+	- Learn which destinations are reachable through connected AS2 and AS3
+	- Propagate this reachreachability ability info to _all_ routers in AS1
