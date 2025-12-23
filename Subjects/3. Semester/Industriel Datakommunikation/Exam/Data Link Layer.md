@@ -55,4 +55,23 @@ Implemented in _adapter_ [[09 - The Link Layer.pdf#page=7|L10 page 7]]
 
 ## Error detection and correction
 **EDC** (**E**rror **D**etection and **C**orrection bits) (redundancy)
-**
+**D** is **D**ata protected by error checking. May include _header fileds_
+
+==Error detection is not 100% reliable== [[09 - The Link Layer.pdf#page=10|L10 page 10]]
+- Larger EDC field yields better detection and correction
+
+### Parity checking [[09 - The Link Layer.pdf#page=11|L10 page 11]]
+**Single bit parity**
+- Detects single bit errors
+- One bit is appended, to set _even_ number of **1**'s
+
+**Two-dimensional bit parity**
+- Detects _and_ corrects single bit errors
+- Detects even number of bit errors, but does not correct
+- For 16 bit _frame_ 11 bits are **Data** and 5 bits are **EDC**
+
+**Used for Serial links (UART, RS-232), as not so error prone** [[09 - The Link Layer.pdf#page=12|L10 page 12]]
+
+### CRC [[09 - The Link Layer.pdf#page=11|L10 page 11]]
+- Also see [[CRC]] page for self-written explanation of it
+- Used for Ethernet and Wireless (Wifi, 45/5g)
