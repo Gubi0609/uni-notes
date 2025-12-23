@@ -184,3 +184,23 @@ Ethernet's MAC protocol: unslotted **CSMA/CD** (Carrier-Sense Multiple Access wi
 
 **Plug and play, self learning** [[09 - The Link Layer.pdf#page=31|L10 page 31]]
 - Switches do not need to be configured **(unless they are managed by switches)**
+
+Switches can handle _multiple simultaneous transmissions_ [[09 - The Link Layer.pdf#page=32|L10 page 32]]
+- Hosts have dedicated, direct connection to switch
+- Switches buffer packets
+- Ethernet protocol used on _each_ incoming link, but **no collisions**; full duplex
+	- Each link is its own collision domain
+- **Switching:**
+	- A-to-A' and B-to-B' can transmit _simultaneously_ without collisions
+
+Each switch has a _switch table_, so that it knows A' is reachable via interface 4 etc. [[09 - The Link Layer.pdf#page=33|L10 page 33]]
+Each entry:
+- MAC address of host, interface to reach host, time stamp
+- Looks like a routing/forwarding table!
+
+The switch _learns_ which hosts can be reached through which interfaces [[09 - The Link Layer.pdf#page=34|L10 page 34]]
+- When frame received, switch _learns_ location of sender: incoming LAN segment
+- Records sender/location pair in switch table
+- Table:
+	- MAC addr
+	- 
