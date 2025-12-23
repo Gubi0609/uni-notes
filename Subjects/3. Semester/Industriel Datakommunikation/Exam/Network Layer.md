@@ -186,6 +186,14 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 ## NAT
 - NAT: **N**etwork **A**ddress **T**ranslation
 - Translation for _local_ network (e.g. home network) [[07 - NetworkLayerDataPlane.pdf#page=44|L8 page 44]]
-- _All_ datagrams _leaving_ local network have _same_ single source NAT IP address
+- _All_ datagrams _leaving_ local network have _same_ single source NAT IP address [[07 - NetworkLayerDataPlane.pdf#page=44|L8 page 44]]
 	- Different source port numbers
-	- Datagrams with source or destination in this network have _a.b.c.d/_
+	- Datagrams with source or destination in this network have _a.b.c.d/x_ adress for source and destination (as usual)
+- **Motivation:** Local network uses just _one_ IP address as far as outside world is concerned [[07 - NetworkLayerDataPlane.pdf#page=45|L8 page 45]]
+	- Range of addresses not needed from ISP. Just one IP address for all devices
+	- Can change addresses of devices in local network without notifying outside world
+	- Can change ISP without changing addresses of devices in local network
+	- Devices inside local network not explicitly addressable, visible by outside world (extra security)
+- **Implementation** Every NAT router must: [[07 - NetworkLayerDataPlane.pdf#page=46|L8 page 46]]
+	- _Outgoing datagrams:_ **Replace** source IP address, port # of EVERY outgoing datagram to NAT IP address, new port #
+	- _Remember (in NAT translation table)_ every source IP address, port # to NAT IP address, new port # translati
