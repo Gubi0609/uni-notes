@@ -83,7 +83,17 @@ Implemented in _adapter_ [[09 - The Link Layer.pdf#page=7|L10 page 7]]
 **MAC** (Multi Access Control)
 **ARP** (Address Resolution Protocol)
 
-- **Broadcast** (shared wire or medium (e.g. Wifi))
+- **Broadcast** (shared wire or medium (e.g. Wifi)) [[09 - The Link Layer.pdf#page=14|L10 page 14]]
 - Core problem:
 	- Single shared broadcast channel
-	- Two or more simultaneous transmissions by nodes → Intefre
+	- Two or more simultaneous transmissions by nodes → **Inteference**
+		- **Collision** if node receives two or more signals at the same time
+
+IP address is used for forwarding and routing in _Network Layer_
+**MAC** (or LAN or physical or Ethernet) address is: [[09 - The Link Layer.pdf#page=15|L10 page 15]]
+- Used **locally** to get frame from one _interface_ to another **physically connected** interface (same network in IP-addressing sense)
+- 48-bit MAC address burned in **NIC** ROM, also sometimes software settable
+- Represented in base 16. E.g. 1A-2F-BB-76-0-AD
+
+_Each_ adapter (NIC for example) on **LAN** (**L**ocal **A**rea **N**etwork) has _unique_ LAN address [[09 - The Link Layer.pdf#page=16|L10 page 16]]
+MAC address allocation administered by IEEE
