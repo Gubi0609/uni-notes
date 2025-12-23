@@ -221,8 +221,18 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 	- _Priority:_ Identify priority among datagrams in flow
 	- _Flow label:_ identify datagrams in same "flow" (concept of "flow" not well defined)
 	- Payload length (length of payload)
-	- 
+	- _Next header:_ Identify upper layer protocol for data (in the payload)
+	- Hop limit
+	- Source address (128 bits)
+	- Destination address (128 bits)
 - _ICMPv6_ new version of ICMP [[07 - NetworkLayerDataPlane.pdf#page=50|L8 page 50]]
 	- Additional message types e.g. "Packet Too Big"
 	- Multicast group management functions
-- 
+
+- Upgrading from IPv4 to IPv6 is _not_ easy [[07 - NetworkLayerDataPlane.pdf#page=52|L8 page 52]]
+	- Not all routers can be upgraded simultaneously
+- To operate network with _mixed_ IPv4 and IPv6 routers **tunneling** is used [[07 - NetworkLayerDataPlane.pdf#page=52|L8 page 52]]
+	- IPv6 datagram carried as _payload_ in IPv4 datagram among IPv4 routers
+	- Automatically packaged by IPv6 router when sending to IPv4 router. And unpacked again by IPv6 router when receiving from IPv4 router
+- IPv6 has been 25 years (and counting) under way for deployment [[07 - NetworkLayerDataPlane.pdf#page=54|L8 page 54]]
+	- Maybe because of outdated hardware, that is not capable of running IPv6, so IPv4 is still used on thos
