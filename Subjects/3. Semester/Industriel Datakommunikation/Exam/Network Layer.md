@@ -67,4 +67,10 @@
 		- **Goal**: Complete input port processing at 'line speed'
 		- Queuing occurs of datagrams arrive faster than forwarding rate into switch fabric
 		
-		- _Destination-based forwarding_
+		- _Destination-based forwarding:_ forward based only on destination IP address (**traditional**) [[07 - NetworkLayerDataPlane.pdf#page=19|L8 page 19]]
+		- _Generalized forwarding:_ forward based on _any set_ of header field values[[07 - NetworkLayerDataPlane.pdf#page=19|L8 page 19]]
+
+**Destination-based forwarding** [[07 - NetworkLayerDataPlane.pdf#page=20|L8 page 20]]
+- Has a _forwarding table_ with destination address ranges and corresponding link interfaces
+- Example:
+	- 11001000 00010111 00010**00
