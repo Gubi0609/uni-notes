@@ -136,6 +136,15 @@
 
 _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==40 bytes!== + App Layer overhead_
 
-- If a large datagram is sent, it can be split into smaller diagrams. Through the _whole_ transfer process, they are kept small, and _only_ reassembled at **final destination**.
+- If a large datagram is sent, it can be split into smaller diagrams. Through the _whole_ transfer process, they are kept small, and _only_ reassembled at **final destination**. [[07 - NetworkLayerDataPlane.pdf#page=29|L8 page 29]]
 	- Network links have MTU (max transfer size) = largest possible link-level frame
-	- Different l
+	- Different link types - Different MTUs
+- IP header bits used to identify order related fragments
+
+
+- _Interface_ is the connection between host/router and physical link
+	- Routers typically have _multiple_ interfaces
+	- Hosts typically has _one or two_ interfaces (e.g. Wired Ethernet, wireless 802.11)
+- **IP addresses associated with each interface**
+	- Hosts connected to same router will have similar IP
+
