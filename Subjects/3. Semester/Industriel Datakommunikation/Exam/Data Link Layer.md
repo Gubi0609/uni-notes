@@ -179,7 +179,8 @@ Ethernet's MAC protocol: unslotted **CSMA/CD** (Carrier-Sense Multiple Access wi
 - Store and forward Ethernet _frames_
 - Examine incoming frame's MAC address, **selectively** forward frame to _one or more_ outgoing links when frame is to be forwarded on segment
 
-**Transparent** [[09 - The Link Layer.pdf"page=31|L10 page 31]]
+**Transparent** [[09 - The Link Layer.pdf#page=31|L10 page 31]]
 - Hosts are unaware of presence of switches
 
-**
+**Plug and play, self learning** [[09 - The Link Layer.pdf#page=31|L10 page 31]]
+- Switches do not need to be configured **(unless they are managed by switches)**
