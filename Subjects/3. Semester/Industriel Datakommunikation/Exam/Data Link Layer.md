@@ -153,4 +153,18 @@ Each IP node on LAN has **ARP table** [[09 - The Link Layer.pdf#page=18|L10 page
 - Sending adapter (e.g. NIC) encapsulates IP datagram (or other network layer protocol packet) in **Ethernet frame** [[09 - The Link Layer.pdf#page=27|L10 page 27]]
 - Consists of:
 - Preamble
-	- / bits with pattern 10101010 followed 
+	- 7 bits with pattern 10101010 followed by 7 bits with pattern 10101011
+	- Used to synchronize receiver, sender clock rates
+- Dest. MAC address
+	- 6 bytes
+	- If adapter _receives_ frame with matching dest. address, or with broadcast address (e.g. ARP packet) it passes data in frame to network layer protocol [[09 - The Link Layer.pdf#page=28|L10 page 28]]
+	- Otherwise, adapter discards frame
+- Src. MAC address
+- Type
+	- Indicates higher layer protocol (mostly IP but others possible, e.g. ARP) [[09 - The Link Layer.pdf#page=28|L10 page 28]]
+- Data (payload)
+- CRC
+	- Error detected: Frame is dropped [[09 - The Link Layer.pdf#page=28|L10 page 28]]
+
+Ethernet is **connectionless** meaning that no handshaking between sending and receiving NICs [[09 - The Link Layer.pdf#page=29|L10 page 29]]
+Also **unreliable** because receiving NIC doesn't send ACKs or NACKs to sending NIC [[09]]
