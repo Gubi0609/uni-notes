@@ -72,6 +72,18 @@ Implemented in _adapter_ [[09 - The Link Layer.pdf#page=7|L10 page 7]]
 
 **Used for Serial links (UART, RS-232), as not so error prone** [[09 - The Link Layer.pdf#page=12|L10 page 12]]
 
-### CRC [[09 - The Link Layer.pdf#page=11|L10 page 11]]
+### CRC [[09 - The Link Layer.pdf#page=12|L10 page 12]]
 - Also see [[CRC]] page for self-written explanation of it
-- Used for Ethernet and Wireless (Wifi, 45/5g)
+- Used for Ethernet and Wireless (Wifi, 4G/5G), as prone to _burst errors_
+	- Wireless also uses **FEC** (**F**orward **E**rror **C**orrection)
+	- The costiler the retransmission, the stronger FEC method is justified
+
+
+## MAC and ARP
+**MAC** (Multi Access Control)
+**ARP** (Address Resolution Protocol)
+
+- **Broadcast** (shared wire or medium (e.g. Wifi))
+- Core problem:
+	- Single shared broadcast channel
+	- Two or more simultaneous transmissions by nodes → Intefre
