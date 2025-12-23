@@ -17,4 +17,15 @@
 	- Comply with network layer protocols
 		- Data plane: IP (IPv4, IPv6)
 		- Control  plane: e.g. ICMP
-	- Sends and receives _datagrams_ to/from other layer 3 (Neto)
+	- Sends and receives _datagrams_ to/from other layer 3 (Network Layer) devices through the Link Layer
+	- Forward datagrams from one interface (physical port) to another
+	- Route datagrams to the "right" interface
+
+**Overall Role of Network Layer** [[07 - NetworkLayerDataPlane.pdf#page=9|L8 page 9]]
+- Transport _segments_ from sending to receiving host
+- On **sending** side, encapsulates segments into _datagrams_
+- On **receiving** side, delivers segments to Transport Layer
+- Network Layer protocols in _every_ host and router
+- Router examines **header fields** in _all_ IP datagrams passing through it
+
+- **Forwarding*
