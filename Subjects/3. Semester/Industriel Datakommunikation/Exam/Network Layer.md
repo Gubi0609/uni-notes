@@ -117,7 +117,7 @@
 	- **Random:** drop/remove randomly
 
 ## Internet Protocol Addressing
-**IP datagram format**
+**IP datagram format** [[07 - NetworkLayerDataPlane.pdf#page=28|L8 page 28]]
 - Length of words = 32 bits
 - IP protocol version number
 - Header length (number of 32 bit words)
@@ -126,4 +126,16 @@
 - 16-bit identifier **For fragmentation/reassembly**
 - Flags **For fragmentation/reassembly**
 - Fragment offset **For fragmentation/reassembly**
-- TTL (max number of rema)
+- TTL (max number of remaining hops. Decremented at _each_ router)
+- Upper layer protocol to deliver payload to (TCP/UDP/...)
+- Header checksum (16 bits)
+- 32 bit source IP address
+- 32 bit destination IP address
+- Options (if any)
+	- E.g Timestamp, record route taken, specify list of routers to visit
+
+_With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==40 bytes!== + App Layer overhead_
+
+- If a large datagram is sent, it can be split into smaller diagrams. Through the _whole_ transfer process, they are kept small, and _only_ reassembled at **final destination**.
+	- Network links have MTU (max transfer size) = largest possible link-level frame
+	- Different l
