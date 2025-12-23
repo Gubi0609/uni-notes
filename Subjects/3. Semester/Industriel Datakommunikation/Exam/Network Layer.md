@@ -181,4 +181,11 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 	- Name and IP address of DNS server
 	- Network Mask (indicating network versus host portion of address (_a.b.c.d/x_))
 - A _network_ gets the subent part of its IP address from _ISP_'s address space [[07 - NetworkLayerDataPlane.pdf#page=41|L8 page 41]]
-- An _ISP_ gets block of addresses from **ICAN
+- An _ISP_ gets block of addresses from **ICANN** (**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers)
+
+## NAT
+- NAT: **N**etwork **A**ddress **T**ranslation
+- Translation for _local_ network (e.g. home network) [[07 - NetworkLayerDataPlane.pdf#page=44|L8 page 44]]
+- _All_ datagrams _leaving_ local network have _same_ single source NAT IP address
+	- Different source port numbers
+	- Datagrams with source or destination in this network have _a.b.c.d/_
