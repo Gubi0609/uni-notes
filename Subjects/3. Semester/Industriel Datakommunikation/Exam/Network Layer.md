@@ -40,3 +40,11 @@
 **Control plane** [[07 - NetworkLayerDataPlane.pdf#page=11|L8 page 11]]
 - Network-wide logic
 - Determines how datagram is routed among routers along E2E path from source host to destination host
+- Two approaches:
+	- _Traditional routing algorithms:_ Implemented in routers
+		- Individual routing algorithm components in _each and every router_ interact in the control plane [[07 - NetworkLayerDataPlane.pdf#page=12|L8 page 12]]
+	- _Software-defined networking (SDN):_ Implemented in (remote) servers
+		- A distincrt (typically remote) controller interacts with local controls agents (CAs) [[07 - NetworkLayerDataPlane.pdf#page=13|L8 page 13]]
+
+- Could be great with lots of guarantees (delivery, bounded delay etc.), but is **Best-effort service** [[07 - NetworkLayerDataPlane.pdf#page=14|L8 page 14]]
+
