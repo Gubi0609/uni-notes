@@ -79,4 +79,12 @@
 	- Otherwise Link Interface **3**
 
 - To increase speed (i think?) when looking for forwarding table entry for given destination address, use _longest_ address prefix, that matches destination address. [[07 - NetworkLayerDataPlane.pdf#page=21|L8 page 21]]
-- Example: We have the following Destination Address Ranges (with the # representing the)
+- Example: We have the following Destination Address Ranges (with the # representing the variables within that range)
+	- 11001000 00010111 00010### ######## to link interface **0**
+	- 11001000 00010111 00011000 ######## to link interface **1**
+	- 11001000 00010111 00011## ######## to link interface **2**
+	- Otherwise link interface **3**
+- The following inputs are given, and must go the _longest_ address prefix, that matches
+	- 11001000 00010111 00010**110 10100001** goes to interface **0** because it has the _longest_ matching prefix
+	- 11001000 00010111 00011**000 10101010** goes to interface **1** because it has the _longest_ matching prefix. Notice, that interface **2** ALSO matches, but since interface **1** has a longer prefix, that is chosen.
+
