@@ -201,6 +201,15 @@ Each entry:
 The switch _learns_ which hosts can be reached through which interfaces [[09 - The Link Layer.pdf#page=34|L10 page 34]]
 - When frame received, switch _learns_ location of sender: incoming LAN segment
 - Records sender/location pair in switch table
-- Table:
+- Table: [[09 - The Link Layer.pdf#page=34|L10 page 34]]
 	- MAC addr
-	- 
+	- Interface
+	- TTL
+
+When receiving an incoming frame, the switch looks at its switch table. [[09 - The Link Layer.pdf#page=35|L10 page 35]]
+_If_ destination MAC is in table, it just forwards to that interface
+If _not_ in table, the switch uses flooding
+
+**Flooding** works by sending the frame to _all_ the switch's interfaces, ensuring that the frame reaches the intended host (each host checks if it is their _own_ MAC address in frame. If not, it is just ignored)
+The switch then stores the correct MAC/interface mapping to use next time [[09 - The Link Layer.pdf#page=36|L10 page 36]]
+
