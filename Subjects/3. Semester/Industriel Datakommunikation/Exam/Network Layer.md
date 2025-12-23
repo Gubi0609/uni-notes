@@ -242,3 +242,9 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 	- Each router has a _routing algorithm_ and it interacts with each and every router
 - SDN [[07 - NetworkLayerDataPlane.pdf#page=57|L8 page 57]]
 	- Each router contains a _flow table_ that is computed and distributed by a _logically centralized_ routing controller
+
+## Control plane
+- **Routing** determines route taken by packets from source to destination [[NetworkLayerControlPlane.pdf#page=4|L9 page 4]]
+	- Two approaches:
+	- _per router control_ (traditional)
+	- _logically centralized control_ (software defined networking)
