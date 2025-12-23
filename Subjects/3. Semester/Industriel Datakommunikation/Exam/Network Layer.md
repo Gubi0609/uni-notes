@@ -188,7 +188,7 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 - Translation for _local_ network (e.g. home network) [[07 - NetworkLayerDataPlane.pdf#page=44|L8 page 44]]
 - _All_ datagrams _leaving_ local network have _same_ single source NAT IP address [[07 - NetworkLayerDataPlane.pdf#page=44|L8 page 44]]
 	- Different source port numbers
-	- Datagrams with source or destination in this network have _a.b.c.d/x_ adress for source and destination (as usual)
+	- Datagrams with source or destination in this network have _a.b.c.d/x_ address for source and destination (as usual)
 - **Motivation:** Local network uses just _one_ IP address as far as outside world is concerned [[07 - NetworkLayerDataPlane.pdf#page=45|L8 page 45]]
 	- Range of addresses not needed from ISP. Just one IP address for all devices
 	- Can change addresses of devices in local network without notifying outside world
@@ -196,4 +196,12 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 	- Devices inside local network not explicitly addressable, visible by outside world (extra security)
 - **Implementation** Every NAT router must: [[07 - NetworkLayerDataPlane.pdf#page=46|L8 page 46]]
 	- _Outgoing datagrams:_ **Replace** source IP address, port # of EVERY outgoing datagram to NAT IP address, new port #
-	- _Remember (in NAT translation table)_ every source IP address, port # to NAT IP address, new port # translati
+	- _Remember (in NAT translation table)_ every source IP address, port # to NAT IP address, new port # translation pair
+	- _Incoming datagrams:_ **Replace** NAT IP address, new port # in destination fields of every incoming datagram with corresponding source IP address, port # stored in NAT table
+- **Nat is controversial** [[07 - NetworkLayerDataPlane.pdf#page=48|L8 page 48]]
+	- Routers should only process up to layer 3 (Network Layer)
+	- Address shortage should be solved by IPv6
+	- Violates E2E argument
+		- NAT possibility must be taken into account by app designers e.g. P2P applications
+- **Port forwarding** can be used to access hosts within NAT network from outside the network
+	- E.g. running a web-applications on a home network. Can be accessed from static IP using port forwarding
