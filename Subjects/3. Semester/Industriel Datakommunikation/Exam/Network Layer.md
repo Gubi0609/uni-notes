@@ -155,4 +155,11 @@ _With 20 bytes of TCP overhead and 20 bytes of IP overhead total overhead is ==4
 
 - **CIDR** (**C**lassless **I**nter**D**omain **R**outing) [[07 - NetworkLayerDataPlane.pdf#page=35|L8 page 35]]
 	- Subnet portion of address of arbitrary length
-	- Address format: _a.b.c.d/x_ where _x_ is number of bits in subnet portion of ad
+	- Address format: _a.b.c.d/x_ where _x_ is number of bits in subnet portion of address
+		- Example: **11001000 00010111 0001000**0 00000000
+			- 200.23.16.0/**23** because 23 bits (the bold part) is the subnet part, whereas the normal part is the host part
+- Can have $2^x$ subnets, because we operate in binary. So for subnet mask /16, number of subnets is $2^{16}=65536$. [[07 - NetworkLayerDataPlane.pdf#page=36±L8 page 36]]
+
+**How to get IP address** [[07 - NetworkLayerDataPlane.pdf#page=37|L8 page 37]]
+- Hard-coded by system admin in a file (static IP. Typically for servers I think)
+- DHCP (**D**ynamic **H**ost **C**onfiguration **P**rotocol): Dynamically get address from server
