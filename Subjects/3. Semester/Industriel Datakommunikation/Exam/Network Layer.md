@@ -65,7 +65,7 @@
 	- Decentralized switching
 		- Using **header field** values, _lookup_ output port using forwarding table in input port memory ("_match plus action_")
 		- **Goal**: Complete input port processing at 'line speed'
-		- Queuing occurs of datagrams arrive faster than forwarding rate into switch fabric
+		- Queuing occurs if datagrams arrive faster than forwarding rate into switch fabric
 		
 		- _Destination-based forwarding:_ forward based only on destination IP address (**traditional**) [[07 - NetworkLayerDataPlane.pdf#page=19|L8 page 19]]
 		- _Generalized forwarding:_ forward based on _any set_ of header field values[[07 - NetworkLayerDataPlane.pdf#page=19|L8 page 19]]
