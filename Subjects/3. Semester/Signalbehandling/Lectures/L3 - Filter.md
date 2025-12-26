@@ -1,6 +1,6 @@
 
 ---
-**Date:** 2025-09-17
+**Date:** 2025-09-18
 
 ## Preparation
 
@@ -12,11 +12,8 @@
 
 ---
 # Relevant documents
-[[Lecture - DFT.pdf]]
-[[Exercise - DFT.pdf]]
-
-[[Exercise - Fourier PPG application.pdf]]
-[[Lecture - FFT.pdf]]
+[[Lecture - Filter.pdf]]
+[[Exercise - Filter.pdf]]
 
 # Topics
 

@@ -1,6 +1,6 @@
 
 ---
-**Date:** 2025-09-17
+**Date:** 2025-09-25
 
 ## Preparation
 
@@ -12,11 +12,8 @@
 
 ---
 # Relevant documents
-[[Lecture - DFT.pdf]]
-[[Exercise - DFT.pdf]]
-
-[[Exercise - Fourier PPG application.pdf]]
-[[Lecture - FFT.pdf]]
+[[Lecture - Sampling and Reconstruction-1.pdf]]
+[[Exercise - Sampling Reconstruction.pdf]]
 
 # Topics
 
