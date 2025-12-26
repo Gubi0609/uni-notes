@@ -16,7 +16,7 @@
 
 FTP, SMTP, HTTP
 
-- OSI model [[L1 - Introduction]]
+- OSI model [[Subjects/3. Semester/Industriel Datakommunikation/Lectures/L1 - Introduction]]
 - Application: Supporting network applications [[TheApplicationLayer_I.pdf]]
 - Protocols
 	- Examples for different applications [[TheApplicationLayer_I.pdf#page=11]]
