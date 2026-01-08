@@ -52,7 +52,12 @@ Gælder for lineære tidsinvariante systemer
 
 
 ## Enheds step funktion
-## $$1(t)=$$
+## $$1(t)=\begin{cases}0,\quad t<0\\1, \quad t\geq 0\end{cases}$$
+Ved brug af enheds step funktionen blvier impulsresponses for første ordens systemet (se [[Lineære tidsinvariante systemer#Eksempel på impulsrespons|forrige eksempel]])
+## $$h(t)=e^{-kt}1(t)$$
+![[Pasted image 20260108202515.png]]
+
+
 
 ---
 #math #physics #signalprocessing 
