@@ -1,4 +1,25 @@
+# Opsummering
+> [!help] Egenskaber
+> Linearitet
+> $$f(x+y)=f(x)+f(y) \quad \text{Superposition}$$
+> $$f(\alpha x) = \alpha f(x) \quad \text{Homogenitet}$$
+> 
+> Tidsinvariant
+> $$y(t-\tau)=\sigma(t,u(t-\tau))$$
 
+> [!help] Impuls
+> $$\int^\infty_{-\infty}u(\tau)\delta(t-\tau)d\tau=u(t)$$
+> hvor $\delta(t)$ er en meget kort og meget kraftig impuls
+
+> [!help] Lineære tidsinvariante Integraler
+> Superpositionsintegralet
+> $$y(t)=\int^\infty_{-\infty}u(\tau)h(t,\tau)d\tau$$
+> Foldningsintegralet
+> $$y(t)=\int^\infty_{-\infty}u(\tau)h(t-\tau)d\tau=\int^\infty_{-\infty}u(t-\tau)h(\tau)d\tau$$
+
+> [!help]
+
+---
 # Egenskaber
 ## Linearitet
 ## $$f(x+y)=f(x)+f(y) \quad \text{Superposition}$$$$f(\alpha x) = \alpha f(x) \quad \text{Homogenitet}$$
@@ -57,6 +78,7 @@ Ved brug af enheds step funktionen blvier impulsresponses for første ordens sys
 ## $$h(t)=e^{-kt}1(t)$$
 ![[Pasted image 20260108202515.png]]
 
+## Respons ved input $e^{st}$
 
 
 ---
