@@ -3,6 +3,11 @@ Er en generalisering af [[Fouriertransformation]] og er defineret som
 ## $$H(S)=\mathcal{L}\{h(t)\}=\int^\infty_{0^-}h(t)e^{-st} dt$$
 hvor $s\in\mathbb{C}$ (kompleks)
 
+# Egenskaber
+## Differentieret $f(t)$
+Lad $f(t)$ og $df(t)/dt$ være kontinuerlige funktioner. Så gælder
+## $$\mathcal{L}(\frac {df} {dt})$$
+
 # Overføringsfunktion
 
 ## $$H(s)=\int^\infty_{-\infty}h(\tau)e^{-s\tau}d\tau$$
@@ -33,7 +38,19 @@ Eftersom
 Kan det i stedet skrives
 ## $$y(t)=\frac A 2(H(j\omega)e^{j\omega t}+H(-j \omega)e^{-j\omega t})$$
 
-På _polær form_ er $H(j)
+På _polær form_ er $H(j \omega) = M(\omega)e^{j\phi(\omega)}$.
+Så ovenstående forkortes til
+## $$y(t)=A M(\omega)\cos(\omega t+\phi(\omega))$$
+hvor
+## $$M(\omega)=|H(j\omega)| \quad \text{og} \quad \phi(\omega)=\angle H(j\omega)$$
+
+> [!example]-
+> ![[Pasted image 20260108204849.png]]
+> ![[Pasted image 20260108204908.png]]
+> ![[Pasted image 20260108204922.png]]
+
+
+
 
 
 ---
