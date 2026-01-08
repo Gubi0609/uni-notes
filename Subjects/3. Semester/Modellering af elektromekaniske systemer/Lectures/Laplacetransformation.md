@@ -1,4 +1,8 @@
 
+# Opsummering
+
+
+---
 Er en generalisering af [[Fouriertransformation]] og er defineret som
 ## $$H(S)=\mathcal{L}\{h(t)\}=\int^\infty_{0^-}h(t)e^{-st} dt$$
 hvor $s\in\mathbb{C}$ (kompleks)
@@ -6,7 +10,18 @@ hvor $s\in\mathbb{C}$ (kompleks)
 # Egenskaber
 ## Differentieret $f(t)$
 Lad $f(t)$ og $df(t)/dt$ være kontinuerlige funktioner. Så gælder
-## $$\mathcal{L}(\frac {df} {dt})$$
+## $$\mathcal{L}\left(\frac {df} {dt}\right)=sF(s)-f(0)$$
+Hvor $F(s)=\mathcal{L}(f)$.
+
+## Integreret $f(t)$
+Lad $f(t)$ være en kontinuerlig funktion og $F(s)=\mathcal{L}(f)$. Så gælder
+## $$\mathcal{L}\left(\int^t_0f(\tau) d\tau\right)=\frac {F(s)} s$$
+
+## Tabel
+![[Pasted image 20260108205415.png]]
+
+# Graf ved polers placering
+![[Pasted image 20260108205536.png]]
 
 # Overføringsfunktion
 
