@@ -20,7 +20,12 @@
 > Rødderne af $U$ er _polerne_ af $H(s)$
 
 > [!help] Frekvensrespons
-> Gælder for _sinusdial_
+> Gælder for _sinusdialt_ input
+> $$y(t)=H(s)e^{st}$$
+> omskrives
+> $$y(t)=A M(\omega)\cos(\omega t+\phi(\omega))$$
+> hvor
+> $$M(\omega)=|H(j\omega)| \quad \text{og} \quad \phi(\omega)=\angle H(j\omega)$$
 
 
 
@@ -85,10 +90,6 @@ hvor
 > ![[Pasted image 20260108204849.png]]
 > ![[Pasted image 20260108204908.png]]
 > ![[Pasted image 20260108204922.png]]
-
-
-
-
 
 ---
 #math #physics
