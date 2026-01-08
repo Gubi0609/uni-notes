@@ -25,6 +25,18 @@ Det ønskes at finde et lineært systems input-output opførsel.
 
 Det er muligt at bestemme et lineær systems respons til ethvert input $u$ ud fra kendskab til systemets impulsrespons.
 
+## Impuls
+Konceptet af en **impuls** $\delta(t)$ indføres. _Dette er et meget kort og kraftigt signal, der har følgende egenskaber_.
+## $$\int^\infty_{-\infty}u(\tau)\delta(t-\tau)d\tau=u(t)$$
+hvor $u$ er en kontinuerlig funktion og $\delta$ er en **Dirac delta-funktion**.
+
+Udtrykket kan tolkes som en vægtet sum af impulser, der giver funktionen $u(t)$, dvs. hvis systemets respons til en impuls kendes, så kan systemets respons til $u(t)$ findes som en sum af impulser, grundet **superpositionsprincippet**.
+
+
+**Impulsresponset** $h(t,\tau)$ for et lineært system defineres som responset (outputtet) til tiden $t$ når en impuls et tilføjet som input til tiden $\tau$.
+_Hvis systemet er tidsinvariant, kan impulsresponset defineres ud fra $t-\tau$. I dette tilfælde skrives $h(t-\tau)$._
+
+## Superpositionsintegralet
 
 
 ---
