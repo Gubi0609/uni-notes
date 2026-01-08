@@ -20,6 +20,8 @@
 # Topics
 [[Taylorrækker]]
 [[Fourierrækker]]
+[[Fouriertransformation]]
+
 
 
 # Notes
