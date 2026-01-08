@@ -1,5 +1,27 @@
 
 # Opsummering
+> [!help] Form
+> $$H(S)=\mathcal{L}\{h(t)\}=\int^\infty_{0^-}h(t)e^{-st} dt$$
+
+> [!help] Tabel
+> ![[Pasted image 20260108205415.png]]
+
+>[!help] Egenskaber
+>Differentieret $f(t)$
+>$$\mathcal{L}\left(\frac {df} {dt}\right)=sF(s)-f(0)$$
+>Integreret $f(t)$
+>$$\mathcal{L}\left(\int^t_0f(\tau) d\tau\right)=\frac {F(s)} s$$
+
+> [!help] Overføringsfunktion
+> En overføringsfunktion er forholdet mellem det _Laplacetransformerede input_ $u$ og det _Laplacetransformerede output_ $y$.
+> $$H(s)=\frac{Y(s)}{U(s)}$$
+> hvor $Y(s)$ og $U(s)$ er polynomier ($U$ af højere orden end $Y$) i variablen $s$.
+> Rødderne af $Y$ er _nulpunkterne_ af $H(s)$
+> Rødderne af $U$ er _polerne_ af $H(s)$
+
+> [!help] Frekvensrespons
+> Gælder for _sinusdial_
+
 
 
 ---
