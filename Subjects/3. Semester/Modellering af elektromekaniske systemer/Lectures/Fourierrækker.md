@@ -10,14 +10,16 @@
 
 
 > [!help] Komplekse fourierrækker opsummeret
-> ## $$f(x)=\sum^\infty_{n=-\infty} c_n e^{jn\pi x/L}$$
+> ## $$\text{3.}\quad f(x)=\sum^\infty_{n=-\infty} c_n e^{jn\pi x/L}$$
 > 
 > hvor
 > ## $$c_n=\frac 1 2 (a_n-jb_n),\quad \text{for } n>0$$
+> ## $$\arg(c_n) = -\tan^{-1}(b_n/a_n)=-\phi_n$$
+> hvor $\arg(c_n)$ er argumentet af $c_n$ 
 
 > Fourierrækker bruges til at aproksimere _periodiske_ funktioner, der har perioden $2L$ 
 
-For ikke-periodiske systemer se enten [[Taylorrækker]] eller 
+For ikke-periodiske systemer se enten [[Taylorrækker]] eller [[Fouriertransformation]].
 
 ---
 Det kan ses via dette spektrum, at $A_n$ bliver mindre, desto større $n$ bliver. Dette betyder at $A_n$ påvirker signalet mindre og mindre
