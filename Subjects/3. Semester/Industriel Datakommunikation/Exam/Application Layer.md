@@ -61,7 +61,7 @@ FTP, SMTP, HTTP
 	- (Open protocols defined in RFCs and allows for interoperability) Don't think this is necessary tho.
 - HTTP (**H**yper**T**ext **T**ransfer **P**rotocol) [[TheApplicationLayer_I.pdf#page=31|L3 page 31]]
 	- Text with hyperlinks
-	- Web's application layer protocol
+	- Web's application layer protocolq
 	- Also HTTPS where **S** stands for _Secure_ (This is more relevant for the [[Subjects/3. Semester/Industriel Datakommunikation/Exam/Transport Layer|Transport Layer]])
 	- Client-Server:
 		- Client is a browser that _requests_ and _displays_ Web objects
