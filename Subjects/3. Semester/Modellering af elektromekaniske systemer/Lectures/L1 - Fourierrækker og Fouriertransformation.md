@@ -19,6 +19,7 @@
 
 # Topics
 [[Taylorrækker]]
+[[Fourierrækker]]
 
 
 # Notes
