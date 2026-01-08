@@ -21,6 +21,19 @@ Det antages at systemets begyndelsesbetingelser er nul.
 ![[Pasted image 20260108204015.png]]
 
 ## Frekvensrespons
+Et systems **frekvensrespons** er responset, når et _sinusdialt_ input påtrykkes et system.
+
+Vi har tidligere (se ovenstående eksempel) udtrykt outputtet af et system med input $e^{st}$ ved brug af overføringsfunktionen $H(s)$
+
+## $$y(t)=H(s)e^{st}$$
+
+Eftersom
+
+## $$A\cos(\omega t) = \frac A 2(e^{j\omega t}+e^{-j\omega t})$$
+Kan det i stedet skrives
+## $$y(t)=\frac A 2(H(j\omega)e^{j\omega t}+H(-j \omega)e^{-j\omega t})$$
+
+På _polær form_ er $H(j)
 
 
 ---
