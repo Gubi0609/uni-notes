@@ -18,6 +18,7 @@
 [[Lektion 1 - Opgaver.pdf]]
 
 # Topics
+[[Taylorrækker]]
 
 
 # Notes
