@@ -10,7 +10,7 @@
 
 ## Tidsinvarians
 ## $$y(t-\tau)=\sigma(t,u(t-\tau))$$
-
+for alle tider $t\in \mathbb{R}$, hvor $y$ betegner udgangsignalet for systemet, $\sigma$ er indgangs signalet, og $u$ er 
 
 ---
 #math #physics #signalprocessing 
