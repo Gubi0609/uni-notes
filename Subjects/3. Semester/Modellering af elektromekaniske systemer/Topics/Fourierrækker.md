@@ -24,3 +24,8 @@ For ikke-periodiske systemer se enten [[Taylorrækker]] eller [[Fouriertransform
 ---
 Det kan ses via dette spektrum, at $A_n$ bliver mindre, desto større $n$ bliver. Dette betyder at $A_n$ påvirker signalet mindre og mindre
 ![[Pasted image 20260108122124.png]]
+
+> [!example]- Fourierrække af trekant-funktion
+> ![[Pasted image 20260108123202.png]]
+> ![[Pasted image 20260108123215.png]]
+> Vi kan se, at desto større $N$, desto nærmere den originale funktion er vi
