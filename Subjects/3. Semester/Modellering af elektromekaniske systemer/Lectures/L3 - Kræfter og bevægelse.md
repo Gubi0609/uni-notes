@@ -12,7 +12,8 @@
 
 ---
 # Relevant documents
-
+[[Lektion 3 - Bevaegelse_og_kraefter.pdf]]
+[[Lektion 3 - Opgaver_.pdf]]
 
 # Topics
 
