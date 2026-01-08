@@ -17,7 +17,8 @@
 > Foldningsintegralet
 > $$y(t)=\int^\infty_{-\infty}u(\tau)h(t-\tau)d\tau=\int^\infty_{-\infty}u(t-\tau)h(\tau)d\tau$$
 
-> [!help]
+> [!help] Enheds step funktion
+> $$1(t)=\begin{cases}0,\quad t<0\\1, \quad t\geq 0\end{cases}$$
 
 ---
 # Egenskaber
@@ -79,7 +80,7 @@ Ved brug af enheds step funktionen blvier impulsresponses for første ordens sys
 ![[Pasted image 20260108202515.png]]
 
 ## Respons ved input $e^{st}$
-
+![[Pasted image 20260108203126.png]]
 
 ---
 #math #physics #signalprocessing 
