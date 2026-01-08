@@ -37,7 +37,22 @@ Udtrykket kan tolkes som en vægtet sum af impulser, der giver funktionen $u(t)$
 _Hvis systemet er tidsinvariant, kan impulsresponset defineres ud fra $t-\tau$. I dette tilfælde skrives $h(t-\tau)$._
 
 ## Superpositionsintegralet
+## $$y(t)=\int^\infty_{-\infty}u(\tau)h(t,\tau)d\tau$$
+Gælder for lineære systemer (pga. superpositionsprincippet)
 
+## Foldningsintegralet
+## $$y(t)=\int^\infty_{-\infty}u(\tau)h(t-\tau)d\tau=\int^\infty_{-\infty}u(t-\tau)h(\tau)d\tau$$
+Gælder for lineære tidsinvariante systemer
+
+## Eksempel på impulsrespons
+> [!example]-
+> ![[Pasted image 20260108201838.png]]
+> ![[Pasted image 20260108201856.png]]
+> ![[Pasted image 20260108201909.png]]
+
+
+## Enheds step funktion
+## $$1(t)=$$
 
 ---
 #math #physics #signalprocessing 
