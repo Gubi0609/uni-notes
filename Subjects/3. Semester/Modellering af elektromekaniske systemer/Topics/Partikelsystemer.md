@@ -13,7 +13,15 @@ hvor $\mathbf{v}_i$ er hastigheden for partikel $i$.
 
 # Samlet impuls
 ## $$\mathbf{P}=M\mathbf{v}_C\quad\text{[kgm/s]}$$
-_Hastigheden af et isoleret partikelsystems massemidtpunkt er konstant i et inertialsystem_
+_Hastigheden af et isoleret partikelsystems massemidtpunkt er konstant i et inertialsystem._
+
+# Massemidtpunktssætningen
+## $$M\mathbf{a}_C=\mathbf{F}_{\text{net}}\quad\text{[N]}$$
+hvor $M$ er den samlede masse, $\mathbf{a}_C$ er accelerationen af massemidtpunktet, og $\mathbf{F}_{\text{net}}$ er summen af ydre kræfter.
+
+Der af **massemidtpunktssætningen**.
+_Massemidtpunktets acceleration gange partikelsystemets masse er lig summen af de ydre kræfter._
+
 
 # Impulsmoment
 ![[Pasted image 20251007124553.png]]

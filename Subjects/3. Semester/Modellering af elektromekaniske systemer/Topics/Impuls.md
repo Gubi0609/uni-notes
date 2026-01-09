@@ -12,6 +12,7 @@ Dette gælder for _intertialsystemer_.
 
 # Samlet impuls for et partikelsystem
 ## $$\mathbf{P}=M\mathbf{v}_C\quad\text{[kgm/s]}$$
+_Hastigheden af et isoleret partikelsystems massemidtpunkt er konstant i et inertialsystem._
 
 ---
 #physics
