@@ -17,7 +17,8 @@
 
 # Topics
 [[Impuls]]
-[[]]
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Newtons Love|Newtons Love]]
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Superpositionsprincippet|Superpositionsprincippet]]
 
 # Notes
 
