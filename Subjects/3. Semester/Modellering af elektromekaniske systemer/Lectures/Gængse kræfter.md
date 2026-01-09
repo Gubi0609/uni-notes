@@ -18,6 +18,21 @@ Uden yderligere påvirkelse fra andre krafter, ser den således ud
 ## $$F_d=-bv \quad \text{[N]}$$
 hvor $b$ er dæmpningen $\text{[N/(m/s)]}$ og $v$ er hastigheden $\text{[m/s]}$.
 
+Kan kombineres med [[Gængse kræfter#Fjederkraft|fjederkraften]] for at få følgende.
+![[Pasted image 20260109114347.png]]
+
+# Friktion
+Følgende måder findes for at modellere friktion
+![[Pasted image 20260109114418.png]]
+
+Vi bruger oftest **Viskos friktion** da den er lige til og lineær.
+
+Følgende er med _Coloumb friktion_.
+1. Når legemet ikke bevæger sig er størrelsen på den *statiske* friktionskraft lig med størrelsen på inputkraften $\mathbf{F}$ og i modsat retning
+## $$\mathbf{F}_f=-\mathbf{F}\quad \text{[N]}$$
+2. Den maksimale _statiske_ friktion er givet som
+## $$F_{s, max}=\mu_s F_N \quad \text{[N]}$$
+hvor $\mu_s$ er den _statiske _
 
 ---
 #physics #forces
