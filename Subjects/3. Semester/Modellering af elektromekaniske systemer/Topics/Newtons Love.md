@@ -16,7 +16,14 @@ Der af **massemidtpunktssætningen**.
 _Massemidtpunktets acceleration gange partikelsystemets masse er lig summen af de ydre kræfter._
 # Newtons 3. lov
 To partikler påvirker hinanden med lige store, men modsatrettede kræfter
-## $$\mathbf{F}_B=\mathbf{F}_A$$
+## $$\mathbf{F}_B=-\mathbf{F}_A$$
+![[Pasted image 20260109112811.png]]
+
+Gælder også for normalkraften:
+![[Pasted image 20260109112844.png]]
+
+**Hvis $\mathbf{F}_r\neq -\mathbf{F}_g$ ville [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Newtons Love#Newtons 2. lov|Newtons 2. lov]] gælde.
+
 
 ---
 #physics 
