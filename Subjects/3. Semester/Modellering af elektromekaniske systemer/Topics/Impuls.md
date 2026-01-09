@@ -9,5 +9,9 @@ Et isoleret partikelsystems samlede impuls er konstant
 ## $$\frac {d\mathbf{P}} {dt} = 0\text{ kgm/s}^2$$
 Dette gælder for _intertialsystemer_.
 
+
+# Samlet impuls for et partikelsystem
+## $$\mathbf{P}=M\mathbf{v}_C\quad\text{[kgm/s]}$$
+
 ---
 #physics
