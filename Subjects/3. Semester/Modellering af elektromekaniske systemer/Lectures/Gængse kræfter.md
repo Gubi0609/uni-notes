@@ -32,7 +32,16 @@ Følgende er med _Coloumb friktion_.
 ## $$\mathbf{F}_f=-\mathbf{F}\quad \text{[N]}$$
 2. Den maksimale _statiske_ friktion er givet som
 ## $$F_{s, max}=\mu_s F_N \quad \text{[N]}$$
-hvor $\mu_s$ er den _statiske _
+hvor $\mu_s$ er den _statiske gnidningskoefficient_ for overfladen/materialerne.
+
+3. Når legemet er i bevægelse, så er størrelsen af friktionskraften
+## $$F_f=\mu_k F_N \quad\text{[N]}$$
+hvor $\mu_k$ er _gnidningskoefficienten_ når materialerne er i _bevægelse_.
+
+# Vindmodstand
+Størrelsen af vindmodstanden er
+## $$F_d=\frac 1 2 C \rho A v^2$$
+hvor $C$ er luftmodstandskoefficienten, $\rho$ er densiteten af luft $\text{[kg/m}^3\text{]}$ og $A$ er arealet af det bevægende objekt.
 
 ---
 #physics #forces
