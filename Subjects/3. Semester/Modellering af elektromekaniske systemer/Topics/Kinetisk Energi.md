@@ -29,4 +29,15 @@ for blandet bevægelse
 Den interne kinetiske energi bliver til den rotationelle del.
 ## $$E_{kin,int}=\frac 1 2 I_C\omega^2$$
 Den eksterne kinetiske energi bliver således til den translatoriske del
-## $$E_{kin,ext}=\frac 1 2\sum_im_iv_C^2$$
+## $$E_{kin,ext}=\frac 1 2\sum_im_iv_C^2=\frac 1 2 M v_C^2$$
+hvor $M$ er den samlede masse for partikelsystemet.
+
+Således bliver den kinetiske energi for et _stift_ legeme, der bevæger sig vilkårligt
+## $$E_{kin}=\frac 1 2 M v_C^2+\frac 1 2 I_C\omega^2$$
+
+# Steiners sætning
+> [!important] Steiners sætning
+> Lad $\mathbf z_C$ være en akse, der går i gennem massemidtpunktet og $\mathbf z$ være parallel med $\mathbf z_C$. Så er inertimomentet om $z$-aksen
+> $$I_z=I_C+Ml^2$$
+> hvor $M$ er massen af legemet, $l$ er afstanden mellem $\mathbf z$ og $\mathbf z_C$, og $I_C$ er inertimomentet om $\mathbf z_C$-aksen $\text{[kgm}^2\text{]}$.
+
