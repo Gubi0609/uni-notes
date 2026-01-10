@@ -8,8 +8,19 @@
 
 > [!help] Arbejde langs bane
 > Arbejdet langs en _kort_ distance på banen er
-> $$W=F_Tds$$
-> hvor $F_T$ er kraften _langs_ bevægelses retningen
+> $$W=F_Tds\quad\text{[J]}$$
+> hvor $F_T$ er kraften _langs_ bevægelsesretningen defineret som
+> $$F_T=\mathbf F\cos\phi\quad\text{[N]}$$
+> hvor $\phi$ er vinklen mellem kraften $\mathbf F$ og bevægelsesretningen $ds$.
+> 
+> Arbejde over _hele_ banen
+> $$W=\int^B_A\mathbf F\cdot d\mathbf r\quad\text{[J]}$$
+
+> [!help] Arbejdssætningen
+> $$W_{AB}=\Delta E_{kin}=E_{kin,B}-E_{kin,A}\quad\text{[J]}$$
+
+> [!help] Varierende kraft
+> $$W=\int^{x_f}_{x_i}F(x)dx\quad\text{[J]}$$
 
 ---
 
