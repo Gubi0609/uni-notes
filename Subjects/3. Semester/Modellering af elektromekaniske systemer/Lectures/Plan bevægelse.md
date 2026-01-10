@@ -22,3 +22,10 @@ At kombinere dem er forholdvis simpelt
 
 Hastigheden af et punkt på skiven med stedvektor $\mathbf r$ fra massemidtpunktet er
 ## $$\mathbf v = \mathbf v_C+\mathbf\omega\times\mathbf r$$
+# Rullende hjul
+![[Pasted image 20260110155217.png]]
+
+På ovenstående rullende hjul, vil afstanden rullet (og dermed buen) være beskrevet ved
+## $$x=s=R\theta\quad \text{[m]}$$
+Og hastigheden og accelerationen af [[Partikelsystemer#Massemidpunktet|massemidtpunktet]] bliver således 
+## $$v_C=\dot x=R\dot\theta=R\omega\quad\text{og}\quad a_C=\ddot x=\$$
