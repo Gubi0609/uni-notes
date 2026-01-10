@@ -21,6 +21,7 @@
 # Topics
 [[Plan bevægelse]]
 [[Bevægelse af stive legemer]]
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi|Kinetisk Energi]]
 
 # Notes
 For opgaver, se matlab

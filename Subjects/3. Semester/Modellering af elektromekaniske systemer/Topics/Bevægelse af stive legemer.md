@@ -20,6 +20,17 @@ Vi har allerede ligninger for [[Impulsmoment og kraftmoment|impulsmomentet]], me
 ## $$L_z=I_z\omega$$
 Hvor $I_z$ er inertimomentet om en linje gennem punktet parallel med rotationsaksen
 
+eller
+## $$L_z=I_{C,z}\omega+(\mathbf r_C\times\mathbf P)_z$$
+hvor $\mathbf P$ er systemets samlede impuls
+
+# Rotationel dynamik
+Den rotationelle dynamik for et stift legeme er så
+## $$I_z \dot \omega=\tau_z\quad\text{eller}\quad I_{C,z}\dot\omega=\tau_{C,z}$$
+> [!example]- Eksempel: Bevægelse af stift legeme
+> ![[Pasted image 20260110161458.png]]
+> ![[Pasted image 20260110161511.png]]
+
 
 
 ---
