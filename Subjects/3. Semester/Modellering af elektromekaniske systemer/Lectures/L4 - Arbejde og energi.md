@@ -18,6 +18,7 @@
 [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Arbejde|Arbejde]]
 [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Effekt|Effekt]]
 [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Kinetisk Energi|Kinetisk Energi]]
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Potentiel Energi|Potentiel Energi]]
 [[Konservative og ikke-konservative krafter]]
 
 # Notes
