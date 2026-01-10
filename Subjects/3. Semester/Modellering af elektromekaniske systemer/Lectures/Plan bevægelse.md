@@ -28,4 +28,5 @@ Hastigheden af et punkt på skiven med stedvektor $\mathbf r$ fra massemidtpunkt
 På ovenstående rullende hjul, vil afstanden rullet (og dermed buen) være beskrevet ved
 ## $$x=s=R\theta\quad \text{[m]}$$
 Og hastigheden og accelerationen af [[Partikelsystemer#Massemidpunktet|massemidtpunktet]] bliver således 
-## $$v_C=\dot x=R\dot\theta=R\omega\quad\text{og}\quad a_C=\ddot x=\$$
+## $$v_C=\dot x=R\dot\theta=R\omega\quad\text{og}\quad a_C=\ddot x=R\ddot\theta=R\dot\omega$$
+Hastigheden af et punkt på hjulet er givet ved samme ligning som [[Plan bevægelse#$$ mathbf v = mathbf v_C+ mathbf omega times mathbf r$$|før]].

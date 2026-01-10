@@ -20,6 +20,7 @@
 
 # Topics
 [[Plan bevægelse]]
+[[Bevægelse af stive legemer]]
 
 # Notes
 For opgaver, se matlab
