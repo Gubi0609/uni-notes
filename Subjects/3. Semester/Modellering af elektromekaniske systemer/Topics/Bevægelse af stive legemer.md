@@ -31,6 +31,12 @@ Den rotationelle dynamik for et stift legeme er så
 > ![[Pasted image 20260110161458.png]]
 > ![[Pasted image 20260110161511.png]]
 
+# Steiners sætning
+> [!note] Steiners sætning
+> Lad $\mathbf z_C$ være en akse, der går i gennem massemidtpunktet og $\mathbf z$ være parallel med $\mathbf z_C$. Så er inertimomentet om $z$-aksen
+> $$I_z=I_C+Ml^2$$
+> hvor $M$ er massen af legemet, $l$ er afstanden mellem $\mathbf z$ og $\mathbf z_C$, og $I_C$ er inertimomentet om $\mathbf z_C$-aksen $\text{[kgm}^2\text{]}$.
+
 
 
 ---

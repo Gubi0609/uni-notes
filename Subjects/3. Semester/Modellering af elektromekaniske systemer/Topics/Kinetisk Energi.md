@@ -1,3 +1,13 @@
+# Opsummering
+>[!help] Vilkårligt bevægende stift legeme
+>$$E_{kin}=\frac 1 2 M v_C^2+\frac 1 2 I_C\omega^2$$
+>hvor
+>$$E_{kin,trans}=\frac 1 2 M v_C^2\quad\text{og}\quad E_{kin,rot}=\frac 1 2 I_C\omega^2$$
+>
+>hvor $M$ er den samlede masse af legemet $\text{[kg]}$, $v_C$ er hastigheden af [[Partikelsystemer#Massemidpunktet|massemidtpunktet]] $\text{[m/s]}$, $I_C$ er [[Bevægelse af stive legemer#Inertimoment|inertimomentet]] af massemidtpunktet $\text{[kgm}^2\text{]}$, og $\omega$ er vinkelhastigheden af legemet.
+
+
+---
 Givet som
 ## $$E_{kin}=\frac 1 2 mv^2\quad \text{[J]}$$
 Enheden er [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Arbejde#Enhed|Joule]].
@@ -34,10 +44,4 @@ hvor $M$ er den samlede masse for partikelsystemet.
 
 Således bliver den kinetiske energi for et _stift_ legeme, der bevæger sig vilkårligt
 ## $$E_{kin}=\frac 1 2 M v_C^2+\frac 1 2 I_C\omega^2$$
-
-# Steiners sætning
-> [!important] Steiners sætning
-> Lad $\mathbf z_C$ være en akse, der går i gennem massemidtpunktet og $\mathbf z$ være parallel med $\mathbf z_C$. Så er inertimomentet om $z$-aksen
-> $$I_z=I_C+Ml^2$$
-> hvor $M$ er massen af legemet, $l$ er afstanden mellem $\mathbf z$ og $\mathbf z_C$, og $I_C$ er inertimomentet om $\mathbf z_C$-aksen $\text{[kgm}^2\text{]}$.
 
