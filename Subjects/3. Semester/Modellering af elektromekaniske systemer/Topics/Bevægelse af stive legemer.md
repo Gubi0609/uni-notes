@@ -7,7 +7,20 @@ hvor $L_z$ er impulsmomentet og $\tau_z$ er kraftmomentet
 Vi benytter dog ofte massemidtpunktet $C$ som referencepunkt
 ## $$\frac {dL_{C,z}} {dt}=\tau_{C,z}\quad \text{[Nm]}$$
 # Inertimoment
-Impulsmomentet er def
+Inertimomentet i z-aksens retning er defineret som
+## $$I_z=\sum_im_iR_i^2=\int R^2dm=\int R^2\rho dV$$
+hvor $R_i$ er radius ud til den givne partikel fra rotations aksen, $\rho$ er densiteten af objektet.
+
+> [!example]- Eksempel på udledning af intertimoment
+> ![[Pasted image 20260110160936.png]]
+> ![[Pasted image 20260110160944.png]]
+
+# Impulsmoment
+Vi har allerede ligninger for [[Impulsmoment og kraftmoment|impulsmomentet]], men vi kan nu også beskrive det ud fra [[Bevægelse af stive legemer#Inertimoment|inertimomentet]]
+## $$L_z=I_z\omega$$
+Hvor $I_z$ er inertimomentet om en linje gennem punktet parallel med rotationsaksen
+
+
 
 ---
 #physics #kinematics
