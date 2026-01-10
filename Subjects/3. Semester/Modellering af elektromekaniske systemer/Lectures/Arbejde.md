@@ -27,3 +27,9 @@ hvor $F_T$ er kraftens komposant langs banekurven, $\phi$ er vinklen mellem bane
 ## Langs hele banen
 Arbejdet udført på partiklen, når partiklen bevæger sig fra $A$ til $B$ er
 ## $$W_{AB}=\int^B_A\mathbf{F}\cdot d\mathbf{r}=\int^B_A(F_xdx+F_ydy+F_zdz)\quad\text{[J]}$$
+
+# Arbejdssætningen
+> Kræfternes arbejde på en partikel er lig tilvæksten i partiklens kinetiske energi.
+
+Ovenstående kan omskrives til
+## $$W_{A}
