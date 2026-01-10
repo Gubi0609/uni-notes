@@ -48,7 +48,14 @@ Den rotationelle dynamik for et stift legeme er så
 > hvor $l$ er længden mellem $z$ og $z_C$.
 > 
 > Den kinetiske energi kan derfor også skrives
-> $$E_{kin}=\frac 1 2 M(l\omega)^2+\frac 1 2
+> $$E_{kin}=\frac 1 2 M(l\omega)^2+\frac 1 2I_C\omega^2$$
+> (Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi#Roterende og translatorisk bevægelse|Kinetisk Energi for roterende og translatoriske bevægelser]])
+> 
+> Fra
+> $$E_{kin}=\frac 1 2 I_z \omega^2=\frac 1 2 M(l\omega)^2+\frac 1 2 I_C\omega^2$$
+> konkluderes det at
+> $$I_z=I_C+Ml^2$$
+> hvilket er Steiners sætning.
 
 ---
 #physics #kinematics
