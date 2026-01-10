@@ -16,3 +16,7 @@ Endeligt kan det skrives
 # Roterende systemer
 Vi kan kigge på $E_{kin,int}$ fra før
 ## $$E_{kin}=\frac 1 2 \sum_im_iv_i^2 \quad\text{[J]}$$
+Hvis vi har en [[Plan bevægelse#Rotationel hastighed|roterende bevægelse]], bliver hastigheden i stedet skrevet
+## $$E_{kin}=\frac 1 2 \sum_im_ir_i^2\omega^2 \quad\text{[J]}$$
+hvor $\omega$ er vinkelhastigheden og $r_i$ er radius fra omdrejningsakse til partikel $i$.
+Vi kan lave endnu en omskrivning, så vi i stedet bruger [[Bevægelse af stive legemer#Inertimoment|inertimomentet]].
