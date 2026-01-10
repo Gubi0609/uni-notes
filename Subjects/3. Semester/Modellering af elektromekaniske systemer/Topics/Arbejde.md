@@ -69,4 +69,5 @@ udledes.
 Det gennemsnitlige arbejde over en cirkulær bane kan skrives
 ## $$W=\tau(\theta_f-\theta_i)\quad\text{[J]}$$
 
-Hvis kraftmo
+Hvis kraftmomentet er varierende, kan arbejdes beregnes som
+## $$W=\int^{\theta_f}_{\theta_i}\tau(\theta)d\theta\quad\text{[J]}$$
