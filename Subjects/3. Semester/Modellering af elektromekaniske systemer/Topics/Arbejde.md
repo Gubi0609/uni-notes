@@ -53,3 +53,20 @@ Arbejdet udført af en varierende kraft er
 > $$F_s=-kx$$
 > $$W_s=\int^{x_f}_{x_i}F_sdx=-\frac k 2 (x_f^2-x_i^2)$$
 
+# Arbejde udført af [[Impulsmoment og kraftmoment#Kraftmoment|kraftmoment]]
+![[Pasted image 20260110185004.png]]
+
+En kraft $\mathbf F$ angriver et legeme i afstanden $r$ fra massemidtpunktet
+
+[[Impulsmoment og kraftmoment#Kraftmoment|Kraftmomentet]] har følgende formel
+## $$\tau_z=rF_T$$
+Og ud fra formlen for [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Arbejde#Arbejde langs bane|arbejde langs bane]]
+## $$dW=F_Tds$$
+kan 
+## $$ds=rd\theta$$ $$dW=F_Trd\theta=\tau_zd\theta\quad\text{[J]}$$
+udledes.
+
+Det gennemsnitlige arbejde over en cirkulær bane kan skrives
+## $$W=\tau(\theta_f-\theta_i)\quad\text{[J]}$$
+
+Hvis kraftmo
