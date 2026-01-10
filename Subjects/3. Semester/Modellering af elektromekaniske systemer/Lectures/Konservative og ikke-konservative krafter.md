@@ -23,3 +23,4 @@ Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Pote
 > 
 > Dermed ses det, at arbejdet er _uafhængigt_ af vejen, og dermed konservativ.
 
+# Ikke-konservative kræfter

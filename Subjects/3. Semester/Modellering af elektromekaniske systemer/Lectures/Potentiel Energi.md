@@ -9,4 +9,4 @@ Potentiel energi defineres her ud fra en fjeder, og generaliseres for lignende k
 hvor fjederkraften $F(x)=-kx$.
 Vi definerer den potentielle energi til at være nul for $x=0$. Da gælder
 ## $$E_{pot}=\frac 1 2 kx^2$$
-Dette gælder også for [[Gængse kræfter]]
+Dette gælder også for [[Gængse kræfter#Tyngdekraften|tyngdekraften]].
