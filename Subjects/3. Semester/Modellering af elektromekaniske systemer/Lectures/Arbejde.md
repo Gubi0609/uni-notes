@@ -47,4 +47,9 @@ Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Kine
 
 # Varierende kraft
 Arbejdet udført af en varierende kraft er
-## $$W_\int^{x_f}
+## $$W=\int^{x_f}_{x_i}Fdx$$
+> [!example]- Fjederkraft
+> Fjederkraften kan ses [[Gængse kræfter#Fjederkraft|her]].
+> $$F_s=-kx$$
+> $$W_s=\int^{x_f}_{x_i}F_sdx=-\frac k 2 (x_f^2-x_i^2)$$
+
