@@ -6,7 +6,7 @@ Vi har _to koordinatrammer_
 I C-systemet er stedvektor $\mathbf r'$ og hastighedsvektor $\mathbf v'$. Følgende gælder
 ## $$\sum m_i\mathbf r_i'=0\quad\text{og}\quad\sum m_iv_i'=0$$
 ## Arbejdssætningen
-[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Arbejde#Arbejdssætningen|Arbejdssætningen]] for den $i$'te partikel giver
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Arbejde#Arbejdssætningen|Arbejdssætningen]] for den $i$'te partikel giver
 ## $$\Delta E_{kin,i}=W_{ext,i}+W_{int,i}\quad\text{[J]}$$
 hvor $W_{ext,i}$ er de eksterne krafter på partikel $i$, og $W_{int,i}$ er de interne krafter.
 
@@ -20,7 +20,7 @@ Hvis både interne og eksterne krafter er [[Konservative og ikke-konservative kr
 # L-systemet
 Hastigheden af partikel $i$ i **L-systemet** kan skrives
 ## $$\mathbf v_i=\mathbf v_C+\mathbf v_i'$$
-Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Kinetisk Energi|kinetiske energi]] af [[Partikelsystemer|partikelsystemet]] udtrykt i L-systemet er
+Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi|kinetiske energi]] af [[Partikelsystemer|partikelsystemet]] udtrykt i L-systemet er
 ## $$E_{kin}=\sum_i\frac 1 2m_i(\mathbf v_C+\mathbf v_i')^2$$$$E_{kin}=\sum_i\frac 1 2m_i(v_C^2+{v_i'}^2+2\mathbf v_C\cdot\mathbf v_i')$$$$E_{kin}=\frac 1 2 \sum_i m_iv_C^2+\frac 1 2\sum_im_i{v_i'}^2+\mathbf v_C\cdot\sum_im_i\mathbf v_i'$$
 Vi kan nu se følgende:
 ## $$\frac 1 2 \sum_i m_i v_C^2\rightarrow E_{kin,ext}$$$$\frac 1 2 \sum_i m_i {v_i'}^2\rightarrow E_{kin,int}$$$$\mathbf v_C\sum_i m_i \mathbf v_i'=0$$

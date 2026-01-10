@@ -3,7 +3,7 @@ Mekanisk energi er defineret som den totale energi af et system.
 hvor $E_T$ og $E_{mek}$ begge er betegnelser for mekanisk energi.
 
 # Energibevarelse
-Hvis en partikel kun påvirkes af [[Konservative og ikke-konservative krafter#Konservative krafter|konservative krafter]], så kan [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Arbejde|arbejdet]] udtrykkes som
+Hvis en partikel kun påvirkes af [[Konservative og ikke-konservative krafter#Konservative krafter|konservative krafter]], så kan [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Arbejde|arbejdet]] udtrykkes som
 ## $$W_{AB}=E_{kin,B}-E_{kin,A}=E_{pot,A}-E_{pot,B}\quad \text{[J]}$$
 Fra ovenstående kan ligningen for mekanisk energi udledes.
 
@@ -16,4 +16,4 @@ kan også udtrykkes
 Fra ovenstående ses
 ## $$E_{kin,A}+E_{pot,A}=E_{kin,B}+E_{pot,B}-W_{AB}^{iK}\quad\text{[J]}$$
 
-Da arbejdet af ikke-konservative krafter ofte er negativt, vil den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Mekanisk energi|mekaniske energi]] mindskes.
+Da arbejdet af ikke-konservative krafter ofte er negativt, vil den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Mekanisk energi|mekaniske energi]] mindskes.

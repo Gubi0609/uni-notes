@@ -10,9 +10,9 @@ Skrives
 ## Potentiel energi
 En konservativ kraft kan skrives
 ## $$W_{AB}=\int^B_A\mathbf{F}\cdot d\mathbf{r}=E_{pot,A}-E_{pot,B}$$
-Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Potentiel Energi|Potentiel Energi]].
+Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Potentiel Energi|Potentiel Energi]].
 
-Ændringen i [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Arbejde|arbejde]] er dermed
+Ændringen i [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Arbejde|arbejde]] er dermed
 ## $$d\mathbf{F}\cdot d\mathbf r=-dE_{pot}$$
 > [!example]- Er tyngdekraften konservativ
 > Tyngdekraften kan ses [[Gængse kræfter#Tyngdekraften|her]].

@@ -34,7 +34,7 @@ Arbejdet udført på partiklen, når partiklen bevæger sig fra $A$ til $B$ er
 Ovenstående kan omskrives til
 ## $$W_{AB}=\int^B_AF_T\cdot ds=\int^B_Am\frac {dv} {dt}ds=\int^B_Amvdv=\frac 1 2mv_B^2-\frac 1 2 mv_A^2$$
 ## $$W_{AB}=\Delta E_{kin}=E_{kin,B}-E_{kin,A}$$
-Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Kinetisk Energi|Kinetisk Energi]].
+Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi|Kinetisk Energi]].
 
 > [!example]- Arbejde udført af tyngdekraften
 > Tyngdekraften kan ses [[Gængse kræfter#Tyngdekraften|her]].

@@ -15,11 +15,11 @@
 [[Lektion 4 - Arbejde og energi.pdf]]
 
 # Topics
-[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Arbejde|Arbejde]]
-[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Effekt|Effekt]]
-[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Kinetisk Energi|Kinetisk Energi]]
-[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Potentiel Energi|Potentiel Energi]]
-[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Mekanisk energi|Mekanisk energi]]
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Arbejde|Arbejde]]
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Effekt|Effekt]]
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi|Kinetisk Energi]]
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Potentiel Energi|Potentiel Energi]]
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Mekanisk energi|Mekanisk energi]]
 [[Konservative og ikke-konservative krafter]]
 [[Arbejde i Partikelsystemer]]
 [[Numerisk simulering af dynamiske systemer]]
