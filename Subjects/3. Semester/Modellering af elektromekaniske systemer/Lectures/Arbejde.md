@@ -39,4 +39,12 @@ Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Kine
 > [!example]- Arbejde udført af tyngdekraften
 > Tyngdekraften kan ses [[Gængse kræfter#Tyngdekraften|her]].
 > $$W_{g}=\Delta E_{kin,g}$$
-> $$E_{kin,g}=\frac 1 2 mv^2$$
+> $$\Delta E_{kin,g}=\frac 1 2 mv^2_2 - \frac 1 2 mv^2_1=\frac m 2 \Delta v^2$$
+> $$\Delta v^2=dg\cos\theta$$
+> hvor $d$ er distancen bevæget, $g$ er tyngdeaccelerationen, og $\theta$ er vinklen mellem $\mathbf{F}_g$ og $\mathbf{d}$.
+> $$W_g=mgd\cos\theta$$
+
+
+# Varierende kraft
+Arbejdet udført af en varierende kraft er
+## $$W_\int^{x_f}
