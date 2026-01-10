@@ -16,7 +16,7 @@
 
 # Topics
 [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Arbejde|Arbejde]]
-
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Effekt|Effekt]]
 
 # Notes
 

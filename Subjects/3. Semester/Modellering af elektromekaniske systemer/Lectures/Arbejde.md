@@ -22,4 +22,8 @@ Arbejdet som kraften $\mathbf{F}$ udfører på partiklen til tiden $dt$ er
 ## $$dW=\mathbf{F}\cdot d\mathbf{r}=Fdr\cos{\phi}=F_Tdr=F_Tds\quad \text{[J]}$$
 ![[Pasted image 20260110132912.png]]
 
-hvor 
+hvor $F_T$ er kraftens komposant langs banekurven, $\phi$ er vinklen mellem banekurven og kraften $\mathbf{F}$.
+
+## Langs hele banen
+Arbejdet udført på partiklen, når partiklen bevæger sig fra $A$ til $B$ er
+## $$W_{AB}=\int^B_A\mathbf{F}\cdot d\mathbf{r}=\int^B_A(F_xdx+F_ydy+F_zdz)\quad\text{[J]}$$
