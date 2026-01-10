@@ -1,5 +1,18 @@
 > Arbejde $W$ er energi overført til eller fra et objekt via en kraft, der virker på objektet. Energi der overføres _til_ objektet er positivt arbejde og energi der overføres  _fra_ objektet er negativ energi.
 
+# Opsummering
+> [!help] Arbejde
+> Arbejde er defineret som
+> $$W=\textbf F\cdot\mathbf d\quad\text{[J]}$$
+> hvor $\mathbf F$ er kraftvektoren, og $\mathbf d$ er bevægelsesvektoren.
+
+> [!help] Arbejde langs bane
+> Arbejdet langs en _kort_ distance på banen er
+> $$W=F_Tds$$
+> hvor $F_T$ er kraften _langs_ bevægelses retningen
+
+---
+
 En kraft $\mathbf{F}$ gør et **positivt** stykke arbejde, _når den peger i samme retning som bevægelsen af legemet_
 Forskydningen kaldes $\mathbf{d}$.
 ![[Pasted image 20260110132352.png]]
@@ -47,7 +60,7 @@ Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kineti
 
 # Varierende kraft
 Arbejdet udført af en varierende kraft er
-## $$W=\int^{x_f}_{x_i}Fdx$$
+## $$W=\int^{x_f}_{x_i}F(x)dx$$
 > [!example]- Fjederkraft
 > Fjederkraften kan ses [[Gængse kræfter#Fjederkraft|her]].
 > $$F_s=-kx$$

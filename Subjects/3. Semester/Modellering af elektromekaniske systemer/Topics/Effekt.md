@@ -10,4 +10,5 @@ Også givet som
 ## $$P=\mathbf{F}\cdot \mathbf{v}\quad \text{[W]}$$
 
 # Roterende system
-Effekten for et roterende system er afhængig af [[Impulsmoment og kraftmoment#]]
+Effekten for et roterende system er afhængig af [[Impulsmoment og kraftmoment#Kraftmoment|kraftmomentet]] og [[Plan bevægelse#Rotationel hastighed|vinkelhastigheden]].
+## $$P=\frac {dW} {dt}=\tau\omega\quad\text{[W]}$$
