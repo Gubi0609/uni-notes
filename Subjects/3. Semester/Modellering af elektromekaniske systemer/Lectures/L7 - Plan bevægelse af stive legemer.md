@@ -19,7 +19,7 @@
 [[Lecture 7 - Exercise.pdf]]
 
 # Topics
-
+[[Plan bevægelse]]
 
 # Notes
 For opgaver, se matlab
