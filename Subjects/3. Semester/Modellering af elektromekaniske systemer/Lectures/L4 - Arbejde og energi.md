@@ -21,6 +21,7 @@
 [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Potentiel Energi|Potentiel Energi]]
 [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Mekanisk energi|Mekanisk energi]]
 [[Konservative og ikke-konservative krafter]]
+[[Arbejde i Partikelsystemer]]
 
 # Notes
 

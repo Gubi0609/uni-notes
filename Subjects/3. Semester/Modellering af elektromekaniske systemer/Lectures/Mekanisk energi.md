@@ -8,10 +8,12 @@ Hvis en partikel kun påvirkes af [[Konservative og ikke-konservative krafter#Ko
 Fra ovenstående kan ligningen for mekanisk energi udledes.
 
 ## Ikke-konservative systemer
-Hvis en partikel både påvirkes af konservative krafter $\mathbf F^K$ og ikke-konservative krafter $\mathbf F^{iK}$, så kan arbejdet udtrykkes som
+Hvis en partikel både påvirkes af konservative krafter $\mathbf F^K$ og [[Konservative og ikke-konservative krafter|ikke-konservative krafter]] $\mathbf F^{iK}$, så kan arbejdet udtrykkes som
 ## $$W_{AB}=\int^B_A(\mathbf F^K+\mathbf F^{iK})\cdot d\mathbf r=E_{kin,B}-E_{kin,A}\quad\text{[J]}$$
 kan også udtrykkes
 ## $$W_{AB}=W_{AB}^K+W_{AB}^{iK}=E_{pot,A}-E_{pot,B}+W_{AB}^{iK}\quad\text{[J]}$$
 
 Fra ovenstående ses
-## $$E_{kin,A}+E_{pot,A}
+## $$E_{kin,A}+E_{pot,A}=E_{kin,B}+E_{pot,B}-W_{AB}^{iK}\quad\text{[J]}$$
+
+Da arbejdet af ikke-konservative krafter ofte er negativt, vil den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Mekanisk energi|mekaniske energi]] mindskes.
