@@ -37,7 +37,18 @@ Den rotationelle dynamik for et stift legeme er så
 > $$I_z=I_C+Ml^2$$
 > hvor $M$ er massen af legemet, $l$ er afstanden mellem $\mathbf z$ og $\mathbf z_C$, og $I_C$ er inertimomentet om $\mathbf z_C$-aksen $\text{[kgm}^2\text{]}$.
 
-
+> [!example]- Udledning af Steiners sætning
+> ![[Pasted image 20260110184033.png]]
+> Betragt et legeme, der roterer omkring $z$-aksen og _ikke_ $z_C$-aksen. Legemets [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi|kinetiske energi]] bliver så
+> $$E_{kin}=\frac 1 2 I_z\omega^2$$
+> hvor $I_x$ er inertimomentet om $z$-aksen.
+> 
+> [[Partikelsystemer#Massemidpunktet|Massemidtpunktets]] fart er
+> $$v_C=l\omega$$
+> hvor $l$ er længden mellem $z$ og $z_C$.
+> 
+> Den kinetiske energi kan derfor også skrives
+> $$E_{kin}=\frac 1 2 M(l\omega)^2+\frac 1 2
 
 ---
 #physics #kinematics

@@ -1,10 +1,12 @@
 # Opsummering
 >[!help] Vilkårligt bevægende stift legeme
->$$E_{kin}=\frac 1 2 M v_C^2+\frac 1 2 I_C\omega^2$$
+>$$E_{kin}=\frac 1 2 M v_C^2+\frac 1 2 I_C\omega^2\quad\text{[J]}$$
 >hvor
 >$$E_{kin,trans}=\frac 1 2 M v_C^2\quad\text{og}\quad E_{kin,rot}=\frac 1 2 I_C\omega^2$$
 >
 >hvor $M$ er den samlede masse af legemet $\text{[kg]}$, $v_C$ er hastigheden af [[Partikelsystemer#Massemidpunktet|massemidtpunktet]] $\text{[m/s]}$, $I_C$ er [[Bevægelse af stive legemer#Inertimoment|inertimomentet]] af massemidtpunktet $\text{[kgm}^2\text{]}$, og $\omega$ er vinkelhastigheden af legemet.
+>
+>Enheden er [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Arbejde#Enhed|Joule]].
 
 
 ---
