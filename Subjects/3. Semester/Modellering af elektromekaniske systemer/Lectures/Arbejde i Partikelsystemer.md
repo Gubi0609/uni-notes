@@ -16,4 +16,9 @@ Hvis partikelsystemet er et _stift legemet_, vil de indbyrdes afstande være kon
 ## $$\Delta E_{kin}=W_{ext}\quad\text{[J]}$$
 
 Hvis både interne og eksterne krafter er [[Konservative og ikke-konservative krafter#Konservative krafter|konservative]], gælder
-## $$W_{ext}+W_{int}=E_{pot,ext,A}+E_{pot,int,A}-E_{pot,ext,}
+## $$W_{ext}+W_{int}=E_{pot,ext,A}+E_{pot,int,A}-E_{pot,ext,B}-E_{pot,int,B}$$ $$W_{ext}+W_{int}=\Delta E_{pot,ext}+\Delta E_{pot,int}$$
+# L-systemet
+Hastigheden af partikel $i$ i **L-systemet** kan skrives
+## $$\mathbf v_i=\mathbf v_C+\mathbf v_i'$$
+Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Kinetisk Energi|kinetiske energi]] af [[Partikelsystemer|partikelsystemet]] udtrykt i L-systemet er
+## $$E_{kin}=\sum_i=\frac 1 2m_i(\mathbf v_C+\mathbf v_i')^2$$$$E_{kin}=\sum_i=\frac 1 2m_i(v_C^2+{v_i'}^2+2\mathbf v_C\cdot\mathbf v_i')$$$$E_{kin}=\sum_i\frac 1 2m_i(\mathbf v_C+\mathbf v_i')^2$$
