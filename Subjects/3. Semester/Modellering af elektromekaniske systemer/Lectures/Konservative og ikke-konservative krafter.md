@@ -19,4 +19,7 @@ Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Pote
 > $$\mathbf F_t=-mg\mathbf e_z\quad \text{[N]}$$
 > 
 > Dermed er arbejdet udført af $\mathbf F_t$
-> $$W_{AB}=\int^B_A\mathbf F_t\cdot d\mathbf r=\int^B_A(0dx+0dy-mgdz)=-mg\int^B_Ad
+> $$W_{AB}=\int^B_A\mathbf F_t\cdot d\mathbf r=\int^B_A(0dx+0dy-mgdz)=-mg\int^B_Adz$$
+> 
+> Dermed ses det, at arbejdet er _uafhængigt_ af vejen, og dermed konservativ.
+
