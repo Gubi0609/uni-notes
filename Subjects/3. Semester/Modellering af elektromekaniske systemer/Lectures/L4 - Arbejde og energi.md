@@ -22,6 +22,7 @@
 [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Mekanisk energi|Mekanisk energi]]
 [[Konservative og ikke-konservative krafter]]
 [[Arbejde i Partikelsystemer]]
+[[Numerisk simulering af dynamiske systemer]]
 
 # Notes
 

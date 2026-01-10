@@ -21,4 +21,7 @@ Hvis både interne og eksterne krafter er [[Konservative og ikke-konservative kr
 Hastigheden af partikel $i$ i **L-systemet** kan skrives
 ## $$\mathbf v_i=\mathbf v_C+\mathbf v_i'$$
 Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Kinetisk Energi|kinetiske energi]] af [[Partikelsystemer|partikelsystemet]] udtrykt i L-systemet er
-## $$E_{kin}=\sum_i=\frac 1 2m_i(\mathbf v_C+\mathbf v_i')^2$$$$E_{kin}=\sum_i=\frac 1 2m_i(v_C^2+{v_i'}^2+2\mathbf v_C\cdot\mathbf v_i')$$$$E_{kin}=\sum_i\frac 1 2m_i(\mathbf v_C+\mathbf v_i')^2$$
+## $$E_{kin}=\sum_i\frac 1 2m_i(\mathbf v_C+\mathbf v_i')^2$$$$E_{kin}=\sum_i\frac 1 2m_i(v_C^2+{v_i'}^2+2\mathbf v_C\cdot\mathbf v_i')$$$$E_{kin}=\frac 1 2 \sum_i m_iv_C^2+\frac 1 2\sum_im_i{v_i'}^2+\mathbf v_C\cdot\sum_im_i\mathbf v_i'$$
+Vi kan nu se følgende:
+## $$\frac 1 2 \sum_i m_i v_C^2\rightarrow E_{kin,ext}$$$$\frac 1 2 \sum_i m_i {v_i'}^2\rightarrow E_{kin,int}$$$$\mathbf v_C\sum_i m_i \mathbf v_i'=0$$
+Det sidste gælder, da vi kan kigge tilbage på egenskaberne for [[Arbejde i Partikelsystemer#C-systemet|C-systemet]].
