@@ -24,3 +24,6 @@ Se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Pote
 > Dermed ses det, at arbejdet er _uafhængigt_ af vejen, og dermed konservativ.
 
 # Ikke-konservative kræfter
+> En kraft kaldes **ikke-konservativ**, hvis dens arbejde _ikke_ alene afhænger af bevægelsens start- og slutpunkt.
+
+Herunder hører blandt andet [[Gængse kræfter#Friktion|friktionskraften]], da den er afhængig af bevægelsens _hastighed_.
