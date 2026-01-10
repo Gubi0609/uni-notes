@@ -13,4 +13,4 @@ Det sidste gælder, da vi kan kigge tilbage på egenskaberne for [[Arbejde i Par
 Endeligt kan det skrives
 ## $$E_{kin}=\frac 1 2 \sum_i m_iv_C^2+\frac 1 2\sum_im_i{v_i'}^2=E_{kin,ext}+E_{kin,int}$$
 
-# Roterende systemer
+# Roterende systemeræ
