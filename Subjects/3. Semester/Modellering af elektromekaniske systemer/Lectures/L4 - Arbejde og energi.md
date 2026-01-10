@@ -15,6 +15,7 @@
 [[Lektion 4 - Arbejde og energi.pdf]]
 
 # Topics
+[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Lectures/Arbejde|Arbejde]]
 
 
 # Notes
