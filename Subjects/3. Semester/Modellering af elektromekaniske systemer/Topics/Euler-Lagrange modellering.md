@@ -1,4 +1,4 @@
-## $$\frac d {dt}*\frac {\delta L} {\delta \dot q} -\frac {\delta L} {\delta q} = Q$$
+## $$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot q} -\frac {\delta\mathscr L} {\delta q} = Q$$
 
 # Konservative systemer
 Indeholder konservative krafter

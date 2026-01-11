@@ -9,4 +9,6 @@ Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinet
 # Coriolis og centrifugal-led
 Matricen $C$ har elementer $c_{ij}$ som er givet ved
 ## $$c_{ij}=\sum_{k=1}^n c_{ijk}\dot q_k$$
-hvor koefficienterne $c_{ijk$ kaldes _Christoffel sybols of the }first type_
+hvor koefficienterne $c_{ijk}$ kaldes _Christoffel symbols of the }first type_ og er givet som
+## $$c_{ijk}=\frac 1 2\left(\frac {\delta b_{ij}}{\delta q_k}+\frac {\delta b_{ik}}{\delta q_j}-\frac {\delta b_{jk}}{\delta q_i}\right)$$
+hvor $b_{ij}$ er elementerne af matrix $B(q)$.
