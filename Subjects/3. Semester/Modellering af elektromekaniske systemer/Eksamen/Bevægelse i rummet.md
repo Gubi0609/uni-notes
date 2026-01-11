@@ -50,4 +50,11 @@ Derved er
 og vinkelfrekvens samt svingningstid bliver
 ## $$\omega_0=\sqrt{\frac k m}\quad\text{og}\quad T=2\pi\sqrt{\frac m k}$$
 Vi kan nu opstille positionen og hastigheden (samt den endelige acceleration)
-## $$x(t)=A\cos(\omega_0t+\phi)=\cos
+## $$x(t)=A\cos(\omega_0t+\phi)=\cos(\omega_0t)$$ $$v(t)=\dot x(t)=-\omega_0\sin(\omega_0t)$$ $$a(t)=\ddot x(t)=-\omega_0^2\cos(\omega_0t)$$
+Den kinetiske energi for systemet er
+## $$E_{kin}=\frac 1 2 mv^2=\frac 1 2 m(-\omega_0\sin(\omega_0t))^2=\frac 1 2 m\omega_0^2\sin^2(\omega_0t)$$
+Den potentielle energi er
+## $$E_{pot}=\frac 1 2kx^2=\frac 1 2k\cos^2(\omega_0t)$$
+
+Så bliver den mekaniske energi
+## $$E_{mek}=E_{pot}+E_{kin}=\frac 1 2k\cos^2(\omega_0t)$$
