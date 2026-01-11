@@ -37,4 +37,6 @@ Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Mekan
 Den totale energi for et [[Gængse kræfter#Fjederkraft|masse-fjeder system]] er
 ## $$E_{mek}=E_{pot}+E_{kin}=\frac 1 2kx^2+\frac 1 2mv^2\quad\text{[J]}$$
 Dette kan forkortes
-## $$E_{mek}=\frac 1 2 kx^2+\frac 1 2 mv^2$$ $$=\frac 1 2$$
+## $$E_{mek}=\frac 1 2 kx^2+\frac 1 2 mv^2$$
+Formlerne for position og hastighed bruges fra [[Simpel harmonisk svingning#Egenskaber|egenskaberne]].
+## $$=\frac 1 2k(A\cos(\omega_0t+\phi))^2+\frac 1 2m(-\omega_0A\sin(\omega_0t+\phi))^2$$ $$=\frac 1 2A^2(k\cos^2(\omega_0t+\phi)+m\omega_0^2\sin^2$$
