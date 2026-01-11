@@ -18,4 +18,14 @@ Der findes **tre** løsninger for rødderne
 # Dæmpet svingning
 Løsningen til differentialligningen
 ## $$\ddot x+\gamma\dot x+\omega_0^2x=0$$
-når $\omega_0^2
+når $\omega_0^2>\gamma^2/4$ er
+## $$x(t)=Ae^{R_{\text{real}}t}\cos(R_{\text{imag}}t+\phi)=Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$
+![[Pasted image 20260111123651.png]]
+
+hvor $Ae^{-\gamma t/2}$ bestemmer dæmpningen.
+
+# Aperiodisk tilfælde
+Løsningen til differentialligningen
+## $$\ddot x+\gamma\dot x+\omega_0^2x=0$$
+når $\omega_0^2=\gamma^2/4$ er
+## $$x(t)=Ae^{R_{\text{real}}t}+Be^{R_{\text{real}}t}=Ae^{-\gamma t/2}+Be^{-\gamma t/2}$$
