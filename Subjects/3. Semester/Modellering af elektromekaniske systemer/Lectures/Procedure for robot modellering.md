@@ -67,6 +67,8 @@ hvor
 og
 ## $$\frac 1 2\dot{\mathbf q}^T{J_O^{l_i}}^T(\mathbf q)R_i^0(\mathbf q)I_{l_i}^i{R_i^0}^T(\mathbf q)J_O^{l_i}(\mathbf q)\dot{\mathbf q}\rightarrow\text{Rotationelle }E_{kin,l_i}$$
 se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi|Kinetisk Energi]].
+Den kinetiske energi for en robot, kan også skrives
+## $$E_{kin}=\frac 1 2\dot q^TB(q)\dot q$$
 
 # 8. Lagrange D'Alemberts princip
 Lagrange D'Alamberts princip kan for $\mathbf q=\begin{bmatrix}q_1,&q_2,&...,&q_n\end{bmatrix}$ skrives
