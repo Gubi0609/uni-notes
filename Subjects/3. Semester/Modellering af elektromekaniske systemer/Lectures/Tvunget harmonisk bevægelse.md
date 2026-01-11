@@ -1,3 +1,18 @@
+# Opsummering
+> [!help] Definition
+> Hvis en [[Dæmpet simpel harmonisk svingning|dæmpet harmonisk svingning]] eller en [[Simpel harmonisk svingning|simpel harmonisk svingning]] påtrykkes en _periodisk_ kraft, skrives dynamikken for systemet således
+> $$m\ddot x=-kx-b\dot x+F$$
+> hvor $F=F_0\cos(\omega_tt)$ er en ekstern kraft med vinkelfrekvens $\omega_t$.
+
+> [!help] Omskrivning
+> Vi kan ligesom for [[Dæmpet simpel harmonisk svingning|en dæmpet harmonisk svingning]] skrive differentialligningen som
+> $$\ddot x+\gamma\dot x+\omega_0^2x=\frac {F_0}m\cos(\omega_tt)$$
+> hvor
+> $$\gamma=\frac b m\quad\text{og}\quad\omega_0^2=\frac k m$$
+
+> [!help]
+
+---
 Hvis en [[Dæmpet simpel harmonisk svingning|dæmpet harmonisk svingning]] eller en [[Simpel harmonisk svingning|simpel harmonisk svingning]] påtrykkes en _periodisk_ kraft, skrives dynamikken for systemet således
 ## $$m\ddot x=-kx-b\dot x+F$$
 hvor $F=F_0\cos(\omega_tt)$ er en ekstern kraft med vinkelfrekvens $\omega_t$.
@@ -29,5 +44,5 @@ Amplituden og fasen for den [[Tvunget harmonisk bevægelse#$$x(t)A_0 cos( omega_
 ![[Pasted image 20260111130820.png]]
 Vi kan se at grafen for amplitude minder om et [[External/External/Kasper's Notes/Uni/Notes/Multivariable Calculus/Noter/BODE plot|BODE plot]].
 
-Det ses at $A_0$ er maksimal i resonans frekvensen
-## $$\omega_{t,r}=\sqrt{\omega_0^2-\frac}
+Det ses at $A_0$ er maksimal i **resonansfrekvensen**
+## $$\omega_{t,r}=\sqrt{\omega_0^2-\frac{\gamma^2}2}\quad\text{[rad/s]}$$
