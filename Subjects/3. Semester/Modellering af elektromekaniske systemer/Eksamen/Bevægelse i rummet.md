@@ -14,14 +14,12 @@ Accelerationen er udelukkende afhængig af tyngdeaccelerationen og vinklen, derf
 ## $$\ddot \theta=-\frac g l\sin(\theta)$$
 Hvis vi antager, at der er at gøre med små vinkler, kan vi approksimere med $\sin\theta\approx\theta$.
 ## $$\ddot\theta\approx-\frac g l\theta$$
-Hastigheden bliver dermed
-## 
-Og positionen/vinklen er
-## $$\theta=\theta$$
 Så har vi altså reglen for en simpel harmonisk bevægelse opfyldt, og
 ## $$\Phi=\frac g l$$
 Så bliver vinkelfrekvensen og svingningstiden
 ## $$\omega_0=\sqrt{\frac g l}\quad\text{og}\quad T=2\pi\sqrt{\frac l g}$$
 
-Vi kan omskrive Formlen for $F_{net}$ og løse for rødderne (og dermed bestemme typen af svingning).
-## $$\gamma =\frac b m=\frac 0 m=0\quad\text{og}\quad\omega_0^2=\frac k m=\frac {-\theta^2m}{m}=-\theta^2$$
+Vi kan nu opstille positionen
+## $$x(t)=A\cos(\omega_0t+\phi)=l\cos\left(\sqrt{\frac g l}t\right)$$
+hastigheden
+## $$v(t)=\dot x(t)=\sqrt{\frac g l}l\sin\left(\sqrt{\frac g l t})
