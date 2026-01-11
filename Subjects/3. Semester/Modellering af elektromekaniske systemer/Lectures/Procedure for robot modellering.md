@@ -61,4 +61,8 @@ Dermed kan den kinetiske energi udregnes fra
 hvor $E_ {kin,l_i}$ er den kinetiske energi for Link $i$.
 
 Den kinetiske energi for _Link $i$_ bliver således
-## $$E_{kin,l_i}(\mathbf q,\dot{\mathbf q})=$$
+### $$E_{kin,l_i}(\mathbf q,\dot{\mathbf q})=\frac 1 2 m_{l_i}\dot{\mathbf q}^T{J_P^{l_i}}^T(\mathbf q) J_P^{l_i}(\mathbf q)\dot{\mathbf q}+\frac 1 2\dot{\mathbf q}^T{J_O^{l_i}}^T(\mathbf q)R_i^0(\mathbf q)I_{l_i}^i{R_i^0}^T(\mathbf q)J_O^{l_i}(\mathbf q)\dot{\mathbf q}$$
+hvor
+## $$\frac 1 2 m_{l_i}\dot{\mathbf q}^T{J_P^{l_i}}^T(\mathbf q) J_P^{l_i}(\mathbf q)\dot{\mathbf q}\rightarrow\text{Translatoriske }E_{kin,l_i}$$
+og
+## $$\frac 1 2\dot{\mathbf q}^T{J_O^{l_i}}^T(\mathbf q)R_i^0(\mathbf q)I_{l_i}^i{R_i^0}^T(\mathbf q)J_O^{l_i}(\mathbf q)\dot{\mathbf q}\rightarrow\text{Rotationelle}$$
