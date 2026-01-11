@@ -50,11 +50,13 @@ Derved er
 og vinkelfrekvens samt svingningstid bliver
 ## $$\omega_0=\sqrt{\frac k m}\quad\text{og}\quad T=2\pi\sqrt{\frac m k}$$
 Vi kan nu opstille positionen og hastigheden (samt den endelige acceleration)
-## $$x(t)=A\cos(\omega_0t+\phi)=\cos(\omega_0t)$$ $$v(t)=\dot x(t)=-\omega_0\sin(\omega_0t)$$ $$a(t)=\ddot x(t)=-\omega_0^2\cos(\omega_0t)$$
+## $$x(t)=A\cos(\omega_0t+\phi)=A\cos(\omega_0t)$$ $$v(t)=\dot x(t)=-\omega_0A\sin(\omega_0t)$$ $$a(t)=\ddot x(t)=-\omega_0^2A\cos(\omega_0t)$$
 Den kinetiske energi for systemet er
-## $$E_{kin}=\frac 1 2 mv^2=\frac 1 2 m(-\omega_0\sin(\omega_0t))^2=\frac 1 2 m\omega_0^2\sin^2(\omega_0t)$$
+## $$E_{kin}=\frac 1 2 mv^2=\frac 1 2 m(-\omega_0A\sin(\omega_0t))^2=\frac 1 2 m\omega_0^2A^2\sin^2(\omega_0t)$$
 Den potentielle energi er
-## $$E_{pot}=\frac 1 2kx^2=\frac 1 2k\cos^2(\omega_0t)$$
+## $$E_{pot}=\frac 1 2kx^2=\frac 1 2kA^2\cos^2(\omega_0t)$$
 
 Så bliver den mekaniske energi
-## $$E_{mek}=E_{pot}+E_{kin}=\frac 1 2k\cos^2(\omega_0t)$$
+## $$E_{mek}=E_{pot}+E_{kin}=\frac 1 2kA^2\cos^2(\omega_0t)+\frac 1 2m\omega_0^2A^2\sin^2(\omega_0t)$$ $$E_{mek}=\frac 1 2 A^2(k\cos^2(\omega_0t)+m\omega_0^2\sin^2(\omega_0t))$$
+Nu udnyttes at $\omega_0^2=k/m$
+## $$E_{mek}=\frac 1 2 A^2(m\omega_0^2\cos^2(\omega_0t)+m\omega_0^2\sin^2(\omega_0t))$$ $$E_{mek}=\frac 1 2 A^2 m\omega_0^2(\cos^2(\omega_0t)+\sin^2(\omega_0t))=\frac 1 2A^2m\frac k m(1)=\frac 1 2A^2k$$
