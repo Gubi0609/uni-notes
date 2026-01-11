@@ -36,3 +36,8 @@ Da har vi også
 Der udnyttes nu at $\omega_0^2=g/l$ og at $A=l$
 ## $$E_{mek}=mgl(1-\cos(\omega_0t))+\frac 1 2 mgl\sin^2(\omega_0t))$$ $$E_{mek}=mgl(1-cos(\omega_0t)+\frac 1 2\sin^2(\omega_0t))$$
 # Fjeder-Masse system
+![[Pasted image 20260111191531.png]]
+IGNORER DÆMPEREN
+
+Dette er en [[Simpel harmonisk svingning]].
+## $$\ddot x(t)=-\Phi x(t)$$
