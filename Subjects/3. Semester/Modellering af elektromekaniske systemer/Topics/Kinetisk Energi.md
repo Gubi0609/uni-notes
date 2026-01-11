@@ -8,7 +8,6 @@
 >
 >Enheden er [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Arbejde#Enhed|Joule]].
 
-
 ---
 Givet som
 ## $$E_{kin}=\frac 1 2 mv^2\quad \text{[J]}$$

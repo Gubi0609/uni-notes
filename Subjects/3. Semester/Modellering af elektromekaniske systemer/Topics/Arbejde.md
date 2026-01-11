@@ -22,6 +22,16 @@
 > [!help] Varierende kraft
 > $$W=\int^{x_f}_{x_i}F(x)dx\quad\text{[J]}$$
 
+> [!help] Arbejde for roterende bevægelse
+> Arbejde for _kort_ distance af rotationen
+> $$dW=F_Trd\theta=\tau_zd\theta\quad\text{[J]}$$
+> 
+> Gennemsnitligt arbejde for rotationen
+> $$W=\tau(\theta_f-\theta_i)\quad\text{[J]}$$
+> 
+> Arbejde over _hele_ rotationen
+> $$W=\int^{\theta_f}_{\theta_i}\tau(\theta)d\theta\quad\text{[J]}$$
+
 ---
 
 En kraft $\mathbf{F}$ gør et **positivt** stykke arbejde, _når den peger i samme retning som bevægelsen af legemet_
