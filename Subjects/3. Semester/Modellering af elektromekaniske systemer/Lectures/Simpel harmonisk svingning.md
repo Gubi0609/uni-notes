@@ -1,0 +1,1 @@
+Vi betragter systemer med _periodiske bevægelser_

@@ -15,6 +15,7 @@
 [[Lektion 9 - Svingninger.pdf]]
 
 # Topics
+[[Simpel harmonisk svingning]]
 
 
 # Notes
