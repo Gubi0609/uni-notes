@@ -6,6 +6,7 @@
 
 > [!help] Tabel
 > ![[Pasted image 20260108205415.png]]
+> ![[Pasted image 20260111141056.png]]
 
 > [!help] Partialbrøkopspaltning
 > $$H(s) = \frac {b_1s^m+b_2s^{m-1}+...+b_{m+1}}{s^n+a_1s^{n-1}+...+a_n}$$

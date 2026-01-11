@@ -21,4 +21,9 @@ Ved [[Invers Laplacetransformation]] fås
 > Så haves
 > $$X(s)=\frac {sx(0)+\alpha}{(s+a)(s+b)}$$
 > Ved [[Invers Laplacetransformation]] fås
-> $$x(t)=\frac {\alpha-ax(0)}{b-a}e^{-at}+\frac{bx(0)-\alpha}{b-a}e^{-bt}
+> $$x(t)=\frac {\alpha-ax(0)}{b-a}e^{-at}+\frac{bx(0)-\alpha}{b-a}e^{-bt}$$
+
+> [!example]- Eksempel: [[Tvunget harmonisk bevægelse]]
+> ![[Pasted image 20260111141201.png]]
+> ![[Pasted image 20260111141210.png]]
+
