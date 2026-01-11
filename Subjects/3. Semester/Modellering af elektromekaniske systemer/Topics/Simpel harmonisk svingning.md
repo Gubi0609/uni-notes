@@ -1,3 +1,8 @@
+# Opsummering
+> [!help] Harmonisk svingning
+> En bevægelsesligning på formen
+> $$\frac {d^2z}{dt^2}=\ddot z(t)=-\Phi z(t)$$
+> hvor $\Phi\in\mathcal{R}_+$
 
 ---
 Vi betragter systemer med _periodiske bevægelser_, hvilket vil sige at bevægelsen gentages hver $T$ sekund
