@@ -1,0 +1,4 @@
+- Krafters og kraftmomenters arbejde
+- Euler-Lagrange modellering
+- Impulsbevarelse
+- Energibevarelse

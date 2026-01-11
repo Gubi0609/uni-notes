@@ -1,0 +1,4 @@
+- Fritlegemeanalyse
+- Anvendelse af Newtons 3 love
+- Anvendelse af impulsmomentsætningen
+- DC-motorer
