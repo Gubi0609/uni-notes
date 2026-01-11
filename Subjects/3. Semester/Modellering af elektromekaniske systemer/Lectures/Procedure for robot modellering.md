@@ -18,3 +18,12 @@ hvor
 Massemidtpunktet for link $i$ kan udregnes som
 ## $$\begin{bmatrix}\mathbf p_{ci}^0(\mathbf q)\\1\end{bmatrix}=T_i^0\begin{bmatrix}\mathbf p_{ci}^i\\1\end{bmatrix}$$
 hvor $\mathbf p_{ci}^i$ er massemidtpunktet i ramme $i$ og $\mathbf p_{ci}^0$ er massemidtpunktet i ramme $0$ (Base rammen).
+
+# 3. Vinkelhastigheder for massemidtpunkter
+Vinkelhastigheden for massemidtpunktet af Link $i$ er
+## $$\mathbf \omega_i^0=\mathbf \omega_{i-1}^0+R_{i-1}^0(\mathbf q)\mathbf \omega_{i-1,i}^{i-1}=\mathbf \omega_{i-1}^0+\mathbf\omega_{i-1,i}^0$$
+hvor $\mathbf\omega_{i-1,i}^{i-1}$ er vinkelhastigheden af Ramme $i$ med hensyn til Ramme $i-1$ udtrykt i ramme $i-1$.
+
+Eftersom vi benytter DH-parametre, er rotationen _altid_ omkring $z$-aksen (vi antager rotationelle led)
+## $$\mathbf\omega_{i-1,i}^0=\mathbf z_{i-1}\dot q_i$$
+hvor $\mathbf z_{i-1} er en enhedsvektor i $z$-aksen retning for Ramme $i-
