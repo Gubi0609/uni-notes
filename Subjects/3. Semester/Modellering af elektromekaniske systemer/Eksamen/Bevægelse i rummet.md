@@ -18,8 +18,8 @@ og kraften fra pendulet (isoleret) bliver
 ## $$ma(t)=-\theta^2mx(t)=-\theta^2ml\cos(\theta)$$
 
 Dette tager dog kun højde for pendulet, og ikke tyngdekraften, så det bliver i stedet
-## $$F_{net}=F_p-F_t=-\theta^2ml\cos(\theta)-mg$$
+## $$F_{net}=F_p-F_t=-\theta^2ml\cos(\theta t)-mg$$
 og $a(t)$ bliver således
-## $$a(t)=\ddot x(t)=F_{net}=-\theta^2l\cos(\theta)-g$$
+## $$a(t)=\ddot x(t)=F_{net}=-\theta^2l\cos(\theta t)-g$$
 hvilket betyder at $v(t)$ må blive
-## $$v(t)=\int a(t)d\theta=-\frac 1 3\theta^3\sin$$
+## $$v(t)=\int a(t)d\theta=-\theta^3\sin$$
