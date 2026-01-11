@@ -1,3 +1,5 @@
+
+---
 Vi betragter systemer med _periodiske bevægelser_, hvilket vil sige at bevægelsen gentages hver $T$ sekund
 ## $$T=\frac 1 f \quad\text{[s]}$$
 hvor $T$ er periodetiden $\text{[s]}$ og $f$ er frekvensen $\text{[Hz]}$.
@@ -39,4 +41,6 @@ Den totale energi for et [[Gængse kræfter#Fjederkraft|masse-fjeder system]] er
 Dette kan forkortes
 ## $$E_{mek}=\frac 1 2 kx^2+\frac 1 2 mv^2$$
 Formlerne for position og hastighed bruges fra [[Simpel harmonisk svingning#Egenskaber|egenskaberne]].
-## $$=\frac 1 2k(A\cos(\omega_0t+\phi))^2+\frac 1 2m(-\omega_0A\sin(\omega_0t+\phi))^2$$ $$=\frac 1 2A^2(k\cos^2(\omega_0t+\phi)+m\omega_0^2\sin^2$$
+## $$=\frac 1 2k(A\cos(\omega_0t+\phi))^2+\frac 1 2m(-\omega_0A\sin(\omega_0t+\phi))^2$$ $$=\frac 1 2A^2(k\cos^2(\omega_0t+\phi)+m\omega_0^2\sin^2(\omega_0t+\phi))$$
+Vi bruger $\omega_0^2=k/m$ fra [[Simpel harmonisk svingning#$$ omega_0= sqrt{ frac k m} quad text{[rad/s]}$$|før]].
+## $$=\frac 1 2A^2(m\omega_0^2\cos^2(\omega_0t+\phi)+m\omega_0^2\sin(\omega_0t+\phi))$$ $$=\frac 1 2A^2m\omega_0^2(\cos^2+\sin^2)$$ $$E_{mek}=\frac 1 2m\omega_0^2A^2\quad\text{[J]}$$
