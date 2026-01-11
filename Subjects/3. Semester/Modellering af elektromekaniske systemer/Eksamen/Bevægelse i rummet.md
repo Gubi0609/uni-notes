@@ -8,14 +8,14 @@
 
 ## $$F_t=mg$$
 positionen (i y-aksen) kan skrives
-## $$x(t)=\sin(\theta t)$$
+## $$x(t)=l\cos(\theta t)$$
 så bliver hastigheden
-## $$v(t)=\dot x(t)=\theta\cos(\theta t)$$
+## $$v(t)=\dot x(t)=-\theta l\sin(\theta t)$$
 og accelerationen
-## $$a(t)=\dot v(t)=\ddot x(t)=-\theta^2\sin(\theta t)=-\theta^2x(t)$$
+## $$a(t)=\dot v(t)=\ddot x(t)=-\theta^2 l\cos(\theta t)=-\theta^2x(t)$$
 
 og kraften fra pendulet (isoleret) bliver
-## $$ma(t)=-\theta^2mx(t)=-\theta^2msin(\theta)$$
+## $$ma(t)=-\theta^2mx(t)=-\theta^2ml\cos(\theta)$$
 
 Dette tager dog kun højde for pendulet, og ikke tyngdekraften, så det bliver i stedet
-## $$F_{net}=F_
+## $$F_{net}=F_p-F_t=-\theta^2ml\cos(\theta)-mg$$
