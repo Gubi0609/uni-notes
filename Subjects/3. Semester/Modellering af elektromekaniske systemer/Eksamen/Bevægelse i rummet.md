@@ -28,8 +28,8 @@ og slutteligt accelerationen for god ordens skyld
 Vi kan udregne den kinetiske og potentielle energi for systemet
 
 Den potentielle energi må være afhængig af tyngdekraften og positionen fra $\theta=0$
-## $$E_{pot}=\frac 1 2 mgy_p^2=\frac 1 2 mgl^2\cos^2(\theta)$$
+## $$E_{pot}=\frac 1 2 mgy_p^2=\frac 1 2 mgl^2\cos^2\left(\sqrt{\frac g lt}\right)$$
 og
 ## $$E_{kin}=\frac 1 2 mv^2=\frac 1 2 m\left(-\sqrt{\frac g l}l\sin\left(\sqrt{\frac g l t}\right)\right)^2=\frac 1 2 m\frac g l l^2\sin^2\left(\sqrt{\frac g l} t\right)$$
 Da har vi også
-## $$E_{mek}=E_{kin}+E_{pot}=\frac 1 2 \frac 1 2 m\frac g l l^2\sin^2\left(\sqrt{\frac g l} t\right)+\frac 1 2 mgl^2\cos^2(\theta)$$ $$=\frac 1 2mgl\left(\cos(\theta)+\sin^2(\theta)\right)$$
+## $$E_{mek}=E_{kin}+E_{pot}=\frac 1 2 m\frac g l l^2\sin^2\left(\sqrt{\frac g l} t\right)+\frac 1 2 mgl^2\cos^2(\theta)$$ $$=\frac 1 2mgl^2(\cos^2\left(\sqrt{\frac g l} t\right)+\sin^2\left(\sqrt{\frac g l} t\right))$$
