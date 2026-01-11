@@ -40,3 +40,12 @@ Når DH parametre benyttes, kan hastigheden regnes (for rotationelle led) som **
 ## $$\mathbf v_{ci}^0(\mathbf q, \dot{\mathbf q})=J_P^{li}\dot q$$
 hvor
 ### $$J_P^{li}=\begin{bmatrix}\mathbf z_0\times(\mathbf p_{ci}-\mathbf p_0) &\mathbf z_1\times(\mathbf p_{ci}-\mathbf p_1) & ... & \mathbf z_{i-1}\times(\mathbf p_{ci}-\mathbf p_{i-1}) &\mathbf 0 & ... & \mathbf 0\end{bmatrix}$$
+hvor $\mathbf p_k$ er positionsvektoren for origo af Ramme $k$.
+
+# 5. Inertitensor i base rammen
+Den såkaldte inertitensor $I_{l_i}$ givet i base rammen kan omformuleres ved vrug af en inertitensor, der ligger i ledets massemidtpunkt ($I_{l_i}^i$)
+## $$I_{l_i}(\mathbf q)=R_i^0(\mathbf q)I_{l_i}^i{R_i^0}^T(\mathbf q)$$
+# 6. Potentiel energi
+Den [[Poten|potentielle energi]] skal udregnes i en inertiel ramme (fx. Base rammen), der ikke bevæges. Dermed kan den potentielle energi udregnes fra
+## $$E_{pot}(\mathbf q)=\sum^n_{i=1}E_{pot,l_i}(\mathbf q) \quad\text{[J]}$$
+hvor $E_{pot,l_i}$ er den potentielle energi for Link $i$.
