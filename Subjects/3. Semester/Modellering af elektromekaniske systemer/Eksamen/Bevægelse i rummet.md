@@ -35,3 +35,4 @@ Da har vi også
 ## $$E_{mek}=E_{pot}+E_{kin}=mgl(1-\cos(\theta)+\frac 1 2 m(\omega_0A\sin(\omega_0t))^2$$ $$E_{mek}=mgl(1-\cos(\omega_0t))+\frac 1 2m\omega_o^2A^2\sin^2(\omega_0t)$$
 Der udnyttes nu at $\omega_0^2=g/l$ og at $A=l$
 ## $$E_{mek}=mgl(1-\cos(\omega_0t))+\frac 1 2 mgl\sin^2(\omega_0t))$$ $$E_{mek}=mgl(1-cos(\omega_0t)+\frac 1 2\sin^2(\omega_0t))$$
+# Fjeder-Masse system
