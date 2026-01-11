@@ -1,3 +1,4 @@
+
 > [!help] Fourierrækker opsummeret
 > ## $$\text{1.}\quad S_N(x)=\frac{a_0} 2 + \sum^N_{n=1}(a_n \cos(n\pi x/L)+b_n \sin(n\pi x/L)$$
 > ## $$\text{2.}\quad S_n(x)= A_0 + \sum^\infty_{n=1} A_n \cos(n\pi x/L - \phi_n)$$

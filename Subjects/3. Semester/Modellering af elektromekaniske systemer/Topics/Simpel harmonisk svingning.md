@@ -27,4 +27,5 @@ Som er på samme form som [[Gængse kræfter#Fjederkraft|Hooks lov]]
 hvor $k=m\omega_0^2$.
 
 Vi kan derfor også isolere vinkelfrekvensen
-## $$\omega_0=\sqrt
+## $$\omega_0=\sqrt{\frac k m}\quad\text{[rad/s]}$$
+Dette gælder både for translatoriske og [[Bevægelse af stive legemer#Inertimoment|roterende]] systemer.
