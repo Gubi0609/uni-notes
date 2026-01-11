@@ -16,6 +16,7 @@
 
 # Topics
 [[Simpel harmonisk svingning]]
+[[Dæmpet simpel harmonisk svingning]]
 
 
 # Notes

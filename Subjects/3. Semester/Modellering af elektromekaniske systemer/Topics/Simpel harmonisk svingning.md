@@ -52,7 +52,7 @@ Formlerne for position og hastighed bruges fra [[Simpel harmonisk svingning#Egen
 ## $$=\frac 1 2k(A\cos(\omega_0t+\phi))^2+\frac 1 2m(-\omega_0A\sin(\omega_0t+\phi))^2$$ $$=\frac 1 2A^2(k\cos^2(\omega_0t+\phi)+m\omega_0^2\sin^2(\omega_0t+\phi))$$
 Vi bruger $\omega_0^2=k/m$ fra [[Simpel harmonisk svingning#$$ omega_0= sqrt{ frac k m} quad text{[rad/s]}$$|før]].
 ## $$=\frac 1 2A^2(m\omega_0^2\cos^2(\omega_0t+\phi)+m\omega_0^2\sin(\omega_0t+\phi))$$ $$=\frac 1 2A^2m\omega_0^2(\cos^2+\sin^2)$$ $$E_{mek}=\frac 1 2m\omega_0^2A^2\quad\text{[J]}$$
-> [!example]- Pendul
+> [!example]- Eksempel: Pendul
 > ![[Pasted image 20260111121420.png]]
 > Antag at vinklen $\theta$ er meget lille, så $\sin \theta\approx\theta$.
 > Bevægelsen langs tangent retningen fås via [[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Newtons Love#Newtons 2. lov|Newtons 2. Lov]] til
@@ -63,4 +63,14 @@ Vi bruger $\omega_0^2=k/m$ fra [[Simpel harmonisk svingning#$$ omega_0= sqrt{ fr
 > Så bliver
 > $$\omega_0=\sqrt{\frac g l}\quad\text{og}\quad T=2\pi\sqrt{\frac l g}$$
 
-> [!help] Eksempel: Pendul stang
+> [!example]- Eksempel: Pendul stang
+> ![[Pasted image 20260111121905.png]]
+> Antag at vinklen $\theta$ er meget lille, så $\sin\theta\approx\theta$.
+> Bevægelsen om punktet $O$ via [[Impulsmoment og kraftmoment#Impulsmomentsætningen|impulsmomentsætningen]] bliver til
+> $$I_O\frac {d^2\theta}{dt^2}\approx-mgl\theta$$
+> Denne differentialligning kan skrives
+> $$\frac {d^2\theta}{dt^2}\approx-\frac{mgl}{I_O}\theta$$
+> Som har samme form som [[Simpel harmonisk svingning#Opsummering|standard formen]] for en simpel harmonisk svingning.
+> Så bliver
+> $$\omega_0=\sqrt{\frac{mgl}{I_O}}\quad\text{og}\quad T=2\pi\sqrt{\frac{I_O}{mgl}}$$
+

@@ -1,0 +1,1 @@
+Tilføjes en dæmpning til en [[Simpel harmonisk svingning|simpel harmonisk svingning]] 
