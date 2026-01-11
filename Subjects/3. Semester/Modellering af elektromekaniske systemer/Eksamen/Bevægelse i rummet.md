@@ -37,7 +37,17 @@ Der udnyttes nu at $\omega_0^2=g/l$ og at $A=l$
 ## $$E_{mek}=mgl(1-\cos(\omega_0t))+\frac 1 2 mgl\sin^2(\omega_0t))$$ $$E_{mek}=mgl(1-cos(\omega_0t)+\frac 1 2\sin^2(\omega_0t))$$
 # Fjeder-Masse system
 ![[Pasted image 20260111191531.png]]
-IGNORER DÆMPEREN
+IGNORER DÆMPEREN OG x
 
 Dette er en [[Simpel harmonisk svingning]].
 ## $$\ddot x(t)=-\Phi x(t)$$
+Vi kan opstille følgende for kraften i systemet
+## $$F_k=ma=-kx$$
+altså er
+## $$a=\ddot x=-\frac k m x$$
+Derved er
+## $$\Phi=\frac k m$$
+og vinkelfrekvens samt svingningstid bliver
+## $$\omega_0=\sqrt{\frac k m}\quad\text{og}\quad T=2\pi\sqrt{\frac m k}$$
+Vi kan nu opstille positionen og hastigheden (samt den endelige acceleration)
+## $$x(t)=A\cos(\omega_0t+\phi)=\cos
