@@ -19,3 +19,5 @@ og kraften fra pendulet (isoleret) bliver
 
 Dette tager dog kun højde for pendulet, og ikke tyngdekraften, så det bliver i stedet
 ## $$F_{net}=F_p-F_t=-\theta^2ml\cos(\theta)-mg$$
+og $a(t)$ bliver således
+## $$a(t)=\ddot x(t)=F_{net}=-\theta^2l\cos(\theta)-g$$
