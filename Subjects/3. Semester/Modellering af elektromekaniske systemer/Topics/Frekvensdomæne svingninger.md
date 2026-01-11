@@ -9,4 +9,6 @@ fra [[Simpel harmonisk svingning]] ved vi at $\Phi=\omega_0^2$, så vi kan finde
 [[Laplacetransformation#Poler og nulpunkter|polerne]] for systemet er
 ## $$s^2+\omega_0^2=0\Leftrightarrow s=\frac {-0\pm\sqrt{0^2-4\cdot1\cdot\omega_0^2}}{2\cdot1}=\pm j\omega_0$$
 Ved [[Invers Laplacetransformation]] fås
-## $$z(t)=z(0)\cos(\omega_0t)+\frac{\frac{dz}{dt}(0)}{}$$
+## $$z(t)=z(0)\cos(\omega_0t)+\frac{\frac{dz}{dt}(0)}{\omega_0}\sin(\omega_0t)$$
+> [!example]- Udledning af [[Dæmpet simpel harmonisk svingning#Aperiodisk svingning|overdæmpet]] svingning
+> Betragt følgende overføringsfunktion og antag at de to poler er reelle og forskellige $p_1 \neq \p_2

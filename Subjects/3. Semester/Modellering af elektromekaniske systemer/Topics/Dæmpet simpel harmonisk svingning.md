@@ -19,11 +19,14 @@
 > Den dæmpede svinging
 > $$\ddot x+\gamma\dot x+\omega_0^2x=0$$
 > har **tre** typer løsninger
-> 1. **Dæmpet svingning:** Når $\omega_0^2>\gamma^2/4\rightarrow \omega_d\in\mathbb{R}_+$  ([[2. ordens systemer#Underdæmpet|underdæmpet]])
+> 1. **Dæmpet svingning:** Når $\omega_0^2>\gamma^2/4\rightarrow \omega_d\in\mathbb{R}$  ([[2. ordens systemer#Underdæmpet|underdæmpet]])
+> Polerne er komplekse $p_1=p_2^*$
 > $$x(t)=Ae^{R_{\text{real}}t}\cos(R_{\text{imag}}t+\phi)=Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$
 > 2. **Aperiodisk grænsetilfælde:** Når $\omega_0^2=\gamma^2/4\rightarrow \omega_d=0$ ([[2. ordens systemer|kritisk dæmpet]])
+> Polerne er ens $p_1=p_2$
 > $$x(t)=Ae^{R_{\text{real}}t}+Be^{R_{\text{real}}t}=Ae^{-\gamma t/2}+Be^{-\gamma t/2}$$
 > 3. **Aperiodisk svingning:** Når $\omega_0^2<\gamma^2/4\rightarrow\omega_d\in\mathbb{C}$ ([[2. ordens systemer|overdæmpet]])
+> Polerne er reelle og forskellige $p_1\neq p_2$
 > $$x(t)=Ae^{t(R_+)}+Be^{t(R_-)}=Ae^{t(-\frac \gamma 2 + \sqrt{\omega_0^2-\frac {\gamma^2}4})}+Be^{t(-\frac \gamma 2 -\sqrt{\omega_0^2-\frac {\gamma^2}4})}$$
 
 
@@ -41,7 +44,7 @@ Denne ligning, har rødderne
 hvor
 ## $$\omega_d=\sqrt{\omega_0^2-\frac {\gamma^2}4}$$
 Der findes **tre** løsninger for rødderne
-1. **Dæmpet svingning:** Når $\omega_0^2>\gamma^2/4\rightarrow \omega_d\in\mathbb{R}_+$  ([[2. ordens systemer#Underdæmpet|underdæmpet]])
+1. **Dæmpet svingning:** Når $\omega_0^2>\gamma^2/4\rightarrow \omega_d\in\mathbb{R}$  ([[2. ordens systemer#Underdæmpet|underdæmpet]])
 2. **Aperiodisk grænsetilfælde:** Når $\omega_0^2=\gamma^2/4\rightarrow \omega_d=0$ ([[2. ordens systemer|kritisk dæmpet]])
 3. **Aperiodisk svingning:** Når $\omega_0^2<\gamma^2/4\rightarrow\omega_d\in\mathbb{C}$ ([[2. ordens systemer|overdæmpet]])
 
