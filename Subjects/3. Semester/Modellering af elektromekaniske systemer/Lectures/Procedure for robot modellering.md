@@ -11,4 +11,10 @@ Følgende procedure anvendes til dynamisk modellering af en robot med $n$ frihed
 
 # 1. Kinematik
 Den kinematiske model for robotten opstilles ud fra DH-parametrene $(a_i,d_i,\alpha_i,\theta_i)$ for $i=1,2,...,n$. Dette giver en koordinat transformation
-## $$T_n^0(\mathbf q)=A_1(q_1)\cdot A_2(q_2)\cdot ...\cdot A_n(q_n)=\begin{bmatrix}R_n^0(\mathbf q)&\mathbf o_n^0(\mathbf(q)\\\end{bmatrix}$$
+## $$T_n^0(\mathbf q)=A_1(q_1)\cdot A_2(q_2)\cdot ...\cdot A_n(q_n)=\begin{bmatrix}R_n^0(\mathbf q) & \mathbf o_n^0(\mathbf(q)\\0 & 1\end{bmatrix}$$
+hvor
+## $$A_i=\begin{bmatrix}\cos(\theta_i)&-\sin(\theta_i)\cos(\alpha_i)&\sin(\theta_i)\sin(\alpha_i)&a_i\cos(\theta_i)\\\sin(\theta_i)&\cos(\theta_i)\cos(\alpha_i)&-\cos(\theta_i)\sin(\alpha_i)&a_i\sin(\theta_i)\\0&\sin(\alpha_i)&\cos(\alpha_i)&d_i\\0&0&0&1\end{bmatrix}$$
+# 2. Koordinater for massemidtpunkter
+Massemidtpunktet for link $i$ kan udregnes som
+## $$\begin{bmatrix}\mathbf p_{ci}^0(\mathbf q)\\1\end{bmatrix}=T_i^0\begin{bmatrix}\mathbf p_{ci}^i\\1\end{bmatrix}$$
+hvor $\mathbf p_{ci}^i$ er massemidtpunktet i ramme $i$ og $\mathbf p_{ci}^0$ er massemidtpunktet i ramme $0$ (Base rammen).
