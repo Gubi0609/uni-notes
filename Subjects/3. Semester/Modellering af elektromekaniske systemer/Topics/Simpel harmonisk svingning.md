@@ -2,7 +2,10 @@
 > [!help] Harmonisk svingning
 > En bevægelsesligning på formen
 > $$\frac {d^2z}{dt^2}=\ddot z(t)=-\Phi z(t)$$
-> hvor $\Phi\in\mathcal{R}_+$
+> hvor $\Phi\in\mathbb{R}_+$ har en løsning der er en _simpel harmonisk bevægelse_
+> $$z(t)=A\cos(\omega_0t+\phi)$$
+> med vinkelfrekvens og svingningstid
+> $$\omega_0=\sqrt{\Phi}\quad\text{[og]}T=2\pi\sqrt{frac 1 \Phi}$$
 
 ---
 Vi betragter systemer med _periodiske bevægelser_, hvilket vil sige at bevægelsen gentages hver $T$ sekund
