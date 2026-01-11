@@ -1,3 +1,12 @@
+# Opsummering
+> [!help] Omskrivning
+> En dæmpet harmonisk svingning
+> $$m\ddot x=-kx-b\dotx$$
+> kan omskrives til
+> $$\ddot x+\gamma\dot x+\omega_0^2x=0$$
+> hvo
+
+---
 Tilføjes en dæmpning til en [[Simpel harmonisk svingning|simpel harmonisk svingning]], kaldes det en **dæmpet simpel harmonisk svingning**.
 
 Sådan en ligning er sammensat af [[Gængse kræfter#Fjederkraft|en fjederkraft]] og [[Gængse kræfter#Dæmpningskraft|en dæmpningskraft]].
@@ -24,8 +33,16 @@ når $\omega_0^2>\gamma^2/4$ er
 
 hvor $Ae^{-\gamma t/2}$ bestemmer dæmpningen.
 
-# Aperiodisk tilfælde
+# Aperiodisk grænsetilfælde
 Løsningen til differentialligningen
 ## $$\ddot x+\gamma\dot x+\omega_0^2x=0$$
 når $\omega_0^2=\gamma^2/4$ er
 ## $$x(t)=Ae^{R_{\text{real}}t}+Be^{R_{\text{real}}t}=Ae^{-\gamma t/2}+Be^{-\gamma t/2}$$
+![[Pasted image 20260111123925.png]]
+
+# Aperiodisk svingning
+Løsningen til differentialligningen
+## $$\ddot x+\gamma\dot x+\omega_0^2x=0$$
+når $\omega_0^2<\gamma^2/4$ er
+## $$x(t)=Ae^{t(R_+)}+Be^{t(R_-)}=Ae^{t(-\frac \gamma 2 + \sqrt{\omega_0^2-\frac {\gamma^2}4})}+Be^{t(-\frac \gamma 2 -\sqrt{\omega_0^2-\frac {\gamma^2}4})}$$
+![[Pasted image 20260111124229.png]]
