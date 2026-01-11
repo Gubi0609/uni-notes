@@ -22,14 +22,14 @@ Så bliver vinkelfrekvensen og svingningstiden
 Vi kan nu opstille positionen
 ## $$x(t)=A\cos(\omega_0t+\phi)=l\cos\left(\sqrt{\frac g l}t\right)$$
 hastigheden
-## $$\omega(t)=v(t)=\dot x(t)=\sqrt{\frac g l}l\sin\left(\sqrt{\frac g l t}\right)$$
+## $$\omega(t)=v(t)=\dot x(t)=-\sqrt{\frac g l}l\sin\left(\sqrt{\frac g l t}\right)$$
 og slutteligt accelerationen for god ordens skyld
 ## $$\dot\omega(t)=a(t)=\dot v(t)=\ddot x(t)=-\frac g ll\cos\left(\sqrt{\frac g l}t\right)=-\frac g lx(t)$$
 Vi kan udregne den kinetiske og potentielle energi for systemet
 
 Den potentielle energi må være afhængig af tyngdekraften og positionen fra $\theta=0$
-## $$E_{pot}=\frac 1 2 mgy_p=\frac 1 2 mgl^2\cos^2(\theta)$$
+## $$E_{pot}=\frac 1 2 mgy_p^2=\frac 1 2 mgl^2\cos^2(\theta)$$
 og
-## $$E_{kin}=\frac 1 2 mv^2=\frac 1 2 m\left(\sqrt{\frac g l}l\sin\left(\sqrt{\frac g l t}\right)\right)^2=\frac 1 2 mgl\sin^2\left(\sqrt{\frac g l} t\right)$$
+## $$E_{kin}=\frac 1 2 mv^2=\frac 1 2 m\left(-\sqrt{\frac g l}l\sin\left(\sqrt{\frac g l t}\right)\right)^2=\frac 1 2 m\frac g l l^2\sin^2\left(\sqrt{\frac g l} t\right)$$
 Da har vi også
-## $$E_{mek}=E_{kin}+E_{pot}=\frac 1 2 mgl^2\cos^2(\theta)+\frac 1 2 mgl\sin^2\left(\sqrt{\frac g l} t\right)$$ $$=\frac 1 2mgl\left(\cos(\theta)+\sin^2(\theta)\right)$$
+## $$E_{mek}=E_{kin}+E_{pot}=\frac 1 2 \frac 1 2 m\frac g l l^2\sin^2\left(\sqrt{\frac g l} t\right)+\frac 1 2 mgl^2\cos^2(\theta)$$ $$=\frac 1 2mgl\left(\cos(\theta)+\sin^2(\theta)\right)$$
