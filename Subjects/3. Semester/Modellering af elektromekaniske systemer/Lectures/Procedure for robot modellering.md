@@ -35,4 +35,8 @@ Vi får så **Jakobianten for orientering**.
 Fra [[Procedure for robot modellering#2. Koordinater for massemidtpunkter|punkt 2]] har vi koordinaterne for massemidtpunktet for link $i$.
 ## $$\mathbf p_{ci}^0=R_i^0(\mathbf q)\mathbf p_{ci}^i+\mathbf 0_i^0(\mathbf q)$$
 Hastigheden for massemidtpunktet er dermed ($\mathbf p_{ci}^i$ er konstant)
-## $$\mathbf v_{ci}^0(\mathbf q, \dot{\mathbf q})=\frac {d\mathbf p_{ci}^0(\mathbf q)}{dt}=\dot R_i^0(\mathbf q)\math$$
+## $$\mathbf v_{ci}^0(\mathbf q, \dot{\mathbf q})=\frac {d\mathbf p_{ci}^0(\mathbf q)}{dt}=\dot R_i^0(\mathbf q)\mathbf p_{ci}^i+\dot{\mathbf o}_i^0(\mathbf q)$$
+Når DH parametre benyttes, kan hastigheden regnes (for rotationelle led) som **Jakobianten for position**
+## $$\mathbf v_{ci}^0(\mathbf q, \dot{\mathbf q})=J_P^{li}\dot q$$
+hvor
+### $$J_P^{li}=\begin{bmatrix}\mathbf z_0\times(\mathbf p_{ci}-\mathbf p_0) &\mathbf z_1\times(\mathbf p_{ci}-\mathbf p_1) & ... & \mathbf z_{i-1}\times(\mathbf p_{ci}-\mathbf p_{i-1}) &\mathbf 0 & ... & \mathbf 0\end{bmatrix}$$
