@@ -28,4 +28,13 @@ hvor $k=m\omega_0^2$.
 
 Vi kan derfor også isolere vinkelfrekvensen
 ## $$\omega_0=\sqrt{\frac k m}\quad\text{[rad/s]}$$
-Dette gælder både for translatoriske og [[Bevægelse af stive legemer#Inertimoment|roterende]] systemer.
+Dette gælder både for [[Bevægelse af stive legemer|translatoriske]] og [[Bevægelse af stive legemer#Inertimoment|roterende]] systemer.
+
+# Energi
+Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Mekanisk energi|samlede energi]] for en simpel harmonisk svingning er konstant
+![[Pasted image 20260111105405.png]]
+
+Den totale energi for et [[Gængse kræfter#Fjederkraft|masse-fjeder system]] er
+## $$E_{mek}=E_{pot}+E_{kin}=\frac 1 2kx^2+\frac 1 2mv^2\quad\text{[J]}$$
+Dette kan forkortes
+## $$E_{mek}=\frac 1 2 kx^2+\frac 1 2 mv^2$$ $$=\frac 1 2$$
