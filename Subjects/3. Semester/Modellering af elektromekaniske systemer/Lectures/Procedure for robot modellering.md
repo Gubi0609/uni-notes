@@ -26,4 +26,13 @@ hvor $\mathbf\omega_{i-1,i}^{i-1}$ er vinkelhastigheden af Ramme $i$ med hensyn 
 
 Eftersom vi benytter DH-parametre, er rotationen _altid_ omkring $z$-aksen (vi antager rotationelle led)
 ## $$\mathbf\omega_{i-1,i}^0=\mathbf z_{i-1}\dot q_i$$
-hvor $\mathbf z_{i-1} er en enhedsvektor i $z$-aksen retning for Ramme $i-
+hvor $\mathbf z_{i-1}$ er en enhedsvektor i $z$-aksen retning for Ramme $i-1$.
+
+Vi får så **Jakobianten for orientering**.
+## $$J_O^{li}=\begin{bmatrix}\mathbf z_0 & \mathbf z_1 & ... & \mathbf 0 & ... & \mathbf 0\end{bmatrix}$$
+
+# 4. Hastigheder for massemidtpunkter
+Fra [[Procedure for robot modellering#2. Koordinater for massemidtpunkter|punkt 2]] har vi koordinaterne for massemidtpunktet for link $i$.
+## $$\mathbf p_{ci}^0=R_i^0(\mathbf q)\mathbf p_{ci}^i+\mathbf 0_i^0(\mathbf q)$$
+Hastigheden for massemidtpunktet er dermed ($\mathbf p_{ci}^i$ er konstant)
+## $$\mathbf v_{ci}^0(\mathbf q, \dot{\mathbf q})=\frac {d\mathbf p_{ci}^0(\mathbf q)}{dt}=\dot R_i^0(\mathbf q)\math$$
