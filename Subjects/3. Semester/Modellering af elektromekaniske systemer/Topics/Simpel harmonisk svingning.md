@@ -5,7 +5,7 @@
 > hvor $\Phi\in\mathbb{R}_+$ har en løsning der er en _simpel harmonisk bevægelse_
 > $$z(t)=A\cos(\omega_0t+\phi)$$
 > med vinkelfrekvens og svingningstid
-> $$\omega_0=\sqrt{\Phi}\quad\text{[og]}T=2\pi\sqrt{frac 1 \Phi}$$
+> $$\omega_0=\sqrt{\Phi}\quad\text{og}\quad T=2\pi\sqrt{\frac 1 \Phi}$$
 
 ---
 Vi betragter systemer med _periodiske bevægelser_, hvilket vil sige at bevægelsen gentages hver $T$ sekund
@@ -52,3 +52,15 @@ Formlerne for position og hastighed bruges fra [[Simpel harmonisk svingning#Egen
 ## $$=\frac 1 2k(A\cos(\omega_0t+\phi))^2+\frac 1 2m(-\omega_0A\sin(\omega_0t+\phi))^2$$ $$=\frac 1 2A^2(k\cos^2(\omega_0t+\phi)+m\omega_0^2\sin^2(\omega_0t+\phi))$$
 Vi bruger $\omega_0^2=k/m$ fra [[Simpel harmonisk svingning#$$ omega_0= sqrt{ frac k m} quad text{[rad/s]}$$|før]].
 ## $$=\frac 1 2A^2(m\omega_0^2\cos^2(\omega_0t+\phi)+m\omega_0^2\sin(\omega_0t+\phi))$$ $$=\frac 1 2A^2m\omega_0^2(\cos^2+\sin^2)$$ $$E_{mek}=\frac 1 2m\omega_0^2A^2\quad\text{[J]}$$
+> [!example]- Pendul
+> ![[Pasted image 20260111121420.png]]
+> Antag at vinklen $\theta$ er meget lille, så $\sin \theta\approx\theta$.
+> Bevægelsen langs tangent retningen fås via [[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Newtons Love#Newtons 2. lov|Newtons 2. Lov]] til
+> $$ma_T=ml\frac {d^2\theta}{dt^2}\approx-mg\theta$$
+> Denne differentialligning kan skrives
+> $$\frac {d^2\theta}{dt^2}\approx-\frac g l\theta$$
+> Som har samme form som [[Simpel harmonisk svingning#Opsummering|standard formen]] for en simpel harmonisk svingning.
+> Så bliver
+> $$\omega_0=\sqrt{\frac g l}\quad\text{og}\quad T=2\pi\sqrt{\frac l g}$$
+
+> [!help] Eksempel: Pendul stang
