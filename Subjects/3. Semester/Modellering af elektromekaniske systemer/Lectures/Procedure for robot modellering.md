@@ -46,6 +46,19 @@ hvor $\mathbf p_k$ er positionsvektoren for origo af Ramme $k$.
 Den såkaldte inertitensor $I_{l_i}$ givet i base rammen kan omformuleres ved vrug af en inertitensor, der ligger i ledets massemidtpunkt ($I_{l_i}^i$)
 ## $$I_{l_i}(\mathbf q)=R_i^0(\mathbf q)I_{l_i}^i{R_i^0}^T(\mathbf q)$$
 # 6. Potentiel energi
-Den [[Poten|potentielle energi]] skal udregnes i en inertiel ramme (fx. Base rammen), der ikke bevæges. Dermed kan den potentielle energi udregnes fra
+Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Potentiel Energi|potentielle energi]] skal udregnes i en inertiel ramme (fx. Base rammen), der ikke bevæges. Dermed kan den potentielle energi udregnes fra
 ## $$E_{pot}(\mathbf q)=\sum^n_{i=1}E_{pot,l_i}(\mathbf q) \quad\text{[J]}$$
 hvor $E_{pot,l_i}$ er den potentielle energi for Link $i$.
+
+Den _samlede_ potentielle energi bliver således
+## $$E_{pot}(\mathbf q)=-\sum_{i=1}^nm_{l_i}\mathbf g_0^T\mathbf p_{ci}(\mathbf q)\quad\text{[J]}$$
+hvor $m_{l_i}$ er massen af Link $i$, $\mathbf g_0$ er tyngdeaccelerationen i Base rammen, og $\mathbf p_{ci}(\mathbf q)$ er positionen for massemidtpunktet for Link $i$.
+
+# 7. Kinetisk energi
+Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi|kinetiske energi]] skal udregnes i en inertiel ramme (fx. Base rammen), der ikke bevæges.
+Dermed kan den kinetiske energi udregnes fra
+## $$E_{kin}(\mathbf q, \dot{\mathbf q})=\sum_{i=1}^nE_{kin,l_i}(\mathbf q, \dot{\mathbf q}=\quad\text{[J]}$$
+hvor $E_ {kin,l_i}$ er den kinetiske energi for Link $i$.
+
+Den kinetiske energi for _Link $i$_ bliver således
+## $$E_{kin,l_i}(\mathbf q,\dot{\mathbf q})=$$
