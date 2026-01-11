@@ -65,4 +65,9 @@ Den kinetiske energi for _Link $i$_ bliver således
 hvor
 ## $$\frac 1 2 m_{l_i}\dot{\mathbf q}^T{J_P^{l_i}}^T(\mathbf q) J_P^{l_i}(\mathbf q)\dot{\mathbf q}\rightarrow\text{Translatoriske }E_{kin,l_i}$$
 og
-## $$\frac 1 2\dot{\mathbf q}^T{J_O^{l_i}}^T(\mathbf q)R_i^0(\mathbf q)I_{l_i}^i{R_i^0}^T(\mathbf q)J_O^{l_i}(\mathbf q)\dot{\mathbf q}\rightarrow\text{Rotationelle}$$
+## $$\frac 1 2\dot{\mathbf q}^T{J_O^{l_i}}^T(\mathbf q)R_i^0(\mathbf q)I_{l_i}^i{R_i^0}^T(\mathbf q)J_O^{l_i}(\mathbf q)\dot{\mathbf q}\rightarrow\text{Rotationelle }E_{kin,l_i}$$
+se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi|Kinetisk Energi]].
+
+# 8. Lagrange D'Alemberts princip
+Lagrange D'Alamberts princip kan for $\mathbf q=\begin{bmatrix}q_1,&q_2,&...,&q_n\end{bmatrix}$ skrives
+## $$\begin{matrix}\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_1}-\frac{\delta\mathcal L}{\delta q_1}=Q_1\\\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_2}-\frac{\delta\mathcal L}{\delta q_2}=Q_2\\\end{matrix}$$
