@@ -11,4 +11,11 @@ Denne ligning, har rødderne
 hvor
 ## $$\omega_d=\sqrt{\omega_0^2-\frac {\gamma^2}4}$$
 Der findes **tre** løsninger for rødderne
-1. [[Overfø]]
+1. **Dæmpet svingning:** Når $\omega_0^2>\gamma^2/4\rightarrow \omega_d\in\mathbb{R}_+$  ([[2. ordens systemer#Underdæmpet|underdæmpet]])
+2. **Aperiodisk grænsetilfælde:** Når $\omega_0^2=\gamma^2/4\rightarrow \omega_d=0$ ([[2. ordens systemer|kritisk dæmpet]])
+3. **Aperiodisk svingning:** Når $\omega_0^2<\gamma^2/4\rightarrow\omega_d\in\mathbb{C}$ ([[2. ordens systemer|overdæmpet]])
+
+# Dæmpet svingning
+Løsningen til differentialligningen
+## $$\ddot x+\gamma\dot x+\omega_0^2x=0$$
+når $\omega_0^2
