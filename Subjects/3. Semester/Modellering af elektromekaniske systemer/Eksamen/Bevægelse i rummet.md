@@ -64,9 +64,8 @@ Nu udnyttes at $\omega_0^2=k/m$
 Ud fra kinetisk og potentiel energi, kan vi også opstille systemet via Euler-Lagrange
 ## $$\mathscr{L} = E_{kin}-E_{pot}$$ $$\mathscr L=\frac 1 2kA^2\sin^2(\omega_0t)-\frac 1 2 kA^2\cos^2(\omega_0t)=\frac 1 2kA^2(\sin^2(\omega_0t)-\cos^2(\omega_0t)$$ $$\mathscr L=\frac 1 2kA^2(sin^2(\theta)-\cos^2(\theta))$$
 ## $$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot\theta} -\frac {\delta\mathscr L} {\delta \theta} = Q$$
-## $$\frac {\delta\mathscr L}{\delta \dot\theta}=0$$ $$$$
-
-
+## $$\frac {\delta\mathscr L}{\delta \dot\theta}=\frac {\delta\mathscr L}{\delta \dot\theta}\left(\frac 1 2m\omega_0^2A^2(\sin^2(\omega_0t)-\cos^2(\omega_0t)\right)$$ $$=m\omega_0A^2t(\frac 1 2(1-\cos(2\omega_0t))-\frac 1 2(1+\cos(2\omega_0t)))$$ $$$$
+ 
 # Fjeder-masse-dæmper
 ![[Pasted image 20260111191531.png]]
 IGNORER  x
