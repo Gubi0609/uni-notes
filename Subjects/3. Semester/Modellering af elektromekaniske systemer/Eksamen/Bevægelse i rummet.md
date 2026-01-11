@@ -7,3 +7,15 @@
 ![[Pasted image 20260111121420.png]]
 
 ## $$F_t=mg$$
+positionen (i y-aksen) kan skrives
+## $$x(t)=\sin(\theta t)$$
+så bliver hastigheden
+## $$v(t)=\dot x(t)=\theta\cos(\theta t)$$
+og accelerationen
+## $$a(t)=\dot v(t)=\ddot x(t)=-\theta^2\sin(\theta t)=-\theta^2x(t)$$
+
+og kraften fra pendulet (isoleret) bliver
+## $$ma(t)=-\theta^2mx(t)=-\theta^2msin(\theta)$$
+
+Dette tager dog kun højde for pendulet, og ikke tyngdekraften, så det bliver i stedet
+## $$F_{net}=F_
