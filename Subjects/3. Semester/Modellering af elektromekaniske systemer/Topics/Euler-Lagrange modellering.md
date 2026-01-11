@@ -78,4 +78,4 @@ Når man sætter en ikke-konservativ kraft på (eg masse-fjeder til masse-fjeder
 > [!example]- Eksempel Masse-fjeder-dæmper system
 > ![[Pasted image 20251125131824.png]]
 
-Der er også et eksempel med roterende masse-fjeder system. Har ikke fået taget screenshots. Se [[Lektion 11 - Euler-Lagrange Modellering.pdf]]
+Der er også et eksempel med roterende masse-fjeder system. Har ikke fået taget screenshots. Se [[Lektion 11 - Euler-Lagrange Modellering.pdf#page=35]]
