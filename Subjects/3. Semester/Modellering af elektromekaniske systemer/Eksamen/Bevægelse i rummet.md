@@ -32,4 +32,6 @@ Den potentielle energi må være afhængig af tyngdekraften og positionen fra $\
 og
 ## $$E_{kin}=\frac 1 2 mv^2=\frac 1 2m(-\omega_0Asin(\omega_0t))^2=\frac 1 2m(\omega_0Asin(\omega_0t))^2$$
 Da har vi også
-## $$E_{mek}=E_{pot}+E_{kin}=-mgl\cos(\omega_0t)+\frac 1 2 mg(A\cos(\omega_0t))^2$$ 
+## $$E_{mek}=E_{pot}+E_{kin}=-mgl\cos(\omega_0t)+\frac 1 2 m(\omega_0A\sin(\omega_0t))^2$$ $$E_{mek}=m(-gl\cos(\omega_0t)+\frac 1 2\omega_0^2A^2\sin^2(\omega_0t))$$ 
+Der udnyttes nu at $\omega_0^2=g/l$ og at $A=l$
+## $$E_{mek}=m(-gl\cos(\omega_0t)+\frac 1 2gl\sin^2(\omega_0t))$$ $$E_{mek}=mgl(-cos(\omega_0t)+\frac 1 2\sin^2(\omega_0t))$$
