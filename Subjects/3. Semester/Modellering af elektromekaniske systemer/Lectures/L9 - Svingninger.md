@@ -18,6 +18,7 @@
 [[Simpel harmonisk svingning]]
 [[Dæmpet simpel harmonisk svingning]]
 [[Tvunget harmonisk bevægelse]]
+[[Frekvensdomæne svingninger]]
 
 # Notes
 

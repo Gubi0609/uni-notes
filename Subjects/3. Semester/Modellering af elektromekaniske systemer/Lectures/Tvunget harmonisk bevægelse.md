@@ -10,7 +10,15 @@
 > hvor
 > $$\gamma=\frac b m\quad\text{og}\quad\omega_0^2=\frac k m$$
 
-> [!help]
+> [!help] Løsning
+> Løsningen til differentialligningen er
+> $$x(t)=A_0\cos(\omega_tt-\alpha)+Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$
+> hvor
+> $$A_0=\frac{F_0/m}{\sqrt{(\omega_0^2-\omega_t^2)^2+\gamma^2\omega_t^2}}\quad\text{og}\quad\tan\alpha=\frac{\gamma\omega_t}{\omega_0^2-\omega_t^2}$$
+
+> [!help] Resonansfrekvens
+> $A_0$ er maksimal i resonansfrekvensen
+> $$\omega_{t,r}=\sqrt{\omega_0^2-\frac{\gamma^2}2}\quad\text{[rad/s]}$$
 
 ---
 Hvis en [[Dæmpet simpel harmonisk svingning|dæmpet harmonisk svingning]] eller en [[Simpel harmonisk svingning|simpel harmonisk svingning]] påtrykkes en _periodisk_ kraft, skrives dynamikken for systemet således
