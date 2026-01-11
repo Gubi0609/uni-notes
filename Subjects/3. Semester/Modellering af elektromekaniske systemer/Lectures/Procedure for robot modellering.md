@@ -70,4 +70,7 @@ se [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kineti
 
 # 8. Lagrange D'Alemberts princip
 Lagrange D'Alamberts princip kan for $\mathbf q=\begin{bmatrix}q_1,&q_2,&...,&q_n\end{bmatrix}$ skrives
-## $$\begin{matrix}\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_1}-\frac{\delta\mathcal L}{\delta q_1}=Q_1\\\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_2}-\frac{\delta\mathcal L}{\delta q_2}=Q_2\\\end{matrix}$$
+# $$\begin{matrix}\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_1}-\frac{\delta\mathcal L}{\delta q_1}=Q_1\\\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_2}-\frac{\delta\mathcal L}{\delta q_2}=Q_2\\...\\\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_n}-\frac{\delta\mathcal L}{\delta q_n}=Q_n\end{matrix}$$
+hvor $Q_1,Q_2,...,Q_n$ er generaliserede krafter og $\mathcal L$ er _Lagrangian_ givet ved
+## $$\mathcal L(\mathbf q, \dot{\mathcal q})=E_{kin}(\mathbf q, \dot{\mathcal q})-E_{pot}(\mathbf q)\quad\text{[J]}$$
+hvor $E_{pot}$ er systemets potentielle energi og $E_{kin}$ er systemets kinetiske energi.

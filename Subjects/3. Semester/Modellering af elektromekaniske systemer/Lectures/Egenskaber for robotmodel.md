@@ -1,0 +1,1 @@
+En dynamisk model for en robot kan skrives på følgende form
