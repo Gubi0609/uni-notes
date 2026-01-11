@@ -22,4 +22,7 @@ Så bliver vinkelfrekvensen og svingningstiden
 Vi kan nu opstille positionen
 ## $$x(t)=A\cos(\omega_0t+\phi)=l\cos\left(\sqrt{\frac g l}t\right)$$
 hastigheden
-## $$v(t)=\dot x(t)=\sqrt{\frac g l}l\sin\left(\sqrt{\frac g l t})
+## $$v(t)=\dot x(t)=\sqrt{\frac g l}l\sin\left(\sqrt{\frac g l t}\right)$$
+og slutteligt accelerationen for god ordens skyld
+## $$a(t)=\dot v(t)=\ddot x(t)=-\frac g ll\cos\left(\sqrt{\frac g l}t\right)=-\frac g lx(t)$$
+Vi kan udregne arbejdet på en _kort_ strækning af svingni
