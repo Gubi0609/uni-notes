@@ -21,3 +21,5 @@ Dette tager dog kun højde for pendulet, og ikke tyngdekraften, så det bliver i
 ## $$F_{net}=F_p-F_t=-\theta^2ml\cos(\theta)-mg$$
 og $a(t)$ bliver således
 ## $$a(t)=\ddot x(t)=F_{net}=-\theta^2l\cos(\theta)-g$$
+hvilket betyder at $v(t)$ må blive
+## $$v(t)=\int a(t)d\theta=-\frac 1 3\theta^3\sin$$
