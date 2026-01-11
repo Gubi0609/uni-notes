@@ -10,10 +10,10 @@ hvor
 Løsningen til differentialligningen
 ## $$\ddot x+\gamma\dot x+\omega_0^2x=\frac {F_0}m\cos(\omega_tt)$$
 er
-## $$x(t)A_0\cos(\omega_tt-\alpha)+Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$
+## $$x(t)=A_0\cos(\omega_tt-\alpha)+Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$
 hvor
 ## $$A_0=\frac{F_0/m}{\sqrt{(\omega_0^2-\omega_t^2)^2+\gamma^2\omega_t^2}}\quad\text{og}\quad\tan\alpha=\frac{\gamma\omega_t}{\omega_0^2-\omega_t^2}$$
-
+ 
 Løsningens to led er 
 ## $$A_0\cos(\omega_tt-\alpha)\rightarrow \text{Stationær bevægelse}$$
 som primært kommer fra $F$, og
@@ -24,3 +24,10 @@ Læg mærke til, at den _Transiente_ del, har samme form som en [[Dæmpet simpel
 I starten($t=0$ s), vil den _Transiente_ bevægelse have en stor amplitude, men denne vil mindskes eksponentielt (hvis $\gamma>0$).
 Når tiden $t$ er stor, er
 ## $$x(t)\approx A_0\cos(\omega_tt-\alpha)$$
+
+Amplituden og fasen for den [[Tvunget harmonisk bevægelse#$$x(t)A_0 cos( omega_tt- alpha)+Ae {- gamma t/2} cos( omega_dt+ phi)$$|førnævnte]] løsning afhænger af inputtets vinkelfrekvens $\omega_t$.
+![[Pasted image 20260111130820.png]]
+Vi kan se at grafen for amplitude minder om et [[External/External/Kasper's Notes/Uni/Notes/Multivariable Calculus/Noter/BODE plot|BODE plot]].
+
+Det ses at $A_0$ er maksimal i resonans frekvensen
+## $$\omega_{t,r}=\sqrt{\omega_0^2-\frac}
