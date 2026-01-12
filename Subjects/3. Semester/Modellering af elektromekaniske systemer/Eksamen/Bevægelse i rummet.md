@@ -84,7 +84,10 @@ Vi kan opstille rødderne
 og prøve at indsætte værdier forskellige værdier for $k$ og $b$ for at lave forskellige løsninger
 
 ## Dæmpet svingning
-$\omega_0^2>\gamma^2/4\rightarrow \omega_d\in\mathbb{R}$ 
-$b=8$, $m=1$, $k=4$
-$\gamma=8/1=8$, $\omega_0^2=4/1=4$
-## $$R=-\frac 8 2\pm j\sqrt{4-\frac{8^2}4}$$
+$\omega_0^2>\gamma^2/4\rightarrow \omega_d\in\mathbb{R}$ hvor $\omega_2=\sqrt{\omega_0^2-\frac{\gamma^2}4}$
+$b=4$, $m=1$, $k=8$
+$\gamma=4/1=4$, $\omega_0^2=8/1=8$
+## $$R=-\frac 4 2\pm j\sqrt{8-\frac{4^2}4}=-2\pm j\sqrt{8-4}=-2\pm j\sqrt{4}=-2\pm j2$$
+Så er løsningen for $x(t)$
+## $$x(t)=Ae^{-\gamma t/2}\cos (\omega_d t+\phi)$$ $$x(t)=Ae^{-2t}\cos(2t+\phi)$$
+hvis vi har at $x(0)=0$
