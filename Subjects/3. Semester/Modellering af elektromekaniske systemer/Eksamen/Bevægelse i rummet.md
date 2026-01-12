@@ -72,3 +72,15 @@ Ud fra kinetisk og potentiel energi, kan vi også opstille systemet via Euler-La
 IGNORER  x
 
 Dette er en [[Dæmpet simpel harmonisk svingning]]
+
+Kraften kan skrives
+## $$m\ddot x=-kx-b\dot x$$
+og kan omskrives til
+## $$\ddot x+\gamma \dot x+\omega_0^2x=0$$
+hvor 
+## $$\gamma = \frac b m \quad\text{og}\quad \omega_0^2=\frac k m$$
+Vi kan opstille rødderne
+## $$R=-\frac \gamma 2\pm j\sqrt{\omega_0^2-\frac{\gamma^2}4}$$
+og prøve at indsætte værdier forskellige værdier for $k$ og $b$ for at lave forskellige løsninger
+
+##
