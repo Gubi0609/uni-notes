@@ -133,4 +133,13 @@ hvor $F=F_0\cos(\omega_tt)$. Vi sætter her $\omega_t=0$, så $F$ er noget, der 
 Vi kan så skrive
 ## $$\ddot x+\gamma\dot x+\omega_0^2x=\frac {F_0} m\cos(\omega_tt)=\frac {F_0}m$$
 hvor
-## $$\gamma =\frac b m\quad\text{og}\quad \omega_0^2=\frac l
+## $$\gamma =\frac b m\quad\text{og}\quad \omega_0^2=\frac k m$$
+Løsningen til differentialligningen er 
+## $$x(t)=A_0\cos(\omega_tt-\alpha)+Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$
+hvor
+## $$A_0=\frac{F_0/m}{\sqrt{(\omega_0^2-\omega_t^2)^2+\gamma^2\omega_t^2}}\quad\text{og}\quad\tan\alpha=\frac{\gamma\omega_t}{\omega_0^2-\omega_t^2}$$
+Eftersom at $\omega_t=0$ må $\alpha=0$.
+## $$A_0= \frac{F_0/m}{\sqrt{(\omega_0^2-0)^2+0}}=\frac {F_0/m}{\omega_0^2}=\frac {F_0/m}{k/m}=\frac {F_0}{k}$$
+Så har vi altså
+## $$x(t)=\frac {F_0}k+Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$
+## $$v(t)=\dot x(t)=Ae^{-\gamma t/2}(\omega_d\sin(\omega_dt+\phi)-\frac \gamma 2\cos(\omega_dt+\phi))$$
