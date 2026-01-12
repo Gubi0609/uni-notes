@@ -92,3 +92,12 @@ Så er løsningen for $x(t)$
 ## $$x(t)=Ae^{-\gamma t/2}\cos (\omega_d t+\phi)$$ $$x(t)=Ae^{-2t}\cos(2t+\phi)$$
 hvis vi har at $x(0)=0$, kan vi prøve at løse for $A$. Vi sætter $\phi=0$
 ## $$0=Ae^0\cos(0)=A*1*1=A$$
+## Aperiodisk grænsetilfælde
+$\omega_0^2=\gamma^2/4\rightarrow \omega_d=0$
+$b=4$, $m=1$, $k=4$
+$\gamma=4/1=4$, $\omega_0^2=4/1=4$
+
+## $$R=-\frac 4 2\pm j\sqrt{4-\frac {4^2}4}=-2\pm j\sqrt{4-4}=-2$$
+
+Så er løsningen $x(t)$
+## $$x(t)==Ae^{-\gamma t/2}+Be^{-\gamma t/2}$$
