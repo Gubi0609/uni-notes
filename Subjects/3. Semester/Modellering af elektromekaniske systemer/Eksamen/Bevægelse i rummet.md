@@ -114,7 +114,9 @@ Så er løsningen $x(t)$
 
 ## Bevægelsesligninger
 Vi tager udgangspunkt i en dæmpet svingning
-## $$v(t)=\dot x(t)=\frac d {dt}(Ae^{-\gamma t/2}\cos (\omega_d t+\phi))$$ $$\frac d {dt}(Ae^{-\gamma t /2}(\cos(\omega_d$$$$v(t)=-A\frac \gamma 2e^{-\gamma t/2}\cos(\omega_dt+\phi)+$$
+## $$v(t)=\dot x(t)=\frac d {dt}(Ae^{-\gamma t/2}\cos (\omega_d t+\phi))$$ $$v(t)=-A\frac \gamma 2e^{-\gamma t/2}\cos(\omega_dt+\phi)-Ae^{-\gamma t/2}\omega_d\sin(\omega_dt+\phi)$$
+og accelerationen
+## $$a(t)=\ddot x(t)=\dot v(t)=\frac d{dt}(-A\frac \gamma 2e^{-\gamma t/2}\cos(\omega_dt+\phi)-Ae^{-\gamma t/2}\omega_d\sin(\omega_dt+\phi))$$ $$a(t)=A\frac {\gamma^2}4e^{-\gamma t/2}\cos(\omega_dt+\phi)+A\frac \gamma 2e^{-\gamma t/2}$$
 
 ## Energi
 Den kinetiske energi for systemet er (for en dæmpet svingning)
