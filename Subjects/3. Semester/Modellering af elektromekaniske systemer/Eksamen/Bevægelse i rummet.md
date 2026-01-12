@@ -171,3 +171,11 @@ Vi kan nu opstille energi
 
 ## Lagrange
 og bruge det til at modeller med Euler-Lagrange
+## $$\mathscr{L} = E_{kin}-E_{pot}$$
+## $$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot x} -\frac {\delta\mathscr L} {\delta x} = Q$$
+hvor $Q$ er de ikke-konservative krafter $Q=-b\dot x+F_0$.
+## $$\mathscr L=\frac 1 2m\dot x^2-\frac 1 2kx^2$$
+## $$\frac {\delta\mathscr L}{\delta x}=-kx$$
+## $$\frac {\delta\mathscr L}{\delta\dot x}=m\dot x$$
+dermed
+## $$-b\dot x+F_0=\frac d{dt}m\dot x-(-kx)=-b\dot x+F_0=m\ddot x+kx$$$$\Leftrightarrow m\ddot x=-kx-b\dot x+F_0$$
