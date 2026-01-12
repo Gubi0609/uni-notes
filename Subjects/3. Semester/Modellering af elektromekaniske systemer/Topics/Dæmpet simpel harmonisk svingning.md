@@ -29,7 +29,6 @@
 > Polerne er reelle og forskellige $p_1\neq p_2$
 > $$x(t)=Ae^{t(R_+)}+Be^{t(R_-)}=Ae^{t(-\frac \gamma 2 + \sqrt{\omega_0^2-\frac {\gamma^2}4})}+Be^{t(-\frac \gamma 2 -\sqrt{\omega_0^2-\frac {\gamma^2}4})}$$
 
-
 ---
 Tilføjes en dæmpning til en [[Simpel harmonisk svingning|simpel harmonisk svingning]], kaldes det en **dæmpet simpel harmonisk svingning**.
 

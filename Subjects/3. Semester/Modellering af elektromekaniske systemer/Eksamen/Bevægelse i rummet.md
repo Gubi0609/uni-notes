@@ -199,12 +199,10 @@ Vi kan nu vælge at dele det op i to systemer
 
 Vi kan altså så se, at system 1
 ## $$m_1\ddot x_1=k(x_1-x_2)+b(\dot x_1-\dot x_2)\Leftrightarrow \ddot x_1=\frac k m (x_1-x_2)+\frac b m(\dot x_1-\dot x_2)$$
-er en [[Simpel harmonisk svingning]]
-hvor
-## $$\Phi_1=\frac k m\quad\omega_{0,1}=\sqrt{\frac k m}\quad T_1=2\pi\sqrt{\frac m k}$$
-Løsningen bliver så
-## $$x(t)=A_1\cos(\omega_{0,1}t+\phi)$$ $$v(t)=\dot x(t)=-\omega_{0,1}A_1\sin(\omega_{0,1}t+\phi)$$ $$a(t)=\dot v(t)=-\omega_{0,1}^2A_1\cos(\omega_{0,1}t+\phi)=-\omega_{0,1}$$
-1
+er en [[Dæmpet simpel harmonisk svingning]]
+## $$\ddot x_1=\gamma(x_1-x_2)+\omega_0^2(\dot x_1-\dot x_2)$$
+mens system 2
+## $$m_2\ddot x_2=$$
 
 # Roterende Dobbelt-Masse-Fjeder
 ![[Pasted image 20260112134031.png]]
