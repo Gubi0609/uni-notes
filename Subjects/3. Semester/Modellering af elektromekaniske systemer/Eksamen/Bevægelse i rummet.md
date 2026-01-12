@@ -190,22 +190,21 @@ og potentiel energi
 og bruge det til Euler-Lagrange modellering
 ## $$\mathscr{L} = E_{kin}-E_{pot}$$
 ## $$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot x} -\frac {\delta\mathscr L} {\delta x} = Q$$
-hvor $Q$ er de ikke-konservative krafter $Q=-b\dot x+F$.
+hvor $Q$ er de ikke-konservative krafter $Q=-b(\dot x_1-\dot x_2)+F$.
 ## $$\mathscr L=\left(\frac 1 2m_1\dot x_1^2+\frac 1 2m_2\dot x_2^2\right)-\left(\frac 1 2k(x_1-_2)^2\right)$$
 ## $$\frac {\delta\mathscr L}{\delta x}=-k(x_1-x_2)$$
 ## $$\frac {\delta\mathscr L}{\delta\dot x}=m_1\dot x_1+m_2\dot x_2$$
 Vi kan nu vælge at dele det op i to systemer
-## $$\frac d{dt}\begin{bmatrix}m_1\dot x_1\\m_2\dot x_2\end{bmatrix}-\begin{bmatrix}-k(x_1-2)\\ k(x_1-x_2)\end{bmatrix}=\begin{bmatrix}b\dot x\\-b\dot x+F\end{bmatrix}$$$$\begin{bmatrix}m_1\ddot x_1\\m_2\ddot x_2\end{bmatrix}-\begin{bmatrix}-k(x_1-x_2)\\ k(x_1-x_2)\end{bmatrix}=\begin{bmatrix}b\dot x\\-b\dot x+F\end{bmatrix}$$ $$\begin{bmatrix}m_1\ddot x_1\\m_2\ddot x_2\end{bmatrix}=\begin{bmatrix}b\dot x\\-b\dot x+F\end{bmatrix}+\begin{bmatrix}k(x_1-x_2)\\ -k(x_1-x_2)\end{bmatrix}=\begin{bmatrix}k(x_1-x_2)+b\dot x\\F-k(x_1-x_2)-\end{bmatrix}$$
-Således bliver det for det samlede system
-## $$m_1\ddot x_1+m_2\ddot x_2=-kx_1-kx_2+F$$
+## $$\frac d{dt}\begin{bmatrix}m_1\dot x_1\\m_2\dot x_2\end{bmatrix}-\begin{bmatrix}-k(x_1-2)\\ k(x_1-x_2)\end{bmatrix}=\begin{bmatrix}b(\dot x_1-\dot x_2)\\-b(\dot x_1-\dot x_2)+F\end{bmatrix}$$$$\begin{bmatrix}m_1\ddot x_1\\m_2\ddot x_2\end{bmatrix}-\begin{bmatrix}-k(x_1-x_2)\\ k(x_1-x_2)\end{bmatrix}=\begin{bmatrix}b(\dot x_1-\dot x_2)\\-b(\dot x_1-\dot x_2)+F\end{bmatrix}$$ $$\begin{bmatrix}m_1\ddot x_1\\m_2\ddot x_2\end{bmatrix}=\begin{bmatrix}b(\dot x_1-\dot x_2)\\-b(\dot x_1-\dot x_2)+F\end{bmatrix}+\begin{bmatrix}k(x_1-x_2)\\ -k(x_1-x_2)\end{bmatrix}$$$$=\begin{bmatrix}k(x_1-x_2)+b(\dot x_1-\dot x_2)\\F-k(x_1-x_2)-b(\dot x_1-\dot x_2)\end{bmatrix}$$
+
 Vi kan altså så se, at system 1
-## $$m_1\ddot x_1=-kx_1\Leftrightarrow \ddot x_1=-\frac k mx_1$$
+## $$m_1\ddot x_1=k(x_1-x_2)+b(\dot x_1-\dot x_2)\Leftrightarrow \ddot x_1=\frac k m (x_1-x_2)+\frac b m(\dot x_1-\dot x_2)$$
 er en [[Simpel harmonisk svingning]]
 hvor
 ## $$\Phi_1=\frac k m\quad\omega_{0,1}=\sqrt{\frac k m}\quad T_1=2\pi\sqrt{\frac m k}$$
 Løsningen bliver så
 ## $$x(t)=A_1\cos(\omega_{0,1}t+\phi)$$ $$v(t)=\dot x(t)=-\omega_{0,1}A_1\sin(\omega_{0,1}t+\phi)$$ $$a(t)=\dot v(t)=-\omega_{0,1}^2A_1\cos(\omega_{0,1}t+\phi)=-\omega_{0,1}$$
-
+1
 
 # Roterende Dobbelt-Masse-Fjeder
 ![[Pasted image 20260112134031.png]]
