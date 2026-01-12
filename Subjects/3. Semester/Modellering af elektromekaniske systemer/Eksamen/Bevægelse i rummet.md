@@ -90,8 +90,9 @@ $\gamma=4/1=4$, $\omega_0^2=8/1=8$
 ## $$R=-\frac 4 2\pm j\sqrt{8-\frac{4^2}4}=-2\pm j\sqrt{8-4}=-2\pm j\sqrt{4}=-2\pm j2$$
 Så er løsningen for $x(t)$
 ## $$x(t)=Ae^{-\gamma t/2}\cos (\omega_d t+\phi)$$ $$x(t)=Ae^{-2t}\cos(2t+\phi)$$
-hvis vi har at $x(0)=0$, kan vi prøve at løse for $A$. Vi sætter $\phi=0$
-## $$0=Ae^0\cos(0)=A*1*1=A$$
+hvis vi har at $x(0)=5$, kan vi prøve at løse for $A$. Vi sætter $\phi=0$
+## $$5=Ae^0\cos(0)=A*1*1=A\Leftrightarrow A=5$$
+altså afhænger $A$ af begyndelsesbetingelsen (når $\phi=0$).
 ## Aperiodisk grænsetilfælde
 $\omega_0^2=\gamma^2/4\rightarrow \omega_d=0$
 $b=4$, $m=1$, $k=4$
@@ -101,7 +102,7 @@ $\gamma=4/1=4$, $\omega_0^2=4/1=4$
 
 Så er løsningen $x(t)$
 ## $$x(t)=Ae^{-\gamma t/2}+Be^{-\gamma t/2}=Ae^{-2t}+Be^{-2t}$$
-# Aperiodisk svingning
+## Aperiodisk svingning
 $\omega_0^2<\gamma^2/4\rightarrow\omega_d\in\mathbb{C}$
 $b=8$, $m=1$, $k=4$
 $\gamma=8/1=8$, $\omega_0^2=4/1=4$
@@ -110,3 +111,10 @@ $\gamma=8/1=8$, $\omega_0^2=4/1=4$
 
 Så er løsningen $x(t)$
 ## $$x(t)=Ae^{(-4+\sqrt{12})t}Be^{(-4-\sqrt{12})t}$$
+
+## Bevægelsesligninger
+Vi tager udgangspunkt i en dæmpet svingning
+## $$v(t)=\dot x(t)=\frac d {dt}(Ae^{-\gamma t/2}\cos (\omega_d t+\phi))$$ $$\frac d {dt}(Ae^{-\gamma t /2}(\cos(\omega_d$$$$v(t)=-A\frac \gamma 2e^{-\gamma t/2}\cos(\omega_dt+\phi)+$$
+
+## Energi
+Den kinetiske energi for systemet er (for en dæmpet svingning)
