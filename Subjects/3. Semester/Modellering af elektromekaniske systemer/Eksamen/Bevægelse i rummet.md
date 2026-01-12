@@ -62,10 +62,9 @@ Nu udnyttes at $\omega_0^2=k/m$
 ## $$E_{mek}=\frac 1 2 A^2(m\omega_0^2\cos^2(\omega_0t)+m\omega_0^2\sin^2(\omega_0t))$$ $$E_{mek}=\frac 1 2 A^2 m\omega_0^2(\cos^2(\omega_0t)+\sin^2(\omega_0t))=\frac 1 2A^2m\frac k m(1)=\frac 1 2A^2k$$
 ## Lagrange
 Ud fra kinetisk og potentiel energi, kan vi også opstille systemet via Euler-Lagrange
-## $$\mathscr{L} = E_{kin}-E_{pot}$$ $$\mathscr L=\frac 1 2kA^2\sin^2(\omega_0t)-\frac 1 2 kA^2\cos^2(\omega_0t)=\frac 1 2kA^2(\sin^2(\omega_0t)-\cos^2(\omega_0t)$$ $$\mathscr L=\frac 1 2kA^2(sin^2(\theta)-\cos^2(\theta))$$
-## $$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot\theta} -\frac {\delta\mathscr L} {\delta \theta} = Q$$
-==HUSK LIGE HER AT DU HAR TO LIGNINGER GANGET SAMMEN==
-## $$\frac {\delta\mathscr L}{\delta \dot\theta}=\frac {\delta\mathscr L}{\delta \dot\theta}\left(\frac 1 2m\omega_0^2A^2(\sin^2(\omega_0t)-\cos^2(\omega_0t)\right)$$ $$=m\omega_0A^2t(\frac 1 2(1-\cos(2\omega_0t))-\frac 1 2(1+\cos(2\omega_0t)))$$ $$=\frac 1 2m\omega_0A^2t(1-\cos-1-\cos)=\frac 1 2m\omega_0A^2t(-2\cos(\omega_0t))$$$$\frac {\delta\mathscr L}{\delta \dot\theta}=-\omega_0A^2t\cos(\omega_0t)$$
+## $$\mathscr{L} = E_{kin}-E_{pot}$$$$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot q} -\frac {\delta\mathscr L} {\delta q} = Q$$
+
+hvor $Q$ er de ikke-konservative krafter, hvile
 
 # Fjeder-masse-dæmper
 ![[Pasted image 20260111191531.png]]
@@ -136,7 +135,7 @@ hvor $Q$ er de ikke-konservative krafter $Q=-b\dot x$
 ## $$\frac {\delta\mathscr L}{\delta x}=-kx$$
 ## $$\frac {\delta\mathscr L}{\delta\dot x}=m\dot x$$
 dermed
-## $$-b\dot x=\frac d {dt}$$
+## $$-b\dot x=\frac d {dt}m\dot x-(-kx)=m\ddot x+kx\Leftrightarrow m\ddot x=-kx-b\dot x$$
 
 
 # Fjeder-Masse-Dæmper-Kraft
