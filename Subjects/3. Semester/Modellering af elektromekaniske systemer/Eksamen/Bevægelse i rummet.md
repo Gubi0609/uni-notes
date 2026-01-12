@@ -195,4 +195,6 @@ hvor $Q$ er de ikke-konservative krafter $Q=F$.
 ## $$\frac {\delta\mathscr L}{\delta x}=-kx_1-kx_2$$
 ## $$\frac {\delta\mathscr L}{\delta\dot x}=m_1\dot x_1+m_2\dot x_2$$
 Vi kan nu vælge at dele det op i to systemer
-## $$\begin{bmatrix}m_1\dot x_1-kx_1\end{bmatrix}$$
+## $$\frac d{dt}\begin{bmatrix}m_1\dot x_1\\m_2\dot x_2\end{bmatrix}-\begin{bmatrix}-kx_1\\-kx_2\end{bmatrix}=\begin{bmatrix}0\\F\end{bmatrix}$$$$\begin{bmatrix}m_1\ddot x_1\\m_2\ddot x_2\end{bmatrix}-\begin{bmatrix}-kx_1\\-kx_2\end{bmatrix}=\begin{bmatrix}0\\F\end{bmatrix}$$ $$\begin{bmatrix}m_1\ddot x_1\\m_2\ddot x_2\end{bmatrix}=\begin{bmatrix}0\\F\end{bmatrix}+\begin{bmatrix}-kx_1\\-kx_2\end{bmatrix}=\begin{bmatrix}-kx_1\\F-kx_2\end{bmatrix}$$
+Således bliver det for det samlede system
+## $$m_1\ddot x_1+m_2\ddot x_2=-kx_1-kx_2+F$$
