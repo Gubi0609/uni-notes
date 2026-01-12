@@ -83,4 +83,8 @@ Vi kan opstille rødderne
 ## $$R=-\frac \gamma 2\pm j\sqrt{\omega_0^2-\frac{\gamma^2}4}$$
 og prøve at indsætte værdier forskellige værdier for $k$ og $b$ for at lave forskellige løsninger
 
-##
+## Dæmpet svingning
+$\omega_0^2>\gamma^2/4\rightarrow \omega_d\in\mathbb{R}$ 
+$b=8$, $m=1$, $k=4$
+$\gamma=8/1=8$, $\omega_0^2=4/1=4$
+## $$R=-\frac 8 2\pm j\sqrt{4-\frac{8^2}4}$$
