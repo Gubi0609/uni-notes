@@ -100,4 +100,10 @@ $\gamma=4/1=4$, $\omega_0^2=4/1=4$
 ## $$R=-\frac 4 2\pm j\sqrt{4-\frac {4^2}4}=-2\pm j\sqrt{4-4}=-2$$
 
 Så er løsningen $x(t)$
-## $$x(t)==Ae^{-\gamma t/2}+Be^{-\gamma t/2}$$
+## $$x(t)=Ae^{-\gamma t/2}+Be^{-\gamma t/2}=Ae^{-2t}+Be^{-2t}$$
+# Aperiodisk svingning
+$\omega_0^2<\gamma^2/4\rightarrow\omega_d\in\mathbb{C}$
+$b=8$, $m=1$, $k=4$
+$\gamma=8/1=8$, $\omega_0^2=4/1=4$
+
+## $$R=-\frac 8 2\pm j\sqrt{4-\frac {8^2} 4}=-4\pm j\sqrt{4-16}=-4\$$
