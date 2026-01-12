@@ -187,3 +187,12 @@ Vi kan opstille kinetisk energi
 ## $$E_{kin}=E_{kin,1}+E_{kin,2}=\frac 1 2m_1\dot x_1^2+\frac 1 2m_2\dot x_2^2$$
 og potentiel energi
 ## $$E_{pot}=E_{pot,1}+E_{pot,2}=\frac 1 2kx_1^2+\frac 1 2kx_2^2$$
+og bruge det til Euler-Lagrange modellering
+## $$\mathscr{L} = E_{kin}-E_{pot}$$
+## $$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot x} -\frac {\delta\mathscr L} {\delta x} = Q$$
+hvor $Q$ er de ikke-konservative krafter $Q=F$.
+## $$\mathscr L=\left(\frac 1 2m_1\dot x_1^2+\frac 1 2m_2\dot x_2^2\right)-\left(\frac 1 2kx_1^2+\frac 1 2kx_2^2\right)$$
+## $$\frac {\delta\mathscr L}{\delta x}=-kx_1-kx_2$$
+## $$\frac {\delta\mathscr L}{\delta\dot x}=m_1\dot x_1+m_2\dot x_2$$
+Vi kan nu vælge at dele det op i to systemer
+## $$\begin{bmatrix}m_1\dot x_1-kx_1\end{bmatrix}$$
