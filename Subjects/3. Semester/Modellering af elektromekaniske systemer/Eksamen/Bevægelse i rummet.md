@@ -106,4 +106,7 @@ $\omega_0^2<\gamma^2/4\rightarrow\omega_d\in\mathbb{C}$
 $b=8$, $m=1$, $k=4$
 $\gamma=8/1=8$, $\omega_0^2=4/1=4$
 
-## $$R=-\frac 8 2\pm j\sqrt{4-\frac {8^2} 4}=-4\pm j\sqrt{4-16}=-4\$$
+## $$R=-\frac 8 2\pm j\sqrt{4-\frac {8^2} 4}=-4\pm j\sqrt{4-16}=-4\pm j\sqrt{-12}$$ $$R=-4\pm j^2\sqrt{12}=-4\pm\sqrt{12}$$
+
+Så er løsningen $x(t)$
+## $$x(t)=Ae^{(-4+\sqrt{12})t}Be^{(-4-\sqrt{12})t}$$
