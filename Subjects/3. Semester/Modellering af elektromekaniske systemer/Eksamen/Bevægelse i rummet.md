@@ -179,3 +179,11 @@ hvor $Q$ er de ikke-konservative krafter $Q=-b\dot x+F_0$.
 ## $$\frac {\delta\mathscr L}{\delta\dot x}=m\dot x$$
 dermed
 ## $$-b\dot x+F_0=\frac d{dt}m\dot x-(-kx)=-b\dot x+F_0=m\ddot x+kx$$$$\Leftrightarrow m\ddot x=-kx-b\dot x+F_0$$
+# Fjeder-Dæmper-Dobbelt masse system
+![[Pasted image 20260109115650.png]]
+
+# Lagrange
+Vi kan opstille kinetisk energi
+## $$E_{kin}=E_{kin,1}+E_{kin,2}=\frac 1 2m_1\dot x_1^2+\frac 1 2m_2\dot x_2^2$$
+og potentiel energi
+## $$E_{pot}=E_{pot,1}+E_{pot,2}=\frac 1 2kx_1^2+\frac 1 2kx_2^2$$
