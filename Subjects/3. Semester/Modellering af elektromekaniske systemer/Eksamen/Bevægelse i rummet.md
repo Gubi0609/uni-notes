@@ -116,7 +116,8 @@ Så er løsningen $x(t)$
 Vi tager udgangspunkt i en dæmpet svingning
 ## $$v(t)=\dot x(t)=\frac d {dt}(Ae^{-\gamma t/2}\cos (\omega_d t+\phi))$$ $$v(t)=-A\frac \gamma 2e^{-\gamma t/2}\cos(\omega_dt+\phi)-Ae^{-\gamma t/2}\omega_d\sin(\omega_dt+\phi)$$
 og accelerationen
-## $$a(t)=\ddot x(t)=\dot v(t)=\frac d{dt}(-A\frac \gamma 2e^{-\gamma t/2}\cos(\omega_dt+\phi)-Ae^{-\gamma t/2}\omega_d\sin(\omega_dt+\phi))$$ $$a(t)=A\frac {\gamma^2}4e^{-\gamma t/2}\cos(\omega_dt+\phi)+A\frac \gamma 2e^{-\gamma t/2}\omega_d\sin(\omega_dt+\phi)+A\frac \gamma 2e^{-\gamma t/2}\omega_d\sin(\omega_dt+\phi)-Ae^{-\gamma t/2}\omega_d^2\cos(\omega_dt+\phi)$$ $$a(t)=Ae^{-\gamma t /2}(\frac {\gamma^2}4\cos(\omega_dt+\phi)-\omega_d^2\cos(\omega_dt+\phi))+\frac \gamma 2\omega_d\sin(\omega_dt+\phi)+$$
+## $$a(t)=\ddot x(t)=\dot v(t)=\frac d{dt}(-A\frac \gamma 2e^{-\gamma t/2}\cos(\omega_dt+\phi)-Ae^{-\gamma t/2}\omega_d\sin(\omega_dt+\phi))$$ $$a(t)=A\frac {\gamma^2}4e^{-\gamma t/2}\cos(\omega_dt+\phi)+A\frac \gamma 2e^{-\gamma t/2}\omega_d\sin(\omega_dt+\phi)+A\frac \gamma 2e^{-\gamma t/2}\omega_d\sin(\omega_dt+\phi)-Ae^{-\gamma t/2}\omega_d^2\cos(\omega_dt+\phi)$$ $$a(t)=Ae^{-\gamma t /2}(\frac {\gamma^2}4\cos(\omega_dt+\phi)-\omega_d^2\cos(\omega_dt+\phi))+ \gamma\omega_d\sin(\omega_dt+\phi))$$
 
 ## Energi
-Den kinetiske energi for systemet er (for en dæmpet svingning)
+Den kinetiske energi for systemet er 
+## $$E_{kin}=\frac 1 2 mv^2$$ $$E_{kin}=\frac 1 2 m(Ae^{-\gamma t/2}(\omega_d\sin(\omega_dt+\phi)-\frac \gamma 2\cos(\omega_dt+\phi)))^2$$ $$E_{kin}=\frac 1 2 mA^2e^{-\gamma t}(\omega_d\sin-\frac \gamma 2\cos)^2$$ $$E_{kin}=\frac 1 2mA^2e^{-\gamma t}(\omega_d^2\sin^2+\frac {})$$
