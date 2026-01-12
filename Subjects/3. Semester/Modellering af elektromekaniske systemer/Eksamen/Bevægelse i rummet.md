@@ -120,4 +120,6 @@ og accelerationen
 
 ## Energi
 Den kinetiske energi for systemet er 
-## $$E_{kin}=\frac 1 2 mv^2$$ $$E_{kin}=\frac 1 2 m(Ae^{-\gamma t/2}(\omega_d\sin(\omega_dt+\phi)-\frac \gamma 2\cos(\omega_dt+\phi)))^2$$ $$E_{kin}=\frac 1 2 mA^2e^{-\gamma t}(\omega_d\sin-\frac \gamma 2\cos)^2$$ $$E_{kin}=\frac 1 2mA^2e^{-\gamma t}(\omega_d^2\sin^2+\frac {})$$
+## $$E_{kin}=\frac 1 2 mv^2$$ $$E_{kin}=\frac 1 2 m(Ae^{-\gamma t/2}(\omega_d\sin(\omega_dt+\phi)-\frac \gamma 2\cos(\omega_dt+\phi)))^2$$ $$E_{kin}=\frac 1 2 mA^2e^{-\gamma t}(\omega_d\sin-\frac \gamma 2\cos)^2$$ $$E_{kin}=\frac 1 2mA^2e^{-\gamma t}(\omega_d^2\sin^2+\frac {\gamma^2}4\cos^2-2\sin\cos)$$
+Den potentielle energi er afhængig af positionen
+## $$E_{pot}=\frac 1 2kx^2=\frac 1 2k(Ae^{-\gamma t/2}\cos (\omega_d t+\phi))^2=\frac 1 2kA^2e^{-\gamma t}\cos^2(\omega_dt+\phi)$$
