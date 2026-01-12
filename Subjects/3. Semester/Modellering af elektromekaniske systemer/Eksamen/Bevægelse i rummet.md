@@ -62,9 +62,17 @@ Nu udnyttes at $\omega_0^2=k/m$
 ## $$E_{mek}=\frac 1 2 A^2(m\omega_0^2\cos^2(\omega_0t)+m\omega_0^2\sin^2(\omega_0t))$$ $$E_{mek}=\frac 1 2 A^2 m\omega_0^2(\cos^2(\omega_0t)+\sin^2(\omega_0t))=\frac 1 2A^2m\frac k m(1)=\frac 1 2A^2k$$
 ## Lagrange
 Ud fra kinetisk og potentiel energi, kan vi også opstille systemet via Euler-Lagrange
-## $$\mathscr{L} = E_{kin}-E_{pot}$$$$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot q} -\frac {\delta\mathscr L} {\delta q} = Q$$
+## $$\mathscr{L} = E_{kin}-E_{pot}$$$$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot x} -\frac {\delta\mathscr L} {\delta x} = Q$$
 
-hvor $Q$ er de ikke-konservative krafter, hvile
+hvor $Q$ er de ikke-konservative krafter, hvilket i dette system er $Q=0$
+
+## $$E_{kin}=\frac 1 2 m\dot x^2\quad\text{og}\quad E_{pot}=\frac 1 2kx^2$$
+så
+## $$\mathscr L=\frac 1 2m\dot x^2-\frac 1 2kx^2$$
+og dermed
+## $$\frac {\delta\mathscr L} {\delta x}=-kx$$ $$\frac {\delta\mathscr L} {\delta \dot x}=m\dot x$$
+Slutteligt
+## $$0=\frac d{dt}m\dot x-(-kx)=m\ddot x+kx\Leftrightarrow m\ddot x=-kx$$
 
 # Fjeder-masse-dæmper
 ![[Pasted image 20260111191531.png]]
@@ -159,4 +167,7 @@ Så har vi altså
 ## $$x(t)=\frac {F_0}k+Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$ $$v(t)=\dot x(t)=Ae^{-\gamma t/2}(\omega_d\sin(\omega_dt+\phi)-\frac \gamma 2\cos(\omega_dt+\phi))$$ $$a(t)=\dot v(t)=Ae^{-\gamma t /2}(\frac {\gamma^2}4\cos(\omega_dt+\phi)-\omega_d^2\cos(\omega_dt+\phi))+ \gamma\omega_d\sin(\omega_dt+\phi))$$
 ## Energi
 Vi kan nu opstille energi
-## $$E_{kin}=\frac 1 2mv^2$$
+## $$E_{kin}=\frac 1 2mv^2\quad\text{og}\quad E_{pot}=\frac 1 2kx^2$$
+
+## Lagrange
+og bruge det til at modeller med Euler-Lagrange
