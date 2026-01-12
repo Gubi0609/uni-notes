@@ -126,7 +126,18 @@ Den potentielle energi er afhængig af positionen
 
 # Euler-Lagrange
 Dette er en model med en ikke konservativ kraft.
-V
+Vi har derfor
+## $$E_{kin}=\frac 1 2 m\dot x^2\quad\text{og}\quad E_{pot}=\frac 1 2kx^2$$
+og Lagrange modellering:
+## $$\mathscr{L} = E_{kin}-E_{pot}$$
+## $$\frac d {dt}*\frac {\delta\mathscr L} {\delta \dot x} -\frac {\delta\mathscr L} {\delta x} = Q$$
+hvor $Q$ er de ikke-konservative krafter $Q=-b\dot x$
+## $$\mathscr L=\frac 1 2m\dot x^2-\frac 1 2kx^2$$
+## $$\frac {\delta\mathscr L}{\delta x}=-kx$$
+## $$\frac {\delta\mathscr L}{\delta\dot x}=m\dot x$$
+dermed
+## $$-b\dot x=\frac d {dt}$$
+
 
 # Fjeder-Masse-Dæmper-Kraft
 ![[Pasted image 20260111191531.png]]
