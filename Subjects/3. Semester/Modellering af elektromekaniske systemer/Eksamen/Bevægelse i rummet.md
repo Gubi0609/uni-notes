@@ -141,5 +141,7 @@ hvor
 Eftersom at $\omega_t=0$ må $\alpha=0$.
 ## $$A_0= \frac{F_0/m}{\sqrt{(\omega_0^2-0)^2+0}}=\frac {F_0/m}{\omega_0^2}=\frac {F_0/m}{k/m}=\frac {F_0}{k}$$
 Så har vi altså
-## $$x(t)=\frac {F_0}k+Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$
-## $$v(t)=\dot x(t)=Ae^{-\gamma t/2}(\omega_d\sin(\omega_dt+\phi)-\frac \gamma 2\cos(\omega_dt+\phi))$$
+## $$x(t)=\frac {F_0}k+Ae^{-\gamma t/2}\cos(\omega_dt+\phi)$$ $$v(t)=\dot x(t)=Ae^{-\gamma t/2}(\omega_d\sin(\omega_dt+\phi)-\frac \gamma 2\cos(\omega_dt+\phi))$$ $$a(t)=\dot v(t)=Ae^{-\gamma t /2}(\frac {\gamma^2}4\cos(\omega_dt+\phi)-\omega_d^2\cos(\omega_dt+\phi))+ \gamma\omega_d\sin(\omega_dt+\phi))$$
+## Energi
+Vi kan nu opstille energi
+## $$E_{kin}=\frac 1 2
