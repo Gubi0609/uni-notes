@@ -202,7 +202,8 @@ Vi kan altså så se, at system 1
 er en [[Dæmpet simpel harmonisk svingning]]
 ## $$\ddot x_1=\gamma(x_1-x_2)+\omega_0^2(\dot x_1-\dot x_2)$$
 mens system 2
-## $$m_2\ddot x_2=$$
+## $$m_2\ddot x_2=F-k(x_1-x_2)-b(\dot x_1-\dot x_2)$$
+er en [[Tvunget harmonisk bevægelse]].
 
 # Roterende Dobbelt-Masse-Fjeder
 ![[Pasted image 20260112134031.png]]
