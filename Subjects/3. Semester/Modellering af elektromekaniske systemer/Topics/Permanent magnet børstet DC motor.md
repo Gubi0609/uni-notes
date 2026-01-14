@@ -29,7 +29,9 @@ hvor $e$ er den elektromotoriske kraft.
 Samt udtrykket for [[Biot Savarts lov#Magnetisk fluks i solenoid|fluks i solenoid]]
 ## $$\Phi(t)=BA\cos(\theta(t))\quad\text{[Wb]}$$
 Dermed bliver den elektromotoriske kraft (**back emf**)
-## $$e(T)=-\frac d {dt}(Ba\cos(\theta(t))=BA\sin(\theta(t))\omega(t)$$
+## $$e(t)=-\frac d {dt}(Ba\cos(\theta(t))=BA\sin(\theta(t))\omega(t)$$
+pga kommutatoren, er spolen kun aktiv når $\theta\approx\pi/2$, dermed fås
+## $$e(t)=BA\omega(t)$$
 ![[Pasted image 20251118125538.png]]
 
 # Egenskaber
@@ -38,6 +40,7 @@ Nu haves udtryk for motorens kraftmoment og spændingen over motoren (givet af d
 
 Vigtigt at bemærke, at $b$ er friktionen.
 
+Vi kan dermed opstille den **Elektriske ligning** for motoren hvor vi gør brug af [[Permanent magnet børstet DC motor#Elektromotorisk kraft|den elektromotoriske kraft]]
 ## $$ \mu_a=R_aI_a+L_a \frac {dI}{dt} + K\omega$$
 hvor
 ## $$ K\omega = emf$$
