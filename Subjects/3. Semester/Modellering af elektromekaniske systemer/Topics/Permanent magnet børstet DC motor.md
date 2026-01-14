@@ -1,7 +1,21 @@
 Vi antager, at det elektriske felt i DC motoren er nul, og udregner [[Lorentz kraft|Lorentz kraften]] på en _lille_ ladning $dq$, der er i det lille ledningestykke $ds$ i et magnetisk felt $\mathbf{B}$ som
 ## $$d\mathbf F=dq\mathbf v\times\mathbf B\quad\text{[N]}$$
-Kraften, der påvirker en leder med længde $l$ i det magnetiske felt er
-## $$F=Bil\sin(\alpha)$$
+**Størrelsen** af kraften, der påvirker en leder med længde $l$ i det magnetiske felt er
+## $$F=Bil\sin(\alpha)\quad\text{[N]}$$
+hvor $\alpha$ er vinkel imellem lederen og $\mathbf B$ i henhold til strømmens retning.
+
+For en spole med en leder, vil vinklen $\alpha$ altid være $\pm \frac \pi 2$, dermed bliver størrelsen på kraften
+## $$F=Bil\quad\text{[N]}$$
+[[Impulsmoment og kraftmoment#Kraftmoment|Kraftmomentet]] omkring center-aksen af spolen bliver dermed
+## $$\tau=r\times F=2(Bil)\frac d 2\sin(\theta)$$
+hvor $\theta$ er vinklen af spolen
+![[Pasted image 20260114151545.png]]
+
+Eftersom strømmens retning ændres hver halve omgang (pga kommutatoren), har kraftmomentet samme fortegn for alle værdier af $\theta$.
+Hvis mange elementer indsættes i kommutatoren, kan en næsten konstant kraftmoment-profil opnås.
+Derved bliver
+## $$\tau=Bild=K_\Phi$$
+
 
 # Kraftmoment
 ![[Pasted image 20251118125425.png]]
