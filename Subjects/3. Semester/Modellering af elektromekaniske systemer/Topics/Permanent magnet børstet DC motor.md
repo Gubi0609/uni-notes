@@ -1,4 +1,5 @@
-Vi antager, at det elektriske felt i DC motoren er nul, og udregner [[Lorentz kraft|Lorentz kraften]] på en _lille_ ladning $dq$, der er i det lille ledningestykke $ds$ i et magnetisk felt $\mathbf{B}$ som
+# Kraft
+Vi antager, at det elektriske felt i DC motoren er nul, og udregner [[Lorentz kraft|Lorentz kraften]] på en _lille_ ladning $dq$, der er i det lille ledningstykke $ds$ i et magnetisk felt $\mathbf{B}$ som
 ## $$d\mathbf F=dq\mathbf v\times\mathbf B\quad\text{[N]}$$
 **Størrelsen** af kraften, der påvirker en leder med længde $l$ i det magnetiske felt er
 ## $$F=Bil\sin(\alpha)\quad\text{[N]}$$
@@ -6,6 +7,7 @@ hvor $\alpha$ er vinkel imellem lederen og $\mathbf B$ i henhold til strømmens 
 
 For en spole med en leder, vil vinklen $\alpha$ altid være $\pm \frac \pi 2$, dermed bliver størrelsen på kraften
 ## $$F=Bil\quad\text{[N]}$$
+# Kraftmoment
 [[Impulsmoment og kraftmoment#Kraftmoment|Kraftmomentet]] omkring center-aksen af spolen bliver dermed
 ## $$\tau=r\times F=2(Bil)\frac d 2\sin(\theta)$$
 hvor $\theta$ er vinklen af spolen
@@ -14,13 +16,20 @@ hvor $\theta$ er vinklen af spolen
 Eftersom strømmens retning ændres hver halve omgang (pga kommutatoren), har kraftmomentet samme fortegn for alle værdier af $\theta$.
 Hvis mange elementer indsættes i kommutatoren, kan en næsten konstant kraftmoment-profil opnås.
 Derved bliver
-## $$\tau=Bild=K_\Phi$$
+## $$\tau=Bild=K_\Phi\Phi_i\quad\text{[Nm]}$$
+hvor $K_\Phi=Bld$ (alle konstanterne) og $\Phi_i=i$ (variablen, strømmen).
 
-
-# Kraftmoment
 ![[Pasted image 20251118125425.png]]
 
 # Elektromotorisk kraft
+Den elektromotoriske kraft bestemmes ud fra [[Faradays induktionslov]]
+## $$e=-\frac {d\Phi_c}{dt}\quad\text{[V]}$$
+hvor $e$ er den elektromotoriske kraft.
+
+Samt udtrykket for [[Biot Savarts lov#Magnetisk fluks i solenoid|fluks i solenoid]]
+## $$\Phi(t)=BA\cos(\theta(t))\quad\text{[Wb]}$$
+Dermed bliver den elektromotoriske kraft (**back emf**)
+## $$e(T)=-\frac d {dt}(Ba\cos(\theta(t))=BA\sin(\theta(t))\omega(t)$$
 ![[Pasted image 20251118125538.png]]
 
 # Egenskaber
