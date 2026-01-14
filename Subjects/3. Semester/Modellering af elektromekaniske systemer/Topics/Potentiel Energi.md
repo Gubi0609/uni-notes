@@ -9,4 +9,7 @@ Potentiel energi defineres her ud fra en fjeder, og generaliseres for lignende k
 hvor fjederkraften $F(x)=-kx$.
 Vi definerer den potentielle energi til at være nul for $x=0$. Da gælder
 ## $$E_{pot}=\frac 1 2 kx^2$$
-Dette gælder også for [[Gængse kræfter#Tyngdekraften|tyngdekraften]].
+For tyngdekraften er det
+## $$\Delta E_{pot}=-\int_{x_i}^{x_f}F(x)dx=-\int_{0}^{h}(mg)dx=-[mgx]_0^h=-(mgh-mg0)$$ $$\Delta E_{pot}=-mgh$$
+Dermed bliver $E_{pot}$
+## $$E_{pot}=mgh$$
