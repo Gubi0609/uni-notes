@@ -1,3 +1,8 @@
+Vi antager, at det elektriske felt i DC motoren er nul, og udregner [[Lorentz kraft|Lorentz kraften]] på en _lille_ ladning $dq$, der er i det lille ledningestykke $ds$ i et magnetisk felt $\mathbf{B}$ som
+## $$d\mathbf F=dq\mathbf v\times\mathbf B\quad\text{[N]}$$
+Kraften, der påvirker en leder med længde $l$ i det magnetiske felt er
+## $$F=Bil\sin(\alpha)$$
+
 # Kraftmoment
 ![[Pasted image 20251118125425.png]]
 
