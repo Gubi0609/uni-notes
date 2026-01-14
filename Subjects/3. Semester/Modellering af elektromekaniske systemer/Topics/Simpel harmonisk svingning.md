@@ -29,7 +29,7 @@ For en vilkårlig harmonisk svingning, vil disse ligninger se ud som følgende
 
 # Kraft
 Fra [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Newtons Love#Newtons 2. lov|Newtons 2. Lov]] har vi
-## $$F(t)=ma(t)\quad\text{[N]}$$
+-\int_{x_i}^{x_f}F(x)dx## $$F(t)=ma(t)\quad\text{[N]}$$
 Hvis $a(t)=-\omega_0^2x(t)$ fra [[Simpel harmonisk svingning#Egenskaber|før]] bruges haves
 ## $$F(t)=-m\omega_0^2x(t)\quad\text{[N]}$$
 Som er på samme form som [[Gængse kræfter#Fjederkraft|Hooks lov]]
@@ -55,7 +55,7 @@ Vi bruger $\omega_0^2=k/m$ fra [[Simpel harmonisk svingning#$$ omega_0= sqrt{ fr
 > [!example]- Eksempel: Pendul
 > ![[Pasted image 20260111121420.png]]
 > Antag at vinklen $\theta$ er meget lille, så $\sin \theta\approx\theta$.
-> Bevægelsen langs tangent retningen fås via [[[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Newtons Love#Newtons 2. lov|Newtons 2. Lov]] til
+> Bevægelsen langs tangent retningen fås via [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Newtons Love#Newtons 2. lov|Newtons 2. Lov]] til
 > $$ma_T=ml\frac {d^2\theta}{dt^2}\approx-mg\theta$$
 > Denne differentialligning kan skrives
 > $$\frac {d^2\theta}{dt^2}\approx-\frac g l\theta$$
