@@ -258,5 +258,17 @@ First [[1 Processes, Threads, CPU Scheduling#Priority scheduling COS - lecture 8
 	- E.g. **System processes** (highest priority), **Interactive processes** (medium priority), **Batch processes** (lowest priority)
 
 [[1 Processes, Threads, CPU Scheduling#Starvation|Starvation]] can occur if high priority processes keep coming in.
-### Multilevel Feedback queue scheduling [[]]
-- Similar to [[1 Processes, Threads, CPU Scheduling#Multilevel Queue Scheduling COS - lecture 8 - Itslearning.pdf page=25 L8 page 25|Multilevel Queue Scheduling]]
+### Multilevel Feedback queue scheduling [[COS - lecture 8 - Itslearning.pdf#page=26|L8 page 26]]
+- Similar to [[1 Processes, Threads, CPU Scheduling#Multilevel Queue Scheduling COS - lecture 8 - Itslearning.pdf page=25 L8 page 25|Multilevel Queue Scheduling]], but processes can _move between queues_ based on their behavior (e.g. burst history, aging etc)
+- Dynamic movement helps prevent starvation and adapts to process needs.
+#### How It Works
+- **Example Setup:**
+    - **Queue 0:** Highest priority, Round Robin with time quantum = 8.
+    - **Queue 1:** Medium priority, Round Robin with time quantum = 16.
+    - **Queue 2:** Lowest priority, FCFS.
+- **Process Movement:**
+    - A new process enters the highest-priority queue (Queue 0).
+    - If it doesn’t complete within the time quantum, it moves to Queue 1.
+    - If it still doesn’t complete, it moves to Queue 2.
+    - **Aging:** Processes in lower queues can be periodically moved to higher queues to prevent starvation.
+
