@@ -107,3 +107,5 @@ The **stack** and **heap** grow towards each other, but don't overlap
 Structure is used to manage memory efficiently
 
 ### Process Control Block (PCB)
+- Information that the OS stores about the running process (e.g. its state) is stored in a **PCB** to make the best possible use of the system's recources
+- The **PCB**'s for each _process_ is stored in _sce_
