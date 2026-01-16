@@ -221,5 +221,8 @@ The processes now all continue.
 
 Though the total process time is the same, the _average_ processing time decreases with _preemptive scheduling_.
 
-### Predicting burst time
-We need to know the burst time of an incoming process, so we start with a _guess_ $\tau_0$ and a weight $\alpha$, that is 
+### Predicting burst time [[COS - lecture 8 - Itslearning.pdf#page=20|L8 page 20]]
+We need to know the burst time of an incoming process, so we start with a _guess_ $\tau_0$ 
+A weight $\alpha$, is multiplied with the current burst, and $\tau_{n+1}$ is estimated by adding previous guesses, and _reducing_ their weight for each iteration.
+## $$\tau_{n+1}=\alpha\cdot t_n+(1-\alpha)\alpha t_{n-1}+...+(1-\alpha)^j\alpha t_{n-j}+...+(1-\alpha)^{n+1}\tau_0$$
+### Round Robin (RR) Scheduling [[COS - lecture 8 - Itslearning.pdf#page=21|L8 page 21]]
