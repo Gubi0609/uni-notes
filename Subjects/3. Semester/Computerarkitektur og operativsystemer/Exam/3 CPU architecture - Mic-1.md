@@ -16,4 +16,6 @@
 
 # Relevant materials
 - [[COS_lecture01.pdf]]
-- 
+- [[COS_lecture02.pdf]]
+- [[COS_lecture04.pdf]]
+- [[COS_lecture05.pdf]]
