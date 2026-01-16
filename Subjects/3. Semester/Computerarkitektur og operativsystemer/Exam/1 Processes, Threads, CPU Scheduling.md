@@ -6,5 +6,6 @@
 - [ ] CPU scheduling algorithms
 
 # Relevant lectures
+- [[]]
 
 # Relevant materials

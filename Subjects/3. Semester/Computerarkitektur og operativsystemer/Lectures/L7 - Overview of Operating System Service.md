@@ -14,6 +14,7 @@
 # Relevant documents
 [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf|COS - Lecture 7 - Itslearning]]
 [[questions-cos-07.pdf]]
+[[questions-cos-07-solutions.pdf]]
 
 # Topics
 [[System calls]]

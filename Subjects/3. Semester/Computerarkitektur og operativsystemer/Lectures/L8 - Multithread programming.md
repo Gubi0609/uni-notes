@@ -13,6 +13,8 @@
 ---
 # Relevant documents
 [[COS - lecture 8 - Itslearning.pdf]]
+[[questions-cos-08.pdf]]
+[[questions-cos-08-solutions.pdf]]
 
 # Topics
 [[Subjects/3. Semester/Computerarkitektur og operativsystemer/Topics/Threads and concurrency|Threads and concurrency]]
