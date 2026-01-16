@@ -248,4 +248,5 @@ Aging is a technique to _prevent_ starvation.
 The priority of a process is _gradually increased_ as it waits in the ready queue.
 Ensures that even low-priority processes eventually get a chance to execute.
 
-### Priority scheduling with Round-Robin 
+### Priority scheduling with Round-Robin [[COS - lecture 8 - Itslearning.pdf#page=24|L8 page 24]]
+First [[1 Processes, Threads, CPU Scheduling#Priority scheduling COS - lecture 8 - Itslearning.pdf page=22 L8 page 22|Priority]] is used to select the processes, but if _several_ processes have the same priority, then [[1 Processes, Threads, CPU Scheduling#Round Robin (RR) Scheduling COS - lecture 8 - Itslearning.pdf page=21 L8 page 21|Round Robin Scheduling]] is used.
