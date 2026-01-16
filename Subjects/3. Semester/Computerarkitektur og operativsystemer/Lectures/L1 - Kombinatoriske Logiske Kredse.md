@@ -1,6 +1,6 @@
 
 ---
-**Date:** 2025-12-05
+**Date:** 2025-09-05
 
 ## Preparation
 
@@ -12,8 +12,8 @@
 
 ---
 # Relevant documents
-[[COS - lecture 12 - Itslearning.pdf]]
-[[questions-cos-12.pdf]]
+[[COS_lecture00.pdf]]
+[[COS_lecture01.pdf]]
 
 # Topics
 

@@ -1,6 +1,6 @@
 
 ---
-**Date:** YYYY-MM-DD
+**Date:** 2025-10-03
 
 ## Preparation
 
@@ -16,7 +16,7 @@
 
 ---
 # Relevant documents
-
+[[COS_lecture05.pdf]]
 
 # Topics
 
