@@ -234,4 +234,18 @@ If a process is not finished within its time slice, it stops (gets _preempted_) 
 
 So if a process is the _only_ process running, it will just run in 'loops'/time slices until it finishes.
 
-A rule of thumb for selecting _time slice_ is that **80%** of CPU bursts should be _shorter_ than th
+A rule of thumb for selecting _time slice_ is that **80%** of CPU bursts should be _shorter_ than the time quantum.
+
+### Priority scheduling [[COS - lecture 8 - Itslearning.pdf#page=22|L8 page 22]]
+A process has a _priority_ that is used to determine in which order, the programs must run.
+This _priority_ is NOT dependent on burst time.
+
+#### Starvation
+Starvation is a problem with priority scheduling, as _low-priority_ processes can be continuously postponed in favor of _high-priority_ processes.
+
+#### Aging
+Aging is a technique to _prevent_ starvation.
+The priority of a process is _gradually increased_ as it waits in the ready queue.
+Ensures that even low-priority processes eventually get a chance to execute.
+
+### Priority scheduling with Round-Robin 
