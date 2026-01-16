@@ -252,3 +252,10 @@ Ensures that even low-priority processes eventually get a chance to execute.
 First [[1 Processes, Threads, CPU Scheduling#Priority scheduling COS - lecture 8 - Itslearning.pdf page=22 L8 page 22|Priority]] is used to select the processes, but if _several_ processes have the same priority, then [[1 Processes, Threads, CPU Scheduling#Round Robin (RR) Scheduling COS - lecture 8 - Itslearning.pdf page=21 L8 page 21|Round Robin Scheduling]] is used.
 
 ### Multilevel Queue Scheduling [[COS - lecture 8 - Itslearning.pdf#page=25|L8 page 25]]
+- Processes are _permanently_ assigned to **different queues** based on specific characteristics (e.g. foreground/background, priority, process type etc)
+- Each queue can have its own **scheduling algorithm** (e.g. Round Robin for one queue and FCFS for another queue)
+- _Queues_ are prioritized, so that processes in _higher-priority_ queues always run _before_ those in _lower-priority_ queues
+	- E.g. **System processes** (highest priority), **Interactive processes** (medium priority), **Batch processes** (lowest priority)
+
+[[1 Processes, Threads, CPU Scheduling#Starvation|Starvation]]
+###
