@@ -199,11 +199,11 @@ Subject to **convoy effect**, where all the other processes wait for the _one bi
 ### Shortest Job First (SJF) Scheduling
 The shortest process is finished first
 
-#### Non-Preemptive Scheduling
+#### Non-Preemptive Scheduling [[COS - lecture 8 - Itslearning.pdf#page=18|L8 page 18]]
 All waiting/burst times for all processes are known _beforehand_.
 Processes are scheduled according to shortest time
 
-#### Preemptive Scheduling
+#### Preemptive Scheduling [[COS - lecture 8 - Itslearning.pdf#page=19|L8 page 19]]
 Processes are processed, queued, and _stopped_ as they come in
 Take the following example
 
@@ -216,4 +216,10 @@ Take the following example
 $P_1$ comes in at time $0$ and begins processing. 
 At time $1$ $P_2$ comes in. As $P_1$ has a remaining burst time of $8-1=7$, and $P_2$ has a burst time of $4$, $P_1$ is stopped, and $P_2$ begins processing.
 At time $2$, $P_3$ arrives. $P_2$ still has the smallest burst time, so it continues processing. $P_3$ has a _larger_ burst time, so it is placed _after_ $P_1$ in the queue.
-At time $3$, $P
+At time $3$, $P_4$ comes in. $P_2$ still has the smallest burst time, so it continues processing. Now $P_4$ has a _smaller_ burst time, than $P_1$, so it is placed _before_ $P_1$ in the queue.
+The processes now all continue.
+
+Though the total process time is the same, the _average_ processing time decreases with _preemptive scheduling_.
+
+### Predicting burst time
+We need to know the burst time of an incoming process, so we start with a _guess_ $\tau_0$ and a weight $\alpha$, that is 
