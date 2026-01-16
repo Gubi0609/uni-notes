@@ -272,3 +272,7 @@ First [[1 Processes, Threads, CPU Scheduling#Priority scheduling COS - lecture 8
     - If it still doesn’t complete, it moves to Queue 2.
     - **Aging:** Processes in lower queues can be periodically moved to higher queues to prevent starvation.
 
+### Multi-processor scheduling
+Two approaches for Multi CPU scheduling
+
+#### Assymetric multi
