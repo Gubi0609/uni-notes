@@ -15,5 +15,9 @@
 - [ ] Trashing
 
 # Relevant lectures
+- [[L9 - Process synchronization]]
+- [[L10 - Deadlocks]]
+- [[L11 - Memory]]
+- [[L12 - Virtual memory]]
 
 # Relevant materials

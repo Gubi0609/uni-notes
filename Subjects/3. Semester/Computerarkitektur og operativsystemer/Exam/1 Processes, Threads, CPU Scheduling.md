@@ -6,6 +6,8 @@
 - [ ] CPU scheduling algorithms
 
 # Relevant lectures
-- [[]]
+- [[L8 - Multithread programming]]
+- [[L9 - Process synchronization]]
+- 
 
 # Relevant materials
