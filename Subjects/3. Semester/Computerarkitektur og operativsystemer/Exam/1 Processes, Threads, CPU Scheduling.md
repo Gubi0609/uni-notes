@@ -251,4 +251,4 @@ Ensures that even low-priority processes eventually get a chance to execute.
 ### Priority scheduling with Round-Robin [[COS - lecture 8 - Itslearning.pdf#page=24|L8 page 24]]
 First [[1 Processes, Threads, CPU Scheduling#Priority scheduling COS - lecture 8 - Itslearning.pdf page=22 L8 page 22|Priority]] is used to select the processes, but if _several_ processes have the same priority, then [[1 Processes, Threads, CPU Scheduling#Round Robin (RR) Scheduling COS - lecture 8 - Itslearning.pdf page=21 L8 page 21|Round Robin Scheduling]] is used.
 
-### Multilevel Queue Scheduling
+### Multilevel Queue Scheduling [[COS - lecture 8 - Itslearning.pdf#page=25|L8 page 25]]
