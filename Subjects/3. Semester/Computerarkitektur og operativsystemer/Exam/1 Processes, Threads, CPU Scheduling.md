@@ -178,4 +178,12 @@ Support for creation etc can possibly be obtained by the kernel through user-spa
 ## CPU scheduling
 - The scheduling is split into **CPU bursts** and **I/O bursts** [[COS - lecture 8 - Itslearning.pdf#page=13|L8 page 13]]
 
-**CPU burst
+**CPU burst**
+- The process _uses_ the CPU to perform calculation
+- Most CPU bursts are _short_, meaning that they don't take up CPU usages for very long time [[COS - lecture 8 - Itslearning.pdf#page=14|L8 page 14]]
+
+**I/O burst**
+- The process is _waiting_ for I/O operations (e.g. waiting for read/write to a file, waiting for user input)
+- It basically can _request_ and I/O operation, and waits for it to perform/be done
+
+CPU 
