@@ -348,4 +348,12 @@ For a system of _2_ tasks, this becomes $83\%$.
 
 - The CPU utilization is calculated as
 ## $$U=\sum^N_{i=1}\frac {t_i}{p_i}$$
-where $t_i$ is the actual _execution time_ and $p_i$ is the proces
+where $t_i$ is the actual _execution time_ and $p_i$ is the processes period.
+- A processes _period_ is the **time interval** between the start of one _instance_ of the task, and the start of the next instance.
+	- If a task needs to run every 50 units of time, then $p_i=50$.
+- If a process does _not_ finish before the next instance of a process, the process is _preempted_ and continues when the next instance of the process is done.
+	- E.g. $P_1$ needs to run every 50 units of time. $P_1$ starts at time 0 and is done at time 20. It should run next _at time 50_.
+	- In the meanwhile, $P_2$ starts running, but does not finish within time 20 and time 50. Thus, it is _preempted_, and continues when $P_1$ is done again at time 70.
+- The **deadline** for a process is usually the _same_ as the **period**.
+
+If $U>U_{\text{worst case}}$ then the deadline
