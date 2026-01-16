@@ -272,7 +272,19 @@ First [[1 Processes, Threads, CPU Scheduling#Priority scheduling COS - lecture 8
     - If it still doesn’t complete, it moves to Queue 2.
     - **Aging:** Processes in lower queues can be periodically moved to higher queues to prevent starvation.
 
-### Multi-processor scheduling
+### Multi-processor scheduling [[COS - lecture 8 - Itslearning.pdf#page=27|L8 page 27]]
 Two approaches for Multi CPU scheduling
 
-#### Assymetric multi
+#### Asymmetric multiprocessing
+_One_ processor handles the scheduling, I/O processing etc., i.e. system adminstration.
+Other processors are response for _only_ user code
+
+#### Symmetric multiprocessing (SMP)
+Each processor is self-scheduling, but can either have a _common_ ready queue or its _own_ private ready queue.
+
+To achieve balanced workload in such systems, further two approaches can be used
+##### Push migration
+An administrative process periodically checks on the load on _each_ processor, and distributes the load by moving threads from _overloaded_ processors to _idle_ processors.
+
+##### Pull migration
+_Idle_ processors **pull** processes from the ready queues of b
