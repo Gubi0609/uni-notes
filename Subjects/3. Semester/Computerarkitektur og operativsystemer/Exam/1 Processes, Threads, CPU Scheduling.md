@@ -108,4 +108,14 @@ Structure is used to manage memory efficiently
 
 ### Process Control Block (PCB)
 - Information that the OS stores about the running process (e.g. its state) is stored in a **PCB** to make the best possible use of the system's recources
-- The **PCB**'s for each _process_ is stored in _sce_
+- The **PCB**'s for each _process_ is stored in _scheduling queues_
+	- The _ready queue_ is for processes ready to be run
+	- The _wait queue_ is for processes, that are not ready to run
+
+## Interprocess Communication (IPC) models
+### Message passing
+- The processes run _independently_ but shares _messages_ to run together
+- The overhead from message passing is _smaller_ than with shared memory, as the kernel doesn't need to allocate memory space for shared memory
+
+### Shared memory
+- The processes run _on shared memory_ and must 
