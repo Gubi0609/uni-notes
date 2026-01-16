@@ -82,4 +82,24 @@
 - A process is an instance of a _program_ that is **currently** executing in memory [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=22|L7 page 22]]
 - Unlike a program (stored on disk (actually just a file)) a process is _active_ (uses CPU time, memory and other resources)
 - When a program is run, the OS creates a process for it
-- 
+
+A Process has following structure
+- **Stack**
+	- Located at the top of the process's memory space
+	- Used for function calls, local variables, and return addresses
+	- _Grows_ downward (toward lower memory addresses) as functions are called
+	- Automatically managed by OS and CPU
+	- For _temporary_ short-lived data
+- **Heap**
+	- Used for _dynamic memory allocation_ (e.g. memory allocated with `malloc` in C or `new` in C++/Java)
+	- _Grows_ **upward** as memory is allocated
+	- For _long-lived_ dynamically allocated data
+- **Data**
+	- Contains global and static *variables*
+	- Fixed size, determined at compile time
+- **Text (or code)**
+	- Contains **executable code** of the program
+	- Typically **read-only** to prevent accidental modification
+	- For _actual program instructions_
+
+The **stack** and **heap** grow towards each other, but don't overlap
