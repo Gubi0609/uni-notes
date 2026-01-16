@@ -71,9 +71,15 @@
 - It has more _performance overhead_ because IPC is slower than function calls in a monolithic kernel
 - An example of this is _macOS/iOS_
 
-**Hybrid systems**
+**Hybrid systems** [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page =21|L7 page 21]]
 - MacOS is a hybrid system
 - In User Experience layer it uses _Aqua_
 - in Application Framework layer it uses _Cocoa_
 - In Core Framework layer it uses _Quicktime_ and _OpenGL_ for graphics and media
-- In the Kernel environment (Darwin) it uses _Mach microkernel_ and _BSD Uni_
+- In the Kernel environment (Darwin) it uses _Mach microkernel_ and _BSD Unix kernel_
+
+## Process
+- A process is an instance of a _program_ that is **currently** executing in memory [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=22|L7 page 22]]
+- Unlike a program (stored on disk (actually just a file)) a process is _active_ (uses CPU time, memory and other resources)
+- When a program is run, the OS creates a process for it
+- 
