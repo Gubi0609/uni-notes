@@ -14,6 +14,7 @@
 
 # Relevant lectures
 - [[L6 - Optimering af Mikroarkitekturdesign]]
-- 
+- [[L3 - Hukommelse]]
+- [[L1 - Kombinatoriske Logiske Kredse]]
 
 # Relevant materials

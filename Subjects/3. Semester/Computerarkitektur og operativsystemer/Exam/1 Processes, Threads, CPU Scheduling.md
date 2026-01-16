@@ -8,6 +8,6 @@
 # Relevant lectures
 - [[L8 - Multithread programming]]
 - [[L9 - Process synchronization]]
-- 
+- [[L7 - Overview of Operating System Service]]
 
 # Relevant materials
