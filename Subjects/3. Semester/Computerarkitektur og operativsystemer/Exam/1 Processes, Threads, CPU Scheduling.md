@@ -149,4 +149,19 @@ On a _multi core_ system, multiple threads run in _parallel_ on each core (_swit
 ### Challenges of multicore programming [[COS - lecture 8 - Itslearning.pdf#page=7|L8 page 7]]
 - Applications must be examined to find areas, that can be divided into separate concurrent tasks
 - Tasks must perform equal work of equal value
-- 
+- Data must be divided (just as tasks are) into separate cores
+- If two or more tasks depend on/access the _same_ data, the tasks must be _synchronized_
+- Concurrent programs are more difficult to test and debug, than single-threaded programs.
+
+### Multithreading models
+#### Many to one model [[COS - lecture 8 - Itslearning.pdf#page=8|L8 page 8]]
+- _One_ kernel thread splits in to _several_ user threads
+
+#### One to one model [[COS - lecture 8 - Itslearning.pdf#page=9|L8 page 9]]
+- _One_ kernel thread corresponds **directly** to _one_ user thread
+
+#### Many to many model [[COS - lecture 8 - Itslearning.pdf#page=10|L8 page 10]]
+- _Many_ kernel threads can correspond to _many_ user threads
+- The _kernel_ and _user_ space, does not need to have same amount of threads
+
+##### t
