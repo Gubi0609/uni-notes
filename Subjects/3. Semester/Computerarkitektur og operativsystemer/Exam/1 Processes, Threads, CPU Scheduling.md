@@ -197,3 +197,23 @@ where $P_n$ is the waiting time for process $n$, and $n$ is the number of proces
 Subject to **convoy effect**, where all the other processes wait for the _one big_ process to finish. [[COS - lecture 8 - Itslearning.pdf#page=17|L8 page 17]]
 
 ### Shortest Job First (SJF) Scheduling
+The shortest process is finished first
+
+#### Non-Preemptive Scheduling
+All waiting/burst times for all processes are known _beforehand_.
+Processes are scheduled according to shortest time
+
+#### Preemptive Scheduling
+Processes are processed, queued, and _stopped_ as they come in
+Take the following example
+
+| Process | Arrival Time | Burst time |
+| ------- | ------------ | ---------- |
+| $P_1$   | 0            | 8          |
+| $P_2$   | 1            | 4          |
+| $P_3$   | 2            | 9          |
+| $P_4$   | 3            | 5          |
+$P_1$ comes in at time $0$ and begins processing. 
+At time $1$ $P_2$ comes in. As $P_1$ has a remaining burst time of $8-1=7$, and $P_2$ has a burst time of $4$, $P_1$ is stopped, and $P_2$ begins processing.
+At time $2$, $P_3$ arrives. $P_2$ still has the smallest burst time, so it continues processing. $P_3$ has a _larger_ burst time, so it is placed _after_ $P_1$ in the queue.
+At time $3$, $P
