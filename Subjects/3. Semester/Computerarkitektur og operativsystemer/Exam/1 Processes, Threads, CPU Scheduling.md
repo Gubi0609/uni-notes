@@ -43,4 +43,7 @@
 - The OS kernel remains _monolithic_. That is to say, all core services (process management, memory management etc.) runs in kernel space as a single program
 - **Non essential components** (eg. device drivers, file systems, networking protocols etc.) are implemented as _loadable modules_ the can be dynamically added or removed at runtime. (without recompiling the kernel)
 - Dynamic loading reduces memory usage and improves system stability
-- Modules run in kernel spae
+- Modules run in kernel space, so a buggy module can _still_ crash the system
+- An example of this is _Linux_ or _FreeBSD_.
+
+**Layered structure** [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=18|L7 page 18]]
