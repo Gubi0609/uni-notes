@@ -307,5 +307,17 @@ A _thread_ has both a **Compute Cycle** (computes something) and a **Memory Stal
 For a _multithreaded multicore system_, the threads can be aligned such that one threads _Memory Stall Cycle_ lines up with another threads _Compute Cycle_ thereby minimizing CPU idle time.
 
 
-### Software to hardware threads
-Multiple threads can exist in software, while only a 
+### Software to hardware threads [[COS - lecture 8 - Itslearning.pdf#page=31|L8 page 31]]
+Multiple threads can exist in software, while only a limited number is possible through hardware.
+To combat this, the kernel combines multiple _software threads_ into _one_ hardware thread.
+
+A _hardware thread_ is the physical place where a software thread runs.
+The physical CPU determines which hardware thread to run.
+
+### Real time CPU Scheduling [[COS - lecture 8 - Itslearning.pdf#page=32|L8 page 32]]
+#### Soft real time system
+Provides **no guarantee** as to _when_ a critical real-time process will be scheduled.
+Guarantees only that the process will be given preference over noncritical processes.
+
+#### Hard real time system
+A task must be serviced within its deadline. Service after the deadline is treated as no service at all.
