@@ -273,7 +273,7 @@ First [[1 Processes, Threads, CPU Scheduling#Priority scheduling COS - lecture 8
     - **Aging:** Processes in lower queues can be periodically moved to higher queues to prevent starvation.
 
 ### Multi-processor scheduling [[COS - lecture 8 - Itslearning.pdf#page=27|L8 page 27]]
-Two approaches for Multi CPU scheduling
+Two approaches for Multi core CPU scheduling
 
 #### Asymmetric multiprocessing
 _One_ processor handles the scheduling, I/O processing etc., i.e. system adminstration.
@@ -285,6 +285,13 @@ Each processor is self-scheduling, but can either have a _common_ ready queue or
 To achieve balanced workload in such systems, further two approaches can be used
 ##### Push migration
 An administrative process periodically checks on the load on _each_ processor, and distributes the load by moving threads from _overloaded_ processors to _idle_ processors.
-
 ##### Pull migration
-_Idle_ processors **pull** processes from the ready queues of b
+_Idle_ processors **pull** processes from the ready queues of busy processors.
+##### Combination
+A combination of both strategies often occurs in real systems
+
+#### Processor Affinity
+A process wants to stay on the processor on which it is currently running, as it would be costly to move it around (due to cache etc.)
+- **Soft connection** - The computer _tries_ to keep the process on the same processor, **but no guarantee**
+- **Hard connection** - The process is _guaranteed_ to run on the designated processor.
+- **Variant** - Allows the process to specify a set of processors on which it can run.
