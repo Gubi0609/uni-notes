@@ -57,4 +57,7 @@
 	- Kernel (Core OS functions (process and memory management))
 	- Hardware Abstraction (Manages low-level hardware interactions)
 	- Hardware (Physical Components)
-- Larger performance overhead, as a layer will need to communicate through all _intermediate_ layers to g
+- Larger performance overhead, as a layer will need to communicate through all _intermediate_ layers to get to the desired layer
+- An example of this is _MULTICS_ or _Windows NT_
+
+**Microkernel** [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page = 19|L7 page 19]]
