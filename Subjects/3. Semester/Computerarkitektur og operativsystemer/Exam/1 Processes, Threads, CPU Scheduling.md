@@ -68,4 +68,12 @@
 - Device drivers, file systems, networking runs in _user space_
 - Processes communicate with the kernel via *IPC mechanisms*
 - If a user-space service crashes, it doesn't affect the kernel or other services
-- It has more _performance overhead_ because IPC is slower than function calls in a monolithi
+- It has more _performance overhead_ because IPC is slower than function calls in a monolithic kernel
+- An example of this is _macOS/iOS_
+
+**Hybrid systems**
+- MacOS is a hybrid system
+- In User Experience layer it uses _Aqua_
+- in Application Framework layer it uses _Cocoa_
+- In Core Framework layer it uses _Quicktime_ and _OpenGL_ for graphics and media
+- In the Kernel environment (Darwin) it uses _Mach microkernel_ and _BSD Uni_
