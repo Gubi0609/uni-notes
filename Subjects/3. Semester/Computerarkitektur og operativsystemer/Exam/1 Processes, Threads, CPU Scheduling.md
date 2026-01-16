@@ -79,11 +79,11 @@
 - In the Kernel environment (Darwin) it uses _Mach microkernel_ and _BSD Unix kernel_
 
 ## Process
-- A process is an instance of a _program_ that is **currently** executing in memory [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=22|L7 page 22]]
+- A process is an instance of a _program_ that is **currently** executing in memory [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=25|L7 page 25]]
 - Unlike a program (stored on disk (actually just a file)) a process is _active_ (uses CPU time, memory and other resources)
 - When a program is run, the OS creates a process for it
 
-A Process has following structure
+A Process has following structure [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=25|L7 page 25]]
 - **Stack**
 	- Located at the top of the process's memory space
 	- Used for function calls, local variables, and return addresses
@@ -103,3 +103,7 @@ A Process has following structure
 	- For _actual program instructions_
 
 The **stack** and **heap** grow towards each other, but don't overlap
+
+Structure is used to manage memory efficiently
+
+### Process Control Block (PCB)
