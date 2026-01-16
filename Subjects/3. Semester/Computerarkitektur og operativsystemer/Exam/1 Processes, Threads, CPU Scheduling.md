@@ -34,3 +34,9 @@
 ## OS structures
 **Monolithic structures** [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=16|L7 page 16]]
 - The _entire_ OS runs as a single, large program in **kernel space**
+- All OS services (process management, memory management, file systems etc.) are part of the same executable, and share the same memory space.
+- Components communicate directly via function calls
+- Because everything is interconnected, a bug in _one_ component can crash the entire system
+- An example of this is _Unix_.
+
+**Monolithic plus modular**
