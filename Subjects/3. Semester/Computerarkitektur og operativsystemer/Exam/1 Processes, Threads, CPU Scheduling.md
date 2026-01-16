@@ -47,3 +47,14 @@
 - An example of this is _Linux_ or _FreeBSD_.
 
 **Layered structure** [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=18|L7 page 18]]
+- The OS is designed in to a _hierarchy_ of layers
+- Each layer _provides_ a service to the layer above, and _uses_ a service from the layer below
+- _Hardware_ at the **bottom**, and _User Interface_ at the **top**.
+- Each layer communicates _directly_ with the layer above/below.
+- Structure example
+	- UI
+	- System Call Interface
+	- Kernel (Core OS functions (process and memory management))
+	- Hardware Abstraction (Manages low-level hardware interactions)
+	- Hardware (Physical Components)
+- Larger performance overhead, as a layer will need to communicate through all _intermediate_ layers to g
