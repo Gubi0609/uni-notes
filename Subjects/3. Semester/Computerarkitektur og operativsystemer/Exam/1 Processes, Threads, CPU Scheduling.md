@@ -122,7 +122,7 @@ Structure is used to manage memory efficiently
 - For passing _large amounts_ of data, shared memory is better than message passing, as the data doesn't need to be messaged through processes, but is already in said shared memory
 - At the start of the processes, the kernel should allocate memory to be used as shared memory (_Overhead_)
 
-# Multithreading
+## Multithreading
 - Multiple _threads_ run simultaneously [[COS - lecture 8 - Itslearning.pdf#page=3|L8 page 3]]
 - A multithreaded server _listens_ continuously for client requests, then creates a new thread to service request [[COS - lecture 8 - Itslearning.pdf#page=4|L8 page 4]]
 	- Has a *fast response*, as it always listens for requests
@@ -138,4 +138,15 @@ On a _multi core_ system, multiple threads run in _parallel_ on each core (_swit
 - The calculation of a dataset is distributed over several cores (e.g. arrays)
 
 **Task parallelism** [[COS - lecture 8 - Itslearning.pdf#page=6|L8 page 6]]
-- _Tasks_, not data, are distributed across multiple cores. Each task perf
+- _Tasks_, not data, are distributed across multiple cores. Each task performs a unique operation.
+
+### Amdahl's Law [[COS - lecture 8 - Itslearning.pdf#page=7|L8 page 7]]
+## $$speedup \leq \frac {1}{S+\frac{1-S}N}$$
+**S** is the portion of the application, that must be performed serially on a system
+**(1-S)** is the portion of the application, that can be performed in parallel on a system
+**N** is the number of CPU cores
+
+### Challenges of multicore programming [[COS - lecture 8 - Itslearning.pdf#page=7|L8 page 7]]
+- Applications must be examined to find areas, that can be divided into separate concurrent tasks
+- Tasks must perform equal work of equal value
+- 
