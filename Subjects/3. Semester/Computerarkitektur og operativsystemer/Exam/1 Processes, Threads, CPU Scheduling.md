@@ -329,4 +329,10 @@ When interrupting a running task, there is a latency, where the processor must f
 Only guarantees _soft real time_ functionality.
 _Hard real time_ scheduling require additional scheduling features to be able to guarantee that deadline requirements are met.
 
-**Real t
+**Real time** processes are often characterized by
+- Has a fixed period time **p**
+- Has a fixed processing time on the CPU **t**
+- Has a deadline **d**, by which it mustbe serviced by the CPU
+- The following applies $0\leq t\leq d\leq p$.
+
+#### Rate monotonic real time scheduling (RMS)
