@@ -61,3 +61,4 @@
 - An example of this is _MULTICS_ or _Windows NT_
 
 **Microkernel** [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page = 19|L7 page 19]]
+- Minimizes the amo
