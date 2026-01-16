@@ -39,4 +39,8 @@
 - Because everything is interconnected, a bug in _one_ component can crash the entire system
 - An example of this is _Unix_.
 
-**Monolithic plus modular**
+**Monolithic plus modular** [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=17|L7 page 17]]
+- The OS kernel remains _monolithic_. That is to say, all core services (process management, memory management etc.) runs in kernel space as a single program
+- **Non essential components** (eg. device drivers, file systems, networking protocols etc.) are implemented as _loadable modules_ the can be dynamically added or removed at runtime. (without recompiling the kernel)
+- Dynamic loading reduces memory usage and improves system stability
+- Modules run in kernel spae
