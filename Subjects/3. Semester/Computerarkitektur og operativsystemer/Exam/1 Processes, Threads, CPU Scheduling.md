@@ -321,3 +321,12 @@ Guarantees only that the process will be given preference over noncritical proce
 
 #### Hard real time system
 A task must be serviced within its deadline. Service after the deadline is treated as no service at all.
+
+#### Latency [[COS - lecture 8 - Itslearning.pdf#page=33|L8 page 33]]
+When interrupting a running task, there is a latency, where the processor must first determine the _type_ of interrupt, and then have a context switch before switching to **ISR** (**I**nterrupt **S**ervice **R**outine)
+
+#### Priority based real time scheduling [[COS - lecture 8 - Itslearning.pdf#page=35|L8 page 35]]
+Only guarantees _soft real time_ functionality.
+_Hard real time_ scheduling require additional scheduling features to be able to guarantee that deadline requirements are met.
+
+**Real t
