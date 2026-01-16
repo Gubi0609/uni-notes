@@ -168,6 +168,14 @@ On a _multi core_ system, multiple threads run in _parallel_ on each core (_swit
 - [[1 Processes, Threads, CPU Scheduling#Many to many model COS - lecture 8 - Itslearning.pdf page=10 L8 page 10|many to many model]] and [[1 Processes, Threads, CPU Scheduling#One to one model COS - lecture 8 - Itslearning.pdf page=9 L8 page 9|one to one model]] run alongside each other
 - A thread can be bound to a specific kernel thread
 
-### Process and thread scheduling
+### Process and thread scheduling [[COS - lecture 8 - Itslearning.pdf#page=12|L8 page 12]]
 It is approximately _30 times faster_ to create a **thread** than a **task**/process
-It is app
+It is approximately _5 times faster_ to schedule a **thread** than a **task**/process
+
+User threads are scheduled in the _user-space_ by the application
+Support for creation etc can possibly be obtained by the kernel through user-space libraries
+
+## CPU scheduling
+- The scheduling is split into **CPU bursts** and **I/O bursts** [[COS - lecture 8 - Itslearning.pdf#page=13|L8 page 13]]
+
+**CPU burst
