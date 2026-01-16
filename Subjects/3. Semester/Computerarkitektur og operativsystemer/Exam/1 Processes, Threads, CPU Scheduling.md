@@ -186,4 +186,14 @@ Support for creation etc can possibly be obtained by the kernel through user-spa
 - The process is _waiting_ for I/O operations (e.g. waiting for read/write to a file, waiting for user input)
 - It basically can _request_ and I/O operation, and waits for it to perform/be done
 
-CPU 
+CPU scheduling aims to efficiently manage these cycles to minimize CPU idel time, and ensure that the CPU is always busy.
+
+### First Come, First Served (FCFS) Scheduling [[COS - lecture 8 - Itslearning.pdf#page=16|L8 page 16]]
+- A process is completed _fully_ no matter its size, only depending on the order in which the _come in_
+- Average waiting time will be
+## $$P_A=\frac {\sum^nP_n}{n}$$
+where $P_n$ is the waiting time for process $n$, and $n$ is the number of processes
+
+Subject to **convoy effect**, where all the other processes wait for the _one big_ process to finish. [[COS - lecture 8 - Itslearning.pdf#page=17|L8 page 17]]
+
+### Shortest Job First (SJF) Scheduling
