@@ -175,6 +175,10 @@ It is approximately _5 times faster_ to schedule a **thread** than a **task**/pr
 User threads are scheduled in the _user-space_ by the application
 Support for creation etc can possibly be obtained by the kernel through user-space libraries
 
+
+### Physical versus Logical view [[COS - lecture 8 - Itslearning.pdf#page=30|L8 page 30]]
+While the processor might only have 4 cores and 2 threads in each, the OS sees _each thread_ as its own CPU.
+
 ## CPU scheduling
 - The scheduling is split into **CPU bursts** and **I/O bursts** [[COS - lecture 8 - Itslearning.pdf#page=13|L8 page 13]]
 
@@ -295,3 +299,13 @@ A process wants to stay on the processor on which it is currently running, as it
 - **Soft connection** - The computer _tries_ to keep the process on the same processor, **but no guarantee**
 - **Hard connection** - The process is _guaranteed_ to run on the designated processor.
 - **Variant** - Allows the process to specify a set of processors on which it can run.
+
+
+### Memory stall [[COS - lecture 8 - Itslearning.pdf#page=29|L8 page 29]]
+A _thread_ has both a **Compute Cycle** (computes something) and a **Memory Stall Cycle** (reads/ writes from/to memory)
+
+For a _multithreaded multicore system_, the threads can be aligned such that one threads _Memory Stall Cycle_ lines up with another threads _Compute Cycle_ thereby minimizing CPU idle time.
+
+
+### Software to hardware threads
+Multiple threads can exist in software, while only a 
