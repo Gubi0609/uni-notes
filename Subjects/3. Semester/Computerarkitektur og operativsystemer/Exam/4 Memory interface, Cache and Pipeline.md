@@ -1,0 +1,11 @@
+# Topics to be covered
+- [ ] Mic-2
+- [ ] Mic-3
+- [ ] Instruction Fetch Unit
+- [ ] Instruction overlap
+- [ ] Pipeline hazards
+	- [ ] Structural hazards
+	- [ ] Data hazards
+	- [ ] Control hazards
+- [ ] Associative mapped Cache
+- [ ] Direct mapped Cache
