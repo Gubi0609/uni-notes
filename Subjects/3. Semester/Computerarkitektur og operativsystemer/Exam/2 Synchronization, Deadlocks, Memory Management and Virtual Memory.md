@@ -21,3 +21,7 @@
 - [[L12 - Virtual memory]]
 
 # Relevant materials
+- [[COS - lecture 9 - Itslearning.pdf]]
+- [[COS - lecture 10 - Itslearning.pdf]]
+- [[COS - lecture 11 - Itslearning.pdf]]
+- [[COS - lecture 12 - Itslearning.pdf]]

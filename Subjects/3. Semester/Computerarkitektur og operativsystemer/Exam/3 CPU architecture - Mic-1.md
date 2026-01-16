@@ -15,3 +15,5 @@
 - [[L1 - Kombinatoriske Logiske Kredse]]
 
 # Relevant materials
+- [[COS_lecture01.pdf]]
+- 
