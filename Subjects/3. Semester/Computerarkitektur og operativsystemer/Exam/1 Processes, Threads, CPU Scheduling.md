@@ -338,4 +338,14 @@ _Hard real time_ scheduling require additional scheduling features to be able to
 #### Rate monotonic real time scheduling (RMS) [[COS - lecture 8 - Itslearning.pdf#page=36|L8 page 36]]
 - Is a priority-based scheduling algorithm _specifically designed_ for **periodic real time tasks**.
 - Assigns priorities based on the _period_ of the task. **Shorter period = Higher priority**.
-- Has a _worst case_ CPU u
+- Has a _worst case_ CPU utilization bound for **N** tasks
+## $$U_{\text{worst case}}=N\cdot2(2^{1/N}-1)$$
+For a system of _2_ tasks, this becomes $83\%$.
+
+- If utilization is below 69%, all tasks are guaranteed to meet deadlines ==(not quite sure of this)==
+- If a set of tasks can be scheduled by _any_ static priority algorithm, it can be scheduled by RMS.
+	- This also works in reverse. If a set of tasks _can't_ be scheduled by RMS, they _can't_ be scheduled by any other _static priority_ algorithm.
+
+- The CPU utilization is calculated as
+## $$U=\sum^N_{i=1}\frac {t_i}{p_i}$$
+where $t_i$ is the actual _execution time_ and $p_i$ is the proces
