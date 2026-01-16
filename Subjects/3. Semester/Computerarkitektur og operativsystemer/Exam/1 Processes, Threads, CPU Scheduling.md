@@ -356,4 +356,13 @@ where $t_i$ is the actual _execution time_ and $p_i$ is the processes period.
 	- In the meanwhile, $P_2$ starts running, but does not finish within time 20 and time 50. Thus, it is _preempted_, and continues when $P_1$ is done again at time 70.
 - The **deadline** for a process is usually the _same_ as the **period**.
 
-If $U>U_{\text{worst case}}$ then the deadline
+If $U>U_{\text{worst case}}$ then the deadline is not met for all tasks.
+This can happen if some processes take too long to finish.
+
+#### Earliest deadline first (EDF) real time scheduling [[COS - lecture 8 - Itslearning.pdf#page=38|L8 page 38]]
+The priority is assigned dynamically so that the earliest **next** deadline gives the highest priority.
+
+E.g. $P_1$ has period 50, and $P_2$ has period 80.
+At time 0, $P_1$ starts, as it has the _earliest next_ deadline.
+At time 25 $P_1$ finishes, and $P_2$ can continue. This makes $P_1$'s next deadline to time 50.
+At time 
