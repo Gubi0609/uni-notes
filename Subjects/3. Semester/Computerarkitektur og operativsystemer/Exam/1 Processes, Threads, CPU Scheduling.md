@@ -257,5 +257,6 @@ First [[1 Processes, Threads, CPU Scheduling#Priority scheduling COS - lecture 8
 - _Queues_ are prioritized, so that processes in _higher-priority_ queues always run _before_ those in _lower-priority_ queues
 	- E.g. **System processes** (highest priority), **Interactive processes** (medium priority), **Batch processes** (lowest priority)
 
-[[1 Processes, Threads, CPU Scheduling#Starvation|Starvation]]
-###
+[[1 Processes, Threads, CPU Scheduling#Starvation|Starvation]] can occur if high priority processes keep coming in.
+### Multilevel Feedback queue scheduling [[]]
+- Similar to [[1 Processes, Threads, CPU Scheduling#Multilevel Queue Scheduling COS - lecture 8 - Itslearning.pdf page=25 L8 page 25|Multilevel Queue Scheduling]]
