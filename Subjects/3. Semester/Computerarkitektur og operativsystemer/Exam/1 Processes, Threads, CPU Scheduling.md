@@ -155,13 +155,19 @@ On a _multi core_ system, multiple threads run in _parallel_ on each core (_swit
 
 ### Multithreading models
 #### Many to one model [[COS - lecture 8 - Itslearning.pdf#page=8|L8 page 8]]
-- _One_ kernel thread splits in to _several_ user threads
+- _Several_ user threads, combine in to _one_ kernel thread
 
 #### One to one model [[COS - lecture 8 - Itslearning.pdf#page=9|L8 page 9]]
-- _One_ kernel thread corresponds **directly** to _one_ user thread
+- _One_ user thread corresponds **directly** to _one_ kerne thread
 
 #### Many to many model [[COS - lecture 8 - Itslearning.pdf#page=10|L8 page 10]]
-- _Many_ kernel threads can correspond to _many_ user threads
+- _Many_ user threads can correspond to _many_ kernel threads
 - The _kernel_ and _user_ space, does not need to have same amount of threads
 
-##### t
+#### Two level model [[COS - lecture 8 - Itslearning.pdf#page=11|L8 page 11]]
+- [[1 Processes, Threads, CPU Scheduling#Many to many model COS - lecture 8 - Itslearning.pdf page=10 L8 page 10|many to many model]] and [[1 Processes, Threads, CPU Scheduling#One to one model COS - lecture 8 - Itslearning.pdf page=9 L8 page 9|one to one model]] run alongside each other
+- A thread can be bound to a specific kernel thread
+
+### Process and thread scheduling
+It is approximately _30 times faster_ to create a **thread** than a **task**/process
+It is app
