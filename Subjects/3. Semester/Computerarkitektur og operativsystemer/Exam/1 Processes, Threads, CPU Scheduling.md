@@ -106,16 +106,22 @@ The **stack** and **heap** grow towards each other, but don't overlap
 
 Structure is used to manage memory efficiently
 
-### Process Control Block (PCB)
+### Process Control Block (PCB) [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=27|L7 page 27]]
 - Information that the OS stores about the running process (e.g. its state) is stored in a **PCB** to make the best possible use of the system's recources
 - The **PCB**'s for each _process_ is stored in _scheduling queues_
 	- The _ready queue_ is for processes ready to be run
 	- The _wait queue_ is for processes, that are not ready to run
 
-## Interprocess Communication (IPC) models
+## Interprocess Communication (IPC) models [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=31|L7 page 31]]
 ### Message passing
 - The processes run _independently_ but shares _messages_ to run together
 - The overhead from message passing is _smaller_ than with shared memory, as the kernel doesn't need to allocate memory space for shared memory
 
 ### Shared memory
-- The processes run _on shared memory_ and must 
+- The processes run _on shared memory_ and must cooperate with using said shared memory
+- For passing _large amounts_ of data, shared memory is better than message passing, as the data doesn't need to be messaged through processes, but is already in said shared memory
+- At the start of the processes, the kernel should allocate memory to be used as shared memory (_Overhead_)
+
+# Multithreading
+- Multiple _threads_ run simultaneously [[COS - lecture 8 - Itslearning.pdf#page=3|L8 page 3]]
+- A multithreaded server _listens_ contineously for
