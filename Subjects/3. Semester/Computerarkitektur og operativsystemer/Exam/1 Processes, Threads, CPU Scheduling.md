@@ -335,4 +335,7 @@ _Hard real time_ scheduling require additional scheduling features to be able to
 - Has a deadline **d**, by which it mustbe serviced by the CPU
 - The following applies $0\leq t\leq d\leq p$.
 
-#### Rate monotonic real time scheduling (RMS)
+#### Rate monotonic real time scheduling (RMS) [[COS - lecture 8 - Itslearning.pdf#page=36|L8 page 36]]
+- Is a priority-based scheduling algorithm _specifically designed_ for **periodic real time tasks**.
+- Assigns priorities based on the _period_ of the task. **Shorter period = Higher priority**.
+- Has a _worst case_ CPU u
