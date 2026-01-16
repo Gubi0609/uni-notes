@@ -124,4 +124,18 @@ Structure is used to manage memory efficiently
 
 # Multithreading
 - Multiple _threads_ run simultaneously [[COS - lecture 8 - Itslearning.pdf#page=3|L8 page 3]]
-- A multithreaded server _listens_ contineously for
+- A multithreaded server _listens_ continuously for client requests, then creates a new thread to service request [[COS - lecture 8 - Itslearning.pdf#page=4|L8 page 4]]
+	- Has a *fast response*, as it always listens for requests
+	- Provides a good opportunity for threads to collaborate on tasks, enabling _resource sharing_
+	- Threads are in the same address space, so it is more efficient to schedule them
+	- Threads can be run on _different CPU cores_ in parallel
+
+On a _single core_ system, the processes/threads are switched _rapidly_ enabling each process to make progress [[COS - lecture 8 - Itslearning.pdf#page=5|L8 page 5]]
+
+On a _multi core_ system, multiple threads run in _parallel_ on each core (_switching_ can still be used here, to run multiple processes on same core) [[COS - lecture 8 - Itslearning.pdf#page=5|L8 page 5]]
+
+**Data parallelism** [[COS - lecture 8 - Itslearning.pdf#page=6|L8 page 6]]
+- The calculation of a dataset is distributed over several cores (e.g. arrays)
+
+**Task parallelism** [[COS - lecture 8 - Itslearning.pdf#page=6|L8 page 6]]
+- _Tasks_, not data, are distributed across multiple cores. Each task perf
