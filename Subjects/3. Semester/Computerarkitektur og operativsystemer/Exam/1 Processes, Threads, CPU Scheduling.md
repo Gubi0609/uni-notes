@@ -61,4 +61,11 @@
 - An example of this is _MULTICS_ or _Windows NT_
 
 **Microkernel** [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page = 19|L7 page 19]]
-- Minimizes the amo
+- Minimizes the amount of code running in kernel space
+- Moves as many services as possible to _user space_, where they run as _separate processes_
+- Prioritizes _modularity_, _stability_, and _security_.
+- Kernel handles only _essential functions_. (Process and memory management, Inter-process communication, basic hardware abstraction)
+- Device drivers, file systems, networking runs in _user space_
+- Processes communicate with the kernel via *IPC mechanisms*
+- If a user-space service crashes, it doesn't affect the kernel or other services
+- It has more _performance overhead_ because IPC is slower than function calls in a monolithi
