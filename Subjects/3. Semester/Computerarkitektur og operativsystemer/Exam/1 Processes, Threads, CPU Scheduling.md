@@ -30,4 +30,7 @@
 	- _Loading_ is performed by the _OS_ and dynamically linked libraries are also linked at this stage.
 	- It is now a program in memory
 - It is often so, that the compield code now only can be run on _one_ OS, but if a _virtual machine_ is used, it can be used as an **API** to run the code on most OS'es [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=15|L7 page 15]]
-- 
+
+## OS structures
+**Monolithic structures** [[Subjects/3. Semester/Computerarkitektur og operativsystemer/PDFs/COS - Lecture 7 - Itslearning.pdf#page=16|L7 page 16]]
+- The _entire_ OS runs as a single, large program in **kernel space**
