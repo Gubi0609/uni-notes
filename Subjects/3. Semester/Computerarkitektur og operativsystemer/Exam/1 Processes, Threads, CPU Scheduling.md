@@ -219,10 +219,19 @@ At time $2$, $P_3$ arrives. $P_2$ still has the smallest burst time, so it conti
 At time $3$, $P_4$ comes in. $P_2$ still has the smallest burst time, so it continues processing. Now $P_4$ has a _smaller_ burst time, than $P_1$, so it is placed _before_ $P_1$ in the queue.
 The processes now all continue.
 
-Though the total process time is the same, the _average_ processing time decreases with _preemptive scheduling_.
+Though the total process time is the same, the _average_ waiting time decreases with _preemptive scheduling_.
 
 ### Predicting burst time [[COS - lecture 8 - Itslearning.pdf#page=20|L8 page 20]]
 We need to know the burst time of an incoming process, so we start with a _guess_ $\tau_0$ 
 A weight $\alpha$, is multiplied with the current burst, and $\tau_{n+1}$ is estimated by adding previous guesses, and _reducing_ their weight for each iteration.
 ## $$\tau_{n+1}=\alpha\cdot t_n+(1-\alpha)\alpha t_{n-1}+...+(1-\alpha)^j\alpha t_{n-j}+...+(1-\alpha)^{n+1}\tau_0$$
 ### Round Robin (RR) Scheduling [[COS - lecture 8 - Itslearning.pdf#page=21|L8 page 21]]
+One of the most widely used CPU scheduling algorithms
+Designed to be fair and ensure that all processes get a chance to use the CPU.
+
+Each process has a _time slice_/_time quantum_, where it gets to run.
+If a process is not finished within its time slice, it stops (gets _preempted_) and moves to the _back_ of the queue.
+
+So if a process is the _only_ process running, it will just run in 'loops'/time slices until it finishes.
+
+A rule of thumb for selecting _time slice_ is that **80%** of CPU bursts should be _shorter_ than th
