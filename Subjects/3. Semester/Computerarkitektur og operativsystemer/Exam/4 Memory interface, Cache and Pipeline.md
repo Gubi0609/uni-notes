@@ -9,3 +9,9 @@
 	- [ ] Control hazards
 - [ ] Associative mapped Cache
 - [ ] Direct mapped Cache
+- [ ] N-way Set associative mapped Cache
+- [ ] Memory interface 8-bit vs. 16-bit
+
+# Relevant lectures
+
+# Relevant materials
