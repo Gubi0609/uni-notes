@@ -480,3 +480,9 @@ The cost for this is longest access times (which can be (partially) remedied wit
 ### Inverted page table [[COS - lecture 11 - Itslearning.pdf#page=29|L11 page 29]]
 This makes it so that only _one_ page table is in the _whole system_. One entry for each page of physical memory.
 Reduces administration, but loses the ability to share pages.
+
+## Virtual Memory
+[[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
+> Allow as many processes as possible to be in memory at the same time for multiprogramming
+
+These strategies tend to require that an _entire_ process is loaded in memory before it can execute [[COS - lecture 12 - Itslearning.pdf#page=3|L12 page 3]]
