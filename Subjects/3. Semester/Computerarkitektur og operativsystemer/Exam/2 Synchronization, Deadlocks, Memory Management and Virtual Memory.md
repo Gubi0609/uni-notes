@@ -486,7 +486,16 @@ Similar to the [[2 Synchronization, Deadlocks, Memory Management and Virtual Mem
 
 The processes are stored on the _disk's swap space_, but unlike the swapping technique, the individual pages of the process are loaded into memory, when they are needed [[COS - lecture 12 - Itslearning.pdf#page=7|L12 page 7]]
 
-When a process
+When a process is executing, some pages will be in memory, while some will be in secondary storage. [[COS - lecture 12 - Itslearning.pdf#page=8|L12 page 8]]
+We use the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Protection COS - lecture 11 - Itslearning.pdf page=24 L11 page 24|valid/invalid]] bit in the page table to distinguish the two cases.
+
+### Fault handling [[COS - lecture 12 - Itslearning.pdf#page=9|L12 page 9]]
+If a process tries to acces a page marked _invalid_, the process fails, and the OS brings in the missing page from secondary storage, and the instruction (from the process) restarts.
+
+The restart is _crucial_ to demand paging.
+
+Since we have the _state_ of the interrupted process, it should be straight forward to restart the process in exactly the same place and _state_ (except, that now the desired page is in memory) [[COS - lecture 12 - Itslearning.pdf#page=10|L12 page 10]]
+In most cases this works, but if an instruction tries to modif
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
