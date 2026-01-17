@@ -312,3 +312,19 @@ On a periodic basis, the system checks for the existence of _cycles_.
 
 > Best suited for systems with one instance of each resource type.
 
+### Deadlock recovery [[COS - lecture 10 - Itslearning.pdf#page=30|L10 page 30]]
+After detecting deadlock, we must recover from it
+
+There a two main ways to recover
+
+#### 1. Process/Thread Termination
+- Terminate _one or more threads_ involved in the deadlock
+- Releases resources held by terminated threads, allowing other threads to proceed.
+
+**How threads are chosen for termination**
+- _Priority_: Terminate the thread with the lowest priority
+- _Age_: Terminate the _youngest_ thread (least work lost)
+- _Resource Usage_: Terminate the thread hold the _fewest_ resources
+- _Cost_: Terminate the thread, that is easiest or cheapest to _restart_.
+
+#### 2. Resource 
