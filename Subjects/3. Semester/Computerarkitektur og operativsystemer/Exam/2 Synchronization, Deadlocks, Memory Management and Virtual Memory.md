@@ -82,3 +82,12 @@ Two processes access the same data at the same time, thus risking producing or u
 
 Can also occur if there is no timing/_synchronization_ between child processes, thereby allowing them both to have the **same** PID (**P**rocess **ID**)
 
+### Critical-section problem
+We imagine a system of $n$ number of processes.
+Each process has a segment of code (**critical section**) in which it accesses (and updates) data, that is shared with at least one other process.
+
+The _critical-section problem_ is then to design a protocol, that the processes can use to synchronize their activities, so as to cooperatively share data.
+
+Must satisfy the following three requirements
+- **Mutual exclusion**: If a process $P_i$ is in its _critical section_ then **no other** process may be in their critical sections, that manipulate _the same variable_ as $P_i$.
+- **Progress**:
