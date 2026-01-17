@@ -508,7 +508,9 @@ It basically works in the following way [[COS - lecture 12 - Itslearning.pdf#pag
 3. Swap in the desired page.
 4. Update the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Protection COS - lecture 11 - Itslearning.pdf page=24 L11 page 24|valid/invalid]] bit and continue the process from where the page fault occurred.
 
-To do this in practice, a _fram allocation algorithm_ and a _page replacement algorithm_ must be used.
+To do this in practice, a _frame allocation algorithm_ and a _page replacement algorithm_ must be used. [[COS - lecture 12 - Itslearning.pdf#page=16|L12 page 16]]
+- **Frame allocation algorithm:** Deciding how many frames (physical memory blocks) to allocate to each proc
+
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
