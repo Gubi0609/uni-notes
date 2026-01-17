@@ -481,6 +481,13 @@ The cost for this is longest access times (which can be (partially) remedied wit
 This makes it so that only _one_ page table is in the _whole system_. One entry for each page of physical memory.
 Reduces administration, but loses the ability to share pages.
 
+## Demand Paging
+Similar to the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Swapping COS - lecture 11 - Itslearning.pdf page = 30 L11 page 30|swapping]] with paging technique (see [[COS - lecture 11 - Itslearning.pdf#page=31|L11 page 31]])
+
+The processes are stored on the _disk's swap space_, but unlike the swapping technique, the individual pages of the process are loaded into memory, when they are needed [[COS - lecture 12 - Itslearning.pdf#page=7|L12 page 7]]
+
+When a process
+
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
 > Allow as many processes as possible to be in memory at the same time for multiprogramming
@@ -498,4 +505,10 @@ The virtual memory viewed by the programmer is contiguous, separate and _larger 
 The _virtual address space_ of a process refers to the _logical (or virtual)_ view of how a process is stored in memory
 A process begins at address _0_ and ends at address _max_ in contiguous virtual memory.
 
-There is a gap between 
+There is a gap between [[1 Processes, Threads, CPU Scheduling#Process|stack and heap]] that is part of the virtual address space.
+This space requires physical frames _only_
+- When the stack or heap _grow_
+- Or when libraries or other shared objects are dynamically linked during the program execution.
+
+> A shared page/library is stored in the space between stack and heap in two separate processes [[COS - lecture 12 - Itslearning.pdf#page=6|L12 page 6]]
+
