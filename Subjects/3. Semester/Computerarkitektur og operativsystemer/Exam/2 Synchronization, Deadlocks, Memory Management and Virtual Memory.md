@@ -173,3 +173,4 @@ Prevents incorrect or unauthorized acces to shared resources.
 3. If a process needs to wait for a condition (e.g. a buffer is empty), it calls `wait` on a condition variable
 4. Another process signals the condition (e.g. adds an item to the buffer) waking up the waiting process.
 
+> A monitor cannot do more, than what is possible with semaphores.
