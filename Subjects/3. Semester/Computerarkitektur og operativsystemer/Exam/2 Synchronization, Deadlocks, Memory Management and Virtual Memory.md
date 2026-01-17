@@ -565,8 +565,26 @@ This is implemented using a circular queue, where all the pages form one big cir
 
 ### LRU _Enhanced_ Second Chance [[COS - lecture 12 - Itslearning.pdf#page=23|L12 page 23]]
 In addition to the reference bit, a _modify_ (or _dirty_) _bit_ is introduced to reflect if a page is modified or not.
-For a page, which is _not modified_ we need not write the memory page to storage, sin
+For a page, which is _not modified_ we need not write the memory page to storage, since it is already in storage.
 
+We can have 4 possible cases
+
+|     | Reference | Modified |
+| --- | --------- | -------- |
+| 1   | 0         | 0        |
+| 2   | 0         | 1        |
+| 3   | 1         | 0        |
+| 4   | 1         | 1        |
+1. **Not used or modified** - Best candidate for replacement
+2. **Not used but modified** - Must be written back before replacement
+3. **Used but not modified** - Will probably be used again soon
+4. **Used and modified** - Will probably be used again soon and also written to storage first.
+
+The algorithm replaces the first page encountered in the lowest numbered case.
+The _major difference_ is the preference for replacing clean pages in order to reduce the number of I/O's required.
+
+### Counting based page replacement [[COS - lecture 12 - Itslearning.pdf#page=24|L12 page 24]]
+Some algorithms uses a _counter_ to keep count of the _number_ of references that have been made to each page. This is used when selecting which to repa
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
