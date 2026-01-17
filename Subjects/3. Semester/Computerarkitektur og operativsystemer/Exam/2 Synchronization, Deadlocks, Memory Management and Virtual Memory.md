@@ -7,8 +7,8 @@
 	- [x] Prevention
 	- [x] Avoidance
 	- [x] Detection
-- [ ] Address binding/mapping
-- [ ] Contiguous memory allocation
+- [x] Address binding/mapping
+- [x] Contiguous memory allocation
 - [ ] Paging
 - [ ] Demand paging
 - [ ] Page replacement
@@ -396,7 +396,15 @@ For this we use the following three strategies [[COS - lecture 11 - Itslearning.
 
 > First-fit and best-fit are better than worst-fit, in terms of decreasing time and memory utilization
 
-#### Fragmentation [[questions-cos-11.pdf|page=]]
+#### Fragmentation [[COS - lecture 11 - Itslearning.pdf#page=14|L11 page 14]]
+Fragmentation may occur when using _contiguous memory allocation_.
+##### External fragmentation
+Free memory blocks are scattered and not contiguous, making it difficult to allocate large blocks even if there is enough total free memory.
+##### Internal fragmentation
+Allocated memory may have unused space because it is allocated in fixed-size blocks
+##### Memory wastage
+_Due to fragmentation, memory bay not be used efficiently._
+
 
 ## Address binding
 To run a _program_, the program must be brought into memory and placed within the context of a _process_. [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
@@ -423,3 +431,6 @@ The _MMU scheme_ is a generalization of the [[2 Synchronization, Deadlocks, Memo
 
 The _MMU_ works as a middle-man between physical memory and the CPU/process.
 The process runs in memory locations from 0 to _max_ (being the logical memory locations it made), but in reality, it runs in _R+0_ to _R+max_. This translation is handled by the _MMU_.
+
+## Paging
+The implementation involves breaking physical memory into fixed-size 
