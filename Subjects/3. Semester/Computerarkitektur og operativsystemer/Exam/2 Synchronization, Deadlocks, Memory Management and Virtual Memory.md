@@ -378,6 +378,9 @@ _Dynamic linking_ is similar to _dynamic loading_. Here _linking_ is postponed u
 
 > Unlike dynamic loading, this requires _some_ help from the OS. If the processes in memory are protected from one another, then the OS is the only entity, than can check, whether the needed routine is in a memory space that can allow multiple processes to access.
 
+
+
+
 ## Address binding
 To run a _program_, the program must be brought into memory and placed within the context of a _process_. [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
 Most systems allow a user process to reside in _any part_ of the physical _memory_. [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
