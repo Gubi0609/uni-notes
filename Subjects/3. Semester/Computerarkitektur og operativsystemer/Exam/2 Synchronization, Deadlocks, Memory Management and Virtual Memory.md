@@ -251,4 +251,9 @@ If
 R1 → R3 → R27 → R33 → _next is R5_. Release R27 and R33 and start over
 R1 → R3 → _R5_ → R27 → R33
 
-### Deadlock avoidance
+### Deadlock avoidance [[COS - lecture 10 - Itslearning.pdf#page=16|L10 page 16]]
+Deadlock avoidance is a strategy used by OS'es to _dynamically ensure_ that the system never enters a deadlocked state.
+Unlike [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Deadlock prevention|deadlock prevention]], which imposes _strict rules_, deadlock avoidance requires the system to _make informed decisions_ about resource allocation based on the _current state_ and future needs processes (or threads).
+
+Key idea is to only grant resource requests if they keep the system in a _safe state_
+- 
