@@ -509,8 +509,15 @@ It basically works in the following way [[COS - lecture 12 - Itslearning.pdf#pag
 4. Update the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Protection COS - lecture 11 - Itslearning.pdf page=24 L11 page 24|valid/invalid]] bit and continue the process from where the page fault occurred.
 
 To do this in practice, a _frame allocation algorithm_ and a _page replacement algorithm_ must be used. [[COS - lecture 12 - Itslearning.pdf#page=16|L12 page 16]]
-- **Frame allocation algorithm:** Deciding how many frames (physical memory blocks) to allocate to each proc
+- **Frame allocation algorithm:** Deciding how many frames (physical memory blocks) to allocate to each process
+- **Page-replacement algorithm:** Deciding _which_ page to remove from memory, when a new page needs to be loaded and memory is full.
 
+To evaluate how well a page replacement algorithm works, we use a _reference string_ to simulate and evaluate how well it will work **without needing to run the actual process on a real system**
+
+Suppose we have an address sequence
+`0100, 0432, 0101, 0162, 0102, 0103, 0104, 0101, 0611, 0102, 0103, 0104, 0101, 0610, 0102, 0103, 0104` and so on
+
+and suppose that each page is 100 byte
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
