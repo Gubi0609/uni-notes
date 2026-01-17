@@ -49,3 +49,26 @@ Buffer is full, when (in+1) == out
 
 _Race condition_ can occur here
 
+**Example** [[COS - lecture 9 - Itslearning.pdf#page=8|L9 page 8]]
+`counter++` (producer) will be performed as
+```
+register1 = counter
+register1 += 1
+counter = register1
+```
+
+and `counter--` (consumer) will be performed as
+```
+register2 = counter
+register2 -= 1
+counter = register2
+```
+
+$T_0$: producer execute `register1 = counter` (register1 = 5)
+$T_1$: producer execute `register1 += 1` (register1 = 6)
+$T_2$: consumer execute `register2 = counter` (register2 = 5)
+$T_3$: consumer execute `register2 -= 1` (register2 = 4)
+$T_4$: producer execute `counter = register1` (counter = 6)
+$T_5$: consumer execute `counter = register2` (counter = 4)
+
+As we can see, the counter has value 4 in the end, which is wrong.
