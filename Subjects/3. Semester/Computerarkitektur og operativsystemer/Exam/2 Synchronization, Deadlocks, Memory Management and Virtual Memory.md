@@ -452,3 +452,20 @@ This makes it faster to assign processes frames from the list, rather than searc
 One additional bit (valid/invalid) is usually attached to _each entry_ in the page table.
 - When the bit is set to _valid_, the associated page is _in the process's logical address space_
 - When the bit is set to _invalid_, the associated page is _not in the process's logical address space_.
+
+### Shared pages [[COS - lecture 11 - Itslearning.pdf#page=25|L11 page 25]]
+Multiple page tables (and thus processes) can share the same physical memory frames.
+E.g.
+- Process A's page 5 → frame 10
+- Process B's page 3 → frame 10
+
+This is good for using shared libraries.
+
+This also enables _IPC_ (Inter-Process Communication) by allowing processes to communicate by reading and writing to the same memory locations.
+
+The OS sets permissions (read, write, execute) for shared pages.
+
+### Hierarchical page table [[COS - lecture 11 - Itslearning.pdf#page=25|L11 page 26]]
+A page table can be divided into several _smaller_ page tables.
+
+The advantage of this, is that we do not have to have 
