@@ -527,7 +527,10 @@ The number of page faults _decreases_ as the number of frames _increases_. [[COS
 
 
 ### First in First out (FIFO) algorithm [[COS - lecture 12 - Itslearning.pdf#page=18|L12 page 18]]
+A FIFO replacement algorithm creates a FIFO queue to hold all the pages in memory.
+We _replace_ the page at the _head_ of the queue. When a page is brought into memory, we _insert_ it at the _tail_ of the queue.
 
+#### Problem
 
 
 ## Virtual Memory
