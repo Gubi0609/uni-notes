@@ -9,7 +9,7 @@
 	- [x] Detection
 - [x] Address binding/mapping
 - [x] Contiguous memory allocation
-- [ ] Paging
+- [x] Paging
 - [ ] Demand paging
 - [ ] Page replacement
 - [ ] Trashing
@@ -378,6 +378,12 @@ _Dynamic linking_ is similar to _dynamic loading_. Here _linking_ is postponed u
 
 > Unlike dynamic loading, this requires _some_ help from the OS. If the processes in memory are protected from one another, then the OS is the only entity, than can check, whether the needed routine is in a memory space that can allow multiple processes to access.
 
+#### Swapping [[COS - lecture 11 - Itslearning.pdf#page = 30|L11 page 30]]
+Makes it possible for the total physical address space of all processes to _exceed_ the real physical memory of the system.
+This increases the degree of multiprogramming in a system.
+
+Basically, $P_1$ is swapped out for $P_2$, and meanwhile $P_1$ is in a _backing store_.
+
 ### Contiguous memory allocation
 Contiguous memory allocation is a memory management scheme, where each process is allocated a _single, continuous block of memory_. Meaning, that the entire address space of a process is stored in _one unbroken segment_ of physical memory.
 
@@ -468,4 +474,9 @@ The OS sets permissions (read, write, execute) for shared pages.
 ### Hierarchical page table [[COS - lecture 11 - Itslearning.pdf#page=25|L11 page 26]]
 A page table can be divided into several _smaller_ page tables.
 
-The advantage of this, is that we do not have to have 
+The advantage of this, is that we do not have to have such a large amount of page table related data in memory. [[COS - lecture 11 - Itslearning.pdf#page=27|L11 page 27]]
+The cost for this is longest access times (which can be (partially) remedied with **TLB**s) 
+
+### Inverted page table [[COS - lecture 11 - Itslearning.pdf#page=29|L11 page 29]]
+This makes it so that only _one_ page table is in the _whole system_. One entry for each page of physical memory.
+Reduces administration, but loses the ability to share pages.
