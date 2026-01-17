@@ -263,4 +263,16 @@ Key idea is to _only grant resource requests_ if they keep the system in a _safe
 	- The _maximum demand_ of each thread (the above point)
 
 #### How the system avoids deadlocks
-1. _Before allocating_ resources, the system checks if the 
+1. _Before allocating_ resources, the system checks if the allocation will leave the system in a _safe state_.
+2. If the allocation leads to a _safe state_, the request is _granted_.
+3. If the allocation leads to an _unsafe state_, the request is _denied_, and the thread must _wait_.
+
+#### Safe state [[COS - lecture 10 - Itslearning.pdf#page=17|L10 page 17]]
+A system is in a _safe state_ if there exists at least _one sequence_ in which all threads can _execute to completion_ without causing a deadlock. The sequence is called a _safe sequence_.
+- In a safe state, the system can allocate resources to threads in such a way, that each thread can eventually finish.
+- If a system is in a safe state, it _cannot be deadlocked_.
+
+#### Unsafe state [[COS - lecture 10 - Itslearning.pdf#page=18|L10 page 18]]
+An _unsafe state_ is one where _no safe sequence exists_.
+If the system enters an unsafe state, it _may_ lead to a deadlock, but _not always_. The system must however _avoid_ entering unsafe states to _guarantee deadlock avoidance_.
+
