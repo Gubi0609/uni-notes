@@ -348,4 +348,12 @@ Which means, when multiple processes run on the same system, they must share mem
 The OS must be protected from access by _user processes_ and user processes must be protected from _one another_.
 This protection must be provided by hardware. [[COS - lecture 11 - Itslearning.pdf#page=4|L11 page 4]]
 
-Each process has a separate memory space. Separate 
+Each process has a separate memory space. Separate per-process memory space protects the processes from each other and is _fundamental_ to having multiple processes loaded in memory for concurrent execution [[COS - lecture 11 - Itslearning.pdf#page=4|L11 page 4]]
+
+To separate memory spaces, the _base register_ holds the smallest legal physical memory address, while the _limit register_ specifies the size of the range. [[COS - lecture 11 - Itslearning.pdf#page=4|L11 page 4]]
+
+Is accomplished by having the CPU compare _every generated address_ with the registers. [[COS - lecture 11 - Itslearning.pdf#page=5|L11 page 5]]
+If a process executing in _user mode_ attempts to access OS memory or other users' memory results in a trap to the OS, which treats the attempt as a fatal error. [[COS - lecture 11 - Itslearning.pdf#page=5|L11 page 5]]
+Prevents a user process from modifying the code or data structures of either the OS or other users.
+
+## Address binding
