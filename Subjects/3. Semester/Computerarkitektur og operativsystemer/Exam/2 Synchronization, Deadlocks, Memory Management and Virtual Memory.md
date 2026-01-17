@@ -495,7 +495,9 @@ If a process tries to acces a page marked _invalid_, the process fails, and the 
 The restart is _crucial_ to demand paging.
 
 Since we have the _state_ of the interrupted process, it should be straight forward to restart the process in exactly the same place and _state_ (except, that now the desired page is in memory) [[COS - lecture 12 - Itslearning.pdf#page=10|L12 page 10]]
-In most cases this works, but if an instruction tries to modif
+In most cases this works, but if an instruction tries to modify _several_ different locations (**block move**) it does not.
+- **Solution 1:** The microcode computes and attempts to access both ends of both blocks
+- **Solution 2:** Uses temporary registers to hold the values of overwritten locations. If a page fault occurs, all the old values are written back into memory _before_ the trap occurs.
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
@@ -521,3 +523,9 @@ This space requires physical frames _only_
 
 > A shared page/library is stored in the space between stack and heap in two separate processes [[COS - lecture 12 - Itslearning.pdf#page=6|L12 page 6]]
 
+## Copy on write [[COS - lecture 12 - Itslearning.pdf#page=12|L12 page 12]]
+Is a technique to _speed up_ creation of a child process.
+
+When using `fork()` to create a child process, the system creates a _duplicate_ of the parent process.
+
+The copying of the parent's address space _may be unnecessary_ since many child processes invoke `exec()` immed
