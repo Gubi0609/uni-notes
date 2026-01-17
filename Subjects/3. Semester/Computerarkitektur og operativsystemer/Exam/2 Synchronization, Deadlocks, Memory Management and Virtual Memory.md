@@ -231,7 +231,7 @@ _Poor utilization of resources and possibility of starvation_
 #### No Preemption [[COS - lecture 10 - Itslearning.pdf#page=14|L10 page 14]]
 A thread holds resources and requests another resource that cannot be _immediately_ allocated to it, must _implicitly release_ (devote) all its allocated resources.
 
-_Is often used in connection with resources, whose state _
+_Is often used in connection with resources, whose state can be easily saved_.
 ##### Alternative
 A thread that holds resources and requests new resources
 - If they are available, they are taken
@@ -240,3 +240,12 @@ A thread that holds resources and requests new resources
 
 A thread can only continue, once it has received all the resources it has been deprived of (preempted), as well as those it lacked.
 
+#### Circular wait [[COS - lecture 10 - Itslearning.pdf#page=15|L10 page 15]]
+Each resource type in the system is assigned a unique integer number, which allows us to compare two resources and to determine whether one precedes another in our ordering.
+
+The rule is that all threads only request resources in _ascending_ number order.
+E.g.
+R1 → R3 → R27 → R33
+
+If
+R1 → R3 → R27 → R33 → _next is _
