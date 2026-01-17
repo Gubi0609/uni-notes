@@ -378,6 +378,11 @@ _Dynamic linking_ is similar to _dynamic loading_. Here _linking_ is postponed u
 
 > Unlike dynamic loading, this requires _some_ help from the OS. If the processes in memory are protected from one another, then the OS is the only entity, than can check, whether the needed routine is in a memory space that can allow multiple processes to access.
 
+### Contiguous memory allocation
+Contiguous memory allocation is a memory management scheme, where each process is allocated a _single, continuous block of memory_. Meaning, that the entire address space of a process is stored in _one unbroken segment_ of physical memory.
+
+In this regard, we look back at the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Base register scheme (Memory Separation)|base register scheme]] from before. Keeping address space for each process in blocks, also helps _protect memory_, by not allowing $P_1$ to access the address space of $P_2$. [[questions-cos-11.pdf#page=11|L11 pa]]
+
 
 
 
