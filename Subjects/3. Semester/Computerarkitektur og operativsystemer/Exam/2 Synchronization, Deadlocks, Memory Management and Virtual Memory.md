@@ -25,3 +25,13 @@
 - [[COS - lecture 10 - Itslearning.pdf]]
 - [[COS - lecture 11 - Itslearning.pdf]]
 - [[COS - lecture 12 - Itslearning.pdf]]
+
+# Topics
+## Process synchronization
+Processes can execute concurrently or in parallel
+**Concurrent**
+- CPU scheduler switches rapidly between processes to provide concurrent execution.
+- Processes may only _partially_ complete before being stopped in favor of another process.
+
+**Parallel**
+- Multiple instruction streams (different processes) execute _sim_
