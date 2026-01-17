@@ -436,11 +436,19 @@ The process runs in memory locations from 0 to _max_ (being the logical memory l
 The implementation involves breaking _physical memory_ into fixed-size blocks called _frames_ and breaking _logical memory_ into blocks of the _same size_ called _pages_. [[COS - lecture 11 - Itslearning.pdf#page=19|L11 page 19]]
 
 This way, a _memory block_ of segments/processes may be kept together in _logical memory_, but may be _separated_ in _physical memory_. 
-A _page table_ is used to translate from _logical_ to _physical_ memory. [[COS - lecture 11 - Itslearning.pdf#page=21|L11 page 21]]
-The _page table_ is stored in **TLB** (**T**ranslation **L**ookaside **B**uffer), which is a cache for page table entries to speed up address translation.
-	If a page numb
+A _page table_ is used to translate from _logical_ to _physical_ memory. [[COS - lecture 11 - Itslearning.pdf#page=20|L11 page 20]]
+The _page table_ is stored in **TLB** (**T**ranslation **L**ookaside **B**uffer), which is a cache for page table entries to speed up address translation. [[COS - lecture 11 - Itslearning.pdf#page=21|L11 page 21]]
+If a page number does _not_ exist in **TLB**, the system reverts to the normal way of translating (page table). [[COS - lecture 11 - Itslearning.pdf#page=22|L11 page 22]]
 
 This way, we have no [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#External fragmentation|external fragmentation]], only [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Internal fragmentation|internal fragmentation]].
 
 By using _paging_ we have more _efficient memory usage_ as pages can be allocated _non-contiguously_ in physical memory, reducing memory wastage.
 This whole process is handled by the _MMU_ (for more on MMU, see [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Address binding|address binding]] above).
+
+The OS keeps track of the _available frames_ in a free-frame list. [[COS - lecture 11 - Itslearning.pdf#page=23|L11 page 23]]
+This makes it faster to assign processes frames from the list, rather than searching for a free frame each time.
+
+### Protection [[COS - lecture 11 - Itslearning.pdf#page=24|L11 page 24]]
+One additional bit (valid/invalid) is usually attached to _each entry_ in the page table.
+- When the bit is set to _valid_, the associated page is _in the process's logical address space_
+- When the bit is set to _invalid_, the associated page is _not in the process's logical address space_.
