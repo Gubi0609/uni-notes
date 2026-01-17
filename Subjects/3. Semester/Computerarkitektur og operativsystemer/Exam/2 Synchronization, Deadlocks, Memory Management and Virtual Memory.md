@@ -96,4 +96,17 @@ Must satisfy the following three requirements
 ### Semaphores
 A _Semaphore_ is an **integer variable** that is accessed only through two standard _atomic_ operations: `wait()` and `signal()`.
 
-**`wait()`** is used when a process wants _access_ to its critical section (also called _spinlo)
+[[COS - lecture 9 - Itslearning.pdf#page=11|L9 page 11]]
+**`wait()`** is used when a process wants _access_ to its critical section (also called _spinlock_ or _busy waiting_)
+	`semaphore--`
+**`signal()`** is used when a process wants to _leave_ its critical section.
+	`semaphore++`
+
+If two concurrently running processes $P_1$ and $P_2$ both have a semaphore statement $S_1$ and $S_2$, we want to implement such that _S2 can be executed **only after** S1 has completed_. We can do this using a shared _semaphore sync_. [[COS - lecture 9 - Itslearning.pdf#page=12|L9 page 12]]
+```
+S1
+signal(synch);
+
+wait(synch);
+S2
+```
