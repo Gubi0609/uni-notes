@@ -336,3 +336,4 @@ There a two main ways to recover
 - Roll back the victim thread to a safe state (if possible)
 - Restart the victim thread later.
 
+## Memory Management
