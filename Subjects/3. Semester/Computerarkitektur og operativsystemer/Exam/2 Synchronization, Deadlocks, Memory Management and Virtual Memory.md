@@ -382,7 +382,7 @@ _Dynamic linking_ is similar to _dynamic loading_. Here _linking_ is postponed u
 Makes it possible for the total physical address space of all processes to _exceed_ the real physical memory of the system.
 This increases the degree of multiprogramming in a system.
 
-Basically, $P_1$ is swapped out for $P_2$, and meanwhile $P_1$ is in a _backing store_.
+Basically, $P_1$ is swapped out for $P_2$, and meanwhile $P_1$ is in a _backing store_, while $P_2$ is in main memory.
 
 ### Contiguous memory allocation
 Contiguous memory allocation is a memory management scheme, where each process is allocated a _single, continuous block of memory_. Meaning, that the entire address space of a process is stored in _one unbroken segment_ of physical memory.
