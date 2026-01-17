@@ -2,7 +2,7 @@
 - [x] Semaphore
 - [x] Critical section
 - [x] Synchronization problems
-- [ ] Monitors
+- [x] Monitors
 - [ ] Deadlock
 	- [ ] Prevention
 	- [ ] Avoidance
@@ -171,4 +171,5 @@ Prevents incorrect or unauthorized acces to shared resources.
 1. A process calls a monitor procedure
 2. The monitor ensures, that only _one process_ is active inside it at a time
 3. If a process needs to wait for a condition (e.g. a buffer is empty), it calls `wait` on a condition variable
-4. Another process signals the condition (e.g. adds an item)
+4. Another process signals the condition (e.g. adds an item to the buffer) waking up the waiting process.
+
