@@ -213,7 +213,7 @@ If we want to break this condition, all resources must be shareable.
 It is unrealistic to think, that such a system exists.
 	e.g. mutex, semaphore, CPU time etc.
 
-#### Hold and Wait [[[[COS - lecture 10 - Itslearning.pdf#page=10|L10 page 10]]]]
+#### Hold and Wait [[COS - lecture 10 - Itslearning.pdf#page=13|L10 page 13]]
 A thread can _only_ start program execution when _**all**_ the resources it needs to perform its work can be allocated.
 
 E.g. retrieve data from DVD → save it in a file → read-only file → print
@@ -227,3 +227,16 @@ allocate file → sort → release resources
 allocate file, printer → print → release resources
 
 _Poor utilization of resources and possibility of starvation_
+
+#### No Preemption [[COS - lecture 10 - Itslearning.pdf#page=14|L10 page 14]]
+A thread holds resources and requests another resource that cannot be _immediately_ allocated to it, must _implicitly release_ (devote) all its allocated resources.
+
+_Is often used in connection with resources, whose state _
+##### Alternative
+A thread that holds resources and requests new resources
+- If they are available, they are taken
+- If they are _allocated_ to a _waiting_ thread, they are taken
+- If they are _not available_ and allocated to a _running_ thread, the thread has to _wait_ and all the allocated resources are preempted.
+
+A thread can only continue, once it has received all the resources it has been deprived of (preempted), as well as those it lacked.
+
