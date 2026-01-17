@@ -535,14 +535,26 @@ If the page selected for replacement (head of queue) is in active use, a fault w
 A bad replacement choice increases the page fault rate and slows process execution.
 
 ### Optimal page-replacement algorithm [[COS - lecture 12 - Itslearning.pdf#page=19|L12 page 19]]
-The algorithm replaces the page that _will not be used_ for the _longest period_ of time.
+The algorithm replaces the page that _**will** not be used_ for the _longest period_ of time.
 It has the _lowest page-fault rate_ of all algorithms.
 
 #### Problem
 The optimal page-replacement algorithm is difficult to implement, because it requires _future knowledge_ of the _reference string_.
 
 ### Least Recently Used (LRU) algorithm [[COS - lecture 12 - Itslearning.pdf#page=20|L12 page 20]]
+Since the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimal page-replacement algorithm COS - lecture 12 - Itslearning.pdf page=19 L12 page 19|optimal page replacement algorithm]] is not feasible, we can _approximate_ it by using the _recent past_ as an approximation of the _near future_.
+We now replace the page that _**has not been** used_ for the _longest period_ of time.
 
+LRU associates with _each page_ the _time_ of that page's _last use_.
+
+### LRU stack based [[COS - lecture 12 - Itslearning.pdf#page=21|L12 page 21]]
+Another way to implement LRU is to keep a _stack of page numbers_.
+When a page is used, it is removed from the stack and put on the top. This way, the most recently used pages are always at the top, and the least recently used page is at the bottom.
+
+Can be implemented using a _doubly linked list_ with a head pointer and a tail pinter.
+- No search for a replacement. _The tail pointer points to the bottom of the stack_, which is the LRU page.
+
+### LRU Second Chance 
 
 
 ## Virtual Memory
