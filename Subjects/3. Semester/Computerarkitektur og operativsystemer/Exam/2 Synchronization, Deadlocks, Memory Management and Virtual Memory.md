@@ -435,6 +435,12 @@ The process runs in memory locations from 0 to _max_ (being the logical memory l
 ## Paging
 The implementation involves breaking _physical memory_ into fixed-size blocks called _frames_ and breaking _logical memory_ into blocks of the _same size_ called _pages_. [[COS - lecture 11 - Itslearning.pdf#page=19|L11 page 19]]
 
-This way, a _memory block_ of segments/processes may be kept together in _logical memory_, but may be _separated_ in _physical memory_. A _page table_ is used to translate from _logical_ to _physical_ memory. [[COS - lecture 11 - Itslearning.pdf#page=21|L11 page 21]]
+This way, a _memory block_ of segments/processes may be kept together in _logical memory_, but may be _separated_ in _physical memory_. 
+A _page table_ is used to translate from _logical_ to _physical_ memory. [[COS - lecture 11 - Itslearning.pdf#page=21|L11 page 21]]
+The _page table_ is stored in **TLB** (**T**ranslation **L**ookaside **B**uffer), which is a cache for page table entries to speed up address translation.
+	If a page numb
 
 This way, we have no [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#External fragmentation|external fragmentation]], only [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Internal fragmentation|internal fragmentation]].
+
+By using _paging_ we have more _efficient memory usage_ as pages can be allocated _non-contiguously_ in physical memory, reducing memory wastage.
+This whole process is handled by the _MMU_ (for more on MMU, see [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Address binding|address binding]] above).
