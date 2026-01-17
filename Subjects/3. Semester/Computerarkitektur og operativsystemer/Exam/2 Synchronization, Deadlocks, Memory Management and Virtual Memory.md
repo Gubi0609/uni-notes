@@ -90,5 +90,5 @@ The _critical-section problem_ is then to design a protocol, that the processes 
 
 Must satisfy the following three requirements
 - **Mutual exclusion**: If a process $P_i$ is in its _critical section_ then **no other** process may be in their critical sections, that manipulate _the same variable_ as $P_i$.
-- **Progress**: If no process is executing in its critical section, and some processes wish to enter their critical sections, then only processes that are _not executing_ in their remainder sections can participate in deciding which will enter its critical section next, and this selection _cannot be postponed_ indefinitely
-- **Bounded Waiting**: 
+- **Progress**: If _no process_ is currently in its critical section, and _some processes_ are trying to enter theirs, then the system **must** eventually allow one of them to proceed. The selection **cannot be delayed forever**.
+- **Bounded Waiting**: There exists a bound or limit on the waiting time that other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted.
