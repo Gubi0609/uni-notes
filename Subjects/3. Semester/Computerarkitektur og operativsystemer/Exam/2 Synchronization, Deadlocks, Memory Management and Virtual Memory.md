@@ -187,3 +187,20 @@ Can arise in a system, if the following four conditions hold simultaneously [[CO
 3. **No preemption**: A resource is only released voluntarily by the thread that holds it when it has completed its task.
 4. **Circular wait**: $T_0$ waits for a resource held to $T_n$, which waits for a resource held by $T_0$. This can either be for just _two_ processes or more.
 
+If we can ensure that jsut _one_ of the conditions
+### Avoiding deadlock
+Several strategies can be used to avoid deadlock
+
+#### Ignoring the problem [[COS - lecture 10 - Itslearning.pdf#page=10|L10 page 10]]
+Ignore the problem and pretend that it never occurred.
+Unix, Linux, Windows and more.
+It is then up to the kernel and application developers to write programs that handle deadlocks (typically using a [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Protocol COS - lecture 10 - Itslearning.pdf page=10 L10 page 10|protocol]])
+
+#### Protocol [[COS - lecture 10 - Itslearning.pdf#page=10|L10 page 10]]
+Use a protocol to make sure deadlock _**never**_ occurs.
+i.e _deadlock prevention and avoidance_
+#### Allow [[COS - lecture 10 - Itslearning.pdf#page=10|L10 page 10]]
+Allow deadlock to occur, and then detect it and recover afterwards.
+i.e. _deadlock detection and recovery_
+e.g. databases
+
