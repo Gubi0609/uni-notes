@@ -272,7 +272,21 @@ A system is in a _safe state_ if there exists at least _one sequence_ in which a
 - In a safe state, the system can allocate resources to threads in such a way, that each thread can eventually finish.
 - If a system is in a safe state, it _cannot be deadlocked_.
 
+##### Example
+|       | _Maximum needs_ | _Current needs_ |
+| ----- | --------------- | --------------- |
+| $T_0$ | 10              | 5               |
+| $T_1$ | 4               | 2               |
+| $T_2$ | 9               | 3               |
+With _available resources being 12_
+The _safe sequence_ here is then <$T_1$, $T_0$, $T_2$> as
+
+$T_1$ can finish with its current resources (_2_) and release its maximum (_4_), thus leaving more resources available
+$T_0$ can finish with its current resources (_5_) plus the newly available resources, and so on.
+
 #### Unsafe state [[COS - lecture 10 - Itslearning.pdf#page=18|L10 page 18]]
 An _unsafe state_ is one where _no safe sequence exists_.
 If the system enters an unsafe state, it _may_ lead to a deadlock, but _not always_. The system must however _avoid_ entering unsafe states to _guarantee deadlock avoidance_.
 
+##### Example
+Take the example from above, but the sequence is changed to <$T_2$, $T_0$, $T_1$
