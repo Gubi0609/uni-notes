@@ -500,7 +500,15 @@ In most cases this works, but if an instruction tries to modify _several_ differ
 - **Solution 2:** Uses temporary registers to hold the values of overwritten locations. If a page fault occurs, all the old values are written back into memory _before_ the trap occurs.
 
 ## Page replacements
-If no 
+If no _free frames_ remain for [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Demand Paging|demand paging]] we use _page replacements_. [[COS - lecture 12 - Itslearning.pdf#page=14|L12 page 14]]
+
+It basically works in the following way [[COS - lecture 12 - Itslearning.pdf#page=15|L12 page 15]]
+1. Find a _victim_ (a frame _not currently being used_) (swap the page out on the disk, if it is modified)
+2. Correct the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Protection COS - lecture 11 - Itslearning.pdf page=24 L11 page 24|valid/invalid]] bit for the page, that changed victim to invalid.
+3. Swap in the desired page.
+4. Update the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Protection COS - lecture 11 - Itslearning.pdf page=24 L11 page 24|valid/invalid]] bit and continue the process from where the page fault occurred.
+
+To do this in practice, a _fram allocation algorithm_ and a _page replacement algorithm_ must be used.
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
