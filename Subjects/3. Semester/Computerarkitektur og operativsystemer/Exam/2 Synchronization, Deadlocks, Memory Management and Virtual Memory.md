@@ -356,6 +356,22 @@ Is accomplished by having the CPU compare _every generated address_ with the reg
 If a process executing in _user mode_ attempts to access OS memory or other users' memory results in a trap to the OS, which treats the attempt as a fatal error. [[COS - lecture 11 - Itslearning.pdf#page=5|L11 page 5]]
 Prevents a user process from modifying the code or data structures of either the OS or other users.
 
+### Optimization strategies
+We may want to optimize our use of memory. For this, we can use the following strategies
+
+#### Dynamic loading [[COS - lecture 11 - Itslearning.pdf#page=9|L11 page 9]]
+Before an entire process and all data of said process should be in the _physical memory_ when it was to be executed.
+
+Now we use _dynamic loading_ to only load a _routine_ when it is called.
+All routines are kept _on disk_ in a relocatable load format.
+
+Basically, not all functionality in a program should be used _every time_. We can instead only load the needed parts, and take up less space in memory, making more room for more processes at the _same time_.
+
+> Dynamic loading does not require special support from the OS. It is the users/developers responsibility to design their programs to take advantage of this.
+
+#### Dynamic Linking [[COS - lecture 11 - Itslearning.pdf#page=10|L11 page 10]]
+
+
 ## Address binding
 To run a _program_, the program must be brought into memory and placed within the context of a _process_. [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
 Most systems allow a user process to reside in _any part_ of the physical _memory_. [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
