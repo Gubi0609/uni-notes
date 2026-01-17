@@ -183,3 +183,7 @@ Can arise in a system, if the following four conditions hold simultaneously [[CO
 1. **Mutual exclusion**: At least one resource must be held in a nonsharable mode.
 	1. Only one thread at a time can use the resource.
 	2. Another thread requesting that resource must be delayed until the resource has been released
+2. **Hold and wait**: A thread holds at least one resource while waiting for additional resources held by other threads.
+3. **No preemption**: A resource is only released voluntarily by the thread that holds it when it has completed its task.
+4. **Circular wait**: $T_0$ waits for a resource held to $T_n$, which waits for a resource held by $T_0$. This can either be for just _two_ processes or more.
+
