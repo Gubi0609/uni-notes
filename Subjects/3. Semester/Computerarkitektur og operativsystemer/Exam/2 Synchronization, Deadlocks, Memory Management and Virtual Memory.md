@@ -357,3 +357,10 @@ If a process executing in _user mode_ attempts to access OS memory or other user
 Prevents a user process from modifying the code or data structures of either the OS or other users.
 
 ## Address binding
+To run a _program_, the program must be brought into memory and placed within the context of a _process_. [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
+Most systems allow a user process to reside in _any part_ of the physical _memory_. [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
+
+The binding of a process' instructions and data to memory addresses can be done at any step along the way [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
+- **Compile time:** If the location in memory, where a process will reside, is known at compile time, _absolute code_ can be generated.
+- **Load time:** If the location is not know at compile time, the compiler must generate relocatable code (final binding is delayed until load time).
+- **Execution time:** If the process can be moved from one _memory segment_ to another during its execution, the binding must be delayed until run time.
