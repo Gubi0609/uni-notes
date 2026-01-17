@@ -486,3 +486,16 @@ Reduces administration, but loses the ability to share pages.
 > Allow as many processes as possible to be in memory at the same time for multiprogramming
 
 These strategies tend to require that an _entire_ process is loaded in memory before it can execute [[COS - lecture 12 - Itslearning.pdf#page=3|L12 page 3]]
+
+_Virtual_ memory allows the execution of processes that are _not completely_ in memory. [[COS - lecture 12 - Itslearning.pdf#page=3|L12 page 3]]
+This frees programmers from the concerns of memory-storage limitations.
+Virtual memory also allows processes to share files and libraries, and to implement shared memory.
+
+### Basic Idea [[COS - lecture 12 - Itslearning.pdf#page=4|L12 page 4]]
+The virtual memory viewed by the programmer is contiguous, separate and _larger than the physical memory_.
+
+### Virtual Address Space [[COS - lecture 12 - Itslearning.pdf#page=5|L12 page 5]]
+The _virtual address space_ of a process refers to the _logical (or virtual)_ view of how a process is stored in memory
+A process begins at address _0_ and ends at address _max_ in contiguous virtual memory.
+
+There is a gap between 
