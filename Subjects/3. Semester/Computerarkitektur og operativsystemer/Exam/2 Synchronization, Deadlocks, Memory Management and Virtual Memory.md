@@ -370,7 +370,13 @@ Basically, not all functionality in a program should be used _every time_. We ca
 > Dynamic loading does not require special support from the OS. It is the users/developers responsibility to design their programs to take advantage of this.
 
 #### Dynamic Linking [[COS - lecture 11 - Itslearning.pdf#page=10|L11 page 10]]
+Dynamically linked libraries (_DLL_'s) are system libraries, that are linked to user programs when the programs are run. This ensures, that only one instance of a specific library is active/filling in memory, when running processes, instead of every process needing its own copy of a library.
 
+Some OS support only _static linking_, in which the system libraries are treated like any other object module and are combined by the loader into the binary program image.
+
+_Dynamic linking_ is similar to _dynamic loading_. Here _linking_ is postponed until execution time, rather than _loading_.
+
+> Unlike dynamic loading, this requires _some_ help from the OS. If the processes in memory are protected from one another, then the OS is the only entity, than can check, whether the needed routine is in a memory space that can allow multiple processes to access.
 
 ## Address binding
 To run a _program_, the program must be brought into memory and placed within the context of a _process_. [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
