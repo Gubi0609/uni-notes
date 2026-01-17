@@ -126,4 +126,19 @@ wait(S2)  # Blocks here
 wait(S2)
 wait(S1)  # Blocks here
 ```
-Here process A acquires S1 and waits for S2, but Process B acquires S2 and waits for S1. _Infinetely waiting_
+Here process A acquires S1 and waits for S2, but Process B acquires S2 and waits for S1. _Infinitely waiting_
+
+#### Starvation
+Starvation occurs when a process is perpetually denied access to a resource, even though it is eligible to proceed.
+Can happen if semaphore scheduling policy _always prioritizes new_ requests.
+
+#### Priority Inversion
+When a _lower priority_ process holds a semaphore needed by a _higher priority_ process, thereby causing the higher priority process to wait.
+
+#### Incorrect initialization
+Semaphores must be initialized correctly (e.g. with the right initial value) else the system may behave unpredictably.
+A binary semaphore should be initialized to _1_ (unlocked)
+	If initialized to _0_ (locked), no process can acquire it, leading to a deadlock.
+
+#### Busy waiting
+Some semaphore implementations use _busy waiting_ where a process repeatedly checc
