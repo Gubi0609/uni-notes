@@ -531,6 +531,18 @@ A FIFO replacement algorithm creates a FIFO queue to hold all the pages in memor
 We _replace_ the page at the _head_ of the queue. When a page is brought into memory, we _insert_ it at the _tail_ of the queue.
 
 #### Problem
+If the page selected for replacement (head of queue) is in active use, a fault will occur, when we replace the page, requiring us to almost immediately retrieve the active page from secondary memory.
+A bad replacement choice increases the page fault rate and slows process execution.
+
+### Optimal page-replacement algorithm [[COS - lecture 12 - Itslearning.pdf#page=19|L12 page 19]]
+The algorithm replaces the page that _will not be used_ for the _longest period_ of time.
+It has the _lowest page-fault rate_ of all algorithms.
+
+#### Problem
+The optimal page-replacement algorithm is difficult to implement, because it requires _future knowledge_ of the _reference string_.
+
+### Least Recently Used (LRU) algorithm [[COS - lecture 12 - Itslearning.pdf#page=20|L12 page 20]]
+
 
 
 ## Virtual Memory
