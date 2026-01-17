@@ -554,7 +554,18 @@ When a page is used, it is removed from the stack and put on the top. This way, 
 Can be implemented using a _doubly linked list_ with a head pointer and a tail pinter.
 - No search for a replacement. _The tail pointer points to the bottom of the stack_, which is the LRU page.
 
-### LRU Second Chance 
+### LRU Second Chance (clock) [[COS - lecture 12 - Itslearning.pdf#page=22|L12 page 22]]
+Many systems provide som help in the form of a _reference bit_. The reference bit for a page is set to _1_ by the hardware whenever that _page is referenced_.
+
+- If the value is _0_ the page is replaced
+- If the reference bit is set to _1_, we give that page a second chance and move on to select next FIFO page.
+	- When a page gets a second chance, its reference bit is set to _0_.
+
+This is implemented using a circular queue, where all the pages form one big circular array.
+
+### LRU _Enhanced_ Second Chance [[COS - lecture 12 - Itslearning.pdf#page=23|L12 page 23]]
+In addition to the reference bit, a _modify_ (or _dirty_) _bit_ is introduced to reflect if a page is modified or not.
+For a page, which is _not modified_ we need not write the memory page to storage, sin
 
 
 ## Virtual Memory
