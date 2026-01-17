@@ -381,10 +381,22 @@ _Dynamic linking_ is similar to _dynamic loading_. Here _linking_ is postponed u
 ### Contiguous memory allocation
 Contiguous memory allocation is a memory management scheme, where each process is allocated a _single, continuous block of memory_. Meaning, that the entire address space of a process is stored in _one unbroken segment_ of physical memory.
 
-In this regard, we look back at the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Base register scheme (Memory Separation)|base register scheme]] from before. Keeping address space for each process in blocks, also helps _protect memory_, by not allowing $P_1$ to access the address space of $P_2$. [[questions-cos-11.pdf#page=11|L11 pa]]
+In this regard, we look back at the [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Base register scheme (Memory Separation)|base register scheme]] from before. Keeping address space for each process in blocks, also helps _protect memory_, by not allowing $P_1$ to access the address space of $P_2$. [[questions-cos-11.pdf#page=11|L11 page 11]]
 
 
+By using _contiguous memory allocation_ we can _compact_ our memory to allow room for _new blocks_. [[COS - lecture 11 - Itslearning.pdf#page=12|L11 page 12]]
+For this we use the following three strategies [[COS - lecture 11 - Itslearning.pdf#page=13|L11 page 13]]
+- **First-fit:** Allocates to the _first_ hole in the set of holes, that is _large enough_ for the process.
+- **Best-fit:** Allocates to the _smallest_ hole in the set of holes, that is _large enough_ for the process.
+	- The entire set (memory) must be searched (unless it is sorted by size)
+	- The strategy leaves the smallest hole in the memory (utilization)
+- **Worst-fit:** Allocates to the _largest_ hole in the list
+	- The entire set must be searched (unless it is sorted by size)
+	- The strategy leaves the largest hole in the memory (which may be large enough to use for other processes)
 
+> First-fit and best-fit are better than worst-fit, in terms of decreasing time and memory utilization
+
+#### Fragmentation [[questions-cos-11.pdf|page=]]
 
 ## Address binding
 To run a _program_, the program must be brought into memory and placed within the context of a _process_. [[COS - lecture 11 - Itslearning.pdf#page=6|L11 page 6]]
