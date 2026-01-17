@@ -146,5 +146,9 @@ Some semaphore implementations use _busy waiting_ where a process repeatedly che
 #### Semaphore limits
 Semaphores have a fixed range (e.g. 0 to N). If a process releases a semaphore more times than it acquires it, the semaphore's value can exceed its limit, leading to undefined behavior.
 
-### Monitors
-A **monitor** is a programming construct 
+### Monitors [[COS - lecture 9 - Itslearning.pdf#page=16±L9 page 16]]
+A **monitor** is a programming construct consisting of
+- **Shared data** (variables, data structures)
+- **Procedures** (or methods) that operate on the shared data
+- **Synchronization mechanisms** to ensure that only one process/thread can execute a monitor procedure at a time.
+
