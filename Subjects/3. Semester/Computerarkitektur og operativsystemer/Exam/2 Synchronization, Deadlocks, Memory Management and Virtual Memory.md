@@ -277,7 +277,7 @@ A system is in a _safe state_ if there exists at least _one sequence_ in which a
 | ----- | --------------- | --------------- |
 | $T_0$ | 10              | 5               |
 | $T_1$ | 4               | 2               |
-| $T_2$ | 9               | 3               |
+| $T_2$ | 9               | 2               |
 With _available resources being 12_
 The _safe sequence_ here is then <$T_1$, $T_0$, $T_2$> as
 
@@ -289,4 +289,11 @@ An _unsafe state_ is one where _no safe sequence exists_.
 If the system enters an unsafe state, it _may_ lead to a deadlock, but _not always_. The system must however _avoid_ entering unsafe states to _guarantee deadlock avoidance_.
 
 ##### Example
-Take the example from above, but the sequence is changed to <$T_2$, $T_0$, $T_1$
+Take the example from above, but give $T_2$ 3 more resources for its _current needs_. It is now _5_, and the system cannot find a _safe sequence_.
+
+#### Claim edge [[COS - lecture 10 - Itslearning.pdf#page=19|L10 page 19]]
+A claim edge indicates, that a thread $T_i$ may request resource $R_j$ _at some time in the future_.
+When thread $T_i$ requests resource $R_j$, the _claim edge_ sis converted to a _request edge_.
+Similarly, when a resource $R_j$ is _released_ by $T_i$, the _assignment edge_, is reconverted to a _claim edge_.
+
+Resources must be claimed _beforehand_ in the system. That is, before thread $T_i$ starts executing, _all_ its claim edges must already be made.
