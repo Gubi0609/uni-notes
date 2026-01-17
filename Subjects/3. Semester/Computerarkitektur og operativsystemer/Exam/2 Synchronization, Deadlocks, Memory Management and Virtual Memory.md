@@ -110,3 +110,20 @@ signal(synch);
 wait(synch);
 S2
 ```
+
+In practice it is not always an advantage to use _busy waiting_ as the process spends its CPU time _just waiting_.
+We can use a _semaphore queue_ instead. [[COS - lecture 9 - Itslearning.pdf#page=13|L9 page 13]]
+We have a queue _list_ and we add a process to the queue _if the semaphore value is negative_, and remove another process from the queue _if the semaphore value is 0 or higher_.
+
+#### Deadlocks
+A deadlock can occur when two or more processes are _blocked forever_, each waiting for the other to release a resource
+```
+# Process A
+wait(S1)
+wait(S2)  # Blocks here
+
+# Process B
+wait(S2)
+wait(S1)  # Blocks here
+```
+Here process A acquires S1 and waits for S2, but Process B acquires S2 and waits for S1. _Infinetely waiting_
