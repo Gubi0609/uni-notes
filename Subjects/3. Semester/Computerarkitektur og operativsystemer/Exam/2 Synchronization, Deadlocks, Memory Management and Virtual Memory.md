@@ -1,7 +1,7 @@
 # Topics to be covered
-- [ ] Semaphore
-- [ ] Critical section
-- [ ] Synchronization problems
+- [x] Semaphore
+- [x] Critical section
+- [x] Synchronization problems
 - [ ] Monitors
 - [ ] Deadlock
 	- [ ] Prevention
@@ -141,4 +141,10 @@ A binary semaphore should be initialized to _1_ (unlocked)
 	If initialized to _0_ (locked), no process can acquire it, leading to a deadlock.
 
 #### Busy waiting
-Some semaphore implementations use _busy waiting_ where a process repeatedly checc
+Some semaphore implementations use _busy waiting_ where a process repeatedly checks if the semaphore is available, _wasting CPU cycles_.
+
+#### Semaphore limits
+Semaphores have a fixed range (e.g. 0 to N). If a process releases a semaphore more times than it acquires it, the semaphore's value can exceed its limit, leading to undefined behavior.
+
+### Monitors
+A **monitor** is a programming construct 

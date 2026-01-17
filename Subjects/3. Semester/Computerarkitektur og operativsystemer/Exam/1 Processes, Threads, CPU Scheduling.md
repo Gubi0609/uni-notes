@@ -1,9 +1,9 @@
 # Topics to be covered
 - [ ] Definition of processes and threads
 - [ ] Inter-process communication
-- [ ] Thread models
-- [ ] Process and thread scheduling
-- [ ] CPU scheduling algorithms
+- [x] Thread models
+- [x] Process and thread scheduling
+- [x] CPU scheduling algorithms
 
 # Relevant lectures
 - [[L8 - Multithread programming]]
