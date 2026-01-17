@@ -174,3 +174,6 @@ Prevents incorrect or unauthorized acces to shared resources.
 4. Another process signals the condition (e.g. adds an item to the buffer) waking up the waiting process.
 
 > A monitor cannot do more, than what is possible with semaphores.
+
+## Deadlocks
+Several threads fight for a limited number of resources. [[COS - lecture 10 - Itslearning.pdf#page=3]]
