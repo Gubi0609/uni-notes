@@ -3,10 +3,10 @@
 - [x] Critical section
 - [x] Synchronization problems
 - [x] Monitors
-- [ ] Deadlock
-	- [ ] Prevention
-	- [ ] Avoidance
-	- [ ] Detection
+- [x] Deadlock
+	- [x] Prevention
+	- [x] Avoidance
+	- [x] Detection
 - [ ] Address binding/mapping
 - [ ] Contiguous memory allocation
 - [ ] Paging
@@ -327,4 +327,12 @@ There a two main ways to recover
 - _Resource Usage_: Terminate the thread hold the _fewest_ resources
 - _Cost_: Terminate the thread, that is easiest or cheapest to _restart_.
 
-#### 2. Resource 
+#### 2. Resource Preemption
+- _Forcefully take resources_ from one or more threads and allocate them to others
+	- Like _stealing_ resources to break the circular wait.
+
+**How it works**
+- Select a victim thread and preempt its resources.
+- Roll back the victim thread to a safe state (if possible)
+- Restart the victim thread later.
+
