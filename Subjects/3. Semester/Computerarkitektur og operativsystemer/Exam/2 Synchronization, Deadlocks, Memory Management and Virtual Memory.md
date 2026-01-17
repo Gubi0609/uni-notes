@@ -248,4 +248,7 @@ E.g.
 R1 → R3 → R27 → R33
 
 If
-R1 → R3 → R27 → R33 → _next is _
+R1 → R3 → R27 → R33 → _next is R5_. Release R27 and R33 and start over
+R1 → R3 → _R5_ → R27 → R33
+
+### Deadlock avoidance
