@@ -72,3 +72,13 @@ $T_4$: producer execute `counter = register1` (counter = 6)
 $T_5$: consumer execute `counter = register2` (counter = 4)
 
 As we can see, the counter has value 4 in the end, which is wrong.
+If $T_4$ and $T_5$ was performed in reverse order, counter would have been 6, which is also wrong.
+The correct result is $5$.
+
+#### Race condition
+Two processes access the same data at the same time, thus risking producing or using wrong data.
+
+> The system's substantive behavior is dependent on the sequence or timing of other uncontrollable events, leading to unexpected or inconsistent results.
+
+Can also occur if there is no timing/_synchronization_ between child processes, thereby allowing them both to have the **same** PID (**P**rocess **ID**)
+
