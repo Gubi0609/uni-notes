@@ -177,7 +177,7 @@ Prevents incorrect or unauthorized acces to shared resources.
 
 ## Deadlocks
 Several threads fight for a limited number of resources. [[COS - lecture 10 - Itslearning.pdf#page=3|L10 page 3]]
-A thread requests resources. If the resources are _not available_ at that time, the thread enters a _waiting state_. Sometimes a waiting thread _can never again change state_, because the resources it has requested are _held by other witing threads_.
+A thread requests resources. If the resources are _not available_ at that time, the thread enters a _waiting state_. Sometimes a waiting thread _can never again change state_, because the resources it has requested are _held by other waiting threads_.
 
 Can arise in a system, if the following four conditions hold simultaneously [[COS - lecture 10 - Itslearning.pdf#page=4|L10 page 4]]
 1. **Mutual exclusion**: At least one resource must be held in a nonsharable mode.
@@ -187,7 +187,7 @@ Can arise in a system, if the following four conditions hold simultaneously [[CO
 3. **No preemption**: A resource is only released voluntarily by the thread that holds it when it has completed its task.
 4. **Circular wait**: $T_0$ waits for a resource held to $T_n$, which waits for a resource held by $T_0$. This can either be for just _two_ processes or more.
 
-If we can ensure that jsut _one_ of the conditions
+If we can ensure that just _one_ of the conditions are _not met_, deadlock _cannot occur_.
 ### Avoiding deadlock
 Several strategies can be used to avoid deadlock
 
@@ -204,3 +204,26 @@ Allow deadlock to occur, and then detect it and recover afterwards.
 i.e. _deadlock detection and recovery_
 e.g. databases
 
+### Deadlock prevention
+We look at each of the _deadlock conditions_ and try to break/avoid that condition
+
+#### Mutual exclusion [[COS - lecture 10 - Itslearning.pdf#page=12|L10 page 12]]
+If we want to break this condition, all resources must be shareable.
+
+It is unrealistic to think, that such a system exists.
+	e.g. mutex, semaphore, CPU time etc.
+
+#### Hold and Wait [[[[COS - lecture 10 - Itslearning.pdf#page=10|L10 page 10]]]]
+A thread can _only_ start program execution when _**all**_ the resources it needs to perform its work can be allocated.
+
+E.g. retrieve data from DVD → save it in a file → read-only file → print
+
+**Protocol 1**
+allocate DVD, file, printer → perform work → release resources
+
+**Protocol 2**
+allocate DVD, file → copy → release resources
+allocate file → sort → release resources
+allocate file, printer → print → release resources
+
+_Poor utilization of resources and possibility of starvation_
