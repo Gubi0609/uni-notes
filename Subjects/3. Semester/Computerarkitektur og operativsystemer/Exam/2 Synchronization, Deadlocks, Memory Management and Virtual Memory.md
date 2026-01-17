@@ -297,3 +297,18 @@ When thread $T_i$ requests resource $R_j$, the _claim edge_ sis converted to a _
 Similarly, when a resource $R_j$ is _released_ by $T_i$, the _assignment edge_, is reconverted to a _claim edge_.
 
 Resources must be claimed _beforehand_ in the system. That is, before thread $T_i$ starts executing, _all_ its claim edges must already be made.
+
+#### Banker's algorithm [[COS - lecture 10 - Itslearning.pdf#page=22|L10 page 22]]
+Not in depth, only emphasizing the following
+- A new thread entering the system must state its maximum needs for the different types of resources. _These needs must not exceed the total number of different types of resources_.
+- When a thread requests a set of resources, the system checks if this allocation will leave the system in a _safe state_.
+	- If yes, allocate
+	- If no, thread has to wait.
+
+### Deadlock detection [[COS - lecture 10 - Itslearning.pdf#page=26|L10 page 26]]
+The system is allowed to enter a deadlock
+
+On a periodic basis, the system checks for the existence of _cycles_.
+
+> Best suited for systems with one instance of each resource type.
+
