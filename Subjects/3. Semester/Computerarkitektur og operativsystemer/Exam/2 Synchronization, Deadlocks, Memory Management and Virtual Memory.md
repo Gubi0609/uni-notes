@@ -433,4 +433,8 @@ The _MMU_ works as a middle-man between physical memory and the CPU/process.
 The process runs in memory locations from 0 to _max_ (being the logical memory locations it made), but in reality, it runs in _R+0_ to _R+max_. This translation is handled by the _MMU_.
 
 ## Paging
-The implementation involves breaking physical memory into fixed-size 
+The implementation involves breaking _physical memory_ into fixed-size blocks called _frames_ and breaking _logical memory_ into blocks of the _same size_ called _pages_. [[COS - lecture 11 - Itslearning.pdf#page=19|L11 page 19]]
+
+This way, a _memory block_ of segments/processes may be kept together in _logical memory_, but may be _separated_ in _physical memory_. A _page table_ is used to translate from _logical_ to _physical_ memory. [[COS - lecture 11 - Itslearning.pdf#page=21|L11 page 21]]
+
+This way, we have no [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#External fragmentation|external fragmentation]], only [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Internal fragmentation|internal fragmentation]].
