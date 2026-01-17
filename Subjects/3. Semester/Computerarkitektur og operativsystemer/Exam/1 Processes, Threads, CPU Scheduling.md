@@ -365,4 +365,9 @@ The priority is assigned dynamically so that the earliest **next** deadline give
 E.g. $P_1$ has period 50, and $P_2$ has period 80.
 At time 0, $P_1$ starts, as it has the _earliest next_ deadline.
 At time 25 $P_1$ finishes, and $P_2$ can continue. This makes $P_1$'s next deadline to time 50.
-At time 
+At time 50, $P_1$ does **not** interrupt $P_2$ as $P_2$ has an _earlier deadline_ than $P_1$'s next deadline (which would now be 100).
+At time 60, $P_2$ finishes, and $P_1$ starts. Now $P_2$'s next deadline is 140
+At time 85, $P_1$ finishes and $P_2$ starts. Now $P_1$'s next deadline is 110.
+At time 100, $P_1$ interrupts $P_2$, as now $P_1$ has the highest priority.
+
+The algorithm does _not_ require periodic processes with _constant CPU burst times_. It is considered theoritically optimal to achieve 100% CPU utilization, but _impossible in practice_ due to cost of context switch and other overheads.
