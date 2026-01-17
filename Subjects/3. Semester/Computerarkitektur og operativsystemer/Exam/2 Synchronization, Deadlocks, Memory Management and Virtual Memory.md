@@ -255,5 +255,12 @@ R1 → R3 → _R5_ → R27 → R33
 Deadlock avoidance is a strategy used by OS'es to _dynamically ensure_ that the system never enters a deadlocked state.
 Unlike [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Deadlock prevention|deadlock prevention]], which imposes _strict rules_, deadlock avoidance requires the system to _make informed decisions_ about resource allocation based on the _current state_ and future needs processes (or threads).
 
-Key idea is to only grant resource requests if they keep the system in a _safe state_
-- 
+Key idea is to _only grant resource requests_ if they keep the system in a _safe state_
+- **Beforehand info**: Each thread declares the _maximum number of resources_ it might need during its lifetime.
+- **Resource allocation state**: The system keeps track of
+	- How many resources are _available_
+	- How many resources are _allocated_ to each thread
+	- The _maximum demand_ of each thread (the above point)
+
+#### How the system avoids deadlocks
+1. _Before allocating_ resources, the system checks if the 
