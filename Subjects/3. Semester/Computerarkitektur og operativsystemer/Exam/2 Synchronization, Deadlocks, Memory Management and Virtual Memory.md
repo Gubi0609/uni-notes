@@ -152,3 +152,23 @@ A **monitor** is a programming construct consisting of
 - **Procedures** (or methods) that operate on the shared data
 - **Synchronization mechanisms** to ensure that only one process/thread can execute a monitor procedure at a time.
 
+**Mutual Exclusion**
+Only _one process/thread_ can execute monitor procedure at any given time
+Automatically enforced by monitor.
+
+**Condition Variables**
+Monitors use _condition variables_ to allow processes to wait for specific conditions to be met.
+Are used with `wait` `signal` and `broadcast`
+- `wait`: Releases the monitor's lock and suspends the calling process until another process signals the condition
+- `signal`: Wakes up one waiting process (if any) and transfers control to it
+- `broadcast`: Wakes up all waiting processes.
+
+**Encapsulation**
+Shared data is **hidden** inside the monitor and can only be accessed through the monitor's procedures.
+Prevents incorrect or unauthorized acces to shared resources.
+
+#### How it works
+1. A process calls a monitor procedure
+2. The monitor ensures, that only _one process_ is active inside it at a time
+3. If a process needs to wait for a condition (e.g. a buffer is empty), it calls `wait` on a condition variable
+4. Another process signals the condition (e.g. adds an item)
