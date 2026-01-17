@@ -337,3 +337,15 @@ There a two main ways to recover
 - Restart the victim thread later.
 
 ## Memory Management
+When processes are executed in a system, they access _memory_ to [[COS - lecture 11 - Itslearning.pdf#page=3|L11 page 3]]
+- _Fetch instructions_ - in connection with program execution
+- _Save data_ - as a result of calculations
+- _Retrieve data_ - which must be included in new calculations or something else
+
+Which means, when multiple processes run on the same system, they must share memory.
+
+### Memory separation
+The OS must be protected from access by _user processes_ and user processes must be protected from _one another_.
+This protection must be provided by hardware. [[COS - lecture 11 - Itslearning.pdf#page=4|L11 page 4]]
+
+Each process has a separate memory space. Separate 
