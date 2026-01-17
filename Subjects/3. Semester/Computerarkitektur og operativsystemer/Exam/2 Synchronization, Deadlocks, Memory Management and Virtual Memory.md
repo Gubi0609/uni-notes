@@ -176,4 +176,10 @@ Prevents incorrect or unauthorized acces to shared resources.
 > A monitor cannot do more, than what is possible with semaphores.
 
 ## Deadlocks
-Several threads fight for a limited number of resources. [[COS - lecture 10 - Itslearning.pdf#page=3]]
+Several threads fight for a limited number of resources. [[COS - lecture 10 - Itslearning.pdf#page=3|L10 page 3]]
+A thread requests resources. If the resources are _not available_ at that time, the thread enters a _waiting state_. Sometimes a waiting thread _can never again change state_, because the resources it has requested are _held by other witing threads_.
+
+Can arise in a system, if the following four conditions hold simultaneously [[COS - lecture 10 - Itslearning.pdf#page=4|L10 page 4]]
+1. **Mutual exclusion**: At least one resource must be held in a nonsharable mode.
+	1. Only one thread at a time can use the resource.
+	2. Another thread requesting that resource must be delayed until the resource has been released
