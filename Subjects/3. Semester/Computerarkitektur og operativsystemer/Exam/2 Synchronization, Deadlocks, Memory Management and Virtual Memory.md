@@ -10,7 +10,7 @@
 - [x] Address binding/mapping
 - [x] Contiguous memory allocation
 - [x] Paging
-- [ ] Demand paging
+- [x] Demand paging
 - [ ] Page replacement
 - [ ] Trashing
 
@@ -499,6 +499,9 @@ In most cases this works, but if an instruction tries to modify _several_ differ
 - **Solution 1:** The microcode computes and attempts to access both ends of both blocks
 - **Solution 2:** Uses temporary registers to hold the values of overwritten locations. If a page fault occurs, all the old values are written back into memory _before_ the trap occurs.
 
+## Page replacements
+If no 
+
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
 > Allow as many processes as possible to be in memory at the same time for multiprogramming
@@ -528,4 +531,8 @@ Is a technique to _speed up_ creation of a child process.
 
 When using `fork()` to create a child process, the system creates a _duplicate_ of the parent process.
 
-The copying of the parent's address space _may be unnecessary_ since many child processes invoke `exec()` immed
+The copying of the parent's address space _may be unnecessary_ since many child processes invoke `exec()` immediately after creation.
+Instead _copy-on-write_ is used to allow the parent and child processes _initially to share the same pages_.
+
+These _shared pages_ are marked as **copy-on-write pages**, meaning that if _either_ process writes to a shared page, _a copy of the shared page is created_. [[COS - lecture 12 - Itslearning.pdf#page=13|L12 page 13]]
+Only the page, that is modified is copied. All other shared pages remain untouched (until they are written to)
