@@ -82,7 +82,7 @@ Two processes access the same data at the same time, thus risking producing or u
 
 Can also occur if there is no timing/_synchronization_ between child processes, thereby allowing them both to have the **same** PID (**P**rocess **ID**)
 
-### Critical-section problem
+### Critical-section problem [[COS - lecture 9 - Itslearning.pdf#page=10|L9 page 10]]
 We imagine a system of $n$ number of processes.
 Each process has a segment of code (**critical section**) in which it accesses (and updates) data, that is shared with at least one other process.
 
@@ -90,5 +90,10 @@ The _critical-section problem_ is then to design a protocol, that the processes 
 
 Must satisfy the following three requirements
 - **Mutual exclusion**: If a process $P_i$ is in its _critical section_ then **no other** process may be in their critical sections, that manipulate _the same variable_ as $P_i$.
-- **Progress**: If _no process_ is currently in its critical section, and _some processes_ are trying to enter theirs, then the system **must** eventually allow one of them to proceed. The selection **cannot be delayed forever**.
-- **Bounded Waiting**: There exists a bound or limit on the waiting time that other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted.
+- **Progress**: If _no process_ is currently in its critical section, and _some processes_ are trying to enter theirs, then the system **must** eventually allow one of them to proceed. The selection **cannot be delayed forever**. Only processes that are _not_ in their _remainder section_ (doing anything else than entering, using or exiting shared critical section) should be involved in the decision-making process. This ensures, that processes not using the critical section, are not blocking entry into the critical section.
+- **Bounded Waiting**: The must me a _limit_ on how many times other processes can enter their critical section _after_ a process has requested entry and _before_ that request is granted. (**No starvation**)
+
+### Semaphores
+A _Semaphore_ is an **integer variable** that is accessed only through two standard _atomic_ operations: `wait()` and `signal()`.
+
+**`wait()`** is used when a process wants _access_ to its critical section (also called _spinlo)
