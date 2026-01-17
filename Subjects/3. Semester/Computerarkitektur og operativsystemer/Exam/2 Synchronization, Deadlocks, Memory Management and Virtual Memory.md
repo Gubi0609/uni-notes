@@ -512,12 +512,23 @@ To do this in practice, a _frame allocation algorithm_ and a _page replacement a
 - **Frame allocation algorithm:** Deciding how many frames (physical memory blocks) to allocate to each process
 - **Page-replacement algorithm:** Deciding _which_ page to remove from memory, when a new page needs to be loaded and memory is full.
 
-To evaluate how well a page replacement algorithm works, we use a _reference string_ to simulate and evaluate how well it will work **without needing to run the actual process on a real system**
+To evaluate how well a page replacement algorithm works, we use a _reference string_ to simulate and evaluate how well it will work **without needing to run the actual process on a real system** [[COS - lecture 12 - Itslearning.pdf#page=16|L12 page 16]]
 
 Suppose we have an address sequence
 `0100, 0432, 0101, 0162, 0102, 0103, 0104, 0101, 0611, 0102, 0103, 0104, 0101, 0610, 0102, 0103, 0104` and so on
 
-and suppose that each page is 100 byte
+and suppose that each page is 100 bytes. Then we can reduce the address sequence to the following _reference string_
+`1, 4, 1, 6, 1, 6, 1, 6, 1, 6, 1`
+Where we just care what 100 byte block we acces, and not how many times it is accessed or what specific byte is accessed.
+
+We use this reference string to _simulate_ how many page faults occur. A page replacement algorithm will then decide which page to replace when a new page is accessed and the frames are full.
+
+The number of page faults _decreases_ as the number of frames _increases_. [[COS - lecture 12 - Itslearning.pdf#page=17|L12 page 17]]
+
+
+### First in First out (FIFO) algorithm [[COS - lecture 12 - Itslearning.pdf#page=18|L12 page 18]]
+
+
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
