@@ -603,7 +603,16 @@ Systems commonly have a pool of _free frames_. [[COS - lecture 12 - Itslearning.
 - This will usually be done, when the number of pages in the pool is below a minimum threshold.
 
 The system may also have a list of modified pages [[COS - lecture 12 - Itslearning.pdf#page=25|L12 page 25]]
-- Whenever the paging device is _idle_, a modified page is selected and written to secondary storage. Its [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#LRU _Enhanced_ Second Chance COS - lecture 12 - Itslearning.pdf page=23 L12 page 23|modified bit]] is 
+- Whenever the paging device is _idle_, a modified page is selected and written to secondary storage. Its [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#LRU _Enhanced_ Second Chance COS - lecture 12 - Itslearning.pdf page=23 L12 page 23|modified bit]] is reset, and the page can be replaced later.
+
+The system can keep track of the content of pages in its free frame pool [[COS - lecture 12 - Itslearning.pdf#page=25|L12 page 25]]
+- When a page fault occurs, the system first checks if the desired page is in the free frame pool. If it is, we can just collect it from there, instead of picking it up from secondary storage.
+
+## Allocation of frames
+Besides [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Page replacements|page replacement]] the other important issue when implementing [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Demand Paging|demand paging]] is _frame allocation_. [[COS - lecture 12 - Itslearning.pdf#page=26|L12 page 26]]
+- How do we _allocate_ a fixed amount of free memory (frames) among the various processes?
+
+There a _two_ main 
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
