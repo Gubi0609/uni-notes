@@ -357,5 +357,9 @@ Mic-1 has _two ports_ to memory [[COS_lecture04.pdf#page=18|L4 page 18]]
 	- **MBR**: _Memory Byte Register_
 
 ### Memory operation
-The memory can be accessed either through _MAR_ or _MDR_ [[COS_lecture04.pdf#page=19|L4 page 19]]
-- _32-bit_ register, that accesses the memory in _word size_ (32-bit): $2^{32}=4$ GB
+The memory can be accessed through _two methods_ 
+- **MAR** or **MDR** [[COS_lecture04.pdf#page=19|L4 page 19]]
+	- _32-bit_ register, that accesses the memory in _word size_ (32-bit): $2^{32}=4$ GB
+	- Since the _2 MSB_ (according to this example) are discarded and _0 0_ is appended, we get _1 GB addresses_
+- **PC** or **MBR** [[COS_lecture04.pdf#page=20|L4 page 20]]
+	- 32-bit registers that access memory in _byte-size_ (_8-bit_), so that is _4 G_ addresses
