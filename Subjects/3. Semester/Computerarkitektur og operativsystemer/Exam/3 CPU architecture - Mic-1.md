@@ -221,3 +221,15 @@ When designing the instructionset of a processor it is important to consider [[C
 - How many _operand fields_ and what type should be allowed in each instruction?
 
 ### Complex Instruction Set Computer (CISC)
+A program can be written with _fewer_ and more _precise instructions_. [[COS_lecture02.pdf#page=46|L2 page 46]]
+- _Complexity_ can lead to each instruction taking _more clock cycles_, but the program as a whole can possibly be _faster_ since there are _less instructions_ needed (but more available).
+
+- Has a _wide opcode field_ $\Leftrightarrow$ more instructions
+- Each operation takes _more memory space_
+
+### Reduced Instruction Set Computer (RISC)
+A program can be written with _more_ instructions, requiring more instructions to do _one_ task than CISC [[COS_lecture02.pdf#page=47|L2 page 47]]
+- _Simplicity_ means that the instructions often execute in _one clock cycle_, so every instruction is _faster_ to execute
+
+- Has a _smaller opcode field_ $\Leftrightarrow$ less instructions
+- Each operation takes _less memory space_
