@@ -381,3 +381,9 @@ E.g.:
 - 11111111 11111111 11111111 _1...MBR_
 
 ### Data path timing in relation to MAR, MDR and MBR [[COS_lecture04.pdf#page=22|L4 page 22]]
+- On falling edge (start of _cycle 1_) it is interpreted as _memory read- or write-signal_.
+- On _rising_ edge of cycle 1, _MAR_ is loaded and the operation can be completed.
+- On _falling edge_ (start of _cycle 2_) **MPC** (Micro Program Counter) is used to load **MIR** (Micro Instruction Register) with next microinstruction
+- On _rising edge_ of cycle 2, _MDR_ OR _MBR_ is updated.
+- On falling edge (start of _cycle 3_) _MDR_ or _MBR_ is ready to be used again.
+
