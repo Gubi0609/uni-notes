@@ -291,7 +291,8 @@ The design of the micro architecture is dependent upon
 _Variables_ in a computer are called the _computers state_. [[COS_lecture04.pdf#page=9|L4 page 9]]
 Register names comes from _ISA_-level.
 
-### Mic-1
+## Mic-1
+Is a _Micro Architecture_
 - Has _32-bit_ registers
 - Is a _microprogrammed control unit_ design for a _hypothetical CPU_
 - Uses [[3 CPU architecture - Mic-1#Instructions (Instruction Set Architecture (ISA))|microcode]] to implement the CPU's instruction set.
@@ -308,5 +309,8 @@ Mic-1 has the following units [[COS_lecture04.pdf#page=9|L4 page 9]]
 - **TOS**
 - **OPC**
 - **H**
-- **32-bit** _Arithmetic Logic Unit (**ALU**)_
-- 
+- **32-bit** _Arithmetic Logic Unit (**ALU**)_ see [[3 CPU architecture - Mic-1#ALU|ALU]]
+
+The ALU of Mic-1 is capable of performing the usual tasks for an ALU.
+To get a _32-bit_ ALU, _32 ALU's_ are coupled together.
+
