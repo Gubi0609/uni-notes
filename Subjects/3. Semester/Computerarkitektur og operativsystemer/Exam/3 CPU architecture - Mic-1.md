@@ -36,3 +36,17 @@ We have a layered computermodel following this structure [[COS_lecture01.pdf#pag
 
 A computer is build of _combinatoric logical circuits_. [[COS_lecture01.pdf#page=5|L1 page 5]]
 
+To convert from _binary_ to _base 10_ (decimal) [[COS_lecture01.pdf#page=14|L1 page 14]]
+## $$\text{base}_{10}=\sum_{i=0}^nd_i\cdot2^i$$
+If it is any other base (e.g. base 8, base 16), just replace the _2_ with the desired base.
+
+To _convert from binary to octal_ [[COS_lecture01.pdf#page=22|L1 page 22]]
+- Collect three bits _from the right_ and convert til octal.
+- e.g.
+	- 010 100 111 001 → 2 4 7 1
+
+To _convert from binary to hexadecimal_ [[COS_lecture01.pdf#page=23|L1 page 23]]
+- Collect _four_ bits from the right and convert til hex
+- e.g.
+	- 0101 0011 1001 → 5 3 9
+
