@@ -343,3 +343,15 @@ A clock cycle contains the following [[COS_lecture04.pdf#page=15|L4 page 15]]
 - $\Delta$z: _Result propagates along **C-bus** to registers_
 - At _rising edge_ the results are _saved_ in the registers.
 
+Since the parts are built up of _combinatoric logical circuits_, they run _all the time_ [[COS_lecture04.pdf#page=16|L4 page 16]]
+- The clock cycle is used to limit the activity of the logical circuits to _only_ calculate, save and write the intended content.
+- Therefore one must also make sure the _calculations are shorter_ than a _clock cycle_.
+
+### Memory
+Mic-1 has _two ports_ to memory
+- _32-bit_ port controlled by
+	- **MAR**: _Memory Address Register_
+	- **MDR**: _Memory Data Register_
+- _8-bit_ port controlled by
+	- **PC**: _Program Counter_
+	- **MBR**: _Memory Byte Register_
