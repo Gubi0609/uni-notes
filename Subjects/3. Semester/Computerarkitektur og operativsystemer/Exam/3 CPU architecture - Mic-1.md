@@ -1,5 +1,5 @@
 # Topics to be covered
-- [ ] Mic-1
+- [x] Mic-1
 - [x] Data path
 - [x] Data path timing
 - [x] Control unit
@@ -480,4 +480,5 @@ The area of memory where the _programs are stored_
 ### IJVM instruction set
 IJVM has a very wide instruction set of $16^2=256$ total possible instructions.
 
-These include among otherth
+These include among other things the ADD and POP functions seen above, and focuses on _operations within the stack_.
+For a full overview of the (at least listed) operations within IJVM see [[COS_lecture04.pdf#page=39|L4 page 39]].
