@@ -181,3 +181,10 @@ An example of the _LOAD_ instruction can here be seen in microinstructions [[COS
 - _MAR_ now points to memory address 1101 (address _13_)
 - The _control unit_ reads the contents of address 13 and copies it to the _MDR_
 - The contents of the _MDR_ is copied to register 1
+
+This concludes the _LOAD_ operation.
+
+Microinstructions are _less efficient_ than hardwired computers, but in return, they are _a lot_ more flexible. [[COS_lecture02.pdf#page=41|L2 page 41]]
+
+#### Microinstruction words
+
