@@ -107,4 +107,19 @@ There is also a _carry in_, that is used when coupling multiple _ALUs_ for more 
 Multiple ALUs can be coupled together to form for example an 8-bit ALU by combining 8 ALUs.
 
 ## Von Neumann-architecture
-- Articles published by Von Neumann
+- Articles published by Von Neumann were the starting point for forming the modern computer [[COS_lecture02.pdf#page=15|L2 page 15]]
+	- Is basically about _saving programinstruktions in memory_ besides the data.
+	- _Program and data_ is in the _same memory_ and the program decides what should happen
+	- _Flexible_ compared to older computers, that were hardwired to _one_ task
+	- Has _no predefined_ purpose
+	- Re-programmable
+
+The architecture consists of _three_ independent components [[COS_lecture02.pdf#page=16|L2 page 16]]
+- **CPU**
+	- Is the _brain_
+	- _Control unit_
+	- Has _registers_
+	- Contains the _ALU_
+- **Memory**
+	- Saves _programs_ and _data_
+	- Divided into Random Access Memory (**RAM**) and Read-Only Memory (**ROM**)
