@@ -348,10 +348,14 @@ Since the parts are built up of _combinatoric logical circuits_, they run _all t
 - Therefore one must also make sure the _calculations are shorter_ than a _clock cycle_.
 
 ### Memory
-Mic-1 has _two ports_ to memory
+Mic-1 has _two ports_ to memory [[COS_lecture04.pdf#page=18|L4 page 18]]
 - _32-bit_ port controlled by
 	- **MAR**: _Memory Address Register_
 	- **MDR**: _Memory Data Register_
 - _8-bit_ port controlled by
 	- **PC**: _Program Counter_
 	- **MBR**: _Memory Byte Register_
+
+### Memory operation
+The memory can be accessed either through _MAR_ or _MDR_ [[COS_lecture04.pdf#page=19|L4 page 19]]
+- _32-bit_ register, that accesses the memory in _word size_ (32-bit): $2^{32}=4$ GB
