@@ -630,7 +630,25 @@ $n-k\cdot m$ frames for user processes.
 
 The remaining frames for user processes are divided equally among the processes, with the leftovers being placed in the free-frame buffer pool.
 
-> Since the processes can have very different sizes, this may _not be fair_
+> Since the processes can have very different sizes, this may _not be fair_ distribution of resources.
+
+#### Example
+We have a system of _128_ frames with a _1_ kB frame size
+
+The OS occupies _35_ kB → _35_ frames.
+
+That's _93_ frames left for user processes.
+
+We have _5_ processes, so the get _18 frames each_ ($5*18=90$ frames). The leftover 3 frames are placed in the free-frame buffer pool.
+
+### Proportional allocation [[COS - lecture 12 - Itslearning.pdf#page=28|L12 page 28]]
+Instead of dividing everything equally, we do some calculations to find out what a process might need.
+
+Assume we have _m_ free frames for user processes and _n_ number of processes.
+
+$s_i$ is the virtual memory of process $p_i$. We define $S$ to be the total virtual memory
+
+
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
