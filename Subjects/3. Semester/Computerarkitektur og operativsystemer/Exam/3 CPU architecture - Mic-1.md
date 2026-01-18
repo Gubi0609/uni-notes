@@ -128,5 +128,22 @@ The architecture consists of _three_ independent components [[COS_lecture02.pdf#
 
 The three components _communicate_ using an **address**-, **data**-, and **control bus**. [[COS_lecture02.pdf#page=16|L2 page 16]]
 - Both _data_ and _instructions_ are on the **data bus** [[COS_lecture02.pdf#page=20|L2 page 20]]
-- Adresses for data and ind
+- Adresses for data and instructions registers flow on the **address bus** [[COS_lecture02.pdf#page=20|L2 page 20]]
 
+## Instructions
+The general form of an instructions is
+**Opcode**, **Operand**, **...**, **Operand**
+
+The four most _simple_ instructions (used in microprocessors are)
+
+### LOAD [[COS_lecture02.pdf#page=26|L2 page 26]]
+Format:
+- **Opcode** (bit 6-7), $R_d$ (bit 4-5), **Memory address** (bit 0-3)
+- $R_d \Leftarrow \text{Mem.(adr.)}$
+- We _LOAD_ from a memory address into our _register_
+
+### STORE [[COS_lecture02.pdf#page=26|L2 page 26]]
+Format:
+- **Opcode** (bit 6-7), $R_d$ (bit 4-5), **Memory address** (bit 0-3)
+- $\text{Mem.(adr.)}\Leftarrow R_d$
+- We _STORE_ the data data from
