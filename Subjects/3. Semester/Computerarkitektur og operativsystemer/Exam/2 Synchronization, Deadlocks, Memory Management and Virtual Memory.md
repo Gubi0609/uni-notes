@@ -691,7 +691,15 @@ To _prevent_ thrashing we must provide a process with as many frames as it needs
 	- Localities may have overlap
 
 ### Locality [[COS - lecture 12 - Itslearning.pdf#page=33|L12 page 33]]
+_Locality_ refers to the _tendency_ of a program to _access the same set of memory_ locations repeatedly over a _short period_.
+There are _three_ main types
+- **Temporal Locality:** Recently accessed memory locations are likely to be accessed again soon (e.g. loops, variables in a function)
+- **Spatial Locality:** Memory locations near a recently accessed location are likely to be accessed soon (e.g. array traversal, sequential code execution)
+- **Sequential Locality:** Instructions or data are accessed in a sequential order (e.g. execution code line by line)
 
+_Good_ locality means fewer page faults, as the working set (actively used pages) are in RAM
+
+#### Working set 
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
