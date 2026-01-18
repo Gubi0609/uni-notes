@@ -647,8 +647,14 @@ Instead of dividing everything equally, we do some calculations to find out what
 Assume we have _m_ free frames for user processes and _n_ number of processes.
 
 $s_i$ is the virtual memory of process $p_i$. We define $S$ to be the total virtual memory
-
-
+## $$S=\sum_{i=1}^n s_i$$
+The number of frames allocated to process $p_i$ is defined as
+## $$a_i=\frac {s_i}S\cdot m$$
+So for a system with _62_ available free frames, and _2_ processes.
+Process $p_1$ is _10_ kB, and process $p_2$ is _127_ kB.
+## $$S=10+127=137$$
+The number of frames allocated to each frame
+## $$a_1=\frac {10}{137}\cdot 62=4.53\approx 4$$$$a_2=\frac {127}{137}\cdot 62=57.47\approx 57$$
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
