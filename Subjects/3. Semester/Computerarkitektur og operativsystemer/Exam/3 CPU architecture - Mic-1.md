@@ -208,4 +208,16 @@ Instead of explicitly specifying every control signal, they use _encoded fields_
 
 - **Simplicity:** Microinstructions are shorter and easier to manage, requiring _less memory_
 - Operations are often executed _sequentially_ as the microinstructions may need to be decoded before control signals are generated.
-- Fewer operations can be controlled simultaneously compared to horizontal design leading to __
+- Fewer operations can be controlled simultaneously compared to horizontal design leading to _less parallelism_
+- _More memory efficient_ but potentially slower du to decoding overhead
+- Control signals that must not be activated simultaneously can be _grouped_ in _different decoders_.
+
+#### Design of instructionset
+When designing the instructionset of a processor it is important to consider [[COS_lecture02.pdf#page=46|L2 page 46]]
+- How many instructions are necessary? (How big should the _opcode field_ be?)
+	- More instructions $\Leftrightarrow$ _wider opcode field_
+	- Each operation takes more _memory space_
+- What operations are necessary?
+- How many _operand fields_ and what type should be allowed in each instruction?
+
+### Complex Instruction Set Computer (CISC)
