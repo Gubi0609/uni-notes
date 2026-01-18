@@ -122,6 +122,8 @@ The architecture consists of _three_ independent components [[COS_lecture02.pdf#
 		- Sends control signals to the ALU, registers and memory
 		- Ensures the data flows correctly between CPU, memory and I/O devices
 		- _Manages clock signals_
+		- Executes a sequence of operations corresponding to an instruction (e.g. LOAD).
+			- Sequence is called _microinstructions_ [[COS_lecture02.pdf#page=39|L2 page 39]]
 	- Has _registers_
 	- Contains the _ALU_
 - **Memory**
@@ -166,3 +168,9 @@ Format
 - $R_d\Leftarrow R_d+\text{Mem.(adr.)}$
 - We _ADD_ $R_d$ and Memory address together and _save_ it in _register_ $R_d$
 
+### Microinstructions
+Microinstructions are a sequence of smaller operations performed by the _control unit_ in order to complete _one full instruction_
+
+An example of the _LOAD_ instruction can here be seen in microinstructions [[COS_lecture02.pdf#page=31|L2 page 31]]
+- PC (Program Counter) = 0 is copied to _Memory Address Register_ (**MAR**)
+- _MAR_ points to the first instruction in memory (since)
