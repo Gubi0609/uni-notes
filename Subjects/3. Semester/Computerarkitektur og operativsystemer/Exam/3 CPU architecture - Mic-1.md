@@ -197,3 +197,15 @@ When designing the _size_ of microinstructions, one _must_ think of the followin
 Each control signal is represented by a _single bit_ in a microinstruction.
 - Means that the microinstruction is _very wide_ (many bits) because it explicitly specifies _every control signal_ needed for a particular operation
 
+- Multiple operations can be controlled _simultaneously_ since each bit corresponds to a specific control line.
+- Requires _more memory space_ since the microinstructions are _longer_
+- Bigger _flexibility_
+- It is possible to activate _multiple control signals_ at the same time, _possibly harming the CPU_
+
+#### Vertical instruction design [[COS_lecture02.pdf#page=44|L2 page 44]]
+Microinstructions are _shorter_ and more _compact_.
+Instead of explicitly specifying every control signal, they use _encoded fields_ (like opcodes) that are _decoded into control signals_.
+
+- **Simplicity:** Microinstructions are shorter and easier to manage, requiring _less memory_
+- Operations are often executed _sequentially_ as the microinstructions may need to be decoded before control signals are generated.
+- Fewer operations can be controlled simultaneously compared to horizontal design leading to __
