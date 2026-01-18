@@ -369,3 +369,15 @@ When the 8-bit register _MBR_ is to be put onto the **B-bus**, it can be done in
 
 ##### Unsigned (No extension)
 **MBR** is put on the _8 LSB_ and the other 24 bits (32-8=24) are set to _0_
+
+E.g.:
+- 00000000 00000000 00000000 _MBR_
+
+##### Signed (With extension)
+**MBR** is put on the _8 LSB_ and the other 24 bits are set to either _0_ or _1_ depending on _MSB_ of MBR
+
+E.g.:
+- 00000000 00000000 00000000 _0...MBR_
+- 11111111 11111111 11111111 _1...MBR_
+
+### Data path timing in relation to MAR, MDR and MBR [[COS_lecture04.pdf#page=22|L4 page 22]]
