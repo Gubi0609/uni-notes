@@ -2,11 +2,11 @@
 - [ ] Mic-1
 - [ ] Data path
 - [ ] Data path timing
-- [ ] Control unit
-- [ ] Microinstructions
+- [x] Control unit
+- [x] Microinstructions
 - [ ] Registers
 - [ ] IJVM architecture
-- [ ] Instruction set design
+- [x] Instruction set design
 
 # Relevant lectures
 - [[L4 - Mikroarkitektur]]
@@ -136,7 +136,7 @@ The three components _communicate_ using an **address**-, **data**-, and **contr
 - Both _data_ and _instructions_ are on the **data bus** [[COS_lecture02.pdf#page=20|L2 page 20]]
 - Adresses for data and instructions registers flow on the **address bus** [[COS_lecture02.pdf#page=20|L2 page 20]]
 
-## Instructions
+## Instructions (Instruction Set Archite)
 The general form of an instructions is
 **Opcode**, **Operand**, **...**, **Operand**
 
@@ -266,6 +266,8 @@ This can be solved using different _address modes_. The most common are
 - **Direct** - Address to data
 	- A translation of data to memory address (e.g. 1111 → address 15) [[COS_lecture02.pdf#page=51|L2 page 51]]
 - **Indirect** - Address to address to data
-	- A translation of data to memory address, _which holds the desired m_
+	- A translation of data to memory address, _which holds the desired memory address_(e.g. 0110 → memory address 6, which holds 1111 → memory address 15) [[COS_lecture02.pdf#page=52|L2 page 52]]
 - **Displacement (indexed)** - Address to offset and local address
+	- Kind of like before, where we point to a memory address, but we _also have an offset_ that points onward to the data (e.g. 0110 01 → is memory address 6 _+ 1_ so memory address 7) [[COS_lecture02.pdf#page=53|L2 page 53]]
 - **Stack** - A kind of _indirect_-type
+	- We have a _stack pointer_ **SP** which points to the desired memory address holding the data [[COS_lecture02.pdf#page=54|L2 page 54]]
