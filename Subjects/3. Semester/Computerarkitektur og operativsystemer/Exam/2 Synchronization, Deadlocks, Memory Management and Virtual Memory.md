@@ -612,7 +612,25 @@ The system can keep track of the content of pages in its free frame pool [[COS -
 Besides [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Page replacements|page replacement]] the other important issue when implementing [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Demand Paging|demand paging]] is _frame allocation_. [[COS - lecture 12 - Itslearning.pdf#page=26|L12 page 26]]
 - How do we _allocate_ a fixed amount of free memory (frames) among the various processes?
 
-There a _two_ main 
+There a _two_ main methods/schemes to do this. [[COS - lecture 12 - Itslearning.pdf#page=26|L12 page 26]]
+- **Equal** (or fixed) allocation
+- **Proportional** allocation
+
+A process is also in place for the minimum number of frames a process is assigned [[COS - lecture 12 - Itslearning.pdf#page=26|L12 page 26]]
+- Defined by the _computer architecture_.
+- The _maximum number_ is defined by the amount of available _physical memory_.
+
+### Equal allocation [[COS - lecture 12 - Itslearning.pdf#page=27|L12 page 27]]
+
+We have a system with _n_ frames with a _m_ kB frame size.
+
+The OS occupies _k_ kB → $k\cdot m$ frames
+
+$n-k\cdot m$ frames for user processes.
+
+The remaining frames for user processes are divided equally among the processes, with the leftovers being placed in the free-frame buffer pool.
+
+> Since the processes can have very different sizes, this may _not be fair_
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
