@@ -387,3 +387,15 @@ E.g.:
 - On _rising edge_ of cycle 2, _MDR_ OR _MBR_ is updated.
 - On falling edge (start of _cycle 3_) _MDR_ or _MBR_ is ready to be used again.
 
+### Mic-1 expanded [[COS_lecture04.pdf#page=26|L4 page 26]]
+Before we focused only on the core part of Mic-1. We now expand it to hold the _microinstructions_ among other things.
+
+- **Control store** - Is the place that holds the _micro instructions_. This is _read-only_.
+- **MPC** (Micro Program Counter) - _Not_ a  real _PC_
+- **MIR** (Micro Instruction Register) - Register to hold microinstructions.
+	- The microinstructions are _not_ executed _in order_ - They specify the next microinstruction.
+	- This is in contrast to an ISA (Instruction Set Architecture) program, where the next instruction is placed after the current.
+
+#### Micro Instructions Register (MIR) [[COS_lecture04.pdf#page=27|L4 page 27]]
+Mic-1 uses a special _intern memory_ called the _Control store_ to save microinstructions.
+- These control the _flow of data_ and _ALU_-functions.
