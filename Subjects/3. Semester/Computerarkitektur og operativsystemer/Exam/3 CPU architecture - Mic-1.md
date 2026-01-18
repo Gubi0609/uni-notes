@@ -272,7 +272,20 @@ This can be solved using different _address modes_. The most common are
 - **Stack** - A kind of _indirect_-type
 	- We have a _stack pointer_ **SP** which points to the desired memory address holding the data [[COS_lecture02.pdf#page=54|L2 page 54]]
 
-## Mic-1
+## Micro Architecture
 _Mic-1_ is on _level 1_ (Micro Architecture) (see at the top of this page). [[COS_lecture04.pdf#page=6|L4 page 6]]
 
-Micro architecture implements 
+Micro architecture implements the layer above, ISA (Instruction Set Architecture) [[COS_lecture04.pdf#page=7|L4 page 7]]
+The design of the micro architecture is dependent upon
+- The specific ISA
+- Price
+- Performance
+
+- Microarchitecture consists of _fetch_-_decode_-_execute_ cycles of ISA-instructions [[COS_lecture04.pdf#page=8|L4 page 8]]
+- Basically an 'endless' cycle of ISA instructions
+	- **Fetch:** Find next instruction
+	- Increment _PC_
+	- **Decode:** decode OP code to control signal
+	- **Execute:** Execute OP code
+
+_Variables_ in a computer are called the _computers state_. [[COS_lecture04.pdf#page=9|L4 page 9]]
