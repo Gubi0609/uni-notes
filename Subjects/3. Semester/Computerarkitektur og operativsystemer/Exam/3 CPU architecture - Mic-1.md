@@ -289,3 +289,10 @@ The design of the micro architecture is dependent upon
 	- **Execute:** Execute OP code
 
 _Variables_ in a computer are called the _computers state_. [[COS_lecture04.pdf#page=9|L4 page 9]]
+Register names comes from _ISA_-level.
+
+### Mic-1
+- Has _32-bit_ registers
+- Is a _microprogrammed control unit_ design for a _hypothetical CPU_
+- Uses [[3 CPU architecture - Mic-1#Instructions (Instruction Set Architecture (ISA))|microcode]] to implement the CPU's instruction set.
+	- Each machine instruction (e.g. ADD and LOAD) is translated into a sequence of [[3 CPU architecture - Mic-1#Microinstructions|microinstructions]] stored in a _control store_ (ROM)
