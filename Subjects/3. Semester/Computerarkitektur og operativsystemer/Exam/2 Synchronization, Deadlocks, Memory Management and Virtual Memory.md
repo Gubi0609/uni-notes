@@ -11,7 +11,7 @@
 - [x] Contiguous memory allocation
 - [x] Paging
 - [x] Demand paging
-- [ ] Page replacement
+- [x] Page replacement
 - [ ] Trashing
 
 # Relevant lectures
@@ -595,6 +595,15 @@ Based on the argument, that the page with the smallest count balue was probably 
 
 #### Neither LFU or MFU are common
 The implementation of these algorithms are _expensive_ and they do not approximate _OPT_ replacement well
+
+## Page Buffering
+Systems commonly have a pool of _free frames_. [[COS - lecture 12 - Itslearning.pdf#page=25|L12 page 25]]
+- When a page fault occurs, the victim frame is chosen, and the wanted replacement page is read into a free frame (from the pool) _before_ the victim is written out
+- The system may periodically review processes and reclaim pages to the pool
+- This will usually be done, when the number of pages in the pool is below a minimum threshold.
+
+The system may also have a list of modified pages [[COS - lecture 12 - Itslearning.pdf#page=25|L12 page 25]]
+- Whenever the paging device is _idle_, a modified page is selected and written to secondary storage. Its [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#LRU _Enhanced_ Second Chance COS - lecture 12 - Itslearning.pdf page=23 L12 page 23|modified bit]] is 
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
