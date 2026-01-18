@@ -484,3 +484,5 @@ IJVM has a very wide instruction set of $16^2=256$ total possible instructions.
 
 These include among other things the ADD and POP functions seen above, and focuses on _operations within the stack_.
 For a full overview of the (at least listed) operations within IJVM see [[COS_lecture04.pdf#page=39|L4 page 39]].
+
+For examples on IJVM code in the MAL (Micro Assembly Language) see [[COS_lecture05.pdf|L5]].
