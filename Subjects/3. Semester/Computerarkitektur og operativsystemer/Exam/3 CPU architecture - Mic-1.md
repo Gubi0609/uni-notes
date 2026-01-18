@@ -329,4 +329,9 @@ To get a _32-bit_ ALU, _32 ALU's_ are coupled together.
 
 - _Most_ registers (see Mic-1 units above) can write to the _B-bus_ [[COS_lecture04.pdf#page=14|L4 page 14]]
 - The output of the ALU goes to a _shift register_
-	- 
+	- **SSL8:** Shifts contents _8 bit to the left_ (fills lower 8 bits with 0)
+	- **SRA1:** Shifts contents _1 bit to the right_. Leaves first MSB alone
+- Possible to read and write to same register _in one cycle_.
+
+### Data path timing
+
