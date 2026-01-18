@@ -361,8 +361,10 @@ The memory can be accessed through _two methods_
 - **MAR** or **MDR** [[COS_lecture04.pdf#page=19|L4 page 19]]
 	- _32-bit_ register, that accesses the memory in _word size_ (32-bit): $2^{32}=4$ GB
 	- Since the _2 MSB_ (according to this example) are discarded and _0 0_ is appended, we get _1 GB addresses_
+	- Can read and write 4-byte data
 - **PC** or **MBR** [[COS_lecture04.pdf#page=20|L4 page 20]]
 	- 32-bit registers that access memory in _byte-size_ (_8-bit_), so that is _4 G_ addresses
+	- Can be read using FETCH (see structure of [[3 CPU architecture - Mic-1#Micro Instructions Register (MIR) COS_lecture04.pdf page=27 L4 page 27|MIR]])
 
 #### MBR [[COS_lecture04.pdf#page=21|L4 page 21]]
 When the 8-bit register _MBR_ is to be put onto the **B-bus**, it can be done in _two_ different ways
