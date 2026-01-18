@@ -655,6 +655,9 @@ Process $p_1$ is _10_ kB, and process $p_2$ is _127_ kB.
 ## $$S=10+127=137$$
 The number of frames allocated to each frame
 ## $$a_1=\frac {10}{137}\cdot 62=4.53\approx 4$$$$a_2=\frac {127}{137}\cdot 62=57.47\approx 57$$
+_We can see that this proves a much fairer allocation_.
+
+### Global 
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
