@@ -408,7 +408,37 @@ _MIR_ has the following structure
 	- **JAMN**
 	- **JAMZ**
 - **ALU** (8 bits) - _Control signals_ to the ALU and shifter
-	- **SSL8** (s)
-	- **SRA1**
-	- **F0**
-	- 
+	- **SSL8** (shifter)
+	- **SRA1** (shifter)
+	- **F0** (ALU) - Function bit 0
+	- **F1** (ALU) - Function bit 1
+	- **ENA** (ALU) - Enable A
+	- **ENB** (ALU) - Enable A
+	- **INVA** (ALU) - Inverse A
+	- **INC** (ALU) - Carry in
+- **C** (9 bits) - Chooses what registers to read from **C-bus** (see [[3 CPU architecture - Mic-1#Mic-1|units]] of Mic-1)
+	- **H**
+	- **OPC**
+	- **TOS**
+	- **CPP**
+	- **LV**
+	- **SP**
+	- **PC**
+	- **MDR**
+	- **MAR**
+- **Mem** (3 bits) - Control-signal to access of memory
+	- **WRITE**
+	- **READ**
+	- **FETCH**
+- **B** (4 bits) - Encoder that chooses which register to write to **B-bus**
+	- The registers are as follows (from the 4 bit value of **B**)
+	- 0 → MDR
+	- 1 → PC
+	- 2 → MBR
+	- 3 → MBRU
+	- 4 → SP
+	- 5 → LV
+	- 6 → CPP
+	- 7
+	- 8
+	- 9 - 15
