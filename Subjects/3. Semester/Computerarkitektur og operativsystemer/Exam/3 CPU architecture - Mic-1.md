@@ -142,7 +142,7 @@ The general form of an instructions is
 
 The four most _simple_ instructions (used in microprocessors are)
 
-When writing the _registers_ in the following, it is important to remember that the _program_ and _data_ are BOTH in memory at the same time, meaning that the registers and memory addresses must be written correctly as to not treat a line of code as data. [[COS_lecture02.pdf#page=30|L2 page 30]]
+When writing the _registers_ in the following, it is important to remember that the _program_ and _data_ are BOTH in memory at the same time, meaning that the memory addresses must be written correctly as to not treat a line of code as data. [[COS_lecture02.pdf#page=30|L2 page 30]]
 
 ### LOAD [[COS_lecture02.pdf#page=26|L2 page 26]]
 Format:
@@ -173,4 +173,11 @@ Microinstructions are a sequence of smaller operations performed by the _control
 
 An example of the _LOAD_ instruction can here be seen in microinstructions [[COS_lecture02.pdf#page=31|L2 page 31]]
 - PC (Program Counter) = 0 is copied to _Memory Address Register_ (**MAR**)
-- _MAR_ points to the first instruction in memory (since)
+- _MAR_ points to the first instruction in memory (since PC=0). In this case, it is _LOAD_
+	- 00 01 1101 → LOAD, Register=1, Memory=13
+- The _control unit_ requests to read the contents of memory _address 0_ (first instruction) and brings the contents to _Memory Data Register_ (**MDR**). At the same time, the value of _PC_ is incremented.
+- The contents of _MDR_ is copied to _Instruction Register_ (**IR**), where the instruction is decoded so $00 \Rightarrow LOAD$ 
+- The _control unit_ wants to copy the 4 _LSBs_ (Least Significant Bits) from _IR_ to _MAR_ (so that is bits 1101 from our instruction)
+- _MAR_ now points to memory address 1101 (address _13_)
+- The _control unit_ reads the contents of address 13 and copies it to the _MDR_
+- The contents of the _MDR_ is copied to register 1
