@@ -5,7 +5,7 @@
 - [x] Control unit
 - [x] Microinstructions
 - [ ] Registers
-- [ ] IJVM architecture
+- [x] IJVM architecture
 - [x] Instruction set design
 
 # Relevant lectures
