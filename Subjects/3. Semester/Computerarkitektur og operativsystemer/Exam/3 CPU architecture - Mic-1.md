@@ -455,4 +455,14 @@ _IJVM_ is a _stack-machine_ meaning that operations happen _on the stack_.
 
 Example:
 - $a_1=a_2+a_3$
-- PUSH a2 (Put variabel on stack)
+- PUSH a2 (Put variabel _a2_ on top of stack)
+- PUSH a3 (Put variabel _a3_ on top of stack (thereby above _a2_))
+- ADD (_adds_ the two variables _on top of stack_ and saves result on top of stack)
+- POP a1 (copies (pops) the top of stack to a variabel _a1_)
+
+### IJVM memory model
+The data path contains _registers_ that describe the memory model. It has _three parts_
+
+#### Constant pool [[COS_lecture04.pdf#page=35|L4 page 35]]
+This area _cannot be written_ by a IJVM-program and contains _constants_, _strings_, and _pointers_ to other areas of the memory, which can be referred to.
+**CPP** address words are _4 byte_ (32-bit)
