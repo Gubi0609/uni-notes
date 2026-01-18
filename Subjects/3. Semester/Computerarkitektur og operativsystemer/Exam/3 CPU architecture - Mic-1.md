@@ -65,5 +65,22 @@ An ALU has _four functions_
 | ----- | ----- | --------- |
 | 0     | 0     | A _AND_ B |
 | 0     | 1     | A _OR_ B  |
-| 1     | 0     |           |
-| 1     | 1     |           |
+| 1     | 0     | _NOT_ B   |
+| 1     | 1     | A + B     |
+### Encoder [[COS_lecture01.pdf#page=57|L1 page 57]]
+An _ALU_ is equipped with an _encoder_, what chooses an output based on _input_
+
+| $F_0$ | $F_1$ | $E_3$ | $E_2$ | $E_1$ | $E_0$ |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| 0     | 0     | 0     | 0     | 0     | _1_   |
+| 0     | 1     | 0     | 0     | _1_   | 0     |
+| 1     | 0     | 0     | _1_   | 0     | 0     |
+| 1     | 1     | _1_   | 0     | 0     | 0     |
+
+### Logical unit
+The logical unit is used to actually _perform_ the calculations
+It has different outputs based on $E$
+
+If $E_0$ is enabled → output: A _AND_ B
+If $E_1$ is enabled → output: A _OR_ B
+If $E_2$ is enabled → output: _NOT_ B
