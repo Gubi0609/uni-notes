@@ -12,7 +12,7 @@
 - [x] Paging
 - [x] Demand paging
 - [x] Page replacement
-- [ ] Trashing
+- [x] Trashing
 
 # Relevant lectures
 - [[L9 - Process synchronization]]
@@ -699,7 +699,18 @@ There are _three_ main types
 
 _Good_ locality means fewer page faults, as the working set (actively used pages) are in RAM
 
-#### Working set 
+#### Working set model [[COS - lecture 12 - Itslearning.pdf#page=34|L12 page 34]]
+Is based on the assumption of _locality_.
+
+A _working set window_ is defined from the most recent page references. The set of pages in the working set window is the _working set_.
+
+A process performs well if it has enough pages that cover its working set. _The working set can vary over time_.
+
+> If the sum of _working set_ sizes (total demand for frames) exceeds the amount of physical memory, _thrashing occurs_.
+
+
+### The best solution to Thrashing and high Page fault is always **More Memory!**
+
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
