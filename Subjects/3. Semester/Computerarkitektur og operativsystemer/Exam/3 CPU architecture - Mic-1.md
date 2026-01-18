@@ -300,15 +300,25 @@ Is a _Micro Architecture_
 
 Mic-1 has the following units [[COS_lecture04.pdf#page=9|L4 page 9]]
 - _Memory Address Register (**MAR**)_
+	- Pointer to an address
 - _Memory Data Register (**MDR**)_
+	- Holds data to/from memory
 - _Program Counter (**PC**)_
-- **MBR**
-- **SP**
-- **LV**
-- **CPP**
-- **TOS**
-- **OPC**
-- **H**
+	- Pointer to program-instruction
+- _Memory Byte Register (**MBR**)_
+	- Holds byte from PC
+- _Stack Pointer **(SP)**_
+	- Points to top of stack
+- _Local Variable (**LV**)_
+	- Points to local variabel in memory
+- _Constant Pool Pointer(**CPP**)_
+	- Points to area of memory with constants
+- _Top of Stack (**TOS**)_
+	- Same contents as _location_ of SP
+- _Optional Program Counter (**OPC**)_
+	- A register to be used as temporary data-location
+- _Hold (**H**)_
+	- Holds a value to be used 
 - **32-bit** _Arithmetic Logic Unit (**ALU**)_ see [[3 CPU architecture - Mic-1#ALU|ALU]]
 
 The ALU of Mic-1 is capable of performing the usual tasks for an ALU.
