@@ -399,3 +399,16 @@ Before we focused only on the core part of Mic-1. We now expand it to hold the _
 #### Micro Instructions Register (MIR) [[COS_lecture04.pdf#page=27|L4 page 27]]
 Mic-1 uses a special _intern memory_ called the _Control store_ to save microinstructions.
 - These control the _flow of data_ and _ALU_-functions.
+- A microinstruction of _36-bits_ is loaded _from_ Control Store _to_ MIR and thereby decides what should happen in the _Data Path_ in the _current clock_ cycle.
+
+_MIR_ has the following structure
+- **NEXT_ADDRESS** (9 bits) - Contains the address of the _next microinstruction_
+- **JAM** (3 bits) - Decides how the next microinstruction is _chosen_
+	- **JMPC**
+	- **JAMN**
+	- **JAMZ**
+- **ALU** (8 bits) - _Control signals_ to the ALU and shifter
+	- **SSL8** (s)
+	- **SRA1**
+	- **F0**
+	- 
