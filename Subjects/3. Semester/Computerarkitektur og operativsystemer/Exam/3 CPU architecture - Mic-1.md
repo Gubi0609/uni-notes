@@ -463,6 +463,21 @@ Example:
 ### IJVM memory model
 The data path contains _registers_ that describe the memory model. It has _three parts_
 
-#### Constant pool [[COS_lecture04.pdf#page=35|L4 page 35]]
+#### Constant pool [[COS_lecture04.pdf#page=34|L4 page 34]]
 This area _cannot be written_ by a IJVM-program and contains _constants_, _strings_, and _pointers_ to other areas of the memory, which can be referred to.
 **CPP** address words are _4 byte_ (32-bit)
+
+#### Local variable frame [[COS_lecture04.pdf#page=35|L4 page 35]]
+For every time a method is run, an area of memory is allocated _as long as the method is alive_.
+
+**SP** and **LV** address words are _4 bytes_ (32-bit)
+
+#### Method area [[COS_lecture04.pdf#page=36|L4 page 36]]
+The area of memory where the _programs are stored_
+
+**PC** addresses are _1 byte_ (8-bit)
+
+### IJVM instruction set
+IJVM has a very wide instruction set of $16^2=256$ total possible instructions.
+
+These include among otherth
