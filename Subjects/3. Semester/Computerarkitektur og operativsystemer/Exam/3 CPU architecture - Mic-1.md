@@ -123,3 +123,10 @@ The architecture consists of _three_ independent components [[COS_lecture02.pdf#
 - **Memory**
 	- Saves _programs_ and _data_
 	- Divided into Random Access Memory (**RAM**) and Read-Only Memory (**ROM**)
+- **Input/Output (I/O) Interface**
+	- Interface with the world (keyboard, screen, printer, etc.)
+
+The three components _communicate_ using an **address**-, **data**-, and **control bus**. [[COS_lecture02.pdf#page=16|L2 page 16]]
+- Both _data_ and _instructions_ are on the **data bus** [[COS_lecture02.pdf#page=20|L2 page 20]]
+- Adresses for data and ind
+
