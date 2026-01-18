@@ -235,3 +235,23 @@ A program can be written with _more_ instructions, requiring more instructions t
 - Each operation takes _less memory space_
 - A program must be written with _more instructions_ to have same functionality.
 
+### Choosing Instruction Set model
+**CISC** [[COS_lecture02.pdf#page=48|L2 page 48]]
+- Instruction in CPU
+- Short access time
+- _Slower_ than RISC because of _complexity_
+- Smaller program
+- _Larger power usage_
+
+**RISC** [[COS_lecture02.pdf#page=48|L2 page 48]]
+- Subroutine in program
+- Longer access time
+- _Faster_ than CISC du to _simplicity_
+- Larger program (with subroutines or libraries)
+- _Less power usage_
+
+Instruction set can _vary_ from processor to processor. Most want operations that can be categorized as follows [[COS_lecture02.pdf#page=49|L2 page 49]]
+- **Datatransfer:** Moving (or copying) data from one location to another
+- **Arithmetic:** Simple arithmetic operations
+- **Logic:** Boolean operations
+- **Control:** Related to instruktion
