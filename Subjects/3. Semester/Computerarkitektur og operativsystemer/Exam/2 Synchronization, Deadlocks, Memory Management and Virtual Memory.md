@@ -534,7 +534,7 @@ We _replace_ the page at the _head_ of the queue. When a page is brought into me
 If the page selected for replacement (head of queue) is in active use, a fault will occur, when we replace the page, requiring us to almost immediately retrieve the active page from secondary memory.
 A bad replacement choice increases the page fault rate and slows process execution.
 
-### Optimal page-replacement algorithm [[COS - lecture 12 - Itslearning.pdf#page=19|L12 page 19]]
+### Optimal page-replacement (OPT) algorithm [[COS - lecture 12 - Itslearning.pdf#page=19|L12 page 19]]
 The algorithm replaces the page that _**will** not be used_ for the _longest period_ of time.
 It has the _lowest page-fault rate_ of all algorithms.
 
@@ -584,7 +584,17 @@ The algorithm replaces the first page encountered in the lowest numbered case.
 The _major difference_ is the preference for replacing clean pages in order to reduce the number of I/O's required.
 
 ### Counting based page replacement [[COS - lecture 12 - Itslearning.pdf#page=24|L12 page 24]]
-Some algorithms uses a _counter_ to keep count of the _number_ of references that have been made to each page. This is used when selecting which to repa
+Some algorithms uses a _counter_ to keep count of the _number_ of references that have been made to each page. This is used when selecting which to replace.
+
+#### Least Frequently Used (LFU)
+The page with the _smallest_ count is replaced based on the philosophy that actively used pages should have a large reference count.
+
+#### Most Frequently Used (MFU)
+The page with the _largest_ count is replaced.
+Based on the argument, that the page with the smallest count balue was probably just brought into memory, and therefor need to be used shortly.
+
+#### Neither LFU or MFU are common
+The implementation of these algorithms are _expensive_ and they do not approximate _OPT_ replacement well
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
