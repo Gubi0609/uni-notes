@@ -50,3 +50,20 @@ To _convert from binary to hexadecimal_ [[COS_lecture01.pdf#page=23|L1 page 23]]
 - e.g.
 	- 0101 0011 1001 → 5 3 9
 
+## Gates
+A gate can calculate different functions with _binary input_ (high 1, low 0) [[COS_lecture01.pdf#page=38|L1 page 38]]
+
+
+## Boolean algebra [[COS_lecture01.pdf#page=52|L1 page 52]]
+![[Pasted image 20260118092626.png]]
+
+## ALU
+To calculate in a computer, an **ALU** is used (**A**rithmetic **L**ogic **U**nit) [[COS_lecture01.pdf#page=54|L1 page 54]]
+An ALU has _four functions_
+
+| $F_0$ | $F_1$ | out       |
+| ----- | ----- | --------- |
+| 0     | 0     | A _AND_ B |
+| 0     | 1     | A _OR_ B  |
+| 1     | 0     |           |
+| 1     | 1     |           |
