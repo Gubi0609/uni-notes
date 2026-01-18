@@ -296,3 +296,17 @@ Register names comes from _ISA_-level.
 - Is a _microprogrammed control unit_ design for a _hypothetical CPU_
 - Uses [[3 CPU architecture - Mic-1#Instructions (Instruction Set Architecture (ISA))|microcode]] to implement the CPU's instruction set.
 	- Each machine instruction (e.g. ADD and LOAD) is translated into a sequence of [[3 CPU architecture - Mic-1#Microinstructions|microinstructions]] stored in a _control store_ (ROM)
+
+Mic-1 has the following units [[COS_lecture04.pdf#page=9|L4 page 9]]
+- _Memory Address Register (**MAR**)_
+- _Memory Data Register (**MDR**)_
+- _Program Counter (**PC**)_
+- **MBR**
+- **SP**
+- **LV**
+- **CPP**
+- **TOS**
+- **OPC**
+- **H**
+- **32-bit** _Arithmetic Logic Unit (**ALU**)_
+- 
