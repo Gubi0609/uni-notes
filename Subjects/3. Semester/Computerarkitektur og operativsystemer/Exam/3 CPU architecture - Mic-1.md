@@ -136,6 +136,8 @@ The general form of an instructions is
 
 The four most _simple_ instructions (used in microprocessors are)
 
+When writing the _registers_ in the following, it is important to remember that the _program_ and _data_ are BOTH in memory
+
 ### LOAD [[COS_lecture02.pdf#page=26|L2 page 26]]
 Format:
 - **Opcode** (bit 6-7), $R_d$ (bit 4-5), **Memory address** (bit 0-3)
@@ -146,4 +148,17 @@ Format:
 Format:
 - **Opcode** (bit 6-7), $R_d$ (bit 4-5), **Memory address** (bit 0-3)
 - $\text{Mem.(adr.)}\Leftarrow R_d$
-- We _STORE_ the data data from
+- We _STORE_ the data data from our register into out memory address
+
+### ADDR [[COS_lecture02.pdf#page=26|L2 page 26]]
+Format:
+- **Opcode** (bit 6-7), $R_d$ (bit 4-5), $R_{s1}$ (bit 2-3), $R_{s2}$ (bit 0-1)
+- $R_d\Leftarrow R_{s1}+R_{s2}$
+- We _ADD_ $R_{s1}$ and $R_{s2}$ and _save_ it in _register_ $R_d$
+
+### ADDM [[COS_lecture02.pdf#page=26|L2 page 26]]
+Format
+- **Opcode** (bit 6-7), $R_d$ (bit 4-5), **Memory address** (bit 0-3)
+- $R_d\Leftarrow R_d+\text{Mem.(adr.)}$
+- We _ADD_ $R_d$ and Memory address together and _save_ it in _register_ $R_d$
+
