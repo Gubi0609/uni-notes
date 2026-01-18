@@ -681,6 +681,16 @@ This occurs when a process spends _almost all its time_ on page replacement.
 
 > Processes leave the ready queue for CPU and queue up for the paging device.
 
+To avoid the effects of thrashing, we use a _local replacement algorithm_ [[COS - lecture 12 - Itslearning.pdf#page=32|L12 page 32]]
+[[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Local allocation|Local allocation]] requires that each process select _only_ from its _own set_ of allocated frames.
+- In this way, if one process starts thrashing, it cannot steal frames from another process and cause that to thrash too.
+
+To _prevent_ thrashing we must provide a process with as many frames as it needs. [[COS - lecture 12 - Itslearning.pdf#page=32|L12 page 32]]
+- One strategy is to use _locality model_ to figure out the _current need_ of a process.
+	- Processes move from one locality to another
+	- Localities may have overlap
+
+### Locality [[COS - lecture 12 - Itslearning.pdf#page=33|L12 page 33]]
 
 
 ## Virtual Memory
