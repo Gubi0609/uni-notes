@@ -657,7 +657,21 @@ The number of frames allocated to each frame
 ## $$a_1=\frac {10}{137}\cdot 62=4.53\approx 4$$$$a_2=\frac {127}{137}\cdot 62=57.47\approx 57$$
 _We can see that this proves a much fairer allocation_.
 
-### Global 
+### Global and Local allocation [[COS - lecture 12 - Itslearning.pdf#page=29|L12 page 29]]
+Another important factor is how frames are allocated to processes when there are no more available frames in page replacement.
+
+#### Local allocation
+Page replacement occurs _within_ the process's _own frames_
+- More consistent performance for each process without influence of different external circumstances (the other processes)
+- _Possibly poorer utilization of memory_
+
+#### Global allocation
+Page replacement occurs _among the set of all frames_ including those from all _lower-priority processes_.
+- Execution time for processes can vary greatly due to the _theft_
+- Better system throughput, so therefore most commonly used.
+
+## Non Uniform Memory Access (NUMA)
+We have until now assumed that all main me
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
