@@ -254,4 +254,18 @@ Instruction set can _vary_ from processor to processor. Most want operations tha
 - **Datatransfer:** Moving (or copying) data from one location to another
 - **Arithmetic:** Simple arithmetic operations
 - **Logic:** Boolean operations
-- **Control:** Related to instruktion
+- **Control:** Related to instruktion-execution e.g. SKIP, RETURN, HALT
+- **System:** OS-instructions e.g. _system calls_
+- **I/O:** Move data from memory to external units.
+
+### Operand fields
+The size of an operand field is usually very _limited_. It is however necessary to refer to a large amount of memory [[COS_lecture02.pdf#page=50|L2 page 50]]
+This can be solved using different _address modes_. The most common are
+- **Immediate** - Data
+	- The data itself [[COS_lecture02.pdf#page=50|L2 page 50]]
+- **Direct** - Address to data
+	- A translation of data to memory address (e.g. 1111 → address 15) [[COS_lecture02.pdf#page=51|L2 page 51]]
+- **Indirect** - Address to address to data
+	- A translation of data to memory address, _which holds the desired m_
+- **Displacement (indexed)** - Address to offset and local address
+- **Stack** - A kind of _indirect_-type
