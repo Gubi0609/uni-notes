@@ -363,3 +363,9 @@ The memory can be accessed through _two methods_
 	- Since the _2 MSB_ (according to this example) are discarded and _0 0_ is appended, we get _1 GB addresses_
 - **PC** or **MBR** [[COS_lecture04.pdf#page=20|L4 page 20]]
 	- 32-bit registers that access memory in _byte-size_ (_8-bit_), so that is _4 G_ addresses
+
+#### MBR [[COS_lecture04.pdf#page=21|L4 page 21]]
+When the 8-bit register _MBR_ is to be put onto the **B-bus**, it can be done in _two_ different ways
+
+##### Unsigned (No extension)
+**MBR** is put on the _8 LSB_ and the other 24 bits (32-8=24) are set to _0_
