@@ -670,8 +670,18 @@ Page replacement occurs _among the set of all frames_ including those from all _
 - Execution time for processes can vary greatly due to the _theft_
 - Better system throughput, so therefore most commonly used.
 
-## Non Uniform Memory Access (NUMA)
-We have until now assumed that all main me
+## Non Uniform Memory Access (NUMA) [[COS - lecture 12 - Itslearning.pdf#page=30|L12 page 30]]
+We have until now assumed that all main memory is created equally. On _NUMA_ systems with _multiple CPUs_ a given CPU can access _local memory_ section _faster_ than it can access other CPUs memory section.
+
+_The OS must take into account the CPU affiliation of processes_
+
+## Thrashing
+High paging activity is called _paging_ [[COS - lecture 12 - Itslearning.pdf#page=31|L12 page 31]]
+This occurs when a process spends _almost all its time_ on page replacement.
+
+> Processes leave the ready queue for CPU and queue up for the paging device.
+
+
 
 ## Virtual Memory
 [[2 Synchronization, Deadlocks, Memory Management and Virtual Memory#Optimization strategies|Previously]] we discussed some memory optimization strategies. These all had the same goal
