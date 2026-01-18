@@ -318,9 +318,15 @@ Mic-1 has the following units [[COS_lecture04.pdf#page=9|L4 page 9]]
 - _Optional Program Counter (**OPC**)_
 	- A register to be used as temporary data-location
 - _Hold (**H**)_
-	- Holds a value to be used 
+	- Holds a value to be used in _next operation_
 - **32-bit** _Arithmetic Logic Unit (**ALU**)_ see [[3 CPU architecture - Mic-1#ALU|ALU]]
 
 The ALU of Mic-1 is capable of performing the usual tasks for an ALU.
 To get a _32-bit_ ALU, _32 ALU's_ are coupled together.
 
+### Data path
+> The data path is the part of the CPU that contains the ALU, its inputs and outputs [[COS_lecture04.pdf#page=13|L4 page 13]]
+
+- _Most_ registers (see Mic-1 units above) can write to the _B-bus_ [[COS_lecture04.pdf#page=14|L4 page 14]]
+- The output of the ALU goes to a _shift register_
+	- 
