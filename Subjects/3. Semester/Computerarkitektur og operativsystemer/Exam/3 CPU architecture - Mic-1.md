@@ -105,3 +105,4 @@ There is also a _carry in_, that is used when coupling multiple _ALUs_ for more 
 | 1   | 1   | 1        | 1         | 1   |
 ### 8-bit ALU [[COS_lecture01.pdf#page=61|L1 page 61]]
 Multiple ALUs can be coupled together to form for example an 8-bit ALU by combining 8 ALUs.
+
