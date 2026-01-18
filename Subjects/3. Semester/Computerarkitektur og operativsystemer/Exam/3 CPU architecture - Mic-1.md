@@ -437,7 +437,7 @@ _MIR_ has the following structure
 	- 0 → MDR
 	- 1 → PC
 	- 2 → MBR
-	- 3 → **MBRU** 
+	- 3 → **MBRU** (the upper half of the MBR (16 MSB))
 	- 4 → SP
 	- 5 → LV
 	- 6 → CPP
