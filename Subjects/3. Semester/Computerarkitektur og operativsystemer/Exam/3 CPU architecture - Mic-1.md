@@ -187,4 +187,13 @@ This concludes the _LOAD_ operation.
 Microinstructions are _less efficient_ than hardwired computers, but in return, they are _a lot_ more flexible. [[COS_lecture02.pdf#page=41|L2 page 41]]
 
 #### Microinstruction words
+When designing the _size_ of microinstructions, one _must_ think of the following [[COS_lecture02.pdf#page=42|L2 page 42]]
+- _Minimize_ the size of microcode
+- _Minimize_ the size of microprogram - _the length of microcode-memory_
+- _Maximize_ flexibility to add and change microinstructions
+- _Maximize_ parallel execution of microinstructions (thereby maximizing efficiency, since multiple microinstructions can run alongside each other.)
+
+#### Horizontal instruction design [[COS_lecture02.pdf#page=42|L2 page 43]]
+Each control signal is represented by a _single bit_ in a microinstruction.
+- Means that the microinstruction is _very wide_ (many bits) because it explicitly specifies _every control signal_ needed for a particular operation
 
