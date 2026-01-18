@@ -334,4 +334,12 @@ To get a _32-bit_ ALU, _32 ALU's_ are coupled together.
 - Possible to read and write to same register _in one cycle_.
 
 ### Data path timing
+_One_ clock cycle _starts_ at the falling edge of the clock pulse and _ends_ at the falling edge of the next clock pulse. [[COS_lecture04.pdf#page=15|L4 page 15]]
+
+A clock cycle contains the following [[COS_lecture04.pdf#page=15|L4 page 15]]
+- $\Delta$w: _Control signal/-bits to set up ALU_
+- $\Delta$x: _Registers gets loaded onto **B-bus**_
+- $\Delta$y: _ALU and shifter operates_
+- $\Delta$z: _Result propagates along **C-bus** to registers_
+- At _rising edge_ the results are _saved_ in the registers.
 
