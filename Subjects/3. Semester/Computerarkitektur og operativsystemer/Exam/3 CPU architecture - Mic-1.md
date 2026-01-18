@@ -233,3 +233,5 @@ A program can be written with _more_ instructions, requiring more instructions t
 
 - Has a _smaller opcode field_ $\Leftrightarrow$ less instructions
 - Each operation takes _less memory space_
+- A program must be written with _more instructions_ to have same functionality.
+
