@@ -77,10 +77,31 @@ An _ALU_ is equipped with an _encoder_, what chooses an output based on _input_
 | 1     | 0     | 0     | _1_   | 0     | 0     |
 | 1     | 1     | _1_   | 0     | 0     | 0     |
 
-### Logical unit
+### Logical unit [[COS_lecture01.pdf#page=59|L1 page 59]]
 The logical unit is used to actually _perform_ the calculations
 It has different outputs based on $E$
 
 If $E_0$ is enabled → output: A _AND_ B
 If $E_1$ is enabled → output: A _OR_ B
 If $E_2$ is enabled → output: _NOT_ B
+
+### Full Adder
+The full adder is used to _add_ A and B together
+
+If $E_3$ is enabled, the full adder is used.
+
+The full adder has an _output_ and a _carry output_ if the addition _exceeds_ a value that can be shown by a one bit number (0 or 1)
+There is also a _carry in_, that is used when coupling multiple _ALUs_ for more complex calculations.
+
+| A   | B   | Carry In | Carry Out | Out |
+| --- | --- | -------- | --------- | --- |
+| 0   | 0   | 0        | 0         | 0   |
+| 0   | 1   | 0        | 0         | 1   |
+| 1   | 0   | 0        | 0         | 1   |
+| 1   | 1   | 0        | 1         | 0   |
+| 0   | 0   | 1        | 0         | 1   |
+| 0   | 1   | 1        | 1         | 0   |
+| 1   | 0   | 1        | 1         | 0   |
+| 1   | 1   | 1        | 1         | 1   |
+### 8-bit ALU [[COS_lecture01.pdf#page=61|L1 page 61]]
+Multiple ALUs can be coupled together to form for example an 8-bit ALU by combining 8 ALUs.
