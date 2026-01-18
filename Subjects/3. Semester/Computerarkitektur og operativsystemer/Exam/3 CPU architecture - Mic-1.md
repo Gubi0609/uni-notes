@@ -118,6 +118,10 @@ The architecture consists of _three_ independent components [[COS_lecture02.pdf#
 - **CPU**
 	- Is the _brain_
 	- _Control unit_
+		- Decodes instructions
+		- Sends control signals to the ALU, registers and memory
+		- Ensures the data flows correctly between CPU, memory and I/O devices
+		- _Manages clock signals_
 	- Has _registers_
 	- Contains the _ALU_
 - **Memory**
@@ -136,7 +140,7 @@ The general form of an instructions is
 
 The four most _simple_ instructions (used in microprocessors are)
 
-When writing the _registers_ in the following, it is important to remember that the _program_ and _data_ are BOTH in memory
+When writing the _registers_ in the following, it is important to remember that the _program_ and _data_ are BOTH in memory at the same time, meaning that the registers and memory addresses must be written correctly as to not treat a line of code as data. [[COS_lecture02.pdf#page=30|L2 page 30]]
 
 ### LOAD [[COS_lecture02.pdf#page=26|L2 page 26]]
 Format:
