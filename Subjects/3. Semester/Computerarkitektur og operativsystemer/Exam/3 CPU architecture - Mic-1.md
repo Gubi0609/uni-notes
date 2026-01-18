@@ -136,7 +136,7 @@ The three components _communicate_ using an **address**-, **data**-, and **contr
 - Both _data_ and _instructions_ are on the **data bus** [[COS_lecture02.pdf#page=20|L2 page 20]]
 - Adresses for data and instructions registers flow on the **address bus** [[COS_lecture02.pdf#page=20|L2 page 20]]
 
-## Instructions (Instruction Set Archite)
+## Instructions (Instruction Set Architecture (ISA))
 The general form of an instructions is
 **Opcode**, **Operand**, **...**, **Operand**
 
