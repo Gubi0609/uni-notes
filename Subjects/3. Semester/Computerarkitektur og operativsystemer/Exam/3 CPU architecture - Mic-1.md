@@ -271,3 +271,8 @@ This can be solved using different _address modes_. The most common are
 	- Kind of like before, where we point to a memory address, but we _also have an offset_ that points onward to the data (e.g. 0110 01 → is memory address 6 _+ 1_ so memory address 7) [[COS_lecture02.pdf#page=53|L2 page 53]]
 - **Stack** - A kind of _indirect_-type
 	- We have a _stack pointer_ **SP** which points to the desired memory address holding the data [[COS_lecture02.pdf#page=54|L2 page 54]]
+
+## Mic-1
+_Mic-1_ is on _level 1_ (Micro Architecture) (see at the top of this page). [[COS_lecture04.pdf#page=6|L4 page 6]]
+
+Micro architecture implements 
