@@ -171,4 +171,9 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 - /WR is connected to _only RAM_ since _ROM is read only_.
 
 **Address Decoding**
-- The CPU uses the _address bus_ A0-A15 to sele
+- The CPU uses the _address bus_ A0-A15 to select an address on _either RAM or ROM_. The chips is determined from _CS_ as stated above.
+
+**Data transfer**
+- When the address and _operation_ (read/write) is selected, data is transferred to/from the CPU from/to memory over the _8-bit data line_.
+
+### 16-bit memory interface
