@@ -392,6 +392,15 @@ Duplicating resources can remedy the problem [[COS_lecture06.pdf#page=39|L6 page
 #### Data hazard
 Occurs when an instruction depends on the result of an earlier instruction, _if this does not exist_ because of instruction overlap [[COS_lecture06.pdf#page=37|L6 page 37]]
 
+##### Solution
+Can be remedied by adding a few _wait cycles/pipeline stall_ [[COS_lecture06.pdf#page=41|L6 page 41]]
+
+_This does however reduce throughput and performance_
+
+To remedy this reduce, we can fill the gap with other processes _not dependent_ on the two involved in the data hazard.
+- Called _out of order execution_ [[COS_lecture06.pdf#page=42|L6 page 42]]
+
+We can also use a _special register_ to save the result of the _execution step_ so it can be _used in another calculation_. [[COS_lecture06.pdf#page=43]]
 
 #### Control hazard
 Occurs at _branches_ chancing the pipeline [[COS_lecture06.pdf#page=37|L6 page 37]]
