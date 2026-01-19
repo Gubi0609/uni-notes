@@ -298,7 +298,7 @@ Is a _Micro Architecture_
 - Uses [[3 CPU architecture - Mic-1#Instructions (Instruction Set Architecture (ISA))|microcode]] to implement the CPU's instruction set.
 	- Each machine instruction (e.g. ADD and LOAD) is translated into a sequence of [[3 CPU architecture - Mic-1#Microinstructions|microinstructions]] stored in a _control store_ (ROM)
 
-Mic-1 has the following units [[COS_lecture04.pdf#page=9|L4 page 9]]
+Mic-1 has the following units in its _data path_ [[COS_lecture04.pdf#page=9|L4 page 9]]
 - _Memory Address Register (**MAR**)_
 	- Pointer to an address
 - _Memory Data Register (**MDR**)_
