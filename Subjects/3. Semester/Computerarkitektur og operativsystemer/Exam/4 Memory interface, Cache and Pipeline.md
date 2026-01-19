@@ -275,4 +275,13 @@ As we can see, the _PC is incremented_ multiple times. We also _read_ and _write
 We also use the PC to _fetch the next byte_ in the instruction stream.
 We also update TOS (Top Of Stack) from MDR (Memory Data Register).
 
-Much of this can be elimenated by introducing 
+Much of this can be eliminated by introducing an _IFU_.
+- It will be able to _independently increment PC_
+- Fetch bytes from the byte stream _before they are needed_
+- Can also assemble 8-bit and 16-bit operands so they are ready for immediate use whenever needed
+	- As opposed to the ALU loading a register _one byte_ per clock cycle.
+
+- IFU automatically fetches _opcodes_ in **MBR1** (8-bit) [[COS_lecture06.pdf#page=16|L6 page 16]]
+- _Operands_ in **MBR2** (16-bit)
+- Instruction Memory Address Register (**IMAR**) gets instructions from method-field _4 bytes_ at a time
+- **PC** always points to first byte not yet used.
