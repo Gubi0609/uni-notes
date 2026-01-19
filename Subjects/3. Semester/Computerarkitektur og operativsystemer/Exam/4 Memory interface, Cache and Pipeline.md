@@ -224,7 +224,8 @@ Wait states are essentially used to _synchronize_ the CPU (Central Processing Un
 Wait states are measured in _clock cycles_.
 - E.g. if a memory access requires _2 wait states_, the CPU waits _2 clock cycles_ before proceeding.
 
-Wait states impact performance, as the _CPU is _
+Wait states impact performance, as the _CPU is idling_
+- Modern systems use techniques like _caching_, _pipelining_, and _burst mode_ to minimize or eliminate wait states.
 
 ## Address demultiplexer
 Is used when different chips _use the same address-block_ (like with 16-bit memory before) [[COS_lecture03.pdf#page=23|L3 page 23]]
