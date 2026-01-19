@@ -177,3 +177,12 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 - When the address and _operation_ (read/write) is selected, data is transferred to/from the CPU from/to memory over the _8-bit data line_.
 
 ### 16-bit memory interface
+- We keep _in some sense_ the same setup as before, but _add another 8-bit RAM and ROM_. [[COS_lecture03.pdf#page=17|L3 page 17]]
+	- The RAM and ROM from before is called _Bank 1_
+	- The new RAM and ROM is called _Bank 0_
+- **CS** (Chip Select) is again used to select RAM or ROM
+	- **RAM active:** when $\overline{CS}$ is high, which is decided from NAND gate connected to A13 - A15
+		- $\overline {CS}=\overline{A_{13}\cdot A_{14}\cdot A_{15}}$
+	- **ROM active:** when $\overline{CS}$ is _low_ which is decided from OR gate connected to A9 - A15
+		- $\overline{CS}=A_{9}+A_{10}+A_{11}+A_{12}+A_{13}+A_{14}+A_{15}$
+- 
