@@ -366,3 +366,10 @@ Every phase takes _2 ns_, which means an instruction is done _every second ns_.
 So the CPU's _bandwidth_ is
 $$(2\text{ ns})^{-1}=\frac 1 2 10\cdot 10^9 \text{ IPs}=500 \text{ MIPS}$$
 where _IPS_ is the unit _Instructions Per Second_.
+
+### Pipeline hazards
+When working with pipelines, it is possible to run in to _one of three_ of these hazards.
+
+#### Structural hazards
+Occurs at _resource-conflicts_ [[]]
+- When the hardware cannot support certain combinations of instructions simultaneously.
