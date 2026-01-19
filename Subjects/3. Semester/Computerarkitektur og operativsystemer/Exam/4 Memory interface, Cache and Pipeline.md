@@ -147,4 +147,7 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 - _Latch_ output is _only high_ when the CLK and _input is high_.
 - _D flip flop_ output can be _high_ for _one clock cycle_ and will then be whatever the input is again.
 
-**8 D flip flops** can be arranged to construct an _8 bit regis_
+**8 D flip flops** can be arranged to construct an _8 bit register_ [[COS_lecture03.pdf#page=8|L3 page 8]]
+- Then each flip flop also has a _clear_ input to presumably drop its saved value.
+
+### 8-bit memory interface

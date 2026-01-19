@@ -488,6 +488,15 @@ For a full overview of the (at least listed) operations within IJVM see [[COS_le
 For examples on IJVM code in the MAL (Micro Assembly Language) see [[COS_lecture05.pdf|L5]].
 
 ## Register
-A register is built up of _n_ D flip-flop's where _n_ is the desired bit register.
+### Latch
+A register is built up of _latches_. [[COS_lecture03.pdf#page=5|L3 page 5]]
+- Constructed of two _NOR_ gates interconnected
+- Has one input _D_ connected to both gates, but _NOT_'ed to one of the switches.
+- Has _two outputs_ Q and NOT Q
 
-So an 8-bit register is built up of _8_ D flip-flops [[COS_lecture03.pdf#page=8|L3 page 8]]
+A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
+- Can either be a _latch_ or a _D flip flop_
+- _Latch_ output is _only high_ when the CLK and _input is high_.
+- _D flip flop_ output can be _high_ for _one clock cycle_ and will then be whatever the input is again.
+
+**8 D flip flops** can be arranged to construct an _8 bit register_
