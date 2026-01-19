@@ -155,5 +155,12 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 - The _address bus_ is 16-bit, where A8 - A15 is used for chip select (**CS**)
 	- A8 - A11 is also used for address in RAM
 - Chip Select (**CS**) is used to select what _memory chip_ is used
-	- **RAM active:** When _CS is high_, which is decided from a NAND gate connected to A12 - A15
-		- $\bar {CS}=\bar{A}$ 
+	- **RAM active:** When _$\overline{CS}$ is high_, which is decided from a NAND gate connected to A12 - A15 [[COS_lecture03.pdf#page=14|L3 page 14]]
+		- $\overline {CS}=\overline{A_{12}\cdot A_{13}\cdot A_{14}\cdot A_{15}}$ 
+	- **ROM active:** When _$\overline{CS}$ is low_, which is decided from OR gate connected to A8 - A15 [[COS_lecture03.pdf#page=15|L3 page 15]]
+		- $\overline{CS}=A_{8}+A_{9}+A_{10}+A_{11}+A_{12}+A_{13}+A_{14}+A_{15}$
+		- Chip is active when _all of them_ are low.
+- _RAM_ is located _at the top_ of the memory space
+	- **Address range:** FFFF, F000, EFFF etc.
+- _ROM_ is located _at the bottom_ of the memory space
+	- **Address range:** 
