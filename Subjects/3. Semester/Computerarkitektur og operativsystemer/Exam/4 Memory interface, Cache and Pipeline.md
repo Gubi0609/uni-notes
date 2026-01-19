@@ -136,6 +136,15 @@ Memory can be split in to _two categories_ [[COS_lecture03.pdf#page=4|L3 page 4]
 - _Volatile_ (**RAM**)
 - _Non-volatile_ (**ROM**)
 
+### Latch
 A register is built up of _latches_. [[COS_lecture03.pdf#page=5|L3 page 5]]
 - Constructed of two _NOR_ gates interconnected
-- Has one input _D_ connected to bot
+- Has one input _D_ connected to both gates, but _NOT_'ed to one of the switches.
+- Has _two outputs_ Q and NOT Q
+
+A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
+- Can either be a _latch_ or a _D flip flop_
+- _Latch_ output is _only high_ when the CLK and _input is high_.
+- _D flip flop_ output can be _high_ for _one clock cycle_ and will then be whatever the input is again.
+
+**8 D flip flops** can be arranged to construct an _8 bit regis_
