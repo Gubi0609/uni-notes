@@ -151,3 +151,5 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 - Then each flip flop also has a _clear_ input to presumably drop its saved value.
 
 ### 8-bit memory interface
+- The input from RAM or ROM to CPU is _8 bit_ [[COS_lecture03.pdf#page=13|L3 page 13]]
+- 
