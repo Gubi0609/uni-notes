@@ -370,6 +370,16 @@ where _IPS_ is the unit _Instructions Per Second_.
 ### Pipeline hazards
 When working with pipelines, it is possible to run in to _one of three_ of these hazards.
 
-#### Structural hazards
-Occurs at _resource-conflicts_ [[]]
+#### Structural hazard
+Occurs at _resource-conflicts_ [[COS_lecture06.pdf#page=37|L6 page 37]]
 - When the hardware cannot support certain combinations of instructions simultaneously.
+- Can be necessary to perform a _pipeline-stall_
+
+In every phase of the pipeline, different resources are used. These include [[COS_lecture06.pdf#page=38|L6 page 38]]
+- **Fetching instruction:
+#### Data hazard
+Occurs when an instruction depends on the result of an earlier instruction, _if this does not exist_ because of instruction overlap [[COS_lecture06.pdf#page=37|L6 page 37]]
+
+
+#### Control hazard
+Occurs at _branches_ chancing the pipeline [[COS_lecture06.pdf#page=37|L6 page 37]]
