@@ -217,3 +217,5 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 ## Wait state
 Some chipsets (a.k.a. memory) might need _extra time to find the data_. [[COS_lecture03.pdf#page=21|L3 page 21]]
 - In these cases it is necessary to _wait_ e.g. via. a _wait-state generator-circuit_
+
+## Address demultiplexer
