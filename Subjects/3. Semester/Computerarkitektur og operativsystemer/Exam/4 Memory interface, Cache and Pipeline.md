@@ -335,3 +335,5 @@ In _Mic-2_ the ALU was _idle_ in 2 out of three clock cycle steps (read and writ
 We will call this splitting up of _microinstructions_ → _microsteps_
 - 1 microinstruction = 3$\Delta$T
 - One microinstruction in Mic-2 is three cycles in Mic-3.
+
+It seems that we can start one microinstruction each cycle, but unfortunately we are limited by **RAW**-dependency (Read After Write) if we try to _read_ from a register which is _not already written_ [[COS_lecture06.pdf#page=28|L6 page 28]]
