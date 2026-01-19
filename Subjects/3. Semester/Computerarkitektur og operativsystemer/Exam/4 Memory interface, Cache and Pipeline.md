@@ -52,6 +52,17 @@ To _convert from binary to hexadecimal_ [[COS_lecture01.pdf#page=23|L1 page 23]]
 - e.g.
 	- 0101 0011 1001 → 5 3 9
 
+### Negative Bineære Tal
+To represent positive numbers in binary one simply has to follow the above guide.
+If we want to represent _negative_ numbers in binary, we have _four methods_.
+
+#### Signed magnitude [[COS_lecture01.pdf#page=25|L1 page 25]]
+The bit _furthest to the left_ (**MSB**) is the magnitude (_0 being +, 1 being -_)
+So:
+$$-N=10110010$$
+$$N=00110010$$
+#### Ones complement [[COS_lecture01.pdf#page=26|L1 page 26]]
+
 ## Gates
 A gate can calculate different functions with _binary input_ (high 1, low 0) [[COS_lecture01.pdf#page=38|L1 page 38]]
 
@@ -107,3 +118,4 @@ There is also a _carry in_, that is used when coupling multiple _ALUs_ for more 
 | 1   | 1   | 1        | 1         | 1   |
 ### 8-bit ALU [[COS_lecture01.pdf#page=61|L1 page 61]]
 Multiple ALUs can be coupled together to form for example an 8-bit ALU by combining 8 ALUs.
+
