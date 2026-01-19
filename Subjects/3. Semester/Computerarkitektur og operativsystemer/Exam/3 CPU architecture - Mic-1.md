@@ -324,6 +324,8 @@ Mic-1 has the following units in its _data path_ [[COS_lecture04.pdf#page=9|L4 p
 The ALU of Mic-1 is capable of performing the usual tasks for an ALU.
 To get a _32-bit_ ALU, _32 ALU's_ are coupled together.
 
+Since Mic-1 _only has a B-bus_ and not an A-bus, the **H** register will _hold_ the value to be used in operation. This means, that a _clock cycle_ must be used to write the next variabel to **H**.
+
 ### Data path
 > The data path is the part of the CPU that contains the ALU, its inputs and outputs [[COS_lecture04.pdf#page=13|L4 page 13]]
 
