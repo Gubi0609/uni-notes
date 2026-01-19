@@ -151,5 +151,9 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 - Then each flip flop also has a _clear_ input to presumably drop its saved value.
 
 ### 8-bit memory interface
-- The input from RAM or ROM to CPU is _8 bit_ [[COS_lecture03.pdf#page=13|L3 page 13]]
-- 
+- We have an 8-bit _data bus_ connected from both RAM and ROM to CPU [[COS_lecture03.pdf#page=13|L3 page 13]]
+- The _address bus_ is 16-bit, where A8 - A15 is used for chip select (**CS**)
+	- A8 - A11 is also used for address in RAM
+- Chip Select (**CS**) is used to select what _memory chip_ is used
+	- **RAM active:** When _CS is high_, which is decided from a NAND gate connected to A12 - A15
+		- $\bar {CS}=\bar{A}$ 
