@@ -1,6 +1,6 @@
 # Topics to be covered
-- [ ] Mic-2
-- [ ] Mic-3
+- [x] Mic-2
+- [x] Mic-3
 - [x] Instruction Fetch Unit
 - [ ] Instruction overlap
 - [ ] Pipeline hazards
@@ -336,4 +336,21 @@ We will call this splitting up of _microinstructions_ → _microsteps_
 - 1 microinstruction = 3$\Delta$T
 - One microinstruction in Mic-2 is three cycles in Mic-3.
 
-It seems that we can start one microinstruction each cycle, but unfortunately we are limited by **RAW**-dependency (Read After Write) if we try to _read_ from a register which is _not already written_ [[COS_lecture06.pdf#page=28|L6 page 28]]
+It seems that we can start one microinstruction each cycle, but unfortunately we are limited by **RAW**-dependence (Read After Write) if we try to _read_ from a register which is _not already written_ [[COS_lecture06.pdf#page=28|L6 page 28]]
+- Stopping to wait is called _stalling_.
+
+### How does a Pipeline work?
+An instruction can be split into _five phases_
+1. Fetch instruction
+	1. Instruction is loaded from memory in to the CPU
+2. Decode instruction
+	1. Instruction is decoded
+	2. What type, and what operand is needed?
+3. Fetch operands
+	1. The operands are fetched from registers or memory
+4. Execute instruction
+	1. The data is _run through the data path_ and the instruction is _executed_
+5. Write
+	1. Save in registers
+
+_Mic-3_ one has _four phases_, **no phase 2**. [[COS_lecture06.pdf#page=32|L6 page 32]]
