@@ -248,3 +248,10 @@ Is used when different chips _use the same address-block_ (like with 16-bit memo
 Address demultiplexers can be programmed using _boolean algebra._ [[COS_lecture03.pdf#page=27|L3 page 27]]
 - An AND and OR gate array is constructed which will perform the algebra.
 
+## 3 bus design
+Previously, we looked at the _Mic-1_ which has a **C-bus** for output from the ALU and shifter and a **B-bus** for one of the inputs of the ALU. The other input comes from the _H_ register, which uses one microinstruction to copy from one register to the _H_ register.
+
+To speed up our computations we _eliminate the need_ for the **H** register by _adding an A-bus_. This **A-bus** can be accessed by (almost) all registers. [[COS_lecture06.pdf#page=14|L6 page 14]]
+This means, that suddenly registers can be used directly for computations instead of needing to be _held_ first. ==The H register is not removed however==
+
+## Instruction Fetch Unit (IFU)
