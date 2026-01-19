@@ -62,6 +62,16 @@ So:
 $$-N=10110010$$
 $$N=00110010$$
 #### Ones complement [[COS_lecture01.pdf#page=26|L1 page 26]]
+Just like before, the _MSB_ is the magnitude (_0 being +, 1 being -_), but this time we _flip all other bits_
+So:
+$$-N=11001101$$
+#### Twos complement [[COS_lecture01.pdf#page=27|L1 page 27]]
+We do the same method as before, but turning a number negative requires _two steps_ this time
+1. Flip all bits
+2. Add 1 to the result
+$$-N=11001101+01=11001110$$
+#### Excess $2^{m-1}=128$ [[COS_lecture01.pdf#page=28|L1 page 28]]
+We represent a number like the sum of the number itself and $2^{m-1}$ in this case, we have $m=8$ 
 
 ## Gates
 A gate can calculate different functions with _binary input_ (high 1, low 0) [[COS_lecture01.pdf#page=38|L1 page 38]]
