@@ -400,7 +400,18 @@ _This does however reduce throughput and performance_
 To remedy this reduce, we can fill the gap with other processes _not dependent_ on the two involved in the data hazard.
 - Called _out of order execution_ [[COS_lecture06.pdf#page=42|L6 page 42]]
 
-We can also use a _special register_ to save the result of the _execution step_ so it can be _used in another calculation_. [[COS_lecture06.pdf#page=43]]
+We can also use a __special register__ to save the result of the _execution step_ so it can be _used in another calculation_. [[COS_lecture06.pdf#page=43|L6 page 43]]
 
 #### Control hazard
 Occurs at _branches_ chancing the pipeline [[COS_lecture06.pdf#page=37|L6 page 37]]
+
+E.g. if an instruction is a `goto`
+- _Empty pipeline_- all earlier instructions already retrieved are _useless_
+- _Get instructions_ from new location
+- _Lower performance_
+
+At a _conditional branch_, the new location is only known _after its execution_
+Possible solutions [[COS_lecture06.pdf#page=45|L6 page 45]]
+- **Branch-prediction**
+	- Let the CPU attempt to guess the result of a branch.
+	- 
