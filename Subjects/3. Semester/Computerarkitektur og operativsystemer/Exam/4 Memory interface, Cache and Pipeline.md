@@ -318,3 +318,13 @@ Right now the clock cycle has three major parts
 - The time for the ALU and shifter to do their _work_
 - The time for the results to get back to the _registers and be stored_.
 
+We can add a _latch (register)_ to each bus (**A-**, **B-**, **C-bus**) [[COS_lecture06.pdf#page=25|L6 page 25]]
+- Latches get _updated every cycle_
+- Clock is now _3 times as fast_ and there is _less delay_ per part
+	- We _do_ have to use _three clock cycles_ to use the data path
+		- Loading A and B latches
+		- Running ALU and shifter and loading C latch
+		- One for storing the C latch back into the registers.
+	- The point of inserting the latches are however _twofold_
+		- Can _speed up the clock_ because the maximum delay is now shorter
+		- We can use _all parts_ of the data path during _every cycle_.
