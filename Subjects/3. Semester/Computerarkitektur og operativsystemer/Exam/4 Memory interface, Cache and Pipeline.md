@@ -305,4 +305,4 @@ MAR = SP = SP + 1 // Increment SP; Move new SP to MAR
 TOS = MDR; wr; goto(MBR1) // Update stack in TOS and memory
 ```
 
-Much simpler as we can see, and with no need to increment PC
+Much simpler as we can see, and with no need to increment PC.
