@@ -1,7 +1,7 @@
 # Topics to be covered
 - [ ] Mic-2
 - [ ] Mic-3
-- [ ] Instruction Fetch Unit
+- [x] Instruction Fetch Unit
 - [ ] Instruction overlap
 - [ ] Pipeline hazards
 	- [ ] Structural hazards
@@ -285,3 +285,6 @@ Much of this can be eliminated by introducing an _IFU_.
 - _Operands_ in **MBR2** (16-bit)
 - Instruction Memory Address Register (**IMAR**) gets instructions from method-field _4 bytes_ at a time
 - **PC** always points to first byte not yet used.
+
+## Mic-2
+We combine these two new methods with _mic-1_ and get **Mic-2**
