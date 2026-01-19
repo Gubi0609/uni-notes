@@ -376,7 +376,19 @@ Occurs at _resource-conflicts_ [[COS_lecture06.pdf#page=37|L6 page 37]]
 - Can be necessary to perform a _pipeline-stall_
 
 In every phase of the pipeline, different resources are used. These include [[COS_lecture06.pdf#page=38|L6 page 38]]
-- **Fetching instruction:
+- **Fetching instruction:** Used resources are _PC, MAR, address- and databus_
+- **Decode:** Used resources are _Decoder, intern bus, MAR, PC, address- and databus_
+- **Fetching operand:** Used resources are _PC, MAR, address- and databus_
+- **Execution:** Used resources are _ALU, intern bus_
+- **Write:** Used resources are _Intern bus, MAR, address- and databus_
+
+_Repeating resources create issues._
+
+##### Solution
+Duplicating resources can remedy the problem [[COS_lecture06.pdf#page=39|L6 page 39]]
+- _Dual-cache_ to divide code and data with _separate busses_ and _MAR_
+- _Multi-port CPU-registers_ and duplication of intern busses
+
 #### Data hazard
 Occurs when an instruction depends on the result of an earlier instruction, _if this does not exist_ because of instruction overlap [[COS_lecture06.pdf#page=37|L6 page 37]]
 
