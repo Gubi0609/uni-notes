@@ -271,4 +271,8 @@ TOS = MDR // Update TOS
 PC = PC +1; fetch; goto(MBR) // MBR already holds opcode; fetch index byte
 ```
 
-As we can se
+As we can see, the _PC is incremented_ multiple times. We also _read_ and _write_ multiple times.
+We also use the PC to _fetch the next byte_ in the instruction stream.
+We also update TOS (Top Of Stack) from MDR (Memory Data Register).
+
+Much of this can be elimenated by introducing 
