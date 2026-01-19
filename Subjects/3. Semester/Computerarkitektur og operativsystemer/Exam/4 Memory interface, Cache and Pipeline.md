@@ -10,7 +10,7 @@
 - [ ] Associative mapped Cache
 - [ ] Direct mapped Cache
 - [ ] N-way Set associative mapped Cache
-- [ ] Memory interface 8-bit vs. 16-bit
+- [x] Memory interface 8-bit vs. 16-bit
 
 # Relevant lectures
 - [[L6 - Optimering af Mikroarkitekturdesign]]
