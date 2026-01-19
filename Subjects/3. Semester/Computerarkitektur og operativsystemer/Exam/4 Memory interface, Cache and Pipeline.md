@@ -236,3 +236,6 @@ Is used when different chips _use the same address-block_ (like with 16-bit memo
 - A13 - A15 is used for **CS** for the demultiplexer (activating demultiplexer)
 
 ### Array-logic
+Address demultiplexers can be programmed using _boolean algebra._ [[COS_lecture03.pdf#page=27|L3 page 27]]
+- An AND and OR gate array is constructed which will perform the algebra.
+
