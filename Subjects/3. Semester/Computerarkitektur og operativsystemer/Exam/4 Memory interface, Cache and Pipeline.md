@@ -255,3 +255,20 @@ To speed up our computations we _eliminate the need_ for the **H** register by _
 This means, that suddenly registers can be used directly for computations instead of needing to be _held_ first. ==The H register is not removed however==
 
 ## Instruction Fetch Unit (IFU)
+For every previous instruction in _microcode_ the following might occur
+- The PC is passed through the ALU and incremented.
+- The PC is used to fetch the next byte in the instruction stream. 
+- Operands are read from memory. 
+- Operands are written to memory. 
+- The ALU does a computation and the results are stored back.
+
+As an example of this, let's look at ILOAD for the _3-bus data path design_
+```cpp
+MAR = MBRU + LV; rd // MAR = address of local variable to push 
+MAR = SP = SP + 1 // SP points to new top of stack; prepare write
+PC = PC + 1; fetch; wr // Inc PC; get next opcode; write top of stack
+TOS = MDR // Update TOS
+PC = PC +1; fetch; goto(MBR) // MBR already holds opcode; fetch index byte
+```
+
+As we can se
