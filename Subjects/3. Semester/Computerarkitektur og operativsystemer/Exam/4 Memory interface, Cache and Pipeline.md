@@ -219,3 +219,14 @@ Some chipsets (a.k.a. memory) might need _extra time to find the data_. [[COS_le
 - In these cases it is necessary to _wait_ e.g. via. a _wait-state generator-circuit_
 
 ## Address demultiplexer
+Is used when different chips _use the same address-block_ (like with 16-bit memory before) [[COS_lecture03.pdf#page=23|L3 page 23]]
+
+**3 to 8 decoder** [[COS_lecture03.pdf#page=25|L3 page 25]]
+- 20 address pins A0 - A19
+- A0 - A14 is used for addressing memory
+- A15 - A17 is used til address the _specific chip_
+	- Supports $2^3=8$ different chips
+- A18 - A19 is used for **CS** for the demultiplexer. (activating demultiplexer)
+
+**2 to 4 decoder** [[COS_lecture03.pdf#page=26|L3 page 26]]
+- 
