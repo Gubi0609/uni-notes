@@ -289,7 +289,7 @@ Much of this can be eliminated by introducing an _IFU_.
 ## Mic-2
 We combine these two new methods with _mic-1_ and get **Mic-2**
 
-Compared to Mic-1, _Mic-2_ has the following _charistica_ [[COS_lecture06.pdf#page=19|L6 page 19]]
+Compared to Mic-1, _Mic-2_ has the following _characteristics_ [[COS_lecture06.pdf#page=19|L6 page 19]]
 - No main-loop
 	- The machine does not have to go to `Main1` when it is done to fetch the next instruction. This is handled by the _IFU_
 - Incrementing **PC** is no longer the ALU's job
@@ -328,3 +328,10 @@ We can add a _latch (register)_ to each bus (**A-**, **B-**, **C-bus**) [[COS_le
 	- The point of inserting the latches are however _twofold_
 		- Can _speed up the clock_ because the maximum delay is now shorter
 		- We can use _all parts_ of the data path during _every cycle_.
+
+In _Mic-2_ the ALU was _idle_ in 2 out of three clock cycle steps (read and write).
+- By adding latches we can use the _ALU every cycle_ getting three times as much work out of the machine.
+
+We will call this splitting up of _microinstructions_ → _microsteps_
+- 1 microinstruction = 3$\Delta$T
+- One microinstruction in Mic-2 is three cycles in Mic-3.
