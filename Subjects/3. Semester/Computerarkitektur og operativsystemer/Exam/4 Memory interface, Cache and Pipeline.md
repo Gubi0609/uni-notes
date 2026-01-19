@@ -354,3 +354,15 @@ An instruction can be split into _five phases_
 	1. Save in registers
 
 _Mic-3_ one has _four phases_, **no phase 2**. [[COS_lecture06.pdf#page=32|L6 page 32]]
+
+> A pipeline basically has parallelism on an _instrucion-level_ as it can segment its parts. [[COS_lecture06.pdf#page=34|L6 page 34]]
+
+#### Latency versus bandwidth
+With the time for each phase being $T=2$ ns and there being _5 phases_, one instruction takes
+$$T=\cdot n=2\text{ ns}\cdot 5=10\text{ ns}$$
+which is the _latency_
+
+Every phase takes _2 ns_, which means an instruction is done _every second ns_.
+So the CPU's _bandwidth_ is
+$$(2\text{ ns})^{-1}=\frac 1 2 10\cdot 10^9 \text{ IPs}=500 \text{ MIPS}$$
+where _IPS_ is the unit _Instructions Per Second_.
