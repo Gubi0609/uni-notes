@@ -186,12 +186,26 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 		- $\overline {CS}=\overline{A_{13}\cdot A_{14}\cdot A_{15}}$
 	- **ROM active:** when $\overline{CS}$ is _low_ which is decided from OR gate connected to A9 - A15
 		- $\overline{CS}=A_{9}+A_{10}+A_{11}+A_{12}+A_{13}+A_{14}+A_{15}$
-- We need to _select which RAM bank_ to _write_ to since they are both connected to /WR. [[COS_lecture03.pdf#page=17|L3 page 17]]
-	- For this we combine /WR with _/BE0 or /BE1_ through an OR gate to select the bank.
 - _RAM_ is still located at the _top_ of the memory space
 - _ROM_ is still located at the _bottom_ of the memory space
 
+**Read/Write signals**
+- We need to _select which RAM bank_ to _write_ to since they are both connected to /WR. [[COS_lecture03.pdf#page=17|L3 page 17]]
+	- For this we combine /WR with _/BE0 or /BE1_ through an OR gate to select the bank.
+
 **Address Decoding**
-- Both _bank 1_ and _bank 0_ are connected to the same address lines
-	- A1 - A12 for RAM
+- Both _bank 1_ and _bank 0_ are connected to the same address lines [[COS_lecture03.pdf#page=18|L3 page 18]]
+	- A1 - A12 for _RAM_
+	- A1 - A8 for _ROM_
+- The _last bit_ of the address is decided from _which bank_ it is in.
+	- _Bank 0_ has _LSB = 0_
+	- _Bank 1_ has _LSB = 1_
+
+**Data transfer**
+- We now have _16 bit data line_
+	- D0 - D7 is connected to _bank 0_
+	- D8 - D15 is connected to _bank 1_
+- From the _bank select_ operation before, we can _write_ to either bank 0 or bank 1
+	- This translates to altering the _lower 8 bits_ or _higher 8 bits_ of our data
+- When we _read_ we read from _both bank 0 and bank 1_ simultaneously, as they are connected to the same **CS** and address lines.
 	- 
