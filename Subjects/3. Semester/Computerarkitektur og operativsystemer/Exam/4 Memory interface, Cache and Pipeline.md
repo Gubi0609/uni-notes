@@ -288,3 +288,19 @@ Much of this can be eliminated by introducing an _IFU_.
 
 ## Mic-2
 We combine these two new methods with _mic-1_ and get **Mic-2**
+
+Compared to Mic-1, _Mic-2_ has the following _charistica_ [[COS_lecture06.pdf#page=19|L6 page 19]]
+- No main-loop
+	- The machine does not have to go to `Main1` when it is done to fetch the next instruction. This is handled by the _IFU_
+- Incrementing **PC** is no longer the ALU's job
+- Next instruction is _always_ ready in MBR1 (Memory Byte Register 1)
+- 16-bit index/offset is generated _directly_ through MBR2 (Memory Byte Register 2)
+
+All of this in turn _simplifies_ the microcode from Mic-1 [[COS_lecture06.pdf#page=21|L6 page 21]]
+
+To show this lets look at ILOAD again
+```cpp
+MAR = LV + MBR1U; rd // Move LV + index to MAR; read operand
+MAR = SP = SP + 1 // Increment SP; Move new SP to MAR
+
+```
