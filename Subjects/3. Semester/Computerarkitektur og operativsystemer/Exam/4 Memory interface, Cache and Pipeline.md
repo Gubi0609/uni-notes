@@ -187,7 +187,11 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 	- **ROM active:** when $\overline{CS}$ is _low_ which is decided from OR gate connected to A9 - A15
 		- $\overline{CS}=A_{9}+A_{10}+A_{11}+A_{12}+A_{13}+A_{14}+A_{15}$
 - _RAM_ is still located at the _top_ of the memory space
+	- **Bank 1:** FFFF, E001, CFFF etc.
+	- **Bank 0:** FFF*E*, E00*1*, CFF*E* etc.
 - _ROM_ is still located at the _bottom_ of the memory space
+	- **Bank 1:** 0201, 0001 etc.
+	- **Bank 0:** 020*0*, 000*0* etc.
 
 **Read/Write signals**
 - We need to _select which RAM bank_ to _write_ to since they are both connected to /WR. [[COS_lecture03.pdf#page=17|L3 page 17]]
@@ -207,5 +211,5 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 	- D8 - D15 is connected to _bank 1_
 - From the _bank select_ operation before, we can _write_ to either bank 0 or bank 1
 	- This translates to altering the _lower 8 bits_ or _higher 8 bits_ of our data
-- When we _read_ we read from _both bank 0 and bank 1_ simultaneously, as they are connected to the same **CS** and address lines.
-	- 
+- When we _read_ we read from _both bank 0 and bank 1_ simultaneously, as they are connected to the same **CS** and address lines. [[COS_lecture03.pdf#page=17|L3 page 17]]
+	- Thus we _read 16-bit data_ where bank 0 provides the _lower 8 bits_ and bank 1 provides the _higher 8 bits_
