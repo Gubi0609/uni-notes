@@ -153,7 +153,7 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 ### 8-bit memory interface
 - We have an 8-bit _data bus_ connected from both RAM and ROM to CPU [[COS_lecture03.pdf#page=13|L3 page 13]]
 - The _address bus_ is 16-bit, where A8 - A15 is used for chip select (**CS**)
-	- A8 - A11 is also used for address in RAM
+	- A8 - A11 is also used for address in _RAM_
 - Chip Select (**CS**) is used to select what _memory chip_ is used
 	- **RAM active:** When _$\overline{CS}$ is high_, which is decided from a NAND gate connected to A12 - A15 [[COS_lecture03.pdf#page=14|L3 page 14]]
 		- $\overline {CS}=\overline{A_{12}\cdot A_{13}\cdot A_{14}\cdot A_{15}}$ 
@@ -163,4 +163,12 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 - _RAM_ is located _at the top_ of the memory space
 	- **Address range:** FFFF, F000, EFFF etc.
 - _ROM_ is located _at the bottom_ of the memory space
-	- **Address range:** 
+	- **Address range:** 0100, 00FF, 0000 etc.
+
+**Read/Write signals**
+- The /WR and /RD signals determine whether the memory is being _written_ or _read_ [[COS_lecture03.pdf#page=16|L3 page 16]]
+- /RD is connected to _both RAM and ROM_
+- /WR is connected to _only RAM_ since _ROM is read only_.
+
+**Address Decoding**
+- The CPU uses the _address bus_ A0-A15 to sele
