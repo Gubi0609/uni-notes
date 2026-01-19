@@ -206,10 +206,14 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 	- _Bank 1_ has _LSB = 1_
 
 **Data transfer**
-- We now have _16 bit data line_
+- We now have _16 bit data line_ [[COS_lecture03.pdf#page=17|L3 page 17]]
 	- D0 - D7 is connected to _bank 0_
 	- D8 - D15 is connected to _bank 1_
 - From the _bank select_ operation before, we can _write_ to either bank 0 or bank 1
 	- This translates to altering the _lower 8 bits_ or _higher 8 bits_ of our data
 - When we _read_ we read from _both bank 0 and bank 1_ simultaneously, as they are connected to the same **CS** and address lines. [[COS_lecture03.pdf#page=17|L3 page 17]]
 	- Thus we _read 16-bit data_ where bank 0 provides the _lower 8 bits_ and bank 1 provides the _higher 8 bits_
+
+## Wait state
+Some chipsets (a.k.a. memory) might need _extra time to find the data_. [[COS_lecture03.pdf#page=21|L3 page 21]]
+- In these cases it is necessary to _wait_ e.g. via. a _wait-state generator-circuit_
