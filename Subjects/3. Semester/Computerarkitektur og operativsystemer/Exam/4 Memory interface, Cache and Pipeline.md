@@ -224,9 +224,15 @@ Is used when different chips _use the same address-block_ (like with 16-bit memo
 **3 to 8 decoder** [[COS_lecture03.pdf#page=25|L3 page 25]]
 - 20 address pins A0 - A19
 - A0 - A14 is used for addressing memory
-- A15 - A17 is used til address the _specific chip_
+- A15 - A17 is used to address the _specific chip_
 	- Supports $2^3=8$ different chips
 - A18 - A19 is used for **CS** for the demultiplexer. (activating demultiplexer)
 
 **2 to 4 decoder** [[COS_lecture03.pdf#page=26|L3 page 26]]
-- 
+- 16 address pins A0 - A15
+- A0 - A10 is used for addressing memory
+- A11 - A12 is used to address the _specific chip_
+	- Supports $2^2=4$ different chips
+- A13 - A15 is used for **CS** for the demultiplexer (activating demultiplexer)
+
+### Array-logic
