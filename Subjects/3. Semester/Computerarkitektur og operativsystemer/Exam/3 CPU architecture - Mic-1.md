@@ -348,7 +348,9 @@ A clock cycle contains the following [[COS_lecture04.pdf#page=15|L4 page 15]]
 	- They have been running _continuously_ though.
 	- Their work takes $\Delta$y time.
 - $\Delta$z: _Result propagates along **C-bus** to registers_
+	- The results lie on the **C-bus** ready to be written on the _rising edge_.
 - At _rising edge_ the results are _saved_ in the registers.
+	- The register _driving_ the **B-bus** also stops doing so in preparation for the next cycle.
 
 Since the parts are built up of _combinatoric logical circuits_, they run _all the time_ [[COS_lecture04.pdf#page=16|L4 page 16]]
 - The clock cycle is used to limit the activity of the logical circuits to _only_ calculate, save and write the intended content.
