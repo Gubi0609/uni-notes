@@ -340,8 +340,13 @@ _One_ clock cycle _starts_ at the falling edge of the clock pulse and _ends_ at 
 
 A clock cycle contains the following [[COS_lecture04.pdf#page=15|L4 page 15]]
 - $\Delta$w: _Control signal/-bits to set up ALU_
+	- The bits that will _drive all the_ gates are set up. This takes $\Delta$w time.
 - $\Delta$x: _Registers gets loaded onto **B-bus**_
+	- The register needed on the **B-bus** gets loaded. This takes $\Delta$x time.
 - $\Delta$y: _ALU and shifter operates_
+	- The ALU and shifter finally has something to work on.
+	- They have been running _continuously_ though.
+	- Their work takes $\Delta$y time.
 - $\Delta$z: _Result propagates along **C-bus** to registers_
 - At _rising edge_ the results are _saved_ in the registers.
 
