@@ -414,4 +414,9 @@ At a _conditional branch_, the new location is only known _after its execution_
 Possible solutions [[COS_lecture06.pdf#page=45|L6 page 45]]
 - **Branch-prediction**
 	- Let the CPU attempt to guess the result of a branch.
-	- 
+	- Use knowledge - E.g. a branch _backwards_ will often be _chosen in favor_ of a branch _forward_
+		- Think while- and for-loop
+- **Branch-cache**
+	- Save the first instructions in the _two separate branches_ in a _special cache_ so they can load quickly into the pipeline
+
+## Cache
