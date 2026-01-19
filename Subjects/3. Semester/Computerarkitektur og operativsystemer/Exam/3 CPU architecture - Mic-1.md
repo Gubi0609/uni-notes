@@ -488,3 +488,6 @@ For a full overview of the (at least listed) operations within IJVM see [[COS_le
 For examples on IJVM code in the MAL (Micro Assembly Language) see [[COS_lecture05.pdf|L5]].
 
 ## Register
+A register is built up of _n_ D flip-flop's where _n_ is the desired bit register.
+
+So an 8-bit register is built up of _8_ D flip-flops [[COS_lecture03.pdf#page=8|L3 page 8]]
