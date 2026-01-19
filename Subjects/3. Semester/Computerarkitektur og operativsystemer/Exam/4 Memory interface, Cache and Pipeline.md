@@ -306,3 +306,8 @@ TOS = MDR; wr; goto(MBR1) // Update stack in TOS and memory
 ```
 
 Much simpler as we can see, and with no need to increment PC.
+
+## Mic-3
+The _Mic-2_ is already a significant improvement over Mic-1, but is still _sequential_
+- Is puts _registers onto its buses_, waits for the _ALU and shifter_ to process, and the _writes_ the results back to the registers.
+- The only _parallel_ part is the **IFU**
