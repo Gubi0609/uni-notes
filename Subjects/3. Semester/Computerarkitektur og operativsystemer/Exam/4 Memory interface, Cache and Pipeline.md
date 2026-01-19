@@ -218,6 +218,14 @@ A latch can _save 1 bit_ [[COS_lecture03.pdf#page=7|L3 page 7]]
 Some chipsets (a.k.a. memory) might need _extra time to find the data_. [[COS_lecture03.pdf#page=21|L3 page 21]]
 - In these cases it is necessary to _wait_ e.g. via. a _wait-state generator-circuit_
 
+Wait states are essentially used to _synchronize_ the CPU (Central Processing Unit) with the slower peripherals like memory (or I/O devices) by making the CPU wait for processes to complete from these slower peripherals.
+- In our case, the memory is slow to transfer data to the _CPU_, so we introduce the _wait state_ as to not compute using corrupt data.
+
+Wait states are measured in _clock cycles_.
+- E.g. if a memory access requires _2 wait states_, the CPU waits _2 clock cycles_ before proceeding.
+
+Wait states impact performance, as the _CPU is _
+
 ## Address demultiplexer
 Is used when different chips _use the same address-block_ (like with 16-bit memory before) [[COS_lecture03.pdf#page=23|L3 page 23]]
 
