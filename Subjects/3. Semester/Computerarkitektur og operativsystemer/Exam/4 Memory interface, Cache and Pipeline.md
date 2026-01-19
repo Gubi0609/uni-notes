@@ -71,7 +71,9 @@ We do the same method as before, but turning a number negative requires _two ste
 2. Add 1 to the result
 $$-N=11001101+01=11001110$$
 #### Excess $2^{m-1}=128$ [[COS_lecture01.pdf#page=28|L1 page 28]]
-We represent a number like the sum of the number itself and $2^{m-1}$ in this case, we have $m=8$ 
+We represent a number like the sum of the number itself and $2^{m-1}$ in this case, we have $m=8$ so $2^7=128$.
+_Is the same as twos complement with inverted MSB_
+$$-N=01001110$$
 
 ## Gates
 A gate can calculate different functions with _binary input_ (high 1, low 0) [[COS_lecture01.pdf#page=38|L1 page 38]]
@@ -129,3 +131,11 @@ There is also a _carry in_, that is used when coupling multiple _ALUs_ for more 
 ### 8-bit ALU [[COS_lecture01.pdf#page=61|L1 page 61]]
 Multiple ALUs can be coupled together to form for example an 8-bit ALU by combining 8 ALUs.
 
+## Memory
+Memory can be split in to _two categories_ [[COS_lecture03.pdf#page=4|L3 page 4]]
+- _Volatile_ (**RAM**)
+- _Non-volatile_ (**ROM**)
+
+A register is built up of _latches_. [[COS_lecture03.pdf#page=5|L3 page 5]]
+- Constructed of two _NOR_ gates interconnected
+- Has one input _D_ connected to bot
