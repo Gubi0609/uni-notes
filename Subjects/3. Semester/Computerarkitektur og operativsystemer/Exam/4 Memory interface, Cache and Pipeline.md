@@ -448,7 +448,22 @@ The _contents_ of each cache is _also in the higher level cache_
 	- **Spatial locality:** Addresses with _numerical resemblance_ has _great likelihood_ of getting accessed
 	- **Temporal locality:** _Great likelihood_ of accessing addresses, that have _just been accessed_.
 
+### Cache lines [[COS_lecture06.pdf#page=53|L6 page 53]]
+- Primary memory is _split into blocks_ with a _set size_.
+	- These blocks are called **cache lines**
+- Lines are _numerated_ after each other. Each line contains the _set byte size_
+	- E.g. for _64-byte size_
+	- **Line 0:** byte 0 - 63
+	- **Line 1:** byte 64 - 127
+	- etc.
+- _Cache-controller_ checks if memory is _in cache_ or in pr
+
 ### Accesstime
 The accesstime can be calculated as follows
 $$\text{Accesstime}=c+(1-h)m$$
 where _c_ is the time to _collect from cache_, _m_ er time to _collect from memory_, and _h_ is _hit-ratio_.
+E.g.
+- $c=5$ ns
+- $m=60$ ns
+- $h=0.9$
+$$\text{Accesstime}=5\text{ ns}+(1-0.9)\cdot 60\text{ ns}=11 \text{ ns}$$
