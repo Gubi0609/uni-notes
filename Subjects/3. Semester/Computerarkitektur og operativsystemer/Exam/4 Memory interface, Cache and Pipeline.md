@@ -500,6 +500,11 @@ So say we wanted to look up som data (_cache lookup_). We would send a request u
 - Would lead to a _collision_ making _performance very low_
 - Can be _solved by compiler_
 
-### N Way-Set Associative Caches [[COS_lecture06.pdf#page=57|L6 page 57]]
+### N-Way Set-Associative Caches [[COS_lecture06.pdf#page=57|L6 page 57]]
 Our problem from [[4 Memory interface, Cache and Pipeline#Direct-Mapped Cache|Direct-Mapped Cache]] can be solved by using _two or more lines in each entry_
 - When placing _new_ data, replace the _Least Recently Used_ (LRU) data.
+
+Relatively unusual to see _above 4_-way set since
+- It requires more bookkeeping
+- This makes LRU _infeasible_
+- Does __
