@@ -487,3 +487,12 @@ Direct-mapped cache os the _simplest_ type of cache [[COS_lecture06.pdf#page=55|
 - **LINE** (11 bit) - Indicates _which entry_ (cache line) holds the data
 - **WORD** (3 bit) - Indicates _which word_ is referred to within the cache line
 - **BYTE** (2 bit) - Indicates what _byte_ in that word is referred to
+
+So say we wanted to look up som data (_cache lookup_). We would send a request using _memory address_ to our _cache_
+- The _LINE_ field points to a specific _cache entry_
+- The _Tag_ in the cache entry is compared with the _TAG_ from our sent memory address
+- If the _Valid_ bit is set and the _Tags_ match, we have _cache hit_ and the data is _retrieved from cache_
+	- If not, we have a _cache miss_ and must retrieve the data from _main memory_.
+
+#### Problem [[COS_lecture06.pdf#page=56|L6 page 56]]
+- Address with a _whole_ $2^{16}$ between them
