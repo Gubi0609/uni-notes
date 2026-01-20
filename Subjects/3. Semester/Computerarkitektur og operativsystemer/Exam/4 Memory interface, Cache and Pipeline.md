@@ -359,7 +359,7 @@ _Mic-3_ one has _four phases_, **no phase 2**. [[COS_lecture06.pdf#page=32|L6 pa
 
 #### Latency versus bandwidth
 With the time for each phase being $T=2$ ns and there being _5 phases_, one instruction takes
-$$T=\cdot n=2\text{ ns}\cdot 5=10\text{ ns}$$
+$$T\cdot n=2\text{ ns}\cdot 5=10\text{ ns}$$
 which is the _latency_
 
 Every phase takes _2 ns_, which means an instruction is done _every second ns_.
