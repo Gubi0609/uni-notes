@@ -500,6 +500,13 @@ So say we wanted to look up som data (_cache lookup_). We would send a request u
 - Would lead to a _collision_ making _performance very low_
 - Can be _solved by compiler_
 
+### Fully Associative Mapping
+As compared to _Direct-Mapped Cache_, where a cache line corresponded to an entry, _Fully Associative Mapping_ removes the need for this.
+- A Cache line (memory block) can be stored in _any entry_. Thus the _LINE_ field is removed.
+
+- This is however _slower_ than direct mapping and the _hardware cost_ is _higher_.
+- There is also _no conflict misses_ as compared to Direct Mapping, where it is _high_.
+
 ### N-Way Set-Associative Caches [[COS_lecture06.pdf#page=57|L6 page 57]]
 Our problem from [[4 Memory interface, Cache and Pipeline#Direct-Mapped Cache|Direct-Mapped Cache]] can be solved by using _two or more lines in each entry_
 - When placing _new_ data, replace the _Least Recently Used_ (LRU) data.
@@ -510,3 +517,5 @@ Relatively unusual to see _above 4_-way set since
 - High N does _not_ improve performance much over _low_ N.
 	- In some cases actually performs _worse_.
 
+### Analogy
+- **Direct Mapping:** Each car has a _fixed_ parking spot number
