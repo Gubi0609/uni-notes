@@ -482,3 +482,8 @@ Direct-mapped cache os the _simplest_ type of cache [[COS_lecture06.pdf#page=55|
 - **Data** (32 byte) - The actual data for the entry
 
 **Memory address** [[COS_lecture06.pdf#page=55|L6 page 55]]
+- A _memory address_ used to _access specific_ data contains
+- **TAG** (16 bit) - Corresponds to the _tag_ entry above
+- **LINE** (11 bit) - Indicates _which entry_ holds the data
+- **WORD** (3 bit) - Indicates _which word_ is referred to
+- **BYTE** (2 bit) - Indicates what _byte_ in that word is referred to
