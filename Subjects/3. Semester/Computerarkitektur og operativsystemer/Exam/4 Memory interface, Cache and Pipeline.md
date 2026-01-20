@@ -456,7 +456,7 @@ The _contents_ of each cache is _also in the higher level cache_
 	- **Line 0:** byte 0 - 63
 	- **Line 1:** byte 64 - 127
 	- etc.
-- _Cache-controller_ checks if memory is _in cache_ or in pr
+- _Cache-controller_ checks if memory is _in cache_ or in primary memory, and _acts upon this_.
 
 ### Accesstime
 The accesstime can be calculated as follows
@@ -467,3 +467,11 @@ E.g.
 - $m=60$ ns
 - $h=0.9$
 $$\text{Accesstime}=5\text{ ns}+(1-0.9)\cdot 60\text{ ns}=11 \text{ ns}$$
+### Direct-Mapped Cache
+Direct-mapped cache os the _simplest_ type of cache [[COS_lecture06.pdf#page=55|L6 page 55]]
+- Each line (_entry_) holds _one cache line from memory_
+	- E.g. 
+	- _32-byte size_ cache lines
+	- _2048 entries_
+	- $\Rightarrow 2048\cdot 32\text{ bytes} = 64$ KB
+- 
