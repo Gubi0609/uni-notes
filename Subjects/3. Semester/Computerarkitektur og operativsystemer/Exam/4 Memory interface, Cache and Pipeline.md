@@ -3,10 +3,10 @@
 - [x] Mic-3
 - [x] Instruction Fetch Unit
 - [ ] Instruction overlap
-- [ ] Pipeline hazards
-	- [ ] Structural hazards
-	- [ ] Data hazards
-	- [ ] Control hazards
+- [x] Pipeline hazards
+	- [x] Structural hazards
+	- [x] Data hazards
+	- [x] Control hazards
 - [ ] Associative mapped Cache
 - [ ] Direct mapped Cache
 - [ ] N-way Set associative mapped Cache
@@ -420,3 +420,4 @@ Possible solutions [[COS_lecture06.pdf#page=45|L6 page 45]]
 	- Save the first instructions in the _two separate branches_ in a _special cache_ so they can load quickly into the pipeline
 
 ## Cache
+The primary memory is _much slower_ than the CPU. [[COS_lecture06.pdf#page]]
