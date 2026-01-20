@@ -474,4 +474,11 @@ Direct-mapped cache os the _simplest_ type of cache [[COS_lecture06.pdf#page=55|
 	- _32-byte size_ cache lines
 	- _2048 entries_
 	- $\Rightarrow 2048\cdot 32\text{ bytes} = 64$ KB
-- 
+
+**Entry** [[COS_lecture06.pdf#page=55|L6 page 55]]
+- An _entry_ in direct mapped cache contains the following
+- **Valid** bit - Is the data valid?
+- **Tag** (16-bit) - 
+- **Data** (32 byte) - The actual data for the entry
+
+**Memory address** [[COS_lecture06.pdf#page=55|L6 page 55]]
