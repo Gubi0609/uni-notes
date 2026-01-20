@@ -444,4 +444,11 @@ The _contents_ of each cache is _also in the higher level cache_
 **Location principle** [[COS_lecture06.pdf#page=50|L6 page 50]]
 - A program does not access memory randomly.
 - _The next operation_ or the next _data_ is often _nearby the current_.
-- 
+- When a word is accessed, it and _some of its neighbors_ will be _moved_ from memory to _cache_
+	- **Spatial locality:** Addresses with _numerical resemblance_ has _great likelihood_ of getting accessed
+	- **Temporal locality:** _Great likelihood_ of accessing addresses, that have _just been accessed_.
+
+### Accesstime
+The accesstime can be calculated as follows
+$$\text{Accesstime}=c+(1-h)m$$
+where _c_ is the time to _collect from cache_, _m_ er time to _collect from memory_, and _h_ is _hit-ratio_.
