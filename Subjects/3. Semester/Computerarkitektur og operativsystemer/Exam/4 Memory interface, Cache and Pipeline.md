@@ -495,4 +495,11 @@ So say we wanted to look up som data (_cache lookup_). We would send a request u
 	- If not, we have a _cache miss_ and must retrieve the data from _main memory_.
 
 #### Problem [[COS_lecture06.pdf#page=56|L6 page 56]]
-- Address with a _whole_ $2^{16}$ between them
+- Address with a _whole_ $2^{16}$ between them will be placed in the _same entry_ because of same _LINE_ value
+	- Since TAG is 16 bits and used to identify which "group" to look in.
+- Would lead to a _collision_ making _performance very low_
+- Can be _solved by compiler_
+
+### N Way-Set Associative Caches [[COS_lecture06.pdf#page=57|L6 page 57]]
+Our problem from [[4 Memory interface, Cache and Pipeline#Direct-Mapped Cache|Direct-Mapped Cache]] can be solved by using _two or more lines in each entry_
+- When placing _new_ data, replace the _Least Recently Used_ (LRU) data.
