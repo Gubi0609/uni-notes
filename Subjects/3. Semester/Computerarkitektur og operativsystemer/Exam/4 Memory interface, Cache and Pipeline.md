@@ -428,8 +428,20 @@ The primary memory is _much slower_ than the CPU. [[COS_lecture06.pdf#page=47|L6
 - We thus have a _combination_ of _fast cache_ on CPU and _slow primary memory_.
 
 We have _multiple caches_ [[COS_lecture06.pdf#page=48|L6 page 48]]
-- One _on CPU chip_
-- One _on CPU package_
-- One _on processor board_ next to main memory
+- **L1:** One _on CPU chip_
+- **L2:** One _on CPU package_
+- **L3:** One _on processor board_ next to main memory
 The _contents_ of each cache is _also in the higher level cache_
+- L1 $\subset$ L2 $\subset$ L3
+- They are a _subset_ of eachother.
+- But _all content_ on higher level cache is _not on lower level_ cache.
+
+**Main idea** [[COS_lecture06.pdf#page=50|L6 page 50]]
+- The _most used words_ from memory is stored _in cache_
+- CPU _looks first_ in cache when it needs a word.
+- If word is _not in cache_, CPU looks in memory
+
+**Location principle** [[COS_lecture06.pdf#page=50|L6 page 50]]
+- A program does not access memory randomly.
+- _The next operation_ or the next _data_ is often _nearby the current_.
 - 
