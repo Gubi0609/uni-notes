@@ -1,6 +1,6 @@
 # Topics to be covered
-- [ ] Definition of processes and threads
-- [ ] Inter-process communication
+- [x] Definition of processes and threads
+- [x] Inter-process communication
 - [x] Thread models
 - [x] Process and thread scheduling
 - [x] CPU scheduling algorithms
