@@ -420,4 +420,7 @@ Possible solutions [[COS_lecture06.pdf#page=45|L6 page 45]]
 	- Save the first instructions in the _two separate branches_ in a _special cache_ so they can load quickly into the pipeline
 
 ## Cache
-The primary memory is _much slower_ than the CPU. [[COS_lecture06.pdf#page]]
+The primary memory is _much slower_ than the CPU. [[COS_lecture06.pdf#page=47|L6 page 47]]
+- When the CPU requests data from memory, it may have to _wait several cycles_.
+- As a **solution** we place _memory directly on the CPU_
+	- Bigger CPU memory → Larger CPU chip → More expensive
