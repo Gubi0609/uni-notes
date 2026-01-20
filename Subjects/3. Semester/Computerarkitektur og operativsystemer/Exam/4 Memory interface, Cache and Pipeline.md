@@ -7,7 +7,7 @@
 	- [x] Structural hazards
 	- [x] Data hazards
 	- [x] Control hazards
-- [ ] Associative mapped Cache
+- [x] Associative mapped Cache
 - [x] Direct mapped Cache
 - [x] N-way Set associative mapped Cache
 - [x] Memory interface 8-bit vs. 16-bit
@@ -518,4 +518,9 @@ Relatively unusual to see _above 4_-way set since
 	- In some cases actually performs _worse_.
 
 ### Analogy
+**Car** → Cache Line (Memory Block)
+**Parking Spot** → Cache _entry_
+
 - **Direct Mapping:** Each car has a _fixed_ parking spot number
+- **Fully Associative:** _Any_ car can park in _any_ spot
+- **Set-Associative:** Cars are assigned to a specific _section_, but can park in _any space within_ that section.

@@ -4,7 +4,7 @@
 - [x] Data path timing
 - [x] Control unit
 - [x] Microinstructions
-- [ ] Registers
+- [x] Registers
 - [x] IJVM architecture
 - [x] Instruction set design
 
