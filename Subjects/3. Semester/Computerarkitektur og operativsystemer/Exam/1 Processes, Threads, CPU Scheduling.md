@@ -280,8 +280,8 @@ First [[1 Processes, Threads, CPU Scheduling#Priority scheduling COS - lecture 8
 Two approaches for Multi core CPU scheduling
 
 #### Asymmetric multiprocessing
-_One_ processor handles the scheduling, I/O processing etc., i.e. system adminstration.
-Other processors are response for _only_ user code
+_One_ processor handles the scheduling, I/O processing etc., i.e. system administration.
+Other processors are responsible for _only_ user code
 
 #### Symmetric multiprocessing (SMP)
 Each processor is self-scheduling, but can either have a _common_ ready queue or its _own_ private ready queue.
