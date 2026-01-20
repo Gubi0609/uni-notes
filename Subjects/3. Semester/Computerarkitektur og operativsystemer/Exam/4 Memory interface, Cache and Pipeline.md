@@ -422,5 +422,14 @@ Possible solutions [[COS_lecture06.pdf#page=45|L6 page 45]]
 ## Cache
 The primary memory is _much slower_ than the CPU. [[COS_lecture06.pdf#page=47|L6 page 47]]
 - When the CPU requests data from memory, it may have to _wait several cycles_.
-- As a **solution** we place _memory directly on the CPU_
+- As a **solution** we place fast _memory directly on the CPU_
 	- Bigger CPU memory → Larger CPU chip → More expensive
+	- Is called _**Cache**_
+- We thus have a _combination_ of _fast cache_ on CPU and _slow primary memory_.
+
+We have _multiple caches_ [[COS_lecture06.pdf#page=48|L6 page 48]]
+- One _on CPU chip_
+- One _on CPU package_
+- One _on processor board_ next to main memory
+The _contents_ of each cache is _also in the higher level cache_
+- 
