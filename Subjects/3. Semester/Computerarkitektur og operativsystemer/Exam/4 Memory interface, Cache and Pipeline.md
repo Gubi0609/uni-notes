@@ -2,7 +2,7 @@
 - [x] Mic-2
 - [x] Mic-3
 - [x] Instruction Fetch Unit
-- [ ] Instruction overlap
+- [x] Instruction overlap
 - [x] Pipeline hazards
 	- [x] Structural hazards
 	- [x] Data hazards
