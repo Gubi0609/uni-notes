@@ -140,7 +140,7 @@ The three components _communicate_ using an **address**-, **data**-, and **contr
 The general form of an instructions is
 **Opcode**, **Operand**, **...**, **Operand**
 
-The four most _simple_ instructions (used in microprocessors)
+The four most _simple_ instructions (used in microprocessors) are as follows
 
 When writing the _registers_ in the following, it is important to remember that the _program_ and _data_ are BOTH in memory at the same time, meaning that the memory addresses must be written correctly as to not treat a line of code as data. [[COS_lecture02.pdf#page=30|L2 page 30]]
 
