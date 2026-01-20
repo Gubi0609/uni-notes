@@ -458,7 +458,7 @@ _MIR_ has the following structure
 - Is on _level 2_ (Instruction Set Architecture) (see top of page).
 
 [[3 CPU architecture - Mic-1#Mic-1|Mic-1]] uses the stack for _local variables_ [[COS_lecture04.pdf#page=32|L4 page 32]]
-To registers are used as _pointers_
+Two registers are used as _pointers_
 - **LV** (Local Variable) points to the _bottom_ local variabel in the current procedure
 - **SP** (Stack Pointer) points to the _top_ local variable in the current procedure
 
