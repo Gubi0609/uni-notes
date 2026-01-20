@@ -8,8 +8,8 @@
 	- [x] Data hazards
 	- [x] Control hazards
 - [ ] Associative mapped Cache
-- [ ] Direct mapped Cache
-- [ ] N-way Set associative mapped Cache
+- [x] Direct mapped Cache
+- [x] N-way Set associative mapped Cache
 - [x] Memory interface 8-bit vs. 16-bit
 
 # Relevant lectures
@@ -505,6 +505,8 @@ Our problem from [[4 Memory interface, Cache and Pipeline#Direct-Mapped Cache|Di
 - When placing _new_ data, replace the _Least Recently Used_ (LRU) data.
 
 Relatively unusual to see _above 4_-way set since
-- It requires more bookkeeping
+- As N gets larger, it requires more bookkeeping
 - This makes LRU _infeasible_
-- Does __
+- High N does _not_ improve performance much over _low_ N.
+	- In some cases actually performs _worse_.
+
