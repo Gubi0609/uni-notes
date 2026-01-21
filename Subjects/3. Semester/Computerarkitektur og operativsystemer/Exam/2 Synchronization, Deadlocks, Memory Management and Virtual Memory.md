@@ -293,7 +293,7 @@ Take the example from above, but give $T_2$ 3 more resources for its _current ne
 
 #### Claim edge [[COS - lecture 10 - Itslearning.pdf#page=19|L10 page 19]]
 A claim edge indicates, that a thread $T_i$ may request resource $R_j$ _at some time in the future_.
-When thread $T_i$ requests resource $R_j$, the _claim edge_ sis converted to a _request edge_.
+When thread $T_i$ requests resource $R_j$, the _claim edge_ it's converted to a _request edge_.
 Similarly, when a resource $R_j$ is _released_ by $T_i$, the _assignment edge_, is reconverted to a _claim edge_.
 
 Resources must be claimed _beforehand_ in the system. That is, before thread $T_i$ starts executing, _all_ its claim edges must already be made.
