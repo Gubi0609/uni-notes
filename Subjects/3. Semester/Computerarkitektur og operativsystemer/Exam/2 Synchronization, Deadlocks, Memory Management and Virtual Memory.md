@@ -676,7 +676,7 @@ We have until now assumed that all main memory is created equally. On _NUMA_ sys
 _The OS must take into account the CPU affiliation of processes_
 
 ## Thrashing
-High paging activity is called _paging_ [[COS - lecture 12 - Itslearning.pdf#page=31|L12 page 31]]
+High paging activity is called _thrashing_ [[COS - lecture 12 - Itslearning.pdf#page=31|L12 page 31]]
 This occurs when a process spends _almost all its time_ on page replacement.
 
 > Processes leave the ready queue for CPU and queue up for the paging device.
