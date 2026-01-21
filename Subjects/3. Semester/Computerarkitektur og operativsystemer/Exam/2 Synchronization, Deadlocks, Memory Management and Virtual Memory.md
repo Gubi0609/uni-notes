@@ -91,7 +91,7 @@ The _critical-section problem_ is then to design a protocol, that the processes 
 Must satisfy the following three requirements
 - **Mutual exclusion**: If a process $P_i$ is in its _critical section_ then **no other** process may be in their critical sections, that manipulate _the same variable_ as $P_i$.
 - **Progress**: If _no process_ is currently in its critical section, and _some processes_ are trying to enter theirs, then the system **must** eventually allow one of them to proceed. The selection **cannot be delayed forever**. Only processes that are _not_ in their _remainder section_ (doing anything else than entering, using or exiting shared critical section) should be involved in the decision-making process. This ensures, that processes not using the critical section, are not blocking entry into the critical section.
-- **Bounded Waiting**: The must me a _limit_ on how many times other processes can enter their critical section _after_ a process has requested entry and _before_ that request is granted. (**No starvation**)
+- **Bounded Waiting**: There must be a _limit_ on how many times other processes can enter their critical section _after_ a process has requested entry and _before_ that request is granted. (**No starvation**)
 
 ### Semaphores
 A _Semaphore_ is an **integer variable** that is accessed only through two standard _atomic_ operations: `wait()` and `signal()`.
@@ -146,7 +146,7 @@ Some semaphore implementations use _busy waiting_ where a process repeatedly che
 #### Semaphore limits
 Semaphores have a fixed range (e.g. 0 to N). If a process releases a semaphore more times than it acquires it, the semaphore's value can exceed its limit, leading to undefined behavior.
 
-### Monitors [[COS - lecture 9 - Itslearning.pdf#page=16±L9 page 16]]
+### Monitors [[COS - lecture 9 - Itslearning.pdf#page=16|L9 page 16]]
 A **monitor** is a programming construct consisting of
 - **Shared data** (variables, data structures)
 - **Procedures** (or methods) that operate on the shared data
