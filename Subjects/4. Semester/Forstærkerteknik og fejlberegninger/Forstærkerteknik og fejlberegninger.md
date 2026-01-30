@@ -38,7 +38,7 @@
 > 	- Opbygge, modificere og måle på et grundlæggende elektronisk kredsløb og her sammenholde specificerede, beregnede og målte data.
 
 ## Resources
-- Books / Links
+- [[Electronics 2nd Edition.pdf]]
 ## Lectures
 ``` dataview
 list

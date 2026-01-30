@@ -28,7 +28,7 @@ Udviklingsværktøjer til digitalt design:
 > 	- Design, implementering og dokumentation af kombinatorisk logik i programmerbar elektronik
 > 	- Design, implementering og dokumentation af sekventiel logik i programmerbar elektronik
 > 	- Design, implementering og dokumentation af synkrone tilstandsmaskiner
-> 	- Field Programable Gate Arrays (FPGAs)
+> 	- Field Programmable Gate Arrays (FPGAs)
 > 	- System on Chip (SoC)
 > 	- Det hardwarebeskrivende sprog VHDL
 > 	- Simuleringsmodeller
@@ -36,12 +36,13 @@ Udviklingsværktøjer til digitalt design:
 > - Færdigheder
 > 	- Anvende det har hardware beskrivende sprog VHDL til implementering af kombinatoriske og sekventielle digitale kredsløb i en FPGA 
 > 	- Designe og dokumentere en synkron tilstandsmaskine i en FPGA
-Verificere et digital design vha. af en simuleringsmodel 
-- Anvende IP-cores i forbindelse design af et digitalt system
+> 	- Verificere et digital design vha. af en simuleringsmodel 
+> 	- Anvende IP-cores i forbindelse design af et digitalt system
 > - Kompetencer
+> 	- Ud fra en given specifikation, kunne designe, dokumentere, simulere og implementere et digitalt system i en FPGA, der opfylder de stillede krav
 
 ## Resources
-- Books / Links
+- [[Free Range VHDL.pdf]]
 ## Lectures
 ``` dataview
 list
