@@ -5,8 +5,8 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ] Chapter 8 of [[Feedback Systems - An Introduction for Scientists and Engineers.pdf|the book]]
->- [ ] Chapter 11.1 - 11.3 of [[Feedback Systems - An Introduction for Scientists and Engineers.pdf|the book]]
+>- [ ] Chapter 9 of [[Feedback Systems - An Introduction for Scientists and Engineers.pdf|the book]]
+>- [ ] Chapter 12.1 - 12.2 & 12.4 of [[Feedback Systems - An Introduction for Scientists and Engineers.pdf|the book]]
 >- [ ] Videos on itsLearning
 
 > [!DANGER] EXERCISES
