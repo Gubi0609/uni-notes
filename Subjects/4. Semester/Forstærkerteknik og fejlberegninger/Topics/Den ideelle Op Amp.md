@@ -98,6 +98,12 @@ Da vi nu har både en _indgangsmodstand_ og _udgangsmodstand_ bevæger vi os væ
 > Hvad bliver den overordnede spændings- og strømforstærkning i dB?
 > 
 > Vi kan se at der i hver forstærker er en _spændingsdeler_ mellem $R_{o}$ og $R_i$.
+> Dermed har vi for den første forstærker
+> $$v_{i2}=A_1\cdot v_{i1}=11\cdot v_{i1}$$
+> Og da $R_{o1}=0\Omega$ er der ikke ligefrem en spændingsdeler der
+> $$v_{i3}=11\cdot(-10)\cdot v_{i1}$$
+> Her har vi dog en spændingsdeler mellem $R_{o2}$ og $R_{i3}$ så det må vi regne med i kredsløbet
+> $$v_o=v_{i3}\cdot $$
 
 ---
 #electronics 
