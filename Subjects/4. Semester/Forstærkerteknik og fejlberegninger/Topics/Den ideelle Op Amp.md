@@ -112,7 +112,13 @@ Da vi nu har både en _indgangsmodstand_ og _udgangsmodstand_ bevæger vi os væ
 > 
 > Dernæst må _current gain_ regnes.
 > Vi må starte med at finde $I_{i1}$. Til dette bruger vi [[Subjects/4. Semester/Forstærkerteknik og fejlberegninger/Topics/Ohms lov|Ohms lov]].
-> $$I_{i1}=\frac {v_{i1}}{R_{i1}}=\frac {v_{i1}}{100000\Omega}
+> $$I_{i1}=\frac {v_{i1}}{R_{i1}}=\frac {v_{i1}}{100000\Omega}$$
+> $I_o$ kan findes på samme måde
+> $$I_o=\frac{v_o}{R_L}=\frac {11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot v_{i1}}{1000\Omega}$$
+> Dermed må _current gain_ være
+> $$A_I=\frac {I_o}{I_{i1}}=\frac {\frac {11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot v_{i1}}{1000\Omega}}{\frac {v_{i1}}{100000\Omega}}$$
+> Da $v_{i1}$ står i både tæller og nævner går det ud med hinanden
+> $$A_I=\frac {11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot v_{i1}\cdot 100000\Omega}{v_{i1}\cdot 1000\Omega}=\frac {11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot 100000\Omega}{1000\Omega}$$
 
 ---
 #electronics 
