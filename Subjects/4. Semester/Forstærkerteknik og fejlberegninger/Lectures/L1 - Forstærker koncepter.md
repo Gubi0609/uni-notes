@@ -13,6 +13,7 @@
 
 ---
 # Relevant documents
+[[Forberedelse 1.pdf]]
 [[Lektion 1.pdf]]
 [[Opgaver 1.pdf]]
 
