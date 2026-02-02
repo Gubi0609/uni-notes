@@ -62,12 +62,13 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > $$V_o=-I_{in}\cdot R_1=-0.002 A\cdot 2000 \Omega =-4 V$$
 > b. **Negativ feedback med strømforsyning og positiv spændingsforsyning** 
 > Vi ved at strømmen på Op Ampens indgange skal være 0 A, derved ved vi at alt strømmen fra $I_{in}$ må løbe over $R_2$. Vi ved desuden at der er en 0 V forskel på de to indgange, så derfor må spændingen ved den negative indgang være 5 V.
-> Vi kan så finde spændingen over $R_2$ vha. strømmen, og $V_o$ må nødvendigvis være spændingen ved den negative indgang minus spændingen over $R_2$.
-> $$$$
+> Vi kan så finde spændingen over $R_2$ vha. strømmen, og $V_o$ må nødvendigvis være spændingen ved den negative indgang minus spændingen over $R_2$ (Da alt strømmen løber i gennem $R_2$ hvilket sidder i serie med $V_o$).
+> $$V_o=5 V-3000 \Omega\cdot0.001A=5 V-3 V=2V$$
 > c. **Negativ feedback med positiv spændingsforsyning**
 > Vi kan bruge ligningen fra **kredsløb 2** i forrige opgaver
 > $$V_o=\frac {R_1+R_2}{R_1}\cdot V_{in}=\frac {3000\Omega +4000\Omega}{4000\omega}\cdot 4 V=\frac 7 4 \cdot 4V=7 V$$
 > d. **Negativ feedback med strømforsyning ved $V_o$**
+> Da den positive indgangsspænding er 0 (går direkte til )
 > e. **Negativ feedback med positiv spændingsforsyning og spændingsforsyning på feedback loop**
 
 ---
