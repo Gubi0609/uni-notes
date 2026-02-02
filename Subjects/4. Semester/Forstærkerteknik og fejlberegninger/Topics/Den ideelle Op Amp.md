@@ -49,7 +49,11 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > De to ligninger kan nu sættes sammen
 > $$V_o=\frac {R_L}{R_x+R_L}\cdot\frac{R_1+R_2}{R_1}\cdot V_{in}$$
 > 6. **Negativ feedback med positiv indgangsspænding og modstand i parallel med $R_2$**
-> Vi laver igen den "fiktive" spændin
+> Vi laver igen den "fiktive" spænding fra Op Ampens udgang. Vi bruger desudne [[Kirschoffs current law]] til at beskrive strømmen i noden efter $R_x$. Vi ser desuden også at strømmen ud af den opad-gående ledning må være afhængig af $R_1+R_2$
+> $$\frac {V_1}{R_x}-\frac {V_o}{R_L}-\frac {V_o}{R_1+R_2}=0$$
+> Der er noget med ligesom i **2'eren** men så langt har jeg ikke regnet endnu.
+
+
 
 ---
 #electronics 
