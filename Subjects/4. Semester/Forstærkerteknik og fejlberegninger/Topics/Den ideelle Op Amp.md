@@ -54,7 +54,16 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > Der er noget med ligesom i **2'eren** men så langt har jeg ikke regnet endnu.
 
 > [!example]- Negativ feedback kredsløb (med værdier)
-> 
+> ![[Pasted image 20260202092823.png]]
+> a. **Negativ feedback med strømforsyning**
+> Vi gør brug af [[Kirschoffs current law]] igen til at analysere noden ved negativ indgang.
+> $$I_{in}+\frac {V_o}{R_1}=0$$
+> Vi kan så isolere $V_o$ og indsætte værdier
+> $$V_o=-I_{in}\cdot R_1=-2\text{[mA]}\cdot 2$$
+> b. **Negativ feedback med strømforsyning og positiv spændingsforsyning** 
+> c. **Negativ feedback med positiv spændingsforsyning**
+> d. **Negativ feedback med strømforsyning ved $V_o$**
+> e. **Negativ feedback med positiv spændingsforsyning og spændingsforsyning på feedback loop**
 
 ---
 #electronics 
