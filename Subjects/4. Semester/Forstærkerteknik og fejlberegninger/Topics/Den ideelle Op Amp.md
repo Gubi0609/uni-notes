@@ -53,7 +53,8 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > $$\frac {V_1}{R_x}-\frac {V_o}{R_L}-\frac {V_o}{R_1+R_2}=0$$
 > Der er noget med ligesom i **2'eren** men så langt har jeg ikke regnet endnu.
 
-
+> [!example]- Negativ feedback kredsløb (med værdier)
+> 
 
 ---
 #electronics 
