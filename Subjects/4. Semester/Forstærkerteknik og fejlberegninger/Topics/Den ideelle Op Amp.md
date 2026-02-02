@@ -7,7 +7,7 @@ For en ideel op amp som følgende
 ![[Pasted image 20260202084042.png]]
 
 Vil det gælde at output spændingen er
-## $$V_o=A_{OL}V_{id}$$
+## $$V_o=A_{OL}\cdot V_{id}$$
 hvor $A_{OL}$ er _gain open loop_
 
 Gain vil gå mod uendelig, hvis
@@ -78,11 +78,11 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > da den negative indgang så vil være
 > $$2 V+1 V=3 V$$
 
-# Kaskade kobling
+# Kaskadekobling
 ![[Pasted image 20260202100851.png]]
 
-Op Amps kan kaskade kobles for at få deres samlede gain.
-Man kan også udregne [[Subjects/4. Semester/Forstærkerteknik og fejlberegninger/Topics/Decibel|Decibel]] for sådan en kaskade
+Op Amps kan kaskadekobles for at få deres samlede gain.
+Man kan også udregne [[Subjects/4. Semester/Forstærkerteknik og fejlberegninger/Topics/Decibel|Decibel]] for sådan en kaskadekobling.
 
 ---
 #electronics 
