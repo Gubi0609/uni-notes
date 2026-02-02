@@ -118,7 +118,9 @@ Da vi nu har både en _indgangsmodstand_ og _udgangsmodstand_ bevæger vi os væ
 > Dermed må _current gain_ være
 > $$A_I=\frac {I_o}{I_{i1}}=\frac {\frac {11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot v_{i1}}{1000\Omega}}{\frac {v_{i1}}{100000\Omega}}$$
 > Da $v_{i1}$ står i både tæller og nævner går det ud med hinanden
-> $$A_I=\frac {11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot v_{i1}\cdot 100000\Omega}{v_{i1}\cdot 1000\Omega}=\frac {11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot 100000\Omega}{1000\Omega}$$
+> $$A_I=\frac {11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot v_{i1}\cdot 100000\Omega}{v_{i1}\cdot 1000\Omega}=\frac {11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot 100000\Omega}{1000\Omega}=-59313.73$$
+> 
+> Vi kan se at current gain (for dette kredsløb) er $A_I=A_v\cdot100$.
 
 ---
 #electronics 
