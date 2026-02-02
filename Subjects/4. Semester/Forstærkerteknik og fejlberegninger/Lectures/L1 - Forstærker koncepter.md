@@ -18,7 +18,7 @@
 [[Opgaver 1.pdf]]
 
 # Topics
-
+[[Den ideelle Op Amp]]
 
 # Notes
 
