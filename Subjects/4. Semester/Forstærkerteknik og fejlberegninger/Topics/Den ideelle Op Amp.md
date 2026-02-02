@@ -59,9 +59,12 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > Vi gør brug af [[Kirschoffs current law]] igen til at analysere noden ved negativ indgang.
 > $$I_{in}+\frac {V_o}{R_1}=0$$
 > Vi kan så isolere $V_o$ og indsætte værdier
-> $$V_o=-I_{in}\cdot R_1=-2\text{[mA]}\cdot 2$$
+> $$V_o=-I_{in}\cdot R_1=-0.002 A\cdot 2000 \Omega =-4 V$$
 > b. **Negativ feedback med strømforsyning og positiv spændingsforsyning** 
+> 
 > c. **Negativ feedback med positiv spændingsforsyning**
+> Vi kan bruge ligningen fra **kredsløb 2** i forrige opgaver
+> $$V_o=\frac {R_1+R_2}{R_1}\cdot V_{in}=\frac {3000\Omega +4000\Omega}{4000\omega}\cdot 4 V=\frac 7 4 \cdot 4V=7 V$$
 > d. **Negativ feedback med strømforsyning ved $V_o$**
 > e. **Negativ feedback med positiv spændingsforsyning og spændingsforsyning på feedback loop**
 
