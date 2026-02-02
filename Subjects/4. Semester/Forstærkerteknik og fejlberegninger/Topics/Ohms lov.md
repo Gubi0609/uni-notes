@@ -1,0 +1,1 @@
+## $$U=I\cdot R\Leftrightarrow I=\frac U R\Leftrightarrow R=\frac U I$$
