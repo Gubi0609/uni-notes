@@ -20,6 +20,9 @@ Dette kalder vi **modkoplingsprincippet
 
 For negativ feedback gælder [[Den ideelle Op Amp#Modkoplingsprincippet|modkoplingsprincippet]] også.
 
+Den positive og negative indgangsspænding vil via det negative feedback kredsløb prøve at stabilisere sig, således at de er ens
+## $$e_+=e_-$$
+
 $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 ## $$V_o=-\frac {R_2}{R_1}\cdot V_{in}$$
 
@@ -28,5 +31,8 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > 1. Kredsløb med negativ feedback og negativ $V_{in}$
 > $$V_o=-\frac{R_2}{R_1}\cdot V_{in}$$
 > 2. Kredsløb med negativ feedback og positiv $V_{in}$
-> $$$$
+> Vi ved at der skal være 0 V mellem positiv og negativ indgang. Vi kan derfor opstille $R_1$ og $R_2$ som en spændingsdeler mellem $V_o$ og GND
+> $$V=\frac {R_1}{R_1+R_2}\cdot V_o$$
+> Da vi som sagt har at positiv og negativ indgangsspænding er ens, må $V_{in}$ være lig med dette udtryk. Så kan vi bare isolere
+> $$V_{in}$$
 > 3. Kredsløb med negativ feedback og to negative $V_{in}$
