@@ -16,7 +16,8 @@
 [[Lesson01_arm.pdf]]
 
 # Topics
-
+[[ARM Architecture]]
+[[Tiva C Series]]
 
 # Notes
 
