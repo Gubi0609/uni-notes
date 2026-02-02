@@ -97,8 +97,7 @@ Da vi nu har både en _indgangsmodstand_ og _udgangsmodstand_ bevæger vi os væ
 > Find spændingsforstærkningen ($A_v = v_o /v_{i1}$) og strømforstærkningen ($A_i = i_o /i_{i1}$).
 > Hvad bliver den overordnede spændings- og strømforstærkning i dB?
 > 
-> Dermed bliver
-> $$v_{i2}=A_{v1}\cdot v_{i1}-R_{o1}\cdot$$
+> Vi kan se at der i hver forstærker er en _spændingsdeler_ mellem $R_{o}$ og $R_i$.
 
 ---
 #electronics 
