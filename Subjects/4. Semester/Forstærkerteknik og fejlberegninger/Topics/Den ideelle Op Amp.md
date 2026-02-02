@@ -106,7 +106,13 @@ Da vi nu har både en _indgangsmodstand_ og _udgangsmodstand_ bevæger vi os væ
 > $$v_o=11\cdot(-10)\cdot 5.5\cdot v_{i1}$$
 > Dette er dog ikke helt rigtigt, da der er en spændingdeler mellem $R_{o3}$ og $R_L$. Dette må vi tage højde for
 > $$v_o=11\cdot(-10)\cdot 5.5\cdot\frac {R_L}{R_{o3}+R_L}\cdot v_{i1}=11\cdot(-10)\cdot 5.5\cdot\frac {1000\Omega}{20\Omega+1000\Omega}\cdot v_{i1}$$
-> D
+> $$v_0=11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}\cdot v_{i1}$$
+> Dermed bliver _voltage gain_
+> $$A_v=\frac {v_o}{v_{i1}}=11\cdot(-10)\cdot 5.5\cdot\frac {100}{102}=-593.14$$
+> 
+> Dernæst må _current gain_ regnes.
+> Vi må starte med at finde $I_{i1}$. Til dette bruger vi [[Subjects/4. Semester/Forstærkerteknik og fejlberegninger/Topics/Ohms lov|Ohms lov]].
+> $$I_{i1}=\frac {v_{i1}}{R_{i1}}=\frac {v_{i1}}{100000\Omega}
 
 ---
 #electronics 
