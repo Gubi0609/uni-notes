@@ -84,5 +84,14 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 Op Amps kan kaskadekobles for at få deres samlede gain.
 Man kan også udregne [[Subjects/4. Semester/Forstærkerteknik og fejlberegninger/Topics/Decibel|Decibel]] for sådan en kaskadekobling.
 
+# Forstærker model
+![[Pasted image 20260202101622.png]]
+
+En Op Amp (forstærker) kan ses på ovenstående måde.
+
+Da vi nu har både en _indgangsmodstand_ og _udgangsmodstand_ bevæger vi os væk fra den ideelle Op Amp
+
+> [!example]- Kaskadekoblet forstærker model
+
 ---
 #electronics 
