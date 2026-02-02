@@ -2,7 +2,7 @@
 # Indmad
 ![[Pasted image 20260202083957.png]]
 
-# Modkoplingsprincippet
+# Modkoblingsprincippet
 For en ideel op amp som følgende
 ![[Pasted image 20260202084042.png]]
 
@@ -13,12 +13,12 @@ hvor $A_{OL}$ er _gain open loop_
 Gain vil gå mod uendelig, hvis
 ## $$V_{id}=e_+-e_-=0\Leftrightarrow e_+=e_-$$
 
-Dette kalder vi **modkoplingsprincippet
+Dette kalder vi **modkoblingsprincippet
 
-## Negativ feedback
+# Negativ feedback
 ![[Pasted image 20260202084253.png]]
 
-For negativ feedback gælder [[Den ideelle Op Amp#Modkoplingsprincippet|modkoplingsprincippet]] også.
+For negativ feedback gælder [[Den ideelle Op Amp#Modkoblingsprincippet|modkoblingsprincippet]] også.
 
 Den positive og negative indgangsspænding vil via det negative feedback kredsløb prøve at stabilisere sig, således at de er ens
 ## $$e_+=e_-$$
@@ -77,6 +77,12 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > $$V_o=1 V$$
 > da den negative indgang så vil være
 > $$2 V+1 V=3 V$$
+
+# Kaskade kobling
+![[Pasted image 20260202100851.png]]
+
+Op Amps kan kaskade kobles for at få deres samlede gain.
+Man kan også udregne [[Subjects/4. Semester/Forstærkerteknik og fejlberegninger/Topics/Decibel|Decibel]] for sådan en kaskade
 
 ---
 #electronics 
