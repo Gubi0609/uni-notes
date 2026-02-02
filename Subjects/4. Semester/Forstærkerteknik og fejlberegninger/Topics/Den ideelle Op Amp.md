@@ -72,6 +72,11 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > Dermed er
 > $$V_o=0V$$
 > e. **Negativ feedback med positiv spændingsforsyning og spændingsforsyning på feedback loop**
+> Da der skal være den samme spænding på begge indgange, må der også være 3 V på den negative indgang.
+> Da vi har en 2 V forsyning på den negative indgang forbundet på feedback loopet, må
+> $$V_o=1 V$$
+> da den negative indgang så vil være
+> $$2 V+1 V=3 V$$
 
 ---
 #electronics 

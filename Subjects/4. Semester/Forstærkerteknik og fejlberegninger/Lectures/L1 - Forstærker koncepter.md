@@ -19,6 +19,7 @@
 
 # Topics
 [[Den ideelle Op Amp]]
+[[Subjects/4. Semester/Forstærkerteknik og fejlberegninger/Topics/Decibel|Decibel]]
 
 # Notes
 
