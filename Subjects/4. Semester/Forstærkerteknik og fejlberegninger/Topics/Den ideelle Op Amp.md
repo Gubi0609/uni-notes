@@ -20,12 +20,13 @@ Dette kalder vi **modkoplingsprincippet
 
 For negativ feedback gælder [[Den ideelle Op Amp#Modkoplingsprincippet|modkoplingsprincippet]] også.
 
-$V_o$ for et negativt feedback kredsløb er
-## $$V_o=\frac {R_1+R_2}{R_1}\cdot V_{in}$$
+$V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
+## $$V_o=-\frac {R_2}{R_1}\cdot V_{in}$$
 
 > [!example]- Negativ feedback kredsløb
 > ![[Pasted image 20260202084548.png]]
 > 1. Kredsløb med negativ feedback og negativ $V_{in}$
-> $$V_o=\frac {R_1$$
+> $$V_o=-\frac{R_2}{R_1}\cdot V_{in}$$
 > 2. Kredsløb med negativ feedback og positiv $V_{in}$
+> $$$$
 > 3. Kredsløb med negativ feedback og to negative $V_{in}$
