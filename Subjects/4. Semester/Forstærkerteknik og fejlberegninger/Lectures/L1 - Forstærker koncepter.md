@@ -13,7 +13,8 @@
 
 ---
 # Relevant documents
-
+[[Lektion 1.pdf]]
+[[Opgaver 1.pdf]]
 
 # Topics
 
