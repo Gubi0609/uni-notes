@@ -34,5 +34,7 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > Vi ved at der skal være 0 V mellem positiv og negativ indgang. Vi kan derfor opstille $R_1$ og $R_2$ som en spændingsdeler mellem $V_o$ og GND
 > $$V=\frac {R_1}{R_1+R_2}\cdot V_o$$
 > Da vi som sagt har at positiv og negativ indgangsspænding er ens, må $V_{in}$ være lig med dette udtryk. Så kan vi bare isolere
-> $$V_{in}$$
+> $$V_{in}=\frac {R_1}{R_1+R_2}\cdot V_o\Leftrightarrow V_o=\frac {R_1+R_2}{R_1}V_{in}$$
 > 3. Kredsløb med negativ feedback og to negative $V_{in}$
+> Da vi har et kredsløb med negativ $V_{in}$ kan vi forsøge at lægge dem sammen.
+> 
