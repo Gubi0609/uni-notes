@@ -102,8 +102,11 @@ Da vi nu har både en _indgangsmodstand_ og _udgangsmodstand_ bevæger vi os væ
 > $$v_{i2}=A_1\cdot v_{i1}=11\cdot v_{i1}$$
 > Og da $R_{o1}=0\Omega$ er der ikke ligefrem en spændingsdeler der
 > $$v_{i3}=11\cdot(-10)\cdot v_{i1}$$
-> Her har vi dog en spændingsdeler mellem $R_{o2}$ og $R_{i3}$ så det må vi regne med i kredsløbet
-> $$v_o=v_{i3}\cdot $$
+> Her har vi heller ikke en spændingsdeler mellem $R_{o2}$ og $R_{i3}$ (da $R_{o2}=0\Omega$)
+> $$v_o=11\cdot(-10)\cdot 5.5\cdot v_{i1}$$
+> Dette er dog ikke helt rigtigt, da der er en spændingdeler mellem $R_{o3}$ og $R_L$. Dette må vi tage højde for
+> $$v_o=11\cdot(-10)\cdot 5.5\cdot\frac {R_L}{R_{o3}+R_L}\cdot v_{i1}=11\cdot(-10)\cdot 5.5\cdot\frac {1000\Omega}{20\Omega+1000\Omega}\cdot v_{i1}$$
+> D
 
 ---
 #electronics 
