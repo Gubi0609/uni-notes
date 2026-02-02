@@ -36,5 +36,8 @@ $V_o$ for et negativt feedback kredsløb med negativ indgangsspænding er
 > Da vi som sagt har at positiv og negativ indgangsspænding er ens, må $V_{in}$ være lig med dette udtryk. Så kan vi bare isolere
 > $$V_{in}=\frac {R_1}{R_1+R_2}\cdot V_o\Leftrightarrow V_o=\frac {R_1+R_2}{R_1}V_{in}$$
 > 3. Kredsløb med negativ feedback og to negative $V_{in}$
-> Da vi har et kredsløb med negativ $V_{in}$ kan vi forsøge at lægge dem sammen.
-> 
+> Vi bruger Kirschoffs current law der siger at summen af strømme ind i en node (samling) er ligmed summen af strømme ud af en node. Vi kigger på negativ indgang som noden
+> $$\frac {V_1}{R_1}+\frac {V_2}{R_2}+\frac {V_o}{R_f}=0\Leftrightarrow V_o=-R_f\left(\frac {V_1}{R_1}+\frac {V_2}{R_2} \right)$$
+> 4. Negativ feedback med modstand mellem indgange
+> 5. 
+
