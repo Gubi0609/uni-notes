@@ -20,6 +20,8 @@ The assignment has the following requirements
 The full assignment can be read in [[Subjects/4. Semester/Indlejret programmering/PDFs/Assignment1.pdf|Assignment1.pdf]].
 
 ---
+
+# Basics
 I'll start with the basics by implementing basic logic to change through the colors and enabling the pins correctly.
 
 ## Colors
@@ -66,3 +68,28 @@ We will use this to refer to later, to set the color on the LED.
 
 ## Pins
 Next we will enable the pins
+
+We will start by enabling power and clock control to Port F, which will be the one we are using.
+
+```c
+int dummy; // Dummy to do a few cycles
+
+// Enable GPIO port F (used for RBG and switch) by turning on power to the port
+SYSCTL_RCGC2_R = SYSCTL_RCGC2_GPIOF; // System Control Run-Mode Clock Gating Control
+
+// Do a dummy read to insert a few cycles after enabling the peripheral
+dummy = SYSCTL_RCGC2_R;
+
+// Enable RGB (PF1 - PF3) as output and switch (PF4) as input
+GPIO_PORTF_DIR_R = 0x0E; // 0000 1110 - Bit 1 is output, bit 0 is input
+
+// Enable pull-up resister for switch (PF4)
+GPIO_PORTF_PUR_R = 0x10; // 0001 0000
+
+// Enable digital function for PF1 - PF4
+GPIO_PORTF_DEN_R = 0x1E;
+```
+
+
+# ISR
+Husk at du har ændret i 
