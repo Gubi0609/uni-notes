@@ -200,4 +200,136 @@ We now perform an OR operation on `NVIC_EN0_R` to _enable_ bit 30, and activate 
 	- And so on.
 
 ## Interrupt Service Routine (ISR)
-Now that we have set up alle the basics for enabling ISR, we will need to define 
+Now that we have set up alle the basics for enabling ISR, we will need to define _what to do_.
+
+Before defining our ISR, we will need to let the system know, that it should be used for interrupts from port F.
+
+For this, we navigate to `tm4c123gh6pm_startup_ccs.c` which is a startup file created by Code Composer Studio (CCS).
+
+```c
+void ResetISR(void);
+static void NmiSR(void);
+static void FaultISR(void);
+static void IntDefaultHandler(void);
+
+// Custom ISR handler
+void GPIOF_Handler(void);
+```
+
+We can see her the _declaration_ of a bunch of default fault handlers.
+- We add the declaration of our custom interrupt handler to this.
+
+
+We next need to let the system know to use this on port F.
+We navigate further down the file to find the _vector table_ that defines what interrupts from parts of the system will use to handle the interrupt.
+
+```c
+#pragma DATA_SECTION(g_pfnVectors, ".intvecs")
+
+void (* const g_pfnVectors[])(void) =
+
+{
+
+(void (*)(void))((uint32_t)&__STACK_TOP),
+
+// The initial stack pointer
+
+ResetISR, // The reset handler
+
+NmiSR, // The NMI handler
+
+FaultISR, // The hard fault handler
+
+IntDefaultHandler, // The MPU fault handler
+
+IntDefaultHandler, // The bus fault handler
+
+IntDefaultHandler, // The usage fault handler
+
+0, // Reserved
+
+0, // Reserved
+
+0, // Reserved
+
+0, // Reserved
+
+IntDefaultHandler, // SVCall handler
+
+IntDefaultHandler, // Debug monitor handler
+
+0, // Reserved
+
+IntDefaultHandler, // The PendSV handler
+
+IntDefaultHandler, // The SysTick handler
+
+IntDefaultHandler, // GPIO Port A
+
+IntDefaultHandler, // GPIO Port B
+
+IntDefaultHandler, // GPIO Port C
+
+IntDefaultHandler, // GPIO Port D
+
+IntDefaultHandler, // GPIO Port E
+
+IntDefaultHandler, // UART0 Rx and Tx
+
+IntDefaultHandler, // UART1 Rx and Tx
+
+IntDefaultHandler, // SSI0 Rx and Tx
+
+IntDefaultHandler, // I2C0 Master and Slave
+
+IntDefaultHandler, // PWM Fault
+
+IntDefaultHandler, // PWM Generator 0
+
+IntDefaultHandler, // PWM Generator 1
+
+IntDefaultHandler, // PWM Generator 2
+
+IntDefaultHandler, // Quadrature Encoder 0
+
+IntDefaultHandler, // ADC Sequence 0
+
+IntDefaultHandler, // ADC Sequence 1
+
+IntDefaultHandler, // ADC Sequence 2
+
+IntDefaultHandler, // ADC Sequence 3
+
+IntDefaultHandler, // Watchdog timer
+
+IntDefaultHandler, // Timer 0 subtimer A
+
+IntDefaultHandler, // Timer 0 subtimer B
+
+IntDefaultHandler, // Timer 1 subtimer A
+
+IntDefaultHandler, // Timer 1 subtimer B
+
+IntDefaultHandler, // Timer 2 subtimer A
+
+IntDefaultHandler, // Timer 2 subtimer B
+
+IntDefaultHandler, // Analog Comparator 0
+
+IntDefaultHandler, // Analog Comparator 1
+
+IntDefaultHandler, // Analog Comparator 2
+
+IntDefaultHandler, // System Control (PLL, OSC, BO)
+
+IntDefaultHandler, // FLASH Control
+
+GPIOF_Handler, // GPIO Port F
+
+IntDefaultHandler, // GPIO Port G
+
+IntDefaultHandler, // GPIO Port H
+
+IntDefaultHandler, // UART2 Rx and Tx
+// 
+```
