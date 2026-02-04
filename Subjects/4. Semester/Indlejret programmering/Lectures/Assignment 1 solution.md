@@ -128,7 +128,9 @@ A while loop is implemented again, which just runs and blocks indefinitely while
 
 ### Setting LED
 The LED is set from the [[Assignment 1 solution#Colors|colors]] defined before.
-- We start by _clearing_ the LEDs by performing an AND operation on PORTF_DATA and `~0x0E
+- We start by _clearing_ the LEDs by performing an AND operation on PORTF_DATA and `~0x0E` which is 0000 1110 inverted (so 1111 0001). By doing this, we turn off PF1 - PF3.
+- Next we perform an OR operation on this, and the color of our choice (decided by the count).
+- This effectively sets the bits of the PF1 - PF3 to the ones of the color.
 
 # ISR
 Husk at du har ændret i startup filen.
