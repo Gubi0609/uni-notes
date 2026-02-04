@@ -168,7 +168,7 @@ The program must implement a 0-7 counter
 - The counter must be able to count up ~~and down~~
 - The counter should proceed on step with a button push
 
-So in short: The same criteria as [[Assignment 1 solution#Basics|before]], but now with smarter logic.
+So in short: The same criteria as [[Assignment 1 solution#Basics|the Basics]], but now with smarter logic.
 
 ## Setting switch
 We want to activate the ISR at a falling edge of our switch (being pushed).
@@ -322,14 +322,15 @@ This is relatively simple. We first define a volatile integer `i` to be used for
 
 The interrupt flag for PF4 will need to be done first, as to make room for future interrupts.
 
-Next we increment cnt. We will however need to keep it within 0-7. This is simply done be performing _modulus_ division. The clever reader will notice that this step is the same as [[Assignment 1 solution#If statement|before]] when we covered the basics.
+Next we increment cnt. We will however need to keep it within 0-7. This is simply done be performing _modulus_ division. The clever reader will notice that this step is the same as when we covered the [[Assignment 1 solution#If statement|basics]].
 
 Lastly we implement the debounce delay by blocking the processor for a short time by increment `i` from 0 to 100.000.
 
 To add to this, we also wait for the button to be released. This is not essential, and will be removed later on to make room for further functionality.
 
 ## New while loop
-The while loop from [[Assignment 1 solution#While loop|before]] can now be shortened to only include LED control
+The while loop from [[Assignment 1 solution#While loop|the Basics]] can now be shortened to only include LED control
+
 ```c
 // Loop forever
 while(1) {
