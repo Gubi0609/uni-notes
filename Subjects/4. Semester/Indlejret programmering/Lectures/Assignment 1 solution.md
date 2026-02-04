@@ -20,6 +20,9 @@ The assignment has the following requirements
 The full assignment can be read in [[Subjects/4. Semester/Indlejret programmering/PDFs/Assignment1.pdf|Assignment1.pdf]].
 
 ---
+This article covers the buildup of the system starting with the basics and building on top of that to lastly implement all the criteria from above.
+
+For the full code, see my GitHub
 
 # Basics
 I'll start with the basics by implementing basic logic to change through the colors and enabling the pins correctly.
@@ -285,7 +288,6 @@ void GPIOF_Handler(void) {
 	// Simple debounce delay
 	for(i = 0; i < 100000; i++);
 	
-	
 	// Wait for button release as to not increment indefinitely
 	while(!(GPIO_PORTF_DATA_R & 0x10));
 }
@@ -295,4 +297,20 @@ This is relatively simple. We first define a volatile integer `i` to be used for
 
 The interrupt flag for PF4 will need to be done first, as to make room for future interrupts.
 
-Next we increment cnt. We will however need to keep it within 0-7. This is simply done be performing _modulus_ division. The clever reader will notice that this step i the same as [[Assignment 1 solution#If statement|before]] when we covered the basics.
+Next we increment cnt. We will however need to keep it within 0-7. This is simply done be performing _modulus_ division. The clever reader will notice that this step is the same as [[Assignment 1 solution#If statement|before]] when we covered the basics.
+
+Lastly we implement the debounce delay by blocking the processor for a short time by increment `i` from 0 to 100.000.
+
+To add to this, we also wait for the button to be released. This is not essential, and will be removed later on to make room for further functionality.
+
+## New while loop
+The while loop from [[Assignment 1 solution#While loop|before]] can now be shortened to only include LED control
+```c
+// Loop forever
+while(1) {
+	// Set LED color (clear LED bits and set new color)	
+	GPIO_PORTF_DATA_R = (GPIO_PORTF_DATA_R & ~0x0E) | colors[cnt];
+}
+```
+
+And the system will now react as before, but now with the button logic handled by an Interrupt Service Routine.
