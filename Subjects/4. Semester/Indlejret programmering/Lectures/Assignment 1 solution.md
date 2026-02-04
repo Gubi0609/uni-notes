@@ -71,7 +71,13 @@ Next we will enable the pins
 
 We will start by enabling power and clock control to Port F, which will be the one we are using.
 
-mere mere mere
+Next a dummy is used to implement a few dummy cycles in order to give Port F time to initialize.
+
+The _direction_ of the Port F pins are set as either output or input depending on their bit value.
+
+A pull-up resistor is enabled for the switch, meaning it will be HIGH when not pressed an LOW when pressed.
+
+Lastly digital function is enabled for PF1 - PF4 meaning we can actually code with them.
 
 ```c
 int dummy; // Dummy to do a few cycles
@@ -92,6 +98,8 @@ GPIO_PORTF_PUR_R = 0x10; // 0001 0000
 GPIO_PORTF_DEN_R = 0x1E;
 ```
 
+## While loop
+Lastly, we implement an infinite while loop, that read
 
 # ISR
 Husk at du har ændret i startup filen.
