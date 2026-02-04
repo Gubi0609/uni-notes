@@ -292,3 +292,7 @@ void GPIOF_Handler(void) {
 ```
 
 This is relatively simple. We first define a volatile integer `i` to be used for a simple debounce delay later on.
+
+The interrupt flag for PF4 will need to be done first, as to make room for future interrupts.
+
+Next we increment cnt. We will however need to keep it within 0-7. This is simply done be performing _modulus_ division. The clever reader will notice that this step i the same as [[Assignment 1 solution#If statement|before]] when we covered the basics.
