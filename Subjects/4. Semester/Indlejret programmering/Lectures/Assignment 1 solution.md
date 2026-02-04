@@ -133,4 +133,4 @@ The LED is set from the [[Assignment 1 solution#Colors|colors]] defined before.
 - This effectively sets the bits of the PF1 - PF3 to the ones of the color.
 
 # ISR
-Husk at du har ændret i startup filen.
+Husk at du har ændret i startup filen. og nogle værdier i headerfilen bruges til reference.
