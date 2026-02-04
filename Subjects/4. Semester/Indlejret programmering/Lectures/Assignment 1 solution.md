@@ -62,6 +62,10 @@ int colors[8] = {off, green, blue, cyan, red, yellow, magenta, white};
 
 // Current count = current color
 int cnt = 0;
+
+// To be used in later development
+bool dirUp = true;
+bool autoMode = false;
 ```
 
 We will use this to refer to later, to set the color on the LED.
@@ -182,8 +186,18 @@ NVIC_EN0_R |= (1 << (INT_GPIOF - INT_GPIOA));
 
 We enable interrupts in NVIC from port F from this simple line.
 
-`NVIC_EN0_R` is a 32-bit hardware register that enables interrupts in the processor. By setting a bit to _1_ we enable that interrupt.
+`NVIC_EN0_R` is a 32-bit (0 - 31) hardware register that enables interrupts in the processor. By setting a bit to _1_ we enable that interrupt.
 
 Interrupt assignments start from _16_ with `INT_GPIOA`. If we want to find `INT_GPIOF`'s placement in NVIC, we will need to subtract `INT_GPIOA` from the placement of `INT_GPIOF`. Since GPIO Port A is _16_ and GPIO Port F is _46_ the result will be _30_.
 
-Since we want to now enable NVIC _30_ we will need to shift bit _1_ 
+Since we want to now enable NVIC _30_ we will need to shift bit 1 _left_ by 30 bits.
+- Remember LSB is to the right, and MSB is to the left.
+
+We now perform an OR operation on `NVIC_EN0_R` to _enable_ bit 30, and activate Port F.
+- Sidenote: If a bit _higher_ than 31 needs to be activated, `NVIC_EN1_R` can be used and so on for higher bits.
+	- `NVIC_EN1_R`: 32-63
+	- `NVIC_EN2_R`: 64-95
+	- And so on.
+
+## Interrupt Service Routine (ISR)
+Now that we have set up alle the basics for enabling ISR, we will need to define 
