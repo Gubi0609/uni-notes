@@ -175,3 +175,15 @@ _NVIC_ is used by the ARM Cortex-M4 for interrupt management hardware. It manage
 - Prioritizes and manages all peripheral interrupts
 - Automatically saves/restores processor context when entering/leaving an ISR
 - Supports _nested interrupts_ (higher priority can preempt lower priority)
+
+```c
+NVIC_EN0_R |= (1 << (INT_GPIOF - INT_GPIOA));
+```
+
+We enable interrupts in NVIC from port F from this simple line.
+
+`NVIC_EN0_R` is a 32-bit hardware register that enables interrupts in the processor. By setting a bit to _1_ we enable that interrupt.
+
+Interrupt assignments start from _16_ with `INT_GPIOA`. If we want to find `INT_GPIOF`'s placement in NVIC, we will need to subtract `INT_GPIOA` from the placement of `INT_GPIOF`. Since GPIO Port A is _16_ and GPIO Port F is _46_ the result will be _30_.
+
+Since we want to now enable NVIC _30_ we will need to shift bit _1_ 
