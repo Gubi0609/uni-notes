@@ -161,4 +161,12 @@ By setting the IS_R value for PF4 to 0 (including the rest, as they are not used
 
 We next set _IBE_ of PF4 to 0, meaning that we disable _Interrupt Both Edges_.
 
-Instead we enable _IEV_ on
+Instead we enable _IEV_ on falling edge by setting the value for PF4 to 0.
+- If we set it to 1, we would be detecting on _rising edge_.
+
+We clear any pending interrupts on PF4 _before_ enabling the pin for Interrupts. This is done by setting _ICR_ of PF4 to 1.
+
+Lastly, PF4 is enabled - or _unmasked_ - by setting the _IM_ value of PF4 to 1 (enable).
+
+## Enable interrupts from Port F in NVIC
+To actually _use_ the interrupts from port F, we will need to enable interrupt signals from this in the NVIC (Nested Vector Interrupt Controller).
