@@ -77,7 +77,7 @@ The _direction_ of the Port F pins are set as either output or input depending o
 
 A pull-up resistor is enabled for the switch, meaning it will be HIGH when not pressed an LOW when pressed.
 
-Lastly digital function is enabled for PF1 - PF4 meaning we can actually code with them.
+Lastly digital function is enabled for Port F 1 - Port F 4 (**PF1 - PF4**) meaning we can actually code with them.
 
 ```c
 int dummy; // Dummy to do a few cycles
@@ -139,10 +139,26 @@ We now want to move the button logic to an Interrupt Service Routine (**ISR**).
 This requires a few steps and changing in the startup file for the specific chip (TM4C123GH6PM). This is provided by the CCS program.
 
 ## Setting switch
-We want to activate the ISR at a falling edge of our switch (being pushed). This is done from one simple line
+We want to activate the ISR at a falling edge of our switch (being pushed).
 ```c
 // Set switch (PF4) as edge-sensitive
 GPIO_PORTF_IS_R = 0x00;
+
+// Trigger controlled by IEV
+GPIO_PORTF_IBE_R = 0x00;
+
+// Falling Edge Trigger
+GPIO_PORTF_IEV_R = 0x00;
+
+// Clear any Prior Interrupts
+GPIO_PORTF_ICR_R = 0x10;
+
+// Unmask interrupts for PF4
+GPIO_PORTF_IM_R = 0x10;
 ```
 
-By setting the value for PF4 to 0 (including the rest, as they are not used for this), we set it to edge-sensitive.
+By setting the IS_R value for PF4 to 0 (including the rest, as they are not used for this), we set it to edge-sensitive instead of level-sensitive (HIGH/LOW).
+
+We next set _IBE_ of PF4 to 0, meaning that we disable _Interrupt Both Edges_.
+
+Instead we enable _IEV_ on
