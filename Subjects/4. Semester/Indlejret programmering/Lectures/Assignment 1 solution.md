@@ -134,3 +134,15 @@ The LED is set from the [[Assignment 1 solution#Colors|colors]] defined before.
 
 # ISR
 Husk at du har ændret i startup filen. og nogle værdier i headerfilen bruges til reference.
+
+We now want to move the button logic to an Interrupt Service Routine (**ISR**).
+This requires a few steps and changing in the startup file for the specific chip (TM4C123GH6PM). This is provided by the CCS program.
+
+## Setting switch
+We want to activate the ISR at a falling edge of our switch (being pushed). This is done from one simple line
+```c
+// Set switch (PF4) as edge-sensitive
+GPIO_PORTF_IS_R = 0x00;
+```
+
+By setting the value for PF4 to 0 (including the rest, as they are not used for this), we set it to edge-sensitive.
