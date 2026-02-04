@@ -218,6 +218,7 @@ void GPIOF_Handler(void);
 
 We can see her the _declaration_ of a bunch of default fault handlers.
 - We add the declaration of our custom interrupt handler to this.
+- We will NOT define it just yet.
 
 
 We next need to let the system know to use this on port F.
@@ -225,111 +226,69 @@ We navigate further down the file to find the _vector table_ that defines what i
 
 ```c
 #pragma DATA_SECTION(g_pfnVectors, ".intvecs")
-
 void (* const g_pfnVectors[])(void) =
-
 {
+	(void (*)(void))((uint32_t)&__STACK_TOP),
+	
+	// The initial stack pointer
+	
+	ResetISR, // The reset handler
+	
+	NmiSR, // The NMI handler
+	
+	FaultISR, // The hard fault handler
+	
+	IntDefaultHandler, // The MPU fault handler
+	
+	IntDefaultHandler, // The bus fault handler
+	
+	IntDefaultHandler, // The usage fault handler
+	
+	0, // Reserved
+	
+	// ...
+	
+	IntDefaultHandler, // System Control (PLL, OSC, BO)
+	IntDefaultHandler, // FLASH Control
+	
+	// Custom handler
+	GPIOF_Handler, // GPIO Port F
+	
+	IntDefaultHandler, // GPIO Port G
+	IntDefaultHandler, // GPIO Port H
+	
+	// ...
 
-(void (*)(void))((uint32_t)&__STACK_TOP),
-
-// The initial stack pointer
-
-ResetISR, // The reset handler
-
-NmiSR, // The NMI handler
-
-FaultISR, // The hard fault handler
-
-IntDefaultHandler, // The MPU fault handler
-
-IntDefaultHandler, // The bus fault handler
-
-IntDefaultHandler, // The usage fault handler
-
-0, // Reserved
-
-0, // Reserved
-
-0, // Reserved
-
-0, // Reserved
-
-IntDefaultHandler, // SVCall handler
-
-IntDefaultHandler, // Debug monitor handler
-
-0, // Reserved
-
-IntDefaultHandler, // The PendSV handler
-
-IntDefaultHandler, // The SysTick handler
-
-IntDefaultHandler, // GPIO Port A
-
-IntDefaultHandler, // GPIO Port B
-
-IntDefaultHandler, // GPIO Port C
-
-IntDefaultHandler, // GPIO Port D
-
-IntDefaultHandler, // GPIO Port E
-
-IntDefaultHandler, // UART0 Rx and Tx
-
-IntDefaultHandler, // UART1 Rx and Tx
-
-IntDefaultHandler, // SSI0 Rx and Tx
-
-IntDefaultHandler, // I2C0 Master and Slave
-
-IntDefaultHandler, // PWM Fault
-
-IntDefaultHandler, // PWM Generator 0
-
-IntDefaultHandler, // PWM Generator 1
-
-IntDefaultHandler, // PWM Generator 2
-
-IntDefaultHandler, // Quadrature Encoder 0
-
-IntDefaultHandler, // ADC Sequence 0
-
-IntDefaultHandler, // ADC Sequence 1
-
-IntDefaultHandler, // ADC Sequence 2
-
-IntDefaultHandler, // ADC Sequence 3
-
-IntDefaultHandler, // Watchdog timer
-
-IntDefaultHandler, // Timer 0 subtimer A
-
-IntDefaultHandler, // Timer 0 subtimer B
-
-IntDefaultHandler, // Timer 1 subtimer A
-
-IntDefaultHandler, // Timer 1 subtimer B
-
-IntDefaultHandler, // Timer 2 subtimer A
-
-IntDefaultHandler, // Timer 2 subtimer B
-
-IntDefaultHandler, // Analog Comparator 0
-
-IntDefaultHandler, // Analog Comparator 1
-
-IntDefaultHandler, // Analog Comparator 2
-
-IntDefaultHandler, // System Control (PLL, OSC, BO)
-
-IntDefaultHandler, // FLASH Control
-
-GPIOF_Handler, // GPIO Port F
-
-IntDefaultHandler, // GPIO Port G
-
-IntDefaultHandler, // GPIO Port H
-
-IntDefaultHandler, // UART2 Rx and Tx
-// 
+};
 ```
+
+We can see a section of the vector here with examples of how it is defined.
+
+As we can see, a lot of the interrupts, including the Ports use the default interrupt handler, `IntDefaultHandler`.
+- We change the handler of GPIO Port F to our custom handler, `GPIOF_Handler`.
+
+
+We now go back to `main.c` to _define_ our ISR
+```c
+// The Interrupt Service Routine (ISR)
+void GPIOF_Handler(void) {
+	
+	// For debounce
+	volatile int i;
+	
+	// Clear the interrupt flag for PF4 (must be done first)
+	GPIO_PORTF_ICR_R = 0x10;
+	
+	// Increment counter to cycle through colors
+	cnt = (cnt + 1) % 8; // Cycle through 0-7
+	
+	// Simple debounce delay
+	for(i = 0; i < 100000; i++);
+	
+	
+	// Wait for button release as to not increment indefinitely
+	while(!(GPIO_PORTF_DATA_R & 0x10));
+}
+```
+
+This is relatively simple. We first define a volatile integer `i` to be used for a simple debounce delay later on.
