@@ -170,3 +170,8 @@ Lastly, PF4 is enabled - or _unmasked_ - by setting the _IM_ value of PF4 to 1 (
 
 ## Enable interrupts from Port F in NVIC
 To actually _use_ the interrupts from port F, we will need to enable interrupt signals from this in the NVIC (Nested Vector Interrupt Controller).
+
+_NVIC_ is used by the ARM Cortex-M4 for interrupt management hardware. It manages the following:
+- Prioritizes and manages all peripheral interrupts
+- Automatically saves/restores processor context when entering/leaving an ISR
+- Supports _nested interrupts_ (higher priority can preempt lower priority)
