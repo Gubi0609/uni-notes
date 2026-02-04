@@ -99,7 +99,29 @@ GPIO_PORTF_DEN_R = 0x1E;
 ```
 
 ## While loop
-Lastly, we implement an infinite while loop, that read
+Lastly, we implement an infinite while loop, that reads the value of PF4 and increments cnt if PF4 is pressed.
+
+It will also display the current count on the RBG LED
+
+```c
+// Loop forever
+while(1){
+// Check if switch is pressed (active LOW with pull-up)
+	if (!(GPIO_PORTF_DATA_R & 0x10)) {
+		cnt = (cnt + 1) % 8; // Cycle through 0-7
+		
+	// Wait for button release as to not increment indefinitely
+	while(!(GPIO_PORTF_DATA_R & 0x10));
+	}
+
+	// Set LED color (clear LED bits and set new color)
+	GPIO_PORTF_DATA_R = (GPIO_PORTF_DATA_R & ~0x0E) | colors[cnt];
+
+}
+```
+
+### If statement
+We check if the data register from Port F has the switch enabled
 
 # ISR
 Husk at du har ændret i startup filen.
