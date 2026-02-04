@@ -116,12 +116,19 @@ while(1){
 
 	// Set LED color (clear LED bits and set new color)
 	GPIO_PORTF_DATA_R = (GPIO_PORTF_DATA_R & ~0x0E) | colors[cnt];
-
 }
 ```
 
 ### If statement
-We check if the data register from Port F has the switch enabled
+We check if the data register from Port F has the switch enabled. This done by performing an AND operation on PORTF_DATA and 0001 0000, where the _1_ represents PF4 (being the 5th bit from the right (0, 1, 2, 3, 4)).
+
+If the button is pressed, cnt is incremented, and we perform modulus division on it to keep it within 0-7
+
+A while loop is implemented again, which just runs and blocks indefinitely while the button is pressed.
+
+### Setting LED
+The LED is set from the [[Assignment 1 solution#Colors|colors]] defined before.
+- We start by _clearing_ the LEDs by performing an AND operation on PORTF_DATA and `~0x0E
 
 # ISR
 Husk at du har ændret i startup filen.
