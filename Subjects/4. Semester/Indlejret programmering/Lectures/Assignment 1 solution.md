@@ -20,13 +20,24 @@ The assignment has the following requirements
 The full assignment can be read in [[Subjects/4. Semester/Indlejret programmering/PDFs/Assignment1.pdf|Assignment1.pdf]].
 
 ---
-This article covers the buildup of the system starting with the basics and building on top of that to lastly implement all the criteria from above.
-
-For the full code, see my GitHub
+This article covers the buildup of the system starting with the basics and building on top of that to lastly implement all the criteria from above. For the full code, see my [GitHub](https://github.com/Gubi0609/EMP-Assignment1).
 
 # Basics
 I'll start with the basics by implementing basic logic to change through the colors and enabling the pins correctly.
 
+Criteria covered in this section:
+The program must implement a 0-7 counter
+- The current count must be represented by a color on the on-board RGB LED
+    - 0: Off
+    - 1: Green
+    - 2: Blue
+    - 3: Cyan
+    - 4: Red
+    - 5: Yellow
+    - 6: Magenta
+    - 7: White
+- The counter must be able to count up ~~and down~~
+- The counter should proceed on step with a button push
 ## Colors
 The RBG LED which will be used for this can be found on port F of the GPIO. The LED pins are as follows
 - Red: PF1
@@ -140,10 +151,24 @@ The LED is set from the [[Assignment 1 solution#Colors|colors]] defined before.
 - This effectively sets the bits of the PF1 - PF3 to the ones of the color.
 
 # ISR
-Husk at du har ændret i startup filen. og nogle værdier i headerfilen bruges til reference.
-
 We now want to move the button logic to an Interrupt Service Routine (**ISR**).
 This requires a few steps and changing in the startup file for the specific chip (TM4C123GH6PM). This is provided by the CCS program.
+
+Criteria covered in this section:
+The program must implement a 0-7 counter
+- The current count must be represented by a color on the on-board RGB LED
+    - 0: Off
+    - 1: Green
+    - 2: Blue
+    - 3: Cyan
+    - 4: Red
+    - 5: Yellow
+    - 6: Magenta
+    - 7: White
+- The counter must be able to count up ~~and down~~
+- The counter should proceed on step with a button push
+
+So in short: The same criteria as [[Assignment 1 solution#Basics|before]], but now with smarter logic.
 
 ## Setting switch
 We want to activate the ISR at a falling edge of our switch (being pushed).
