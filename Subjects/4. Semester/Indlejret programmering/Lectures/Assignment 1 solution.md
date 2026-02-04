@@ -71,6 +71,8 @@ Next we will enable the pins
 
 We will start by enabling power and clock control to Port F, which will be the one we are using.
 
+mere mere mere
+
 ```c
 int dummy; // Dummy to do a few cycles
 
@@ -92,4 +94,4 @@ GPIO_PORTF_DEN_R = 0x1E;
 
 
 # ISR
-Husk at du har ændret i 
+Husk at du har ændret i startup filen.
