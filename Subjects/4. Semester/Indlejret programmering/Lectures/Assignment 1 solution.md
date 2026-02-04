@@ -22,10 +22,47 @@ The full assignment can be read in [[Subjects/4. Semester/Indlejret programmerin
 ---
 I'll start with the basics by implementing basic logic to change through the colors and enabling the pins correctly.
 
+## Colors
 The RBG LED which will be used for this can be found on port F of the GPIO. The LED pins are as follows
 - Red: PF1
 - Blue: PF2
 - Green: PF3
 
 We can use this to cycle through the colors by enabling the RBG pins, which will combine to the colors.
-The colors, the corresponding count, and their corresponding HIGH/LOW pins can be seen 
+The colors, the corresponding count, and their corresponding HIGH/LOW pins can be seen in the following table.
+
+| Counter Value | PF1 (red) | PF2 (blue) | PF3 (green) | Color   |
+| ------------- | --------- | ---------- | ----------- | ------- |
+| 0             | 0         | 0          | 0           | Off     |
+| 1             | 0         | 0          | 1           | Green   |
+| 2             | 0         | 1          | 0           | Blue    |
+| 3             | 0         | 1          | 1           | Cyan    |
+| 4             | 1         | 0          | 0           | Red     |
+| 5             | 1         | 0          | 1           | Yellow  |
+| 6             | 1         | 1          | 0           | Magenta |
+| 7             | 1         | 1          | 1           | White   |
+
+When implementing this in code, it is important to remember, that we will be setting the values for _all_ Port F pins (bit 0-7). Since we only want to set PF1 - PF3, we will leave the rest as zero.
+
+```c
+// Initialize colors {PF1, PF2, PF3} = {r, b, g}
+const int off = 0x00; // 0000 0000
+const int green = 0x08; // 0000 1000
+const int blue = 0x04; // 0000 0100
+const int cyan = 0x0C; // 0000 1100
+const int red = 0x02; // 0000 0010
+const int yellow = 0x0A; // 0000 1010
+const int magenta = 0x06; // 0000 0110
+const int white = 0x0E; // 0000 1110
+
+// Color pointer vector to point to the colors
+int colors[8] = {off, green, blue, cyan, red, yellow, magenta, white};
+
+// Current count = current color
+int cnt = 0;
+```
+
+We will use this to refer to later, to set the color on the LED.
+
+## Pins
+Next we will enable the pins
