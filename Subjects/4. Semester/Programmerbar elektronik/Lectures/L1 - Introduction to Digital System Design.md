@@ -46,6 +46,5 @@ Power Dissipation is a f(speed, area, technology) function.
 
 
 
-
 ---
 #lecture 
