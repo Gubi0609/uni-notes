@@ -491,4 +491,64 @@ NVIC_SYS_PRI3_R |= (NVIC_SYS_PRI3_TICK_M & (SYSTICK_PRIORITY<<NVIC_SYS_PRI3_TICK
 We will firstly need to clear pending SysTick interrupts. This is done on line 4, using the `NVIC_INT_CTRL_UNPEND_SYST` we defined before.
 
 Secondly we set the priority of SysTick to 16, by first clearing it and then setting it.
-- Clearing is simply done by inverting the SysTick Exception Priority and removing that sequence from `N
+- Clearing is simply done by inverting the SysTick Exception Priority and removing that sequence from `NVIC_SYS_PRI3_R`.
+
+## SysTick Interrupt
+Since we enabled the SysTick interrupt bit in [[Assignment 1 solution#SysTick CTRL|SysTick CTRL]] we will need to implement an ISR. This is done in much the same way as when we implemented it for the GPIO pin [[Assignment 1 solution#Interrupt Service Routine (ISR)|before]].
+
+We navigate to `tm4c123gh6pm_startup_ccs.c` to declare our custom handler.
+
+```c
+void ResetISR(void);
+static void NmiSR(void);
+static void FaultISR(void);
+static void IntDefaultHandler(void);
+
+// Custom ISR handler
+void GPIOF_Handler(void);
+void SysTick_Handler(void);
+```
+
+We now need to let the system know, to use this on SysTick. We again navigate to the vector table further down the startup file.
+
+```c
+#pragma DATA_SECTION(g_pfnVectors, ".intvecs")
+void (* const g_pfnVectors[])(void) =
+{
+	(void (*)(void))((uint32_t)&__STACK_TOP),
+	
+	// The initial stack pointer
+	
+	ResetISR, // The reset handler
+	
+	NmiSR, // The NMI handler
+	
+	FaultISR, // The hard fault handler
+	
+	IntDefaultHandler, // The MPU fault handler
+	
+	IntDefaultHandler, // The bus fault handler
+	
+	IntDefaultHandler, // The usage fault handler
+	
+	0, // Reserved
+	
+	// ...
+	
+	0, // Reserved
+	IntDefaultHandler, // The PendSV handler
+	
+	// Custom Handler
+	SysTick_Handler, // The SysTick handler
+	
+	IntDefaultHandler, // GPIO Port A
+	IntDefaultHandler, // GPIO Port B
+	
+	// ...
+
+};
+```
+
+And we then go back into `main.c` to define our ISR
+
+This is a simple counter for now, but will be exa
