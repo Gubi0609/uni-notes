@@ -45,6 +45,13 @@ Power Dissipation is a f(speed, area, technology) function.
 	- $E = \frac {0.6 V} {0.06 \mu m} = 10 V/\mu m$
 
 
+|     | AB  | AB  | AB  | AB  |
+| --- | --- | --- | --- | --- |
+|     | 00  | 01  | 10  | 11  |
+| 0   | 0   | 0   | 1   | 1   |
+| 1   | 0   | 1   | 0   | 1   |
+
+
 
 ---
 #lecture 
