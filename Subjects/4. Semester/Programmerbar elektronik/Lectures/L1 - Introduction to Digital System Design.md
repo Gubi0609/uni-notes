@@ -21,6 +21,19 @@
 
 # Notes
 An FPGA operates using _Logic Gates_.
+- Compared to CPU and GPU:
+	- CPU does everything _sequential_ and different cores handle different tasks
+	- GPU does everything _parallel_ and handle everything together
+		- High power consumption
+	- FPGA are coded to perform specific tasks.
+
+While a CPU and GPU might run while no tasks are available (idle) and consume power, an FPGA will just wait.
+
+- CPU → Fast
+- GPU → Larger tasks
+- FPGA → Precise and fast
+
+
 
 
 ---
