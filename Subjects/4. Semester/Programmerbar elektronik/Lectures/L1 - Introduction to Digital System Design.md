@@ -18,6 +18,7 @@
 
 # Topics
 [[Moore's Law]]
+[[K-map]]
 
 # Notes
 An FPGA operates using _Logic Gates_.
@@ -52,7 +53,7 @@ Power Dissipation is a f(speed, area, technology) function.
 | 1   | 0   | 1   | 0   | 1   |
 
 ![[Pasted image 20260205135729.png]]
-$Output = A*Sel + A*NOTSel$
+$Output = A*Sel + B*NOTSel$
 
 ---
 #lecture 
