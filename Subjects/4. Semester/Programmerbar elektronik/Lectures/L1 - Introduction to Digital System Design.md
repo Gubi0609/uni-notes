@@ -5,7 +5,7 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ] Install Vivado before lesson
+>- [x] Install Vivado before lesson
 >- [ ] Chapter 2 -3 of [[Free Range VHDL.pdf|the book]]
 
 > [!DANGER] EXERCISES
