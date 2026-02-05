@@ -33,7 +33,15 @@ While a CPU and GPU might run while no tasks are available (idle) and consume po
 - GPU → Larger tasks
 - FPGA → Precise and fast
 
-The size of a transistor (e.g. 5 nm) is defined 
+The size of a transistor (e.g. 5 nm) is defined by the size of the transistors _channel_ [[Lecture 1.pdf#page=12|L1 page 12]]. The size defines how many transistors we can pack onto a chip.
+
+Moore's law
+Every second year the number of transistors in a chip _doubles_
+- Frequency also doubles
+- With more transistors, we can have more functions to perform tasks
+	- This however needs more management and more efficient design methods
+
+
 
 
 ---
