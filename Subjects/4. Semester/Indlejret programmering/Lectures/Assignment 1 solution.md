@@ -551,4 +551,27 @@ void (* const g_pfnVectors[])(void) =
 
 And we then go back into `main.c` to define our ISR
 
-This is a simple counter for now, but will be exa
+This is a simple counter for now, but will be expanded upon, when we add the button functionality later.
+
+```c
+// SysTick ISR - toggles LED every 200ms
+void SysTick_Handler(void) {
+	if (dirUp) cnt = (cnt + 1) % 8; // Increment within 0-7
+	else cnt = (cnt + 7) % 8; // Decrement within 0-7
+}
+```
+
+## While loop
+The while loop remains the same as before.
+
+```c
+// Loop forever
+while(1) {
+	// Set LED color (clear LED bits and set new color)	
+	GPIO_PORTF_DATA_R = (GPIO_PORTF_DATA_R & ~0x0E) | colors[cnt];
+}
+```
+
+Now the button will still increment if pressed, but the timed counter runs automatically on startup. _We will need to change this_.
+
+# Expanded button functionality
