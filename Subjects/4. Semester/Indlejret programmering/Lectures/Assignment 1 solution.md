@@ -23,8 +23,8 @@ The full assignment can be read in [[Subjects/4. Semester/Indlejret programmerin
 This article covers the buildup of the system starting with the basics and building on top of that to lastly implement all the criteria from above. For the full code, see my [GitHub](https://github.com/Gubi0609/EMP-Assignment1).
 
 # Topics covered
-- Interrupts
-- Counters/Timers ([SysTick](https://microcontrollerslab.com/systick-timer-tm4c123g-arm-cortex-m4-microcontroller/), Systick Interrupt)
+- Interrupts ([GPIO Interrupts](https://microcontrollerslab.com/gpio-interrupts-tm4c123-tiva-launchpad-edge-level-triggered/))
+- Counters/Timers ([SysTick](https://microcontrollerslab.com/systick-timer-tm4c123g-arm-cortex-m4-microcontroller/), [Systick Interrupt](https://microcontrollerslab.com/systick-timer-interrupt-programming-tm4c123-arm-cortex-m4/))
 
 # Basics
 I'll start with the basics by implementing basic logic to change through the colors and enabling the pins correctly.
@@ -363,3 +363,18 @@ Criteria covered in this section:
 - The counter must enter AUTO mode ~~when the button is held for 2 seconds or more~~
     - When in AUTO mode the counter must proceed one step every 200 ms
 
+## Enabling SysTick
+We first want to enable SysTick to actually use it. We start by defining a couple of things, we will need later on, including somethings not defined in the header file/data sheet for the processor.
+
+```c
+#define SYSTICK_RELOAD_VALUE 3199999 // 200 ms delay (16 MHz / 5 - 1 = 3,199,999 cycles)
+
+// Missing definitions in tm4c123gh6pm.h file
+#define NVIC_INT_CTRL_PEND_SYST 0x04000000 // Pend a systick int
+#define NVIC_INT_CTRL_UNPEND_SYST 0x02000000 // Unpend a systick int
+
+#define SYSTICK_PRIORITY 0x7E
+```
+
+We can see that we have defined the reload value for our timer. This is calculated from our desired millisecond delay of 200 ms and the clock period (**16 MHz for this processor**).
+$$\text{Reload}= \frac {}{1/16\text{ MHz}}$$
