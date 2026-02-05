@@ -51,7 +51,8 @@ Power Dissipation is a f(speed, area, technology) function.
 | 0   | 0   | 0   | 1   | 1   |
 | 1   | 0   | 1   | 0   | 1   |
 
-
+![[Pasted image 20260205135729.png]]
+$Output = A*Sel + A*NOTSel$
 
 ---
 #lecture 
