@@ -416,4 +416,12 @@ This is done according to the explanation on [SysTick](https://microcontrollersl
 
 We can see the SysTick control register here. This is used to configure the clock for the SysTick timer, enable counter, enable SysTick interrupt and provide status of the counter.
 
-We will start by _disabling_ the SysTick timer so it will not run in the background while we set it up. This is done by setting the enable bit to _0_ (l)
+We will start by _disabling_ the SysTick timer so it will not run in the background while we set it up. This is done by setting the enable bit to _0_ (line 1).
+
+We will also need to clear pending SysTick interrupts. This is done on line 4, using the `NVIC_INT_CTRL_UNPEND_SYST` we defined before.
+
+We then do some other configuration, which will be covered shortly.
+
+When we next use the SysTick CTRL register, we set it to use the core clock as its source (line 7). This is done by setting the `CLK_SRC` bit in the register to _1_.
+
+We then enable SysTick interrupt, so that we can actually use it to interrupt the code and change some values. This is done on line 8 by setting the `INTEN` bit of the register 
