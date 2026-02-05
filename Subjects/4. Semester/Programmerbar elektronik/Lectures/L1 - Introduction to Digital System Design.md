@@ -41,6 +41,15 @@ Every second year the number of transistors in a chip _doubles_
 - With more transistors, we can have more functions to perform tasks
 	- This however needs more management and more efficient design methods
 
+Power Dissipation
+Power Dissipation is a f(speed, area, technology) function.
+- $E=\frac V d$
+![[Pasted image 20260205132144.png]]
+- Example (for welding)
+	- $E=\frac {5000 V} {5000 \mu m} = 1 V/\mu m$
+- Inside transistor
+	- $E = \frac {0.6 V} {0.06 \mu m} = 10 V/\mu m$
+
 
 
 
