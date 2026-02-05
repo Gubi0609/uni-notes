@@ -33,7 +33,7 @@ While a CPU and GPU might run while no tasks are available (idle) and consume po
 - GPU → Larger tasks
 - FPGA → Precise and fast
 
-
+The size of a transistor (e.g. 5 nm) is defined 
 
 
 ---
