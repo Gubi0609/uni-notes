@@ -20,6 +20,7 @@
 
 
 # Notes
+An FPGA operates using _Logic Gates_.
 
 
 ---

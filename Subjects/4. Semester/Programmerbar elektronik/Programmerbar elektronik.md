@@ -43,6 +43,7 @@ Udviklingsværktøjer til digitalt design:
 
 ## Resources
 - [[Free Range VHDL.pdf]]
+- https://www.youtube.com/channel/UC3ym-3iv3aN-IP-kDSpk5ag
 ## Lectures
 ``` dataview
 list
