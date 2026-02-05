@@ -377,4 +377,43 @@ We first want to enable SysTick to actually use it. We start by defining a coupl
 ```
 
 We can see that we have defined the reload value for our timer. This is calculated from our desired millisecond delay of 200 ms and the clock period (**16 MHz for this processor**).
-$$\text{Reload}= \frac {}{1/16\text{ MHz}}$$
+$$\text{Reload}= \frac {0.2\text{ s}}{1/16\text{ MHz}}-1=3,199,999$$
+
+Now we will setup and configure SysTick to suit our needs.
+```c
+// Disable systick timer
+NVIC_ST_CTRL_R &= ~(NVIC_ST_CTRL_ENABLE);
+
+// Set current timer to reload value
+NVIC_ST_CURRENT_R = SYSTICK_RELOAD_VALUE;
+// Set Reload valye in systick reload register
+NVIC_ST_RELOAD_R = SYSTICK_RELOAD_VALUE;
+
+// NVIC systick setup, vector number 15 in startup_css.c
+// Clear pending systick interrupt request
+NVIC_INT_CTRL_R |= NVIC_INT_CTRL_UNPEND_SYST;
+
+// Set systick priority to 0x10. First clear, then set
+NVIC_SYS_PRI3_R &= ~(NVIC_SYS_PRI3_TICK_M);
+NVIC_SYS_PRI3_R |= (NVIC_SYS_PRI3_TICK_M & (SYSTICK_PRIORITY<<NVIC_SYS_PRI3_TICK_S));
+
+// Select systick clock source, use core clock
+NVIC_ST_CTRL_R |= NVIC_ST_CTRL_CLK_SRC;
+
+// Enable systick interrupt
+NVIC_ST_CTRL_R |= NVIC_ST_CTRL_INTEN;
+
+// ...
+
+// Enable and start systick timer
+NVIC_ST_CTRL_R |= NVIC_ST_CTRL_ENABLE;
+```
+
+This is done according to the explanation on [SysTick](https://microcontrollerslab.com/systick-timer-tm4c123g-arm-cortex-m4-microcontroller/).
+
+### SysTick CTRL
+![[Pasted image 20260205112711.png]]
+
+We can see the SysTick control register here. This is used to configure the clock for the SysTick timer, enable counter, enable SysTick interrupt and provide status of the counter.
+
+We will start by _disabling_ the SysTick timer so it will not run in the background while we set it up. This is done by setting the enable bit to _0_ (l)
