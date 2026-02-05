@@ -22,11 +22,15 @@ The full assignment can be read in [[Subjects/4. Semester/Indlejret programmerin
 ---
 This article covers the buildup of the system starting with the basics and building on top of that to lastly implement all the criteria from above. For the full code, see my [GitHub](https://github.com/Gubi0609/EMP-Assignment1).
 
+# Topics covered
+- Interrupts
+- Counters/Timers ([SysTick](https://microcontrollerslab.com/systick-timer-tm4c123g-arm-cortex-m4-microcontroller/), Systick Interrupt)
+
 # Basics
 I'll start with the basics by implementing basic logic to change through the colors and enabling the pins correctly.
 
 Criteria covered in this section:
-The program must implement a 0-7 counter
+- The program must implement a 0-7 counter
 - The current count must be represented by a color on the on-board RGB LED
     - 0: Off
     - 1: Green
@@ -155,7 +159,7 @@ We now want to move the button logic to an Interrupt Service Routine (**ISR**).
 This requires a few steps and changing in the startup file for the specific chip (TM4C123GH6PM). This is provided by the CCS program.
 
 Criteria covered in this section:
-The program must implement a 0-7 counter
+- The program must implement a 0-7 counter
 - The current count must be represented by a color on the on-board RGB LED
     - 0: Off
     - 1: Green
@@ -340,3 +344,22 @@ while(1) {
 ```
 
 And the system will now react as before, but now with the button logic handled by an Interrupt Service Routine.
+
+# SysTick and automode
+Next we want to implement SysTick as to effectively increment the count every 200 ms.
+
+Criteria covered in this section:
+ - The program must implement a 0-7 counter
+- The current count must be represented by a color on the on-board RGB LED
+    - 0: Off
+    - 1: Green
+    - 2: Blue
+    - 3: Cyan
+    - 4: Red
+    - 5: Yellow
+    - 6: Magenta
+    - 7: White
+- The counter must be able to count up ~~and down~~
+- The counter must enter AUTO mode ~~when the button is held for 2 seconds or more~~
+    - When in AUTO mode the counter must proceed one step every 200 ms
+
