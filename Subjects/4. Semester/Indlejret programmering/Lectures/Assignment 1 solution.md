@@ -416,13 +416,32 @@ This is done according to the explanation on [SysTick](https://microcontrollersl
 
 We can see the SysTick control register here. This is used to configure the clock for the SysTick timer, enable counter, enable SysTick interrupt and provide status of the counter.
 
-We will start by _disabling_ the SysTick timer so it will not run in the background while we set it up. This is done by setting the enable bit to _0_ (line 1).
+```c
+// Disable systick timer
+NVIC_ST_CTRL_R &= ~(NVIC_ST_CTRL_ENABLE);
+
+// ...
+
+// Select systick clock source, use core clock
+NVIC_ST_CTRL_R |= NVIC_ST_CTRL_CLK_SRC;
+
+// Enable systick interrupt
+NVIC_ST_CTRL_R |= NVIC_ST_CTRL_INTEN;
+
+// ...
+
+// Enable and start systick timer
+NVIC_ST_CTRL_R |= NVIC_ST_CTRL_ENABLE;
+```
+
+
+We will start by _disabling_ the SysTick timer so it will not run in the background while we set it up. This is done by setting the enable bit to _0_.
 
 We then do some other configuration, which will be covered shortly.
 
-When we next use the SysTick CTRL register, we set it to use the core clock as its source (line 7). This is done by setting the `CLK_SRC` bit in the register to _1_.
+When we next use the SysTick CTRL register, we set it to use the core clock as its source. This is done by setting the `CLK_SRC` bit in the register to _1_.
 
-We then enable SysTick interrupt, so that we can actually use it to interrupt the code and change some values. This is done on line 8 by setting the `INTEN` bit of the register to _1_.
+We then enable SysTick interrupt, so that we can actually use it to interrupt the code and change some values. This is done by setting the `INTEN` bit of the register to _1_.
 
 Lastly, when all other code is setup, and we are ready to run, we enable SysTick again, by setting the `ENB` (enable bit) to _1_ again.
 
@@ -432,10 +451,44 @@ We can see on line 3, that we use `NVIC_ST_RELOAD_R` to set our calculated reloa
 
 This will be copied to the counter on every SysTick interrupt. It basically holds our desired interrupt interval.
 
+```c
+// ...
+
+// Set Reload valye in systick reload register
+NVIC_ST_RELOAD_R = SYSTICK_RELOAD_VALUE;
+
+// ...
+```
+
 ### SysTick Current
 We also set `NVIC_ST_CURRENT_R` on line 2. This basically loads the reload value in to the current value of SysTick, which will begin counting down to 0, when we enable SysTick
 
-### NVIC configuration
-We will need to configure NVIC as to actually use SysTick as an interupt.
+```c
+// ...
 
-We will also need to clear pending SysTick interrupts. This is done on line 4, using the `NVIC_INT_CTRL_UNPEND_SYST` we defined before.
+// Set current timer to reload value
+NVIC_ST_CURRENT_R = SYSTICK_RELOAD_VALUE;
+
+// ...
+```
+### NVIC configuration
+We will need to configure NVIC as to actually use SysTick as an interrupt.
+
+```c
+// ...
+
+// NVIC systick setup, vector number 15 in startup_css.c
+// Clear pending systick interrupt request
+NVIC_INT_CTRL_R |= NVIC_INT_CTRL_UNPEND_SYST;
+
+// Set systick priority to 0x10. First clear, then set
+NVIC_SYS_PRI3_R &= ~(NVIC_SYS_PRI3_TICK_M);
+NVIC_SYS_PRI3_R |= (NVIC_SYS_PRI3_TICK_M & (SYSTICK_PRIORITY<<NVIC_SYS_PRI3_TICK_S));
+
+// ...
+```
+
+We will firstly need to clear pending SysTick interrupts. This is done on line 4, using the `NVIC_INT_CTRL_UNPEND_SYST` we defined before.
+
+Secondly we set the priority of SysTick to 16, by first clearing it and then setting it.
+- Clearing is simply done by inverting the SysTick Exception Priority and removing that sequence from `N
