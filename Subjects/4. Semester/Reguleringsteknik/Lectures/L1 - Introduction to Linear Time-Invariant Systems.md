@@ -24,6 +24,7 @@
 [[Lineære tidsinvariante systemer]]
 [[Time Domain Models]]
 [[Frequency Domain Models]]
+Mangler noter på z-transform og discrete transfer function
 
 # Notes
 
