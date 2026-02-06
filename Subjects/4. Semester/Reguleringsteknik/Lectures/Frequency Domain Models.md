@@ -14,8 +14,11 @@ To convert from [[Time Domain Models]] we _Laplace transform_ our function.
 When we rearrange, we want to _collect all_ $x(s)$ on one side.
 
 ![[Pasted image 20260206094449.png]]
+When we invert (in step one of this picture) we assume, that we are not _at the poles_ since the matrix would not be invertable for that position.
 
 > [!example]- 
 > ![[Pasted image 20260206094535.png]]
 > ![[Pasted image 20260206094545.png]]
+> The values for the matrices are obtained from [[Time Domain Models]].
+> When we invert in picture 2, we actually also divide by the matrix's determinant.
 
