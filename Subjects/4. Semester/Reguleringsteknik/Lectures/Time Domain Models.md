@@ -24,6 +24,9 @@ So basically:
 > ![[Pasted image 20260206093211.png]]
 
 # Discrete time state space
-This is based on _difference equations_
+This is based on _difference equations_.
+
+Is a system of first order difference equations and an output equation given by
 ![[Pasted image 20260206085226.png]]
+![[Pasted image 20260206093532.png]]
 
