@@ -27,7 +27,7 @@
 Mangler noter på z-transform og discrete transfer function
 
 # Notes
-
+![[Pasted image 20260206095813.png]]
 
 ---
 #lecture 
