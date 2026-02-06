@@ -19,6 +19,9 @@ So basically:
 > [!example]- Mass-Spring-Damper system
 > ![[Pasted image 20260206090456.png]]
 
+> [!help]- Matlab Simulation
+> ![[Pasted image 20260206093154.png]]
+> ![[Pasted image 20260206093211.png]]
 
 # Discrete time state space
 This is based on _difference equations_
