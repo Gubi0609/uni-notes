@@ -32,7 +32,7 @@
 
 ## Tidsinvarians
 ## $$y(t-\tau)=\sigma(t,u(t-\tau))$$
-for alle tider $t\in \mathbb{R}$, hvor $y$ betegner udgangsignalet for systemet, $u$ er indgangs signalet, og $u$ er... ja det ved jeg faktisk ikke
+for alle tider $t\in \mathbb{R}$, hvor $y$ betegner udgangsignalet for systemet,$\tau$ er forsinkelsen, $u$ er indgangs signalet, og $\sigma$ er... ja det ved jeg faktisk ikke
 
 > [!example]- Eksempel på tidsinvariant system
 > Kanonens opførsel her ændrer sig ikke an på om den bliver affyret klokken 15 eller klokken 18
