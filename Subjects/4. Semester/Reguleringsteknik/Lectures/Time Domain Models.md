@@ -16,7 +16,7 @@ So basically:
 - Isolate the variables in the $\dot x$ matrix/vector one by one in the nth order differential equation and insert the constants associated with each variable in the corresponding field in the matrix (either A or B)
 	- It's really quite easy. The _row_ of a matrix defines the $\dot x$ variable we want to find and the _column_ of the matrix defines what variable in either the $x$ or $u(t)$ vector will be multiplied with the matrices' constant.
 
-For a system of more than one variable (e.g. a Mass-Spring system with two masses), we will simply extend the width of $x$ and $\dot x$ to accommodate the extra variables.
+For a system of more than one variable (e.g. a Mass-Spring system with two masses), we will simply extend the height of $x$ and $\dot x$ to accommodate the extra variables.
 
 > [!example]- Mass-Spring-Damper system
 > ![[Pasted image 20260206090456.png]]
