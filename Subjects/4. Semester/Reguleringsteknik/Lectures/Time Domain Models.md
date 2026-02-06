@@ -30,3 +30,11 @@ Is a system of first order difference equations and an output equation given by
 ![[Pasted image 20260206085226.png]]
 ![[Pasted image 20260206093532.png]]
 
+## Transformation from Continuous time state space
+![[Pasted image 20260206093801.png]]
+![[Pasted image 20260206093822.png]]
+
+> [!example]- Mass-Spring-Damper
+> ![[Pasted image 20260206093849.png]]
+> Regarding footnote: Can also be computed using `c2d`
+
