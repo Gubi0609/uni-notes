@@ -14,4 +14,7 @@ This is based on _difference equations_
 # Transformation to State Space Form
 When we have an $n^{th}$ order differential equation, we will need to reformulate it to a system of first order differential equations [[Time Domain Models#Continuous time state space|Continuous time state]].
 ![[Pasted image 20260206085613.png]]
+![[Pasted image 20260206085805.png]]
 
+So basically:
+- Isolate the variables in the $\dot x$ matrix/vector one by one in the equation
