@@ -565,6 +565,9 @@ We will not be changing the `main` function, only the previously covered ISRs.
 # Global values
 To track the state of the button and properly act upon it, we introduce a few new global values to the program
 ```c
+#define DOUBLE_CLICK_WINDOW 300  // ms window for double-click detection
+#define HOLD_THRESHOLD 2000      // ms for hold detection
+
 // Millisecond counter (unsigned to handle overflow properly)
 volatile unsigned int milliseconds = 0;
 
@@ -579,8 +582,54 @@ volatile bool waitingForSecondClick = false;
 We see that the new `int` variables also have the type `unsigned`. This is done to avoid overflow, as we only work with 32 bit values (since that is what the registers of the Tiva C Series can hold), and milliseconds may quickly run over this limit.
 - In reality this is not needed for this specific program/use case, as it would take around $2^{32}\text{ ms} \approx 50\text{ days}$ to overflow. This is well over the expected limit for the program, but I wanted to play around with it.
 
-We implement these new variables to keep track of the time _between_ button-presses (to check for double-click)
+We implement these new variables to keep track of the time _between_ button-presses (to check for double-click) and to check if the button is currently pressed or being held (to check for holding action).
+
+New values are also defined at the top as limits for either double click or button hold millisecond delays.
+
+The new values are implemented in the ISRs following this section.
 
 # Button ISR
 ```c
+// The Interrupt Service Routine (ISR)
+void GPIOF_Handler(void) {
+	// For debounce
+	volatile int i;
+	
+	// Clear the interrupt flag for PF4 (must be done first)
+	GPIO_PORTF_ICR_R = 0x10;
+	
+	// Simple debounce delay
+	for(i = 0; i < 100000; i++);
+	
+	// If in auto mode, any button press exits auto mode
+	if (autoMode) {
+		autoMode = false;
+		return;
+	}
+	
+	unsigned int currentTime = milliseconds;
+	unsigned int timeDiff = currentTime - lastPressTime;
+	
+	// Check for double-click
+	if (waitingForSecondClick && timeDiff < DOUBLE_CLICK_WINDOW) {
+		// Double-click detected! Toggle direction
+		dirUp = !dirUp;
+		waitingForSecondClick = false;
+		holdDetected = true;  // Prevent hold and single-click actions
+	} else {
+		// Potential single click or hold - start tracking
+		waitingForSecondClick = true;
+		buttonPressed = true;
+		buttonPressStartTime = currentTime;
+		holdDetected = false;
+	}
+	
+	lastPressTime = currentTime;
+}
 ```
+
+We can see that the start of the button ISR is much the same as it was when we first implemented it [[Assignment 1 solution#Interrupt Service Routine (ISR)|before]], with the debounce and clearing the interrupt flag.
+
+Now however we also have a quick check to exit `automode` if any button press occurs while in `automode`.
+
+We see next that we calculate the time between the current button press and the last button press. This is used in the `if` statement to check
