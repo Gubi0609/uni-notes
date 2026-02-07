@@ -529,7 +529,7 @@ And we then go back into `main.c` to define our ISR
 This is a simple counter for now, but will be expanded upon, when we add the button functionality later.
 
 ```c
-// SysTick ISR - toggles LED every 200ms
+// SysTick ISR
 void SysTick_Handler(void) {
 	if (dirUp) cnt = (cnt + 1) % 8; // Increment within 0-7
 	else cnt = (cnt + 7) % 8; // Decrement within 0-7
@@ -588,7 +588,7 @@ New values are also defined at the top as limits for either double click or butt
 
 The new values are implemented in the ISRs following this section.
 
-# Button ISR
+## Button ISR
 ```c
 // The Interrupt Service Routine (ISR)
 void GPIOF_Handler(void) {
@@ -632,4 +632,57 @@ We can see that the start of the button ISR is much the same as it was when we f
 
 Now however we also have a quick check to exit `automode` if any button press occurs while in `automode`.
 
-We see next that we calculate the time between the current button press and the last button press. This is used in the `if` statement to check
+We see next that we calculate the time between the current button press and the last button press. This is used in the `if` statement to check for a possible double click if we are currently waiting for a second click and if we are within the time limit set before of 300 milliseconds.
+
+If we do not detect any double click, it must have been either a single click or hold, and we start tracking this.
+- The action of our click being time-dependent is now tracked in the SysTick ISR.
+
+Last but not least, the last button press time must be the current time, as we pressed the button.
+
+## SysTick ISR
+Next we explore the new ISR for SysTick
+
+```c
+// SysTick ISR - runs every 200ms
+void SysTick_Handler(void) {
+	// Update millisecond counter (200ms per tick)
+	milliseconds += 200;
+	
+	// Check for hold detection
+	if (buttonPressed && !holdDetected) {
+		// Check if button is still held down
+		if (!(GPIO_PORTF_DATA_R & 0x10)) {
+			unsigned int holdDuration = milliseconds - buttonPressStartTime;
+			if (holdDuration >= HOLD_THRESHOLD) {
+				// Hold detected! Toggle auto mode
+				autoMode = !autoMode;
+				holdDetected = true;
+				waitingForSecondClick = false;  // Cancel any pending double-click
+			}
+		} else {
+			// Button was released before hold threshold
+			buttonPressed = false;
+		}
+	}
+	
+	// Auto mode - cycle through colors
+	if (autoMode) {
+		if (dirUp) cnt = (cnt + 1) % 8; // Increment within 0-7
+		else cnt = (cnt + 7) % 8; // Decrement within 0-7
+	}
+	
+	// Reset waiting flag after window expires
+	if (waitingForSecondClick && (milliseconds - lastPressTime) >= DOUBLE_CLICK_WINDOW) {
+		waitingForSecondClick = false;
+		// Process single click if not hold
+		if (!holdDetected) {
+			// Single click: increment or decrement based on dirUp
+			if (dirUp) cnt = (cnt + 1) % 8;
+			else cnt = (cnt + 7) % 8;
+		}
+	}
+}
+```
+
+We see first that we increment the global milliseconds value by 200 milliseconds, since the ISR for SysTick runs every 200 ms
+- In hindsight, a smaller value could have been chosen to speed up the reaction time of the system, but 200 ms still works properly, and frees 
