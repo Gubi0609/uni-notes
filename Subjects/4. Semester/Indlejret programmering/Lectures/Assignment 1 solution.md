@@ -560,4 +560,27 @@ Criteria covered in this section
     - When in AUTO mode the counter must proceed one step every 200 ms
 - A button push while in AUTO mode should return the counter to manual mode
 
-We will not be cha
+We will not be changing the `main` function, only the previously covered ISRs.
+
+# Global values
+To track the state of the button and properly act upon it, we introduce a few new global values to the program
+```c
+// Millisecond counter (unsigned to handle overflow properly)
+volatile unsigned int milliseconds = 0;
+
+// Button state tracking
+volatile unsigned int lastPressTime = 0;
+volatile bool buttonPressed = false;
+volatile unsigned int buttonPressStartTime = 0;
+volatile bool holdDetected = false;
+volatile bool waitingForSecondClick = false;
+```
+
+We see that the new `int` variables also have the type `unsigned`. This is done to avoid overflow, as we only work with 32 bit values (since that is what the registers of the Tiva C Series can hold), and milliseconds may quickly run over this limit.
+- In reality this is not needed for this specific program/use case, as it would take around $2^{32}\text{ ms} \approx 50\text{ days}$ to overflow. This is well over the expected limit for the program, but I wanted to play around with it.
+
+We implement these new variables to keep track of the time _between_ button-presses (to check for double-click)
+
+# Button ISR
+```c
+```
