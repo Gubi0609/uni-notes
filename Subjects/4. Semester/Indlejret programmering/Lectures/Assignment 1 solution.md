@@ -158,21 +158,7 @@ The LED is set from the [[Assignment 1 solution#Colors|colors]] defined before.
 We now want to move the button logic to an Interrupt Service Routine (**ISR**).
 This requires a few steps and changing in the startup file for the specific chip (TM4C123GH6PM). This is provided by the CCS program.
 
-Criteria covered in this section:
-- The program must implement a 0-7 counter
-- The current count must be represented by a color on the on-board RGB LED
-    - 0: Off
-    - 1: Green
-    - 2: Blue
-    - 3: Cyan
-    - 4: Red
-    - 5: Yellow
-    - 6: Magenta
-    - 7: White
-- The counter must be able to count up ~~and down~~
-- The counter should proceed on step with a button push
-
-So in short: The same criteria as [[Assignment 1 solution#Basics|the Basics]], but now with smarter logic.
+Criteria covered in this section: The same criteria as [[Assignment 1 solution#Basics|the Basics]], but now with smarter logic.
 
 ## Setting switch
 We want to activate the ISR at a falling edge of our switch (being pushed).
@@ -349,17 +335,6 @@ And the system will now react as before, but now with the button logic handled b
 Next we want to implement SysTick as to effectively increment the count every 200 ms.
 
 Criteria covered in this section:
- - The program must implement a 0-7 counter
-- The current count must be represented by a color on the on-board RGB LED
-    - 0: Off
-    - 1: Green
-    - 2: Blue
-    - 3: Cyan
-    - 4: Red
-    - 5: Yellow
-    - 6: Magenta
-    - 7: White
-- The counter must be able to count up ~~and down~~
 - The counter must enter AUTO mode ~~when the button is held for 2 seconds or more~~
     - When in AUTO mode the counter must proceed one step every 200 ms
 
@@ -575,3 +550,14 @@ while(1) {
 Now the button will still increment if pressed, but the timed counter runs automatically on startup. _We will need to change this_.
 
 # Expanded button functionality
+Now that all other criteria are covered, we will need to implement the last button functionalities.
+
+Criteria covered in this section
+- The counter must be able to count up and down
+- The counter should proceed on step with a button push
+- The direction of the counter must change with a double button push
+- The counter must enter AUTO mode when the button is held for 2 seconds or more
+    - When in AUTO mode the counter must proceed one step every 200 ms
+- A button push while in AUTO mode should return the counter to manual mode
+
+We will not be cha
