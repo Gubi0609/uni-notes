@@ -633,6 +633,7 @@ We can see that the start of the button ISR is much the same as it was when we f
 Now however we also have a quick check to exit `automode` if any button press occurs while in `automode`.
 
 We see next that we calculate the time between the current button press and the last button press. This is used in the `if` statement to check for a possible double click if we are currently waiting for a second click and if we are within the time limit set before of 300 milliseconds.
+- If 
 
 If we do not detect any double click, it must have been either a single click or hold, and we start tracking this.
 - The action of our click being time-dependent is now tracked in the SysTick ISR.
@@ -685,4 +686,12 @@ void SysTick_Handler(void) {
 ```
 
 We see first that we increment the global milliseconds value by 200 milliseconds, since the ISR for SysTick runs every 200 ms
-- In hindsight, a smaller value could have been chosen to speed up the reaction time of the system, but 200 ms still works properly, and frees 
+- In hindsight, a smaller value could have been chosen to speed up the reaction time of the system, but 200 ms still works properly, and frees up the CPU by not running as often.
+
+We first check if the button has been flagged as being pressed. This activates the check for hold detection.
+- The program first checks if the button is still being held down (since last time the ISR ran).
+	- If so, we must also check if we have held the button for 2000 milliseconds (2 seconds) or more yet.
+	- If the button has been held for 2 or more seconds, automode is activated and the program now counts on its own.
+- If the button is not still being held, it was released before the threshold, and thus we do nothing yet.
+
+If the program enters automode, it will start counting
