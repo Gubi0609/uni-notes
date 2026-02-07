@@ -633,7 +633,7 @@ We can see that the start of the button ISR is much the same as it was when we f
 Now however we also have a quick check to exit `automode` if any button press occurs while in `automode`.
 
 We see next that we calculate the time between the current button press and the last button press. This is used in the `if` statement to check for a possible double click if we are currently waiting for a second click and if we are within the time limit set before of 300 milliseconds.
-- If 
+- If a double click was performed, the program changes the direction of counting.
 
 If we do not detect any double click, it must have been either a single click or hold, and we start tracking this.
 - The action of our click being time-dependent is now tracked in the SysTick ISR.
@@ -694,4 +694,12 @@ We first check if the button has been flagged as being pressed. This activates t
 	- If the button has been held for 2 or more seconds, automode is activated and the program now counts on its own.
 - If the button is not still being held, it was released before the threshold, and thus we do nothing yet.
 
-If the program enters automode, it will start counting
+If the program enters automode, it will start counting either up or down based on the chosen direction within a 0-7 count frame.
+
+Lastly, if the window for double click (300 milliseconds) expires, we are no longer waiting for a double click, and instead either a hold action is coming up, or we pressed the button a single time.
+- The difference between this is checked by checking if a hold has currently been detected. Since `holdDetected` is only true while inside the `if` statement regarding hold previously discussed, it will be false for a single click.
+
+If a single click is detected, the program counts either up or down by one value within a 0-7 count frame.
+
+---
+This concludes the program and its explanation. Remember, if you want to check out the full code, checkout my [GitHub](https://github.com/Gubi0609/EMP-Assignment1).
