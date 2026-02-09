@@ -38,7 +38,7 @@ Fejlen af $A_{CL}$ må ikke overstige 100 ppm.
 Dermed
 ## $$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}$$
 100 ppm er $0.0001$. Så
-## $$0.0001=1-\frac {A_{OL}}{10+A_{OL}}\Leftrightarrow$$
+## $$0.0001=1-\frac {A_{OL}}{10+A_{OL}}\Leftrightarrow A_{OL}=99,990$$
 
 ---
 #lecture 
