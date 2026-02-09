@@ -49,14 +49,20 @@ Vi kan starte med at samle nogle af modstandende.
 Da den positive indgang af Op Ampen er forbundet til GND, må dens spænding være 0 V.
 Eftersom vi gerne vil have en forskel i spændingen på Op Ampen, må indgangsspændingen på den positive indgang også være 0 V.
 
-Vi betragter noden mellem $R_4$ og $V_o$ som GND og vi kan således samle $R_2$, $R_3$ og $R_4$. Set fra $R_2$ sidder $R_3$ og $R_4$ parallelt, og denne parallelforbindelse sidder i serie med $R_2$. Dermed bliver den samlede mostand for denne del af kredsløbet
+## 1. Alpha
+Vi betragter noden mellem $R_4$ og $V_o$ som GND og vi kan således samle $R_2$, $R_3$ og $R_4$. Set fra $V_{in}$ sidder $R_3$ og $R_4$ parallelt, og denne parallelforbindelse sidder i serie med $R_2$. Dermed bliver den samlede mostand for denne del af kredsløbet
 ## $$R_f=R_2+\left(\frac 1 {R_3}+\frac 1 {R_4}\right)^{-1}=1000 k\Omega+\left(\frac 1 {1000k\Omega}+\frac 1 {10.2k\Omega}\right)^{-1}=1010.1k\Omega$$
 
-## 1. Alpha
 Dermed bliver $\alpha$
 
 ## $$\alpha =-\frac {R_f}{R_1+R_f}=-\frac {1010.1k\Omega}{1000k\Omega+1010.1k\Omega}=-\frac {1010.1k\Omega}{2010.1k\Omega}=-\frac {10101}{20101}$$
 ## 2. Beta
+Vi kigger nu fra $V_ o$ i stedet for $V_{in}$. Da kan vi se to spændingsdelere koblet sammen, da vi nu betragter $V_{in}=0 V$ da den positive indgangsspænding er 0 V.
+
+Da kan vi så se (fra $V_0$) at $R_3$ sidder i parallel med $R_1$ og $R_2$. Denne parallelforbindelse sidder i serie med $R_4$.
+## $$R_{in}=\left(\frac 1 {R_3}+\frac 1{R_1+R_2}\right)^{-1}$$
+
+
 $\beta$ bliver så
 ## $$\beta = \frac {R_1}{R_1+R_f}=\frac {1000k\Omega}{1000k\Omega+1010.1k\Omega}=\frac {1000k\Omega}{2010.1k\Omega}=\frac {10000}{20101}$$
 ## 3. Gain
