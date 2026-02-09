@@ -74,7 +74,9 @@ Da vi antager at forstærkeren er ideel, kan vi bruge formlen for gain fra en [[
 Eftersom $R_3$ har en betydeligt mindre modstand end $R_2$, løber der ikke særlig meget strøm tilbage i Op Ampens indgang. Man kunne tænke at dette måske beskytter den mod høj strøm??
 
 ## 5. Max procent fejl på $A_{sign}$
+Vi finder datasheet for $\mu$A741C online [her](https://www.ti.com/lit/ds/symlink/ua741.pdf).
 
+Fejlen udregnes som
 
 ---
 #lecture 
