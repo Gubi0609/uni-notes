@@ -12,7 +12,11 @@
 
 ---
 # Relevant documents
-
+[[Lesson02_bitgym.pdf]]
+[[Lesson02_debugging.pdf]]
+[[Lesson02_overview.pdf]]
+[[Lesson02_standard.pdf]]
+[[Lesson02_systick.pdf]]
 
 # Topics
 
