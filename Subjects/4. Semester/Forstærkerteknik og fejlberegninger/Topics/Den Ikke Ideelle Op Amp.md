@@ -16,3 +16,5 @@ Vi har nogle lidt lange udtryk i det ovenstående. Vi kan formulere nogle nye fo
 Og _closed loop gain_ bliver så (efter lidt forkortelse)
 
 ## $$A_{CL}=\frac {V_o}{V_{in}}=\frac \alpha\beta\cdot \frac {A_{Ol}}{\frac 1\beta+A_{OL}}$$
+hvor **fejlen** er
+## $$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}$$

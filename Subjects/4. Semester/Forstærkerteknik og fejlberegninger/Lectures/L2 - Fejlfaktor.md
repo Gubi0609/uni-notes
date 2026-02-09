@@ -33,7 +33,12 @@ og $\alpha/\beta$ bliver
 ## $$\frac {\alpha}{\beta}=\frac 1{\frac {1}{10}}=10$$
 Vi kigger så på formlen for closed loop gain for [[Den Ikke Ideelle Op Amp]].
 ## $$A_{CL}=\frac {V_o}{V_{in}}=\frac \alpha\beta\cdot \frac {A_{Ol}}{\frac 1\beta+A_{OL}}$$
-$A_{CL}$ må ikke overstige 100 ppm
+Fejlen af $A_{CL}$ må ikke overstige 100 ppm.
+
+Dermed
+## $$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}$$
+100 ppm er $0.0001$. Så
+## $$0.0001=1-\frac {A_{OL}}{10+A_{OL}}\Leftrightarrow$$
 
 ---
 #lecture 
