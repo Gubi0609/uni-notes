@@ -18,6 +18,8 @@
 [[Lesson02_standard.pdf]]
 [[Lesson02_systick.pdf]]
 
+[[Lab2.pdf]]
+
 # Topics
 
 
