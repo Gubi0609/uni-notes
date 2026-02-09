@@ -9,11 +9,11 @@ Forstærkningen for en modkoblet op amp er
 ![[Pasted image 20260209082514.png]]
 
 Har følgende $\alpha$ og $\beta$ værdier
-## $$\alpha = \frac {R_2} {R_1 + R_2}\quad \beta = \frac {R_1}{R_2 + R_1}$$
+## $$\alpha = -\frac {R_2} {R_1 + R_2}\quad \beta = \frac {R_1}{R_2 + R_1}$$
 > [!example]- $\alpha$ og $\beta$ for en inverterende forstærker
 > ![[Pasted image 20260209082739.png]]
 > Med de ovenstående formler og værdierne $R_1 = 10k\Omega$, og $R_2 = 100k\Omega$ får vi følgende
-> $$\alpha = \frac {100k\Omega}{110k\Omega} = \frac {10}{11}\quad \beta = \frac {10k\Omega}{110k\Omega}=\frac {1}{11}$$
+> $$\alpha = -\frac {100k\Omega}{110k\Omega} = \frac {10}{11}\quad \beta = \frac {10k\Omega}{110k\Omega}=\frac {1}{11}$$
 
 # Ikke-inverterende forstærker
 ![[Pasted image 20260209082631.png]]

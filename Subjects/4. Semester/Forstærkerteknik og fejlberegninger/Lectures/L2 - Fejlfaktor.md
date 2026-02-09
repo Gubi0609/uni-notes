@@ -43,7 +43,7 @@ Dermed
 ![[Pasted image 20260209101801.png]]
 
 Vi har at gøre med en [[Modkoblet forstærker#Inverterende forstærker|inverterende forstærker]].
-## $$\alpha = \frac {R_2} {R_1 + R_2}\quad \beta = \frac {R_1}{R_2 + R_1}$$
+## $$\alpha = -\frac {R_2} {R_1 + R_2}\quad \beta = \frac {R_1}{R_2 + R_1}$$
 Vi kan starte med at samle nogle af modstandende.
 
 Da den positive indgang af Op Ampen er forbundet til GND, må dens spænding være 0 V.
@@ -55,11 +55,13 @@ Vi betragter noden mellem $R_4$ og $V_o$ som GND og vi kan således samle $R_2$,
 ## 1. Alpha
 Dermed bliver $\alpha$
 
-## $$\alpha =\frac {R_f}{R_1+R_f}=\frac {1010.1k\Omega}{1000k\Omega+1010.1k\Omega}=\frac {1010.1k\Omega}{2010.1k\Omega}=\frac {10101}{20101}$$
+## $$\alpha =-\frac {R_f}{R_1+R_f}=-\frac {1010.1k\Omega}{1000k\Omega+1010.1k\Omega}=-\frac {1010.1k\Omega}{2010.1k\Omega}=-\frac {10101}{20101}$$
 ## 2. Beta
 $\beta$ bliver så
 ## $$\beta = \frac {R_1}{R_1+R_f}=\frac {1000k\Omega}{1000k\Omega+1010.1k\Omega}=\frac {1000k\Omega}{2010.1k\Omega}=\frac {10000}{20101}$$
-
+## 3. Gain
+Da vi antager at forstærkeren er ideel, kan vi bruge formlen for gain fra en [[Modkoblet forstærker]]
+## $$A_{CL}=\frac\alpha\beta=\frac {\frac {10101}{20101}}{\frac {10000}{20101}}=\frac {10101\cdot 20101}{10000\cdot20101}=\frac {10101}{10000}\approx 1$$
 
 ---
 #lecture 
