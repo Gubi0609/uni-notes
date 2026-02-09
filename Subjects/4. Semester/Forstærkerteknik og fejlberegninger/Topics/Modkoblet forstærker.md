@@ -5,6 +5,9 @@ Hvor det ovenstående er en forstærker med _negativ feedback_ (da feedback går
 
 Forstærkningen for en modkoblet op amp er
 ## $$A_{CL}=\frac \alpha \beta$$
+De generelle formler for $\alpha$ og $\beta$ er
+## $$\alpha=\frac {V_{id}}{V_{in}}\quad\beta=-\frac {V_{id}}{V_o}$$
+
 # Inverterende forstærker
 ![[Pasted image 20260209082514.png]]
 

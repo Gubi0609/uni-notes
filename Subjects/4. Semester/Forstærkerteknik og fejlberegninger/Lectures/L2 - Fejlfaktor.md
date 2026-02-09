@@ -66,10 +66,10 @@ Vi har nu to spændingsdelere og da vi gerne vil kende spændingen over $V_{id}$
 Den ene spændingsdeler er over $R_4$ og parallelforbindelsen $R_3 ||(R_1+R_2)$ mens den anden spændingsdeler er over $R_1$ og $R_2$.
 
 $\beta$ bliver så
-## $$\beta = \frac {R_{in}}{R_{in}+R_4}\cdot\frac{R_1}{R_1+R_2}=$$
+## $$\beta = \frac {R_{in}}{R_{in}+R_4}\cdot\frac{R_1}{R_1+R_2}=\frac {10.15k\Omega}{1000k\Omega+10.15k\Omega}\cdot\frac{1000k\Omega}{2000k\Omega}=0.005=5\cdot 10^{-3}$$
 ## 3. Gain
 Da vi antager at forstærkeren er ideel, kan vi bruge formlen for gain fra en [[Modkoblet forstærker]]
-## $$A_{CL}=\frac\alpha\beta=\frac {-\frac {10101}{20101}}{\frac {10000}{20101}}=\frac {-10101\cdot 20101}{10000\cdot20101}=-\frac {10101}{10000}\approx -1$$
+## $$A_{CL}=\frac\alpha\beta=\frac {-\frac {10101}{20101}}{5\cdot10^{-3}}=$$
 
 ---
 #lecture 
