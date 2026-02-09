@@ -49,10 +49,11 @@ Vi kan starte med at samle nogle af modstandende.
 Da den positive indgang af Op Ampen er forbundet til GND, må dens spænding være 0 V.
 Eftersom vi gerne vil have en forskel i spændingen på Op Ampen, må indgangsspændingen på den positive indgang også være 0 V.
 
-Derfor kan noden mellem $R_1$ og $R_2$ betragtes som $R_2$'s GND og vi kan således samle $R_2$, $R_3$ og $R_4$. Set fra $R_4$ sidder $R_2$ og $R_3$ parallelt, og denne parallelforbindelse sidder i serie med $R_4$. Dermed bliver den samlede mostand for denne del af kredsløbet
-## $$R_f=R_4+(\frac 1 $$
+Vi betragter noden mellem $R_4$ og $V_o$ som GND og vi kan således samle $R_2$, $R_3$ og $R_4$. Set fra $R_2$ sidder $R_3$ og $R_4$ parallelt, og denne parallelforbindelse sidder i serie med $R_2$. Dermed bliver den samlede mostand for denne del af kredsløbet
+## $$R_f=R_2+\left(\frac 1 {R_3}+\frac 1 {R_4}\right)^{-1}=1000 k\Omega+\left(\frac 1 {1000k\Omega}+\frac 1 {10.2k\Omega}\right)^{-1}=1010.1k\Omega$$
 
-## 1.
+## 1. Alpha
+Dermed bliver 
 
 
 
