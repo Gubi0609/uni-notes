@@ -15,15 +15,8 @@ Har følgende $\alpha$ og $\beta$ værdier
 > Med de ovenstående formler og værdierne $R_1 = 10k\Omega$, og $R_2 = 100k\Omega$ får vi følgende
 > $$\alpha = \frac {100k\Omega}{110k\Omega} = \frac {10}{11}\quad \beta = \frac {10k\Omega}{110k\Omega}=\frac {1}{11}$$
 
-## Effekt af negativ feedback
-![[Pasted image 20260209085441.png]]
-
-For [[Den ideelle Op Amp]] har vi
-## $$A_{OL}\rightarrow\infty\quad R_{in}\$$
-
 # Ikke-inverterende forstærker
 ![[Pasted image 20260209082631.png]]
 
 Har følgende $\alpha$ og $\beta$ værdier
 ## $$\alpha = 1 \quad \beta = \frac {R_1}{R_1+R_2}$$
-

@@ -20,7 +20,7 @@ Dette kalder vi **modkoblingsprincippet
 
 Forstærkningen for en modkoblet op amp er
 ## $$A_{CL}=\frac \alpha \beta$$
-Formlerne for $\alpha$ og $\beta$ kan ses i [[Den Realistiske Op Amp]].
+Formlerne for $\alpha$ og $\beta$ kan ses i [[Den Ikke Ideelle Op Amp]].
 
 # Negativ feedback
 ![[Pasted image 20260202084253.png]]
