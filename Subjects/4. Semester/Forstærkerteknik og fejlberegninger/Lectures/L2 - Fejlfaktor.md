@@ -23,7 +23,17 @@
 [[Negativ Feedback Op Amp]]
 
 # Notes
+![[Pasted image 20260209094643.png]]
 
+Ovenstående opgave er en samling af alle dagens noter.
+
+Da vi har en [[Modkoblet forstærker#Ikke-inverterende forstærker|ikke-inverterende forstærker]] har vi følgende værdier for $\alpha$ og $\beta$
+## $$\alpha = 1\quad \beta=\frac {R_1}{R_1+R_2}=\frac {10k\Omega}{100k\Omega}=\frac {1}{10}$$
+og $\alpha/\beta$ bliver
+## $$\frac {\alpha}{\beta}=\frac 1{\frac {1}{10}}=10$$
+Vi kigger så på formlen for closed loop gain for [[Den Ikke Ideelle Op Amp]].
+## $$A_{CL}=\frac {V_o}{V_{in}}=\frac \alpha\beta\cdot \frac {A_{Ol}}{\frac 1\beta+A_{OL}}$$
+$A_{CL}$ må ikke overstige 100 ppm
 
 ---
 #lecture 
