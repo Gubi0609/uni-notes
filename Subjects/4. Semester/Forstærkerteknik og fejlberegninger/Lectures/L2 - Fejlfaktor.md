@@ -64,11 +64,17 @@ Da kan vi så se (fra $V_0$) at $R_3$ sidder i parallel med $R_1$ og $R_2$. Denn
 Vi har nu to spændingsdelere og da vi gerne vil kende spændingen over $V_{id}$ (som er den samme som den over $R_1$) må vi skulle gange dem sammen.
 Den ene spændingsdeler er over $R_4$ og parallelforbindelsen $R_3 ||(R_1+R_2)$ mens den anden spændingsdeler er over $R_1$ og $R_2$.
 
+Da $\beta$ i forvejen har et negativt fortegn og $V_{id}$ har modsat retning af $V_0$, giver vi den dobbelt negativt fortegn, hvilket gør den positiv. (se den generelle formel for $\beta$ i [[Modkoblet forstærker]])
 $\beta$ bliver så
 ## $$\beta = \frac {R_{in}}{R_{in}+R_4}\cdot\frac{R_1}{R_1+R_2}=\frac {10.15k\Omega}{1000k\Omega+10.15k\Omega}\cdot\frac{1000k\Omega}{2000k\Omega}=0.005=5\cdot 10^{-3}$$
 ## 3. Gain
 Da vi antager at forstærkeren er ideel, kan vi bruge formlen for gain fra en [[Modkoblet forstærker]]
-## $$A_{CL}=\frac\alpha\beta=\frac {-\frac {10101}{20101}}{5\cdot10^{-3}}=$$
+## $$A_{CL}=\frac\alpha\beta=\frac {-\frac {10101}{20101}}{5\cdot10^{-3}}=-100.5$$
+## 4. Fordel
+Eftersom $R_3$ har en betydeligt mindre modstand end $R_2$, løber der ikke særlig meget strøm tilbage i Op Ampens indgang. Man kunne tænke at dette måske beskytter den mod høj strøm??
+
+## 5. Max procent fejl på $A_{sign}$
+
 
 ---
 #lecture 
