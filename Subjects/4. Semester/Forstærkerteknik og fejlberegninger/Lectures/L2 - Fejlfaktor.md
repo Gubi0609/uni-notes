@@ -78,7 +78,7 @@ Vi finder datasheet for $\mu$A741C online [her](https://www.ti.com/lit/ds/symlin
 
 Fejlen udregnes som
 ## $$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}$$
-Da vi nu ikke har en ideel op amp længere, skal vi regne $\beta$ om til at inkludere Op Ampens interne indgangsmodstand. Dette gøres ved at lave en parallelforbindelse i spændingsdeleren fra før hvor parallelforbindelsen er mellem $R_1$ og $R_{in}$.
+Da vi nu ikke har en ideel op amp længere, skal vi regne $\beta$ om til at inkludere Op Ampens interne indgangsmodstand. Dette gøres ved at lave en parallelforbindelse i spændingsdeleren fra før hvor parallelforbindelsen er mellem $R_1$ og $R_{internal}$.
 
 
 ---
