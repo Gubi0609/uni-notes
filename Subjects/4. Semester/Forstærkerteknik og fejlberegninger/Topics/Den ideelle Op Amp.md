@@ -10,7 +10,8 @@ Vil det gælde at output spændingen er
 ## $$V_o=A_{OL}\cdot V_{id}=V_{in}\cdot\alpha-V_{id}\cdot A_{OL}\cdot\beta$$
 hvor $A_{OL}$ er _gain open loop_
 
-Vi har nogle lidt lange udtryk i det ovenstående. Vi kan formulere 
+Vi har nogle lidt lange udtryk i det ovenstående. Vi kan formulere nogle nye formler fra disse
+## $$V_s=\alpha\cdot V_{in}$$ $$V_f=V_o\cdot\beta$$
 
 Gain vil gå mod uendelig, hvis
 ## $$V_{id}=e_+-e_-=0\Leftrightarrow e_+=e_-$$
