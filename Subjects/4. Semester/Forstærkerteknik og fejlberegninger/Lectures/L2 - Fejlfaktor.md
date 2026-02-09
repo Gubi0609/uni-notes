@@ -60,11 +60,13 @@ Dermed bliver $\alpha$
 Vi kigger nu fra $V_ o$ i stedet for $V_{in}$. Da kan vi se to spændingsdelere koblet sammen, da vi nu betragter $V_{in}=0 V$ da den positive indgangsspænding er 0 V.
 
 Da kan vi så se (fra $V_0$) at $R_3$ sidder i parallel med $R_1$ og $R_2$. Denne parallelforbindelse sidder i serie med $R_4$.
-## $$R_{in}=\left(\frac 1 {R_3}+\frac 1{R_1+R_2}\right)^{-1}$$
+## $$R_{in}=\left(\frac 1 {R_3}+\frac 1{R_1+R_2}\right)^{-1}=\left(\frac 1 {10.2k\Omega}+\frac 1{1000k\Omega+1000k\Omega}\right)^{-1}=10.15k\Omega$$
 
+Vi har nu to spændingsdelere og da vi gerne vil kende spændingen over $V_{id}$ (som er den samme som den over $R_1$) må vi skulle gange dem sammen.
+Den ene spændingsdeler er over $R_4$ og parallelforbindelsen $R_3 ||(R_1+R_2)$ mens den anden spændingsdeler er over $R_1$ og $R_2$.
 
 $\beta$ bliver så
-## $$\beta = \frac {R_1}{R_1+R_f}=\frac {1000k\Omega}{1000k\Omega+1010.1k\Omega}=\frac {1000k\Omega}{2010.1k\Omega}=\frac {10000}{20101}$$
+## $$\beta = \frac {R_{in}}{R_{in}+R_4}\cdot\frac{R_1}{R_1+R_2}=$$
 ## 3. Gain
 Da vi antager at forstærkeren er ideel, kan vi bruge formlen for gain fra en [[Modkoblet forstærker]]
 ## $$A_{CL}=\frac\alpha\beta=\frac {-\frac {10101}{20101}}{\frac {10000}{20101}}=\frac {-10101\cdot 20101}{10000\cdot20101}=-\frac {10101}{10000}\approx -1$$
