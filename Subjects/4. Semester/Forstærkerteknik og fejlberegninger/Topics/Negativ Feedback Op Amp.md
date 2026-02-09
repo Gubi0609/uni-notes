@@ -36,5 +36,10 @@ Til dette kan vi bruge denne tabel
 **Her er det vigtigt at være opmærksom på _typen_ af forstærkeren i reguleringssløjfen.**
 
 > [!example]- Eksempel på Input Impedance for Series Voltage Feedback type.
-> Vi henter værdierne for Op Ampen fra $\mu$A741C databladet.
-> $$\text{Input Impedance}=R_i\cdot(1+A_v\beta)=540*10^9\Omega(1+200*10^3*\frac 1{11}$$
+> Vi henter værdierne for Op Ampen fra $\mu$A741C databladet. Værdien for $\beta$ er blot et eksempel fra [[Modkoblet forstærker#Inverterende forstærker|Modkoblet forstærker]].
+> $$\text{Input Impedance}=R_i\cdot(1+A_v\beta)=540*10^9\Omega(1+200*10^3*\frac 1{11})=9.82*10^{15}\Omega$$
+
+> [!example]- Eksempel på Input Impedance for Parallel Voltage Feedback type
+> Værdierne er de samme og hentet fra det samme sted som ovenstående.
+> $$\text{Input Impedance} = \frac {R_i}{1+R_m\beta}$$
+
