@@ -14,4 +14,17 @@ For [[Den Ikke Ideelle Op Amp]] gælder
 
 Da bliver $A_f$ for dette
 ## $$A_f = \frac {x_o}{x_s}=\frac A {1+\beta\cdot A}=\frac 1\beta\cdot\frac 1{1+\frac 1{\beta\cdot A}}\rightarrow \frac 1\beta|_{\beta A\rightarrow\infty}$$
-Her betragtes $\alpha$ 
+Her betragtes $\alpha$ (se [[Modkoblet forstærker]]) som værende $\alpha=1$ idet $x_s$ betragtes som indgangssignal.
+- **A** er *Åben*sløjfeforstærknigne ($A_{OL}$]).
+- **A_f** ($A_f$) er *Lukket*sløjeforstærkning ($A_{CL}$).
+- $\beta A$ er *Sløjfe*forstærknigen (${\beta A}_{OL}$)
+![[Pasted image 20260209093425.png]]
+
+$\beta$ er typisk bestemt af _passive_ komponenter (e.g. **R**, **C** etc.,)
+
+# Feedback typer
+![[Pasted image 20260209093526.png]]
+
+> [!example]- Eksempler på feedback typer
+> ![[Pasted image 20260209093550.png]]
+
