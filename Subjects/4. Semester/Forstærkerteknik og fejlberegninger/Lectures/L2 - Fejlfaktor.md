@@ -39,6 +39,22 @@ Dermed
 ## $$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}$$
 100 ppm er $0.0001$. Så
 ## $$0.0001=1-\frac {A_{OL}}{10+A_{OL}}\Leftrightarrow A_{OL}=99,990$$
+# Opgaver
+![[Pasted image 20260209101801.png]]
+
+Vi har at gøre med en [[Modkoblet forstærker#Inverterende forstærker|inverterende forstærker]].
+## $$\alpha = \frac {R_2} {R_1 + R_2}\quad \beta = \frac {R_1}{R_2 + R_1}$$
+Vi kan starte med at samle nogle af modstandende.
+
+Da den positive indgang af Op Ampen er forbundet til GND, må dens spænding være 0 V.
+Eftersom vi gerne vil have en forskel i spændingen på Op Ampen, må indgangsspændingen på den positive indgang også være 0 V.
+
+Derfor kan noden mellem $R_1$ og $R_2$ betragtes som $R_2$'s GND og vi kan således samle $R_2$, $R_3$ og $R_4$. Set fra $R_4$ sidder $R_2$ og $R_3$ parallelt, og denne parallelforbindelse sidder i serie med $R_4$. Dermed bliver den samlede mostand for denne del af kredsløbet
+## $$R_f=R_4+(\frac 1 $$
+
+## 1.
+
+
 
 ---
 #lecture 
