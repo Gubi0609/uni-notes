@@ -7,13 +7,19 @@ For en ideel op amp som følgende
 ![[Pasted image 20260202084042.png]]
 
 Vil det gælde at output spændingen er
-## $$V_o=A_{OL}\cdot V_{id}$$
+## $$V_o=A_{OL}\cdot V_{id}=V_{in}\cdot\alpha-V_{id}\cdot A_{OL}\cdot\beta$$
 hvor $A_{OL}$ er _gain open loop_
+
+Vi har nogle lidt lange udtryk i det ovenstående. Vi kan formulere 
 
 Gain vil gå mod uendelig, hvis
 ## $$V_{id}=e_+-e_-=0\Leftrightarrow e_+=e_-$$
 
 Dette kalder vi **modkoblingsprincippet
+
+Forstærkningen for en modkoblet op amp er
+## $$A_{CL}=\frac \alpha \beta$$
+Formlerne for $\alpha$ og $\beta$ kan ses i [[Den Realistiske Op Amp]].
 
 # Negativ feedback
 ![[Pasted image 20260202084253.png]]

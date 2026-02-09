@@ -3,6 +3,8 @@ En modkoblet forstærker har et kredsløb som dette
 
 Hvor det ovenstående er en forstærker med _negativ feedback_ (da feedback går til den negative indgangsport).
 
+Forstærkningen for en modkoblet op amp er
+## $$A_{CL}=\frac \alpha \beta$$
 # Inverterende forstærker
 ![[Pasted image 20260209082514.png]]
 
