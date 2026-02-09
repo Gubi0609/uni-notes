@@ -28,3 +28,13 @@ $\beta$ er typisk bestemt af _passive_ komponenter (e.g. **R**, **C** etc.,)
 > [!example]- Eksempler på feedback typer
 > ![[Pasted image 20260209093550.png]]
 
+## Baggrund for valg af feedback typer
+![[Pasted image 20260209093658.png]]
+
+Til dette kan vi bruge denne tabel
+![[Pasted image 20260209093724.png]]
+**Her er det vigtigt at være opmærksom på _typen_ af forstærkeren i reguleringssløjfen.**
+
+> [!example]- Eksempel på Input Impedance for Series Voltage Feedback type.
+> Vi henter værdierne for Op Ampen fra $\mu$A741C databladet.
+> $$\text{Input Impedance}=R_i\cdot(1+A_v\beta)=540*10^9\Omega(1+200*10^3*\frac 1{11}$$
