@@ -20,9 +20,10 @@
 # Topics
 [[Den Ikke Ideelle Op Amp]]
 [[Modkoblet forstærker]]
-[[Effekt af negativ feedback Op Amp]]
+[[Negativ Feedback Op Amp]]
 
 # Notes
+
 
 ---
 #lecture 
