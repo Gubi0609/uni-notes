@@ -61,7 +61,7 @@ $\beta$ bliver så
 ## $$\beta = \frac {R_1}{R_1+R_f}=\frac {1000k\Omega}{1000k\Omega+1010.1k\Omega}=\frac {1000k\Omega}{2010.1k\Omega}=\frac {10000}{20101}$$
 ## 3. Gain
 Da vi antager at forstærkeren er ideel, kan vi bruge formlen for gain fra en [[Modkoblet forstærker]]
-## $$A_{CL}=\frac\alpha\beta=\frac {\frac {10101}{20101}}{\frac {10000}{20101}}=\frac {10101\cdot 20101}{10000\cdot20101}=\frac {10101}{10000}\approx 1$$
+## $$A_{CL}=\frac\alpha\beta=\frac {-\frac {10101}{20101}}{\frac {10000}{20101}}=\frac {-10101\cdot 20101}{10000\cdot20101}=-\frac {10101}{10000}\approx -1$$
 
 ---
 #lecture 
