@@ -385,7 +385,7 @@ NVIC_ST_CTRL_R |= NVIC_ST_CTRL_ENABLE;
 ```
 
 This is done according to the explanation on [SysTick](https://microcontrollerslab.com/systick-timer-tm4c123g-arm-cortex-m4-microcontroller/).
-
+We will look at relevant parts of the code for each section. The parts will be a part of the code above.
 ### SysTick CTRL
 ![[Pasted image 20260205112711.png]]
 
