@@ -63,10 +63,10 @@ architecture rtl of PriorityEncoder is
 begin
 with D select
     Y <= "00" when "0001",
-         "01" when "001X",
-         "10" when "01XX",
-         "11" when "1XXX",
-         "---" when others;
+         "01" when "001-",
+         "10" when "01--",
+         "11" when "1---",
+         "--" when others;
 
 end rtl;
 ```
