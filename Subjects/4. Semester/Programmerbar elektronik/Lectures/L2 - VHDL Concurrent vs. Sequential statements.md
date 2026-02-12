@@ -12,7 +12,8 @@
 
 ---
 # Relevant documents
-
+[[Lecture 2.pdf]]
+[[Lab_2.pdf]]
 
 # Topics
 
