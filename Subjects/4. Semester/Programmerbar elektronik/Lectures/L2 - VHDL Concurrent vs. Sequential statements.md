@@ -19,7 +19,8 @@
 
 
 # Notes
-
+VHDL programming is all done in _parallel_, because all the gates will work at the same time instead of sequentially.
+- Except for _processes_ (like if/else statements)
 
 ---
 #lecture 
