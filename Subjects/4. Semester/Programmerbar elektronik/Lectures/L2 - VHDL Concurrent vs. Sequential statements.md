@@ -51,5 +51,25 @@ end rtl;
 
 An encoder can be used to minimize the logic behind e.g. a keypad. So say we have a keypad with 9 different buttons. This is a lot of inputs for some systems, or maybe we do not have a lot of space. We can use an _encoder_ to encode the 9 different buttons (states) to only 4 pins / 1 bus of 4 bits.
 
+VHDL code for a priority 4 → 2 decoder
+```vhdl
+entity PriorityEncoder is
+    Port ( D : in STD_LOGIC_VECTOR (3 downto 0);
+           Y : out STD_LOGIC_VECTOR (1 downto 0));
+end PriorityEncoder;
+
+architecture rtl of PriorityEncoder is
+
+begin
+with D select
+    Y <= "00" when "0001",
+         "01" when "001X",
+         "10" when "01XX",
+         "11" when "1XXX",
+         "---" when others;
+
+end rtl;
+```
+
 ---
 #lecture 
