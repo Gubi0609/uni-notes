@@ -49,6 +49,7 @@ begin
 end rtl;
 ```
 
+An encoder can be used to minimize the logic behind e.g. a keypad. So say we have a keypad with 9 different buttons. This is a lot of inputs for some systems, or maybe we do not have a lot of space. We can use an _encoder_ to encode the 9 different buttons (states) to only 4 pins / 1 bus of 4 bits.
 
 ---
 #lecture 
