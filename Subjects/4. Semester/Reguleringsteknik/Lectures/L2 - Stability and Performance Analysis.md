@@ -19,7 +19,7 @@
 [[Lecture 2 - Test.pdf]]
 
 # Topics
-
+[[Performance]]
 
 # Notes
 Hvis polerne for en overføringsfunktion har en _negativ reel_ del, er systemet stabilt. Vi er lige glad med nulpunkterne, det er kun polerne (rødderne af nævneren) der gælder.
