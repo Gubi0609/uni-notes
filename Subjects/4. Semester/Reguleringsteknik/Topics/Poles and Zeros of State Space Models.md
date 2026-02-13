@@ -6,8 +6,9 @@ Hence, $p$ is a pole for $G(S)\quad \Rightarrow\quad p$  is an eigenvalue for $A
 
 > [!example]- Example - Mass-Spring-Damper
 > ![[Pasted image 20260213093018.png]]
-> Notice that the poles are easily fo
+> Notice that the poles are easily found from the last form of the determinant, since we want it to equal 0. This only leaves $-1$ and $-2$ as options.
 > ![[Pasted image 20260213093028.png]]
+> The last equation is the equation for the zeros of the system.
 > ![[Pasted image 20260213093040.png]]
 > ![[Pasted image 20260213093048.png]]
 

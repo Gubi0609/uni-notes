@@ -20,7 +20,7 @@
 
 # Topics
 [[Impulse response]]
-[[Stability]]
+[[External/Notes/Stability]]
 [[Frequency Response Analysis]]
 
 
