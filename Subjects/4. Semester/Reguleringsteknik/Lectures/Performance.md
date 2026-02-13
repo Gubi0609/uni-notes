@@ -20,7 +20,7 @@ where the poles of $G(s)$ describes the stability.
 
 If we have a frequency of 0 (s=0), we get the _DC_-gain of the system.
 
-# Specifications
+# Performance Specifications
 ![[Pasted image 20260213085824.png]]
 
 The rise time is the time that it takes to rise from $10\%$ to $90\%$ of the setpoint value.
@@ -37,7 +37,16 @@ The $\alpha\%$-settling time is the time it takes for the step response to reach
 For a [[Second order systems]] the settling time can be approximated as
 ## $$t_s=\frac {-\log(\alpha/100)}{\omega_n\zeta}$$
 ## Peak time
-The peak time $t_p$ can be found from the [[Second order systems#Step response|step response]] of the system
-![[Pasted image 20260213091739.png]]
+The peak time $t_p$ can be found from the [[Second order systems#Step response|step response]] of the system.
 
+We want to find the maximum of $y(t)$ and thus we differentiate it.
+![[Pasted image 20260213091739.png]]
 ## $$t_p=\frac\pi{\omega_d}$$
+## Overshoot
+The overshoot is computed from the [[Second order systems#Step response|step response]] at the _peak time_
+![[Pasted image 20260213091932.png]]
+## $$M_p=e^{-\pi\zeta/\sqrt{1-\zeta^2}}$$
+## Frequency and Time Specifications
+![[Pasted image 20260213092136.png]]
+
+We can use these equations to find the needed variables for a specific system requirement.
