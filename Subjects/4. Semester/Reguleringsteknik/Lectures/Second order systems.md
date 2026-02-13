@@ -11,18 +11,39 @@ The poles will be the roots of the denumerator. The system has _two_ poles which
 > [!example]- Underdamped Second Order System
 > ![[Pasted image 20260213084608.png]]
 
-# Impulse Response
+# Underdamped second order system
+## Impulse Response
 The impulse response of the system is 
 ## $$h(t)=k\frac{\omega_n} {\sqrt{1-\zeta^2}}e^{-\sigma t}\sin(\omega_d t)1(t)$$
 ![[Pasted image 20260213084904.png]]
 
-# Step reponse
+## Step reponse
 The step response of the system is
 ## $$y(t)=k\left(1-e^{-\sigma t}\left(\cos(\omega_dt)+\frac \sigma {\omega_d}\sin(\omega_dt)\right)\right)$$
 ![[Pasted image 20260213085031.png]]
 
-If we want a _good_ system, (e.g. an auto pilot in a car) we would not want it to swing much, so we 
+If we want a _good_ system, (e.g. an auto pilot in a car) we would not want it to swing much, so we would need a high damping ratio $\zeta$.
 
-# Bode plot
+## Bode plot
 The bode plot of a second order system depends on the _damping ratio_ $\zeta$.
 ![[Pasted image 20260213084726.png]]
+
+We can see for the small damping ratio that we have a peak at our resonance frequency. This is not good.
+
+# Critically damped system
+## Impulse response
+The impulse response of the system is
+## $$h(t)=k\omega_n^2te^{-\omega_n t}$$
+
+![[Pasted image 20260213085640.png]]
+
+## Step response
+The step response for the system  is
+![[Pasted image 20260213085704.png]]
+
+# Overdamped system
+## Impulse response
+The impulse response of the system is
+![[Pasted image 20260213085734.png]]
+
+## Step resposne
