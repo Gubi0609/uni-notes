@@ -14,7 +14,9 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 2 - Stability Analysis.pdf|Lecture 2 - Stability Analysis]]
+[[Lecture 2 - Exercises.pdf]]
+[[Lecture 2 - Test.pdf]]
 
 # Topics
 
