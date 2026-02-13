@@ -19,3 +19,9 @@ where the poles of $G(s)$ describes the stability.
 - If the _real part_ of the poles (the roots of $P(s)$) is _negative_ the system is stabel. The imaginary part has no say in the stability.
 
 If we have a frequency of 0 (s=0), we get the _DC_-gain of the system.
+
+# Specifications
+![[Pasted image 20260213085824.png]]
+
+The rise time is the time that it takes to rise to $90\%$ of our goal.
+The settling time is how long it takes to settle at our goal (no swinging).

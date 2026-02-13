@@ -46,4 +46,6 @@ The step response for the system  is
 The impulse response of the system is
 ![[Pasted image 20260213085734.png]]
 
-## Step resposne
+## Step response
+The step response of the system is
+![[Pasted image 20260213085752.png]]
