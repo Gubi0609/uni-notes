@@ -14,3 +14,5 @@ The impulse response of a first order system is
 The step response of a first-order system is
 ## $$y(t)=k\left(1-e^{-\frac 1 \tau t}\right)$$
 ![[Pasted image 20260213083443.png]]
+
+The DC gain $k$ can then be found by setting the time to $\infty$ and observing the value of $y(t)$. This will be equal to $k$.
