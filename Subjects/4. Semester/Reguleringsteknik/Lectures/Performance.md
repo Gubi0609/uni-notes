@@ -26,5 +26,18 @@ If we have a frequency of 0 (s=0), we get the _DC_-gain of the system.
 The rise time is the time that it takes to rise from $10\%$ to $90\%$ of the setpoint value.
 The settling time is how long it takes to settle at our the setpoint value (no swinging).
 
-Peak time is not used in describing the performance. 
+Peak time is not used in describing the performance.
 ## Rise time
+For a [[Second order systems]] the rise time can be approximated as
+## $$t_r=\frac {1.8}{\omega_n}$$
+Where $\omega_n$ is the undampened natural frequency
+
+## Settling time
+The $\alpha\%$-settling time is the time it takes for the step response to reach $\pm\alpha\%$ of the setpoint value without leaving it again.
+For a [[Second order systems]] the settling time can be approximated as
+## $$t_s=\frac {-\log(\alpha/100)}{\omega_n\zeta}$$
+## Peak time
+The peak time $t_p$ can be found from the [[Second order systems#Step response|step response]] of the system
+![[Pasted image 20260213091739.png]]
+
+## $$t_p=\frac\pi{\omega_d}$$

@@ -17,7 +17,7 @@ The impulse response of the system is
 ## $$h(t)=k\frac{\omega_n} {\sqrt{1-\zeta^2}}e^{-\sigma t}\sin(\omega_d t)1(t)$$
 ![[Pasted image 20260213084904.png]]
 
-## Step reponse
+## Step response
 The step response of the system is
 ## $$y(t)=k\left(1-e^{-\sigma t}\left(\cos(\omega_dt)+\frac \sigma {\omega_d}\sin(\omega_dt)\right)\right)$$
 ![[Pasted image 20260213085031.png]]
