@@ -8,7 +8,7 @@ Hence, $p$ is a pole for $G(S)\quad \Rightarrow\quad p$  is an eigenvalue for $A
 > ![[Pasted image 20260213093018.png]]
 > Notice that the poles are easily found from the last form of the determinant, since we want it to equal 0. This only leaves $-1$ and $-2$ as options.
 > ![[Pasted image 20260213093028.png]]
-> The last equation is the equation for the zeros of the system.
 > ![[Pasted image 20260213093040.png]]
 > ![[Pasted image 20260213093048.png]]
+> We must choose the easiest way to calculate the determinant. We notice that the right column is 0, 1, 0, meaning that we can rule out two of the sub-determinants (since they would be multiplied by 0). Then we calculate the sub-determinant for 1 and multiply by $-1$, since the order is +, -, +, ...
 
