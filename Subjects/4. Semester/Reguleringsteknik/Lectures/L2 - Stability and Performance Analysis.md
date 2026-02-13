@@ -22,6 +22,7 @@
 [[Performance]]
 [[First order systems]]
 [[Second order systems]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Poles and Zeros of State Space Models|Poles and Zeros of State Space Models]]
 
 # Notes
 Hvis polerne for en overføringsfunktion har en _negativ reel_ del, er systemet stabilt. Vi er lige glad med nulpunkterne, det er kun polerne (rødderne af nævneren) der gælder.
