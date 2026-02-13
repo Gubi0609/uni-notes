@@ -23,5 +23,8 @@ If we have a frequency of 0 (s=0), we get the _DC_-gain of the system.
 # Specifications
 ![[Pasted image 20260213085824.png]]
 
-The rise time is the time that it takes to rise to $90\%$ of our goal.
-The settling time is how long it takes to settle at our goal (no swinging).
+The rise time is the time that it takes to rise from $10\%$ to $90\%$ of the setpoint value.
+The settling time is how long it takes to settle at our the setpoint value (no swinging).
+
+Peak time is not used in describing the performance. 
+## Rise time
