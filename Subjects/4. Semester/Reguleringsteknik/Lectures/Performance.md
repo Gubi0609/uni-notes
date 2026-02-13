@@ -17,3 +17,5 @@ This entails the stability of the transfer function
 ## $$G(s)=\frac {Q(s)}{P(s)}$$
 where the poles of $G(s)$ describes the stability.
 - If the _real part_ of the poles (the roots of $P(s)$) is _negative_ the system is stabel. The imaginary part has no say in the stability.
+
+If we have a frequency of 0 (s=0), we get the _DC_-gain of the system.
