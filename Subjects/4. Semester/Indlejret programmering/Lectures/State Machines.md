@@ -1,0 +1,2 @@
+There is a main _super loop_ which will be running all the time, and its functionality will only change upon an [[Assignment 1 solution|ISR]]
+- E.g. changing the state of a LED. The super loop will only set it to a color, and the color to set will change upon a button ISR.
