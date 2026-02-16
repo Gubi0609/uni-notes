@@ -20,5 +20,7 @@
 # Notes
 Modularity is important as it increases readability.
 
+![[Pasted image 20260216140353.png]]
+
 ---
 #lecture 
