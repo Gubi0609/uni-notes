@@ -13,6 +13,8 @@
 ---
 # Relevant documents
 [[Lesson03.pdf]]
+[[Lab3.pdf]]
+[[Subjects/4. Semester/Indlejret programmering/PDFs/Assignment2.pdf|Assignment2]]
 
 # Topics
 [[Subjects/4. Semester/Indlejret programmering/Topics/State Machines|State Machines]]
