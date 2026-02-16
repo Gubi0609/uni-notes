@@ -18,7 +18,7 @@
 [[Subjects/4. Semester/Indlejret programmering/Lectures/State Machines|State Machines]]
 
 # Notes
-
+Modularity is important as it increases readability.
 
 ---
 #lecture 
