@@ -26,7 +26,7 @@ Since a technical problem is usually divided into states (like auto/manual mode)
 	- Timeout
 	- Reset
 
-**Outputs**
+**Outputs for arrows**
 - Hardware output
 - Message to other parts of the system
 - Start timer
