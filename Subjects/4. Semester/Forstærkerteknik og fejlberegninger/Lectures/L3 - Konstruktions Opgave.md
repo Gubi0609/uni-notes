@@ -18,7 +18,7 @@
 
 
 # Notes
-
+![[Pasted image 20260216110328.png]]![[Pasted image 20260216110337.png]]
 
 ---
 #lecture 
