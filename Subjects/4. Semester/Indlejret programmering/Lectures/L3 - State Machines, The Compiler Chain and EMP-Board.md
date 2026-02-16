@@ -15,7 +15,7 @@
 [[Lesson03.pdf]]
 
 # Topics
-[[Subjects/4. Semester/Indlejret programmering/Lectures/State Machines|State Machines]]
+[[Subjects/4. Semester/Indlejret programmering/Topics/State Machines|State Machines]]
 
 # Notes
 Modularity is important as it increases readability.

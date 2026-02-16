@@ -10,3 +10,23 @@ Or as a _layered view_
 ![[Pasted image 20260216125028.png]]
 ![[Pasted image 20260216125037.png]]
 
+Since a technical problem is usually divided into states (like auto/manual mode) it is natural to represent it using a state machine
+![[Pasted image 20260216125622.png]]
+
+# Notations
+- **Moore machine** – output values are only dependent on the state
+- **Mealy machine** – output values are determined by both states and inputs
+
+# Elements
+![[Pasted image 20260216125735.png]]
+
+**Condition for arrows**
+- Events
+- Special Conditions
+	- Timeout
+	- Reset
+
+**Outputs**
+- Hardware output
+- Message to other parts of the system
+- Start timer
