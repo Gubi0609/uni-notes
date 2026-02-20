@@ -24,3 +24,13 @@ When we _increase_ $K(s)$ we minimize the the disturbance and get closer and clo
 > [!example]- Open loop steady state error Vs. closed loop steady state error
 > ![[Pasted image 20260220090552.png]]
 
+## Measurement Noise
+![[Pasted image 20260220092046.png]]
+The output $y_m$ is given by (superposition can be applied for deriving the expression)
+## $$y_m(s)=\frac {1}{1+G(s)\cdot K(s)}\cdot v(s)+\frac {G(s)\cdot K(s)}{1+ G(s)\cdot K(s)}\cdot r(s)$$
+
+# Sensitivity Analysis
+![[Pasted image 20260220092252.png]]
+(same for [[Open Loop System]] but without feedback)
+
+![[Pasted image 20260220092322.png]]
