@@ -21,6 +21,7 @@
 [[Lecture 3 - Test with solution.pdf]]
 
 # Topics
+[[Open Loop System]]
 [[Closed loop system]]
 
 # Notes
