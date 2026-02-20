@@ -18,3 +18,5 @@ The Final Value Theorem can also be used to determine the **DC gain** of a syste
 
 # Disturbance
 ![[Pasted image 20260220085634.png]]
+## $$y(s)=G(s)d(s)+G(s)D(s)r(s)$$
+This is not very good, as we can not minimize the distorubance. Thus we instead use [[Closed loop system]]

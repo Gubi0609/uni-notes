@@ -4,7 +4,14 @@ For a system as the above, we input $r(s)$ and our output $y$ into the control s
 
 When our system is stable, it must have the _closed-loop poles_ in the open left half of the imaginary plane (se also [[Open Loop System#Steady-State Value of Time Function|Open Loop System]])
 
-The **loop gain** is defined as $L(s)=G(s)\cdot K(s)$. The close
+The **loop gain** is defined as $L(s)=G(s)\cdot K(s)$. The closed-loop poles are given by
+## $$1+L(s)=0$$
+The closed-loop poles then also satisfy
+## $$L(s)=-1$$
+In polar form, this would be
+## $$1\angle{180\deg}\rightarrow 1\angle{\pi}$$
+(But we apparently don't use radians in control...)
+
 # Disturbance
 ![[Pasted image 20260220083457.png]]
 We now insert a disturbance $d(s)$. The output $y(s)$ of the system is now
