@@ -34,3 +34,8 @@ The output $y_m$ is given by (superposition can be applied for deriving the expr
 (same for [[Open Loop System]] but without feedback)
 
 ![[Pasted image 20260220092322.png]]
+The sensitivity is nominated $S$.
+
+# Linearization
+![[Pasted image 20260220092513.png]]
+
