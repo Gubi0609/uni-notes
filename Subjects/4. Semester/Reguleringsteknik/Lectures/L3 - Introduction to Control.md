@@ -23,6 +23,7 @@
 # Topics
 [[Open Loop System]]
 [[Closed loop system]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Steady State Tracking|Steady State Tracking]]
 
 # Notes
 
