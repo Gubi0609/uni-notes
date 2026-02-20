@@ -14,7 +14,11 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 3 - Introduction to Control.pdf|Lecture 3 - Introduction to Control]]
+[[CruiseControlExample.pdf]]
+[[Lecture 3 - Exercises.pdf]]
+[[Lecture 3 - Test.pdf]]
+[[Lecture 3 - Test with solution.pdf]]
 
 # Topics
 
