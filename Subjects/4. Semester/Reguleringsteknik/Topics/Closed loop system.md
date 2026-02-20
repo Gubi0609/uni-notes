@@ -17,3 +17,10 @@ In polar form, this would be
 We now insert a disturbance $d(s)$. The output $y(s)$ of the system is now
 ## $$y(s)=\frac {G(s)}{1+G(s)\cdot K(s)}\cdot d(s)+\frac {G(s)\cdot K(s)}{1+ G(s)\cdot K(s)}\cdot r(s)$$
 When we _increase_ $K(s)$ we minimize the the disturbance and get closer and closer to the output being $y(s)=r(s)$.
+
+> [!example]- Speed control of an engine
+> ![[Pasted image 20260220090419.png]]
+
+> [!example]- Open loop steady state error Vs. closed loop steady state error
+> ![[Pasted image 20260220090552.png]]
+
