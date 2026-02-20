@@ -7,3 +7,10 @@ Is used when we have multiple sensors that we want to use.
 > ![[Pasted image 20260220095420.png]]
 > ![[Pasted image 20260220095432.png]]
 
+# Design
+![[Pasted image 20260220100823.png]]
+
+# DC-motor
+![[Pasted image 20260220100853.png]]
+![[Pasted image 20260220100859.png]]
+![[Pasted image 20260220100909.png]]
