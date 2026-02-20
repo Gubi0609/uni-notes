@@ -39,3 +39,5 @@ The sensitivity is nominated $S$.
 # Linearization
 ![[Pasted image 20260220092513.png]]
 
+## Linearization model
+![[Pasted image 20260220093110.png]]
