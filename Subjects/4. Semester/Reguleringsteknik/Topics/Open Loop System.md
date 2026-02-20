@@ -4,3 +4,8 @@ For an open loop system as the above, we want to chose $D(s)$ so that our output
 
 # Steady-State Value of Time Function
 ![[Pasted image 20260220084252.png]]
+
+## Final Value Theorem
+If all poles of $sY(S)$ are in the _open left half_ of the $s$-plane then
+## $$\lim_{t\rightarrow \infty}y(t)=\lim_{s\rightarrow 0}sY(s)$$
+This is called the **Final Value Theorem**, which determines the constant value that the impulse response of a stable system converges to.
