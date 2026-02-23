@@ -3,4 +3,33 @@
 A task is defined by a set of _parameters_ and supporting data structures
 - A name
 - A unique ID
-- a prior
+- A priority
+- A task control block (TCB)
+- A stack
+- A task routine
+
+# Dividing applications into tasks
+Done by experience and intuition
+
+Criteria for task creation
+- Parallelism
+	- Simultaneous and independent functionality
+- Timing
+	- Different timing constraints
+- Priority
+	- Divide tasks with different priority
+- Structure
+	- Each task handles one well defined problem
+- Coupling
+	- Divide problem into loosely coupled tasks.
+	- Should rely mostly on itself but have an interface to other tasks (does not need to wait for another task to complete before executing).
+- Periodicity
+	- A task that must execute with a fixed period is a task by itself.
+
+# Task diagram elements
+![[Pasted image 20260223125936.png]]
+
+
+
+---
+#embed
