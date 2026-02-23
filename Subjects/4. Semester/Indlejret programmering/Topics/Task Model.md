@@ -34,7 +34,11 @@ Criteria for task creation
 
 A shared memory element keeps its value after it has been read (e.g. a state variable (`STATE1`, `STATE2`, ...) or the `ticks` variable from SysTick).
 
-An event from the event buffer gets destroyed after reading and processing.l
+An event from the event buffer gets destroyed after reading and processing.
+
+> [!example]- Task Diagram - Speedometer
+> ![[Pasted image 20260223132529.png]]
+> The encoder interrupt runs every time the wheel completes a turn. When we also have the time tick, we can calculate the RPM and from that the speed of the vehicle.
 
 
 ---
