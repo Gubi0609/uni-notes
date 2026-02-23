@@ -32,7 +32,9 @@ Criteria for task creation
 # Task diagram elements
 ![[Pasted image 20260223125936.png]]
 
-A shared memory element keeps its va
+A shared memory element keeps its value after it has been read (e.g. a state variable (`STATE1`, `STATE2`, ...) or the `ticks` variable from SysTick).
+
+An event from the event buffer gets destroyed after reading and processing.l
 
 
 ---
