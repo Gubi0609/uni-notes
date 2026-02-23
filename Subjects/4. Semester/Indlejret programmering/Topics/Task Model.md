@@ -40,6 +40,9 @@ An event from the event buffer gets destroyed after reading and processing.
 > ![[Pasted image 20260223132529.png]]
 > The encoder interrupt runs every time the wheel completes a turn. When we also have the time tick, we can calculate the RPM and from that the speed of the vehicle.
 
+> [!example]- [[Subjects/4. Semester/Indlejret programmering/PDFs/Assignment2.pdf|Assignment2]] task diagram
+> ![[Pasted image 20260223133328.png]]
+> We can see that there is a _protected mode_ layer and _application mode_ layer. This division is so that the users input is separate from the protected mode, meaning that the input won't affect that mode.
 
 ---
 #embedded 
