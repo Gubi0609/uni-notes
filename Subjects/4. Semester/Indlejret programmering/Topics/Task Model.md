@@ -8,6 +8,9 @@ A task is defined by a set of _parameters_ and supporting data structures
 - A stack
 - A task routine
 
+
+Regarding [[Subjects/4. Semester/Indlejret programmering/Topics/State Machines|State Machines]], they fit _into tasks_ meaning that each task can have its own state machine describing the states of the one task.
+
 # Dividing applications into tasks
 Done by experience and intuition
 
@@ -29,7 +32,8 @@ Criteria for task creation
 # Task diagram elements
 ![[Pasted image 20260223125936.png]]
 
+A shared memory element keeps its va
 
 
 ---
-#embed
+#embedded 
