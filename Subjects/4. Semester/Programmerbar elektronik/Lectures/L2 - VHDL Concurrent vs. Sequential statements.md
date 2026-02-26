@@ -13,7 +13,7 @@
 ---
 # Relevant documents
 [[Lecture 2.pdf]]
-[[Lab_2.pdf]]
+[[Lab 2.pdf]]
 
 # Topics
 

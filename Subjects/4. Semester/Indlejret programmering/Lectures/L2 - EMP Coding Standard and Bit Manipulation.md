@@ -18,7 +18,7 @@
 [[Lesson02_standard.pdf]]
 [[Lesson02_systick.pdf]]
 
-[[Lab2.pdf]]
+[[Subjects/4. Semester/Indlejret programmering/PDFs/Lab2.pdf]]
 
 # Topics
 
