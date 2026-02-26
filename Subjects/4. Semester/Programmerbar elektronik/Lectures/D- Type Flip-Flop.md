@@ -12,7 +12,8 @@ There a different models of flip-flops with +ve and -ve edge triggered are shown
 - Number 1 and 2 uses VHDL attributes to detect the `clk` signal edge.
 - Number 3 and 4 uses a function call for the same purpose.
 
-In a noisy envirom
+In a noisy environment the function call (architecture 3 and 4) are best to use, since we can implement further checks to make sure we only trigger on an actual clock pulse.
+- E.g. If we use the first architecture, and the current signal is _1_, we then have some noise (while still being on _1_), changing the signal to _high_. The system recognizes an _event_ on the `clk` because of the noise, and since the signal is still gifg
 
 ## With reset
 ![[Pasted image 20260226124748.png]]
