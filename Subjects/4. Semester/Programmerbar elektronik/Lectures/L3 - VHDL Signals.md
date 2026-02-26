@@ -19,10 +19,14 @@
 # Topics
 [[Latches]]
 [[D- Type Flip-Flop]]
-[[Subjects/4. Semester/Programmerbar elektronik/Lectures/Registers]]
+[[Subjects/4. Semester/Programmerbar elektronik/Lectures/Registers|Registers]]
 
 # Notes
 ![[Pasted image 20260226130753.png]]
+We can see that `y` gets updated at the end of the process, but the variable `y_sig` gets updated immediately.
+- Variable is the same as a software variable
+- Signal is related to hardware.
+
 
 ---
 #lecture 
