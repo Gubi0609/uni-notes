@@ -12,10 +12,12 @@
 
 ---
 # Relevant documents
-
+[[Lecture 3.pdf]]
+[[Lab 3.pdf]]
+[[Assig_1.pdf]]
 
 # Topics
-
+[[Latches]]
 
 # Notes
 

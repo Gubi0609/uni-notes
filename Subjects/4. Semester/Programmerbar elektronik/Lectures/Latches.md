@@ -1,0 +1,1 @@
+A latch is a level sensitive memory cell that is transparent to signals passing
