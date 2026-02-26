@@ -9,7 +9,7 @@ It is basically the same as the [[D-Type Flip-Flop#Modeling|modelling]] for [[D-
 ## With enable
 ![[Pasted image 20260226130605.png]]
 
-Notice the use of `others`. It is used to assign another value.... I think.
+Notice the use of `others`. It is used to assign all other indexes on the bus to `'0'`.
 
 # Shift registers
 ![[Pasted image 20260226131131.png]]
