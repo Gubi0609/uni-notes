@@ -15,4 +15,7 @@ Since we do not have a clock signal, but are only reliant on the hardware time, 
 ## With clear input
 ![[Pasted image 20260226123912.png]]
 
-Latches will clear by setting the output Q to 
+Latches will clear by setting the output Q to 0 whenever the clear signal goes to 1.
+Latches with preset will preset the output to 1 instead of 0.
+- Always _asynchronous_ with the enable.
+
