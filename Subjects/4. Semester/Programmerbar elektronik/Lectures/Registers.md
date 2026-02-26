@@ -28,3 +28,4 @@ Has _1 input_
 ![[Pasted image 20260226131241.png]]
 
 See the use of `&`. By using this we combine several steps into one line.
+- Mapping from `reg_temp` to signal needs to be done _outside_ the `process`.
