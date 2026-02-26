@@ -22,7 +22,7 @@
 [[Subjects/4. Semester/Programmerbar elektronik/Lectures/Registers]]
 
 # Notes
-
+![[Pasted image 20260226130753.png]]
 
 ---
 #lecture 
