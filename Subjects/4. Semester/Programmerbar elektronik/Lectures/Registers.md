@@ -9,7 +9,7 @@ It is basically the same as the [[D-Type Flip-Flop#Modeling|modelling]] for [[D-
 ## With enable
 ![[Pasted image 20260226130605.png]]
 
-Notice the use of `others`. It is used if we have another value.
+Notice the use of `others`. It is used to assign another value.... I think.
 
 # Shift registers
 ![[Pasted image 20260226131131.png]]

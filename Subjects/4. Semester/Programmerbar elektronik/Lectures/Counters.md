@@ -10,3 +10,5 @@ When modelling this, we might think that we can simply say `q <= q + 1`, but thi
 
 Beneath the blue square, `count_temp` is set to unsigned.
 ![[Pasted image 20260226134018.png]]
+
+To increase the count width, we can simply change the width of the `count_out` and `count_temp`.
