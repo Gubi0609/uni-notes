@@ -22,3 +22,12 @@ The first architecture models a D-type flip-flop with an *asynchronous reset* in
 the commonly used D-type flip-flop, while the second architecture models D-type flip-
 flop with a *synchronous reset* as appears from the process sensitivity list and the if
 statements sequence.
+
+### Asynchronous with enable
+![[Pasted image 20260226130124.png]]
+Notice, that the enable signal is _synchronous_ since we do not include it in the `process ()`.
+
+We see that the _priority_ is
+- Reset - We can reset independently of the clock
+- Clock - If we are not reseting, we check the clock
+- Enable - The enable is only checked on a clock pulse.

@@ -1,0 +1,1 @@
+A parallel register is simply a bank of [[D- Type Flip-Flop|D-type flip-flops]], its implementation has the same structure as for one flip-flop but with extended inputs and outputs.

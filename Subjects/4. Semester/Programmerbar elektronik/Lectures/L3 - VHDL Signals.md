@@ -19,6 +19,7 @@
 # Topics
 [[Latches]]
 [[D- Type Flip-Flop]]
+[[Subjects/4. Semester/Programmerbar elektronik/Lectures/Registers]]
 
 # Notes
 
