@@ -13,7 +13,8 @@ There a different models of flip-flops with +ve and -ve edge triggered are shown
 - Number 3 and 4 uses a function call for the same purpose.
 
 In a noisy environment the function call (architecture 3 and 4) are best to use, since we can implement further checks to make sure we only trigger on an actual clock pulse.
-- E.g. If we use the first architecture, and the current signal is _1_, we then have some noise (while still being on _1_), changing the signal to _high_. The system recognizes an _event_ on the `clk` because of the noise, and since the signal is still gifg
+- E.g. If we use the first architecture, and the current signal is _1_, we then have some noise (while still being on _1_), changing the signal to _high_. The system recognizes an _event_ on the `clk` because of the noise, and since the signal is still _high_, the system thinks it is another _rising edge_ meaning, that it thinks we have gone through a whole nother cycle.
+- If we have a more complex and sophisticated function to check for a _true rising edge_, we can avoid this fault.
 
 ## With reset
 ![[Pasted image 20260226124748.png]]
