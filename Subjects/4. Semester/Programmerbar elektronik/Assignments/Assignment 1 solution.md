@@ -97,4 +97,13 @@ Within the architecture we again define an unsigned signal, `clk_cnt` to keep tr
 
 We then use a process again, that activates on changes in `clk_in`.
 - If we have a _rising edge_ of `clk_in`, we check the state of `clk_cnt` and either
-	- Res
+	- Reset `clk_cnt` to 0 and trigger a pulse of `clk_out` **if `clk_cnt` is equal to 59 decimal**.
+	- Or **else** we increment `clk_cnt` by 1 and keep `clk_out` set to 0.
+
+# Block Diagram
+The above two modules are the essential parts needed for our seconds and minutes timer, and we can now design a block diagram to display the time.
+
+![[Pasted image 20260301161256.png]]
+
+We see, that both the `Seconds_Counter` and `Minutes_Counter` are connected to the same clock, with the small addition of a `Clock_Divider` before `Minutes_Counter`'s `clk` input.
+They are also both connected to the same 
