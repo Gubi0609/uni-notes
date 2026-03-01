@@ -176,4 +176,9 @@ Within the architecture we define an unsigned signal, `ones_dec` to hold the cal
 
 We define a process like before, which will trigger upon a change in `dec_in`.
 - `ones_dec` is calculated by performing the modulus operation on the input `dec_in` (converted to the `unsigned` type) and 10. By performing modulus on `dec_in` and 10, we essentially divide `dec_in` by 10 and return the leftover. By doing this, we ensure, that it is only (and always) the one's place that is returned.
-	- We must also _resize_ the output from this calculation by
+	- We must also _resize_ the output from this calculation by using `resize(input, size)`, since the input `dec_in` is 6 bits long, and we want it to fit within 4 bits. We thus resize the calculation to 4 bits by typing `resize(calculation, 4)`.
+- `tens_dec` is calculated in almost the same way. We again divide `dec_in` (converted to the `unsigned` type) by 10, however this time we return the result as is instead of the leftover. Since VHDL will always truncate (round down) a division, instead of round to the nearest integer, this is essentially a floor division. Since we do not go above 99 (because `dec_in` can only go between 0 to 63), the return from this will always be the ten's place of the input `dec_in`.
+
+Lastly `ones_dec` and `tens_dec` is assigned to `ones_bin` and `tens_bin` by converting them to `std_logic_vector`.
+
+## BCD to 7-displa
