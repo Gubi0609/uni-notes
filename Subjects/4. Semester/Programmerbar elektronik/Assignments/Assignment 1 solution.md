@@ -57,4 +57,44 @@ We use a process, activating on changes in either `rst` or `clk` to run the code
 Outside the process, `cnt_temp` is assigned to `cnt` by converting it from `unsigned` to `std_logic_vector`.
 
 ## 60 to 1 Clock Divider
-We can reuse the code above for the minutes as well as the seconds, since they both run between 0 to 59. But since the minutes are only incremented every 60 seconds, we must find a way to 
+We can reuse the code above for the minutes as well as the seconds, since they both run between 0 to 59. But since the minutes are only incremented every 60 seconds, we must find a way to only toggle a rising edge of the clock every 60 seconds.
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+use IEEE.NUMERIC_STD.ALL;
+
+entity clock_divider_60_to_1 is
+  Port (clk_in : in std_logic;
+        clk_out : out std_logic);
+end clock_divider_60_to_1;
+
+architecture rtl of clock_divider_60_to_1 is
+    signal clk_cnt : unsigned(5 downto 0) := (others => '0');
+begin
+    process (clk_in)
+    begin
+        if (rising_edge(clk_in)) then
+            if (clk_cnt = "111011") then
+                clk_cnt <= (others => '0');
+                clk_out <= '1';
+            else
+                clk_cnt <= clk_cnt + 1;
+                clk_out <= '0';
+            end if;
+        end if;       
+    end process;
+end rtl;
+```
+
+Again, we define the inputs
+- `clk_in` - The input clock, which is the same clock as the seconds timer will run on.
+
+And the outputs
+- `clk_out` - The output clock, which will toggle a rising edge every 60 pulses of `clk_in`.
+
+Within the architecture we again define an unsigned signal, `clk_cnt` to keep track of the number of clock pulses of `clk_in` since the last rising edge of `clk_out`.
+
+We then use a process again, that activates on changes in `clk_in`.
+- If we have a _rising edge_ of `clk_in`, we check the state of `clk_cnt` and either
+	- Res
