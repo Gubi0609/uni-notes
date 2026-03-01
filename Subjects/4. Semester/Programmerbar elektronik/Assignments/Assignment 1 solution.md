@@ -98,7 +98,7 @@ We then use a process again, that activates on changes in `clk_in`.
 # Block Diagram
 The above two modules are the essential parts needed for our seconds and minutes timer, and we can now design a block diagram to display the time.
 
-![[Pasted image 20260301161256.png|]]
+![[Pasted image 20260301161256.png|453]]
 
 We see, that both the `Seconds_Counter` and `Minutes_Counter` are connected to the same clock, with the small addition of a `Clock_Divider` before `Minutes_Counter`'s `clk` input.
 They are also both connected to the same reset, as we will want to reset both of them at the same time to keep them in sync.
@@ -167,7 +167,7 @@ Within the architecture we define an unsigned signal, `ones_dec` to hold the cal
 
 We define a process like before, which will trigger upon a change in `dec_in`.
 - `ones_dec` is calculated by taking the input value modulo 10 (`dec_in mod 10`). This operation isolates the ones place of the number. The result is then resized to 4 bits to ensure compatibility with the output format.
-- `tens_dec` is calculated by performing integer division of the input by 10 (`dec_in / 10`). This operation isolates the tens place of the number since . The result is also resized to 4 bits.
+- `tens_dec` is calculated by performing integer division of the input by 10 (`dec_in / 10`). This operation isolates the tens place of the number since VHDL always truncates a division. The result is also resized to 4 bits.
 
 Lastly `ones_dec` and `tens_dec` is assigned to `ones_bin` and `tens_bin` by converting them to `std_logic_vector`.
 
