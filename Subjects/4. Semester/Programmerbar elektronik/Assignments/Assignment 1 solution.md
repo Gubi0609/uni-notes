@@ -181,4 +181,42 @@ We define a process like before, which will trigger upon a change in `dec_in`.
 
 Lastly `ones_dec` and `tens_dec` is assigned to `ones_bin` and `tens_bin` by converting them to `std_logic_vector`.
 
-## BCD to 7-displa
+## BCD to 7-segment display encoder
+Lastly, we need a module to convert from BCD to the 7-segment display
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity BCD_to_SSD is
+  Port (dig_in : in std_logic_vector(3 downto 0);
+        ssd_out : out std_logic_vector(6 downto 0));
+end BCD_to_SSD;
+
+architecture rtl of BCD_to_SSD is
+
+begin
+    with dig_in select
+    ssd_out <= "1111110" when "0000", -- 0
+               "0110000" when "0001", -- 1
+               "1101101" when "0010", -- 2
+               "1111001" when "0011", -- 3
+               "0110011" when "0100", -- 4
+               "1011011" when "0101", -- 5
+               "1011111" when "0110", -- 6
+               "1110000" when "0111", -- 7
+               "1111111" when "1000", -- 8
+               "1110011" when "1001", -- 9
+               "-------" when others;       
+end rtl;
+```
+
+For this we need only one input
+- `dig_in` - The digit to display. Must be within 0 to 9 to be displayed. This is a 4 bit logic vector, able to represent the numbers 0 - 15.
+
+And one output
+- `ssd_out` - The 7-segment display output. This is a 7 bit logic vector with each bit representing a segment on the display. The MSB represents segment **A** and the LSB represents segment **G**. The rest is of course ordered alphabetically.
+
+A diagram of a 7-segment display and the segments' placements can be seen below
+![[Pasted image 20260301164923.png]]
+
+Within the architecture, we use a with select statement to check the state of `dig_in`
