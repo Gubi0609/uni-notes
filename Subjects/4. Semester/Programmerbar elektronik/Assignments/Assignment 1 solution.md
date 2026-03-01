@@ -137,8 +137,39 @@ We see again, that the minutes increment from 1 to 2, with the change happening 
 To do this, we first design a BCD (Binary-coded decimal) encoding module, and then a module to interface with a 7-segment display.
 
 ## BCD Encoding Module
-The BCD encoding module is used to convert from a two digit
+The BCD encoding module is used to convert from a two digit decimal number to two separate numbers in binary, one representing the one's place, and the other representing the ten's place.
 
 ```vhdl
+ibrary IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
+entity BCD_encoder_00_to_60 is
+  Port (dec_in : in std_logic_vector(5 downto 0);
+        ones_bin : out std_logic_vector(3 downto 0);
+        tens_bin : out std_logic_vector(3 downto 0));
+end BCD_encoder_00_to_60;
+
+architecture rtl of BCD_encoder_00_to_60 is
+    signal ones_dec : unsigned(3 downto 0);
+    signal tens_dec : unsigned(3 downto 0);
+begin
+    process (dec_in)
+    begin
+        ones_dec <= resize(unsigned(dec_in) mod 10, 4);
+        tens_dec <= resize(unsigned(dec_in) / 10, 4);
+    end process;
+    ones_bin <= std_logic_vector(ones_dec);
+    tens_bin <= std_logic_vector(tens_dec);
+
+end rtl;
 ```
+
+Like before, we define the input
+- `dec_in` - The decimal number to be split and encoded. It is represented by a 6 bit logic vector to match our counters from before.
+
+And the outputs
+- `ones_bin` - The binary number representing the one's place. This is a 4 bit logic vector, meaning that we can theoretically hold the values 0 to 15, but this will not be necessary or used, as we will see in a little bit.
+- `tens_bin` - The binary number representing the ten's place. Again, this is a 4 bit logic vector. We would theoretically only need 3 bits to represent the ten's place, as `dec_in` lies within 0 - 63, and a 3 bit number would be able to represent the values 0 - 7. The 4 bit length is chosen to set a standard length for the BCD output, which will be forwarded to the 7-segment display encoder later.
+
+Within the architecture we d
