@@ -123,8 +123,7 @@ We see above the change from minute 0 to minute 1, with the change happening _af
 To again demonstrate, that everything is working as expected, we look further, at the next minute mark.
 ![[Pasted image 20260301162513.png|600]]
 
-We see again, that the minutes increment from 1 to 2, with the change happening after another `3B` hexadecimal seconds or **59** decimal seconds. Again, we see that the seconds change back to 0.
-
+We see the same pattern as above.
 # Bonus task
 To format the timer to fit a , we first design a BCD (Binary-coded decimal) encoding module, and then a module to interface with a 7-segment display.
 
@@ -161,15 +160,14 @@ Like before, we define the input
 - `dec_in` - The decimal number to be split and encoded. It is represented by a 6 bit logic vector to match our counters from before.
 
 And the outputs
-- `ones_bin` - The binary number representing the one's place. This is a 4 bit logic vector, meaning that we can theoretically hold the values 0 to 15, but this will not be necessary or used, as we will see in a little bit.
-- `tens_bin` - The binary number representing the ten's place. Again, this is a 4 bit logic vector. We would theoretically only need 3 bits to represent the ten's place, as `dec_in` lies within 0 - 63, and a 3 bit number would be able to represent the values 0 - 7. The 4 bit length is chosen to set a standard length for the BCD output, which will be forwarded to the 7-segment display encoder later.
+- `ones_bin` - A 4 bit output vector representing the ones digit of the input number.
+- `tens_bin` - A 4 bit output vector representing the tens digit of the input number.
 
 Within the architecture we define an unsigned signal, `ones_dec` to hold the calculated value for the one's place, and another called `tens_dec` to hold the calculated value for the ten's place. Both of these are 4 bits long, which corresponds with the outputs defined before.
 
 We define a process like before, which will trigger upon a change in `dec_in`.
-- `ones_dec` is calculated by performing the modulus operation on the input `dec_in` (converted to the `unsigned` type) and 10. By performing modulus on `dec_in` and 10, we essentially divide `dec_in` by 10 and return the leftover. By doing this, we ensure, that it is only (and always) the one's place that is returned.
-	- We must also _resize_ the output from this calculation by using `resize(input, size)`, since the input `dec_in` is 6 bits long, and we want it to fit within 4 bits. We thus resize the calculation to 4 bits by typing `resize(calculation, 4)`.
-- `tens_dec` is calculated in almost the same way. We again divide `dec_in` (converted to the `unsigned` type) by 10, however this time we return the result as is instead of the leftover. Since VHDL will always truncate (round down) a division, instead of round to the nearest integer, this is essentially a floor division. Since we do not go above 99 (because `dec_in` can only go between 0 to 63), the return from this will always be the ten's place of the input `dec_in`.
+- `ones_dec` is calculated by taking the input value modulo 10 (`dec_in mod 10`). This operation isolates the ones place of the number. The result is then resized to 4 bits to ensure compatibility with the output format.
+- `tens_dec` is calculated by performing integer division of the input by 10 (`dec_in / 10`). This operation isolates the tens place of the number since . The result is also resized to 4 bits.
 
 Lastly `ones_dec` and `tens_dec` is assigned to `ones_bin` and `tens_bin` by converting them to `std_logic_vector`.
 
