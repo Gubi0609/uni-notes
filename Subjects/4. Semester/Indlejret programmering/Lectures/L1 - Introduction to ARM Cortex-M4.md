@@ -22,7 +22,7 @@
 [[Tiva C Series]]
 
 # Notes
-[[Assignment 1 solution]]
+[[Subjects/4. Semester/Indlejret programmering/Assignments/Assignment 1 solution]]
 
 ---
 #lecture 

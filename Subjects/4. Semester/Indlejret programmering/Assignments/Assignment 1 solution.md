@@ -149,7 +149,7 @@ If the button is pressed, cnt is incremented, and we perform modulus division on
 A while loop is implemented again, which just runs and blocks indefinitely while the button is pressed.
 
 ### Setting LED
-The LED is set from the [[Assignment 1 solution#Colors|colors]] defined before.
+The LED is set from the [[Subjects/4. Semester/Indlejret programmering/Assignments/Assignment 1 solution#Colors|colors]] defined before.
 - We start by _clearing_ the LEDs by performing an AND operation on PORTF_DATA and `~0x0E` which is 0000 1110 inverted (so 1111 0001). By doing this, we turn off PF1 - PF3.
 - Next we perform an OR operation on this, and the color of our choice (decided by the count).
 - This effectively sets the bits of the PF1 - PF3 to the ones of the color.
@@ -158,7 +158,7 @@ The LED is set from the [[Assignment 1 solution#Colors|colors]] defined before.
 We now want to move the button logic to an Interrupt Service Routine (**ISR**).
 This requires a few steps and changing in the startup file for the specific chip (TM4C123GH6PM). This is provided by the CCS program.
 
-Criteria covered in this section: The same criteria as [[Assignment 1 solution#Basics|the Basics]], but now with smarter logic.
+Criteria covered in this section: The same criteria as [[Subjects/4. Semester/Indlejret programmering/Assignments/Assignment 1 solution#Basics|the Basics]], but now with smarter logic.
 
 ## Setting switch
 We want to activate the ISR at a falling edge of our switch (being pushed).
@@ -312,14 +312,14 @@ This is relatively simple. We first define a volatile integer `i` to be used for
 
 The interrupt flag for PF4 will need to be done first, as to make room for future interrupts.
 
-Next we increment cnt. We will however need to keep it within 0-7. This is simply done be performing _modulus_ division. The clever reader will notice that this step is the same as when we covered the [[Assignment 1 solution#If statement|basics]].
+Next we increment cnt. We will however need to keep it within 0-7. This is simply done be performing _modulus_ division. The clever reader will notice that this step is the same as when we covered the [[Subjects/4. Semester/Indlejret programmering/Assignments/Assignment 1 solution#If statement|basics]].
 
 Lastly we implement the debounce delay by blocking the processor for a short time by increment `i` from 0 to 100.000.
 
 To add to this, we also wait for the button to be released. This is not essential, and will be removed later on to make room for further functionality.
 
 ## New while loop
-The while loop from [[Assignment 1 solution#While loop|the Basics]] can now be shortened to only include LED control
+The while loop from [[Subjects/4. Semester/Indlejret programmering/Assignments/Assignment 1 solution#While loop|the Basics]] can now be shortened to only include LED control
 
 ```c
 // Loop forever
@@ -469,7 +469,7 @@ Secondly we set the priority of SysTick to 16, by first clearing it and then set
 - Clearing is simply done by inverting the SysTick Exception Priority and removing that sequence from `NVIC_SYS_PRI3_R`.
 
 ## SysTick Interrupt
-Since we enabled the SysTick interrupt bit in [[Assignment 1 solution#SysTick CTRL|SysTick CTRL]] we will need to implement an ISR. This is done in much the same way as when we implemented it for the GPIO pin [[Assignment 1 solution#Interrupt Service Routine (ISR)|before]].
+Since we enabled the SysTick interrupt bit in [[Subjects/4. Semester/Indlejret programmering/Assignments/Assignment 1 solution#SysTick CTRL|SysTick CTRL]] we will need to implement an ISR. This is done in much the same way as when we implemented it for the GPIO pin [[Subjects/4. Semester/Indlejret programmering/Assignments/Assignment 1 solution#Interrupt Service Routine (ISR)|before]].
 
 We navigate to `tm4c123gh6pm_startup_ccs.c` to declare our custom handler.
 
@@ -628,7 +628,7 @@ void GPIOF_Handler(void) {
 }
 ```
 
-We can see that the start of the button ISR is much the same as it was when we first implemented it [[Assignment 1 solution#Interrupt Service Routine (ISR)|before]], with the debounce and clearing the interrupt flag.
+We can see that the start of the button ISR is much the same as it was when we first implemented it [[Subjects/4. Semester/Indlejret programmering/Assignments/Assignment 1 solution#Interrupt Service Routine (ISR)|before]], with the debounce and clearing the interrupt flag.
 
 Now however we also have a quick check to exit `automode` if any button press occurs while in `automode`.
 
