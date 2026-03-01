@@ -122,12 +122,12 @@ We now run the clock for 120 seconds.
 ![[Pasted image 20260301162150.png]]
 
 It can however be a bit hard to see, so for demonstrations sake, let us zoom in on each minute change.
-![[Pasted image 20260301162255.png]]
+![[Pasted image 20260301162255.png|600]]
 
 We see above the change from minute 0 to minute 1, with the change happening _after_ `3B` hexadecimal seconds or **59** decimal seconds. We see also that the seconds change back to 0.
 
 To again demonstrate, that everything is working as expected, we look further, at the next minute mark.
-![[Pasted image 20260301162513.png]]
+![[Pasted image 20260301162513.png|600]]
 
 We see again, that the minutes increment from 1 to 2, with the change happening after another `3B` hexadecimal seconds or **59** decimal seconds. Again, we see that the seconds change back to 0.
 
@@ -217,7 +217,7 @@ And one output
 - `ssd_out` - The 7-segment display output. This is a 7 bit logic vector with each bit representing a segment on the display. The MSB represents segment **A** and the LSB represents segment **G**. The rest is of course ordered alphabetically.
 
 A diagram of a 7-segment display and the segments' placements can be seen below
-![[Pasted image 20260301164923.png|300]]
+![[Pasted image 20260301164923.png|200]]
 
 Within the architecture, we use a with select statement to check the state of `dig_in`. 
 - We go through the numbers 0 - 9, that `dig_in` can lie within, and set the segments accordingly to represent that number. As said before, segment **A** is the MSB of `ssd_out` and segment **G** is the LSB. The rest are ordered alphabetically.
