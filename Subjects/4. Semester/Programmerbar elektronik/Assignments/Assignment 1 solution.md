@@ -172,4 +172,8 @@ And the outputs
 - `ones_bin` - The binary number representing the one's place. This is a 4 bit logic vector, meaning that we can theoretically hold the values 0 to 15, but this will not be necessary or used, as we will see in a little bit.
 - `tens_bin` - The binary number representing the ten's place. Again, this is a 4 bit logic vector. We would theoretically only need 3 bits to represent the ten's place, as `dec_in` lies within 0 - 63, and a 3 bit number would be able to represent the values 0 - 7. The 4 bit length is chosen to set a standard length for the BCD output, which will be forwarded to the 7-segment display encoder later.
 
-Within the architecture we d
+Within the architecture we define an unsigned signal, `ones_dec` to hold the calculated value for the one's place, and another called `tens_dec` to hold the calculated value for the ten's place. Both of these are 4 bits long, which corresponds with the outputs defined before.
+
+We define a process like before, which will trigger upon a change in `dec_in`.
+- `ones_dec` is calculated by performing the modulus operation on the input `dec_in` (converted to the `unsigned` type) and 10. By performing modulus on `dec_in` and 10, we essentially divide `dec_in` by 10 and return the leftover. By doing this, we ensure, that it is only (and always) the one's place that is returned.
+	- We must also _resize_ the output from this calculation by
