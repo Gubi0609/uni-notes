@@ -4,19 +4,19 @@
 - Perform a functional simulation of the entire clock circuit. The simulation must clearly demonstrate that the clock is counting time correctly for 2 minutes (120 clocks).
 
 # Code
-We begin by creating a counter, that will be able to count from 0 to 60, incrementing by one for each clock pulse
+We begin by creating a counter, that will be able to count from 0 to 59, incrementing by one for each clock pulse
 ```vhdl
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 use IEEE.NUMERIC_STD.ALL;
 
-entity counter_0_to_60 is
+entity counter_0_to_59 is
     Port (clk, rst : in std_logic;
           cnt : out std_logic_vector(5 downto 0));
-end counter_0_to_60;
+end counter_0_to_59;
 
-architecture rtl of counter_0_to_60 is
+architecture rtl of counter_0_to_59 is
     signal cnt_temp: unsigned(5 downto 0) := (others => '0'); -- Initialize to 0
 begin
    process (rst, clk)
@@ -46,4 +46,7 @@ Then the output
 
 Within the architecture, we use an unsigned signal, called `cnt_temp` with the same binary size as `cnt`, to keep track of the current count. It is initialized to 0.
 
-We use a process, activat
+We use a process, activating on changes in either `rst` or `clk` to run the code.
+- If `rst` is **1**, it is active, and we must reset the counter, `cnt_temp`, to 0.
+- Otherwise, on a _rising edge_ of the clock, `clk`, we check if the counter, `cnt_temp` is at 59 decimal (111011 binary).
+	- If `cnt_temp` is at 59, it must be reset to 0, as a clock goes between 0 to 59
