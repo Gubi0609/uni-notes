@@ -103,7 +103,7 @@ We then use a process again, that activates on changes in `clk_in`.
 # Block Diagram
 The above two modules are the essential parts needed for our seconds and minutes timer, and we can now design a block diagram to display the time.
 
-![[Pasted image 20260301161256.png]]
+![[Pasted image 20260301161256.png|]]
 
 We see, that both the `Seconds_Counter` and `Minutes_Counter` are connected to the same clock, with the small addition of a `Clock_Divider` before `Minutes_Counter`'s `clk` input.
 They are also both connected to the same reset, as we will want to reset both of them at the same time to keep them in sync.
@@ -217,15 +217,19 @@ And one output
 - `ssd_out` - The 7-segment display output. This is a 7 bit logic vector with each bit representing a segment on the display. The MSB represents segment **A** and the LSB represents segment **G**. The rest is of course ordered alphabetically.
 
 A diagram of a 7-segment display and the segments' placements can be seen below
-![[Pasted image 20260301164923.png]]
+![[Pasted image 20260301164923.png|300]]
 
 Within the architecture, we use a with select statement to check the state of `dig_in`. 
 - We go through the numbers 0 - 9, that `dig_in` can lie within, and set the segments accordingly to represent that number. As said before, segment **A** is the MSB of `ssd_out` and segment **G** is the LSB. The rest are ordered alphabetically.
 - Since `dig_in` can represent numbers as large as 15, the output of `ssd_out` is set to `"-------"` if the value of `dig_in` is any other than the ones written.
 
 ## Block Diagram
-![[Pasted image 20260301170735.png]]
+![[Pasted image 20260301170735.png|500]]
 
 Now all the conversion is included, and we outputs from each step for good measure.
 
 ## Simulation
+![[Pasted image 20260301170958.png]]
+
+We do not run it for very long, but we can see that both the one's place and the ten's place follow the output from `sec`, and since I cannot use a 7-segment display yet, we must assume that this part works as well.
+Since we do not simulate this for over a few seconds, the minutes does not have time to change. Thus we cannot actually check (in this snippet) whether the output works for this. But since both seconds and minutes run within 0 - 59 and are both connected to the same type of modules, it is reasonable to assume, that the conversion will work for the minutes as well.
