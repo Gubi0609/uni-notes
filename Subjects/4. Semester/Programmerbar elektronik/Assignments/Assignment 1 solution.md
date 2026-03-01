@@ -4,6 +4,8 @@
 - Perform a functional simulation of the entire clock circuit. The simulation must clearly demonstrate that the clock is counting time correctly for 2 minutes (120 clocks).
 
 # Code
+
+## 0 to 59 Counter
 We begin by creating a counter, that will be able to count from 0 to 59, incrementing by one for each clock pulse
 ```vhdl
 library IEEE;
@@ -50,3 +52,9 @@ We use a process, activating on changes in either `rst` or `clk` to run the code
 - If `rst` is **1**, it is active, and we must reset the counter, `cnt_temp`, to 0.
 - Otherwise, on a _rising edge_ of the clock, `clk`, we check if the counter, `cnt_temp` is at 59 decimal (111011 binary).
 	- If `cnt_temp` is at 59, it must be reset to 0, as a clock goes between 0 to 59
+	- Otherwise, `cnt_temp` is incremented by 1.
+
+Outside the process, `cnt_temp` is assigned to `cnt` by converting it from `unsigned` to `std_logic_vector`.
+
+## 60 to 1 Clock Divider
+We can reuse the code above for the minutes as well as the seconds, since they both run between 0 to 59. But since the minutes are only incremented every 60 seconds, we must find a way to 
