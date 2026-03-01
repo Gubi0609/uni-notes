@@ -219,4 +219,6 @@ And one output
 A diagram of a 7-segment display and the segments' placements can be seen below
 ![[Pasted image 20260301164923.png]]
 
-Within the architecture, we use a with select statement to check the state of `dig_in`
+Within the architecture, we use a with select statement to check the state of `dig_in`. 
+- We go through the numbers 0 - 9, that `dig_in` can lie within, and set the segments accordingly to represent that number. As said before, segment **A** is the MSB of `ssd_out` and segment **G** is the LSB. The rest are ordered alphabetically.
+- Since `dig_in` can represent numbers as large as 15, the output of `ssd_out` is set to `"-------"` if the value of `dig_in` is any other than the ones written.
