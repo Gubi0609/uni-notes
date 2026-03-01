@@ -1,8 +1,3 @@
-# Task
-- Create a VHDL-based digital clock capable of displaying seconds and minutes
-- The design should include appropriate sequential logic (counters, clock dividers, etc.) and any required concurrent processes.
-- Perform a functional simulation of the entire clock circuit. The simulation must clearly demonstrate that the clock is counting time correctly for 2 minutes (120 clocks).
-
 # Code
 
 ## 0 to 59 Counter
@@ -132,9 +127,7 @@ To again demonstrate, that everything is working as expected, we look further, a
 We see again, that the minutes increment from 1 to 2, with the change happening after another `3B` hexadecimal seconds or **59** decimal seconds. Again, we see that the seconds change back to 0.
 
 # Bonus task
-- Format the seconds and minutes outputs so they correspond to the representation used by a 7‑segment display (e.g., BCD encoding or segment-level output) that is provided with the FPGA kit.
-
-To do this, we first design a BCD (Binary-coded decimal) encoding module, and then a module to interface with a 7-segment display.
+To format the timer to fit a , we first design a BCD (Binary-coded decimal) encoding module, and then a module to interface with a 7-segment display.
 
 ## BCD Encoding Module
 The BCD encoding module is used to convert from a two digit decimal number to two separate numbers in binary, one representing the one's place, and the other representing the ten's place.
@@ -217,14 +210,14 @@ And one output
 - `ssd_out` - The 7-segment display output. This is a 7 bit logic vector with each bit representing a segment on the display. The MSB represents segment **A** and the LSB represents segment **G**. The rest is of course ordered alphabetically.
 
 A diagram of a 7-segment display and the segments' placements can be seen below
-![[Pasted image 20260301164923.png|200]]
+![[Pasted image 20260301164923.png|134]]
 
 Within the architecture, we use a with select statement to check the state of `dig_in`. 
 - We go through the numbers 0 - 9, that `dig_in` can lie within, and set the segments accordingly to represent that number. As said before, segment **A** is the MSB of `ssd_out` and segment **G** is the LSB. The rest are ordered alphabetically.
 - Since `dig_in` can represent numbers as large as 15, the output of `ssd_out` is set to `"-------"` if the value of `dig_in` is any other than the ones written.
 
 ## Block Diagram
-![[Pasted image 20260301170735.png|500]]
+![[Pasted image 20260301170735.png|574]]
 
 Now all the conversion is included, and we outputs from each step for good measure.
 
