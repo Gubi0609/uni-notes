@@ -106,4 +106,16 @@ The above two modules are the essential parts needed for our seconds and minutes
 ![[Pasted image 20260301161256.png]]
 
 We see, that both the `Seconds_Counter` and `Minutes_Counter` are connected to the same clock, with the small addition of a `Clock_Divider` before `Minutes_Counter`'s `clk` input.
-They are also both connected to the same 
+They are also both connected to the same reset, as we will want to reset both of them at the same time to keep them in sync.
+
+We then also have two outputs, both of which are 6 bit logic vectors.
+- `sec` - The seconds timer to display the seconds passed.
+- `min` - The minutes timer to display the minutes passed.
+
+This forms the basis of our timer module, and we are now ready to test it.
+
+# Simulation
+We force the input `reset` to 0, as we do not want to reset our timer.
+The input `clock` is forced to a clock, with the leading edge value being 0, and the trailing edge value being 1. Its duty cycle is 50% and it will run a cycle every 100 ns (could be set to 1 second to match the actual display time, but we will leave it at this for now.)
+
+We no run the clock for 120 seconds.
