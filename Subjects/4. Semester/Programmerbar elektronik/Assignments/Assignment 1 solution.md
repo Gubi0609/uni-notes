@@ -224,8 +224,8 @@ Within the architecture, we use a with select statement to check the state of `d
 - Since `dig_in` can represent numbers as large as 15, the output of `ssd_out` is set to `"-------"` if the value of `dig_in` is any other than the ones written.
 
 ## Block Diagram
-![[Pasted image 20260301170044.png]]
+![[Pasted image 20260301170735.png]]
 
-Now all the conversion is included, and we also get the `sec` and `min` outputs from before for good measure.
+Now all the conversion is included, and we outputs from each step for good measure.
 
 ## Simulation
