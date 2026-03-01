@@ -125,7 +125,7 @@ To again demonstrate, that everything is working as expected, we look further, a
 
 We see the same pattern as above.
 # Bonus task
-To format the timer to fit a , we first design a BCD (Binary-coded decimal) encoding module, and then a module to interface with a 7-segment display.
+To format the timer to fit a 7-segment display, we first design a BCD (Binary-coded decimal) encoding module, and then a module to interface with a 7-segment display.
 
 ## BCD Encoding Module
 The BCD encoding module is used to convert from a two digit decimal number to two separate numbers in binary, one representing the one's place, and the other representing the ten's place.
@@ -163,7 +163,7 @@ And the outputs
 - `ones_bin` - A 4 bit output vector representing the ones digit of the input number.
 - `tens_bin` - A 4 bit output vector representing the tens digit of the input number.
 
-Within the architecture we define an unsigned signal, `ones_dec` to hold the calculated value for the one's place, and another called `tens_dec` to hold the calculated value for the ten's place. Both of these are 4 bits long, which corresponds with the outputs defined before.
+`ones_dec` and `tens_dec` is defined to calculate the one's and ten's place.
 
 We define a process like before, which will trigger upon a change in `dec_in`.
 - `ones_dec` is calculated by taking the input value modulo 10 (`dec_in mod 10`). This operation isolates the ones place of the number. The result is then resized to 4 bits to ensure compatibility with the output format.
@@ -216,7 +216,7 @@ Within the architecture, we use a with select statement to check the state of `d
 ## Block Diagram
 ![[Pasted image 20260301170735.png|574]]
 
-Now all the conversion is included, and we outputs from each step for good measure.
+Now all the conversion is included, and we have outputs from each step for good measure.
 
 ## Simulation
 ![[Pasted image 20260301170958.png]]
