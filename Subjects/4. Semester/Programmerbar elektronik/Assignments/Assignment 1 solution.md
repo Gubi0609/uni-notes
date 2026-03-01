@@ -39,7 +39,7 @@ We first define our inputs
 - `rst` - A reset for reseting the counter to 0. **Active logical 1**
 
 Then the output
-- `cnt` - 6 bit binary number representing the count. The Most Significant Bit (MSB) is placed at the start (**1**00000). Since it is a 6 bit number, it will be able to go from 0 to 63, but numbers 60 to 63 will be unused.
+- `cnt` - 6 bit binary number representing the count (0 - 59, 60 - 63 unused). The Most Significant Bit (MSB) is placed at the start (**1**00000). 
 
 Within the architecture, we use an unsigned signal, called `cnt_temp` with the same binary size as `cnt`, to keep track of the current count. It is initialized to 0.
 
@@ -110,10 +110,9 @@ We then also have two outputs, both of which are 6 bit logic vectors.
 This forms the basis of our timer module, and we are now ready to test it.
 
 # Simulation
-We force the input `reset` to 0, as we do not want to reset our timer.
-The input `clock` is forced to a clock, with the leading edge value being 0, and the trailing edge value being 1. Its duty cycle is 50% and it will run a cycle every 100 ns (could be set to 1 second to match the actual display time, but we will leave it at this for now.)
+**Setup:** Clock cycles every 100 ns (50% duty cycle); reset inactive.
 
-We now run the clock for 120 seconds.
+We now run the clock for 120 cycles.
 ![[Pasted image 20260301162150.png]]
 
 It can however be a bit hard to see, so for demonstrations sake, let us zoom in on each minute change.
