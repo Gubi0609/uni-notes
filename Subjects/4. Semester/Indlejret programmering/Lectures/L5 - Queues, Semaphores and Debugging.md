@@ -12,7 +12,7 @@
 
 ---
 # Relevant documents
-
+[[Lesson05_queues_semaphores.pdf]]
 
 # Topics
 
