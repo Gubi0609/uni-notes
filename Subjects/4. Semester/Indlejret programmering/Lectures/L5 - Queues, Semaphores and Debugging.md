@@ -13,6 +13,8 @@
 ---
 # Relevant documents
 [[Lesson05_queues_semaphores.pdf]]
+[[Assignment4.pdf]]
+[[Lab5.pdf]]
 
 # Topics
 
