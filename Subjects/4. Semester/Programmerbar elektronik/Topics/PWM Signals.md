@@ -7,3 +7,6 @@
 ![[Pasted image 20260305133632.png]]
 
 We basically count up, and when we hit the _duty cycle match_, we turn **on** the signal using a [[Subjects/4. Semester/Programmerbar elektronik/Topics/Comparators|comparator]], we turn off the signal again, when the counter resets to 0, as the comparator will no longer match.
+
+> [!example]- PWM generator
+> We want a 1 Hz signal of a 125 MHz c
