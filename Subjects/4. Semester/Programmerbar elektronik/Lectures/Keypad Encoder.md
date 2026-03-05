@@ -4,3 +4,5 @@
 - Primary function is to provide a digital output equal to the key pressed on the keypad.
 	- E.g. **Key 1** → 0001, **Key 2** → 0010, **Key 3** → 0011, ..., **Key 15** → 1111
 
+
+This could for example be done by using a _2 to 4 Decoder_ on the inputs and a __
