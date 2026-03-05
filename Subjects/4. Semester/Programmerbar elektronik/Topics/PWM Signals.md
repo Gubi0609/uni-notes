@@ -9,4 +9,11 @@
 We basically count up, and when we hit the _duty cycle match_, we turn **on** the signal using a [[Subjects/4. Semester/Programmerbar elektronik/Topics/Comparators|comparator]], we turn off the signal again, when the counter resets to 0, as the comparator will no longer match.
 
 > [!example]- PWM generator
-> We want a 1 Hz signal of a 125 MHz c
+> We want a 1 Hz signal of a 125 MHz clock signal. We should calculate
+> 1. The needed bit size of the counter
+> $$\log_2 125 \text{MHz} = \log_2 125,000,000\text{Hz}=26.9=27\text{ bits}$$
+> 2. The comparator threshold for a PWM signal with 50% duty cycle
+> $$125,000,000\cdot 0.5 = 62,500,000$$
+> 3. The comparator threshold for a PWM signal with 10% duty cycle
+> $$125,000,000\cdot 0.1 = 12,500,000$$
+
