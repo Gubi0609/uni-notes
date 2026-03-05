@@ -16,7 +16,7 @@
 [[Subjects/4. Semester/Programmerbar elektronik/PDFs/Lab4.pdf|Lab4]]
 
 # Topics
-
+[[Subjects/4. Semester/Programmerbar elektronik/Lectures/Keypad Encoder|Keypad Encoder]]
 
 # Notes
 
