@@ -1,0 +1,3 @@
+- Shows how much time the signal is _high_ in an analog fashion
+- The signal $t_{on}$ (see illustration below) is considered when the signal is high
+- To describe the amount of time we are 
