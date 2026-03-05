@@ -17,6 +17,7 @@
 
 # Topics
 [[Subjects/4. Semester/Programmerbar elektronik/Topics/Keypad Encoder|Keypad Encoder]]
+[[Subjects/4. Semester/Programmerbar elektronik/Lectures/Comparators|Comparators]]
 
 # Notes
 
