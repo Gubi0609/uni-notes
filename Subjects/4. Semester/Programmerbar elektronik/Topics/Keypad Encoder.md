@@ -6,4 +6,6 @@
 
 
 This could for example be done by using a _2 to 4 Decoder_ on the inputs and a _4 to 2 Encoder_ on the outputs. We would then have 4 logic values in total, forming the binary number above.
-- To switch through the input rows, we should use a _counter_, which will count up on CLK pulse, and thus switch through the rows (because its output will be binary).
+- To switch through the input rows, we should use a [[Subjects/4. Semester/Programmerbar elektronik/Topics/Counters|counter]], which will count up on CLK pulse, and thus switch through the rows (because its output will be binary).
+- Because the counter will keep counting up even when a button is pushed, we should add a NOR gate from the output to the ENABLE pin of the counter, to disable it when an output is registered.
+- To save the output, we could use a [[Latches|latch]]

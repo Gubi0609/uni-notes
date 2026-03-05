@@ -20,7 +20,7 @@
 [[Latches]]
 [[D- Type Flip-Flop]]
 [[Subjects/4. Semester/Programmerbar elektronik/Lectures/Registers|Registers]]
-[[Subjects/4. Semester/Programmerbar elektronik/Lectures/Counters|Counters]]
+[[Subjects/4. Semester/Programmerbar elektronik/Topics/Counters|Counters]]
 
 # Notes
 ![[Pasted image 20260226130753.png]]
