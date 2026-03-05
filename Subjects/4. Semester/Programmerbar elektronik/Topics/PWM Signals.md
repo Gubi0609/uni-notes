@@ -17,3 +17,5 @@ We basically count up, and when we hit the _duty cycle match_, we turn **on** th
 > 3. The comparator threshold for a PWM signal with 10% duty cycle
 > $$125,000,000\cdot 0.1 = 12,500,000$$
 
+# PWM Clock divider
+![[Pasted image 20260305135259.png]]
