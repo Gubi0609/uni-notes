@@ -41,4 +41,18 @@ The portion of the real axis to the left of an odd number of open loop poles and
 
 > [!example]- Example of how to find the loci
 > ![[IMG_1369.jpeg]]
-> We count from $real = \infty$ towards $real = -\infty$ and check to see if 
+> We count from $real = \infty$ towards $real = -\infty$ and check to see if the current root is an odd number of root. If it is, we draw the loci to the _left_ of it.
+
+# Rule 5
+Lines leave and enter the real axis at $90\deg$.
+
+> [!example]- Rule 5
+> ![[Pasted image 20260306093037.png]]
+
+# Rule 6
+Lines go to infinity along asymptotes.
+
+> [!example]- Rule 6
+> ![[Pasted image 20260306093112.png]]
+> ![[Pasted image 20260306093125.png]]
+> ![[Pasted image 20260306093240.png]]
