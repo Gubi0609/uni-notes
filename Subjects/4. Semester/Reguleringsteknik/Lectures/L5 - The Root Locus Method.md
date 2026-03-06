@@ -15,7 +15,11 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 5 - Root Locus.pdf|Lecture 5 - Root Locus]]
+[[Lecture 5 - Exercises.pdf]]
+[[Lecture 5 - Test.pdf]]
+[[Lecture 5 - Test with solution.pdf]]
+[[Root Locus notes.pdf]]
 
 # Topics
 
