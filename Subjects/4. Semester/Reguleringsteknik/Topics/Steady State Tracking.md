@@ -10,3 +10,5 @@
 > [!example]-
 > ![[Pasted image 20260220095047.png]]
 
+If 1 pole is found in origo, then we have 0 steady state errors
+If 0 poles are found in origo, then we have 1(??) steady state error
