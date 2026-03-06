@@ -22,10 +22,11 @@
 [[Root Locus notes.pdf]]
 
 # Topics
-
+[[Subjects/4. Semester/Reguleringsteknik/Lectures/Root Locus|Root Locus]]
 
 # Notes
-
+De poler, der ligger tættest på origo i $s$-planen, er de dominerende poler.
+- E.g. en pol i -1000 og en i -1, så vil den i -1 bidrage mest til step responsen, da $\tau=1$ for den pol, og for den anden vil $\tau=1/1000$. Hvis man ganger de to step responser sammen, vil bidraget fra $\tau=1/1000$ være meget meget lille.
 
 ---
 #lecture 
