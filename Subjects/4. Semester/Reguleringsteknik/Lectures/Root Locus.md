@@ -20,4 +20,22 @@ There are $N$ lines (loci) where $N=\max(m,n)$.
 > ![[Pasted image 20260306091558.png]]
 
 # Rule 2
-A $K$ increases from $0$ to $\infty$, the roots move from the poles of 
+A $K$ increases from $0$ to $\infty$, the roots of the characteristic equation move from the poles of $G(s)$ to the zeros of $G(s)$
+
+> [!example]- Rule 2
+> ![[Pasted image 20260306091946.png]]
+
+# Rule 3
+When roots are complex they occur in conjugate pairs.
+- Basically, if we have a pole, it has a "partner" on the other side of the real axis.
+
+> [!example]- Rule 3
+> ![[Pasted image 20260306092058.png]]
+
+# Rule 4
+The portion of the real axis to the left of an odd number of open loop poles and zeros are part of the loci.
+
+> [!example]- Rule 4
+> ![[Pasted image 20260306092218.png]]
+> ![[Pasted image 20260306092225.png]]
+
