@@ -58,3 +58,11 @@ Lines go to infinity along asymptotes.
 > ![[Pasted image 20260306093240.png]]
 
 
+# Rule 7
+![[Pasted image 20260306093804.png]]
+
+# Rule 8
+At no time will the same root cross over its own path
+
+# Rule 9
+If there are not enough poles or zeros to make a pair, then the extra lines go to or come from infinity.
