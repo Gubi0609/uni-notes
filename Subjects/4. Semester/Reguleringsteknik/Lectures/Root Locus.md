@@ -11,4 +11,13 @@ We desicibe
 ## $$G(s)= \frac {Q(s)}{P(s)}$$
 > [!example]- Example of root locus
 > ![[Pasted image 20260306091313.png]]
+> We want to put it in the standard form, and this is done through the two steps.
 
+# Rule 1
+There are $N$ lines (loci) where $N=\max(m,n)$.
+
+> [!example]- Rule 1
+> ![[Pasted image 20260306091558.png]]
+
+# Rule 2
+A $K$ increases from $0$ to $\infty$, the roots move from the poles of 
