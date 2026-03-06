@@ -39,3 +39,6 @@ The portion of the real axis to the left of an odd number of open loop poles and
 > ![[Pasted image 20260306092218.png]]
 > ![[Pasted image 20260306092225.png]]
 
+> [!example]- Example of how to find the loci
+> ![[IMG_1369.jpeg]]
+> We count from $real = \infty$ towards $real = -\infty$ and check to see if 
