@@ -12,7 +12,7 @@
 
 ---
 # Relevant documents
-
+[[Lesson06_rtcs_pointers.pdf]]
 
 # Topics
 
