@@ -37,6 +37,11 @@ A hierarchical adder to improve performance over ripple adder.
 ![[Pasted image 20260312123916.png]]
 
 # Subtractors
+Can be done _by addition_ by adding **2's complement**
+- $A\geq B \Rightarrow A-B$
+- $A< B \Rightarrow A-B \Rightarrow \text{2's complement}$
+
+![[Pasted image 20260312124248.png]]
 
 
 # Multiplication
