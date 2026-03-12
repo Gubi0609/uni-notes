@@ -42,8 +42,9 @@ Can be done _by addition_ by adding **2's complement**
 - $A< B \Rightarrow A-B \Rightarrow \text{2's complement}$ - If A is less than B, the result will be negative, and thus represented by two's complement.
 
 ![[Pasted image 20260312124248.png]]
-
+The **S** pin, is basically to select if we want to _add_ or _subtract_
 
 # Multiplication
+
 
 # Dividers
