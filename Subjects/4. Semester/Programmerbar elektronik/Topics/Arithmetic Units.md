@@ -54,6 +54,7 @@ Can be implemented using a _shift register_ as wide as the product and an _accum
 
 > [!example]- 
 > ![[IMG_1430 1.jpeg]]
-> The multiplier is shifted to the left, and we perform an AND operation between the multiplicant and the multipliers current bit (according to the shift???)
+> We look at one bit of the multiplier for each iteration starting from the right. If the current bit of the multiplier is _1_, we print out the multiplicand in whole. If the current bit is _0_, we print out 0. For each iteration, we shift the result _1_ bit to the left.
+> Lastly we add together all the results. In the above picture, the intermediate results are added together, _but this is not needed_.
 
 # Dividers
