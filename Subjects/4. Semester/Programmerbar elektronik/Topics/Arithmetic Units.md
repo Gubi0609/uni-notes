@@ -54,7 +54,7 @@ Can be implemented using a _shift register_ as wide as the product and an _accum
 ![[Pasted image 20260312125341.png]]
 
 > [!example]- 
-> ![[IMG_1430 1.jpeg]]
+> ![[IMG_1430.jpeg]]
 > We look at one bit of the multiplier for each iteration starting from the right. If the current bit of the multiplier is _1_, we print out the multiplicand in whole. If the current bit is _0_, we print out 0. For each iteration, we shift the result _1_ bit to the left.
 > Lastly we add together all the results. In the above picture, the intermediate results are added together, _but this is not needed_.
 
@@ -65,3 +65,12 @@ Is a digital combinational circuit used for multiplying two binary numbers by em
 
 Compared to the above solution, we can do this _without a clock signal_.
 # Dividers
+Division is the most complex of the four basic arithmetic operations.
+- Hardware solutions are correspondingly larger and more complex than the solutions for other operations. It is best to minimize the number of divisions in any algorithm
+
+- CLK divider by $2^n$ (PWM)
+- Division by subtraction
+- Division by multiplication
+	- $A\cdot 1/B = A\cdot (2^n/B)2^n$
+
+![[Pasted image 20260312133951.png]]
