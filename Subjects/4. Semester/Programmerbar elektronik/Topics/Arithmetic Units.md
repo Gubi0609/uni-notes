@@ -43,8 +43,14 @@ Can be done _by addition_ by adding **2's complement**
 
 ![[Pasted image 20260312124248.png]]
 The **S** pin, is basically to select if we want to _add_ or _subtract_
+The output pin C_4, can be used to tell if the result is negative or not
+- 0 for positive
+- 1 for negative
 
 # Multiplication
+Can be implemented using a _shift register_ as wide as the product and an _accumulator_ for the partial and final product
+
+![[Pasted image 20260312125341.png]]
 
 
 # Dividers
