@@ -16,7 +16,7 @@
 [[Lab_5.pdf]]
 
 # Topics
-
+[[Arithmetic Units]]
 
 # Notes
 
