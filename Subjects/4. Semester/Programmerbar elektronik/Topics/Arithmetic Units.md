@@ -71,6 +71,8 @@ Division is the most complex of the four basic arithmetic operations.
 - CLK divider by $2^n$ (PWM)
 - Division by subtraction
 - Division by multiplication
-	- $A\cdot 1/B = A\cdot (2^n/B)2^n$
+	- $A\cdot 1/B = A\cdot (2^n/B)/2^n$
 
 ![[Pasted image 20260312133951.png]]
+
+**A lookup table is of course also possible, and much faster. This however takes up more chip space.**

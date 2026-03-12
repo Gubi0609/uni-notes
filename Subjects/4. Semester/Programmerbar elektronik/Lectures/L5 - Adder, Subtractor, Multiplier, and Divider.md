@@ -19,7 +19,7 @@
 [[Arithmetic Units]]
 
 # Notes
-
+![[Pasted image 20260312134432.png]]
 
 ---
 #lecture 
