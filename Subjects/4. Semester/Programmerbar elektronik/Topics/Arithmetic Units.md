@@ -38,8 +38,8 @@ A hierarchical adder to improve performance over ripple adder.
 
 # Subtractors
 Can be done _by addition_ by adding **2's complement**
-- $A\geq B \Rightarrow A-B$
-- $A< B \Rightarrow A-B \Rightarrow \text{2's complement}$
+- $A\geq B \Rightarrow A-B$ - Basically, if A is larger than or equal to B, the result will be above 0, and thus represented as a normal binary
+- $A< B \Rightarrow A-B \Rightarrow \text{2's complement}$ - If A is less than B, the result will be negative, and thus represented by two's complement.
 
 ![[Pasted image 20260312124248.png]]
 
