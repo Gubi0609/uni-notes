@@ -48,7 +48,8 @@ The output pin C_4, can be used to tell if the result is negative or not
 - 1 for negative
 
 # Multiplication
-Can be implemented using a _shift register_ as wide as the product and an _accumulator_ for the partial and final product
+Can be implemented using a _shift register_ as wide as the product and an _accumulator_ for the partial and final product.
+- A clock signal is needed to be able to go through the steps.
 
 ![[Pasted image 20260312125341.png]]
 
@@ -57,4 +58,10 @@ Can be implemented using a _shift register_ as wide as the product and an _accum
 > We look at one bit of the multiplier for each iteration starting from the right. If the current bit of the multiplier is _1_, we print out the multiplicand in whole. If the current bit is _0_, we print out 0. For each iteration, we shift the result _1_ bit to the left.
 > Lastly we add together all the results. In the above picture, the intermediate results are added together, _but this is not needed_.
 
+## Array multiplier
+Is a digital combinational circuit used for multiplying two binary numbers by employing an array of full adders and half adders
+
+![[Pasted image 20260312133336.png]]
+
+Compared to the above solution, we can do this _without a clock signal_.
 # Dividers
