@@ -52,5 +52,8 @@ Can be implemented using a _shift register_ as wide as the product and an _accum
 
 ![[Pasted image 20260312125341.png]]
 
+> [!example]- 
+> ![[IMG_1430 1.jpeg]]
+> The multiplier is shifted to the left, and we perform an AND operation between the multiplicant and the multipliers current bit (according to the shift???)
 
 # Dividers
