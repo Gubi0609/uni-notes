@@ -19,7 +19,7 @@
 [[Lecture 6 - Test with solution.pdf]]
 
 # Topics
-[[Subjects/4. Semester/Reguleringsteknik/Lectures/Frequency Response|Frequency Response]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Frequency Response|Frequency Response]]
 
 # Notes
 

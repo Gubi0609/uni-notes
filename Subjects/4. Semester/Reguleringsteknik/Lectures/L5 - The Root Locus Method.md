@@ -22,7 +22,7 @@
 [[Root Locus notes.pdf]]
 
 # Topics
-[[Subjects/4. Semester/Reguleringsteknik/Lectures/Root Locus|Root Locus]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Root Locus|Root Locus]]
 
 # Notes
 De poler, der ligger tættest på origo i $s$-planen, er de dominerende poler.
