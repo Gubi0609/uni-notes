@@ -38,3 +38,5 @@ Then $y(t)$ is
 > ![[Pasted image 20260313084305.png]]
 > ![[Pasted image 20260313084313.png]]
 
+> [!example]- Second-Order system
+> 
