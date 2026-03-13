@@ -20,6 +20,7 @@
 
 # Topics
 [[Subjects/4. Semester/Reguleringsteknik/Topics/Frequency Response|Frequency Response]]
+[[Bode Plots]]
 
 # Notes
 
