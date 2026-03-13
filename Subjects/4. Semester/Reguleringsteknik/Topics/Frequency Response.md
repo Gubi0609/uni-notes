@@ -39,4 +39,13 @@ Then $y(t)$ is
 > ![[Pasted image 20260313084313.png]]
 
 > [!example]- Second-Order system
-> 
+> ![[Pasted image 20260313085553.png]]
+
+# Bandwidth
+The bandwidth of a closed-loop system $T(s)$ is defined to be the _maximum frequency_ at which the output $y$ of a system will track a sinusoidal input $r$ in a satisfactory manner (output attenuated to $1/\sqrt{2}$ times the input).
+Formally, the bandwidth $\omega_{BW}$ of $T(S)$ is the maximal frequency such that
+![[Pasted image 20260313085754.png]]
+
+![[Pasted image 20260313085804.png]]
+
+For a second order system, the bandwidth is approximately equal to the natural frequency.
