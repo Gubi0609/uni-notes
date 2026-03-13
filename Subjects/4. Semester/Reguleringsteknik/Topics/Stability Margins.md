@@ -6,3 +6,6 @@
 
 # Relation to Bode Plot
 ![[Pasted image 20260313094627.png]]
+
+# Relation to Nyquist Plot
+![[Pasted image 20260313095734.png]]
