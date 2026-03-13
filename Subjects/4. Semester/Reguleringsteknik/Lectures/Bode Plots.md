@@ -25,3 +25,6 @@ $$G_0(s)=\frac 1 s=s^{-1}\Rightarrow n=-1$$
 ![[Pasted image 20260313092803.png]]
 ![[Pasted image 20260313092814.png]]
 
+## Class 2
+![[Pasted image 20260313093356.png]]
+![[Pasted image 20260313093405.png]]
