@@ -2,7 +2,11 @@
 
 The output of a time-invariant system will have the same frequency as the sinusoidal input, but possibly with a different amplitude and phase
 
-The sy
+> [!help] Conclusion
+> The system response subject to the input $u(t)=A\cos(\omega t)$ is
+> $$y(t)=\frac A 2 M(\omega)\cos(\omega t+\phi(\omega))$$
+> where
+> $$M(\omega)=|H(j\omega)|\text{ and } \phi(\omega)=\angle H(j\omega)$$
 
 ---
 
@@ -29,4 +33,8 @@ Where $M(\omega)$ is the magnitude of H and $\phi(\omega)$ is the phase of H.
 
 Then $y(t)$ is
 ![[Pasted image 20260313083857.png]]
+
+> [!example]- First-Order differential equation
+> ![[Pasted image 20260313084305.png]]
+> ![[Pasted image 20260313084313.png]]
 
