@@ -21,7 +21,7 @@
 # Topics
 [[Subjects/4. Semester/Reguleringsteknik/Topics/Frequency Response|Frequency Response]]
 [[Bode Plots]]
-[[Subjects/4. Semester/Reguleringsteknik/Lectures/Stability Margins|Stability Margins]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Stability Margins|Stability Margins]]
 
 # Notes
 
