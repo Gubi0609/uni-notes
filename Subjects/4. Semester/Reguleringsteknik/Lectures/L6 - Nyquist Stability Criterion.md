@@ -13,10 +13,13 @@
 
 ---
 # Relevant documents
-
+[[Lecture 6 - Slides.pdf]]
+[[Lecture 6 - Exercise.pdf]]
+[[Lecture 6 - Test.pdf]]
+[[Lecture 6 - Test with solution.pdf]]
 
 # Topics
-
+[[Subjects/4. Semester/Reguleringsteknik/Lectures/Frequency Response|Frequency Response]]
 
 # Notes
 
