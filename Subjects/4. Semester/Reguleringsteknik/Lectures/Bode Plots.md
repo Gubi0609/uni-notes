@@ -1,3 +1,15 @@
+> [!help] Summary
+> 1. Rewrite the considered transfer function into Bode form.
+> 2. Determine the value of the $K_0(j\omega)^n$ term. Plot the low frequency magnitude asymptote through the point $K_0$ at $\omega = 1$ and with slope of $n\times$ 20/db per decade.
+> 3. Complete the composite magnitude asymptotes by extending the low-frequency asymptote until the first frequency break point. Then change the slope according to
+the behavior at the break point, and continue the procedure for the remaining break
+points.
+4. Sketch the approximate magnitude curve by increasing the asymptote value by a
+factor √2 at first-order numerator break and decreasing it by a factor 1/√2 at
+denominator break points.
+
+---
+
 ![[Pasted image 20260313091453.png]]
 
 # Advantages of working with bode plots
@@ -28,3 +40,5 @@ $$G_0(s)=\frac 1 s=s^{-1}\Rightarrow n=-1$$
 ## Class 2
 ![[Pasted image 20260313093356.png]]
 ![[Pasted image 20260313093405.png]]
+## Class 3
+![[Pasted image 20260313093920.png]]
