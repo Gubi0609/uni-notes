@@ -14,4 +14,14 @@
 
 # Classes of Terms in Transfer Function
 Three classes of terms of the transfer function are analyzed
-1. $\mathbb{}
+1. Class 1: $K_0(j\omega)^n$ for $n\in\mathbb{Z}$ 
+2. Class 2: $(j\omega\tau +1)^{\pm1}$
+3. Class 3: $((j\omega/\omega_n)^2+2\zeta(j\omega/\omega_n)+1)^{\pm1}$
+
+Where $n$ is the number, that $s$ is to the power of.
+E.g.
+$$G_0(s)=\frac 1 s=s^{-1}\Rightarrow n=-1$$
+## Class 1
+![[Pasted image 20260313092803.png]]
+![[Pasted image 20260313092814.png]]
+
