@@ -2,7 +2,7 @@
 
 The output of a time-invariant system will have the same frequency as the sinusoidal input, but possibly with a different amplitude and phase
 
-> [!help] Conclusion
+> [!help] Summary
 > The system response subject to the input $u(t)=A\cos(\omega t)$ is
 > $$y(t)=\frac A 2 M(\omega)\cos(\omega t+\phi(\omega))$$
 > where
