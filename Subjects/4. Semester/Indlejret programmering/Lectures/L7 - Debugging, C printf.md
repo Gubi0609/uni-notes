@@ -12,7 +12,7 @@
 
 ---
 # Relevant documents
-
+[[Lesson07_printf.pdf]]
 
 # Topics
 
