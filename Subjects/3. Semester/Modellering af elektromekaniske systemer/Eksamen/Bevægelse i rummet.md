@@ -206,4 +206,4 @@ mens system 2
 er en [[Tvunget harmonisk bevægelse]].
 
 # Roterende Dobbelt-Masse-Fjeder
-![[Pasted image 20260112134031.png]]
+![[Pasted image 20260112134031.png|457]]
