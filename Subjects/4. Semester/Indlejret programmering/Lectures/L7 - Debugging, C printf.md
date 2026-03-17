@@ -13,6 +13,7 @@
 ---
 # Relevant documents
 [[Lesson07_printf.pdf]]
+[[Assignment6.pdf]]
 
 # Topics
 
