@@ -20,8 +20,8 @@
 [[Lecture 7 - Test with solution.pdf]]
 
 # Topics
-[[Subjects/4. Semester/Reguleringsteknik/Lectures/Anti-Windup|Anti-Windup]]
-[[Subjects/4. Semester/Reguleringsteknik/Lectures/Dynamic Compensation|Dynamic Compensation]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Anti-Windup|Anti-Windup]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Dynamic Compensation|Dynamic Compensation]]
 
 
 # Notes
