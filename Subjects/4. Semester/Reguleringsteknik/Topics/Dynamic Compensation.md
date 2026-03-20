@@ -10,7 +10,7 @@ Both are given by the transfer function
 - If $z<p$ then $D(s)$ is called a _lead compensation_
 - If $z>p$, then $D(s)$ is called a _lag compensation_
 
-# Lead compensator
+# Lead Compensator
 Is given by
 ## $$D(s) = K\frac {s+z}{s+p}$$
 where $z<p\in\mathbb{R}$
@@ -43,4 +43,24 @@ and
 > ![[Pasted image 20260320092457.png]]
 > ![[Pasted image 20260320092505.png]]
 > ![[Pasted image 20260320092512.png]]
+
+
+# Lag Compensator
+Is given by
+## $$D(s)=K\frac {s+z}{s+p}$$
+where $z>p\in\mathbb{R}$ and $\alpha>1$
+
+The transfer function $D(s)$ has a pole followed by a zero, and approximates a PI controller, when used as a feedback controller
+![[Pasted image 20260320093539.png]]
+
+**Idea:** Improve the steady-state performance without affecting the other dynamics
+![[Pasted image 20260320093617.png]]
+
+## Design procedure
+![[Pasted image 20260320093632.png]]
+
+> [!example]-
+> ![[Pasted image 20260320093653.png]]
+> ![[Pasted image 20260320093704.png]]
+> ![[Pasted image 20260320093715.png]]
 
