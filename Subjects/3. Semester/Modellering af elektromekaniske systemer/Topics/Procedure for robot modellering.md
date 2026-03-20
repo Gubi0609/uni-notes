@@ -57,7 +57,7 @@ hvor $m_{l_i}$ er massen af Link $i$, $\mathbf g_0$ er tyngdeaccelerationen i Ba
 # 7. Kinetisk energi
 Den [[Subjects/3. Semester/Modellering af elektromekaniske systemer/Topics/Kinetisk Energi|kinetiske energi]] skal udregnes i en inertiel ramme (fx. Base rammen), der ikke bevæges.
 Dermed kan den kinetiske energi udregnes fra
-## $$E_{kin}(\mathbf q, \dot{\mathbf q})=\sum_{i=1}^nE_{kin,l_i}(\mathbf q, \dot{\mathbf q}=\quad\text{[J]}$$
+## $$E_{kin}(\mathbf q, \dot{\mathbf q})=\sum_{i=1}^nE_{kin,l_i}(\mathbf q, \dot{\mathbf q})=\quad\text{[J]}$$
 hvor $E_ {kin,l_i}$ er den kinetiske energi for Link $i$.
 
 Den kinetiske energi for _Link $i$_ bliver således
