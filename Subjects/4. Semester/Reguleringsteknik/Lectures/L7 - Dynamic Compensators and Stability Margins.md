@@ -21,6 +21,8 @@
 
 # Topics
 [[Subjects/4. Semester/Reguleringsteknik/Lectures/Anti-Windup|Anti-Windup]]
+[[Subjects/4. Semester/Reguleringsteknik/Lectures/Dynamic Compensation|Dynamic Compensation]]
+
 
 # Notes
 Poler giver et fase drej på -90 grader per pol
