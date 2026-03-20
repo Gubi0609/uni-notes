@@ -75,5 +75,5 @@ Lagrange D'Alamberts princip kan for $\mathbf q=\begin{bmatrix}q_1,&q_2,&...,&q_
 # $$\begin{matrix}\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_1}-\frac{\delta\mathcal L}{\delta q_1}=Q_1\\\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_2}-\frac{\delta\mathcal L}{\delta q_2}=Q_2\\...\\\frac d{dt}\frac{\delta\mathcal L}{\delta\dot q_n}-\frac{\delta\mathcal L}{\delta q_n}=Q_n\end{matrix}$$
 se også [[Euler-Lagrange modellering#Ikke-konservative systemer|Euler-Lagrange modellering for ikke-konservative systemer]].
 hvor $Q_1,Q_2,...,Q_n$ er generaliserede krafter og $\mathscr L$ er _Lagrangian_ givet ved
-## $$\mathscr L(\mathbf q, \dot{\mathcal q})=E_{kin}(\mathbf q, \dot{\mathcal q})-E_{pot}(\mathbf q)\quad\text{[J]}$$
+## $$\mathscr L(\mathbf q, \dot{\mathbf q})=E_{kin}(\mathbf q, \dot{\mathbf{q}})-E_{pot}(\mathbf q)\quad\text{[J]}$$
 hvor $E_{pot}$ er systemets potentielle energi og $E_{kin}$ er systemets kinetiske energi.
