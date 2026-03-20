@@ -26,4 +26,21 @@ A lead compensation is given by
 and $1/\alpha$ is called the _lead ratio_
 
 We have
-## $$\omega_{max}=\frac 1 {T\s}
+## $$\omega_{max}=\frac 1 {T\sqrt{\alpha}}=\sqrt{|z||p|}$$
+and
+## $$\sin\phi_{max}=\frac {1-\alpha}{1+\alpha}$$
+
+![[Pasted image 20260320092332.png]]
+
+## Design procedure
+![[Pasted image 20260320092351.png]]
+![[Pasted image 20260320092408.png]]
+
+> [!example]-
+> ![[Pasted image 20260320092428.png]]
+> ![[Pasted image 20260320092438.png]]
+> ![[Pasted image 20260320092445.png]]
+> ![[Pasted image 20260320092457.png]]
+> ![[Pasted image 20260320092505.png]]
+> ![[Pasted image 20260320092512.png]]
+
