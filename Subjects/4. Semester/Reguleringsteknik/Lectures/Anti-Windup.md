@@ -21,3 +21,21 @@ Both methods utilize the following signal
 This recomputes the integral term when the system input is saturated, as shown below (on a PID regulator)
 ![[Pasted image 20260320085542.png]]
 
+The value of the integrator output is not changed instantaneously, but it is changed based on the **tracking time constant** $T_t$.
+
+The input of the integrator is given by
+## $$ \frac 1 {T_t}e_s+\frac {K_p}{T_i}e$$
+where $e_s$ is zero when the system is not saturated.
+In steady state, the ouytput of the integrator is constant; therefore its input must be zero
+## $$e_s = -\frac {K_pT_t}{T_i}e$$
+in steady state
+![[Pasted image 20260320085948.png]]
+
+# Conditional Integration
+This is also known as _clamping_. It is a bit simpler than back-calculation, and just stops integrating when the system is in saturation
+![[Pasted image 20260320090037.png]]
+
+Although it is simple, it still improves the performance of the system
+![[Pasted image 20260320090103.png]]
+
+**It is beneficial to use conditional integration in 9/10 cases, as it is simple, yet effective**
