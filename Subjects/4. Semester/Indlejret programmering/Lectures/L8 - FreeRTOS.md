@@ -12,7 +12,7 @@
 
 ---
 # Relevant documents
-
+[[Lesson08_rtos.pdf]]
 
 # Topics
 
