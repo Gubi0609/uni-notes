@@ -28,3 +28,10 @@ where
 
 If we combine the three terms $u_P$, $u_I$, and $u_D$, that we just calculated we get
 ![[Pasted image 20260327094233.png]]
+
+We notice that the terms in the controller _depends on the sampling time_ $T$. Thus, it needs to be known and constant for implementing the PID controller with constant gains.
+
+To analyze the system, the I-term and D-term are $z$-transformed
+![[Pasted image 20260327094730.png]]
+
+Thus we have the 
