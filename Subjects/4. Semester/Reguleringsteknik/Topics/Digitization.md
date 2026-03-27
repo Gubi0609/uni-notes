@@ -34,4 +34,27 @@ We notice that the terms in the controller _depends on the sampling time_ $T$. T
 To analyze the system, the I-term and D-term are $z$-transformed
 ![[Pasted image 20260327094730.png]]
 
-Thus we have the 
+We notice, that when we $z$-transform $y(k+1)$, we get
+## $$y(k+1)\rightarrow z\cdot y(z)$$
+
+Thus we have the following expression for the controller in the $z$-domain
+![[Pasted image 20260327094752.png]]
+
+We note, that the PID controller in the $s$-domain is
+![[Pasted image 20260327094832.png]]
+
+And given in the $z$-domain as
+![[Pasted image 20260327094847.png]]
+
+This means, that the discrete controller is obtained by replacing $s$ with
+## $$\frac {2z-1}{Tz+1}$$
+This is called the _trapezoidal rule_ or _Tustin's method_.
+
+
+In conclusion, a discrete equivalant of a controller $K(s)$ is
+## $$K_d(z)=K\left(\frac {2z-1}{Tz+1}\right)$$
+
+This is in MATLAB `c2d`.
+
+> [!example]- Example of PID Controller
+> ![[Pasted image 20260327095241.png]]
