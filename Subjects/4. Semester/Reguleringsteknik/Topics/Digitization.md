@@ -60,5 +60,27 @@ This is in MATLAB `c2d`.
 > ![[Pasted image 20260327095241.png]]
 > ![[Pasted image 20260327095253.png]]
 > ![[Pasted image 20260327095302.png]]
-> We can see that with a larger 
+> We can see that with a larger sampling time, the overshoot is actually _larger_ than for the continuous graph.
 
+## Compensation for Sampling Effects
+A signal sampled with zero-order hold is in average delayed by $T/2$ where $T$ is the sampling time
+![[Pasted image 20260327095851.png]]
+
+It is appropriate to include this delay in the model when designing a controller by emulation.
+
+To incorporate the delay caused by zero-order hold in the design, the coninuous controller should be designed for the system $\tilde G(s)$  where $G_d(s)$ models the delay $T/s$
+![[Pasted image 20260327100030.png]]
+
+![[Pasted image 20260327100039.png]]
+![[Pasted image 20260327100047.png]]
+
+We can see, that the continuous with delay is much closer to the discrete.
+
+## Design Procedure
+![[Pasted image 20260327100142.png]]
+
+# Numerical Integration Methods
+The following integration rules are commonly used
+![[Pasted image 20260327100229.png]]
+
+Can 
