@@ -57,3 +57,15 @@ As an example, we consider
 ![[Pasted image 20260327090149.png]]
 
 And its step response
+![[Pasted image 20260327090210.png]]
+
+For the system, when s approaches infinity we have
+## $$\lim_{s\rightarrow\infty} \frac s {0.1s+1}=\lim_{s\rightarrow\infty} \frac 1 {0.1+1/s}=\frac 1 {0.1}$$
+Thus we approach 10
+
+We consider the following
+![[Pasted image 20260327090401.png]]
+
+By adjusting $\alpha$ we move the _zeros_ without affecting the _poles_. **VERY IMPORTANT**.
+- Zeros close to origin can give _large overshoot_
+- The further out in the left half-plane the zeros are, the less the overshoot.
