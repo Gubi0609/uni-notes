@@ -21,6 +21,7 @@
 
 # Topics
 [[Third and Higher Order Systems]]
+[[Effect of Zeros]]
 
 # Notes
 
