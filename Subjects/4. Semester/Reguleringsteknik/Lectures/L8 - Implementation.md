@@ -22,6 +22,7 @@
 # Topics
 [[Third and Higher Order Systems]]
 [[Effect of Zeros]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Digitization|Digitization]]
 
 # Notes
 
