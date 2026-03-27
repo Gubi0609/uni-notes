@@ -7,3 +7,6 @@ Can be written
 where
 ![[Pasted image 20260327083015.png]]
 The signal $u_2(s)$ is a _preconditioned version_ of $u(s)$ only affected by the system poles.
+
+![[Pasted image 20260327083655.png]]
+
