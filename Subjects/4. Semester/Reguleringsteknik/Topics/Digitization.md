@@ -83,4 +83,26 @@ We can see, that the continuous with delay is much closer to the discrete.
 The following integration rules are commonly used
 ![[Pasted image 20260327100229.png]]
 
-Can 
+Can approximate discrete transfer functions by substituting $s$ by the following expressions
+![[Pasted image 20260327100317.png]]
+
+To get the transfer function from a discrete transfer function, the variable $z$ is replaced by the following expressions
+![[Pasted image 20260327100349.png]]
+
+
+The left half-plane is mapped to different regions of the $z$-plane (shaded area) dependent on the numeric approximation method
+![[Pasted image 20260327100432.png]]
+
+**Discretization of a stable system using the forward rectangular rule may lead to an unstable discrete system.**
+
+# Discrete design
+![[Pasted image 20260327100533.png]]
+
+## Design procedure
+![[Pasted image 20260327100557.png]]
+
+> [!example]-
+> ![[Pasted image 20260327100652.png]]
+> ![[Pasted image 20260327100701.png]]
+> ![[Pasted image 20260327100709.png]]
+
