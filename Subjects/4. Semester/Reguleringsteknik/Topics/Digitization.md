@@ -47,14 +47,18 @@ And given in the $z$-domain as
 ![[Pasted image 20260327094847.png]]
 
 This means, that the discrete controller is obtained by replacing $s$ with
-## $$\frac {2z-1}{Tz+1}$$
+## $$\frac {2(z-1)}{T(z+1)}$$
 This is called the _trapezoidal rule_ or _Tustin's method_.
 
 
-In conclusion, a discrete equivalant of a controller $K(s)$ is
-## $$K_d(z)=K\left(\frac {2z-1}{Tz+1}\right)$$
+In conclusion, a discrete equivalent of a controller $K(s)$ is
+## $$K_d(z)=K\left(\frac {2(z-1)}{T(z+1)}\right)$$
 
 This is in MATLAB `c2d`.
 
 > [!example]- Example of PID Controller
 > ![[Pasted image 20260327095241.png]]
+> ![[Pasted image 20260327095253.png]]
+> ![[Pasted image 20260327095302.png]]
+> We can see that with a larger 
+
