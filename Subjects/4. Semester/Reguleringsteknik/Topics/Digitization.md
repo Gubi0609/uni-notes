@@ -25,3 +25,6 @@ where
 
 ![[Pasted image 20260327093646.png]]
 
+
+If we combine the three terms $u_P$, $u_I$, and $u_D$, that we just calculated we get
+![[Pasted image 20260327094233.png]]
