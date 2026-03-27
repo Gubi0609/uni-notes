@@ -39,3 +39,21 @@ We consider
 ![[Pasted image 20260327085648.png]]
 
 Thus we have the bode plot
+![[Pasted image 20260327085701.png]]
+
+We can see that the phase is changing much faster when we have complex zeros.
+
+Step response:
+![[Pasted image 20260327085746.png]]
+
+To solve the problem of the blue line (reverse swing) we would need to analyze the system, and try to move the zeros, so that they are _not complex conjugates_.
+
+# Start value theorem
+When considering transfer functions with zeros, it is convenient to use the start value theorem
+![[Pasted image 20260327090122.png]]
+
+As an example, we consider
+## $$G(s)=\frac s {0.1s+1}$$
+![[Pasted image 20260327090149.png]]
+
+And its step response
