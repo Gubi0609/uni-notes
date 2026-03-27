@@ -104,5 +104,7 @@ The left half-plane is mapped to different regions of the $z$-plane (shaded area
 > [!example]-
 > ![[Pasted image 20260327100652.png]]
 > ![[Pasted image 20260327100701.png]]
+> Since the poles are never within the unit-circle (dotted lined), the system can never be stable
+> 
 > ![[Pasted image 20260327100709.png]]
 
