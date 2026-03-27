@@ -10,3 +10,4 @@ The signal $u_2(s)$ is a _preconditioned version_ of $u(s)$ only affected by the
 
 ![[Pasted image 20260327083655.png]]
 
+> [!exercise]-
