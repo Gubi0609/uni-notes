@@ -14,10 +14,13 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 8 - Implementation.pdf|Lecture 8 - Implementation]]
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 8 - Exercise.pdf|Lecture 8 - Exercise]]
+[[Lecture 8 - Test.pdf]]
+[[Lecture 8 - Test with solution.pdf]]
 
 # Topics
-
+[[Third and Higher Order Systems]]
 
 # Notes
 
