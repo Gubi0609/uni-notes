@@ -10,4 +10,20 @@ The signal $u_2(s)$ is a _preconditioned version_ of $u(s)$ only affected by the
 
 ![[Pasted image 20260327083655.png]]
 
-> [!exercise]-
+> [!example]- Impulse response of different systems
+> ![[Pasted image 20260327084701.png]]
+> $a=1$
+> For system 1, it simply has an impulse response of $y(t)=1-e^{-t}$
+> For system 2, we can split it up into two systems, one that contains the poles, and one that contains the zeros
+> - Subsystem 1: $1/(s+1)$. The impulse response for this is the same as the above
+> - Subsystem 2: $s$. $s$ in the time domain, is equal to taking the time derivative, so that will be the time derivative of subsystem 1. Thus: $e^{-t}$
+> For system 3, since $a=1$, the numerator and denominator is the same, so $G_3(s)=1$.
+
+
+# Non minimum phase
+Zeros in the right half-plane give rise to non-minimum phase behavior.
+
+We can take some examples of this
+![[Pasted image 20260327085130.png]]
+![[Pasted image 20260327085144.png]]
+
