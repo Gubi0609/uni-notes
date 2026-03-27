@@ -25,5 +25,17 @@ Zeros in the right half-plane give rise to non-minimum phase behavior.
 
 We can take some examples of this
 ![[Pasted image 20260327085130.png]]
+
+Generally speaking, zeros _lifts_ the phase, but if they are in the right half-plane, they contribute with a _phase drop_
+
+Step responses:
 ![[Pasted image 20260327085144.png]]
 
+We can see that we have _reverse swing_ for the red system above. Essentially it is the same as overshoot, but we shoot in the wrong direction.
+
+## Higher order zeros
+Higher-order zeros can also occur in transfer functions.
+We consider
+![[Pasted image 20260327085648.png]]
+
+Thus we have the bode plot
