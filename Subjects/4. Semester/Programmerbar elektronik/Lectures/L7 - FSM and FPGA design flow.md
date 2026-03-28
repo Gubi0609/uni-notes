@@ -14,6 +14,7 @@
 # Relevant documents
 [[Lecture 7.pdf]]
 [[Lab7.pdf]]
+[[Assig_2.pdf]]
 
 # Topics
 
