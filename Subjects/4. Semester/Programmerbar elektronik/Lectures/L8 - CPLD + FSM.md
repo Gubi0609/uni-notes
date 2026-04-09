@@ -13,7 +13,8 @@
 
 ---
 # Relevant documents
-
+[[Lecture 8.pdf]]
+[[Lab 8.pdf]]
 
 # Topics
 
