@@ -17,7 +17,7 @@
 [[Lab 8.pdf]]
 
 # Topics
-
+[[FSM Calculator]]
 
 # Notes
 
