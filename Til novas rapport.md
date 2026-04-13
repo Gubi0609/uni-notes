@@ -15,6 +15,7 @@ https://mgtp.dk/groent-danmark/om-den-groenne-trepart
 
 # Vådområders langvarige proces
 https://www.landbrugsinfo.dk/-/media/landbrugsinfo/public/b/2/d/48_pk26_hvorfor_tager_vaadomraadeprojekter_saa_lang_tid_og_hvordan_faar_vi_mere_fart_paa_v2.pdf
-- Et vådområde tager 
+- Et vådområde tager 4 - 5 år fra ide til udførsel **når det går godt**. Ellers tager det 8 - 10 år.
+- 
 
 # Assens fast-track
