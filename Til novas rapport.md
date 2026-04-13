@@ -26,3 +26,8 @@ https://www.dr.dk/nyheder/indland/foerste-vaadomraade-omlagt-paa-fast-track-ordn
 - Indgår egentlig bare en aftale om kompensation for arealet med landmanden, og så omlægger man det til vådområde.
 - Mindre vådområde → Mindre kvælstofoptag.
 	- Kan dog forbedres, ved at lave flere fast-track vådområder, da de så samarbejder.
+
+
+
+
+# Indledning
