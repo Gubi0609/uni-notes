@@ -31,3 +31,4 @@ https://www.dr.dk/nyheder/indland/foerste-vaadomraade-omlagt-paa-fast-track-ordn
 
 
 # Indledning
+I maj 2020 fremlage Europa-Kommisionen EU's biodiversitetstrategi for 2030, der er et centralt element i den europæiske grønne pagt. I juni 2024 blev strategien udvidet ved at indføre genopretningsforanstaltninger, der skal dækkke
