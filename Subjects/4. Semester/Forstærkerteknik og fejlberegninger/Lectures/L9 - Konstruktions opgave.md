@@ -37,7 +37,8 @@ $$V_{O,max}=10 V$$
 $$\Delta V_{SHUNT, max} =0.1\Omega\cdot 2.64A=0.264V$$
 $$Gain=\frac {10 V}{0.264 V} = 37.879$$
 $$R_2 = {Gain}\cdot{R_1}=37.879 \cdot1000\Omega=37879\Omega=37.879k\Omega$$
-$$$$
+$$V_{\textrm{OS}} =\frac{100417\,I_{\textrm{load}} \,R_2 \,R_{11} \,R_{\textrm{shunt}} -100000\,I_{\textrm{load}} \,R_1 \,R_{21} \,R_{\textrm{shunt1}} }{100000\,R_1 \,R_{11} +100000\,R_1 \,R_{21} }$$
+Where $R_{11}$, $R_{21}$, and $R_{shunt1}$ denote the tolerance of each correspon 
 
 ---
 #lecture 
