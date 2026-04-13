@@ -6,7 +6,7 @@ https://www.consilium.europa.eu/da/policies/biodiversity/
 - Biodiversitetsstrategi for 2030
 - Sigter mod at indføre genopretningsforanstaltninger, som skal dække **mindst 20% af EU's ladområder og 20 % af EU's havområder inden 2030**
 	- Vedtaget juni 2024
-
+q
 # Grøn trepart
 https://mgtp.dk/groent-danmark/om-den-groenne-trepart
 - Samarbejde som regeringen og centrale interessenter er blevet enige om på landbrugs- og naturområdet.
@@ -31,4 +31,4 @@ https://www.dr.dk/nyheder/indland/foerste-vaadomraade-omlagt-paa-fast-track-ordn
 
 
 # Indledning
-I maj 2020 fremlage Europa-Kommisionen EU's biodiversitetstrategi for 2030, der er et centralt element i den europæiske grønne pagt. I juni 2024 blev strategien udvidet ved at indføre genopretningsforanstaltninger, der skal dække mindst 20% af EU's land- og havområder inden 2030 **(1)**. I Danmark er Den Grønne Trepart oprettet, som gennem et samarbejde mellem regeringen og centrale interessenter skal sikre mere natur, renere vand og en bæredygtig omstilling af landbruget. Blandt deres målsætninger er mere biodiversitet samt en styrket indsats for vandmiljøet **(2)**. Et af midlerne til at opnå disse mål er et vådområde. Vådområder er dog ofte en langvarig process på fire til ti år, som kræver gentagne samtaler og aftaler mellem flere interessenter **(3)**. Derfor har man i Assens Kommune introduceret Danmarks første fast-track vådområde, der er mindre end et normalt vådområde, da det kun optager få hektar. Dette gør processen kortere, idet kommunen indgår en aftale med grundejeren, hvorefter man påbegynder omlægningen til vådområde **(4)**.
+I maj 2020 fremlage Europa-Kommisionen EU's biodiversitetstrategi for 2030, der er et centralt element i den europæiske grønne pagt. I juni 2024 blev strategien udvidet ved at indføre genopretningsforanstaltninger, der skal dække mindst 20% af EU's land- og havområder inden 2030 **(1)**. I Danmark er Den Grønne Trepart oprettet, som gennem et samarbejde mellem regeringen og centrale interessenter skal sikre mere natur, renere vand og en bæredygtig omstilling af landbruget. Blandt deres målsætninger er mere biodiversitet samt en styrket indsats for vandmiljøet **(2)**. Et af midlerne til at opnå disse mål er et vådområde. Vådområder er dog ofte en langvarig process på fire til ti år, som kræver gentagne samtaler og aftaler mellem flere interessenter **(3)**. Derfor anlagde Assens Kommune i 2024 Danmarks første fast-track vådområde, der er mindre end et normalt vådområde, da det kun optager få hektar. Dette gør processen kortere, idet kommunen indgår en aftale med grundejeren, hvorefter man påbegynder omlægningen til vådområde **(4)**.
