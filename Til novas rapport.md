@@ -6,4 +6,11 @@ https://www.consilium.europa.eu/da/policies/biodiversity/
 - Biodiversitetsstrategi for 2030
 - Sigter mod at indføre genopretningsforanstaltninger, som skal dække **mindst 20% af EU's ladområder og 20 % af EU's havområder inden 2030**
 	- Vedtaget juni 2024
-- 
+
+# Grøn trepart
+
+
+# Vådområders langvarige proces
+
+
+# Assens fast-track
