@@ -12,7 +12,7 @@
 
 ---
 # Relevant documents
-
+[[Lesson9_queues_deadlocks_reentrancy.pdf]]
 
 # Topics
 
