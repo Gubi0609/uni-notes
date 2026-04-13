@@ -37,6 +37,7 @@ $$V_{O,max}=10 V$$
 $$\Delta V_{SHUNT, max} =0.1\Omega\cdot 2.64A=0.264V$$
 $$Gain=\frac {10 V}{0.264 V} = 37.879$$
 $$R_2 = {Gain}\cdot{R_1}=37.879 \cdot1000\Omega=37879\Omega=37.879k\Omega$$
+$$$$
 
 ---
 #lecture 
