@@ -13,7 +13,8 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 9 - State Feedback Control.pdf|Lecture 9 - State Feedback Control]]
+[[Lecture 9 - Exercise.pdf]]
 
 # Topics
 
