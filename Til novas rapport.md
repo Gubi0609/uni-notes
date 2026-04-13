@@ -14,6 +14,7 @@ https://mgtp.dk/groent-danmark/om-den-groenne-trepart
 - Mere skov, omlægning af lavbundsjorde, **mere biodiversitet**, **styrke indsats for vandmiljøet *(kvælstofudledning)*** mm.
 
 # Vådområders langvarige proces
-
+https://www.landbrugsinfo.dk/-/media/landbrugsinfo/public/b/2/d/48_pk26_hvorfor_tager_vaadomraadeprojekter_saa_lang_tid_og_hvordan_faar_vi_mere_fart_paa_v2.pdf
+- Et vådområde tager 
 
 # Assens fast-track
