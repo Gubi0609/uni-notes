@@ -11,7 +11,7 @@ https://www.consilium.europa.eu/da/policies/biodiversity/
 https://mgtp.dk/groent-danmark/om-den-groenne-trepart
 - Samarbejde som regeringen og centrale interessenter er blevet enige om på landbrugs- og naturområdet.
 - Skal sikre mere natur, renere vand og en bæredygtig omstilling af landbruget.
-- Mere skov, omlægning af lavbundsjorde, **mere biodiversitet**, **styrke indsats for vandmiljøet**
+- Mere skov, omlægning af lavbundsjorde, **mere biodiversitet**, **styrke indsats for vandmiljøet *(kvælstofudledning)*** mm.
 
 # Vådområders langvarige proces
 
