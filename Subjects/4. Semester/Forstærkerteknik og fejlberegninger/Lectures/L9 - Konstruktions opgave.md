@@ -28,6 +28,7 @@ Krav:
 * Afstand fra Målemodstand til jeres kredsløb: 20-30cm
 
 Systemet skal kunne angive aktuel Torque samt aktivere en over Torque protection sådan at overstiger Torque, 150 g\*cm, så skal en højtaler aktivers.
+![[Pasted image 20260413093304.png]]
 
 $$E_{rr}=\frac 1 {240} \cdot 100=0.417\%$$
 $$I_{LOAD, min}=0A\quad , \quad I_{LOAD,max}=2.64 A$$
@@ -39,7 +40,7 @@ $$Gain=\frac {10 V}{0.264 V} = 37.879$$
 $$R_2 = {Gain}\cdot{R_1}=37.879 \cdot1000\Omega=37879\Omega=37.879k\Omega$$
 $$V_{\textrm{OS}} =\frac{100417\,I_{\textrm{load}} \,R_2 \,R_{11} \,R_{\textrm{shunt}} -100000\,I_{\textrm{load}} \,R_1 \,R_{21} \,R_{\textrm{shunt1}} }{100000\,R_1 \,R_{11} +100000\,R_1 \,R_{21} }$$
 Where $R_{11}$, $R_{21}$, and $R_{shunt1}$ denote the tolerance of each corresponding resistor times the resistance ([[low_side_current_sense_circuit_design.pdf#page=4|See tutorial document page 4]]) 
-$$C_1=\frac 1 {2\pi\cdot f_{sense}\cdot 10\cdot R_2}=\frac 1 {2\pi\cdot 1000Hz\cdot 10\cdot 37879\Omega}=$$
+$$C_1=\frac 1 {2\pi\cdot f_{sense}\cdot 10\cdot R_2}=\frac 1 {2\pi\cdot 1000Hz\cdot 10\cdot 37879\Omega}=4.2017\cdot 10^{-10}F=100pF$$
 
 ---
 #lecture 
