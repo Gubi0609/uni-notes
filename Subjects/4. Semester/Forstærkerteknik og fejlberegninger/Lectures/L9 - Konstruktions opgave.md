@@ -29,7 +29,12 @@ Krav:
 
 Systemet skal kunne angive aktuel Torque samt aktivere en over Torque protection sådan at overstiger Torque, 150 g\*cm, så skal en højtaler aktivers.
 
-$$E_{rr}=\frac 1 {240} = $$
+$$E_{rr}=\frac 1 {240} \cdot 100=0.417\%$$
+$$I_{LOAD, min}=0A\quad , \quad I_{LOAD,max}=2.64 A$$
+$$f_{sense}=1000 Hz$$
+$$R_{SHUNT}=100 m\Omega$$
+$$V_{O,max}=10 V$$
+$$\Delta V_{SHUNT, max} =$$
 
 ---
 #lecture 
