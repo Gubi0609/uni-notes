@@ -11,7 +11,7 @@ https://www.consilium.europa.eu/da/policies/biodiversity/
 https://mgtp.dk/groent-danmark/om-den-groenne-trepart
 - Samarbejde som regeringen og centrale interessenter er blevet enige om på landbrugs- og naturområdet.
 - Skal sikre mere natur, renere vand og en bæredygtig omstilling af landbruget.
-- Mere skov, omlægning af lavbundsjorde, **mere biodiversitet**, **styrke indsats for vandmiljøet *(kvælstofudledning)*** mm.
+- Mere skov, omlægning af lavbundjorde, **mere biodiversitet**, **styrke indsats for vandmiljøet *(kvælstofudledning)*** mm.
 
 # Vådområders langvarige proces
 https://www.landbrugsinfo.dk/-/media/landbrugsinfo/public/b/2/d/48_pk26_hvorfor_tager_vaadomraadeprojekter_saa_lang_tid_og_hvordan_faar_vi_mere_fart_paa_v2.pdf
@@ -25,4 +25,4 @@ https://www.dr.dk/nyheder/indland/foerste-vaadomraade-omlagt-paa-fast-track-ordn
 - Den mindre størrelse (få hektar) gør processen kortere
 - Indgår egentlig bare en aftale om kompensation for arealet med landmanden, og så omlægger man det til vådområde.
 - Mindre vådområde → Mindre kvælstofoptag.
-	- Kan dog forbedres, ved at lave flere fast-track vådområder, da de så sam
+	- Kan dog forbedres, ved at lave flere fast-track vådområder, da de så samarbejder.
