@@ -68,8 +68,12 @@ The FSM lock works as described in the finite state machine above. It takes an i
 ![[Pasted image 20260415102209.png|1000]]
 
 The entire system can now be put together.
-- Since `sysclk` runs on a 125 MHz clock cycle, which is a little high for our system, we use a clock divider to convert it to a 10 kHz clock cycle.
-- From left to right we see again the combination of a D Flip Flop and an AND gate. If we look back at the `intr` pin from the keypad driver, we will remember, that it is used to send a pulse, when the `d` input to the D Flip Flop changes to high. We use this with the `a` pin of the AND gate and `d` pin of the D Flip Flop connected to the `lock` output from the FSM lock to reset the keypad
+- Inputs:
+	- `jb_in` - The rows of the keypad, attached to the PMOD B pins on the physical board.
+	- `sysclk` - The system clock of the board. This has a clock cycle of 125 
+- Since `sysclk` runs on a 125 MHz clock cycle, which is a little high for our system, we use a clock divider to convert it to a 10 kHz clock cycle. This drives all the modules in the system, that uses a clock.
+- From left to right we see again the combination of a D Flip Flop and an AND gate. If we look back at the `intr` pin from the keypad driver, we will remember, that it is used to send a pulse, when the `d` input to the D Flip Flop changes to high. We use this with the `a` pin of the AND gate and `d` pin of the D Flip Flop connected to the `lock` output from the FSM lock to reset the keypad, when the system changes from unlocked state to locked state. This is done to ensure, that the last key of the pin-code is never displayed on the 7-Segment Display while the system is locked - thus never revealing any part of the pin-code.
+- We notice also, that the `key_pressed` output from the keypad driver and the `cnt_value` output of the FSM lock are both inserted into a 2 input MUX, with the `sel` pin being the `unlock` output of the FSM lock. This is done, so that when the system is locked, the digits displayed on the 7-Segment Display are the inputs from the keypad, while when the system is unlocked, the inputs from the keypad are irrelevant, so we instead show the timer value for when the system will re-lock.
 
 # Simulation
 
