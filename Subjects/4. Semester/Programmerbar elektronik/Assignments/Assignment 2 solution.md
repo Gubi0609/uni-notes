@@ -1,3 +1,4 @@
+**The code for the modules explained below can be seen in the appendix attached at the bottom**
 # Keypad
 ![[Pasted image 20260415102028.png|1000]]
 
@@ -7,7 +8,11 @@ The keypad driver has the following
 	- `clock` - The clock used to synchronize everything and step through the keypad columns.
 	- `reset` - A reset pin to reset the keypad driver to its start state..
 - Outputs:
-	- `intr` - An interrupt signal, that
+	- `intr` - An interrupt signal, that will send a high pulse, the width of a clock pulse, when a button is pressed.
+	- `key_pressed` - The translated key that has been pressed, translated from 4 bit row/column structure to a binary number representing the number on the corresponding key.
+	- `cols_out` - The columns of the real life keypad. This is used to cycle through which column will be pulled low (keypad is active low)
+
+The keypad driver works using a 4 bit counter, that increments by 1 for each clock pulse. The counters output is then split in two, with the lower 2 bits (bits 1 to 0) representing the column currently being read, and the upper 2 bits (bits 3 to 2) representing the row. The lower 2 bits are fed into a 2 to 4 decoder, which outputs a low signal
 
 # 7-Segment Display Driver
 ![[Pasted image 20260415102051.png|1000]]
