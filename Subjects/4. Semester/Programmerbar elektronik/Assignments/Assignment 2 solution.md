@@ -61,7 +61,8 @@ The FSM lock works as described in the finite state machine above. It takes an i
 - When the system unlocks, the enable pin for the counter is driven high, thus activating the counter. The counters input is simultaneously output to `cnt_value` and used as an input for the comparator.
 - The comparator compares the counter value with a target value. Since we want the system to reset after 30 seconds, the target value is 30.
 - When the counter reaches 30, the output from the comparator will be high, thus reseting the FSM lock through an OR gate. The OR gate is used to also allow reset using the `reset` input pin.
-- A clock divider is used to change the clock frequency from 10 kHz, which the rest of the system uses to 
+- A clock divider is used to change the clock frequency from 10 kHz, which the rest of the system uses, to 1 Hz, thus only activating the counter one time every second.
+- The reset pin from the counter is connected through an OR gate to both the `reset` input pin and the `lock` output from the FSM lock - thus reseting the counter, when the system locks.
 
 # Entire system
 ![[Pasted image 20260415102209.png|1000]]
