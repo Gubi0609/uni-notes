@@ -40,7 +40,9 @@ The SSD driver works by feeding the `decimal` number to be displayed into a BCD 
 - The switch is done in synchronization of the `CAT` output, to ensure that the one's place is displayed on the right hand side 7-Segment Display and the tenth's place is displayed on the left hand side 7-Segment Display.
 
 # Finite State Machine Lock
+![[Pasted image 20260415130359.png|1000]]
 
+The lock is implemented using a finite state machine with a total of 9 states. If the correct pin is inserted, the state machine will cycle through the states s0, s1, s2, s4, s4 with the last state (s4) being the unlocking state. Upon pressing the `*` key while unlocked, the system will go into an in
 # Finite State Machine Lock with Counter
 ![[Pasted image 20260415102119.png|1000]]
 
