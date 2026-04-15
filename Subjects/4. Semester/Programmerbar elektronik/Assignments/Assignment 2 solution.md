@@ -1,6 +1,14 @@
 # Keypad
 ![[Pasted image 20260415102028.png|1000]]
 
+The keypad driver has the following
+- Inputs:
+	- `rows_in` - The rows from the real life keypad that drives a row low, when a key is pressed.
+	- `clock` - The clock used to synchronize everything and step through the keypad columns.
+	- `reset` - A reset pin to reset the keypad driver to its start state..
+- Outputs:
+	- `intr` - An interrupt signal, that
+
 # 7-Segment Display Driver
 ![[Pasted image 20260415102051.png|1000]]
 
