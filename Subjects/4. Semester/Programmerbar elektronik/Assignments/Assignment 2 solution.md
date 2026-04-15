@@ -77,6 +77,155 @@ begin
 end rtl;
 ```
 
+## Clock Divider
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+
+entity clock_divider is
+    Generic (
+        clk_in_freq : integer := 125000000; -- default 125 MHz
+        clk_out_freq : integer := 10000 -- default 10 kHz
+    );
+    Port (
+        clk_in  : in  std_logic;
+        reset   : in  std_logic;
+        clk_out : out std_logic
+    );
+end clock_divider;
+
+architecture rtl of clock_divider is
+    constant DIVIDER : integer := clk_in_freq / (clk_out_freq * 2); -- calculate divider
+    signal counter : integer range 0 to DIVIDER - 1 := 0;
+    signal clk_reg : std_logic := '0';
+begin
+    process(clk_in, reset)
+    begin
+        if reset = '1' then
+            counter <= 0;
+            clk_reg <= '0';
+        elsif rising_edge(clk_in) then
+            if counter = DIVIDER - 1 then
+                counter <= 0;
+                clk_reg <= not clk_reg;
+            else
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+
+    clk_out <= clk_reg;
+end rtl;
+```
+
+## Comparator
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity comparator is
+    Generic (
+        input_size  : integer := 5;
+        target      : integer := 30
+    );
+    Port (
+        din  : in  std_logic_vector(input_size-1 downto 0);
+        dout : out std_logic
+    );
+end comparator;
+
+architecture rtl of comparator is
+begin
+    dout <= '1' when unsigned(din) = target else '0';
+end rtl;
+```
+
+## Counter
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+
+entity counter is
+    Generic (output_size : integer := 4;
+             max_count : integer := 15);
+    Port (clk, enable, rst : in std_logic;
+          cnt : out std_logic_vector(output_size-1 downto 0));
+end counter;
+
+architecture rtl of counter is
+    signal cnt_temp: unsigned(output_size-1 downto 0) := (others => '0'); -- Initialize to 0
+begin
+   process (rst, clk)
+   begin
+    if (rst = '1') then
+        cnt_temp <= (others => '0');
+    elsif (enable = '1') then
+        if (rising_edge(clk)) then
+            if (cnt_temp = to_unsigned(max_count, output_size)) then
+                cnt_temp <= (others => '0');
+            else
+                cnt_temp <= cnt_temp + 1;
+            end if;
+        end if;        
+    end if;
+    
+   end process;
+   cnt <= std_logic_vector(cnt_temp);
+end rtl;
+```
+
+## Decoder 2 to 4
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity decoder_2to4 is
+  Port (bus_in : in std_logic_vector(1 downto 0);
+        bus_out : out std_logic_vector(3 downto 0));
+end decoder_2to4;
+
+architecture rtl of decoder_2to4 is
+begin
+with bus_in select
+    bus_out <= "1110" when "00",
+              "1101" when "01",
+              "1011" when "10",
+              "0111" when "11",
+              "----" when others;
+end rtl;
+```
+
+## D Flip Flop
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity D_Flip_Flop is
+    Port (
+        clk  : in  std_logic;
+        d    : in  std_logic;
+        q    : out std_logic;
+        qbar : out std_logic
+    );
+end D_Flip_Flop;
+
+architecture rtl of D_Flip_Flop is
+begin
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            q    <= d;
+            qbar <= not d;
+        end if;
+    end process;
+end rtl;
+```
+
 ## D latch
 ```vhdl
 library IEEE;
@@ -202,6 +351,55 @@ begin
 end rtl;
 ```
 
+## Inverter
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity inverter is
+  Port (i : in std_logic;
+        o : out std_logic);
+end inverter;
+
+architecture rtl of inverter is
+begin
+    o <= not(i);
+end rtl;
+```
+
+## Keypad translator
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity keypad_translator is
+  Port (key_in : in std_logic_vector(3 downto 0);
+        key_out : out std_logic_vector(3 downto 0));
+end keypad_translator;
+
+architecture rtl of keypad_translator is
+begin
+    with key_in select
+        key_out <= "0000" when "1100", -- 0
+                   "0001" when "0000", -- 1
+                   "0010" when "0001", -- 2
+                   "0011" when "0010", -- 3
+                   "0100" when "0100", -- 4
+                   "0101" when "0101", -- 5
+                   "0110" when "0110", -- 6
+                   "0111" when "1000", -- 7
+                   "1000" when "1001", -- 8
+                   "1001" when "1010", -- 9
+                   "1010" when "0011", -- A
+                   "1011" when "0111", -- B
+                   "1100" when "1011", -- C
+                   "1101" when "1111", -- D
+                   "1110" when "1110", -- E
+                   "1111" when "1101", -- F
+                   (others => '0') when others;
+end rtl;
+```
+
 ## MUX 2 inputs
 ```vhdl
 library IEEE;
@@ -268,146 +466,7 @@ o <= a or b;
 end rtl;
 ```
 
-## Clock Divider
-```vhdl
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
-
-
-entity clock_divider is
-    Generic (
-        clk_in_freq : integer := 125000000; -- default 125 MHz
-        clk_out_freq : integer := 10000 -- default 10 kHz
-    );
-    Port (
-        clk_in  : in  std_logic;
-        reset   : in  std_logic;
-        clk_out : out std_logic
-    );
-end clock_divider;
-
-architecture rtl of clock_divider is
-    constant DIVIDER : integer := clk_in_freq / (clk_out_freq * 2); -- calculate divider
-    signal counter : integer range 0 to DIVIDER - 1 := 0;
-    signal clk_reg : std_logic := '0';
-begin
-    process(clk_in, reset)
-    begin
-        if reset = '1' then
-            counter <= 0;
-            clk_reg <= '0';
-        elsif rising_edge(clk_in) then
-            if counter = DIVIDER - 1 then
-                counter <= 0;
-                clk_reg <= not clk_reg;
-            else
-                counter <= counter + 1;
-            end if;
-        end if;
-    end process;
-
-    clk_out <= clk_reg;
-end rtl;
-```
-
-## Comparator
-```vhdl
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
-
-entity comparator is
-    Generic (
-        input_size  : integer := 5;
-        target      : integer := 30
-    );
-    Port (
-        din  : in  std_logic_vector(input_size-1 downto 0);
-        dout : out std_logic
-    );
-end comparator;
-
-architecture rtl of comparator is
-begin
-    dout <= '1' when unsigned(din) = target else '0';
-end rtl;
-```
-
-## Counter
-```vhdl
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
-
-
-entity counter is
-    Generic (output_size : integer := 4;
-             max_count : integer := 15);
-    Port (clk, enable, rst : in std_logic;
-          cnt : out std_logic_vector(output_size-1 downto 0));
-end counter;
-
-architecture rtl of counter is
-    signal cnt_temp: unsigned(output_size-1 downto 0) := (others => '0'); -- Initialize to 0
-begin
-   process (rst, clk)
-   begin
-    if (rst = '1') then
-        cnt_temp <= (others => '0');
-    elsif (enable = '1') then
-        if (rising_edge(clk)) then
-            if (cnt_temp = to_unsigned(max_count, output_size)) then
-                cnt_temp <= (others => '0');
-            else
-                cnt_temp <= cnt_temp + 1;
-            end if;
-        end if;        
-    end if;
-    
-   end process;
-   cnt <= std_logic_vector(cnt_temp);
-end rtl;
-```
-
-## Decoder 2 to 4
-```vhdl
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
-entity decoder_2to4 is
-  Port (bus_in : in std_logic_vector(1 downto 0);
-        bus_out : out std_logic_vector(3 downto 0));
-end decoder_2to4;
-
-architecture rtl of decoder_2to4 is
-begin
-with bus_in select
-    bus_out <= "1110" when "00",
-              "1101" when "01",
-              "1011" when "10",
-              "0111" when "11",
-              "----" when others;
-end rtl;
-```
-
-## Inverter
-```vhdl
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
-entity inverter is
-  Port (i : in std_logic;
-        o : out std_logic);
-end inverter;
-
-architecture rtl of inverter is
-begin
-    o <= not(i);
-end rtl;
-```
-
-## Keypad translator
+## Slice
 ```vhdl
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -421,32 +480,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity keypad_translator is
-  Port (key_in : in std_logic_vector(3 downto 0);
-        key_out : out std_logic_vector(3 downto 0));
-end keypad_translator;
+entity slice is
+    Generic (
+        DIN_WIDTH : integer := 4;  -- input bus width
+        DIN_FROM  : integer := 3;  -- top bit
+        DIN_TO    : integer := 2   -- bottom bit
+    );
+    Port (
+        din  : in  std_logic_vector(DIN_WIDTH-1 downto 0);
+        dout : out std_logic_vector(DIN_FROM-DIN_TO downto 0)
+    );
+end slice;
 
-architecture rtl of keypad_translator is
+architecture rtl of slice is
 begin
-    with key_in select
-        key_out <= "0000" when "1100", -- 0
-                   "0001" when "0000", -- 1
-                   "0010" when "0001", -- 2
-                   "0011" when "0010", -- 3
-                   "0100" when "0100", -- 4
-                   "0101" when "0101", -- 5
-                   "0110" when "0110", -- 6
-                   "0111" when "1000", -- 7
-                   "1000" when "1001", -- 8
-                   "1001" when "1010", -- 9
-                   "1010" when "0011", -- A
-                   "1011" when "0111", -- B
-                   "1100" when "1011", -- C
-                   "1101" when "1111", -- D
-                   "1110" when "1110", -- E
-                   "1111" when "1101", -- F
-                   (others => '0') when others;
+    dout <= din(DIN_FROM downto DIN_TO);
 end rtl;
 ```
-
-## Slice
