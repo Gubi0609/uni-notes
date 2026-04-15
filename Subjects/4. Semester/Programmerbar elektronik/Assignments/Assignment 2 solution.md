@@ -1,4 +1,18 @@
+# Keypad
+![[Pasted image 20260415102028.png|1000]]
 
+# 7-Segment Display Driver
+![[Pasted image 20260415102051.png|1000]]
+
+# Finite State Machine Lock with Counter
+![[Pasted image 20260415102119.png|1000]]
+
+# Entire system
+![[Pasted image 20260415102209.png|1000]]
+
+# Simulation
+
+## Real Life Demonstration
 
 
 ---
