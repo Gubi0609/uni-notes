@@ -25,6 +25,19 @@ The keypad driver works using a 4 bit counter, that increments by 1 for each clo
 # 7-Segment Display Driver
 ![[Pasted image 20260415102051.png|1000]]
 
+The 7-Segment Display driver has the following
+- Inputs:
+	- `clock` - The clock used to synchronize the entire system
+	- `decimal` - A 6 bit decimal, allowing for numbers as large as 63.
+- Outputs:
+	- `CAT` - The display selector for the physical display. This changes directly with the `clock` cycle
+	- `SSD` - The output for the 7-Segment Display, properly representing a 0 - 9 number on a 7-Segment Display
+
+The SSD driver works by feeding the `decimal` number to be displayed into a BCD encoder.
+- The purpose of the BCD encoder is to split the decimal number into the one's and tenth's place. This is done through `mod` division and normal division.
+- The one's and tenth's place of the decimal number is then converted into the SSD format, allowing for display on a 7-Segment Display. They are done so separately.
+- Each SSD number is then fed into a MUX with two 
+
 # Finite State Machine Lock with Counter
 ![[Pasted image 20260415102119.png|1000]]
 
