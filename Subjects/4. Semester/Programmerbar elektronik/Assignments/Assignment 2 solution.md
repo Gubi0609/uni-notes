@@ -70,7 +70,15 @@ The FSM lock works as described in the finite state machine above. It takes an i
 The entire system can now be put together.
 - Inputs:
 	- `jb_in` - The rows of the keypad, attached to the PMOD B pins on the physical board.
-	- `sysclk` - The system clock of the board. This has a clock cycle of 125 
+	- `sysclk` - The system clock of the board. This has a clock cycle of 125 MHz.
+	- `btn_0` - Button 0 on the physical board. This will be used as a reset button.
+- Outputs:
+	- `ja_cat` - The `CAT` pin for the 7-Segment Display, attached to the PMOD A pins on the physical board.
+	- `ja` - The 7-Segment Display output used to drive the display
+	- `jb_out` - The columns of the keypad, attached to the PMOD B pins on the physical board.
+	- `led_0` - LED 0 on the physical board. Used to display the system being in the locked state.
+	- `led_1` - LED 1 on the physical board. Used to display the system being in the unlocked state.
+
 - Since `sysclk` runs on a 125 MHz clock cycle, which is a little high for our system, we use a clock divider to convert it to a 10 kHz clock cycle. This drives all the modules in the system, that uses a clock.
 - From left to right we see again the combination of a D Flip Flop and an AND gate. If we look back at the `intr` pin from the keypad driver, we will remember, that it is used to send a pulse, when the `d` input to the D Flip Flop changes to high. We use this with the `a` pin of the AND gate and `d` pin of the D Flip Flop connected to the `lock` output from the FSM lock to reset the keypad, when the system changes from unlocked state to locked state. This is done to ensure, that the last key of the pin-code is never displayed on the 7-Segment Display while the system is locked - thus never revealing any part of the pin-code.
 - We notice also, that the `key_pressed` output from the keypad driver and the `cnt_value` output of the FSM lock are both inserted into a 2 input MUX, with the `sel` pin being the `unlock` output of the FSM lock. This is done, so that when the system is locked, the digits displayed on the 7-Segment Display are the inputs from the keypad, while when the system is unlocked, the inputs from the keypad are irrelevant, so we instead show the timer value for when the system will re-lock.
@@ -81,7 +89,46 @@ The entire system can now be put together.
 
 
 ---
-# Appendix
+# Appendix A - Board Constraints
+```xdc
+## Clock signal 125 MHz
+
+set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports sysclk]
+create_clock -add -name sys_clk_pin -period 8.00 -waveform {0 4} [get_ports { sysclk }];
+
+##LEDs
+
+set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33 } [get_ports { led_0 }]; #IO_L6N_T0_VREF_34 Sch=led[0]
+set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33 } [get_ports { led_1 }]; #IO_L6P_T0_34 Sch=led[1]
+
+##Buttons
+
+set_property -dict { PACKAGE_PIN D19   IOSTANDARD LVCMOS33 } [get_ports { btn_0 }]; #IO_L4N_T0_35 Sch=btn[1]
+set_property -dict { PACKAGE_PIN D20   IOSTANDARD LVCMOS33 } [get_ports { btn_1 }]; #IO_L4N_T0_35 Sch=btn[1]
+
+##PmodA
+
+set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 } [get_ports { ja[0] }]; #IO_L17P_T2_34 Sch=ja_p[1]
+set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 } [get_ports { ja[1] }]; #IO_L17N_T2_34 Sch=ja_n[1]
+set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { ja[2] }]; #IO_L7P_T1_34 Sch=ja_p[2]
+set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { ja[3] }]; #IO_L7N_T1_34 Sch=ja_n[2]
+set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports { ja[4] }]; #IO_L12P_T1_MRCC_34 Sch=ja_p[3]
+set_property -dict { PACKAGE_PIN U19   IOSTANDARD LVCMOS33 } [get_ports { ja[5] }]; #IO_L12N_T1_MRCC_34 Sch=ja_n[3]
+set_property -dict { PACKAGE_PIN W18   IOSTANDARD LVCMOS33 } [get_ports { ja[6] }]; #IO_L22P_T3_34 Sch=ja_p[4]
+set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports { ja_cat }]; #IO_L22N_T3_34 Sch=ja_n[4]
+
+##PmodB
+
+set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVCMOS33 } [get_ports { jb_out[3] }]; #IO_L8P_T1_34 Sch=jb_p[1]
+set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { jb_out[2] }]; #IO_L8N_T1_34 Sch=jb_n[1]
+set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33 } [get_ports { jb_out[1] }]; #IO_L1P_T0_34 Sch=jb_p[2]
+set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVCMOS33 } [get_ports { jb_out[0] }]; #IO_L1N_T0_34 Sch=jb_n[2]
+set_property -dict { PACKAGE_PIN V16   IOSTANDARD LVCMOS33 } [get_ports { jb_in[3] }]; #IO_L18P_T2_34 Sch=jb_p[3]
+set_property -dict { PACKAGE_PIN W16   IOSTANDARD LVCMOS33 } [get_ports { jb_in[2] }]; #IO_L18N_T2_34 Sch=jb_n[3]
+set_property -dict { PACKAGE_PIN V12   IOSTANDARD LVCMOS33 } [get_ports { jb_in[1] }]; #IO_L4P_T0_34 Sch=jb_p[4]
+set_property -dict { PACKAGE_PIN W13   IOSTANDARD LVCMOS33 } [get_ports { jb_in[0] }]; #IO_L4N_T0_34 Sch=jb_n[4]
+```
+# Appendix B - Code
 ## And gate
 ```vhdl
 library IEEE;
