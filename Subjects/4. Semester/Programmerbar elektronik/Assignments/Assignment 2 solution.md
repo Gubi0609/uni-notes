@@ -12,7 +12,13 @@ The keypad driver has the following
 	- `key_pressed` - The translated key that has been pressed, translated from 4 bit row/column structure to a binary number representing the number on the corresponding key.
 	- `cols_out` - The columns of the real life keypad. This is used to cycle through which column will be pulled low (keypad is active low)
 
-The keypad driver works using a 4 bit counter, that increments by 1 for each clock pulse. The counters output is then split in two, with the lower 2 bits (bits 1 to 0) representing the column currently being read, and the upper 2 bits (bits 3 to 2) representing the row. The lower 2 bits are fed into a 2 to 4 decoder, which outputs a low signal
+The keypad driver works using a 4 bit counter, that increments by 1 for each clock pulse. The counters output is then split in two, with the lower 2 bits (bits 1 to 0) representing the column currently being read, and the upper 2 bits (bits 3 to 2) representing the row. 
+- The lower 2 bits are fed into a 2 to 4 decoder, which outputs a low signal, driving the keypad columns. 
+- The upper 2 bits are used as the select pin for a 4 to 1 MUX, with the data input for the MUX being the 4 bit row read from the keypad. 
+- Since the rows are active low, the MUX will output the inverted input of the row bit currently being selected by the upper 2 bits from the counter. If a row is low (button being pushed), the MUX outputs a high signal.
+- The high signal is used as the data input for the D Flip Flop before the `intr` output, and the enable pin for the D Latch before the `key_pressed` output.
+- The MUX signal is also fed through an inverter to the counter enable pin, thus freezing the counter if a button is being pressed.
+- The D Flip Flop
 
 # 7-Segment Display Driver
 ![[Pasted image 20260415102051.png|1000]]
