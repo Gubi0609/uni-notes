@@ -96,8 +96,13 @@ As can be seen from the simulation above, the system was run for multiple clock 
 For the sake of demonstration, we also try inserting an incorrect pin-code (in this example 1, 2, 3, 1) to show, that the system will not unlock, if a wrong pin is entered.
 
 ## Block Diagram
+![[Pasted image 20260415121629.png|1000]]
 
-
+We can see that the simulation block diagram is much identical to the real life block diagram, with only a few changes.
+- Input `jb_in` has been removed, and replaced with `key_pressed` for the `pad_mod` module.
+- The clock divider has been removed entirely
+- The keypad driver now gets its `rows_in` input from the `pad_mod` module, and feeds its `cols_out` output into `pad_mod`. This is to ensure that they work together in simulating the scan and registration of button presses.
+- The output `jb_out` has been removed. This was previously used to drive the columns of the physical keypad.
 # Real Life Demonstration
 
 
