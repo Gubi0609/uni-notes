@@ -84,11 +84,20 @@ The entire system can now be put together.
 - We notice also, that the `key_pressed` output from the keypad driver and the `cnt_value` output of the FSM lock are both inserted into a 2 input MUX, with the `sel` pin being the `unlock` output of the FSM lock. This is done, so that when the system is locked, the digits displayed on the 7-Segment Display are the inputs from the keypad, while when the system is unlocked, the inputs from the keypad are irrelevant, so we instead show the timer value for when the system will re-lock.
 
 # Simulation
-![[Pasted image 20260415120732.png]]
+![[Pasted image 20260415120732.png|1500]]
 
 For the simulation a modified block diagram from the one above was designed. This was done, as a new module, `pad_mod` was used to drive the keypad driver. This allowed for a single input `key_pressed`, that could be changed during simulation to mimic the input of a key.
 As can be seen from the simulation above, the system was run for multiple clock cycles. The clock divider that converted from 125 MHz to 10 kHz was also removed from the simulation block diagram, as simulating 125 MHz clocks would require a lot of computation and time.
-- From the simulation, it can be seen, that for the first 16 clock cycles, there is no input through `key_pressed`. For the next 17 clock cycles, 
+- From the simulation, it can be seen, that for the first 16 clock cycles, there is no input through `key_pressed`. For the next 17 clock cycles, `key_pressed` is set to binary value `10000`, which is row 0, column 0 (counting from 0 - 3). The one `1`, that can be seen, represents that a button is actively being pushed. We hold a button for 17 clock cycles to allow time for the keypad driver to cycle through all rows and columns, thus reading our input.
+- We repeat this pattern, inserting the pin-code 1, 2, 3, 4. Upon entering the correct pin-code, we can see that `led_0` (which we will remember is the locked LED) turns off, and `led_1` (which is the unlocked LED) turns on. This demonstrates, that the system will unlock upon receiving the correct pin.
+
+![[Pasted image 20260415121454.png|1500]]
+
+For the sake of demonstration, we also try inserting an incorrect pin-code (in this example 1, 2, 3, 1) to show, that the system will not unlock, if a wrong pin is entered.
+
+## Block Diagram
+
+
 # Real Life Demonstration
 
 
