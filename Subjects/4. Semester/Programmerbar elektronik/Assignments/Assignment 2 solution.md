@@ -1,3 +1,4 @@
+![[IMG_1475.jpeg|500]]
 
 **The code for the modules explained below can be seen in the appendix attached at the bottom**
 # Keypad
