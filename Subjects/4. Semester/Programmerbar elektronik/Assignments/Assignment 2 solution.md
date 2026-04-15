@@ -104,7 +104,7 @@ We can see that the simulation block diagram is much identical to the real life 
 - The keypad driver now gets its `rows_in` input from the `pad_mod` module, and feeds its `cols_out` output into `pad_mod`. This is to ensure that they work together in simulating the scan and registration of button presses.
 - The output `jb_out` has been removed. This was previously used to drive the columns of the physical keypad.
 # Real Life Demonstration
-
+The real life demonstration of the system can be seen through the following link: https://youtube.com/shorts/jHxIEY3PeVs?feature=share
 
 ---
 # Appendix A - Board Constraints
