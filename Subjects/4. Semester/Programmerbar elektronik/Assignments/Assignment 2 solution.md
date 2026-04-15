@@ -1,3 +1,4 @@
+
 **The code for the modules explained below can be seen in the appendix attached at the bottom**
 # Keypad
 ![[Pasted image 20260415102028.png|1000]]
@@ -40,9 +41,11 @@ The SSD driver works by feeding the `decimal` number to be displayed into a BCD 
 - The switch is done in synchronization of the `CAT` output, to ensure that the one's place is displayed on the right hand side 7-Segment Display and the tenth's place is displayed on the left hand side 7-Segment Display.
 
 # Finite State Machine Lock
-![[Pasted image 20260415130359.png|1000]]
+![[Pasted image 20260415130708.png|1000]]
 
-The lock is implemented using a finite state machine with a total of 9 states. If the correct pin is inserted, the state machine will cycle through the states s0, s1, s2, s4, s4 with the last state (s4) being the unlocking state. Upon pressing the `*` key while unlocked, the system will go into an in
+The lock is implemented using a finite state machine with a total of 9 states. If the correct pin is inserted, the state machine will cycle through the states s0, s1, s2, s4, s4 with the last state (s4) being the unlocking state. Upon pressing the `*` key while unlocked, the system will go into an intermediary state, which only purpose is to wait a clock cycle before going into state 0. This was implemented as a way to allow the input from the `*` key to become irrelevant, as its relevance is dependent on the interrupt pin being high.
+The states s5, s6, and s7 are used as _error states_. This is done to secure the system further, thus requiring a pin of length 4 to be inserted into the system. This reduces the likelihood of an intruder guessing the correct pin-code through brute force.
+When in state s0, pressing the `*` key will return the system to state s0 again. This is done as an extra precaution, to ensure that the `*` key press for locking the system again is completely gone.
 # Finite State Machine Lock with Counter
 ![[Pasted image 20260415102119.png|1000]]
 
