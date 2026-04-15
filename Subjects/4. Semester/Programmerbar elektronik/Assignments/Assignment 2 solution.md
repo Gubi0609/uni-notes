@@ -57,7 +57,12 @@ The FSM lock with counter module has the following
 	- `unlock` - The system is unlocked, when this output is high
 	- `cnt_value` - The value of the counter used to re-lock the system. This will be used to display the timer on the 7-Segment Display
 
-The FSM lock works as described in the finite state mach
+The FSM lock works as described in the finite state machine above. It takes an interrupt as an input from the keypad as to not read the pressed key input multiple times per second. This ensures that the user has time to press and release a button.
+- When the system unlocks, the enable pin for the counter is driven high, thus activating the counter. The counters input is simultaneously output to `cnt_value` and used as an input for the comparator.
+- The comparator compares the counter value with a target value. Since we want the system to reset after 30 seconds, the target value is 30.
+- When the counter reaches 30, the output from the comparator will be high, thus reseting the FSM lock through an OR gate. The OR gate is used to also allow reset using the `reset` input pin.
+- A clock divider is used to change the clock frequency from 10 kHz, which the rest of the system uses to 
+
 # Entire system
 ![[Pasted image 20260415102209.png|1000]]
 
