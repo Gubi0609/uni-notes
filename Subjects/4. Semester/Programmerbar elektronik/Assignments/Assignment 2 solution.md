@@ -36,11 +36,28 @@ The 7-Segment Display driver has the following
 The SSD driver works by feeding the `decimal` number to be displayed into a BCD encoder.
 - The purpose of the BCD encoder is to split the decimal number into the one's and tenth's place. This is done through `mod` division and normal division.
 - The one's and tenth's place of the decimal number is then converted into the SSD format, allowing for display on a 7-Segment Display. They are done so separately.
-- Each SSD number is then fed into a MUX with two 
+- Each SSD number is then fed into a MUX with two inputs and a select pin. This will alternate which is output with each clock cycle.
+- The switch is done in synchronization of the `CAT` output, to ensure that the one's place is displayed on the right hand side 7-Segment Display and the tenth's place is displayed on the left hand side 7-Segment Display.
+
+# Finite State Machine Lock
 
 # Finite State Machine Lock with Counter
 ![[Pasted image 20260415102119.png|1000]]
 
+The FSM lock from above is now combined with a counter, that will reset the lock to the locked stated upon counting to 30.
+
+The FSM lock with counter module has the following
+- Inputs:
+	- `clk` - The clock used for the rest of the system.
+	- `intr` - The interrupt pin from the keypad used to signal that a key has been pressed
+	- `key_input` - The pressed key from the keypad
+	- `reset` - A reset pin to reset the system to its starting state
+- Outputs:
+	- `lock` - The system is locked, when this output is high
+	- `unlock` - The system is unlocked, when this output is high
+	- `cnt_value` - The value of the counter used to re-lock the system. This will be used to display the timer on the 7-Segment Display
+
+The FSM lock works as described in the finite state mach
 # Entire system
 ![[Pasted image 20260415102209.png|1000]]
 
