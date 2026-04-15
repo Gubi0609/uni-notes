@@ -67,6 +67,10 @@ The FSM lock works as described in the finite state machine above. It takes an i
 # Entire system
 ![[Pasted image 20260415102209.png|1000]]
 
+The entire system can now be put together.
+- Since `sysclk` runs on a 125 MHz clock cycle, which is a little high for our system, we use a clock divider to convert it to a 10 kHz clock cycle.
+- From left to right we see again the combination of a D Flip Flop and an AND gate. If we look back at the `intr` pin from the keypad driver, we will remember, that it is used to send a pulse, when the `d` input to the D Flip Flop changes to high. We use this with the `a` pin of the AND gate and `d` pin of the D Flip Flop connected to the `lock` output from the FSM lock to reset the keypad
+
 # Simulation
 
 ## Real Life Demonstration
