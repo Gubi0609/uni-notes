@@ -16,9 +16,11 @@ The keypad driver works using a 4 bit counter, that increments by 1 for each clo
 - The lower 2 bits are fed into a 2 to 4 decoder, which outputs a low signal, driving the keypad columns. 
 - The upper 2 bits are used as the select pin for a 4 to 1 MUX, with the data input for the MUX being the 4 bit row read from the keypad. 
 - Since the rows are active low, the MUX will output the inverted input of the row bit currently being selected by the upper 2 bits from the counter. If a row is low (button being pushed), the MUX outputs a high signal.
-- The high signal is used as the data input for the D Flip Flop before the `intr` output, and the enable pin for the D Latch before the `key_pressed` output.
+- The high signal is used as the data input for the D Flip Flop before the `intr` output, the enable pin for the D Latch before the `key_pressed` output, and also the a port of the AND gate.
 - The MUX signal is also fed through an inverter to the counter enable pin, thus freezing the counter if a button is being pressed.
-- The D Flip Flop
+- The D Flip Flop is used together with the AND gate to send a pulse the moment a button has been pressed. Since the D Flip Flop activates on a clock signal, the output `qbar` will be the state of the MUX on the last clock signal. Combined with the AND gate, this produces a pulse, which will only be high, if the MUX was low on the last clock pulse and high on the current clock pulse (A change in its state meaning a button is pushed).
+- A keypad translator is used to translate from the row/column output from the counter to a binary number representing the actual value on the pressed key. The letters A - F are represented as numbers 10 - 15.
+- Since the D Latch's enable pin is connected to the MUX, it will only be activated when a button has been pushed. This stops the keypad translated output from going out while the counter is counting, and only allows a new output when it has been activated.
 
 # 7-Segment Display Driver
 ![[Pasted image 20260415102051.png|1000]]
