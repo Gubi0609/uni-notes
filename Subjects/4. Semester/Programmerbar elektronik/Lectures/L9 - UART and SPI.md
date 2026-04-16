@@ -12,7 +12,8 @@
 
 ---
 # Relevant documents
-
+[[Lab 9.pdf]]
+For some reason, the slides cannot be downloaded...
 
 # Topics
 
