@@ -13,7 +13,10 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 10 - Observers.pdf|Lecture 10 - Observers]]
+[[Lecture 10 - Exercise.pdf]]
+[[Lecture 10 - Test.pdf]]
+[[Lecture 10 - Test with solution.pdf]]
 
 # Topics
 
