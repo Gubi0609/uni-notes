@@ -11,7 +11,7 @@ is said to be obeservable iff $y(t)\equiv 0 \Rightarrow x(t)\equiv 0$.
 
 ![[Pasted image 20260417083030.png]]
 
-> [!example]- Series Connection
+> [!example]- Example: Series Connection
 > ![[Pasted image 20260417083857.png]]
 > ![[Pasted image 20260417083908.png]]
 > ![[Pasted image 20260417083920.png]]

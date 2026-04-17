@@ -20,6 +20,8 @@
 
 # Topics
 [[Subjects/4. Semester/Reguleringsteknik/Topics/Observability|Observability]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Full Order Observer|Full Order Observer]]
+
 
 # Notes
 
