@@ -22,3 +22,8 @@ We notice, that both the output $y$ and input $u$ are not included in this expre
 ![[Pasted image 20260417085834.png]]
 
 If the eigenvalues of the matrix $A+LC$ are 0, then the error $e$ converges towards 0.
+
+> [!example]- Example: Observer Pole Assignment
+> ![[Pasted image 20260417091545.png]]
+> ![[Pasted image 20260417091601.png]]
+
