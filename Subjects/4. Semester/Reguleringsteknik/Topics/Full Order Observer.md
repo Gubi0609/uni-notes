@@ -15,7 +15,7 @@ For a system (seen in black) we can design an observer, if the system is [[Subje
 The error $e$ is
 $$e=\hat x - x$$
 Combining the equations, we get the equation for change in error
-![[Pasted image 20260417085347.png]]
+![[Pasted image 20260417092154.png]]
 
 We notice, that both the output $y$ and input $u$ are not included in this expression. We already _know_ $u$, since that is the input, we input to the system ourself.
 
