@@ -19,7 +19,7 @@
 [[Lecture 10 - Test with solution.pdf]]
 
 # Topics
-
+[[Subjects/4. Semester/Reguleringsteknik/Lectures/Observability|Observability]]
 
 # Notes
 
