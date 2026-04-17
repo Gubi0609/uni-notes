@@ -9,6 +9,8 @@ is said to be obeservable iff $y(t)\equiv 0 \Rightarrow x(t)\equiv 0$.
 > ![[Pasted image 20260417083022.png]]
 > ![[Pasted image 20260417083030.png]]
 
+![[Pasted image 20260417083030.png]]
+
 > [!example]- Series Connection
 > ![[Pasted image 20260417083857.png]]
 > ![[Pasted image 20260417083908.png]]
@@ -17,4 +19,4 @@ is said to be obeservable iff $y(t)\equiv 0 \Rightarrow x(t)\equiv 0$.
 
 If the solution for observability is along the lines of $x_1=x_2$ we have a _zero-space_, where the two states _needs_ to be equal to each other, so we cannot really change and observe the system.
 
-Just like we have an 
+Just like we have a controlability matrix, we also have an **observability matrix** $C$.
