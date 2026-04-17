@@ -22,6 +22,7 @@
 [[Subjects/4. Semester/Reguleringsteknik/Topics/Observability|Observability]]
 [[Subjects/4. Semester/Reguleringsteknik/Topics/Full Order Observer|Full Order Observer]]
 [[Subjects/4. Semester/Reguleringsteknik/Topics/Observer Based Control|Observer Based Control]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Integral Control|Integral Control]]
 
 # Notes
 

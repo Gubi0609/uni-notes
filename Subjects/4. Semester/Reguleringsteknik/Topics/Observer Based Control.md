@@ -30,3 +30,4 @@ Meaning that $F$ and $L$ can be designed _separately_.
 > ![[Pasted image 20260417092322.png]]
 > ![[Pasted image 20260417092330.png]]
 
+If we want to dominate the system, then when we place the poles (eigenvalues), we want to place them _further from the imaginary axis_.
