@@ -12,7 +12,10 @@
 
 ---
 # Relevant documents
-
+[[Lektion 8.pdf]]
+[[Forberedelse 8.pdf]]
+[[Opgaver 8.pdf]]
+[[OpAmp versus Comparator.pdf]]
 
 # Topics
 
