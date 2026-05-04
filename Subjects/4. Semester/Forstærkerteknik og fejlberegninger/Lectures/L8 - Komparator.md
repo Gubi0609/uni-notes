@@ -21,7 +21,7 @@
 
 
 # Notes
-
+Vælg hellere små modstande end store modstande, da påvirkningen af biasstrøm da er mindre. Dog ikke for lave, da det så påvirker resten af kredsløbet.
 
 ---
 #lecture 
