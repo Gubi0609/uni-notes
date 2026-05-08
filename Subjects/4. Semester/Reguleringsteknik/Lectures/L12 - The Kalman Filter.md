@@ -19,7 +19,7 @@
 [[Lecture 12 - Test with solution.pdf]]
 
 # Topics
-
+[[Subjects/4. Semester/Reguleringsteknik/Lectures/Random Variables|Random Variables]]
 
 # Notes
 
