@@ -45,5 +45,9 @@ where $\mu=E(X)$ (mean value)
 # Normal distribution
 ![[Pasted image 20260508084145.png]]
 
+We want something with a small variance. This means, that we will have a higher probability of reading our actual value, and not noise.
+
+![[Pasted image 20260508084740.png]]
+
 
 
