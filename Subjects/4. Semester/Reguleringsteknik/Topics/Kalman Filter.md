@@ -9,3 +9,8 @@ The **Kalman Filter** is similar to the observer introduced in [[L10 - Observer 
 The Kalman Filter consists of two stages
 ![[Pasted image 20260508090623.png]]
 
+# Principle of the Kalman Filter
+![[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 12 - The KalmanFilter.pdf#page=53]]
+
+The last pages of the above pdf, describe the principles.
+
