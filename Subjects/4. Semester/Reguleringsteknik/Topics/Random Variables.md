@@ -31,4 +31,19 @@ where $\mu=E(X)$ (mean value)
 If we have a continuous variable that lies between $0$ and $1$, then the probability of getting any specific of the numbers in that range using the above method is $1/\infty=0$. Thus we adjust it for continuous signals.
 
 We now have the **probability density function** $f_X$
-"
+## $$Pr(\{a\leq X\leq b\})=\int_a^bf_X(x)dx$$
+This calculates the probability of the random value being in a particular range $[a;b]$.
+The integral should always be equal to $1$. If it isn't, then it isn't a probability density function.
+
+We now have the **expected value**
+## $$E[X]=\int_{-\infty}^\infty xf_X(x)dx$$
+
+And the **variance** as
+## $$Var(X)=E[(X-\mu)^2]$$
+where $\mu=E(X)$ (mean value)
+
+# Normal distribution
+![[Pasted image 20260508084145.png]]
+
+
+
