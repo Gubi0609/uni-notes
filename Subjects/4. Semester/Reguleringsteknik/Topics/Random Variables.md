@@ -7,7 +7,7 @@ This however introduces a phase. This in practice delays our signal, which is no
 
 The solution is a ***Kalman filter*** that relies on a stochastic model, and noisy measurements.
 
-## Random Variables
+# Discrete Random Variables
 To introduce uncertainty and noise in the considered system models, we introduce **random variables**
 
 > [!help]
@@ -20,5 +20,15 @@ To introduce uncertainty and noise in the considered system models, we introduce
 > $$p_X(x)=Pr(\{X=x\})$$
 > ![[Pasted image 20260508083229.png]]
 
-The **expected value*** of a random variable
+The **expected value*** of a random variable $X$ with $n$ outcomes can be determined from the probability mass function $p_X$ as
+## $$E[X]=\sum_{i=1}^n x_iP_X(x_i)$$
 
+The **variance** quantifies how much a random variable is varying around the mean value
+## $$Var(X)=E[(X-\mu)^2]$$
+where $\mu=E(X)$ (mean value)
+
+# Continuous Random Variable
+If we have a continuous variable that lies between $0$ and $1$, then the probability of getting any specific of the numbers in that range using the above method is $1/\infty=0$. Thus we adjust it for continuous signals.
+
+We now have the **probability density function** $f_X$
+"
