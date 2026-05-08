@@ -20,6 +20,7 @@
 
 # Topics
 [[Subjects/4. Semester/Reguleringsteknik/Topics/Random Variables|Random Variables]]
+[[Subjects/4. Semester/Reguleringsteknik/Lectures/Kalman Filter|Kalman Filter]]
 
 # Notes
 
