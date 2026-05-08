@@ -13,7 +13,10 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 12 - The KalmanFilter.pdf|Lecture 12 - The KalmanFilter]]
+[[Lecture 12 - Exercise.pdf]]
+[[Lecture 12 - Test.pdf]]
+[[Lecture 12 - Test with solution.pdf]]
 
 # Topics
 
