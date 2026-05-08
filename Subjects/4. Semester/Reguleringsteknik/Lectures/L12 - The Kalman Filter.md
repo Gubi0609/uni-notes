@@ -27,8 +27,8 @@
 ## Til eksamen
 - Hvad er system type, og hvordan kan man se det fra transfer function
 - Hvordan agerer f.x. et første ordens og anden ordens system
+- Hvad er en rodkurve (det er root locus...)
 - 
-
 
 
 ---
