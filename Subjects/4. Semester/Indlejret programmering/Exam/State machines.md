@@ -1,0 +1,10 @@
+- Finite State Machines
+- A computational model
+	- Model used to show how a program is run
+- Can only  be in one state at a time
+- Has a finite number of states
+- Two versions:
+	- **Moore machine** - Output values are only dependent on the state
+	- **Mealy machine** - Output values are determined by both states and inputs
+- Can be implemented in code using `if` or `switch` statements
+- Changes state based in response to and _input_
