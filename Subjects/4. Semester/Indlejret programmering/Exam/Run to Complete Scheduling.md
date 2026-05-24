@@ -1,0 +1,3 @@
+- Used for scheduling tasks
+- Schedulers are either preemptive or non-preemptive
+- **Pree
