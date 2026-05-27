@@ -1,3 +1,4 @@
+# State machine
 - Finite State Machines
 - A computational model
 	- Model used to show how a program is run
@@ -21,3 +22,5 @@
 ![[Pasted image 20260524085136.png]]
 
 ![[Pasted image 20260524085230.png]]
+
+# Cortex M4
