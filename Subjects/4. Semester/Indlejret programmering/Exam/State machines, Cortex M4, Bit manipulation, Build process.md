@@ -24,3 +24,19 @@
 ![[Pasted image 20260524085230.png]]
 
 # Cortex M4
+- Is an ARM processor
+	- **Advanced RISC Machine**
+		- *R*educed *I*nstruction *S*et *C*omputer
+	- Small set of simple and general instructions
+		- Advantages:
+			- Instructions take one cycle time
+			- Simplified instruction set leads to better performance
+			- Less chip space due to smaller instruction set
+			- Reduced per chip cost, as it uses smalller chips
+		- Disadvantages
+			- Performance will vary according to the code being executed
+			- RISC requires very fast memory systems to feed various instructions
+	- Could e.g. be a Qualcomm Snapdragon chip
+
+- ARM has good performance per Watt (energy efficient)
+
