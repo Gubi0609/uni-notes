@@ -50,4 +50,12 @@
 
 **Peripherals**
 - **Nested Vectored Interrupt Controller** (NVIC)
-- **System Control Block** - provides system implementation information and 
+- **System Control Block** - provides system implementation information and system control, including configuration, control and reporting of system exceptions
+- **System timer** _Systick_ - 24 bit count down timer
+- **Memory Protection Unit** (MPU) - Defines memory attributes for different memory regions. Provides up to eight different regions and an optional predfeined background region
+- **Floating point Unit** (FPU) - For operations on single-precision, 32-bit floating point values.
+
+**Registers**
+- Has multiple general purpose registers, that programmers can use for programmes
+- Has a stack pointer for pointing to a place in the stack
+- Has a program counter, to keep track of what is executing, and what needs to execute next
