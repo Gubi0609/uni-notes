@@ -76,4 +76,14 @@
 - Increment and decrement operators
 	- ++, --
 	- There is a difference between a++ and ++a
-		- Post- and pre-increment. Variable is either incremented BEFORE using in expression or after. (useful for `b=++a` which will increment a and )
+		- Post- and pre-increment. Variable is either incremented BEFORE using in expression or after. (useful for `b=++a` which will increment a and assign to b. If it was `b=a++`, a would be assigned to b and THEN incremented).
+- Assign and compund
+	- =, +=, -=, \*= ,/=
+- Relational
+	- \==, >, <, !=, >=, <=
+- Logical
+	- &&, ||, !
+- Bitwise
+	- &, |, ^, ~, <<, >>
+
+- Numbers and such can be displayed in binary using `0b` and hex using `0x`
