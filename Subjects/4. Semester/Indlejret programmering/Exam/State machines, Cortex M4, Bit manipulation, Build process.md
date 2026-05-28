@@ -65,3 +65,15 @@
 - Could be a hardware (button) or software (timer) interrupt.
 - Processor stops the currently  executing code and handles the Interrupt Service Routine attached with that interrupt before starting the code again.
 - Different interrupts (e.g. GPIO port A, B and so on OR Timers) have different numbers in the NVIC. So e.g. GPIO Port A is vector number 16, and INTERRUPT NUMBER 0
+
+# Bitmanipulation
+- A binary variable can either be 0 or 1, but not the other, while it is one of them (so if 1, it cna not be 0)
+- OR, AND, NOT operations
+- Also XOR
+- In a _statement_ like this `A = B + 4`, A and B are _variables_, = is the _assignment operator_, + is the _arithmetic operator_, 4 is a _constant value_ and B + 4 is an _expression_
+- There are arithmetic operators:
+	- +, -, \*, /, %
+- Increment and decrement operators
+	- ++, --
+	- There is a difference between a++ and ++a
+		- Post- and pre-increment. Variable is either incremented BEFORE using in expression or after. (useful for `b=++a` which will increment a and )
