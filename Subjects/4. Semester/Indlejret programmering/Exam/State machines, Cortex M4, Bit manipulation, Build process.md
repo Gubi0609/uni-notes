@@ -87,3 +87,13 @@
 	- &, |, ^, ~, <<, >>
 
 - Numbers and such can be displayed in binary using `0b` and hex using `0x`
+
+# Build process
+- Build process is hardware specific (could be register structure, how machine reads code and so on)
+- Compiling on PC for TIVA is called _cross compiling_.
+- Is handled by the IDE (Code Composer Studio)
+
+The build process goes through *4* steps
+- **Preprocessor**
+- **Compiler**
+- **Li
