@@ -95,5 +95,20 @@
 
 The build process goes through *4* steps
 - **Preprocessor**
+	- Handles preprocessor directives (starting with #)
+		- \#include
+		- \#define
+		- \#ifndef
+	- Removes comments
+	- Combines split lines
+	- Passes expanded code to compiler
 - **Compiler**
-- **Li
+	- Translates from human-readable code into machine readable code
+		- From C file to *object file*
+			- Binary file containing instructions and data
+			- Not meant for execution
+	- Cross compiler, since it runs on PC but code is for TIVA
+	- Groups code and data into separate structures
+- **Linker**
+	- 
+- **Locator**
