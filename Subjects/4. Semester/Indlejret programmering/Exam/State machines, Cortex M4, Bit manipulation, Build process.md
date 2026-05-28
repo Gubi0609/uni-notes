@@ -40,3 +40,14 @@
 
 - ARM has good performance per Watt (energy efficient)
 
+
+- Cortex M4 is **32 bit**
+- On chip memory, 256 KB flash, 32 KB SRAM, ROM, 2 KB EEPROM
+- Fast interrupt handling
+- System debug with extensive breakpoint and trace capabilities
+- VERY low power consumption with **sleep mode**
+- Has a Memory Protection Unit
+
+**Peripherals**
+- **Nested Vectored Interrupt Controller** (NVIC)
+- **System Control Block** - provides system implementation information and 
