@@ -110,5 +110,12 @@ The build process goes through *4* steps
 	- Cross compiler, since it runs on PC but code is for TIVA
 	- Groups code and data into separate structures
 - **Linker**
-	- 
+	- Links object files together
+	- Some internal variables and function references have not yet been resolved
+	- Resolve all unresolved symbols
+	- Looks for references in static libraries
+	- Relocatable output - no memory addresses assigned to code
 - **Locator**
+	- Transforms a relocatable program into executable binary image
+	- Specific addresses for each code line
+	- OS on PC takes care of location, but on mebe
