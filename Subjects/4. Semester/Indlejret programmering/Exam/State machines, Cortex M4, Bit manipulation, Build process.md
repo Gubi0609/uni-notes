@@ -59,3 +59,9 @@
 - Has multiple general purpose registers, that programmers can use for programmes
 - Has a stack pointer for pointing to a place in the stack
 - Has a program counter, to keep track of what is executing, and what needs to execute next
+
+**Interrupts**
+- A signal to the processor of something needing emidiate attention.
+- Could be a hardware (button) or software (timer) interrupt.
+- Processor stops the currently  executing code and handles the Interrupt Service Routine attached with that interrupt before starting the code again.
+- Different interrupts (e.g. GPIO port A, B and so on OR Timers) have different numbers in the NVIC. So e.g. GPIO Port A is vector number 16, and INTERRUPT NUMBER 0
