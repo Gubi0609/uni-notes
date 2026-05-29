@@ -58,7 +58,19 @@
 
 # Assembler
 - **Assembly:** Low-level close to hardware programming language
-	- Very close to machine code inst
+	- Very close to machine code instructions
+- There is a direct mapping from assembler instructions to processor instructions
+- Assembly contains _macros_, _directives_, _comments_, _symbolic names_ of memory locations and so on
+- Source code needs to be assembled into binary machine code
+- **The Assembler is a program, that translates _assembly source code_ into machine language object code**
+- Assembly can be used _together with C_
+- Reasons to use Assembly/Assembler
+	- **Optimization:** _Speed_, _Size_ (smaller, faster code)
+	- **Strict timing:** For _time critical_ tasks, _real-time_, No ambiguity about how the code will be compiled (For C, the compiler chooses how to interpret the code, and compile in either a more flexible or faster manner. Assembly is more simple in this regard, thus the programmer can more easily decide how it should compiler.)
+- Assembly uses the _instruction set_ for the specific hardware it needs to run on.
+- C and assembly can be mixed either _inline_ or at _linking_
+	- **Inline:** Appears directly in C code
+		- `
 
 # Reentrancy
 - A function is reentrant (or pure) if, while it is being executed, it can be called again by itself or by another function **and it works every time**
