@@ -87,4 +87,14 @@ If **C** takes to long, the system waits for the next incoming tick as described
 - Pretty expensive (more that 20k DKK)
 
 **ICD (In Circuit Debugger)** or **OCD (On Chip Debugger)**
-- Is build _on_
+- Is build _into the CPU_
+- Consumes no RAM or ROM
+- Has a hardware interface of 4-10 pins
+	- JTAG (Joint Test Action Group)
+	- BDM (Background Debug Monitor)
+
+
+**Code Composer Studio**
+- Debugging can also be done using breakpoints and steps in CCS
+- Is done while the code is running on the actual device
+- Can also be used to see registers and their values in real time.
