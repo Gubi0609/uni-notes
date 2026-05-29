@@ -51,6 +51,15 @@ If **C** takes to long, the system waits for the next incoming tick as described
 # Task diagrams
 ![[Pasted image 20260529092657.png]]
 
-- Compared to state machines, task diagram describe mul
+- Compared to state machines, task diagram describe multiple tasks and the _flow of information_ while state machines describe the single thread of execution based on states and transitions between them.
+	- **State machines and task diagrams are compatible - A solution can contain both**
+- The difference between _shared memory_ and _event buffer_ is
+	- **Shared memory:** Keeps its value after it has been read. This could be a _state variable_
+	- **Event buffer:** Gets destroyed after reading and processing (a one deep queue)
+- Tasks can also communicate with each other using _queues_
+	- Basically and event buffer with more items. Items still get destroyed after reading (unless `queuePeek` is used)
+
+**Example**
+![[Pasted image 20260529093213.png]]
 
 # Debugging
