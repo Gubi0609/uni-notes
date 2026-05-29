@@ -68,4 +68,23 @@ If **C** takes to long, the system waits for the next incoming tick as described
 	- Can be toggled on/off in start/end of function to show time it takes to execute or wait
 - `assert` can be used to print a message with line number and source file to a terminal or display, then stop the program. (This only happens if the argument value to `assert` is **0**)
 
-- To get more detalied and intelligent debug messages compared to pin toggling, 
+- To get more detalied and intelligent debug messages compared to pin toggling, one can print messages to a serial port (e.g. UART to a computer) to show the current state of the program
+	- Downside is that it uses *more ram and program memory for `printf` routine*
+
+- For non-hardware tests **PC simulator** can be used
+	- Can only be done with hardware independent code (so no toggling LEDs obviously)
+
+**ROM monitor**
+- Uses RAM, ROM and execution time for debugging
+- Could be problematic when debuggin Interrupt Service Routines
+- Connects to the target device using serial port
+
+**ICE - In Circuit Emulators**
+- Replaces the microprocessor on the board
+- Can be problematic at high frequencies because of the cable connecting the ICE to the board
+- Can also be problematic with fine pitch and BGA circuits
+- Is mostly used with **8-bit** and **16-bit** processors
+- Pretty expensive (more that 20k DKK)
+
+**ICD (In Circuit Debugger)** or **OCD (On Chip Debugger)**
+- Is build _on_
