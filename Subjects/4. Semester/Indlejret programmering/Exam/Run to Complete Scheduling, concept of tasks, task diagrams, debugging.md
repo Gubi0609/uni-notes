@@ -63,3 +63,4 @@ If **C** takes to long, the system waits for the next incoming tick as described
 ![[Pasted image 20260529093213.png]]
 
 # Debugging
+- Is used to inspect where in code the 
