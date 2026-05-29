@@ -50,3 +50,15 @@
 		- Not available for scheduling
 		- Only enter or exit suspend via `vTaskSuspend()` and `vTaskResume()`
 
+# Preemption
+- Interrupting a task without its cooperation, but with the intention to resume it later
+- When the kernel switches tasks, it saves the current tasks context
+	- When a task is resumed the context is restored
+	- This is what the **TCB** (Task Control Block) is used for
+
+# Assembler
+
+
+# Reentrancy
+- A function is reentrant (or pure) if, while it is being executed, it can be called again by itself or by another function **and it works every time**
+	- More than one instance of a function c
