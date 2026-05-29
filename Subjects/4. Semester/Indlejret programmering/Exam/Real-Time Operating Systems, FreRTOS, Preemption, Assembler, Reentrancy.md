@@ -49,4 +49,4 @@
 	- **Suspended**
 		- Not available for scheduling
 		- Only enter or exit suspend via `vTaskSuspend()` and `vTaskResume()`
-- 
+
