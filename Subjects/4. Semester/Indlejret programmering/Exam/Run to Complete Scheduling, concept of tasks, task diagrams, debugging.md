@@ -63,4 +63,9 @@ If **C** takes to long, the system waits for the next incoming tick as described
 ![[Pasted image 20260529093213.png]]
 
 # Debugging
-- Is used to inspect where in code the 
+- Is used to inspect where in code the code the program gets to or inspecting the value of variables/registers
+- Simplest version is toggling a pin (could be connected to a LED) to show either that the program is alive, or use different LEDs/colors to show the currently executing code.
+	- Can be toggled on/off in start/end of function to show time it takes to execute or wait
+- `assert` can be used to print a message with line number and source file to a terminal or display, then stop the program. (This only happens if the argument value to `assert` is **0**)
+
+- To get more detalied and intelligent debug messages compared to pin toggling, 
