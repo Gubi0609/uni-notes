@@ -70,7 +70,9 @@
 - Assembly uses the _instruction set_ for the specific hardware it needs to run on.
 - C and assembly can be mixed either _inline_ or at _linking_
 	- **Inline:** Appears directly in C code
-		- `
+		- `asm("ldr   r3, [r7, #6]");`
+	- **Linked Assembler:** Separate assembler source files which are linked at _build-time_ (see [[State machines, Cortex M4, Bit manipulation, Build process#Build process|Subject one for exam]])
+		- `Label: ldr   r3, [r7, #6]; Comment`
 
 # Reentrancy
 - A function is reentrant (or pure) if, while it is being executed, it can be called again by itself or by another function **and it works every time**
