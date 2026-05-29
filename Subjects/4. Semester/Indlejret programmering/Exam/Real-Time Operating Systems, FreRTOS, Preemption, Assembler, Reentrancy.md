@@ -61,4 +61,19 @@
 
 # Reentrancy
 - A function is reentrant (or pure) if, while it is being executed, it can be called again by itself or by another function **and it works every time**
-	- More than one instance of a function c
+	- More than one instance of a function can run at the same time
+- Errors related to reentrance are hard to debug because
+	- They show up rarely
+	- They can provide different faults
+	- They are dependent on memory configurations
+
+A function is reentrant if
+- All variables are used atomic or are allocated to the _specific instance_ of the function (so not static)
+- Common resources like hardware and global variables are used atomic or are protected by task synchronization elements (semaphores/mutexes)
+- It never changes its own code
+- It never calls functions which are not reentrant
+
+- **Atomic operations are ones that cannot be interrupted**
+	- Pieces of code can be turned atomic by wrapping it in `interrupt disable`
+	- Disabling interrupts reduces the real-time performance of the system by inducing latency on interrupts
+		- Better to use semaphores
