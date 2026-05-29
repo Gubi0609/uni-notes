@@ -57,7 +57,8 @@
 	- This is what the **TCB** (Task Control Block) is used for
 
 # Assembler
-
+- **Assembly:** Low-level close to hardware programming language
+	- Very close to machine code inst
 
 # Reentrancy
 - A function is reentrant (or pure) if, while it is being executed, it can be called again by itself or by another function **and it works every time**
@@ -77,3 +78,7 @@ A function is reentrant if
 	- Pieces of code can be turned atomic by wrapping it in `interrupt disable`
 	- Disabling interrupts reduces the real-time performance of the system by inducing latency on interrupts
 		- Better to use semaphores
+
+- A _recursive function_ (one that calls itself) must necessarily also be reentrant
+	- Reentrant function is not necessarily recursive
+
