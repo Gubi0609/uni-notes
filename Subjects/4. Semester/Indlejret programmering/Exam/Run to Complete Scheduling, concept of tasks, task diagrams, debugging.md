@@ -25,9 +25,32 @@ If **C** takes to long, the system waits for the next incoming tick as described
 - RTCS uses tick timers to start the sequence of tasks from the task queue.
 
 # Concept of tasks
-
+- A task is an independent thread of execution that can compete with other concurrent tasks for processor execution time.
+- A task is defined by
+	- A name
+	- A unique ID (Process-ID)
+	- A priority
+	- A *task control block* (TCB)
+	- A stack (the space allocated for its data)
+	- A task routine (the function)
+- For task creation, there are the following _criteria_
+	- Parallelism
+		- Simultaneous and independent functionality
+	- Timing
+		- Different timing constraints
+	- Priority
+		- Divide tasks with different priority
+		- How important is it to run/complete this task?
+	- Structure
+		- Each task handles _one_ well defined problem
+	- Coupling
+		- Divide problems into _loosely_ coupled tasks
+	- Periodicity
+		- A task that must execute with a fixed period is a task by itself
 
 # Task diagrams
+![[Pasted image 20260529092657.png]]
 
+- Compared to state machines, task diagram describe mul
 
 # Debugging
