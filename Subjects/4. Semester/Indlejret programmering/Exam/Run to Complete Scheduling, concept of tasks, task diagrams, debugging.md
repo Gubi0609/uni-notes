@@ -24,3 +24,10 @@ If **C** takes to long, the system waits for the next incoming tick as described
 - RTCS has _Tasks_, _Task States_, _Task Events_ and a queue of _Tasks_ that all go in to the scheduling
 - RTCS uses tick timers to start the sequence of tasks from the task queue.
 
+# Concept of tasks
+
+
+# Task diagrams
+
+
+# Debugging
