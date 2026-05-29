@@ -118,4 +118,7 @@ The build process goes through *4* steps
 - **Locator**
 	- Transforms a relocatable program into executable binary image
 	- Specific addresses for each code line
-	- OS on PC takes care of location, but on mebe
+	- OS on PC takes care of location, but on embedded processors this is not done. Since only one program can realistically run on an embedded processor at once, it is just overwritten with these new locations
+	- Sometimes is part of the linker.
+
+![[Pasted image 20260528142207.png]]
