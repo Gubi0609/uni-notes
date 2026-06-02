@@ -1,0 +1,4 @@
+- Task diagram
+- State diagram
+- FreeRTOS
+- Code snippets?
