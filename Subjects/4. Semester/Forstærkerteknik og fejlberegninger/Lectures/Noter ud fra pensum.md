@@ -26,3 +26,6 @@ På side 111 står der info om differential forstærker
 - Common mode signal for differential forstærker er $\frac 1 2 (v_1 + v_2)$
 - Høj common mode rejection kan opnås ved at matche resistor parene
 
+Side 800: Comparator - Hvis $v_1 \leq v_2$ er output lav, hvis $v_1 > v_2$ er output høj
+
+Comparatorer har også offset voltage og bi
