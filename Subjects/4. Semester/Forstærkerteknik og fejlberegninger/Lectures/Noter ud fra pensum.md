@@ -9,4 +9,5 @@ Side 85, ligning 2.37 viser closed loop gain, hvor man har taget højde for frek
 - **Faktisk kan ligning 2.42 bare bruges på side 87. Den er perfekt**
 
 Sammenlign slewrate fra datasheet med min/max frekvens fra PWM (side 92-93 forklarer dette)
-- Se også ligning 2.46 på side 93 for _full-power bandwidth_ ligning ud fra slewrate og $V_{o,max}$. 
+- Se også ligning 2.46 på side 93 for _full-power bandwidth_ ligning ud fra slewrate og $V_{o,max}$. Resultatet er Hz, så lige hvad vi skal bruge
+
