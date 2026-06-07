@@ -37,4 +37,6 @@ Eksempel 12.1 på side 805 viser hvordan man designer en schmitt trigger med spe
 
 ==Vores større modstande i op amp kredsløbet trækker mindre strøm fra spændingsforsyning, så deres indflydelse på den aflæste strøm fra spændingforsyningen er mindre==
 
-Tid hvormed et signal fra en 555 oscilator er tændt er bestemt fra formel 12.8 på side 819
+Tid hvormed et signal fra en 555 oscilator er tændt er bestemt fra formel 12.12 på side 821
+- 12.13 på samme side viser frekvens
+- 12.15 viser duty cycle, på trods af at det viste kredsløb aldrig kan komme under 50%.
