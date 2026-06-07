@@ -28,4 +28,7 @@ På side 111 står der info om differential forstærker
 
 Side 800: Comparator - Hvis $v_1 \leq v_2$ er output lav, hvis $v_1 > v_2$ er output høj
 
-Comparatorer har også offset voltage og bi
+Comparatorer har også offset- og bias voltage
+
+For at lave en schmitt trigger, skal man have positiv feedback på en komparator
+
