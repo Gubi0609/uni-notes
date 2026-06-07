@@ -40,3 +40,9 @@ Eksempel 12.1 på side 805 viser hvordan man designer en schmitt trigger med spe
 Tid hvormed et signal fra en 555 oscilator er tændt er bestemt fra formel 12.12 på side 821
 - 12.13 på samme side viser frekvens
 - 12.15 viser duty cycle, på trods af at det viste kredsløb aldrig kan komme under 50%.
+
+
+
+Fejl for closed loop ikke ideel op amp er
+$$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}$$
+
