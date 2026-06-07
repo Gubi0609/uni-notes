@@ -17,4 +17,6 @@ Udregning for knækfrekvens af RC lavpas filter på side 485, ligning 8.6
 
 Input offset voltage kan aflæses fra datasheet. Forklaringer står på side 95-99
 
-Se eksempel 2.10 på ai
+Se eksempel 2.10 på side 96 for eksempel på worst case offset
+
+I bunden af side 97, kan ses en ligning for bias voltage ud fra bias current (se datasheet) og $R_2$. Det kan vi bruge
