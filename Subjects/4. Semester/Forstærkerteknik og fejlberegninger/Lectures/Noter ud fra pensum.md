@@ -23,4 +23,6 @@ I bunden af side 97, kan ses en ligning for bias voltage ud fra bias current (se
 
 På side 111 står der info om differential forstærker
 - Der står også at for at minimere påvirkningen af bias current, skal de to resistor par være lig med hinanden. Da vores ikke er det præcis, kunne det være smart med en udregning for at vise hvor meget det påvirker systemet.
-- Common mode signal for differential forstærker er $\fr
+- Common mode signal for differential forstærker er $\frac 1 2 (v_1 + v_2)$
+- Høj common mode rejection kan opnås ved at matche resistor parene
+
