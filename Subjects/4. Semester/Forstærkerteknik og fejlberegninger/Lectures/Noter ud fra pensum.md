@@ -33,3 +33,7 @@ Comparatorer har også offset- og bias voltage
 For at lave en schmitt trigger, skal man have positiv feedback på en komparator
 
 Eksempel 12.1 på side 805 viser hvordan man designer en schmitt trigger med specifikke thresholds
+
+
+==Vores større modstande i op amp kredsløbet trækker mindre strøm fra spændingsforsyning, så deres indflydelse på den aflæste strøm fra spændingforsyningen er mindre==
+
