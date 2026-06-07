@@ -15,3 +15,6 @@ Udregning for knækfrekvens af RC lavpas filter på side 485, ligning 8.6
 - Nem huskeregel for $A_v$ i dB ift knækfrekvensen er 
 - ![[Pasted image 20260607163529.png]]
 
+Input offset voltage kan aflæses fra datasheet. Forklaringer står på side 95-99
+
+Se eksempel 2.10 på ai
