@@ -8,3 +8,5 @@ Side 85, ligning 2.37 viser closed loop gain, hvor man har taget højde for frek
 - Se også ligning 2.41 på side 87, for hvordan man isolerer $f_{BCL}$ når man har både $f_{BOL}$ og $A_{0OL}$ og $f_{BCL}$
 - **Faktisk kan ligning 2.42 bare bruges på side 87. Den er perfekt**
 
+Sammenlign slewrate fra datasheet med min/max frekvens fra PWM (side 92-93 forklarer dette)
+- Se også ligning 2.46 på side 93 for _full-power bandwidth_ ligning ud fra slewrate og $V_{o,max}$. 
