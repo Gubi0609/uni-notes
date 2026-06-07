@@ -11,4 +11,7 @@ Side 85, ligning 2.37 viser closed loop gain, hvor man har taget højde for frek
 Sammenlign slewrate fra datasheet med min/max frekvens fra PWM (side 92-93 forklarer dette)
 - Se også ligning 2.46 på side 93 for _full-power bandwidth_ ligning ud fra slewrate og $V_{o,max}$. Resultatet er Hz, så lige hvad vi skal bruge
 
-Udregning for knækfrekvens af RC lavpas filter 
+Udregning for knækfrekvens af RC lavpas filter på side 485, ligning 8.6
+- Nem huskeregel for $A_v$ i dB ift knækfrekvensen er 
+- ![[Pasted image 20260607163529.png]]
+
