@@ -130,6 +130,6 @@ Dette gøres via. en _spændingsdeler_ fra 12 V til GND. Output fra en spænding
 $$V_{out}=\frac {R_2} {R_1 + R_2}\cdot V_{in}= V_{out}=A\cdot V_{in}\Leftrightarrow A=\frac {V_{out}}{V_{in}}\rightarrow A=\frac {6.25 V}{12 V} = 0.521$$
 
 Hvis et potentiometer på $50k\Omega$ bruges, skal der gælde følgende:
-$$R_1+R_2=50000$$ $$\frac {R_2} {R_1 + R_2}=0.521$$
+$$R_1+R_2=50000\Omega$$ $$\frac {R_2} {R_1 + R_2}=0.521$$
 Ud fra dette kan de isoleres:
-$$\frac {R_2} {R_1 + R_2}=0.521\Leftrightarrow R_1=\frac {R_2} A-$$
+$$\frac {R_2} {R_1 + R_2}=0.521\Leftrightarrow R_1=\frac {R_2} {0.521}-R_2$$ $$\frac {R_2} {0.521}-R_2+R_2=50000\Omega\rightarrow \frac {R_2}{0.521}=50000\Omega\Leftrightarrow R_2=50000\Omega\cdot 0.521=26050 \Omega$$$$R_1 = 50000\Omega-26050\Omega=23950\Omega$$
