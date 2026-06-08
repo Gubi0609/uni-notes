@@ -61,7 +61,7 @@ Alpha for systemet kan udregnes som
 $$\alpha=\frac {R_f}{R_f+R_{in}}=\frac {378800\Omega}{378800\Omega+10000\Omega}=0.9743$$
 
 $\alpha$ er **feedforward faktoren**, altså hvor meget af input, der går tabt pga. for eksempel spændingsdelere ved indgangene.
-## Error for systemet
+## Error på closed loop gain
 Den teoretiske error er
 $$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}=1-\frac {100000}{\frac 1 {0.0257}+100000}=0.00039$$
 
