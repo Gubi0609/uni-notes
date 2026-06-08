@@ -127,4 +127,9 @@ Da vores komparator har en nedre grænse på 0 V, vil output være lav/0 V når 
 
 Altså, skal $v_2=V_{trip}=6.25 V$, så komparatoren skifter fra lav til høj, når vi passerer denne grænse.
 Dette gøres via. en _spændingsdeler_ fra 12 V til GND. Output fra en spændingsdeler er
-$$V_{out}=\frac {R_2} {R_1 + R_2}\cdot V_{in}= V_{out}=A\cdot V_{in}\Leftrightarrow A=\frac {V_{out}}{V_{in}}\rightarrow A=\frac {6.26 V}{12 V} =$$
+$$V_{out}=\frac {R_2} {R_1 + R_2}\cdot V_{in}= V_{out}=A\cdot V_{in}\Leftrightarrow A=\frac {V_{out}}{V_{in}}\rightarrow A=\frac {6.25 V}{12 V} = 0.521$$
+
+Hvis et potentiometer på $50k\Omega$ bruges, skal der gælde følgende:
+$$R_1+R_2=50000$$ $$\frac {R_2} {R_1 + R_2}=0.521$$
+Ud fra dette kan de isoleres:
+$$\frac {R_2} {R_1 + R_2}=0.521\Leftrightarrow R_1=\frac {R_2} A-$$
