@@ -32,12 +32,17 @@ Som også kan ses fra ovenstående diagram, vælges der negativ feedback. Dette 
 # Op Amp
 En **LM358A** op amp er valgt. Den har følgende karakteristika
 
-| Parameter                     | Value      |
-| ----------------------------- | ---------- |
-| $V_{OS}$ input offset voltage | $\pm 3$ mV |
-| $I_S$ Input bias current      | $-10$ nA   |
-| $I_{OS}$ Input offset current | $0.5$ nA   |
-| $A_{OL}$ Open loop gain       | $140$ V/mV |
-| GBW Gain Bandwidth product    | 1.2 MHz    |
-| SR Slewrate                   | 0.5 V/us   |
-| $V_O$ voltage outpu           |            |
+| Parameter                                       | Value       |
+| ----------------------------------------------- | ----------- |
+| $V_{OS}$ input offset voltage                   | $3$ mV      |
+| $I_S$ Input bias current                        | $-20$ nA    |
+| $I_{OS}$ Input offset current                   | $2$ nA      |
+| $A_{OL}$ Open loop gain                         | $100$ V/mV  |
+| GBW Gain Bandwidth product                      | 0.7 MHz     |
+| SR Slewrate                                     | 0.3 V/us    |
+| $V_O$ voltage output swing from rail (positive) | 1.5 V (max) |
+| $V_O$ voltage output swing from rail (negative) | 20 mV (max) |
+
+## Closed loop knæk frekvens
+Den closed loop knæk frekvens for op ampen kan udregnes som
+$$f_{BCL}=\frac {f_t} {1+R_f/R_{in}}$$
