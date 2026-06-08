@@ -16,3 +16,13 @@ $$V_{\text{shunt, max}}=I_{\text{max}}\cdot R_{\text{shunt}}=2.64\cdot0.1=0.264$
 
 Formlen for at finde det nødvendige gain for en op amp er
 $$A_{CL}=V_{\text{O, max}}/V_{\text{i, max}}=10V / 0.264 V = 37,88$$
+
+# Forstærker kredsløb
+En differential forstærker er valgt, hvor der kigges på differensen over shunt modstanden
+![[Pasted image 20260608100825.png|500]]
+
+Hvis $R_1=R_2=R_{in}$ og $R_3=R_4=R_f$, er gain for kredsløbet
+$$A_{CL}=R_f/R_{in}$$
+Hvis $R_{in}= 10 \text{k}\Omega$ vælges, kan $R_f$ udregnes, da vi kender vores ønskede gain
+$$R_f=37.88\cdot10\text{ k}\Omega=378.8\text{ k}\Omega$$
+
