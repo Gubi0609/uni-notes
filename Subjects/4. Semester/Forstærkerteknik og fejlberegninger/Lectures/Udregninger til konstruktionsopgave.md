@@ -82,7 +82,7 @@ Vi kan ud fra worst case voltage offset, voltage ud fra offset current og bias v
 $$V_{\text{o,v off}}=\left(1+\frac {R_f}{R_{in}}\right)V_{off}=\left(1+\frac {378800\Omega}{10000\Omega}\right)3\cdot10^{-6}=\pm 116.64\text{ mV}$$ $$V_{\text{i, i off}}=R_f(I_{off}/2)=378800\Omega(2\cdot 10^{-9}A/2)=\pm 378.8\cdot10^{-3} \text{ mV}$$ $$V_{\text{o, bias}}=R_fI_B=378800\Omega\cdot (-20)\cdot10^{-9} A=-7.576 \text{ mV}$$
 
 Dermed er worst case output voltage
-$$V_o=116.64 mV+378.8\cdot10^{-3}mV-7.576 mV=109.4428\text{ mV}$$ $$V_o=-116.64mV-378.8\cdot10^{-3}mV-7.576mV=-124.5948 mV$$
+$$V_o=116.64 mV+378.8\cdot10^{-3}mV-7.576 mV=109.4428\text{ mV}$$ $$V_o=-116.64mV-378.8\cdot10^{-3}mV-7.576mV=-124.5948 \text{ mV}$$
 **Det ovenstående er for $v_{in}=0$, men jeg går ud fra at noget af det (hvis ikke alt) også gælder for når der er et spændingfald over shunt.**
 
 # RC Kredsløb
@@ -104,3 +104,4 @@ På grund af RC lav pas filteret og PWM generatoren, kommer indgangsignalerne ti
 Der kommer også til at være et fase skift. Begge kan udregnes ud fra
 $$A_v=\frac 1 {1+j(f/f_b)}=\frac 1 {1+j(1428.41/15.92)}=0.0111\angle{-89.3615^\circ}$$
 
+# Comparator
