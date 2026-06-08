@@ -53,17 +53,17 @@ Det kan altså ses, at der skal en meget høj frekvens på input til at nedsænk
 
 ## Beta for systemet
 Beta for systemet kan udregnes som
-$$A_{CL}=\frac {A_{OL}} {1+A_{OL}\beta}\Leftrightarrow \beta =\frac {\frac{A_{OL}} {A_{CL}}-1} {A_{OL}}=\frac {\frac{100000} {37.88}-1} {100000}=0.0264$$
-$$$$
+$$\beta=\frac {R_{in}}{R_{in}+R_f}=\frac {10000\Omega}{10000\Omega+378800\Omega}=0.0257$$
 
-
+$\beta$ er **feedback faktoren**, altså hvor meget af output, der går retur til indgangene.
 ## Alpha for systemet
 Alpha for systemet kan udregnes som
-$$\alpha =\frac{A_{CL}+A_{CL}\,A_{OL}\,\beta }{A_{OL}}=\frac{37.88+37.88\cdot 100000\cdot 0.0264}{100000}=1.0004108$$
+$$\alpha=\frac {R_f}{R_f+R_{in}}=\frac {378800\Omega}{378800\Omega+10000\Omega}=0.9743$$
 
+$\alpha$ er **feedforward faktoren**, altså hvor meget af input, der går tabt pga. for eksempel spændingsdelere ved indgangene.
 ## Error for systemet
 Den teoretiske error er
-$$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}=1-\frac {100000}{\frac 1 {0.0264}+100000}=0.00038$$
+$$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}=1-\frac {100000}{\frac 1 {0.0257}+100000}=0.00038$$
 
 Så den teoretiske fejl er faktisk meget meget lille. Dette kan dog ikke ses på de reelle målinger.
 
