@@ -83,3 +83,5 @@ $$f_b=\frac 1 {2\pi\,R\,C}=\frac 1 {2\pi\cdot 10000 \Omega\cdot 0.000001 F}=15.9
 Med denne meget lave knæk frekvens, bliver input til op amp + og - port dæmpet meget, men med den samme faktor.
 
 # PWM generator
+For PWM generatoren, har den en frekvens givet ud fra
+$$f=\frac 1 {ln(2)\,C\,(R_1+R_2+r)}
