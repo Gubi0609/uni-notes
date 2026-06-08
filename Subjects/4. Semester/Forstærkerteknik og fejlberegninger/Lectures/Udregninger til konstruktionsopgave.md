@@ -47,7 +47,7 @@ En **LM358A** op amp er valgt. Den har følgende karakteristika
 Den closed loop knæk frekvens for op ampen kan udregnes som
 $$f_{BCL}=\frac {f_t} {1+R_f/R_{in}}$$
 hvor $f_t$ er gain bandwidth product (se tabel). Så bliver knæk frekvensen altså
-$$f_{BCL}=\frac {0.7\cdot 10^6}{1+10000/378800}=681995 Hz$$
+$$f_{BCL}=\frac {0.7\cdot 10^6}{1+378800/10000}=681995 Hz$$
 
 Det kan altså ses, at der skal en meget høj frekvens på input til at nedsænke vores gain ift. frekvens.
 
