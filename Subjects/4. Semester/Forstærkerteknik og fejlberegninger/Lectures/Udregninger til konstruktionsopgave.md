@@ -89,3 +89,7 @@ $$f=\frac 1 {ln(2)\,C\,(R_1+R_2+R_3)}$$
 Da $R_2$ og $R_3$ er modstandende inde i potentiometeret, er forholdet mellem dem altid ens. Dermed kommer $R_2+R_3$ til at være konstant $100\text{ k}\Omega$. $R_1=1000\Omega$ og $C=0.00000001 F$
 $$f=\frac 1 {ln(2)\,0.00000001 F\,(1000\Omega+100000\Omega)}=1428.41 Hz$$
 
+## Magnitude og fase af signal fra RC filter
+På grund af RC lav pas filteret og PWM generatoren, kommer indgangsignalerne til op ampen til at være dæmpet (**teoretisk set**)
+Der kommer også til at være et fase skift. Begge kan udregnes ud fra
+$$A_v=\frac 1 {1+j(f/f_b)}=\frac 1 {1+j(1428)}$$
