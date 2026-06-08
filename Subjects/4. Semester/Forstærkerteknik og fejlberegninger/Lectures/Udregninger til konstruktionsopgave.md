@@ -84,4 +84,6 @@ Med denne meget lave knæk frekvens, bliver input til op amp + og - port dæmpet
 
 # PWM generator
 For PWM generatoren, har den en frekvens givet ud fra
-$$f=\frac 1 {ln(2)\,C\,(R_1+R_2+r)}
+$$f=\frac 1 {ln(2)\,C\,(R_1+R_2+R_3)}$$
+
+Da $R_2$ og $R_3$ er modstandende inde i potentiometeret, er forholdet mellem dem altid ens. Dermed kommer $R_2+R_3$ til at være konstant $100\text{ k}\Omega$. $R_1=1000\Omega$ og $C=
