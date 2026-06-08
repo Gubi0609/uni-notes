@@ -78,5 +78,8 @@ $$f_{FP}=\frac {0.3\cdot 10^6 V/s}{2\pi\, 10 V}=4774.65 Hz$$
 # RC Kredsløb
 ![[Screenshot from 2026-06-07 18-44-30.png|700]]
 
-På det endelige kredsløb sættes et RC lav pas filter på begge input. De har begge den teoretiske knækfrekvens
-$$f_b=\frac 1 {2\pi\,R\,C}=\frac 1 {2\pi\cdot 10000 \Omega\cdot 0.000001 F}=$$
+På det endelige kredsløb sættes et RC lav pas filter på begge input. De har begge den teoretiske knæk frekvens
+$$f_b=\frac 1 {2\pi\,R\,C}=\frac 1 {2\pi\cdot 10000 \Omega\cdot 0.000001 F}=15.92 Hz$$
+Med denne meget lave knæk frekvens, bliver input til op amp + og - port dæmpet meget, men med den samme faktor.
+
+# PWM generator
