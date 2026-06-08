@@ -77,7 +77,9 @@ $$f_{FP}=\frac {0.3\cdot 10^6 V/s}{2\pi\, 10 V}=4774.65 Hz$$
 ==Op ampen kan altså ikke følge med PWM kredsløbet (ud fra målte frekvenser, ikke teoretiske). Derfor er et RC kredsløb altså nødvendigt før input, for at stabilisere==
 
 ## Worst case output voltage
-Vi kan ud fra worst case voltage offset, voltage ud fra offset current og bias voltage
+Vi kan ud fra worst case voltage offset, voltage ud fra offset current og bias voltage. Formlerne er
+
+$$V_{\text{o,v off}}=\left(1+\right)$$
 
 # RC Kredsløb
 ![[Screenshot from 2026-06-07 18-44-30.png|700]]
