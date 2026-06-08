@@ -30,3 +30,14 @@ $$R_f=37.88\cdot10\text{ k}\Omega=378.8\text{ k}\Omega$$
 Som også kan ses fra ovenstående diagram, vælges der negativ feedback. Dette stabiliserer gain markant 
 
 # Op Amp
+En **LM358A** op amp er valgt. Den har følgende karakteristika
+
+| Parameter                     | Value      |
+| ----------------------------- | ---------- |
+| $V_{OS}$ input offset voltage | $\pm 3$ mV |
+| $I_S$ Input bias current      | $-10$ nA   |
+| $I_{OS}$ Input offset current | $0.5$ nA   |
+| $A_{OL}$ Open loop gain       | $140$ V/mV |
+| GBW Gain Bandwidth product    | 1.2 MHz    |
+| SR Slewrate                   | 0.5 V/us   |
+| $V_O$ voltage outpu           |            |
