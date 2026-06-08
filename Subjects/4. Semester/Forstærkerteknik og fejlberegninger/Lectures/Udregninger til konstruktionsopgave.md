@@ -61,3 +61,7 @@ Alpha for systemet kan udregnes som
 $$\alpha =\frac{A_{CL}+A_{CL}\,A_{OL}\,\beta }{A_{OL}}=\frac{37.88+37.88\cdot 100000\cdot 0.0264}{100000}=1.0004108$$
 
 ## Error for systemet
+Den teoretiske error er
+$$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}=1-\frac {100000}{\frac 1 {0.0264}+100000}=0.00038$$
+
+Så den teoretiske fejl er faktisk meget meget lille. Dette observeres 
