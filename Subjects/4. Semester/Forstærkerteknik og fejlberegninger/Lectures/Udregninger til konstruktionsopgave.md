@@ -26,3 +26,7 @@ $$A_{CL}=R_f/R_{in}$$
 Hvis $R_{in}= 10 \text{k}\Omega$ vælges, kan $R_f$ udregnes, da vi kender vores ønskede gain
 $$R_f=37.88\cdot10\text{ k}\Omega=378.8\text{ k}\Omega$$
 
+## Negativ feedback
+Som også kan ses fra ovenstående diagram, vælges der negativ feedback. Dette stabiliserer gain markant 
+
+# Op Amp
