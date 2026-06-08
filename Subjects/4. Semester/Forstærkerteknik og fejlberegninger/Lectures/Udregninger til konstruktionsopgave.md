@@ -73,7 +73,7 @@ $$f_{FP}=\frac {SR}{2\pi\, V_{\text{o, max}}}$$
 hvor $V_{\text{o, max}}$ er 10 V og SR er slewrate fra tabellen.
 $$f_{FP}=\frac {0.3\cdot 10^6 V/s}{2\pi\, 10 V}=4774.65 Hz$$
 
-==Op ampen kan altså ikke følge med PWM kredsløbet. Derfor er et RC kredsløb altså nødvendigt før input, for at stabilisere==
+==Op ampen kan altså ikke følge med PWM kredsløbet (ud fra målte frekvenser, ikke teoretiske). Derfor er et RC kredsløb altså nødvendigt før input, for at stabilisere==
 
 # RC Kredsløb
 ![[Screenshot from 2026-06-07 18-44-30.png|700]]
@@ -86,4 +86,6 @@ Med denne meget lave knæk frekvens, bliver input til op amp + og - port dæmpet
 For PWM generatoren, har den en frekvens givet ud fra
 $$f=\frac 1 {ln(2)\,C\,(R_1+R_2+R_3)}$$
 
-Da $R_2$ og $R_3$ er modstandende inde i potentiometeret, er forholdet mellem dem altid ens. Dermed kommer $R_2+R_3$ til at være konstant $100\text{ k}\Omega$. $R_1=1000\Omega$ og $C=
+Da $R_2$ og $R_3$ er modstandende inde i potentiometeret, er forholdet mellem dem altid ens. Dermed kommer $R_2+R_3$ til at være konstant $100\text{ k}\Omega$. $R_1=1000\Omega$ og $C=0.00000001 F$
+$$f=\frac 1 {ln(2)\,0.00000001 F\,(1000\Omega+100000\Omega)}=1428.41 Hz$$
+
