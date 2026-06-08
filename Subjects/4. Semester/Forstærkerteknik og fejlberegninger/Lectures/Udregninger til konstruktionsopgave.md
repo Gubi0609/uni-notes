@@ -72,3 +72,11 @@ Full power bandwidth indikerer den højeste frekvens hvormed output signalet sta
 $$f_{FP}=\frac {SR}{2\pi\, V_{\text{o, max}}}$$
 hvor $V_{\text{o, max}}$ er 10 V og SR er slewrate fra tabellen.
 $$f_{FP}=\frac {0.3\cdot 10^6 V/s}{2\pi\, 10 V}=4774.65 Hz$$
+
+==Op ampen kan altså ikke følge med PWM kredsløbet. Derfor er et RC kredsløb altså nødvendigt før input, for at stabilisere==
+
+# RC Kredsløb
+![[Screenshot from 2026-06-07 18-44-30.png|700]]
+
+På det endelige kredsløb sættes et RC lav pas filter på begge input. De har begge den teoretiske knækfrekvens
+$$f_b=\frac 1 {2\pi\,R\,C}=\frac 1 {2\pi\cdot 10000 \Omega\cdot 0.000001 F}=$$
