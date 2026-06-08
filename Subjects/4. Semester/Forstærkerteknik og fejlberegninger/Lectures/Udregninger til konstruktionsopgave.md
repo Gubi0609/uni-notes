@@ -63,7 +63,7 @@ $$\alpha=\frac {R_f}{R_f+R_{in}}=\frac {378800\Omega}{378800\Omega+10000\Omega}=
 $\alpha$ er **feedforward faktoren**, altså hvor meget af input, der går tabt pga. for eksempel spændingsdelere ved indgangene.
 ## Error for systemet
 Den teoretiske error er
-$$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}=1-\frac {100000}{\frac 1 {0.0257}+100000}=0.00038$$
+$$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}=1-\frac {100000}{\frac 1 {0.0257}+100000}=0.00039$$
 
 Så den teoretiske fejl er faktisk meget meget lille. Dette kan dog ikke ses på de reelle målinger.
 
@@ -77,7 +77,7 @@ $$f_{FP}=\frac {0.3\cdot 10^6 V/s}{2\pi\, 10 V}=4774.65 Hz$$
 ==Op ampen kan altså ikke følge med PWM kredsløbet (ud fra målte frekvenser, ikke teoretiske). Derfor er et RC kredsløb altså nødvendigt før input, for at stabilisere==
 
 ## Worst case output voltage
-Vi kan ud fra worst case offset og bias voltage
+Vi kan ud fra worst case voltage offset, voltage ud fra offset current og bias voltage
 
 # RC Kredsløb
 ![[Screenshot from 2026-06-07 18-44-30.png|700]]
