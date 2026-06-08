@@ -123,4 +123,8 @@ Dette er en såkaldt **trip voltage**, der går ind i komparatorens + indgang.
 Formlen for output fra en komparator er
 $$V_o=A_{OL}(v_1-v_2)$$
 hvor $v_1$ er den positive indgang.
-Da vores komparator har en nedre grænse på 0 V, vil output være lav/0 V når $v_1\leq v_2$ og høj, når 
+Da vores komparator har en nedre grænse på 0 V, vil output være lav/0 V når $v_1\leq v_2$ og høj, når $v_1>v_2$.
+
+Altså, skal $v_2=V_{trip}=6.25 V$, så komparatoren skifter fra lav til høj, når vi passerer denne grænse.
+Dette gøres via. en _spændingsdeler_ fra 12 V til GND. Output fra en spændingsdeler er
+$$V_{out}=\frac {R_2} {R_1 + R_2}\cdot V_{in}= V_{out}=A\cdot V_{in}\Leftrightarrow A=\frac {V_{out}}{V_{in}}\rightarrow A=\frac {6.26 V}{12 V} =$$
