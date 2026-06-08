@@ -53,4 +53,7 @@ Det kan altså ses, at der skal en meget høj frekvens på input til at nedsænk
 
 ## Beta for systemet
 Beta for systemet kan udregnes som
-$$A_{CL}=\frac {A_{OL}} {1+A_{OL}\beta}\Leftrightarrow \beta=$$
+$$A_{CL}=\frac {A_{OL}} {1+A_{OL}\beta}\Leftrightarrow \beta =\frac {\frac{A_{OL}} {A_{CL}}-1} {A_{OL}}=\frac {\frac{100000} {37.88}-1} {100000}=0.0264$$
+
+
+## Alpha for systemet
