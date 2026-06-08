@@ -64,4 +64,11 @@ $$\alpha =\frac{A_{CL}+A_{CL}\,A_{OL}\,\beta }{A_{OL}}=\frac{37.88+37.88\cdot 10
 Den teoretiske error er
 $$\text{Error}=1-\frac {A_{Ol}}{\frac 1\beta+A_{OL}}=1-\frac {100000}{\frac 1 {0.0264}+100000}=0.00038$$
 
-Så den teoretiske fejl er faktisk meget meget lille. Dette observeres 
+Så den teoretiske fejl er faktisk meget meget lille. Dette kan dog ikke ses på de reelle målinger.
+
+
+## Full power bandwidth
+Full power bandwidth indikerer den højeste frekvens hvormed output signalet stadig kan følge med indgangsignalet.
+$$f_{FP}=\frac {SR}{2\pi\, V_{\text{o, max}}}$$
+hvor $V_{\text{o, max}}$ er 10 V og SR er slewrate fra tabellen.
+$$f_{FP}=\frac {SR}{2\pi\, V_{\text{o, max}}}$$
