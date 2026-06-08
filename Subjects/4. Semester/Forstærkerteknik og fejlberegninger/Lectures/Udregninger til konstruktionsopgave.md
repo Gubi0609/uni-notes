@@ -54,6 +54,7 @@ Det kan altså ses, at der skal en meget høj frekvens på input til at nedsænk
 ## Beta for systemet
 Beta for systemet kan udregnes som
 $$A_{CL}=\frac {A_{OL}} {1+A_{OL}\beta}\Leftrightarrow \beta =\frac {\frac{A_{OL}} {A_{CL}}-1} {A_{OL}}=\frac {\frac{100000} {37.88}-1} {100000}=0.0264$$
+$$$$
 
 
 ## Alpha for systemet
@@ -74,6 +75,9 @@ hvor $V_{\text{o, max}}$ er 10 V og SR er slewrate fra tabellen.
 $$f_{FP}=\frac {0.3\cdot 10^6 V/s}{2\pi\, 10 V}=4774.65 Hz$$
 
 ==Op ampen kan altså ikke følge med PWM kredsløbet (ud fra målte frekvenser, ikke teoretiske). Derfor er et RC kredsløb altså nødvendigt før input, for at stabilisere==
+
+## Worst case output voltage
+Vi kan ud fra worst case offset og bias voltage
 
 # RC Kredsløb
 ![[Screenshot from 2026-06-07 18-44-30.png|700]]
