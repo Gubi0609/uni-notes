@@ -108,4 +108,16 @@ $$A_v=\frac 1 {1+j(f/f_b)}=\frac 1 {1+j(1428.41/15.92)}=0.0111\angle{-89.3615^\c
 I følge kravene for konstruktionsopgaven, skal en buzzer lave lyd, når vi har en torque på over 150 g\*cm. Til dette bruges en comparator.
 
 Først udregnes strøm (og derved) spænding over shunten ved 150 g\*cm
-$$I_{shunt}=K_m\cdot\tau_$$
+$$I_{shunt}=K_m\cdot\tau_m\rightarrow2.64 A=K_m\cdot 240\text{ g*cm}\Leftrightarrow K_m=2.64 A / 240\text{ g*cm}=0.011$$
+
+Altså, ved 150 g\*cm
+$$I_{shunt}=0.011\cdot150\text{ g*cm}=1.65 A$$
+
+Spændingen over shunten er så
+$$V_{shunt}=1.65A\cdot0.1\Omega=0.165V$$
+Output fra op amp til comparator skal derved være
+$$V_o=V_{shunt}\cdot A_{CL}=0.165V\cdot37.88=6.25V$$
+
+Dette er en såkaldt **trip voltage**, der går ind i komparatorens + indgang.
+
+Formlen for output fra en komparator er
