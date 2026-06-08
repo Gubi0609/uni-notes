@@ -71,4 +71,4 @@ Så den teoretiske fejl er faktisk meget meget lille. Dette kan dog ikke ses på
 Full power bandwidth indikerer den højeste frekvens hvormed output signalet stadig kan følge med indgangsignalet.
 $$f_{FP}=\frac {SR}{2\pi\, V_{\text{o, max}}}$$
 hvor $V_{\text{o, max}}$ er 10 V og SR er slewrate fra tabellen.
-$$f_{FP}=\frac {SR}{2\pi\, V_{\text{o, max}}}$$
+$$f_{FP}=\frac {0.3\cdot 10^6 V/s}{2\pi\, 10 V}=4774.65 Hz$$
