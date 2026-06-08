@@ -105,3 +105,7 @@ Der kommer også til at være et fase skift. Begge kan udregnes ud fra
 $$A_v=\frac 1 {1+j(f/f_b)}=\frac 1 {1+j(1428.41/15.92)}=0.0111\angle{-89.3615^\circ}$$
 
 # Comparator
+I følge kravene for konstruktionsopgaven, skal en buzzer lave lyd, når vi har en torque på over 150 g\*cm. Til dette bruges en comparator.
+
+Først udregnes strøm (og derved) spænding over shunten ved 150 g\*cm
+$$I_{shunt}=K_m\cdot\tau_$$
