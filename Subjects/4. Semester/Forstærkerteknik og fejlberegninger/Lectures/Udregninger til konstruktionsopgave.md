@@ -79,7 +79,7 @@ $$f_{FP}=\frac {0.3\cdot 10^6 V/s}{2\pi\, 10 V}=4774.65 Hz$$
 ## Worst case output voltage
 Vi kan ud fra worst case voltage offset, voltage ud fra offset current og bias voltage. Formlerne er
 
-$$V_{\text{o,v off}}=\left(1+\frac {R_f}{R_{in}}\right)V_{off}=\left(1+\frac {378800\Omega}{10000\Omega}\right)3\cdot10^{-6}=\pm 116.64\text{ mV}$$ $$V_{\text{i, i off}}=R_f(I_{off}/2)=378800\Omega(2\cdot 10^{-9}A/2)=$$ $$V_{\text{o, bias}}=R_fI_B$$
+$$V_{\text{o,v off}}=\left(1+\frac {R_f}{R_{in}}\right)V_{off}=\left(1+\frac {378800\Omega}{10000\Omega}\right)3\cdot10^{-6}=\pm 116.64\text{ mV}$$ $$V_{\text{i, i off}}=R_f(I_{off}/2)=378800\Omega(2\cdot 10^{-9}A/2)=378.8\cdot10^{-3} \text{ mV}$$ $$V_{\text{o, bias}}=R_fI_B=378800\Omega\cdot (-20)\cdot10^{-9} A= $$
 
 # RC Kredsløb
 ![[Screenshot from 2026-06-07 18-44-30.png|700]]
