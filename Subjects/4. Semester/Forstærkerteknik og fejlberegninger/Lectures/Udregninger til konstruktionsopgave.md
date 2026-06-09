@@ -1,4 +1,4 @@
-
+m
 # Krav
 Måleområde: 0 - 240 g\*cm
 Udgangsignal: 0 - 10 V
