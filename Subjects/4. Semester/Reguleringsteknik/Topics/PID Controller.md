@@ -49,3 +49,11 @@ The control law of a proportional-integral feedback controller is
 As can be seen from the equation, the _integral_ term of the controller introduces an **integral gain** proportional to the integral of the error $e$.
 ![[Pasted image 20260610144802.png]]
 
+**The integral action negates the use of a feedforward term, thus replacing it. This is useful when the perfect system model isn't known, and disturbances may be introduced.**
+
+> Assuming that a closed loop system reaches steady state. Then the integral action removes the _steady state error_.
+
+> [!example] Proof of removing steady state error
+> Assume that there is a steady state error with $u=u_0$ and $e_0$. Then
+> $$u_0=K_pe_0+K_ie_0t$$
+> Which is a contradiction except if $e_0=0$ or $K_i=0$. 
