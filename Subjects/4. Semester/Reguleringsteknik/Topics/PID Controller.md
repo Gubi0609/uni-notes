@@ -15,3 +15,6 @@ The controller applies a control signal to the system, which depends linearly on
 
 The closed loop transfer function for this is then
 ## $$T_{CL}(s)=\frac {G(s)K_p}{1+G(s)K_p}$$
+
+## Steady State Error
+The DC gain of the closed loop system is given by the _Final Value Theorem_ ([[Subjects/4. Semester/Reguleringsteknik/Topics/Steady State Tracking|Steady State Tracking]])
