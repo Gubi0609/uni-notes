@@ -98,4 +98,14 @@ Now that all the P, I, and D terms have been established, they can be combined i
 The block diagram for this is
 ![[Pasted image 20260610151258.png]]
 
-Alternatively, if we want the [[Subjects/4. Semester/Reguleringsteknik/Topics/PID Controller#Noise reduction|noise reduction filter]] on the D-term, the 
+Alternatively, if we want the [[Subjects/4. Semester/Reguleringsteknik/Topics/PID Controller#Noise reduction|noise reduction filter]] on the D-term, the controller would be given as
+## $$K(s)=K_p\left(1+\frac 1 {sT_i}+\frac{sT_d}{1+sT_d/N}\right)$$
+
+If no filter is applied, the PID controller would be given by
+## $$K(s)=K_p\left(1+\frac 1 {sT_i}+sT_d\right)$$
+With the block diagram
+![[Pasted image 20260610151609.png]]
+
+> [!example]- PID Feedback Control: Example
+> ![[Pasted image 20260610151642.png]]
+
