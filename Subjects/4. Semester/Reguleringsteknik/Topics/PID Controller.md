@@ -38,3 +38,14 @@ We can eliminate the steady state error seen in the above example by introducing
 where the term $u_ff$ is called **reset**. The feedforward is chosen according to the DC gain of the system
 ## $$u(t)=K_pe(t)+\frac 1 {G(0)}r(t)$$
 *The feedforward eliminates the steady state error if the dynamics of the system is perfectly known.*
+
+> [!example]- Proportional Control with Feedforward: Example
+> ![[Pasted image 20260610144527.png]]
+> The poles of the system are not affected, as the feedforward only affects the numerator of the transfer function, and the poles are dependent on the denominator.
+
+# Proportional-Integral Feedback Control
+The control law of a proportional-integral feedback controller is
+## $$u=K_pe+K_i\int_{t_0}^te(\tau)d\tau$$
+As can be seen from the equation, the _integral_ term of the controller introduces an **integral gain** proportional to the integral of the error $e$.
+![[Pasted image 20260610144802.png]]
+
