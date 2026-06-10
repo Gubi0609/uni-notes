@@ -26,4 +26,15 @@ And the steady state error $e_{ss}$ is then given as (_for constant reference_ $
 > [!example]- Proportional Feedback Control: Example
 > ![[Pasted image 20260610143731.png]]
 > ![[Pasted image 20260610143743.png]]
-> We can see that a higher gain leads to a quicker rise time, but the settling time gets substantially worse. It is therefore not always better to choose a high gain. We can also see that the input re
+> We can see that a higher gain leads to a quicker rise time, but the settling time gets substantially worse. It is therefore not always better to choose a high gain. 
+> We can also see that the input required increases for higher gains. If we have hardware constrictions, this is not good either.
+> 
+> ![[Pasted image 20260610143908.png]]
+> We can see, that the poles approach the imaginary axis, as $K_p$ increases. _When the poles lie on the imaginary axis, the system has constant oscillation_.
+
+## Proportional Control with Feedforward
+We can eliminate the steady state error seen in the above example by introducing feedforward to the proportional controller. **This only works, if a perfect system model is known, and no disturbances are introduced to the system**.
+## $$u(t)=K_pe(t)+u_{ff}$$
+where the term $u_ff$ is called **reset**. The feedforward is chosen according to the DC gain of the system
+## $$u(t)=K_pe(t)+\frac 1 {G(0)}r(t)$$
+*The feedforward eliminates the steady state error if the dynamics of the system is perfectly known.*
