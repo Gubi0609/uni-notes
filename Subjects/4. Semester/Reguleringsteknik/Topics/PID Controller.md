@@ -56,4 +56,21 @@ As can be seen from the equation, the _integral_ term of the controller introduc
 > [!example] Proof of removing steady state error
 > Assume that there is a steady state error with $u=u_0$ and $e_0$. Then
 > $$u_0=K_pe_0+K_ie_0t$$
-> Which is a contradiction except if $e_0=0$ or $K_i=0$. 
+> Which is a contradiction except if $e_0=0$ or $K_i=0$. This hints, that the error $e_0$ must be 0.
+
+## Automatic Reset
+We have seen the usual implementation of a PI-controller in the illustration above. The following is called _automatic reset_
+![[Pasted image 20260610145447.png]]
+
+By wiring it as such, the integral term directly affects the controller output $u$, approaching steady state.
+
+The transfer function from $e$ to $u$ (so ignoring $y$) is then
+## $$T_{ue}=K_p\frac {1+sT_i}{sT_i}=K_p+\frac {K_p}{sT_i}$$
+Where $T_i$ is the integral time term. So _how far back in time we look_.
+
+> [!example]- Proportional-Integral Feedback Control: Example
+> ![[Pasted image 20260610145734.png]]
+> ![[Pasted image 20260610145744.png]]
+> We can see the difference clearly between feedforward and the integral action by the fact, that in the bottom image, feedforward does not return to the reference after the disturbance, while the integral controller does.
+
+# Proportional-Derivative Feedback Controller
