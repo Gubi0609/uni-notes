@@ -74,3 +74,15 @@ Where $T_i$ is the integral time term. So _how far back in time we look_.
 > We can see the difference clearly between feedforward and the integral action by the fact, that in the bottom image, feedforward does not return to the reference after the disturbance, while the integral controller does.
 
 # Proportional-Derivative Feedback Controller
+The derivative term provides an anticipatory action to the control by doing feedback based on the trend of the error. _So the derivative term **predicts** the future error._
+## $$u(t)=K_pe(t)+K_d\frac {de(t)}{dt}=K_p\left(e+T_d\frac {de(t)}{dt}\right)$$
+Where the term in the parenthesis is called the _predicted error_, $K_d$ is the derivative gain, and $T_d$ is the _derivative time constant_ (how long into the future to predict).
+
+## Noise reduction
+Noise is an issue for a derivative controller, as it affects the tilt, and thereby the predicted error. We thus want to reduce it.
+
+Effectively this is done through a low pass filter, as noise is usually high frequency
+![[Pasted image 20260610150811.png]]
+
+The transfer function of the controller (so from $e$ to $u$ is then)
+## $$T_{ue}(s)=K_p\left(N-\frac N \right)
