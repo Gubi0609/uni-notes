@@ -1,0 +1,4 @@
+- Regulatorens virkemåde
+- Stabilitet
+- Anti-windup
+- Referencefølge og stationær fejl

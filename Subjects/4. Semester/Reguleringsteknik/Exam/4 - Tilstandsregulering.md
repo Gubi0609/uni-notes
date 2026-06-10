@@ -1,0 +1,4 @@
+- Stabilitet
+- Tilstandstilbagekobling
+- Design af observere
+- Referencefølge
