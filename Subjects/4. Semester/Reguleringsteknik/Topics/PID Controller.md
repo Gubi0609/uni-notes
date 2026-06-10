@@ -85,4 +85,17 @@ Effectively this is done through a low pass filter, as noise is usually high fre
 ![[Pasted image 20260610150811.png]]
 
 The transfer function of the controller (so from $e$ to $u$ is then)
-## $$T_{ue}(s)=K_p\left(N-\frac N \right)
+## $$T_{ue}(s)=K_p\left(N-\frac N {1+sT_d/N}\right)=K_p\frac {sT_d}{1+sT_d/N}$$
+Where $N$ is a _filter constant_ (typical values of $N$ are 2 to 20).
+
+![[Pasted image 20260610151024.png]]
+
+We can see, that without the low pass filter, the gain from the derivative term would just keep increasing and the phase would be a constant 90 degrees.
+
+# Proportional-Integral-Derivative Feedback Control
+Now that all the P, I, and D terms have been established, they can be combined into a single PID controller
+## $$u(t)=K_pe(t)+K_i\int_{t_0}^te(\tau)d\tau+K_d\frac {de(t)}{dt}$$
+The block diagram for this is
+![[Pasted image 20260610151258.png]]
+
+Alternatively, if we want the [[Subjects/4. Semester/Reguleringsteknik/Topics/PID Controller#Noise reduction|noise reduction filter]] on the D-term, the 
