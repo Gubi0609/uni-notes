@@ -20,7 +20,8 @@
 [[Lecture 4 - Peer Assessment (solution).pdf]]
 
 # Topics
-
+[[Subjects/4. Semester/Reguleringsteknik/Topics/PID Controller|PID Controller]]
+[[Tuning PID controller]]
 
 # Notes
 
