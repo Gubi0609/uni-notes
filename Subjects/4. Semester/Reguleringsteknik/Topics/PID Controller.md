@@ -18,3 +18,12 @@ The closed loop transfer function for this is then
 
 ## Steady State Error
 The DC gain of the closed loop system is given by the _Final Value Theorem_ ([[Subjects/4. Semester/Reguleringsteknik/Topics/Steady State Tracking|Steady State Tracking]])
+## $$\frac {G(0)K_p}{1+G(0)K_p}$$
+And the steady state error $e_{ss}$ is then given as (_for constant reference_ $r(s)=r$)
+## $$e_{ss}=\left(1-\frac {G(0)K_p}{1+G(0)K_p}\right)r=\frac {1} {1+G(0)K_p}r$$
+**From this we can see that $K_p$ should be large to decrease the steady state error.**
+
+> [!example]- Proportional Feedback Control: Example
+> ![[Pasted image 20260610143731.png]]
+> ![[Pasted image 20260610143743.png]]
+> We can see that a higher gain leads to a quicker rise time, but the settling time gets substantially worse. It is therefore not always better to choose a high gain. We can also see that the input re
