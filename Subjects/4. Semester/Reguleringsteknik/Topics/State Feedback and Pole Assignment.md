@@ -1,3 +1,9 @@
+> [!help] Algorithm for Pole Assignment
+> 1. Choose desired closed loop polynomial $$\det(\lambda I-(A+BF))=\lambda^n-(a_1+f_1)\lambda^{n-1}-...-(a_n+f_n)$$
+> 2. Determine
+
+
+---
 For a state space model
 ## $$\dot x=Ax+Bu$$
 a _state feedback_ is a feedback of the form
@@ -19,6 +25,6 @@ Notice, that the feedback matrix only affects the top row of $A_c$.
 The characteristic polynomial has then been changed from (see [[Subjects/4. Semester/Reguleringsteknik/Topics/Controllable Canonical Form|Controllable Canonical Form]])
 ## $$\det(\lambda I-A_c)=\lambda^n-a_1\lambda^{n-1}-...-a_n$$
 to
-## $$\det(\lambda I-(a_c+B_cF_c))=\lambda^n-(a_1+f_1)\lambda^{n-1}-...-(a_n+f_n)$$
+## $$\det(\lambda I-(A_c+B_cF_c))=\lambda^n-(a_1+f_1)\lambda^{n-1}-...-(a_n+f_n)$$
 We can then, by choosing $f_1,...,f_n$ appropriately obtain _any closed loop pole configuration_.
 This is known as **pole assignment**.
