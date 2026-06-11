@@ -14,7 +14,11 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 11 - Integral Control.pdf|Lecture 11 - Integral Control]]
+[[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 11 - Exercise.pdf|Lecture 11 - Exercise]]
+[[Lecture 11 - Test.pdf]]
+[[Lecture 11 - Test with solution.pdf]]
+[[Lecture 11 - Peer Assessment.pdf]]
 
 # Topics
 
