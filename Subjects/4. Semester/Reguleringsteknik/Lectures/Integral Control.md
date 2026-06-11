@@ -16,4 +16,11 @@ Referring back to the feedback law from before, this becomes
 ## $$u=Fx+F_Ix_I=\left[\begin{array}& F & F_I\end{array}\right]\left[\begin{array}& x \\ x_I\end{array}\right]$$
 
 Noticing the form of the extended state space model above, we can notice, that it in itself is a state space model
-## $$\dot x_e=A_ex_e+B_eu$$
+## $$\dot x_e=A_ex_e+B_eu$$ $$y=C_ex_e$$
+for which we have to design a state feedback $u=F_ex_e$, where
+## $$F_e=\left[\begin{array}& F & F_I\end{array}\right], \quad x_e=\left[\begin{array}& x \\ x_I\end{array}\right]$$ $$A_e = \left[\begin{array}& A & 0 \\ C & 0\end{array}\right], \quad B_e = \left[\begin{array}& B \\ 0\end{array}\right], \quad C_e = \left[\begin{array}& C & 0\end{array}\right]$$
+
+This yields the following block diagram
+![[Pasted image 20260611145138.png]]
+
+Where the black part is the actual system, while the green part is the regulator. The integrator state $x_I$ is a fictive state, that we have added, and thus not something the system actually has.
