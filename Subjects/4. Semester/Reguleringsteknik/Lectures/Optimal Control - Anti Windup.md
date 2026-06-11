@@ -17,3 +17,5 @@ Dynamics of a controller during saturation is given by
 or
 ## $$\dot{\hat x}=(A+LC+MF)\hat x$$
 Determining $M$ can be recognized as an observer gain design problem
+## $$\dot{\hat x}=\left(\tilde A + \tilde L\tilde C\right)\hat x$$
+with $\tilde A=A+LC$, $\tilde L=M$, and $\tilde C = F$, from which the unknown $\tilde L=M$ can be chosen to assign any desired poles to the saturated controller.
