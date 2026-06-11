@@ -17,7 +17,9 @@
 [[Lecture 9 - Exercise.pdf]]
 
 # Topics
-
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Controllability|Controllability]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Controllable Canonical Form|Controllable Canonical Form]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/State Feedback and Pole Assignment|State Feedback and Pole Assignment]]
 
 # Notes
 
