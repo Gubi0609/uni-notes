@@ -19,4 +19,11 @@ and iterate, starting at $x_1$ and observing the development as we iterate
 We notice, that by continuously using the previous output, we can iterate to get the current output
 
 Writing the above equation in matrix form, we obtain
-## $$x_n=\left[\begin{array}[cccc] & \Gamma & \Phi\Gamma & ... & \Phi^{n-1}\Gamma\end{array}\right]\left[\begin{array}[c] & u_{n-1} \\ u_\end{array}\right]$$
+## $$x_n=\left[\begin{array}[cccc] & \Gamma & \Phi\Gamma & ... & \Phi^{n-1}\Gamma\end{array}\right]\left[\begin{array}[c] & u_{n-1} \\ u_{n-2} \\ ... \\ u_0\end{array}\right]$$
+Where $\left[\begin{array}[cccc] & \Gamma & \Phi\Gamma & ... & \Phi^{n-1}\Gamma\end{array}\right]=\mathcal{C}$  is the _controllability matrix_. This can be carried seamlessly over to continuous time systems
+## $$\mathcal{C} = \left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]$$
+## Rank
+An either continuous or discrete time system is controllable **iff**
+## $$\text{rank}\left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]=n$$
+or if the number of inputs $m=1$, this reduces to
+## $$\det\left(\left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]\right)\neq0$$
