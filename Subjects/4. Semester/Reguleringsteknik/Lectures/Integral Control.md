@@ -41,4 +41,11 @@ Everything that is not black is part of the controller.
 > [!example]- 
 > ![[Pasted image 20260611153759.png]]
 > ![[Pasted image 20260611153816.png]]
+> ![[Pasted image 20260611153839.png]]
+> ![[Pasted image 20260611153901.png]]
+> We can see that the controller affects the poles of the system by the fact, that what we are multiplying on image 3 has an $s$ in the denominator.
 > 
+> ![[Pasted image 20260611153948.png]]
+
+
+
