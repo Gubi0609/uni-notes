@@ -39,3 +39,11 @@ then an optimal state estimator is given by
 where
 ## $$L=-PC^TR^{-1}$$
 and $P$ is a stabilising solution to the ARE
+## $$A^TP+PA-PBR^{-1}B^TP+Q=0$$
+
+> [!example]-
+> ![[Pasted image 20260611160924.png]]
+> ![[Pasted image 20260611160931.png]]
+> ![[Pasted image 20260611160938.png]]
+> We can see that there is a slight overswing compared to pole placement, but the rise time is quicker.
+
