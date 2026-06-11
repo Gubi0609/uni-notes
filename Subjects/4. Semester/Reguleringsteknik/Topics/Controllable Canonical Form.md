@@ -36,3 +36,7 @@ By combining these equations (inserting the result of the second curly matrix fi
 Noticing, that the left matrix/vector is the [[Subjects/4. Semester/Reguleringsteknik/Topics/Controllability|controllabillity matrix]], we can get an expression for $s_3$, and thereby for $s_2$ and $s_1$
 ## $$s_3 = \left[\begin{array}& 0 & 0 & 1\end{array}\right]\mathcal C^{-1},\quad s_2=s_3A, \quad s_1=s_2A$$
 > [!example]- Example: Companion Form ($n=2$)
+> ![[Pasted image 20260611114936.png]]
+> ![[Pasted image 20260611114945.png]]
+> ![[Pasted image 20260611115003.png]]
+
