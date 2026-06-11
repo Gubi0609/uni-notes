@@ -24,3 +24,4 @@ This yields the following block diagram
 ![[Pasted image 20260611145138.png]]
 
 Where the black part is the actual system, while the green part is the regulator. The integrator state $x_I$ is a fictive state, that we have added, and thus not something the system actually has.
+
