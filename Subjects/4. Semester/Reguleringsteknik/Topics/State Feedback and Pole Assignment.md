@@ -1,8 +1,9 @@
 > [!help] Algorithm for Pole Assignment
 > 1. Choose desired closed loop polynomial $$\det(\lambda I-(A+BF))=\lambda^n-a_{CL,1}\lambda^{n-1}-...-a_{CL,n}$$
 > 2. Determine $T$ such that $A_c=T^{-1}AT$ and $B_c=T^{-1}B$ are in controllable canonical form.
-> 3. Determine open loop polynomial  $$
-
+> 3. Determine open loop polynomial  $$\det(\lambda I-A_c)=\lambda^n-a_1\lambda^{n-1}-...-a_n$$
+> 4. Define $F_c=\left[\begin{array}& a_{CL,1}-a_1 & ... & a_{CL,n}-a_n\end{array}\right]$
+> 5. Compute resulting feedback gain $F=F_cT^{-1}$
 
 ---
 For a state space model
@@ -29,3 +30,16 @@ to
 ## $$\det(\lambda I-(A_c+B_cF_c))=\lambda^n-(a_1+f_1)\lambda^{n-1}-...-(a_n+f_n)$$
 We can then, by choosing $f_1,...,f_n$ appropriately obtain _any closed loop pole configuration_.
 This is known as **pole assignment**.
+
+> [!example]- Example: Pole Assignment
+> It is ofcourse important, that the system is controllable. We always check this before assigning poles
+> ![[Pasted image 20260611122643.png]]
+> ![[Pasted image 20260611122656.png]]
+> ![[Pasted image 20260611122705.png]]
+> As can be seen, the closed loop system is significantly faster than the open loop system
+
+> [!example]- Example 2: Pole Assignment (using `place` in MATLAB)
+> ![[Pasted image 20260611122813.png]]
+> ![[Pasted image 20260611122818.png]]
+> ![[Pasted image 20260611122824.png]]
+
