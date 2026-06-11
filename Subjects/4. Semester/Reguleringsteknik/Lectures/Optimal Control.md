@@ -28,4 +28,14 @@ Alternatively use a cost functional of the type
 ## $$\mathcal J=\int_0^\infty x^TQx+u^TRu\, dt$$
 where $Q$ and $R$ are diagonal matrices.
 With this can be written as an optimal control problem where
-## $$Q_{ii}=\frac 1 {\text{maximum acceptable value of }x_i^2}$$ $$Q_{ii}=\frac 1 {\text{maximum acceptable value of }x_i^2}$$
+## $$Q_{ii}=\frac 1 {\text{maximum acceptable value of }x_i^2}$$ $$R_{jj}=\frac 1 {\text{maximum acceptable value of }u_j^2}$$
+# Optimal State Estimation
+Given the system
+## $$\dot x=Ax+Bu+Gw$$ $$y=Cx+Du+v$$
+with _unbiased process noise_ $w$ and _measurement noise_ $v$ with covariances
+## $$\xi\{ww^T\}=Q,\quad \xi\{vv^T\}=R$$
+then an optimal state estimator is given by
+## $$\dot{\hat x}=A\hat x+Bu+L(C\hat x-y)$$
+where
+## $$L=-PC^TR^{-1}$$
+and $P$ is a stabilising solution to the ARE
