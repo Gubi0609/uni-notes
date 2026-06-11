@@ -28,3 +28,6 @@ going back to the example with $n=3$, we can write the rows of $T^{-1}$ as
 ## $$T^{-1}=\left[\begin{array} & s_1\\ s_2 \\ s_3\end{array}\right], \quad s_1,s_2,s_3\in\mathbb R^{1\times n}$$
 then we can rewrite the transformation equations from earlier as
 ## $$\left[\begin{array}& a_1 & a_2 & a_3 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{array}\right]\left[\begin{array}& s_1 \\ s_2 \\ s_3\end{array}\right] = \left[\begin{array}& s_1 \\ s_2 \\ s_3\end{array}\right]A,\quad \left[\begin{array}& s_1 \\ s_2 \\ s_3\end{array}\right]B=\left[\begin{array}& 1 \\ 0 \\ 0\end{array}\right]$$
+Noticing, that row 2 of the first matrix equals $s_2A$ and the same for row 3, and also noticing the results of equation 2, yields
+## $$\left\{\begin{array}& s_1=s_2A\\s_2=s_3A\end{array}\right\}, \quad \left\{\begin{array}& s_1B=1 \\ s_2B=0 \\ s_3B=0 \end{array}\right\}$$
+By combingin
