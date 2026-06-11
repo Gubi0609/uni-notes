@@ -22,3 +22,9 @@ Given a state space model of a controllable system
 ## $$\dot x=Ax+Bu, \quad x\in\mathbb{R}^n,\quad u\in\mathbb R$$
 we wish to find a basis transformation $x=Tx_c$, such that
 ## $$\dot x_c=A_cx_c+B_cu, \quad x_c\in\mathbb{R}^n,\quad u\in\mathbb R$$
+where $A_c=T^{-1}AT$ and $B_c=T^{-1}B$ is in controllable canonical form. We can solve for $T^{-1}$ by rewriting these equations as
+## $$A_cT^{-1}=T^{-1}A\text{ and }B_c=T^{-1}B$$
+going back to the example with $n=3$, we can write the rows of $T^{-1}$ as
+## $$T^{-1}=\left[\begin{array} & s_1\\ s_2 \\ s_3\end{array}\right], \quad s_1,s_2,s_3\in\mathbb R^{1\times n}$$
+then we can rewrite the transformation equations from earlier as
+## $$\left[\begin{array}& a_1 & a_2 & a_3 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{array}\right]\left[\begin{array}& s_1 \\ s_2 \\ s_3\end{array}\right] = \left[\begin{array}& s_1 \\ s_2 \\ s_3\end{array}\right]A,\quad \left[\begin{array}& s_1 \\ s_2 \\ s_3\end{array}\right]B=\left[\begin{array}& 1 \\ 0 \\ 0\end{array}\right]$$
