@@ -28,4 +28,19 @@ Where $R=A/\tau$.
 > As can be seen, by fine-tuning the result a bit, a much more clean system is achieved.
 
 ## Zeigler-Nichols tuning - The Ultimate Sensitivity method
-An alternative to studying the step response is to connect a P-controller to the system, and increase the gain $K_p$ until the output oscillates
+An alternative to studying the step response is to connect a P-controller to the system, and increase the gain $K_p$ until the output oscillates.
+![[Pasted image 20260610153549.png]]
+
+The value of $K_p$ when the output oscillates with a constant amplitude is called the **ultimate gain** $K_u$. The period of oscillation $P_u$ is called the **ultimate period**.
+
+### Parameters
+The parameters for the PID controller
+## $$u(s)=K_p\left(1+\frac 1 {sT_i} + T_ds\right)e(s)$$
+are given by
+![[Pasted image 20260610153733.png]]
+
+> [!example]- Zeigler-Nichols Tuning (USM): Example
+> ![[Pasted image 20260610153806.png]]
+> ![[Pasted image 20260610153815.png]]
+> As with [[Tuning PID controller#Zeigler-Nichols tuning based on step response|Zeigler-Nichols tuning based on step response]], the result needs fine tuning.
+
