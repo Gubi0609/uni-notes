@@ -32,3 +32,13 @@ Where $L$ is chosen such that $A+LC$ is stable with desirable eigenvalues. (eige
 
 **Separation result:** The closed loop poles of such an observer based integral control scheme consist of the eigenvalues of
 ## $$A_e+B_eF_e\text{ and of }A+LC$$
+The block diagram is now
+![[Pasted image 20260611153637.png]]
+
+Where the red part is the **observer** and the yellow part is a **copy of the system** (seen in black) also known as the _state estimate_.
+Everything that is not black is part of the controller.
+
+> [!example]- 
+> ![[Pasted image 20260611153759.png]]
+> ![[Pasted image 20260611153816.png]]
+> 
