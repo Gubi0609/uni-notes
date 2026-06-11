@@ -16,5 +16,16 @@ Consider a linear system of the form
 ## $$\dot x=Ax+Bu,\quad x(0)=x_0$$ $$y=Cx$$
 Let $P$ be a stabilizing solution to the ARE
 ## $$A^TP+PA-PBR^{-1}B^TP+Q=0$$
-Then the optimal state feedback law is given by
+Then the _optimal state feedback law_ is given by
 ## $$u=Fx\text{ where }F=-R^{-1}B^TP$$
+## Output Variance Minimization
+Introducing $y=Cx$ into a cost functional of the type
+## $$\mathcal J=\int_0^\infty \rho y^Ry+u^Tu\, dt,\quad \rho\in\mathbb R$$
+this can be written as an _optimal control problem_
+## $$\mathcal J=\int_0^\infty \rho y^Ty+u^Tu\, dt$$ $$=\int_0^\infty px^TC^TCx+u^tu\, dt$$ $$=\int_0^\infty x^TQx+u^TRu\, dt,\quad Q=\rho C^TC,\quad R=I$$
+## Tuning using Brysons Rule
+Alternatively use a cost functional of the type
+## $$\mathcal J=\int_0^\infty x^TQx+u^TRu\, dt$$
+where $Q$ and $R$ are diagonal matrices.
+With this can be written as an optimal control problem where
+## $$Q_{ii}=\frac 1 {\text{maximum acceptable value of }x_i^2}$$ $$Q_{ii}=\frac 1 {\text{maximum acceptable value of }x_i^2}$$
