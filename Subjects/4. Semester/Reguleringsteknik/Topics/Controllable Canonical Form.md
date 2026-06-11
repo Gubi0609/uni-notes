@@ -30,4 +30,9 @@ then we can rewrite the transformation equations from earlier as
 ## $$\left[\begin{array}& a_1 & a_2 & a_3 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{array}\right]\left[\begin{array}& s_1 \\ s_2 \\ s_3\end{array}\right] = \left[\begin{array}& s_1 \\ s_2 \\ s_3\end{array}\right]A,\quad \left[\begin{array}& s_1 \\ s_2 \\ s_3\end{array}\right]B=\left[\begin{array}& 1 \\ 0 \\ 0\end{array}\right]$$
 Noticing, that row 2 of the first matrix equals $s_2A$ and the same for row 3, and also noticing the results of equation 2, yields
 ## $$\left\{\begin{array}& s_1=s_2A\\s_2=s_3A\end{array}\right\}, \quad \left\{\begin{array}& s_1B=1 \\ s_2B=0 \\ s_3B=0 \end{array}\right\}$$
-By combingin
+By combining these equations (inserting the result of the second curly matrix first, and then substituting for the expressions for $s_1$ and $s_2$) we get
+## $$s_2\left[\begin{array}& B & AB & A^2B\end{array}\right] = \left[\begin{array}& 0 & 0 & 1\end{array}\right]$$
+
+Noticing, that the left matrix/vector is the [[Subjects/4. Semester/Reguleringsteknik/Topics/Controllability|controllabillity matrix]], we can get an expression for $s_3$, and thereby for $s_2$ and $s_1$
+## $$s_3 = \left[\begin{array}& 0 & 0 & 1\end{array}\right]\mathcal C^{-1},\quad s_2=s_3A, \quad s_1=s_2A$$
+> [!example]- Example: Companion Form ($n=2$)
