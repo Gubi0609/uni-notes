@@ -22,8 +22,16 @@ Writing the above equation in matrix form, we obtain
 ## $$x_n=\left[\begin{array}[cccc] & \Gamma & \Phi\Gamma & ... & \Phi^{n-1}\Gamma\end{array}\right]\left[\begin{array}[c] & u_{n-1} \\ u_{n-2} \\ ... \\ u_0\end{array}\right]$$
 Where $\left[\begin{array}[cccc] & \Gamma & \Phi\Gamma & ... & \Phi^{n-1}\Gamma\end{array}\right]=\mathcal{C}$  is the _controllability matrix_. This can be carried seamlessly over to continuous time systems
 ## $$\mathcal{C} = \left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]$$
-## Rank
+## Full Rank
 An either continuous or discrete time system is controllable **iff**
 ## $$\text{rank}\left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]=n$$
 or if the number of inputs $m=1$, this reduces to
-## $$\det\left(\left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]\right)\neq0$$
+## $$\det\left(\left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]\right)\neq 0$$
+> [!example]- Finding controllability of _Parallel Connection_
+> ![[Pasted image 20260611104413.png]]
+> ![[Pasted image 20260611104424.png]]
+
+> [!example]- Finding controllability of _Series Connection_
+> ![[Pasted image 20260611104457.png]]
+> ![[Pasted image 20260611104510.png]]
+
