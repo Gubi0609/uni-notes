@@ -25,3 +25,4 @@ This yields the following block diagram
 
 Where the black part is the actual system, while the green part is the regulator. The integrator state $x_I$ is a fictive state, that we have added, and thus not something the system actually has.
 
+If the states are unavailable for feedback, they can be estimated by e.g. a full order [[Subjects/4. Semester/Reguleringsteknik/Topics/Observability|Observabil]]
