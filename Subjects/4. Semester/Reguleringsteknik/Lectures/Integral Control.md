@@ -25,6 +25,10 @@ This yields the following block diagram
 
 Where the black part is the actual system, while the green part is the regulator. The integrator state $x_I$ is a fictive state, that we have added, and thus not something the system actually has.
 
+# Separation Principle
 If the states are unavailable for feedback, they can be estimated by e.g. a full order [[Subjects/4. Semester/Reguleringsteknik/Topics/Observability|Observer]]
 ## $$\dot{\hat x}=A\hat x+Bu+L(C\hat x-y)$$ $$\hat y=C\hat x$$
-Where $L$ is chosen such that $A+LC$ is stable with desiralbe eigenvalues
+Where $L$ is chosen such that $A+LC$ is stable with desirable eigenvalues. (eigenvalues denoting the poles of the system).
+
+**Separation result:** The closed loop poles of such an observer based integral control scheme consist of the eigenvalues of
+## $$A_e+B_eF_e\text{ and of }A+LC$$
