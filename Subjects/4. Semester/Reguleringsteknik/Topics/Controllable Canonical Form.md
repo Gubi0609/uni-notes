@@ -15,4 +15,10 @@ For $n=3$ the controllable canonical form becomes
 
 which is controllable
 ## $$\mathcal C_c=\left[\begin{array}[cccc] & B_c & A_cB_c & ... & A_c^2B_c\end{array}\right]=\left[\begin{array} & 1 & a_1 & a_1^2 + a_2 \\ 0 & 1 & a_1 \\ 0 & 0 & 1\end{array}\right]$$
-since $\det(\mathcal C)=1\neq 0$
+since $\det(\mathcal C)=1\neq 0$.
+
+# Transformation to Controllable Canonical Form
+Given a state space model of a controllable system
+## $$\dot x=Ax+Bu, \quad x\in\mathbb{R}^n,\quad u\in\mathbb R$$
+we wish to find a basis transformation $x=Tx_c$, such that
+## $$\dot x_c=A_cx_c+B_cu, \quad x_c\in\mathbb{R}^n,\quad u\in\mathbb R$$
