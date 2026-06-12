@@ -28,6 +28,15 @@
 
 # Stabilitet
 
+Stability of closed loop system
+![[Pasted image 20260612135554.png]]
+
+
+Disturbance rejection of closed loop system (where $d(s)$ is the disturbance)
+![[Pasted image 20260612135705.png]]
+
+It can be seen, that by increasing $K(s)$, the output $y(s)=r(s)$.
+
 # Anti windup
 
 # Referencefølge og stationær fejl
