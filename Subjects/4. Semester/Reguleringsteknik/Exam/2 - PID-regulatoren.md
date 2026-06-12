@@ -24,7 +24,8 @@
 
 
 # Regulatorens virkemåde (PID)
-
+Has three terms,P, I, D
+## $$u(t)=K_pe(t)+\int_0^$$
 
 # Stabilitet
 
