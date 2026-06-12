@@ -13,4 +13,4 @@
 - Relation mellem polplaceringog dynamik
 - Performance specifikation
 [[L8 - Implementation]]
-- 
+- Effekten af at tilføje poler/nulpunkter på rodkurven
