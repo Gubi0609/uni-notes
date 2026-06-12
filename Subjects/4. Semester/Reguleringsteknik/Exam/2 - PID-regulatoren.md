@@ -131,3 +131,8 @@ And the steady state error $e_{ss}$ is then given as (_for constant reference_ $
 > $$u_0=K_pe_0+K_ie_0t$$
 > Which is a contradiction except if $e_0=0$ or $K_i=0$. This hints, that the error $e_0$ must be 0.
 
+Referencefølge simply means: **how well does the system output y(t) follow the reference signal r(t)?**
+
+In a closed-loop system, the goal is that y tracks r as closely as possible. The measure of how well it does so is the **steady-state error**:
+## $$e_{ss}=\lim_{⁡t\rightarrow\infty}(r(t)-y(t))$$
+If $e_{ss} = 0$, the system tracks the reference perfectly in steady state. If $e_{ss} \neq 0$, there is a permanent offset between what you asked for and what you got.
