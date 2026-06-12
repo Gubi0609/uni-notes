@@ -21,3 +21,12 @@
  - Lead og lag kompensation
 [[L11 - Optimal Control]]
 - Fortsættelse af anti-windup i forbindelse med tilstandregulering.
+
+
+# Regulatorens virkemåde (PID)
+
+# Stabilitet
+
+# Anti windup
+
+# Referencefølge og stationær fejl

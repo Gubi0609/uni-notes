@@ -25,4 +25,4 @@
 
 # Ændring af dynamik ved indsættelse af pol eller nulpunkt
 
-# Betydning og bestemmelse af fasemargin, forstærkningsmar
+# Betydning og bestemmelse af fasemargin, forstærkningsmargin samt vektormargin

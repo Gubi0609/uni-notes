@@ -34,3 +34,11 @@
 - Referencefølge (afslutning fra L11)
 - Zero assignment (afslutning)
 - Kalman filter som stokastisk observer
+
+# Stabilitet
+
+# Tilstandstilbagekobling
+
+# Design af observere
+
+# Referencefølge

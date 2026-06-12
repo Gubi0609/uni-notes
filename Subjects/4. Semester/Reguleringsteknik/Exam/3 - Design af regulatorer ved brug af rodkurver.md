@@ -14,3 +14,12 @@
 - Performance specifikation
 [[L8 - Implementation]]
 - Effekten af at tilføje poler/nulpunkter på rodkurven
+
+
+# Betydning af rodkurve
+
+# Anvendelse af rodkurve
+
+# Stabilitet
+
+# System performance
