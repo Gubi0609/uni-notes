@@ -27,6 +27,8 @@
 ![[Pasted image 20260612094730.png]]
 
 ![[Pasted image 20260612094755.png]]
+
+Poler af transfer function $G(s)$ i stedet for kun state space model
 # Relation mellem polplacering og system dynamik
 ![[Pasted image 20260612094450.png]]
 ![[Pasted image 20260612094606.png]]
