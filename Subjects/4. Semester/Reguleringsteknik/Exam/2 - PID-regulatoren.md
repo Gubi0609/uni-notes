@@ -130,3 +130,4 @@ And the steady state error $e_{ss}$ is then given as (_for constant reference_ $
 > Assume that there is a steady state error with $u=u_0$ and $e_0$. Then
 > $$u_0=K_pe_0+K_ie_0t$$
 > Which is a contradiction except if $e_0=0$ or $K_i=0$. This hints, that the error $e_0$ must be 0.
+
