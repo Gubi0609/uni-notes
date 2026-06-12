@@ -26,7 +26,7 @@ The value of the integrator output is not changed instantaneously, but it is cha
 The input of the integrator is given by
 ## $$ \frac 1 {T_t}e_s+\frac {K_p}{T_i}e$$
 where $e_s$ is zero when the system is not saturated.
-In steady state, the ouytput of the integrator is constant; therefore its input must be zero
+In steady state, the output of the integrator is constant; therefore its input must be zero
 ## $$e_s = -\frac {K_pT_t}{T_i}e$$
 in steady state
 ![[Pasted image 20260320085948.png]]
