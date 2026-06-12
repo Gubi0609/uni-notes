@@ -54,6 +54,22 @@ Zeros is the numerator of $G(s)$, poles are the denominator
 
 combining multiple systems through multiplying (cascade implementation of higher order systems) combines their individual bode plots.
 
-Zeros in the right half plane give **rise to non-minimum phase behavior*
+Zeros in the right half plane give **rise to non-minimum phase behavior**
+![[Pasted image 20260612105948.png]]
+![[Pasted image 20260612105956.png]]
 
+Normally zeros _lift_ the phase (blue line), but if they are in the right half plane, the phase actually _drops_ (red line).
+We can also see, that a right half plane zero introduces _reverse swing_, which is just like overswing, but in the wrong direction
+
+We can also look at higher order systems
+![[Pasted image 20260612110219.png]]
+![[Pasted image 20260612110226.png]]
+
+To solve the problem of the blue line (reverse swing) we would need to analyze the system, and try to move the zeros, so that they are _not complex conjugates_.
+
+Performance of zeroes:
+![[Pasted image 20260612110322.png]]
+
+If we move the zero further from the origin, we can _reduce the overshoot_. (the further into the left half plane, the less overshoot).
 # Betydning og bestemmelse af fasemargin, forstærkningsmargin samt vektormargin
+
