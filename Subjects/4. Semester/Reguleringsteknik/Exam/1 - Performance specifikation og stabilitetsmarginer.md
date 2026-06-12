@@ -78,3 +78,44 @@ In regards to poles:
 - Poles should be placed to fulfill system requirements (see illustration [[1 - Performance specifikation og stabilitetsmarginer#Relation mellem polplacering og system dynamik|above]])
 # Betydning og bestemmelse af fasemargin, forstærkningsmargin samt vektormargin
 
+The **gain margin** is the factor by which the gain can be _raised_ before a system becomes unstable
+
+For a _neutrally stable_ system
+## $$|L(j\omega)|=1\text{ and } \angle L(j\omega)=180^\circ$$
+
+
+
+where $L(s)=K(s)G(s)$
+![[Pasted image 20260612131647.png]]
+
+Can be found from bode plot
+- Find the value of $\omega$ where $\angle K(j\omega)G(j\omega)=-180^\circ$, and denote it by $\omega_{GM}$. The gain margin in dB is given by
+## $$GM=-|K(j\omega_{GM})G(j\omega_{GM})|$$
+
+
+
+
+The **phase margin** is the amount by which the phase can be raised before a system becomes unstable (exceeds $-180^\circ$)
+(Se neutralt stabilt system ovenover)
+
+Can be found from bode plot
+- Find the value of $\omega$ where $|K(j\omega)G(j\omega)|=0\text{ db}$ and denote it by $\omega_c$ (**Called the crossover frequency**). The phase margin is then given by
+## $$PM=\angle K(j\omega_c)G(j\omega_c)+180^\circ$$
+
+![[Pasted image 20260612132220.png]]
+
+
+Kan også findes ud fra Nyquist plot, hvor de bestemmes ud fra hvor tæt de er på $-1$
+![[Pasted image 20260612132300.png]]
+
+
+The phase and gain marhins determine stability when only _one of them is changed_.
+This is the motivation for looking at the **vector margin**, which gives the shortest distance between the Nyquist plot and -1
+![[Pasted image 20260612132909.png]]
+
+This is related to the _maximum sensitivity_
+## $$\text{Vector margin}=\frac 1 {M_s}$$
+ where $M_s=\max_\omega|S(j\omega)|$ and $S(s)=1/(1+K_0G_0)$ is the sensitivity function ([[Subjects/4. Semester/Reguleringsteknik/PDFs/Lecture 3 - Introduction to Control.pdf#page=44|Lecture 3 - Introduction to Control]])
+==Dette står dog ikke direkte i slides for vektor margin, så vær påpasselig med at bruge det til eksamen==.
+
+The vector margin then captures robustness against simultaneous changes in both gain and phase, which the individual margins cannot.
