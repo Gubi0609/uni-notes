@@ -29,12 +29,20 @@ Has three terms,P, I, D
 where $K_p$ is the proportional gain, $K_i$ is the integral gain, $K_d$ is the derivative gain.
 If we instead want it in the frequency domain, we still use the proportional gain, but now with the integral time constant (how far to look _back_) and the derivative time constant (how far to look _forward_).
 
+The integral term is useful instead of using feedforward, as feedforward requires a perfect, known system model and no disturbance, while the integral term can operate even under those conditions.
 
 It can also be implemented with noise reduction on the derivative term
 ## $$T_{ue}(s)=K_p\left(N-\frac N {1+sT_d/N}\right)=K_p\frac {sT_d}{1+sT_d/N}$$
 ![[Pasted image 20260610150811.png]]
 
-This is done, as noise will massively affect the 
+Where $N$ is a filter constant, typically between $2$ to $20$.
+This is done, as noise will massively affect the change in error, as its tilt is rather steep compared to actual data
+
+We can also implement the integral term with automatic reset
+## $$T_{ue}=K_p\frac {1+sT_i}{sT_i}=K_p+\frac {K_p}{sT_i}$$
+![[Pasted image 20260610145447.png]]
+
+By wiring it as such, the integral term directly affects the controller output $u$, approaching steady state.
 
 # Stabilitet
 
@@ -50,3 +58,16 @@ It can be seen, that by increasing $K(s)$, the output $y(s)=r(s)$.
 # Anti windup
 
 # Referencefølge og stationær fejl
+
+The DC gain of the closed loop system is given by the _Final Value Theorem_ ([[Subjects/4. Semester/Reguleringsteknik/Topics/Steady State Tracking|Steady State Tracking]])
+## $$\frac {G(0)K_p}{1+G(0)K_p}$$
+And the steady state error $e_{ss}$ is then given as (_for constant reference_ $r(s)=r$)
+## $$e_{ss}=\left(1-\frac {G(0)K_p}{1+G(0)K_p}\right)r=\frac {1} {1+G(0)K_p}r$$
+**From this we can see that $K_p$ should be large to decrease the steady state error.**
+
+> Assuming that a closed loop system reaches steady state. Then the integral action removes the _steady state error_.
+
+> [!example] Proof of removing steady state error
+> Assume that there is a steady state error with $u=u_0$ and $e_0$. Then
+> $$u_0=K_pe_0+K_ie_0t$$
+> Which is a contradiction except if $e_0=0$ or $K_i=0$. This hints, that the error $e_0$ must be 0.
