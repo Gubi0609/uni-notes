@@ -20,6 +20,7 @@
 - Virkningen af at tilføje poler eller nulpunkter
 
 # Stabilitet
+![[Pasted image 20260612094450.png]]
 
 # Relation mellem polplacering og system dynamik
 
