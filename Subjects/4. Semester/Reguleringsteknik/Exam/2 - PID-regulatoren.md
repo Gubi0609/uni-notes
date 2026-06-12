@@ -153,5 +153,5 @@ The system type references how many integrator terms there are in the controller
 
 **Adding an integrator to the controller raises the system type by one**. A Type 0 plant with a PI controller becomes a Type 1 system, which now tracks step references with zero steady-state error. This is the formal justification for why integral action eliminates steady-state error
 
-#### The constants $K_p$​,$K_Kv​, KaK_a Ka​
+#### The constants $K_p$​,$K_v$,$K_a$​
 These are called position, velocity and acceleration error constants respectively. They are properties of the open-loop transfer function evaluated at specific limits, and they set the size of the residual error when the system cannot track perfectly.
