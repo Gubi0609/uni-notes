@@ -2,7 +2,7 @@ The transfer function of a second order system is
 ## $$H(s) = \frac {k\omega_n^2}{s^2+2\zeta\omega_ns+\omega_n^2}$$
 an is described by the gain $k$ and two paramters $\zeta>0$ and $\omega_n>0$.
 
-The poles will be the roots of the denumerator. The system has _two_ poles which are $s\in \C$ 
+The poles will be the roots of the denominator. The system has _two_ poles which are $s\in \mathbb C$ 
 ## $$a=-\zeta\omega_n\pm\omega_n\sqrt{\zeta^2-1}$$
 - If $0<\zeta<1$ the poles of $H(s)$ are complex **(Underdamped case)**
 - If $\zeta=1$ then $H(s)$ has a double pole in $s=-\zeta\omega_n$ **(Critically damped case)**
