@@ -29,6 +29,10 @@ Has three terms,P, I, D
 where $K_p$ is the proportional gain, $K_i$ is the integral gain, $K_d$ is the derivative gain.
 If we instead want it in the frequency domain, we still use the proportional gain, but now with the integral time constant (how far to look _back_) and the derivative time constant (how far to look _forward_).
 
+![[Pasted image 20260610151258.png]]
+![[Pasted image 20260610151609.png]]
+
+
 The integral term is useful instead of using feedforward, as feedforward requires a perfect, known system model and no disturbance, while the integral term can operate even under those conditions.
 
 It can also be implemented with noise reduction on the derivative term
@@ -44,6 +48,25 @@ We can also implement the integral term with automatic reset
 
 By wiring it as such, the integral term directly affects the controller output $u$, approaching steady state.
 
+
+## Zeigler-Nichols tuning based on step response
+The considered system is assumed to have the transfer function
+## $$\frac {y(s)}{u(s)}=\frac A {\tau s+1}e^{-st_d}$$
+where $t_d=L$ is the time delay of a first order system (the $L$ will be used later on), $A$ is the top of the step response (amplitude) and $\tau$ is the time from when the tilt of the step response hits $y=0$ to the time it hits $y=A$
+![[Pasted image 20260610152912.png]]
+
+By using the Zeigler-Nichols tuning method, a closed loop system is obtained that has a decay ratio of ~$0.25$ (damping ratio $\zeta \approx 0.21$)
+![[Pasted image 20260610153038.png]]
+![[Pasted image 20260610153139.png]]
+
+## Zeigler-Nichols tuning - The Ultimate Sensitivity method
+An alternative to studying the step response is to connect a P-controller to the system, and increase the gain $K_p$ until the output oscillates.
+![[Pasted image 20260610153549.png]]
+
+The value of $K_p$ when the output oscillates with a constant amplitude is called the **ultimate gain** $K_u$. The period of oscillation $P_u$ is called the **ultimate period**.
+![[Pasted image 20260610153733.png]]
+
+
 # Stabilitet
 
 Stability of closed loop system
@@ -55,7 +78,10 @@ Disturbance rejection of closed loop system (where $d(s)$ is the disturbance)
 
 It can be seen, that by increasing $K(s)$, the output $y(s)=r(s)$.
 
+
 # Anti windup
+
+
 
 # Referencefølge og stationær fejl
 

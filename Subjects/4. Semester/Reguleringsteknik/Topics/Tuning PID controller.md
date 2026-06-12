@@ -9,7 +9,7 @@ The considered system is assumed to have the transfer function
 where $t_d=L$ is the time delay of a first order system (the $L$ will be used later on), $A$ is the top of the step response (amplitude) and $\tau$ is the time from when the tilt of the step response hits $y=0$ to the time it hits $y=A$
 ![[Pasted image 20260610152912.png]]
 
-By using the Zeigler-Nichols tuning methid, a closed loop system is obtained that has a decay ratio of ~$0.25$ (damping ratio $\zeta \approx 0.21$)
+By using the Zeigler-Nichols tuning method, a closed loop system is obtained that has a decay ratio of ~$0.25$ (damping ratio $\zeta \approx 0.21$)
 ![[Pasted image 20260610153038.png]]
 
 ### Parameters
