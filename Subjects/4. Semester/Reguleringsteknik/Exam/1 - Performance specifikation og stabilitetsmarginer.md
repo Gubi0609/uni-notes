@@ -71,5 +71,10 @@ Performance of zeroes:
 ![[Pasted image 20260612110322.png]]
 
 If we move the zero further from the origin, we can _reduce the overshoot_. (the further into the left half plane, the less overshoot).
+
+
+In regards to poles:
+- Poles should be in the left-half plane. If they are not, the system is not stable
+- Poles should be placed to fulfill system requirements (see illustration [[1 - Performance specifikation og stabilitetsmarginer#Relation mellem polplacering og system dynamik|above]])
 # Betydning og bestemmelse af fasemargin, forstærkningsmargin samt vektormargin
 
