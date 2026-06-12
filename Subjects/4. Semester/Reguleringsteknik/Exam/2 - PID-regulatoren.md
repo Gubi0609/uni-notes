@@ -107,6 +107,15 @@ where $e_s$ is zero when the system is not saturated.
 Evidence of improved performance
 ![[Pasted image 20260612142904.png]]
 
+## Conditional Integration
+This is also known as _clamping_. It is a bit simpler than back-calculation, and just stops integrating when the system is in saturation
+![[Pasted image 20260320090037.png]]
+
+Although it is simple, it still improves the performance of the system
+![[Pasted image 20260320090103.png]]
+
+**It is beneficial to use conditional integration in 9/10 cases, as it is simple, yet effective**
+
 # Referencefølge og stationær fejl
 
 The DC gain of the closed loop system is given by the _Final Value Theorem_ ([[Subjects/4. Semester/Reguleringsteknik/Topics/Steady State Tracking|Steady State Tracking]])
