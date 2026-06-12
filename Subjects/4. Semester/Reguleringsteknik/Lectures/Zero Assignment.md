@@ -9,3 +9,11 @@ with $A_{za}=A+BF+LC$ and $C_{za}=-F$, then the numbers $z_1,...,z_n$ are all ze
 where
 ## $$A_{CL}=\left[\begin{array}& A & BF \\ -LC & A+BF+LC\end{array}\right], \quad \tilde B_{CL}=\left[\begin{array}& B \\ \tilde M\end{array}\right]$$
 3. Compute $M=MN^{-1}N=\tilde MN$.
+
+> [!example]-
+> ![[Pasted image 20260611162955.png]]
+> ![[Pasted image 20260611163001.png]]
+> ![[Pasted image 20260611163006.png]]
+> ![[Pasted image 20260611163017.png]]
+> ![[Pasted image 20260611163023.png]]
+
