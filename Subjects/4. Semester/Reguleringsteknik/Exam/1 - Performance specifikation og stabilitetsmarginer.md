@@ -22,7 +22,14 @@
 # Stabilitet
 ![[Pasted image 20260612094450.png]]
 
+![[Pasted image 20260612094645.png]]
+
+![[Pasted image 20260612094730.png]]
+
+![[Pasted image 20260612094755.png]]
 # Relation mellem polplacering og system dynamik
+![[Pasted image 20260612094450.png]]
+![[Pasted image 20260612094606.png]]
 
 # Ændring af dynamik ved indsættelse af pol eller nulpunkt
 
