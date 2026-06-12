@@ -21,9 +21,9 @@
 [[Lecture 11 - Peer Assessment.pdf]]
 
 # Topics
-[[Subjects/4. Semester/Reguleringsteknik/Lectures/Integral Control|Integral Control]]
+[[Integral Control 1|Integral Control 1]]
 [[Optimal Control - Anti Windup]]
-[[Subjects/4. Semester/Reguleringsteknik/Lectures/Optimal Control|Optimal Control]]
+[[Subjects/4. Semester/Reguleringsteknik/Topics/Optimal Control|Optimal Control]]
 [[Introducing Reference Signals]]
 [[Zero Assignment]]
 

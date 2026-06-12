@@ -1,4 +1,4 @@
-Anti windup is a **MUST** when working with [[Subjects/4. Semester/Reguleringsteknik/Lectures/Integral Control|Integral Control]] as accumulation over time can lead to unwanted behavior. Anti windup introduces a saturation point, where the data cannot accumulate anymore.
+Anti windup is a **MUST** when working with [[Integral Control 1|Integral Control 1]] as accumulation over time can lead to unwanted behavior. Anti windup introduces a saturation point, where the data cannot accumulate anymore.
 ![[Pasted image 20260611154131.png]]
 
 This is seen by the anti windup blocks on the black and orange entry points (so from $F\hat x$).
