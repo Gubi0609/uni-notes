@@ -41,6 +41,8 @@ Formler for overshoot, settling time, peak time og så videre.
 ![[Pasted image 20260612094450.png]]
 ![[Pasted image 20260612094606.png]]
 
+3 dampning cases (det står i dine noter for lecture 2)
 # Ændring af dynamik ved indsættelse af pol eller nulpunkt
+
 
 # Betydning og bestemmelse af fasemargin, forstærkningsmargin samt vektormargin
