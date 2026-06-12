@@ -28,7 +28,15 @@
 
 ![[Pasted image 20260612094755.png]]
 
-Poler af transfer function $G(s)$ i stedet for kun state space model
+Poler af transfer function $G(s)$ i stedet for kun state space model.
+
+When a system is asymptotically stable, it returns to equilibrium
+
+Marginally stable means the system has a bounded but non-decaying oscillation
+
+Unstable means that the controller isn't controlling properly.
+
+Formler for overshoot, settling time, peak time og så videre.
 # Relation mellem polplacering og system dynamik
 ![[Pasted image 20260612094450.png]]
 ![[Pasted image 20260612094606.png]]
