@@ -136,3 +136,22 @@ Referencefølge simply means: **how well does the system output y(t) follow the 
 In a closed-loop system, the goal is that y tracks r as closely as possible. The measure of how well it does so is the **steady-state error**:
 ## $$e_{ss}=\lim_{⁡t\rightarrow\infty}(r(t)-y(t))$$
 If $e_{ss} = 0$, the system tracks the reference perfectly in steady state. If $e_{ss} \neq 0$, there is a permanent offset between what you asked for and what you got.
+
+A higher order system has better reference follow
+![[Pasted image 20260612145606.png]]
+
+If 0, the steady state error is 0, if $\infty$ the steady state error grows without bound. The finite numbers mean, that there is a steady state error of that size.
+The system type references how many integrator terms there are in the controller. So a P/PD controller would be type 0, PI/PID controller would be type 1, and a PID + PID controller combination would be type 2
+
+#### What this means practically:
+
+**Type 0** — no integrators in the loop. A pure P-controller with a plant that has no integrator. Can never track a step perfectly (there is always a residual error $\frac{1}{1+K_p}$), and completely fails on ramps.
+
+**Type 1** — one integrator in the loop. This is what you get with a PI or PID controller, or a plant that already contains an integrator (e.g. a motor where you control velocity by commanding acceleration). Tracks step references perfectly ($e_{ss} = 0$), has a finite error on ramps.
+
+**Type 2** — two integrators. Tracks both steps and ramps perfectly, finite error on parabolic references. Rare in practice as it is harder to stabilise.
+
+**Adding an integrator to the controller raises the system type by one**. A Type 0 plant with a PI controller becomes a Type 1 system, which now tracks step references with zero steady-state error. This is the formal justification for why integral action eliminates steady-state error
+
+#### The constants $K_p$​,$K_Kv​, KaK_a Ka​
+These are called position, velocity and acceleration error constants respectively. They are properties of the open-loop transfer function evaluated at specific limits, and they set the size of the residual error when the system cannot track perfectly.
