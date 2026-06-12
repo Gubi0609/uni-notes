@@ -50,6 +50,6 @@ This is the formal justification for why stability is determined by the eigenval
 ![[Pasted image 20260612100737.png]]
 ![[Pasted image 20260612100750.png]]
 
-
+Zeros is the numerator of $G(s)$, poles are the denominator
 
 # Betydning og bestemmelse af fasemargin, forstærkningsmargin samt vektormargin
