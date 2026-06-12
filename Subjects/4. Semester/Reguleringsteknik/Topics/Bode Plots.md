@@ -1,3 +1,4 @@
+
 > [!help] Summary
 > 1. Rewrite the considered transfer function into Bode form.
 > 2. Determine the value of the $K_0(j\omega)^n$ term. Plot the low frequency magnitude asymptote through the point $K_0$ at $\omega = 1$ and with slope of $n\times$ 20/db per decade.
