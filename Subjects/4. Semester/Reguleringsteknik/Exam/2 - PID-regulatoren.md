@@ -25,7 +25,16 @@
 
 # Regulatorens virkemåde (PID)
 Has three terms,P, I, D
-## $$u(t)=K_pe(t)+\int_0^$$
+## $$u(t)=K_pe(t)+K_i\int_{t_0}^{t_0}e(\tau)\, d\tau+K_d\frac {de(t)}{dt}\rightarrow K(s)=K_p\left(1+\frac 1 {sT_i}+sT_d\right)$$
+where $K_p$ is the proportional gain, $K_i$ is the integral gain, $K_d$ is the derivative gain.
+If we instead want it in the frequency domain, we still use the proportional gain, but now with the integral time constant (how far to look _back_) and the derivative time constant (how far to look _forward_).
+
+
+It can also be implemented with noise reduction on the derivative term
+## $$T_{ue}(s)=K_p\left(N-\frac N {1+sT_d/N}\right)=K_p\frac {sT_d}{1+sT_d/N}$$
+![[Pasted image 20260610150811.png]]
+
+This is done, as noise will massively affect the 
 
 # Stabilitet
 
