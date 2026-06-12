@@ -52,4 +52,8 @@ This is the formal justification for why stability is determined by the eigenval
 
 Zeros is the numerator of $G(s)$, poles are the denominator
 
+combining multiple systems through multiplying (cascade implementation of higher order systems) combines their individual bode plots.
+
+Zeros in the right half plane give **rise to non-minimum phase behavior*
+
 # Betydning og bestemmelse af fasemargin, forstærkningsmargin samt vektormargin
