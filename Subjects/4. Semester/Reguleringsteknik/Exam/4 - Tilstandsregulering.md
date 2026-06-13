@@ -121,6 +121,28 @@ Where the red part is the **observer** and the yellow part is a **copy of the sy
 Everything that is not black is part of the controller.
 
 # Design af observere
+![[Pasted image 20260417083030.png]]
 
+If the solution for observability is along the lines of $x_1=x_2$ we have a _zero-space_, where the two states _needs_ to be equal to each other, so we cannot really change and observe the system.
+
+Just like we have a controlability matrix, we also have an **observability matrix** $\mathcal O$.
+
+![[Pasted image 20260417085014.png]]
+> [!help] System:
+> $$\dot x = Ax + Bu$$
+> $$y = Cx$$
+
+> [!help] Observer:
+> $$\dot{\hat x} = A\hat x + B u + L(C\hat x - y)$$
+> $$ y = C\hat x$$
+
+**Notice, that _IDEALLY_ the A, B, and C matrices are the same for System and Observer. In reality, there may be a small error on the system, that thus requires adjusting of the matrices**
+
+The error $e$ is
+$$e=\hat x - x$$
+Combining the equations, we get the equation for change in error
+![[Pasted image 20260417092154.png]]
+
+We notice, that both the output $y$ and input $u$ are not included in this expression. We already _know_ $u$, since that is the input, we input to the system ourself. (notice, that this is open loop. If we add something like state feedback, it would be closed loop, and the input $u$ would be known from our feedback controller)
 
 # Referencefølge
