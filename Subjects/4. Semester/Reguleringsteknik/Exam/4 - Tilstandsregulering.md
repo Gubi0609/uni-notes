@@ -158,6 +158,7 @@ Where the red part is the **observer** and the yellow part is a **copy of the sy
 Everything that is not black is part of the controller.
 
 
+## Feedforward approach - UNSTABLE IF NOT PERFECT SYSTEM
 Taking the block diagram
 ![[Pasted image 20260611161131.png]]
 
