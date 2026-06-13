@@ -50,7 +50,12 @@ Zeroes for continuous
 Stability
 ![[Pasted image 20260613121039.png]]
 
-Since the continuous system is in the $s$-plane, the eigenvalues correspond to the $s$-pla
+Since the continuous system is in the $s$-plane, the eigenvalues correspond to the $s$-plane poles. Thus they need to have  a negative real part to be stable
+
+The discrete time system is in the $z$-plane, thus the eigenvalues correspond to the $z$-plane poles. This means, that the eigenvalues' magnitude will need to be less than one, for them to lie within the unit circle
+![[Pasted image 20260613121214.png]]
+
+We just stick to $s$-plane (continuous time) for ease.
 
 # Tilstandstilbagekobling
 
