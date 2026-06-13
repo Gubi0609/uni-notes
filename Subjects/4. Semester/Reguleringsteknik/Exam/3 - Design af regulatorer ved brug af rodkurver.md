@@ -10,7 +10,7 @@
 - System performance
 	- Specifikation af rise time, dæmpning osv. via polplacering på rodkurven
 [[L2 - Stability and Performance Analysis]]
-- Relation mellem polplaceringog dynamik
+- Relation mellem polplacering og dynamik
 - Performance specifikation
 [[L8 - Implementation]]
 - Effekten af at tilføje poler/nulpunkter på rodkurven
