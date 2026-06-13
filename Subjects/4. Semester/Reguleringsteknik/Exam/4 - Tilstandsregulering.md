@@ -43,10 +43,6 @@ Uses state space model
 Poles of continuous
 ![[Pasted image 20260613120936.png]]
 
-Zeroes for continuous
-![[Pasted image 20260613120951.png]]
-
-
 Stability
 ![[Pasted image 20260613121039.png]]
 
@@ -71,7 +67,9 @@ Combining these equations, we obtain
 ## $$\dot x=Ax+BFx=(A+BF)x$$
 Thus, the result of a state feedback is a system with a modified system matrix, and thus with _modified poles_.
 
+substituting into the state equation gives x˙=(A+BF)x\dot{x} = (A + BF)x x˙=(A+BF)x, so the closed-loop poles are the eigenvalues of A+BFA + BF A+BF, and you choose F to place those eigenvalues where you want them.
 
+![[Pasted image 20260611105415.png]]
 ## $$s_3 = \left[\begin{array}& 0 & 0 & 1\end{array}\right]\mathcal C^{-1},\quad s_2=s_3A, \quad s_1=s_2A$$
 ## $$\mathcal{C} = \left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]$$
 An either continuous or discrete time system is controllable **iff**
