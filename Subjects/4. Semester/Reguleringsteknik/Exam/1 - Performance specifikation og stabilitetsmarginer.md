@@ -44,8 +44,10 @@ This is the formal justification for why stability is determined by the eigenval
 # Relation mellem polplacering og system dynamik
 ![[Pasted image 20260612094450.png]]
 ![[Pasted image 20260612094606.png]]
-
-3 dampning cases (det står i dine noter for lecture 2)
+## $$a=-\zeta\omega_n\pm\omega_n\sqrt{\zeta^2-1}$$
+- If $0<\zeta<1$ the poles of $H(s)$ are complex **(Underdamped case)**
+- If $\zeta=1$ then $H(s)$ has a double pole in $s=-\zeta\omega_n$ **(Critically damped case)**
+- if $\zeta>1$ then the poles of $H(s)$ are real and distinct **(Overdamped case)**
 # Ændring af dynamik ved indsættelse af pol eller nulpunkt
 ![[Pasted image 20260612100737.png]]
 ![[Pasted image 20260612100750.png]]
