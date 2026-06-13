@@ -36,9 +36,26 @@
 - Kalman filter som stokastisk observer
 
 # Stabilitet
+Uses state space model
+![[Pasted image 20260206085202.png]]
+![[Pasted image 20260206085226.png]]
+
+Poles of continuous
+![[Pasted image 20260613120936.png]]
+
+Zeroes for continuous
+![[Pasted image 20260613120951.png]]
+
+
+Stability
+![[Pasted image 20260613121039.png]]
+
+Since the continuous system is in the $s$-plane, the eigenvalues correspond to the $s$-pla
 
 # Tilstandstilbagekobling
 
+
 # Design af observere
+
 
 # Referencefølge
