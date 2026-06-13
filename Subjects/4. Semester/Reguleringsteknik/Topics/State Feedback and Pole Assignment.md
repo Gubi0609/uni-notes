@@ -15,7 +15,7 @@ Combining these equations, we obtain
 ## $$\dot x=Ax+BFx=(A+BF)x$$
 Thus, the result of a state feedback is a system with a modified system matrix, and thus with _modified poles_.
 
-For a _single input_ system in [[Subjects/4. Semester/Reguleringsteknik/Topics/Controllable Canonical Form#Transformation to Controllable Canonical Form|Companion form]], a state feedback takes a particular simple form
+For a _single input_ system in [[Subjects/4. Semester/Reguleringsteknik/Topics/Controllable Canonical Form#Transformation to Controllable Canonical Form|Controllable Canonical Form]], a state feedback takes a particular simple form
 ![[Pasted image 20260611120042.png]]
 
 Applying the feedback $u=Fx$ with
