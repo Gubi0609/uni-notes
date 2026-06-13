@@ -67,7 +67,7 @@ Combining these equations, we obtain
 ## $$\dot x=Ax+BFx=(A+BF)x$$
 Thus, the result of a state feedback is a system with a modified system matrix, and thus with _modified poles_.
 
-substituting into the state equation gives x˙=(A+BF)x\dot{x} = (A + BF)x x˙=(A+BF)x, so the closed-loop poles are the eigenvalues of A+BFA + BF A+BF, and you choose F to place those eigenvalues where you want them.
+substituting into the state equation gives $\dot{x} = (A + BF)x$, so the closed-loop poles are the eigenvalues of $A + BF$, and you choose F to place those eigenvalues where you want them.
 
 ![[Pasted image 20260611105415.png]]
 ## $$s_3 = \left[\begin{array}& 0 & 0 & 1\end{array}\right]\mathcal C^{-1},\quad s_2=s_3A, \quad s_1=s_2A$$
@@ -107,7 +107,13 @@ We notice, that both the output $y$ and input $u$ are not included in this expre
 If the eigenvalues of the matrix $A+LC$ are 0, then the error $e$ converges towards 0.
 
 
-Much like for _state feedback_ the **observer poles** can be designed by defining the desired poles, and then finding the eigenvalues, thus deciding the gains of $L$ to allow for these poles
+Much like for _state feedback_ the **observer poles** can be designed by defining the desired poles, and then finding the eigenvalues, thus deciding the gains of $L$ to allow for these poles'
+
+## The Separation Principle
+![[Pasted image 20260417092244.png]]
+![[Pasted image 20260417092249.png]]
+
+Meaning that $F$ and $L$ can be designed _separately_.
 # Referencefølge
 
 If an integral term is needed on the state feeedback, this can also be done through integral feedback
