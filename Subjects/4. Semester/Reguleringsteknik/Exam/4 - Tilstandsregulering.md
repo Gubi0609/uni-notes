@@ -167,4 +167,5 @@ with the **observer**
 
 Written out in full, this becomes
 ## $$\left[\begin{array}& \dot x \\ \dot{\hat x} \end{array}\right] = \left[\begin{array}& A & BF \\ -LC & A+BF+LC \end{array}\right]\left[\begin{array}&  x \\ {\hat x} \end{array}\right]+\left[\begin{array}& BN \\ M \end{array}\right]r$$ $$y = \left[\begin{array}& C & 0 \end{array}\right]\left[\begin{array}& x \\ {\hat x} \end{array}\right]$$
+
 ## $$\left\{\begin{array}& \det\left(\left[\begin{array}& A-zI & B \\ C & 0\end{array} \right]\right)=0 \quad \text{or} \\ \det\left(A+BF+LC\tilde MF-zI \right)=0\end{array}\right.$$
