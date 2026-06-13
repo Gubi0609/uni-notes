@@ -59,6 +59,25 @@ We just stick to $s$-plane (continuous time) for ease.
 
 # Tilstandstilbagekobling
 
+Used to directly control the _states_ of the system by reading them and affecting them accordingly with 
+
+![[Pasted image 20260613122906.png]]
+
+For a state space model
+## $$\dot x=Ax+Bu$$
+a _state feedback_ is a feedback of the form
+## $$u=Fx$$
+Combining these equations, we obtain
+## $$\dot x=Ax+BFx=(A+BF)x$$
+Thus, the result of a state feedback is a system with a modified system matrix, and thus with _modified poles_.
+
+
+## $$s_3 = \left[\begin{array}& 0 & 0 & 1\end{array}\right]\mathcal C^{-1},\quad s_2=s_3A, \quad s_1=s_2A$$
+## $$\mathcal{C} = \left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]$$
+An either continuous or discrete time system is controllable **iff**
+## $$\text{rank}\left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]=n$$
+or if the number of inputs $m=1$, this reduces to
+## $$\det\left(\left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]\right)\neq 0$$
 
 # Design af observere
 
