@@ -45,9 +45,9 @@ Both the P-control and the PD-control has a closed-loop pole at $s = -2$. Thus, 
 
 
 # Stabilitet
-- $\sigma < 0$: System is **stable**, since poles are in the _left half plane_
+- $\sigma > 0$: System is **stable**, since poles are in the _left half plane_
 - $\sigma=0$: System is **marginally stable**, since poles are _on the imaginary axis_. This introduces **sustained oscillation**
-- $\sigma>0$: System is **unstable**, since poles are in the _right half plane_
+- $\sigma<0$: System is **unstable**, since poles are in the _right half plane_
 
 **K determines where on the root locus the poles sit**. As K increases from 0 to ∞, poles travel along the branches. Some branches will cross the imaginary axis at some critical gain $K_{critical}$ ​ — below this gain the system is stable, above it the system is unstable (or vice versa depending on the plant). This $K_{critical}$ ties in to the _gain margin_.
 
