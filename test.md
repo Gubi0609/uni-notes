@@ -4,3 +4,5 @@
 
 ## $$\left|\begin{array}& A-zI & B \\ C & D\end{array}\right|=0$$
 ## $$\text{zero}\rightarrow -\infty \Rightarrow M_p\rightarrow 0$$
+
+## $$\angle L(j\omega)>180^\circ$$
