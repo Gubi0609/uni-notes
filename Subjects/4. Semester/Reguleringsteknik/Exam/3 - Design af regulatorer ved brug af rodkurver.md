@@ -18,8 +18,11 @@
 
 # Betydning af rodkurve
 
+
 # Anvendelse af rodkurve
 
+
 # Stabilitet
+
 
 # System performance
