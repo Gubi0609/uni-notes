@@ -143,6 +143,8 @@ A higher order system has better reference follow
 If 0, the steady state error is 0, if $\infty$ the steady state error grows without bound. The finite numbers mean, that there is a steady state error of that size.
 The system type references how many integrator terms there are in the controller. So a P/PD controller would be type 0, PI/PID controller would be type 1, and a PID + PID controller combination would be type 2
 
+**Can also be seen from poles in origo, as $1/s$ is the integrator, and has a pole in origo.**
+
 #### What this means practically:
 
 **Type 0** — no integrators in the loop. A pure P-controller with a plant that has no integrator. Can never track a step perfectly (there is always a residual error $\frac{1}{1+K_p}$), and completely fails on ramps.
