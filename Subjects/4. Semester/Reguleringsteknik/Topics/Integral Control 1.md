@@ -8,7 +8,7 @@ Differentiating this yields
 ## $$\dot x_I(t)=y(t)-r(t)$$
 where $y$ is the output and $r$ is the reference
 We now have the equations
-## $$\dot x=Ax+By$$ $$\dot x_I=y-r$$ $$y=Cx$$
+## $$\dot x=Ax+Bu$$ $$\dot x_I=y-r$$ $$y=Cx$$
 
 Can then be combined into an extended state model
 ## $$\left[\begin{array}& \dot x \\ \dot x_I\end{array}\right]=\left[\begin{array}& A & 0 \\ C & 0\end{array}\right]\left[\begin{array}& x \\ x_I\end{array}\right] + \left[\begin{array}& B \\ 0\end{array}\right]u+ \left[\begin{array}& 0 \\ -I\end{array}\right]r$$ $$y=\left[\begin{array}& C & 0\end{array}\right] \left[\begin{array}& x \\ x_I\end{array}\right]$$

@@ -1,3 +1,4 @@
+
 > [!help] Algorithm for Pole Assignment
 > 1. Choose desired closed loop polynomial $$\det(\lambda I-(A+BF))=\lambda^n-a_{CL,1}\lambda^{n-1}-...-a_{CL,n}$$
 > 2. Determine $T$ such that $A_c=T^{-1}AT$ and $B_c=T^{-1}B$ are in controllable canonical form.
