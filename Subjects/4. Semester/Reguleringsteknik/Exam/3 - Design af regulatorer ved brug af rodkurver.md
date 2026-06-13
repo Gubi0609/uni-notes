@@ -17,7 +17,14 @@
 
 
 # Betydning af rodkurve
+The root locus method is used for describing how the poles of $G(s)$ move around in the
+$s$-plane, when the parameter $K$ changes.
 
+Useful when we have a _system model_ $G(s)$
+
+![[Pasted image 20260613110156.png]]
+
+By seeing how the poles move, we can determine if our controller should add extra polesor zeros (or both). This is done 
 
 # Anvendelse af rodkurve
 
