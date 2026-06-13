@@ -25,8 +25,9 @@
 
 # Regulatorens virkemåde (PID)
 Has three terms,P, I, D
-## $$u(t)=K_pe(t)+K_i\int_{t_0}^{t}e(\tau)\, d\tau+K_d\frac {de(t)}{dt}\rightarrow K(s)=K_p\left(1+\frac 1 {sT_i}+sT_d\right)$$
-where $K_p$ is the proportional gain, $K_i$ is the integral gain, $K_d$ is the derivative gain.
+## $$u(t)=K_pe(t)+K_i\int_{t_0}^{t}e(\tau)\, d\tau+K_d\frac {de(t)}{dt}\rightarrow K(s)=K_pe\left(1+\frac 1 {sT_i}+sT_d\right)$$
+where $K_p$ is the proportional gain, $K_i$ is the integral gain, $K_d$
+is the derivative gain.
 If we instead want it in the frequency domain, we still use the proportional gain, but now with the integral time constant (how far to look _back_) and the derivative time constant (how far to look _forward_).
 
 ![[Pasted image 20260610151258.png]]
