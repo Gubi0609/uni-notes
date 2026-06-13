@@ -78,8 +78,41 @@ An either continuous or discrete time system is controllable **iff**
 ## $$\text{rank}\left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]=n$$
 or if the number of inputs $m=1$, this reduces to
 ## $$\det\left(\left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]\right)\neq 0$$
-## Integral Feedback
-If an integral term is needed, this can also be done through integral feedback
+
+# Design af observere
+![[Pasted image 20260417083030.png]]
+
+If the solution for observability is along the lines of $x_1=x_2$ we have a _zero-space_, where the two states _needs_ to be equal to each other, so we cannot really change and observe the system.
+
+Just like we have a controlability matrix, we also have an **observability matrix** $\mathcal O$.
+
+![[Pasted image 20260417085014.png]]
+> [!help] System:
+> $$\dot x = Ax + Bu$$
+> $$y = Cx$$
+
+> [!help] Observer:
+> $$\dot{\hat x} = A\hat x + B u + L(C\hat x - y)$$
+> $$ y = C\hat x$$
+
+**Notice, that _IDEALLY_ the A, B, and C matrices are the same for System and Observer. In reality, there may be a small error on the system, that thus requires adjusting of the matrices**
+
+The error $e$ is
+$$e=\hat x - x$$
+Combining the equations, we get the equation for change in error
+![[Pasted image 20260417092154.png]]
+
+We notice, that both the output $y$ and input $u$ are not included in this expression. We already _know_ $u$, since that is the input, we input to the system ourself. (notice, that this is open loop. If we add something like state feedback, it would be closed loop, and the input $u$ would be known from our feedback controller)
+
+![[Pasted image 20260417085834.png]]
+
+If the eigenvalues of the matrix $A+LC$ are 0, then the error $e$ converges towards 0.
+
+
+Much like for _state feedback_ the **observer poles** can be designed by defining the desired poles, and then finding the eigenvalues, thus deciding the gains of $L$ to allow for these poles
+# Referencefølge
+
+If an integral term is needed on the state feeedback, this can also be done through integral feedback
 
 Considering a state space system of the form
 ## $$\dot x=Ax+Bu$$ $$y=Cx$$
@@ -120,29 +153,18 @@ The block diagram is now
 Where the red part is the **observer** and the yellow part is a **copy of the system** (seen in black) also known as the _state estimate_.
 Everything that is not black is part of the controller.
 
-# Design af observere
-![[Pasted image 20260417083030.png]]
 
-If the solution for observability is along the lines of $x_1=x_2$ we have a _zero-space_, where the two states _needs_ to be equal to each other, so we cannot really change and observe the system.
+Taking the block diagram
+![[Pasted image 20260611161131.png]]
 
-Just like we have a controlability matrix, we also have an **observability matrix** $\mathcal O$.
+And adding a Reference Signal $N$ and $M$
+![[Pasted image 20260611161152.png]]
 
-![[Pasted image 20260417085014.png]]
-> [!help] System:
-> $$\dot x = Ax + Bu$$
-> $$y = Cx$$
+Gets the following system
+## $$\dot x=Ax+B(F\hat x+Nr)$$ $$y=Cx$$
+with the **observer**
+## $$\dot {\hat x}=A\hat x+BF\hat x+L(C\hat x-y)+Mr$$
 
-> [!help] Observer:
-> $$\dot{\hat x} = A\hat x + B u + L(C\hat x - y)$$
-> $$ y = C\hat x$$
-
-**Notice, that _IDEALLY_ the A, B, and C matrices are the same for System and Observer. In reality, there may be a small error on the system, that thus requires adjusting of the matrices**
-
-The error $e$ is
-$$e=\hat x - x$$
-Combining the equations, we get the equation for change in error
-![[Pasted image 20260417092154.png]]
-
-We notice, that both the output $y$ and input $u$ are not included in this expression. We already _know_ $u$, since that is the input, we input to the system ourself. (notice, that this is open loop. If we add something like state feedback, it would be closed loop, and the input $u$ would be known from our feedback controller)
-
-# Referencefølge
+Written out in full, this becomes
+## $$\left[\begin{array}& \dot x \\ \dot{\hat x} \end{array}\right] = \left[\begin{array}& A & BF \\ -LC & A+BF+LC \end{array}\right]\left[\begin{array}&  x \\ {\hat x} \end{array}\right]+\left[\begin{array}& BN \\ M \end{array}\right]r$$ $$y = \left[\begin{array}& C & 0 \end{array}\right]\left[\begin{array}& x \\ {\hat x} \end{array}\right]$$
+## $$\left\{\begin{array}& \det\left(\left[\begin{array}& A-zI & B \\ C & 0\end{array} \right]\right)=0 \quad \text{or} \\ \det\left(A+BF+LC\tilde MF-zI \right)=0\end{array}\right.$$
