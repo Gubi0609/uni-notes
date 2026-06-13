@@ -60,6 +60,7 @@ By using the Zeigler-Nichols tuning method, a closed loop system is obtained tha
 ![[Pasted image 20260610153038.png]]
 ![[Pasted image 20260610153139.png]]
 
+Where $R=A/\tau$.
 ## Zeigler-Nichols tuning - The Ultimate Sensitivity method
 An alternative to studying the step response is to connect a P-controller to the system, and increase the gain $K_p$ until the output oscillates.
 ![[Pasted image 20260610153549.png]]
