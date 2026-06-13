@@ -36,7 +36,12 @@ As can be seen from this step response
 
 the output moves closer to the reference value by adding a $D$-term (which adds a zero).
 Both the P-control and the PD-control has a closed-loop pole at $s = -2$. Thus, it is not only the closed loop poles, that describe the behavior of the system.
+
 # Anvendelse af rodkurve
+![[Pasted image 20260613111058.png]]
+![[Pasted image 20260613111105.png]]
+![[Pasted image 20260613111111.png]]
+
 
 
 # Stabilitet
