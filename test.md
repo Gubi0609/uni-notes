@@ -6,4 +6,4 @@
 ## $$\text{zero}\rightarrow -\infty \Rightarrow M_p\rightarrow 0$$
 
 ## $$\angle L(j\omega)>180^\circ$$
-## $$ \frac {y(s)}{r(s)}=\frac {G(s)K(s)}{1+G(s)K(s)}\rightarrow \text{pole} \Righ$$
+## $$ \frac {y(s)}{r(s)}=\frac {G(s)K(s)}{1+G(s)K(s)}\rightarrow \text{pole} \Rightarrow 1+G(s)K(s)=1+L(s)=0$$
