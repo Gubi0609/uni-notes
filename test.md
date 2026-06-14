@@ -13,3 +13,10 @@
 ## $$\mathcal{C} = \left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]$$
 ## $$\det\left(\mathcal C\right)\neq 0$$
 ## $$\text{rank}(\mathcal C)=n$$
+
+## $$\mathcal O= \left[\begin{array}& C \\ CA \\ ... \\ CA^{n-1}\end{array}\right]$$
+## $$\det\left(\mathcal O\right)\neq 0$$
+## $$\text{rank}(\mathcal O)=n$$
+
+## $$\dot{\hat x} = A\hat x + B u + L(C\hat x - y)$$
+## $$ y = C\hat x$$
