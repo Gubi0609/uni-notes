@@ -10,3 +10,6 @@
 
 ## $$T(s)=K(s)\cdot G(s)=(s+3)\cdot \frac 1 {s^2 - s - 1}=\frac {s+3}{s^2-s-1}$$
 
+## $$\mathcal{C} = \left[\begin{array}[cccc] & B & AB & ... & A^{n-1}B\end{array}\right]$$
+## $$\det\left(\mathcal C\right)\neq 0$$
+## $$\text{rank}(\mathcal C)=n$$
