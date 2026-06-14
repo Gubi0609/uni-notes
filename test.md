@@ -20,3 +20,8 @@
 
 ## $$\dot{\hat x} = A\hat x + B u + L(C\hat x - y)$$
 ## $$ y = C\hat x$$
+
+## $$ u=Fx$$
+## $$\dot x=Ax+BF\hat x=(A+BF)x+BFe$$
+## $$\dot e=(A+LC)e$$
+## $$\left

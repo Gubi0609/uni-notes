@@ -104,7 +104,7 @@ We notice, that both the output $y$ and input $u$ are not included in this expre
 
 ![[Pasted image 20260417085834.png]]
 
-If the eigenvalues of the matrix $A+LC$ are 0, then the error $e$ converges towards 0.
+If the eigenvalues of the matrix $A+LC$ are less than 0, then the error $e$ converges towards 0.
 
 
 Much like for _state feedback_ the **observer poles** can be designed by defining the desired poles, and then finding the eigenvalues, thus deciding the gains of $L$ to allow for these poles'
