@@ -24,4 +24,4 @@
 ## $$ u=Fx$$
 ## $$\dot x=Ax+BF\hat x=(A+BF)x+BFe$$
 ## $$\dot e=(A+LC)e$$
-## $$\left
+## $$\left[\begin{array}&\dot x \\ \dot e \end{array}\right]= \left[\begin{array}&A + BF & BF \\ 0 & A+LC \end{array}\right]\left[\begin{array}&x \\ e \end{array}\right]$$
