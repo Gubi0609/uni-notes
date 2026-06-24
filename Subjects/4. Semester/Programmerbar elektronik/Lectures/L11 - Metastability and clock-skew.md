@@ -12,7 +12,8 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Programmerbar elektronik/PDFs/Lecture11.pdf|Lecture11]]
+[[Lab 11.pdf]]
 
 # Topics
 

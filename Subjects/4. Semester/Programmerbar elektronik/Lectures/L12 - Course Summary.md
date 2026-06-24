@@ -12,7 +12,7 @@
 
 ---
 # Relevant documents
-
+[[Subjects/4. Semester/Programmerbar elektronik/PDFs/Lecture12.pdf|Lecture12]]
 
 # Topics
 

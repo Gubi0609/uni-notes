@@ -12,6 +12,8 @@
 
 ---
 # Relevant documents
+[[Lecture 10.pdf]]
+[[Lab 10.pdf]]
 
 
 # Topics
