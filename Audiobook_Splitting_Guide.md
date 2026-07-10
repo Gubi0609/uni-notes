@@ -87,7 +87,7 @@ absolute_timestamp = merged_file_start + offset_within_merged
 
 Convert cover image to jpg if needed (avif, png, etc.):
 ```bash
-ffmpeg -i cover.avif cover.jpg
+dwebp -i cover.avif -o cover.jpg
 ```
 
 Create a tagging script:
