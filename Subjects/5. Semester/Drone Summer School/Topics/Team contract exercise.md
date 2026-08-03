@@ -11,11 +11,17 @@
 - How should the work be shared between the team members?
 	- **I think we should each clarify our areas of expertise/experience and try dividing the work using that. If there is something we all do not know, we will work together and learn that way**
 - Should the team select a team leader or not?
-	- **No. I think i
+	- **No. I think it works best if we all have the same rank and agree through democracy**
 - How should the team make decisions?
+	- **Agree on a solution and work through compromise/ideas until we all agree**
 - What should be the normal working hours for the team?
+	- **I think I already clarified that... 9-15**
 - What should a team member do if he does not show up one day (legal absence)?
+	- **Tell the other team members in the group chat. If mission critical work was to be done, the rest of the team  does it instead**
 - What are the consequences of a team member not performing his tasks?
+	- **Tell the rest of the team in advance if you have trouble with a task or if you suspect you will not meet the deadline (if such is set). The rest of the team will then help finish the task.**
+	- **If a member does not participate, the group will talk with one of the professors/instructors**
 - What are your concerns regarding the project?
+	- **I think ofcourse we should do our best to fulfill the rrequirements presented on the slides, but else it is primarily a learning experience and a chance to have fun.**
 - What are your expectations regarding communication withing the team (email, sms etc.)?
 - Are there any other topics which you think should be included in the contract?
