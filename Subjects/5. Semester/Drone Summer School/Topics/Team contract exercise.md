@@ -24,4 +24,32 @@
 - What are your concerns regarding the project?
 	- **I think ofcourse we should do our best to fulfill the rrequirements presented on the slides, but else it is primarily a learning experience and a chance to have fun.**
 - What are your expectations regarding communication withing the team (email, sms etc.)?
+	- **Signal group.**
 - Are there any other topics which you think should be included in the contract?
+	- **Usage of LLMs. What do we expect to use it on and how much. How much should it interfere/take over tasks? Does it interfere with the learning experience, and how big of a priority is it?**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
