@@ -1,0 +1,21 @@
+
+# Individual
+- What are your expectations for this project?
+	- **To get a flying drone and learn computer vision algorithms along with the usage/application of drone technology**
+- What is your level of ambition?
+	- **Don't need to ace anything, just want to have fun and learn new stuff along with exploring the field of drones**
+- How much time are you willing to invest in the project?
+	- **I am willing to invest the time cut out in the itsLearning schedule (9-15 basically). If the project needs it closer to the deadline, I am willing to invest hours outside of the schedule**
+- How much time do you expect the other team members to invest in the project?
+	- **I expect them to invest the time cut out in the schedule (9-15)**
+- How should the work be shared between the team members?
+	- **I think we should each clarify our areas of expertise/experience and try dividing the work using that. If there is something we all do not know, we will work together and learn that way**
+- Should the team select a team leader or not?
+	- **No. I think i
+- How should the team make decisions?
+- What should be the normal working hours for the team?
+- What should a team member do if he does not show up one day (legal absence)?
+- What are the consequences of a team member not performing his tasks?
+- What are your concerns regarding the project?
+- What are your expectations regarding communication withing the team (email, sms etc.)?
+- Are there any other topics which you think should be included in the contract?
