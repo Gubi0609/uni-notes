@@ -8,7 +8,7 @@
 > - Kompetencer
 
 ## Resources
-- Books / Links
+- [[Principles of Robot Motion Theory.pdf]]
 ## Lectures
 ``` dataview
 list
