@@ -20,7 +20,7 @@
 
 
 # Notes
-
+Mangler at oprette en ny node til exercise. Resten være pære-nemt
 
 ---
 #lecture 
