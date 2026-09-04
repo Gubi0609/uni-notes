@@ -35,8 +35,7 @@
 ![[Pasted image 20260904105058.png]]
 - a. Vi er ligeglad med sekvensen, så det er et kombinatorik problem. $n=140$, $r=5$, fejlen $k=10$
 $$C^n_r=\frac {P^n_r}{r!}=\frac {n!}{(n-r)!r!} = \frac {140!} {(140-5)!5!}=416965528$$
-- b.==We need to choose a sample so that exactly one of the five chips is nonconforming and the rest works. This means that we need to pick 1 chip of the 10 nonconforming chips and 4 chips of the 130 working chips. Using the rule of product theorem:==
-- $P(E_1\cap E_2)=P(E_1)\cdot P(E_2)$
+- b.Vi har nu to events, og vil tælle den uordnede kombination i hver. $E_1$ er de dårlige chips, vi har en sample size på 10, og tager 1 op hver gang. $E_2$ er de gode chips. Her har vi en sample size på 130, og tager 4 op hver gang. Vi kan gange de individuelle antal sammen.
 $$\frac {10!}{1!(10-1)!}\cdot \frac {130!} {4!(130-4)!}=113588800$$
 - c. 
 
