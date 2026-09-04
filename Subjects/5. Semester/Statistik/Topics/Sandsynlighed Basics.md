@@ -14,6 +14,7 @@ Event **E** (hændelse)
 
 # **Complementary** (komplimentær)
 - $E^\complement=s\textbackslash E$  (Det, der **IKKE** er en del af E)
+- Skrives også $E'$
 
 # **Disjoint events** (disjunkt)
 - $E_1\cap E_2=\emptyset=\{\}$ (Events som ikke kan opstå på samme tid) - **Ingen fællesmængde**
