@@ -72,10 +72,15 @@ Event **E** (hændelse)
 
 ## Betinget sandsynlighed
 - Events A og B
-	- $P(A|B)$ - **Sandsynlighed for A, når B er indtruffet**
+	- $P(A|B)$ - **Sandsynlighed for A, når B er indtruffet**, _A givet B_
 		- Defineret som $\frac {P(A\cap B)}{P(B)}$ 
+		- $P(A\cap B)=P(A|B)P(B)$ - **Sandsynligheden for at de begge er indtruffet**
 	- A: $T>20^\circ C$ tilfældig dag
-	- $B_1$
+	- $B_1$: Dag i januar
+	- $B_2$: Dag i august
+		- $P(A|B_1)<P(A)<P(A|B_8)$ - **Sandsynligheden for at det bliver over 20 grader er større i august end januar. Sandsynligheden er også større i august end sandsynligheden over hele året ($P(A)$)**
+		- Hvis B i stedet var ugedage (mandag, tirsdag, ...), ville B være irrelevant for at finde sandsynligheden for A. Det ville ikke fortælle os meget.
+	- 
 
 ---
 #lecture 
