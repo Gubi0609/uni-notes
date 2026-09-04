@@ -33,7 +33,9 @@
 - e. $A'\cap B' = 36$
 
 ![[Pasted image 20260904105058.png]]
-
+- a. Vi er ligeglad med sekvensen, så det er et kombinatorik problem. $n=140$, $r=5$, fejlen $k=10$
+$$C^n_r=\frac {P^n_r}{r!}=\frac {n!}{(n-r)!r!} = \frac {140!} {(140-5)!5!}=416965528$$
+- b.==We need to choose a sample so that exactly one of the five chips is nonconforming and the rest works. This means that we need to pick 1 chip of the 10 nonconforming chips and 4 chips of the 130 working chips. Using the rule of product theorem:==
 
 ---
 #lecture 
