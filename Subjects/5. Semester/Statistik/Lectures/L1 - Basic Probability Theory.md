@@ -146,6 +146,11 @@ $P(A|E_3)=0.1$
 
 - a.
 $$P(A)=\sum^n_{i=1}P(A|E_i)P(E_i)=0.95\cdot0.4+0.6\cdot0.35+0.1\cdot0.25=0.615$$
+- b.
+$$P(E_i|A)=\frac {P(A|E_i)P(E_i)} {P(A)}=\frac {P(A|E_i)P(E_i)}{\sum^n_{i=1}P(A|E_i)P(E_i)}$$
+$$P(E_1|A)=\frac {P(A|E_1)P(E_1)}{0.615}=\frac {0.95\cdot 0.4}{0.615}=0.617886179\approx0.618$$
+- c.
+$$P(E_1|A')=\frac {P(A'|E_1)P(E_1)}{0.615}=\frac {0.95\cdot 0.4}{0.615}=0.617886179\approx0.618$$
 
 
 
