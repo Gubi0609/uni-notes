@@ -63,6 +63,13 @@ Event **E** (hændelse)
 - **Komplementær hændelse:** $E^\complement = s\textbackslash E$
 	- $P(E^\complement)=1-P(E)$
 
+## Multiplikations regler
+- Må ==**KUN**==  ske, hvis $E_1$ og $E_2$ er _uafhængige_
+	- $P(E_1\cap E_2)=P(E_1)\cdot P(E_2)$
+	- Uafhængighed kan ikke bevises eller ses på data, men skal argumenteres (som f.eks. Hvad er sandsynligheden for at det bliver 15 grader i dag, og at min underviser har grønne sokker på?)
+		- Må ikke være i samme sample space, så anderledes fra Disjoint Events, da de er i samme sample space.
+		- Temperatur er ét sample space, og farve af sokker er et andet sample space.
+- 
 
 ---
 #lecture 
