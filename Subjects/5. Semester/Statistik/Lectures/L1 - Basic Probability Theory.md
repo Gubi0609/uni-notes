@@ -64,7 +64,11 @@ $$P(A'\cup B)=\frac {N_n(A'\cup B)}{n}=\frac {70+9+5} {70+16+9+5}=\frac {84}{100
 - a.
 $$P(A')=1-P(A)=0.7$$
 - b.
-- 
+$$P(A\cup B) = P(A) + P(B) - P(A \cap B)=0.3+0.2-0.1=0.4$$
+- c.
+$$P(A'\cap B)=P(B)-P(A\cap B)=0.2-0.1=0.1$$
+- d.
+$$P(A\cap B')=P(A)-P(A\cap B)=0.3-0.1$$
 
 
 ---
