@@ -38,15 +38,21 @@ Event **E** (hændelse)
 - $E^\complement=s\textbackslash E$  (Det, der **IKKE** er en del af E)
 
 **Disjoint events**
-- $E_1\cap E_2=\{\}$ (Events som ikke kan opstå på samme tid)
+- $E_1\cap E_2=\emptyset=\{\}$ (Events som ikke kan opstå på samme tid)
 
 
 ## Definition af sandsynlighed
 - Stokastisk eksperiment
 	- Udført $n$ gange
 	- Leder efter et event $E$
-		- Kunne være at kaste med en terning 100 gange ($n$) og se hvor mange gange man slår 6 $E$
-	- $N_n(E)
+		- Kunne være at kaste med en terning 100 gange ($n$) og se hvor mange gange man slår 6 ($E$)
+	- $N_n(E)=\text{antal gange ud af n hvor E indtræffer}$
+	- $P(e)=\lim_{n\rightarrow\infty}\frac {N_n(E)}n$ - **Sandsynligheden for at $E$ sker.**
+
+## Axiomer
+- $P(\emptyset)=0$ - **Sandsynligheden for at der ikke sker noget er $0$**
+- 
+
 
 ---
 #lecture 
