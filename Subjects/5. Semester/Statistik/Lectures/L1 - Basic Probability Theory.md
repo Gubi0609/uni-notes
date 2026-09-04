@@ -22,7 +22,13 @@
 [[Kombinatorik]]
 
 # Notes
+![[Pasted image 20260904104432.png]]
+![[Pasted image 20260904104413.png]]
 
+![[Pasted image 20260904104500.png]]
+- a. $A\cap B = 12 + 44 = 66$
+- b. $A' = 56+36 = 92$ 
+- c. $A\cup B
 
 ---
 #lecture 
