@@ -28,17 +28,17 @@ Event **E** (hændelse)
 - Kombination af udfald
 	- Enten udfald 1 eller 2: $E=a_1\vee a_2$
 
-**Union** (foreningsmængde)
+## **Union** (foreningsmængde)
 -  $E_1 \cup E_2$ (Det der er i den ene, den anden, eller dem begge to) - **Egentlig bare en `OR`**
 
-**Intersection** (fællesmængde)
+## **Intersection** (fællesmængde)
 - $E_1 \cap E_2$ (Det der er i det område, hvor $E_1$ og $E_2$  _overlapper_) - **En `AND` operation**
 
-**Complementary**
+## **Complementary**
 - $E^\complement=s\textbackslash E$  (Det, der **IKKE** er en del af E)
 
-**Disjoint events**
-- $E_1\cap E_2=\emptyset=\{\}$ (Events som ikke kan opstå på samme tid)
+## **Disjoint events**
+- $E_1\cap E_2=\emptyset=\{\}$ (Events som ikke kan opstå på samme tid) - **Ingen fællesmængde**
 
 
 ## Definition af sandsynlighed
@@ -49,9 +49,10 @@ Event **E** (hændelse)
 	- $N_n(E)=\text{antal gange ud af n hvor E indtræffer}$
 	- $P(e)=\lim_{n\rightarrow\infty}\frac {N_n(E)}n$ - **Sandsynligheden for at $E$ sker.**
 
-## Axiomer
-- $P(\emptyset)=0$ - **Sandsynligheden for at der ikke sker noget er $0$**
-- 
+## Aksiomer
+- $P(\emptyset)=0$ - **Sandsynligheden for at der ikke kommer et udfald er 0**
+- $P(S) = 1$ - **Sandsynligheden for at der sker noget, når man udfører et eksperiment er 1 (Der skal ALTID ske noget)**
+- $0\leq P(E) \leq 1$ - **Sandsynligheden for at noget sker ligger altid mellem 0 og 1**
 
 
 ---
