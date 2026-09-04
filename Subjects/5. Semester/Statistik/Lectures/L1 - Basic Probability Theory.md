@@ -96,9 +96,19 @@ $$P(A)=P(A|E_1)P(E_1) + P(A|E_2)P(E_2)+...+P(A|E_{12})P(E_{12})$$
 Hvilket kan generaliseres til $n$
 $$P(A)=P(A|E_1)P(E_1) + P(A|E_2)P(E_2)+...+P(A|E_{n})P(E_{n})=\sum^n_{i=1}P(A|E_i)P(E_i)$$
 ### Bayers formel
+Gælder altid.
 $$P(A|B)=\frac {P(A\cap B)}{P(B)}=\frac {P(B|A)P(A)} {P(B)}$$
-Kan også bruges til sæt
-$$P(E_i|A)=\frac {P(A|E_i)P(E_i)} {P(A)}=\frac {P(A|E_i)P(E_i)}{\sum^n_{i=1}}$$
+Kan også bruges til sæt ved brug af loven om [[#Total sandsynlighed|total sandsynlighed]]
+$$P(E_i|A)=\frac {P(A|E_i)P(E_i)} {P(A)}=\frac {P(A|E_i)P(E_i)}{\sum^n_{i=1}P(A|E_i)P(E_i)}$$
+
+
+## Combinatorics - Kombinatorik
+Tælleregler, der bruges ofte i sandsynligheds regning
+
+### Uordnet sekvenser - Permutation
+Der er $n$ objekter
+- Vi vil finde ud af hvor mange måder, man kan stille dem i forskellig rækkefølge
+- $P_n^n 
 
 
 ---
