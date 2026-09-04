@@ -87,7 +87,14 @@ $$P(A|B)P(B)=P(B|A)P(A)=P(A\cap B)$$
 ### Total sandsynlighed
 Skal have et disjunkt og komplet sæt af events
 - $E_1, E_2, ..., E_n$
-- $E_i\cap E_j = empt
+- $E_i\cap E_j = \emptyset$ - **Disjunkt**
+- $E_1 \cup E_2 \cup ... \cup E_n = S$ - **Komplet. Dækker hele sample space**
+- Kunne være alle måneder på året. De er disjunkte, da der ikke er nogen dag, der ligger i samme måned, og komplette, da de dækker hele året.
+
+Hvis vi har et event A igen, der er temperaturen, er sandsynligheden for en specifik temperatur
+$$P(A)=P(A|E_1)P(E_1) + P(A|E_2)P(E_2)+...+P(A|E_{12})P(E_{12})$$
+Hvilket kan generaliseres til $n$
+$$P(A)=P(A|E_1)P(E_1) + P(A|E_2)P(E_2)+...+P(A|E_{n})P(E_{n})=\sum^n_{i=1}P(A|E_i)P(E_i)$$
 
 
 ---
