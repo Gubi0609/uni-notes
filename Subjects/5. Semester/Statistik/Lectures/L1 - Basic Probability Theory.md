@@ -56,7 +56,9 @@ Event **E** (hændelse)
 - Disjoint events: $E_1\cap E_2=\emptyset\Rightarrow P(E_1\cup E_2)=P(E_1)+P(E_2)$ - **Hvis fællesmængden af $E_1$ og $E_2$ er tom, er sandsynligheden for, at enten $E_1$ eller $E_2$, sker er summen af deres individuelle sandsynlighed**
 
 ## Additions regler
-- Sandsynl
+- **Sandsynligheden for at enten $E_1$ eller $E_2$ indtræffer:** $P(E_1\cup E_2) = P(E_1) + P(E_2) - P(E_1 \cap E_2)$  (_Læg mærke til, at den for disjoint events også passer her, da $P(E_1 \cap E_2)$ da er 0)
+	- $P(A\cup B\cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A\cap C) - P(B\cap C) + P(A\cap B\cap C)$ - For flere events (_Vi lægger den samlede intersection til igen, da vi i minus-delen har trukket den fra for meget)_
+- **Disjoint set af events:** $E_1, E_2, ..., E_n (E_i \cap E_j) =\emptyset
 
 
 ---
