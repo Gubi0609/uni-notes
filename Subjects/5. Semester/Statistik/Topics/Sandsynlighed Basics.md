@@ -1,0 +1,49 @@
+Stokastisk eksperiment er et eksperiment med ukendt udfald
+- Har et udfaldsrum (Sample space **S**), som indeholder mængden af alle _mulige_ udfald
+	- S kan være diskret eller kontinuert
+
+Event **E** (hændelse)
+- Kombination af udfald
+	- Enten udfald 1 eller 2: $E=a_1\vee a_2$
+
+# **Union** (foreningsmængde)
+-  $E_1 \cup E_2$ (Det der er i den ene, den anden, eller dem begge to) - **Egentlig bare en `OR`**
+
+# **Intersection** (fællesmængde)
+- $E_1 \cap E_2$ (Det der er i det område, hvor $E_1$ og $E_2$  _overlapper_) - **En `AND` operation**
+
+# **Complementary** (komplimentær)
+- $E^\complement=s\textbackslash E$  (Det, der **IKKE** er en del af E)
+
+# **Disjoint events** (disjunkt)
+- $E_1\cap E_2=\emptyset=\{\}$ (Events som ikke kan opstå på samme tid) - **Ingen fællesmængde**
+
+
+# Definition af sandsynlighed
+- Stokastisk eksperiment
+	- Udført $n$ gange
+	- Leder efter et event $E$
+		- Kunne være at kaste med en terning 100 gange ($n$) og se hvor mange gange man slår 6 ($E$)
+	- $N_n(E)=\text{antal gange ud af n hvor E indtræffer}$
+	- $P(e)=\lim_{n\rightarrow\infty}\frac {N_n(E)}n$ - **Sandsynligheden for at $E$ sker.**
+
+# Aksiomer
+- $P(\emptyset)=0$ - **Sandsynligheden for at der ikke kommer et udfald er 0**
+- $P(S) = 1$ - **Sandsynligheden for at der sker noget, når man udfører et eksperiment er 1 (Der skal ALTID ske noget)**
+- $0\leq P(E) \leq 1$ - $P : E\subseteq S \rightarrow [0,1]$ - **Sandsynligheden for at noget sker ligger altid mellem 0 og 1**
+- Disjoint events: $E_1\cap E_2=\emptyset\Rightarrow P(E_1\cup E_2)=P(E_1)+P(E_2)$ - **Hvis fællesmængden af $E_1$ og $E_2$ er tom, er sandsynligheden for, at enten $E_1$ eller $E_2$, sker er summen af deres individuelle sandsynlighed**
+
+# Additions regler
+- **Sandsynligheden for at enten $E_1$ eller $E_2$ indtræffer:** $P(E_1\cup E_2) = P(E_1) + P(E_2) - P(E_1 \cap E_2)$  (_Læg mærke til, at den for disjoint events også passer her, da $P(E_1 \cap E_2)$ da er 0)
+	- $P(A\cup B\cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A\cap C) - P(B\cap C) + P(A\cap B\cap C)$ - For flere events (_Vi lægger den samlede intersection til igen, da vi i minus-delen har trukket den fra for meget)_
+- **Disjoint set af events:** $E_1, E_2, ..., E_n \quad (E_i \cap E_j =\emptyset)$ 
+	- $P(E_1\cup E_2\cup ... \cup E_n)=P(\cup^n_{i=1}E_i)$
+- **Komplementær hændelse:** $E^\complement = s\textbackslash E$
+	- $P(E^\complement)=1-P(E)$
+
+# Multiplikations regler
+- Må ==**KUN**==  ske, hvis $E_1$ og $E_2$ er _uafhængige_
+	- $P(E_1\cap E_2)=P(E_1)\cdot P(E_2)$
+	- Uafhængighed kan ikke bevises eller ses på data, men skal argumenteres (som f.eks. Hvad er sandsynligheden for at det bliver 15 grader i dag, og at min underviser har grønne sokker på?)
+		- Må ikke være i samme sample space, så anderledes fra Disjoint Events, da de er i samme sample space.
+		- Temperatur er ét sample space, og farve af sokker er et andet sample space.

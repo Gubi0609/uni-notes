@@ -1,5 +1,5 @@
 **Course description:** 
-[[R&T-STAT Intro to topics.pdf]]
+[[R&T&FYS-STAT Course schedule E2026.pdf]]
 
 ---
 
