@@ -118,8 +118,7 @@ Derfor er de ikke uafhængige.
 Det er en række af `OR` og `AND`. `OR` for hvert led udregnes
 $$P(\text{TOP} \cup \text{BOTTOM})=1-P(T')P(B')$$
 Fordi hver chip er uafhængig af de andre, kan `AND` operationen skrives
-$$
-
+$$P(E_1\cap E_2)=P(E_1)\cdot P(E_2)$$
 Så kan det skrives
 $$P(A)=(1-(1-0.9)(1-0.95))(1-(1-0.9)(1-0.95))(1-(1-0.8)(1-0.9))=0.9702245$$
 
@@ -128,12 +127,25 @@ $$P(A)=(1-(1-0.9)(1-0.95))(1-(1-0.9)(1-0.95))(1-(1-0.8)(1-0.9))=0.9702245$$
 
 Det er en række af `OR` og `AND`. `OR` for hvert led udregnes
 $$P(\text{TOP} \cup \text{BOTTOM})=1-P(T')P(B')$$
+Fordi hver chip er uafhængig af de andre, kan `AND` operationen skrives
+$$P(E_1\cap E_2)=P(E_1)\cdot P(E_2)$$
 Så kan det skrives
 $$P(A)=(1-(1-0.9)(1-0.95))(1-(1-0.8)(1-0.95))(1-(1-0.7)(1-0.95))=0.97027425$$
 
 ![[Pasted image 20260904131011.png]]
 
+$P(E_1) = 0.4$ - **Highly successful**
+$P(E_2)=0.35$ - **Moderately successful**
+$P(E_3)=0.25$ - **Poor product**
 
+$A$ - **High reviews**
+
+$P(A|E_1)=0.95$
+$P(A|E_2)=0.6$
+$P(A|E_3)=0.1$
+
+- a.
+$$P(A)=\sum^n_{i=1}P(A|E_i)P(E_i)=0.95\cdot0.4+0.6\cdot0.35+0.1\cdot0.25=0.615$$
 
 
 
