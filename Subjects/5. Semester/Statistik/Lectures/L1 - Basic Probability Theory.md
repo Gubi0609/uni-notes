@@ -42,7 +42,13 @@ $$\frac {140!} {(140-5)!5!}-\frac {130!} {(130-5)!5!} = 130721752$$
 
 ![[Pasted image 20260904111631.png]]
 - a. Her har rækkefølgen betydning, da chipsene har forskellige funktioner. Det er permutation
-$$P^n_r=\frac {n!}{(n-r)!}
+$$P^n_r=\frac {n!}{(n-r)!}=\frac {12!}{(12-5)!}=95040$$
+- b. Her har chipsene samme funktion, så det er uordnet. Her bruger vi kombinatorik igen.
+$$C^n_r=\frac {P^n_r}{r!}=\frac {n!}{(n-r)!r!} =\frac {12!}{(12-5)!5!}= 792$$
+
+![[Pasted image 20260904112249.png]]
+- a.
+
 
 ---
 #lecture 
