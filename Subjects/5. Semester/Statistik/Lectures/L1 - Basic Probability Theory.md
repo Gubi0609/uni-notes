@@ -80,7 +80,15 @@ Event **E** (hændelse)
 	- $B_2$: Dag i august
 		- $P(A|B_1)<P(A)<P(A|B_8)$ - **Sandsynligheden for at det bliver over 20 grader er større i august end januar. Sandsynligheden er også større i august end sandsynligheden over hele året ($P(A)$)**
 		- Hvis B i stedet var ugedage (mandag, tirsdag, ...), ville B være irrelevant for at finde sandsynligheden for A. Det ville ikke fortælle os meget.
-	- 
+
+### Multiplikation for betinget sandsynlighed
+$$P(A|B)P(B)=P(B|A)P(A)=P(A\cap B)$$
+
+### Total sandsynlighed
+Skal have et disjunkt og komplet sæt af events
+- $E_1, E_2, ..., E_n$
+- $E_i\cap E_j = empt
+
 
 ---
 #lecture 
