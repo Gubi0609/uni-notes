@@ -34,10 +34,10 @@ Event **E** (hændelse)
 ## **Intersection** (fællesmængde)
 - $E_1 \cap E_2$ (Det der er i det område, hvor $E_1$ og $E_2$  _overlapper_) - **En `AND` operation**
 
-## **Complementary**
+## **Complementary** (komplimentær)
 - $E^\complement=s\textbackslash E$  (Det, der **IKKE** er en del af E)
 
-## **Disjoint events**
+## **Disjoint events** (disjunkt)
 - $E_1\cap E_2=\emptyset=\{\}$ (Events som ikke kan opstå på samme tid) - **Ingen fællesmængde**
 
 
@@ -69,7 +69,13 @@ Event **E** (hændelse)
 	- Uafhængighed kan ikke bevises eller ses på data, men skal argumenteres (som f.eks. Hvad er sandsynligheden for at det bliver 15 grader i dag, og at min underviser har grønne sokker på?)
 		- Må ikke være i samme sample space, så anderledes fra Disjoint Events, da de er i samme sample space.
 		- Temperatur er ét sample space, og farve af sokker er et andet sample space.
-- 
+
+## Betinget sandsynlighed
+- Events A og B
+	- $P(A|B)$ - **Sandsynlighed for A, når B er indtruffet**
+		- Defineret som $\frac {P(A\cap B)}{P(B)}$ 
+	- A: $T>20^\circ C$ tilfældig dag
+	- $B_1$
 
 ---
 #lecture 
