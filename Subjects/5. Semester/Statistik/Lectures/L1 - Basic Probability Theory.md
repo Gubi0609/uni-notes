@@ -116,7 +116,26 @@ Derfor er de ikke uafhængige.
 ![[Pasted image 20260904130327.png]]
 
 Det er en række af `OR` og `AND`. `OR` for hvert led udregnes
-$$P(\text{TOP} \cup \text{BOTTOM})=1-P(T')P(B')
+$$P(\text{TOP} \cup \text{BOTTOM})=1-P(T')P(B')$$
+Fordi hver chip er uafhængig af de andre, kan `AND` operationen skrives
+$$
+
+Så kan det skrives
+$$P(A)=(1-(1-0.9)(1-0.95))(1-(1-0.9)(1-0.95))(1-(1-0.8)(1-0.9))=0.9702245$$
+
+![[Pasted image 20260904130827.png]]
+![[Pasted image 20260904130835.png]]
+
+Det er en række af `OR` og `AND`. `OR` for hvert led udregnes
+$$P(\text{TOP} \cup \text{BOTTOM})=1-P(T')P(B')$$
+Så kan det skrives
+$$P(A)=(1-(1-0.9)(1-0.95))(1-(1-0.8)(1-0.95))(1-(1-0.7)(1-0.95))=0.97027425$$
+
+![[Pasted image 20260904131011.png]]
+
+
+
+
 
 ---
 #lecture 
