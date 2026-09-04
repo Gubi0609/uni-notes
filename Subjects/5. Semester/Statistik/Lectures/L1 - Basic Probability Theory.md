@@ -84,6 +84,13 @@ $$P(A|B)=\frac {P(A\cap B)}{P(B)}=\frac {\frac {7}{100}}{0.2}=\frac {0.07}{0.2}=
 - d.
 $$P(A|B)=\frac {P(A\cap B)}{P(A)}=\frac {\frac {7}{100}}{0.39}=\frac {0.07}{0.39}=0.179487179 \approx 0.18$$
 
+![[Pasted image 20260904114930.png]]
+![[Pasted image 20260904115239.png|551]]
+
+![[Pasted image 20260904115326.png]]
+
+$A$
+
 
 ---
 #lecture 
