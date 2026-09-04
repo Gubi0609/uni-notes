@@ -89,7 +89,17 @@ $$P(A|B)=\frac {P(A\cap B)}{P(A)}=\frac {\frac {7}{100}}{0.39}=\frac {0.07}{0.39
 
 ![[Pasted image 20260904115326.png]]
 
-$A$
+$A$ - roughness of edge
+$B_1$ - New blade
+$B_2$ - Average blade
+$B_3$ - Worn blade
+
+$P(A|B_1)=0.01$
+$P(A|B_2)=0.03$
+$P(A|B_3)=0.05$
+
+**Total probability rule**
+$$P(A)=\sum^n_{i=1}P(A|E_i)P(E_i)=P(A|B_1)P(B_1)+P(A|B_2)P(B_2)+P(A|B_3)P(B_3)=0.01\cdot0.25+0.03\cdot0.6+0.05\cdot 0.15=0.028$$
 
 
 ---

@@ -1,4 +1,4 @@
-Stokastisk eksperiment er et eksperiment med ukendt udfald
+Stokastisk eksperiment er et eksperiment med ukendt **tilfældigt** udfald
 - Har et udfaldsrum (Sample space **S**), som indeholder mængden af alle _mulige_ udfald
 	- S kan være diskret eller kontinuert
 
