@@ -107,8 +107,16 @@ $$P(E_1\cap E_2)=P(E_1)\cdot P(E_2)$$
 
 **Bevis:**
 $$P(A)=\frac {70+16}{100} = 0.86$$
-$$P(B)=
+$$P(B)=\frac {70+9}{100}=0.79$$
+$$P(A\cap B)=\frac {70} {100}=0.7$$
+$$P(A)P(B)=0.86\cdot0.79=0.6794$$
+$$P(A\cap B)\neq P(A)P(B)$$
+Derfor er de ikke uafhængige.
 
+![[Pasted image 20260904130327.png]]
+
+Det er en række af `OR` og `AND`. `OR` for hvert led udregnes
+$$P(\text{TOP} \cup \text{BOTTOM})=1-P(T')P(B')
 
 ---
 #lecture 
