@@ -58,7 +58,10 @@ Event **E** (hændelse)
 ## Additions regler
 - **Sandsynligheden for at enten $E_1$ eller $E_2$ indtræffer:** $P(E_1\cup E_2) = P(E_1) + P(E_2) - P(E_1 \cap E_2)$  (_Læg mærke til, at den for disjoint events også passer her, da $P(E_1 \cap E_2)$ da er 0)
 	- $P(A\cup B\cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A\cap C) - P(B\cap C) + P(A\cap B\cap C)$ - For flere events (_Vi lægger den samlede intersection til igen, da vi i minus-delen har trukket den fra for meget)_
-- **Disjoint set af events:** $E_1, E_2, ..., E_n (E_i \cap E_j) =\emptyset
+- **Disjoint set af events:** $E_1, E_2, ..., E_n \quad (E_i \cap E_j =\emptyset)$ 
+	- $P(E_1\cup E_2\cup ... \cup E_n)=P(\cup^n_{i=1}E_i)$
+- **Komplementær hændelse:** $E^\complement = s\textbackslash E$
+	- $P(E^\complement)=1-P(E)$
 
 
 ---
