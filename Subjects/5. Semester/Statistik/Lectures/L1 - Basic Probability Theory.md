@@ -106,17 +106,24 @@ $$P(E_i|A)=\frac {P(A|E_i)P(E_i)} {P(A)}=\frac {P(A|E_i)P(E_i)}{\sum^n_{i=1}P(A|
 Tælleregler, der bruges ofte i sandsynligheds regning
 
 ### Ordnede sekvenser - Permutation
+
+#### Ordnede sekvenser af $n$
 Der er $n$ objekter
 - Vi vil finde ud af hvor mange måder, man kan stille dem i forskellig rækkefølge
 - $P_n^n = \text{antal ordnede sekvenser af n objekter}$
 	- For hver gang man "trækker" op af posen, er der en mindre mulighed
-	- $P_n^n=n(n-1)(n-2)...2\cdot 1 = n!$
-
-### Uordnede sekvenser - Kombinationer
+$$P_n^n=n(n-1)(n-2)...2\cdot 1 = n!$$
+#### Ordnede sekvenser af $r$
 Der er $n$ objekter
 - Vi udtager $r$ mængde af objekter
 - $P^n_r=\text{antal af uordnede r-sekvenser udtaget blandt n objekter}$
-- 
+$$P^n_r=n(n-1)(n-2)...(n-(r-1))=\frac {n!}{(n-r)!}$$
+
+### Uordnede sekvenser - Kombinationer
+Der er $n$ objekter, vi udtager $r$ blandt $n$
+- $C^n_r=\text{antal r-mængder udtaget blandt n}$
+$$C^n_r=\frac {P^n_r}
+
 
 ---
 #lecture 
