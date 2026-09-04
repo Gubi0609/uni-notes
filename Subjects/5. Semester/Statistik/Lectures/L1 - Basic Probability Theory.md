@@ -68,7 +68,15 @@ $$P(A\cup B) = P(A) + P(B) - P(A \cap B)=0.3+0.2-0.1=0.4$$
 - c.
 $$P(A'\cap B)=P(B)-P(A\cap B)=0.2-0.1=0.1$$
 - d.
-$$P(A\cap B')=P(A)-P(A\cap B)=0.3-0.1$$
+$$P(A\cap B')=P(A)-P(A\cap B)=0.3-0.1=0.2$$
+- e.
+$$P[(A\cup B)']=1-0.4=0.6$$
+- f.
+$$P(A'\cup B)=P(A')+P(B)-P(A'\cap B) = 0.7+0.2-0.1=0.8$$
+
+![[Pasted image 20260904114309.png]]
+- a.
+$$P(A)=$$
 
 
 ---
