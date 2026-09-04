@@ -26,9 +26,14 @@
 ![[Pasted image 20260904104413.png]]
 
 ![[Pasted image 20260904104500.png]]
-- a. $A\cap B = 12 + 44 = 66$
+- a. $A\cap B = 12 + 44 = 56$
 - b. $A' = 56+36 = 92$ 
-- c. $A\cup B
+- c. $A\cup B =12 + 44 + 40 + 16 + 56 = 168$
+- d. $A\cup B' = 12 + 40 + 44 + 16 + 36 = 148$
+- e. $A'\cap B' = 36$
+
+![[Pasted image 20260904105058.png]]
+
 
 ---
 #lecture 
