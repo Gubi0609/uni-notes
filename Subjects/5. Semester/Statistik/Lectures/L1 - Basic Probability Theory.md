@@ -100,6 +100,8 @@ $P(A|B_3)=0.05$
 
 **Total probability rule**
 $$P(A)=\sum^n_{i=1}P(A|E_i)P(E_i)=P(A|B_1)P(B_1)+P(A|B_2)P(B_2)+P(A|B_3)P(B_3)=0.01\cdot0.25+0.03\cdot0.6+0.05\cdot 0.15=0.028$$
+![[Pasted image 20260904120005.png]]
+
 
 
 ---
