@@ -95,6 +95,10 @@ Hvis vi har et event A igen, der er temperaturen, er sandsynligheden for en spec
 $$P(A)=P(A|E_1)P(E_1) + P(A|E_2)P(E_2)+...+P(A|E_{12})P(E_{12})$$
 Hvilket kan generaliseres til $n$
 $$P(A)=P(A|E_1)P(E_1) + P(A|E_2)P(E_2)+...+P(A|E_{n})P(E_{n})=\sum^n_{i=1}P(A|E_i)P(E_i)$$
+### Bayers formel
+$$P(A|B)=\frac {P(A\cap B)}{P(B)}=\frac {P(B|A)P(A)} {P(B)}$$
+Kan også bruges til sæt
+$$P(E_i|A)=\frac {P(A|E_i)P(E_i)} {P(A)}=\frac {P(A|E_i)P(E_i)}{\sum^n_{i=1}}$$
 
 
 ---
