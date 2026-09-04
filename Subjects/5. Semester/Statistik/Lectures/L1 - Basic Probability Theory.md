@@ -20,7 +20,8 @@
 
 
 # Notes
-
-
+Stokastisk eksperiment er et eksperiment med ukendt udfald
+- Har et udfaldsrum (Sample space S), som indeholder mængden af alle _mulige_ udfald
+	- S ka 
 ---
 #lecture 

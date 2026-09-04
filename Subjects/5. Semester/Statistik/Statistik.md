@@ -1,4 +1,5 @@
 **Course description:** 
+[[R&T-STAT Intro to topics.pdf]]
 
 ---
 
@@ -8,7 +9,7 @@
 > - Kompetencer
 
 ## Resources
-- Books / Links
+- [[Applied Statistics and Probability for Engineers, 7th .pdf]]
 ## Lectures
 ``` dataview
 list
