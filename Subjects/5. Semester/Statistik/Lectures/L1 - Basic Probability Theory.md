@@ -31,7 +31,22 @@ Event **E** (hændelse)
 **Union** (foreningsmængde)
 -  $E_1 \cup E_2$ (Det der er i den ene, den anden, eller dem begge to) - **Egentlig bare en `OR`**
 
-**I
+**Intersection** (fællesmængde)
+- $E_1 \cap E_2$ (Det der er i det område, hvor $E_1$ og $E_2$  _overlapper_) - **En `AND` operation**
+
+**Complementary**
+- $E^\complement=s\textbackslash E$  (Det, der **IKKE** er en del af E)
+
+**Disjoint events**
+- $E_1\cap E_2=\{\}$ (Events som ikke kan opstå på samme tid)
+
+
+## Definition af sandsynlighed
+- Stokastisk eksperiment
+	- Udført $n$ gange
+	- Leder efter et event $E$
+		- Kunne være at kaste med en terning 100 gange ($n$) og se hvor mange gange man slår 6 $E$
+	- $N_n(E)
 
 ---
 #lecture 
