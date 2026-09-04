@@ -52,7 +52,11 @@ Event **E** (hændelse)
 ## Aksiomer
 - $P(\emptyset)=0$ - **Sandsynligheden for at der ikke kommer et udfald er 0**
 - $P(S) = 1$ - **Sandsynligheden for at der sker noget, når man udfører et eksperiment er 1 (Der skal ALTID ske noget)**
-- $0\leq P(E) \leq 1$ - **Sandsynligheden for at noget sker ligger altid mellem 0 og 1**
+- $0\leq P(E) \leq 1$ - $P : E\subseteq S \rightarrow [0,1]$ - **Sandsynligheden for at noget sker ligger altid mellem 0 og 1**
+- Disjoint events: $E_1\cap E_2=\emptyset\Rightarrow P(E_1\cup E_2)=P(E_1)+P(E_2)$ - **Hvis fællesmængden af $E_1$ og $E_2$ er tom, er sandsynligheden for, at enten $E_1$ eller $E_2$, sker er summen af deres individuelle sandsynlighed**
+
+## Additions regler
+- Sandsynl
 
 
 ---
