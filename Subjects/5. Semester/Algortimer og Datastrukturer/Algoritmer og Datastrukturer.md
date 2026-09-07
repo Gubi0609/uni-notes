@@ -8,7 +8,7 @@
 > - Kompetencer
 
 ## Resources
-- Books / Links
+- [[Data structures and algorithm analysis in C++.pdf]]
 ## Lectures
 ``` dataview
 list
