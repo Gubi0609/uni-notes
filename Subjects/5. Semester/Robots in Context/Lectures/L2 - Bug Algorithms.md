@@ -110,17 +110,21 @@ How to read that line: `command_name = python_module_path:function_to_call`
 ```bash
 cd ~/ros2_ws
 colcon build --packages-select my_pkg_name
-source install/setup.bash
+source ~/ros2_ws/install/setup.bash
 ros2 run my_pkg_name my_node
 ```
 
 - `colcon build` with `--packages-select` only rebuilds that one package (faster than rebuilding everything).
+	- Can be used to rebuild if chances are made.
 - No terminal output after `ros2 run` is often _good_ — it means the node is idle/waiting, not crashed. Check with `ros2 topic list` / `ros2 topic echo` in a second terminal.
 - Common errors:
     - `Package 'my_pkg_name' not found` → forgot to source, or sourced the wrong terminal.
     - Python traceback → actual bug in your script, read it top to bottom, the last line is usually the real error.
 
-> [!warning] Remember to always source ros when running ros commands in a new terminal w
+> [!warning] Remember to always source ros when running ros commands in a new terminal window
+> ```bash
+> source /opt/ros/jazzy/setup.bash
+> ```
 
 ---
 
