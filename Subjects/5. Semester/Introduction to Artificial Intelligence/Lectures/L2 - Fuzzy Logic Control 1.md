@@ -29,6 +29,16 @@
 	- **if** premise/antecedent **then** consequence/action
 ![[Pasted image 20260910130822.png]]
 
+## Fuzzy set operations
+- **Cardinality**
+	- $|A| = \sum_X \mu_A(x)$ - Kan bruges til at finde samlet størrelse af vores _fuzzy subset_ [[2026-09-10 - Fuzzy Logic Control 1.pdf#page=38|slides]]
+- **Union**
+	- $\mu_{A\cup B} = \max(\mu_A, \mu_B)$
+- **Intersection**
+	- $\mu_{A\cap B} = \min(\mu_A, \mu_B)$
+- **Complement**
+	- $\mu_{\bar A} = 1-\mu_A$
+
 
 
 ---
