@@ -99,8 +99,9 @@
 	- **Compute the complement of A, namely $\bar A$**
 		- $\mu_{\bar A}(a)=1-0.5=0.5, \mu_{\bar A}(b)=1-0=1, \mu_{\bar A}(c)=1-0.2=0.8, \mu_{\bar A}(d)=1-0=1, \mu_{\bar A}(e)=1-1 = 0$
 	- **Compute $A\cup \bar A$**
-		- $\mu_{A\c$
+		- $\mu_{A\cup \bar A}(a) =0.5, \mu_{A\cup \bar A}(b) = 1, \mu_{A\cup \bar A}(c) = 0.8, \mu_{A\cup \bar A}(d) = 1, \mu_{A\cup \bar A}(a) = 1$
 	- **Compute $A\cap \bar A$**
+		- $\mu_{A\cap \bar A}(a) =0.5, \mu_{A\cap \bar A}(b) = 0, \mu_{A\cap \bar A}(c) = 0.2, \mu_{A\cap \bar A}(d) = 0, \mu_{A\cap \bar A}(a) = 0$
 - **What is a linguistic variable?**
 - **What is a linguistic value?**
 - **What is a rule and a rule-base?**
