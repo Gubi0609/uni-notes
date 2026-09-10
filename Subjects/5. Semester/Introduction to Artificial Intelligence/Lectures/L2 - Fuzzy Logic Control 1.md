@@ -64,10 +64,21 @@
 		- **Declarative knowledge** - Deals with factoid questions (like "what is the capital of Denmark?")
 		- **Procedural knowledge** - Deals with _how_ (like "how do you ride a bike?")
 	- Planning - _Given a set of goals, construct a sequence of actions that achieves those goals_ (Like in chess computing. We want to win, so we _search_ to find a sequence of moves, that achieves that goal)
-	- Learning - _How do we learn from _
+	- Learning - _How do we learn from existing data; How do we generate new facts from old; How do we generate new concepts; How do we learn to distinguish different situations in new environments?_
+		- **Supervised**
+		- **Unsupervised**
+		- **Reinforcement**
 	- Natural language processing
 	- Expert systems
 	- Robotics
+- **What is the difference between supervised, unsupervised, and reinforcement learning?**
+	- _Supervised learning:_ Given a set of inputs, the output is compared against an expected, known output (E.g. cats/dogs. We know beforehand whether the image shows a cat or dog, and we compare the computers output against this)
+	- _Unsupervised learning:_ Learning patterns in the input when no specific output values are supplied.
+	- _Reinforcement learning:_ The learner (agent) is rewarded or punished depending on the correctness of the output/action
+
+## Fuzzy control
+- What is fuzzy control – namely, how does it differ from conventional control, and based on what is a fuzzy control system designed?
+	- 
 
 
 ---
