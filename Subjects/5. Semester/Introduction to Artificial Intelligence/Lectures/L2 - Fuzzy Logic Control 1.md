@@ -57,6 +57,17 @@
 		- Is the state space of the enviroment discrete (e.g. all **natural numbes** $\mathbb{N}$) or continuous (like all **real numbers** $\mathbb R$)
 - **What is a reactive agent and how does it differ from a deliberative agent?**
 	- A reactive agent has _no memory_ while a deliberate agent does.
+		- I _assume_ that the memory can be used to learn from the consequences of the agents output/action
+- **Which are some of the main topics in AI research?**
+	- Search - Like binary tree in chess computing
+	- Knowledge representation - _How is knowledge represented?_ (Like do I represent the chessboard as a matrix or using bitboards)
+		- **Declarative knowledge** - Deals with factoid questions (like "what is the capital of Denmark?")
+		- **Procedural knowledge** - Deals with _how_ (like "how do you ride a bike?")
+	- Planning - _Given a set of goals, construct a sequence of actions that achieves those goals_ (Like in chess computing. We want to win, so we _search_ to find a sequence of moves, that achieves that goal)
+	- Learning - _How do we learn from _
+	- Natural language processing
+	- Expert systems
+	- Robotics
 
 
 ---
