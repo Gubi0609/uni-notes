@@ -78,10 +78,11 @@
 
 ## Fuzzy control
 - **What is fuzzy control – namely, how does it differ from conventional control, and based on what is a fuzzy control system designed?**
-	- 
+	- Fuzzy control is based on the premise, that we do not have crisp (**true or false**) values, but rather fluid values between 0 and 1, that describe the _degree of membership_ of a specific set. Thus our action/output can also be more fluid instead of **true/false**.
 - **What is a fuzzy set and what is a membership function?**
-	- A fuzzy set is a set of 
+	- A fuzzy set is a set of values assigned to a specific set, and a membership function is a specific value within that set, that lies between 0 and 1 (continuously) - $\mu_A(x)¸\rightarrow [0, 1]$. Can also be drawn [[2026-09-10 - Fuzzy Logic Control 1.pdf#page=24|slides]]
 - **Draw a membership function (and hence define a fuzzy set) that quantifies the set of all people of medium height.**
+	- 
 - **Draw a membership function that quantifies the set of all small properties.**
 - **Draw a membership function that quantifies the set of all big properties.**
 - **Draw a membership function that quantifies the statement “the number x is near 10."**
