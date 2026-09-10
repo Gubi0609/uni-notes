@@ -82,17 +82,17 @@
 - **What is a fuzzy set and what is a membership function?**
 	- A fuzzy set is a set of values assigned to a specific set, and a membership function is a specific value within that set, that lies between 0 and 1 (continuously) - $\mu_A(x)¸\rightarrow [0, 1]$. Can also be drawn [[2026-09-10 - Fuzzy Logic Control 1.pdf#page=24|slides]]
 - **Draw a membership function (and hence define a fuzzy set) that quantifies the set of all people of medium height.**
-	- ![[Pasted image 20260910145826.png]]
+	- ![[Pasted image 20260910145826.png|546]]
 - **Draw a membership function that quantifies the set of all small properties.**
-	- 
+	- ![[Pasted image 20260910150911.png|547]]
 - **Draw a membership function that quantifies the set of all big properties.**
-	- 
+	- ![[Pasted image 20260910150949.png|558]]
 - **Draw a membership function that quantifies the statement “the number x is near 10."**
-	- 
+	- ![[Pasted image 20260910151107.png|564]]
 - **Draw a membership function that quantifies the statement “the number x is less than 10.”**
-	- 
+	- ![[Pasted image 20260910151135.png|563]]
 - **Draw a membership function that quantifies the statement “the number x is greater than 10.”**
-	- 
+	- ![[Pasted image 20260910151159.png|569]]
 - **Suppose that X = {a, b, c, d, e} and that $\mu_A(a)=0.5, \mu_A(b)=0, \mu_A(c)=0.2, \mu_A(d)=0, \mu_A(e)=1$**
 	- **Compute the cardinality of A**
 		- $|A| = 0.5 + 0 + 0.2 + 0 + 1 = 1.7$
