@@ -42,8 +42,13 @@
 # Exercises
 ## Artificial intelligence introduction
 - **What is a rational agent?**
-	- An agent that _thinks_ and _behaves_ rationally
-- **
+	- An agent that _thinks_ and _behaves_ rationally. Uses axioms like Platon (Socrates is a man; Men are mortal; Therefore Socrates is mortal)
+- **In the context of AI agents, how can an environment be characterized?**
+	- _Accessible/inaccessible_
+		- Describes whether the agent has access to the _complete state_ of the enviroment
+	- _Deterministic/non deterministic (stochastic)_
+		- Describes whether the same action will always produce the same output
+	- _Episodic/sequential (non episodic)_
 
 
 ---
