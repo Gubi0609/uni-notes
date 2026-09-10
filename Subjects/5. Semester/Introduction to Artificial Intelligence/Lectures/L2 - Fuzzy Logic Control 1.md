@@ -115,7 +115,8 @@
 - **Linguistic variables**
 	- `WaterLevel` and `LCV` (for Level Control Valve)
 - **Linguistic values**
-	- `ExtremelyBelowTarget`, 
+	- `ExtremelyBelowTarget`, `VeryBelowTarget`, `MediumBelowTarget`, `NearBelowTarget`, `TargetOK`, `NearAboveTarget`, `MediumAboveTarget`, `VeryAboveTarget`
+	- `FullyOpen`, `NearlyFullyOpen`, `AlmostFullyOpen`, `NearAboveMediumOpen`, `MediumOpen`, `NearBelowMediumOpen`, `AlmostFullyClosed`
 
 ---
 #lecture 
