@@ -49,6 +49,14 @@
 	- _Deterministic/non deterministic (stochastic)_
 		- Describes whether the same action will always produce the same output
 	- _Episodic/sequential (non episodic)_
+		- Describes whether the agents performance is a result of a series of independent, one-shot actions (episodic) or whether an action has consequences for future (sequential)
+			- **Basically: Are actions and their consequences isolated or not?**
+	- _Static/dynamic_
+		- Does the environment change independent of the agent's actions?
+	- _Discrete/continuous_
+		- Is the state space of the enviroment discrete (e.g. all **natural numbes** $\mathbb{N}$) or continuous (like all **real numbers** $\mathbb R$)
+- **What is a reactive agent and how does it differ from a deliberative agent?**
+	- A reactive agent has _no memory_ while a deliberate agent does.
 
 
 ---
