@@ -39,6 +39,11 @@
 - **Complement**
 	- $\mu_{\bar A} = 1-\mu_A$
 
+# Exercises
+## Artificial intelligence introduction
+- **What is a rational agent?**
+	- An agent that _thinks_ and _behaves_ rationally
+- **
 
 
 ---
