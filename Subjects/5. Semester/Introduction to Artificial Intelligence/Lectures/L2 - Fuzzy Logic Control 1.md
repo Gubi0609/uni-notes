@@ -103,8 +103,12 @@
 	- **Compute $A\cap \bar A$**
 		- $\mu_{A\cap \bar A}(a) =0.5, \mu_{A\cap \bar A}(b) = 0, \mu_{A\cap \bar A}(c) = 0.2, \mu_{A\cap \bar A}(d) = 0, \mu_{A\cap \bar A}(a) = 0$
 - **What is a linguistic variable?**
+	- A linguistic variable is e.g. `Distance` as the variable we are _checking_ and `Brake` as the value we are setting [[2026-09-10 - Fuzzy Logic Control 1.pdf#page=29|slides]]
 - **What is a linguistic value?**
+	- A linguist
 - **What is a rule and a rule-base?**
+	- A rule is e.g. `if Distance is ExtremelyClose Then Brake is Slam`
+	- A rule-base is a set of rules.
 - **Specify linguistic variables, linguistic values, and a fuzzy rule-base for the “Level Controller” (LC) in the system shown below. Your input is the water level provided by the “Level Transmitter” (LT). The goal is to maintain the water level in the tank at around 75% of total capacity and you can regulate the influx of water by opening and closing the “Level Control Valve**
 ![[Pasted image 20260910143834.png|489]]
 
