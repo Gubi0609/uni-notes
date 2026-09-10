@@ -77,9 +77,10 @@
 	- _Reinforcement learning:_ The learner (agent) is rewarded or punished depending on the correctness of the output/action
 
 ## Fuzzy control
-- What is fuzzy control – namely, how does it differ from conventional control, and based on what is a fuzzy control system designed?
+- **What is fuzzy control – namely, how does it differ from conventional control, and based on what is a fuzzy control system designed?**
 	- 
-
+- **What is a fuzzy set and what is a membership function?**
+- 
 
 ---
 #lecture 
