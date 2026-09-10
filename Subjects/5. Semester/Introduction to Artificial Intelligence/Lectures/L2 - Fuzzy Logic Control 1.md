@@ -80,6 +80,7 @@
 - **What is fuzzy control – namely, how does it differ from conventional control, and based on what is a fuzzy control system designed?**
 	- 
 - **What is a fuzzy set and what is a membership function?**
+	- A fuzzy set is a set of 
 - **Draw a membership function (and hence define a fuzzy set) that quantifies the set of all people of medium height.**
 - **Draw a membership function that quantifies the set of all small properties.**
 - **Draw a membership function that quantifies the set of all big properties.**
@@ -87,8 +88,15 @@
 - **Draw a membership function that quantifies the statement “the number x is less than 10.”**
 - **Draw a membership function that quantifies the statement “the number x is greater than 10.”**
 - **Suppose that X = {a, b, c, d, e} and that $\mu_A(a)=0.5, \mu_A(b)=0, \mu_A(c)=0.2, \mu_A(d)=0, \mu_A(e)=1$**
-	- **Compute the cardinality of A
-
+	- **Compute the cardinality of A**
+	- **Compute the complement of A, namely $\bar A$**
+	- **Compute $A\cup \bar A$**
+	- **Compute $A\cap \bar A$**
+- **What is a linguistic variable?**
+- **What is a linguistic value?**
+- **What is a rule and a rule-base?**
+- **Specify linguistic variables, linguistic values, and a fuzzy rule-base for the “Level Controller” (LC) in the system shown below. Your input is the water level provided by the “Level Transmitter” (LT). The goal is to maintain the water level in the tank at around 75% of total capacity and you can regulate the influx of water by opening and closing the “Level Control Valve**
+![[Pasted image 20260910143834.png|489]]
 
 
 ---
