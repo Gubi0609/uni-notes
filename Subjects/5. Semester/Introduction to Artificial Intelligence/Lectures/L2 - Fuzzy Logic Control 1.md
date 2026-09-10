@@ -82,16 +82,24 @@
 - **What is a fuzzy set and what is a membership function?**
 	- A fuzzy set is a set of values assigned to a specific set, and a membership function is a specific value within that set, that lies between 0 and 1 (continuously) - $\mu_A(x)¸\rightarrow [0, 1]$. Can also be drawn [[2026-09-10 - Fuzzy Logic Control 1.pdf#page=24|slides]]
 - **Draw a membership function (and hence define a fuzzy set) that quantifies the set of all people of medium height.**
-	- 
+	- ![[Pasted image 20260910144829.png]]
 - **Draw a membership function that quantifies the set of all small properties.**
+	- 
 - **Draw a membership function that quantifies the set of all big properties.**
+	- 
 - **Draw a membership function that quantifies the statement “the number x is near 10."**
+	- 
 - **Draw a membership function that quantifies the statement “the number x is less than 10.”**
+	- 
 - **Draw a membership function that quantifies the statement “the number x is greater than 10.”**
+	- 
 - **Suppose that X = {a, b, c, d, e} and that $\mu_A(a)=0.5, \mu_A(b)=0, \mu_A(c)=0.2, \mu_A(d)=0, \mu_A(e)=1$**
 	- **Compute the cardinality of A**
+		- $|A| = 0.5 + 0 + 0.2 + 0 + 1 = 1.7$
 	- **Compute the complement of A, namely $\bar A$**
+		- $\mu_{\bar A}(a)=1-0.5=0.5, \mu_{\bar A}(b)=1-0=1, \mu_{\bar A}(c)=1-0.2=0.8, \mu_{\bar A}(d)=1-0=1, \mu_{\bar A}(e)=1-1 = 0$
 	- **Compute $A\cup \bar A$**
+		- $\mu_{A\c$
 	- **Compute $A\cap \bar A$**
 - **What is a linguistic variable?**
 - **What is a linguistic value?**
