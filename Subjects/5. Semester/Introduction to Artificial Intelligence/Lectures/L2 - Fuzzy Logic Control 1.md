@@ -21,6 +21,8 @@
 
 # Notes
 
+- Fuzzy logic control er brugbart i situationer hvor man ikke har et fuldt overblik over systemet
+
 
 ---
 #lecture 
