@@ -25,7 +25,8 @@
 	- E.g. et bremsesystem. Hvis du opdeler det i distancer for hvor meget du skal bremse (5-10 m, 10-15 m, ...). Så har du overgange hvor du skifter brat i mellem hvor meget du bremser (tænk Schmitt controller).
 	- Hvis vi opsætter på en x-y-koordinatsystem, kan vi ud af x-aksen have distance og op af y-aksen have _"degree of membership"_ [[2026-09-10 - Fuzzy Logic Control 1.pdf#page=17|slides]]
 - **Ligesom med bilen ovenover, er mange ting i virkeligheden ikke enten-eller, men _flydende_** [[2026-09-10 - Fuzzy Logic Control 1.pdf#page=22|slides]]
-- 
+- I stedet for `if else`, beskriver vi logikken med _termer_ (**regel-base**)
+	- **if** premise/antecedent **then** 
 
 
 ---
