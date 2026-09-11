@@ -42,7 +42,18 @@ $$P(X>1)=\sum_{x_i>1}f_X(2)+f_X(3)=\frac 2 7+\frac 1 7=\frac 3 7$$
 - c)
 Again, CMF
 $$P(x_i<X<x_j)=F_X(x_j)-F_X(x_i)-f_X(x_j)$$
-$$P(2<X<6)=F_X(6)-F_X(2)-f_X(6)=\sum_{x_i\leq6}f_X(x_i)-\sum_{x_i\leq 2}f_X(x_i)-\frac 2 7=1-\left(\frac 4 7 +\frac 1 7\right)-\frac 2 7=1-\frac 5 7-\frac 2 7=1-\frac 7 7$$
+$$P(2<X<6)=F_X(6)-F_X(2)-f_X(6)=\sum_{x_i\leq6}f_X(x_i)-\sum_{x_i\leq 2}f_X(x_i)-0=1-\left(\frac 4 7 +\frac 1 7\right)-0=1-\frac 5 7-0=\frac 3 7$$
+- d)
+$$P(X\leq 1\text{ or } X>1)$$
+This is just asking us to verify, that $X$ is within the defined domain (1, 2, 3), which it of course is, so
+$$P(X\leq 1\text{ or } X>1)=1$$
+
+![[Pasted image 20260911110406.png]]
+
+Again, we verify, that it is a PMF
+$$f(1)=\frac {2\cdot 1+1}{25}=\frac 3 {25}$$
+$$f(2)=\frac {2\cdot 2+1}{25}=\frac 5{25}$$
+$$f(3)=\frac {2\cdot 3+1}{25}=$$
 
 
 ---
