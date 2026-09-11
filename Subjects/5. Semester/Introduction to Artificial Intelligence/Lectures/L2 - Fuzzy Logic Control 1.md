@@ -116,7 +116,19 @@
 	- `WaterLevel` and `LCV` (for Level Control Valve)
 - **Linguistic values**
 	- `ExtremelyBelowTarget`, `VeryBelowTarget`, `MediumBelowTarget`, `NearBelowTarget`, `TargetOK`, `NearAboveTarget`, `MediumAboveTarget`, `VeryAboveTarget`
-	- `FullyOpen`, `NearlyFullyOpen`, `AlmostFullyOpen`, `NearAboveMediumOpen`, `MediumOpen`, `NearBelowMediumOpen`, `AlmostFullyClosed`
+	- `FullyOpen`, `NearlyFullyOpen`, `AlmostFullyOpen`, `NearAboveMediumOpen`, `MediumOpen`, `NearBelowMediumOpen`, `AlmostFullyClosed`, `FullyClosed`
+
+**Rule-base
+```
+if WaterLevel is ExtremelyBelowTarget Then LCV is FullyOpen
+if WaterLevel is VeryBelowTarget Then LCV is NearlyFullyOpen
+if WaterLevel is MediumBelowTarget Then LCV is AlmostFullyOpen
+if WaterLevel is NearBelowTarget Then LCV is NearAboveMediumOpen
+if WaterLevel is TargetOK Then LCV is MediumOpen
+if WaterLevel is NearAboveTarget Then LCV is NearBelowMediumOpen
+if WaterLevel is MediumAboveTarget Then LCV is AlmostFullyClosed
+if WaterLevel is VeryAboveTarget Then LCV is FullyClosed
+```
 
 ---
 #lecture 
