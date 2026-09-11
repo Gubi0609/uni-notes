@@ -65,7 +65,16 @@ Forskellige sandsynlighedsfordelinger, kan have samme middelværdi _hvis de e.g.
 ## Varians (Variance) af X
 Beskriver spredningen af sandsynlighedsfordelingen
 $$\sigma_X^2=V[X]=E[(X-\mu_X)^2]=\sum_{x_i\in S}(x_i-\mu_X)^2\cdot f_X(x_i)\geq 0$$
-![[Pasted image 20260911090308.png|349]]![[Pasted image 20260911090315.png]]
+![[Pasted image 20260911090308.png|349]]![[Pasted image 20260911090315.png|353]]
+$$\sigma_X^2=E[X^2]+E[\mu_X^2]-2\mu_XE[X]=E[X^2]+\mu_X^2-2\mu_X\cdot\mu_X=E[X^2]-\mu_X^2=\sum_{x_i\in S}x_i^2\cdot f_X(x_i)-\mu_X^2$$
+Ligesom før, kan vi lave ekstra matematik med variansen
+$$V[aX+b]=V[aX]+V[b]=a^2\sigma_X^2+0$$
+
+### Standardafvigelsen
+$$\sigma_X=+\sqrt{\sigma_X^2}$$
+Har samme enhed som X
+
+
 
 
 ---
