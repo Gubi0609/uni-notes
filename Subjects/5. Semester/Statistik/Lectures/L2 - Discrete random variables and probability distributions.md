@@ -22,6 +22,12 @@
 # Notes
 
 # Diskrete stokastiske variable & fordelinger
+Vi har et _stokastisk eksperiment_ med udfaldsrummet (sample space) S. I S har vi vores udfald e.g. $a_1$
+
+**Stokastiske variable skrives $X$**
+$$X : a_i\in S\rightarrow X=x_1$$
+![[Pasted image 20260911082136.png]]
+
 
 
 
