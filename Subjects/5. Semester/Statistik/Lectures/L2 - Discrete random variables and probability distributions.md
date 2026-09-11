@@ -118,7 +118,11 @@ $$\sigma_X^2=\sum_{x_i\in S}(x_i-\mu_X)^2\cdot f_X(x_i)=(0-2)^2\cdot0.2+(1-2)^2\
 
 ![[Pasted image 20260911114843.png]]
 $$\mu_X=\sum_{x_o\in S} x_i\cdot f_X(x_i)=0\cdot0.2+1\cdot0.2+2\cdot0.2+3\cdot0.2+x\cdot0.2=6$$
-$$6=0.2+0.4+0.6+0.2\cdotx=6+x\Leftrightarrow x=0$$
+$$6=0.2+0.4+0.6+0.2\cdot x=1.2+0.2x\Leftrightarrow 0.2x=4.8\Leftrightarrow x=24$$
+
+![[Pasted image 20260911115449.png]]
+
+
 
 
 ---
