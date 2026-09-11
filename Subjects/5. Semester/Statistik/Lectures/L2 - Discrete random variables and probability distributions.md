@@ -51,9 +51,20 @@ $$P(X\leq 1\text{ or } X>1)=1$$
 ![[Pasted image 20260911110406.png]]
 
 Again, we verify, that it is a PMF
+$$f(0)=\frac {2\cdot 0+1}{25}=\frac 1 {25}$$
 $$f(1)=\frac {2\cdot 1+1}{25}=\frac 3 {25}$$
 $$f(2)=\frac {2\cdot 2+1}{25}=\frac 5{25}$$
-$$f(3)=\frac {2\cdot 3+1}{25}=$$
+$$f(3)=\frac {2\cdot 3+1}{25}=\frac 7 {25}$$
+$$f(4)=\frac {2\cdot 4+1}{25}=\frac 9 {25}$$
+$$\sum_{x_i\in S}f_X(x_i)=\frac 1{25}\frac 3 {25}+\frac 5{25}+\frac 7{25}+\frac 9{25}=\frac {25}{25}$$
+
+- a)
+We just check what the probability, that it is 4 is. We have already calculated this
+$$P(X=4)=f(4)=\frac 9 {25}$$
+- b)
+We use CMF
+ $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$
+ $$P(X$$
 
 
 ---
