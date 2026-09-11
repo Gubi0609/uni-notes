@@ -98,7 +98,7 @@ $\text{Bin}$ er navnet for _binomial_, $n$ er _antal forsøg_, $p$ er _succes ra
 ### Bernouilly forsøg
 Betyder: **udført kun _1_ gang**, $n=1$
 
-$$f_X(x)=p\quad x=1, \quad \text{succes}, \quad 1-p\quad x=0,\quad \text{fiasko}$$
+$$f_X(x)=\left\{\begin{array} & p, & x=1, & \text{succes}\\ 1-p, & x=0, & \text{fiasko}\end{array}\right.$$
 
 **[[#Middelværdi (Mean) af X|Middelværdi]]**
 $$\mu_X=E[X]=\sum_{x_i}x_if_X(x_i)=1\cdotp+0\cdot(1-p)=p$$
@@ -124,6 +124,16 @@ $$\mu_X=n\cdot p$$
 **[[#Varians (Variance) af X|Varians]]**
 $$\sigma_X^2=n\cdot p(1-p)$$
 
+## Case 3: Geometrisk fordeling
+$$X\sim\text{Geo}(p)$$
+hvor $\text{Geo}$ er navnet _Geometrisk_
+$$X:\text{ antal forsøg indtil første succes}$$
+![[Pasted image 20260911095847.png]]
+
+_Vi stopper forsøget, når vi får vores første succes_
+
+**[[#Probability mass function, PMF|PMF]]**
+$$_X(x)=1-p^{x-1}\cdot p,\quad 1\leq x\leq \infty$$
 
 ---
 #lecture 
