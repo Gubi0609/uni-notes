@@ -60,6 +60,12 @@ Kan opfattes som et **tyngdepunkt** eller _center of gravity **COG**_ (tror jeg)
 
 $$E[aX+b]=E[aX]+E[b]=a\cdot\mu_X+b$$
 $$E[h(X)]=\sum_{x_i\in S}h(x_i)+f_X(x_i)$$
+Forskellige sandsynlighedsfordelinger, kan have samme middelværdi _hvis de e.g. har forskellige spredning om samme punkt (COG)_
+
+## Varians (Variance) af X
+Beskriver spredningen af sandsynlighedsfordelingen
+$$\sigma_X^2=V[X]=E[(X-\mu_X)^2]=\sum_{x_i\in S}(x_i-\mu_X)^2\cdot f_X(x_i)\geq 0$$
+![[Pasted image 20260911090308.png|349]]![[Pasted image 20260911090315.png]]
 
 
 ---
