@@ -27,11 +27,15 @@ We must verify, that $f(x)$ is a PMF. For this, it must satisfy
 $$f_X(x_i):=P(X=x_i)$$
 $$\sum_{x_i\in S} f_X(x_i)=1,\quad 0\leq f_X(x_i)\leq 1$$
 $$f(1)=\frac 8 7 \left(\frac 1 2\right)^1=\frac 4 7$$
-$$f(2)=\frac 8 7 \left(\frac 1 2\right)^2=\frac 8 {28}=\frac 1 4$$
+$$f(2)=\frac 8 7 \left(\frac 1 2\right)^2=\frac 8 {28}=\frac {2}{7}$$
 $$f(3)=\frac 8 7\left(\frac 1 2\right)^3=\frac 8 7\frac 1 8=\frac 8 {56}= \frac 1 7$$
-$$\sum_{x_i\in S}f_X(x_i)=\frac 4 7+\frac 1 4+\frac 1 7=\frac 5 7+\frac 1 4=\frac {5\cdot 4}{7\cdot 4}+\frac {1\cdot 7}{4\cdot 7}=\frac {20}{28}+\frac {7}{28}=\frac {27}{28}$$
+$$\sum_{x_i\in S}f_X(x_i)=\frac 4 7+\frac 2 7+\frac 1 7=\frac 7 7=1$$
+For the third criteria because the total probability of the variable $X$ having a value inside the domain $x_i = 1, 2, 3$ is equal to one then $f (x_i) = P (X = x_i)$.
 
-
+- a)
+We use CMF
+ $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$
+ $$P(X\leq 1)=\sum_{x_i\leq 1}f_X(1)=$$
 
 
 ---
