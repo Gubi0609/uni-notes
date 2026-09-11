@@ -94,8 +94,16 @@ $$P(X\leq 50)=1$$
 From the CMF definition we have
 $$P(X\leq 40)=0.75$$
 - c)
-
-
+We use
+$$P(x_i\leq X\leq x_j)=F_X(x_j)-F(x_i)+f_X(x_i)$$
+$$P(40\leq X\leq 60)=F_X(60)-F(40)+f_X(40)=1-0.75+0=0.25$$
+- d)
+From the CMF definition we have
+$$P(X<0)=0.25$$
+- e)
+We use
+$$P(x_i\leq X<x_j)=F_X(x_j)-F_X(x_i)+f_X(x_i)-f_X(x_j)$$
+$$P(0\leq X<10)=F_X(10)-F_X(0)+f_X(0)-f_X(10)$$
 
 
 
