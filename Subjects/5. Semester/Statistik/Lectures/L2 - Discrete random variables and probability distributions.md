@@ -28,6 +28,12 @@ Vi har et _stokastisk eksperiment_ med udfaldsrummet (sample space) S. I S har v
 $$X : a_i\in S\rightarrow X=x_1$$
 ![[Pasted image 20260911082136.png]]
 
+## Probability mass function, PMF
+På dansk hedder det en **sandsynlighedsfunktion**
+$$f_X(x_i):=P(X=x_i)$$
+![[Pasted image 20260911082544.png]]
+
+$$\sum_{x_i\in S} f_X(x_i)=1,\quad 0\leq f_X(x_i)\leq 1$$
 
 
 
