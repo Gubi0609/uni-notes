@@ -92,6 +92,18 @@ $$\sigma_X^2=\frac {(b-a+1)^2-1}{12}$$
 ## Case 2: Binomial fordeling
 _Kun 2 mulige udfald:_ **Succes eller fiasko**
 
+$$X\sim \text{Bin}(n,p)$$
+$\text{Bin}$ er navnet for _binomial_, $n$ er _antal forsøg_, $p$ er _succes rate_
+
+### Bernouilly forsøg
+Betyder: **udført kun _1_ gang**
+
+$$f_X(x)=p\quad x=1, \quad \text{succes}, \quad 1-p\quad x=0,\quad \text{fiasko}$$
+
+
+$$\mu_X=E[X]=\sum_{x_i}x_if_X(x_i)=1\cdotp+0\cdot(1-p)=p$$
+$$$$
+
 
 
 ---
