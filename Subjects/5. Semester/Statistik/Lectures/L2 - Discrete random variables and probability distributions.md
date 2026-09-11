@@ -42,6 +42,8 @@ På dansk: **fordelingsfunktion** (ikke vidt brugt term, brug hellere engelsk)
 
  $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$
  ![[Pasted image 20260911083621.png|472]]
+$$0\leq F_X(x)\leq 1, \quad \lim_{x\rightarrow -\infty}F_X(x)=0, \quad \lim_{x\rightarrow \infty}F_X(x)=1$$
+$$P(x_i\leq X\leq x_j)=F_X(x_j)-F_X(x_i)$$
 
 
 
