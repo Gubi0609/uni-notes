@@ -1,27 +1,26 @@
+> [!help] Case 1: Uniform fordeling
+> $$X\sim UD(a,b),\quad a,b\in \mathbb{Z}$$
+> $$\text{antal udfald} = b-a+1$$
+**[[#Probability mass function, PMF|PMF]]**
+$$f_X(x)=\left\{\begin{array} & \frac 1 {b-a+1}, & a\leq x\leq b \\ 0, & \text{ellers}\end{array}\right., \quad x\in \mathbb Z$$
+**[[#Middelværdi (Mean) af X|Middelværdi]]**
+$$\mu_X=E[X]=\frac {a+b} 2$$
+**[[#Varians (Variance) af X|Varians]]**
+$$\sigma_X^2=\frac {(b-a+1)^2-1}{12}$$
+
+
+> [!help] Case 2: Binomial fordeling
+> _Kun 2 mulige udfald:_ **Succes eller fiasko**
+$$X\sim \text{Bin}(n,p)$$
+$\text{Bin}$ er navnet for _binomial_, $n$ er _antal forsøg_, $p$ er _succes rate_
+**
+
+
+> [!help] Case 3: Geometrisk fordeling
+
+> [!help] Case 4: Poisson fordeling
 
 ---
-**Date:** 2026-09-11
-
-## Preparation
-
->[!TODO] HOMEWORK
->- [ ] 
-
-> [!DANGER] EXERCISES
-> - [ ] 3.1.10, 3.1.11, 3.2.8, 3.3.1, 3.3.7, 3.4.1, 3.5.2, 3.5.4, 3.5.13, 3.6.1, 3.8.2
-
----
-# Relevant documents
-[[Agenda lecture 02.pdf]]
-[[Lektion 2 slides.pdf]]
-[[Solutions lecture 02 v3.pdf]]
-
-# Topics
-[[Diskrete stokastiske variable & fordelinger]]
-
-# Notes
-
-# Diskrete stokastiske variable & fordelinger
 Vi har et _stokastisk eksperiment_ med udfaldsrummet (sample space) S. I S har vi vores udfald e.g. $a_1$
 
 **Stokastiske variable skrives $X$**
@@ -152,10 +151,3 @@ $$X\sim \text{Poisson}(\lambda),\quad \lambda \geq 0$$
 $$f_X(x)=P(\text{x ankomster i }[0,t])=\frac {(\lambda t)^x}{x!}e^{-\lambda t},\quad 0\leq x\leq\infty, \quad x\in\mathbb N$$
 **[[#Middelværdi (Mean) af X|Middelværdi]]** og **[[#Varians (Variance) af X|Varians]]**
 $$\mu_X = E[X]=\sigma^2_X = V[X]=\lambda t$$
-
-
-
-
-
----
-#lecture 
