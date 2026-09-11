@@ -35,7 +35,14 @@ For the third criteria because the total probability of the variable $X$ having 
 - a)
 We use CMF
  $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$
- $$P(X\leq 1)=\sum_{x_i\leq 1}f_X(1)=$$
+ $$P(X\leq 1)=\sum_{x_i\leq 1}f_X(1)=\frac 4 7$$
+ - b)
+We use CMF for the probability of 2 and 3
+$$P(X>1)=\sum_{x_i>1}f_X(2)+f_X(3)=\frac 2 7+\frac 1 7=\frac 3 7$$
+- c)
+Again, CMF
+$$P(x_i<X<x_j)=F_X(x_j)-F_X(x_i)-f_X(x_j)$$
+$$P(2<X<6)=F_X(6)-F_X(2)-f_X(6)=\sum_{x_i\leq6}f_X(x_i)-\sum_{x_i\leq 2}f_X(x_i)-\frac 2 7=1-\left(\frac 4 7 +\frac 1 7\right)-\frac 2 7=1-\frac 5 7-\frac 2 7=1-\frac 7 7$$
 
 
 ---
