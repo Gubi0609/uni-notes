@@ -8,17 +8,40 @@ $$\mu_X=E[X]=\frac {a+b} 2$$
 **[[#Varians (Variance) af X|Varians]]**
 $$\sigma_X^2=\frac {(b-a+1)^2-1}{12}$$
 
-
 > [!help] Case 2: Binomial fordeling
 > _Kun 2 mulige udfald:_ **Succes eller fiasko**
 $$X\sim \text{Bin}(n,p)$$
 $\text{Bin}$ er navnet for _binomial_, $n$ er _antal forsøg_, $p$ er _succes rate_
-**
-
+> 
+**[[#Probability mass function, PMF|PMF]]**
+$$P(X=x)=f_X(x)=\left(\begin{array}& n \\ x\end{array}\right)p^x(1-p)^{n-x},\quad 0\leq x\leq n$$
+**[[#Middelværdi (Mean) af X|Middelværdi]]**
+$$\mu_X=n\cdot p$$
+**[[#Varians (Variance) af X|Varians]]**
+$$\sigma_X^2=n\cdot p(1-p)$$
 
 > [!help] Case 3: Geometrisk fordeling
+> $$X\sim\text{Geo}(p)$$
+> $$x:\text{ antal forsøg indtil første succes}$$
+> _Vi stopper forsøget, når vi får vores første succes_
+>
+**[[#Probability mass function, PMF|PMF]]**
+$$f_X(x)=1-p^{x-1}\cdot p,\quad 1\leq x\leq \infty$$
+**[[#Middelværdi (Mean) af X|Middelværdi]]**
+$$\mu_X=E[X]=\frac 1 p$$
+**[[#Varians (Variance) af X|Varians]]**
+$$\sigma_X^2=V[X]=\frac {1-p}{p^2}$$
 
 > [!help] Case 4: Poisson fordeling
+> Bruges til **ankomstprocesser**. _Bruges ikke så meget i klassisk statistik_
+> 
+Vi måler **ankomstintensiteten** $\lambda$ med enheden $s^{-1}$
+$$X\sim \text{Poisson}(\lambda),\quad \lambda \geq 0$$
+**[[#Probability mass function, PMF|PMF]]**
+$$f_X(x)=P(\text{x ankomster i }[0,t])=\frac {(\lambda t)^x}{x!}e^{-\lambda t},\quad 0\leq x\leq\infty, \quad x\in\mathbb N$$
+**[[#Middelværdi (Mean) af X|Middelværdi]]** og **[[#Varians (Variance) af X|Varians]]**
+$$\mu_X = E[X]=\sigma^2_X = V[X]=\lambda t$$
+
 
 ---
 Vi har et _stokastisk eksperiment_ med udfaldsrummet (sample space) S. I S har vi vores udfald e.g. $a_1$
@@ -126,7 +149,7 @@ $$\sigma_X^2=n\cdot p(1-p)$$
 ## Case 3: Geometrisk fordeling
 $$X\sim\text{Geo}(p)$$
 hvor $\text{Geo}$ er navnet _Geometrisk_
-$$X:\text{ antal forsøg indtil første succes}$$
+$$x:\text{ antal forsøg indtil første succes}$$
 ![[Pasted image 20260911095847.png]]
 
 _Vi stopper forsøget, når vi får vores første succes_
