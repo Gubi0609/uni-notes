@@ -107,6 +107,13 @@ $$E[X^2]=\sum_{x_i}x_i^2f_X(x_i)=1^2\cdot p+0^2(1-p)=p$$
 $$\sigma_X^2=V[X]=p-p^2=p(1-p)$$
 ![[Pasted image 20260911094235.png|379]]
 
+### For $n>1$
+$$X\sim \text{Bin}(n,p)$$
+Udfør $n$ uafhængige af [[#Bernouilly forsøg|Bernouilly forsøg]]
+![[Pasted image 20260911094613.png|572]]
+
+$$P(X=x)=P(\text{x succeser blandt n forsøg})=f_X(x)=p^x(1-p)^{n-x}, \quad 0\leq x\leq n$$
+hvor $p^x$ er succeserne, og $(1-p)^{n-x}$ sørger for, at resten er fiasko
 
 
 ---
