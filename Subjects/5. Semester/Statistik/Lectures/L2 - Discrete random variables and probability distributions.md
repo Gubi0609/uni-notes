@@ -68,7 +68,18 @@ We use CMF
  - c)
 Again, CMF
 $$P(x_i\leq X<x_j)=F_X(x_j)-F_X(x_i)+f_X(x_i)-f_X(x_j)$$
-$$P(2\leq X<4)=F_X(4)-F_X(2)+f_X(2)-f_X(4)=\left(f(0)+f(1)+f(2)+f(3)+f(4)\right)-\left(f(0)+f(1)+f(2)\right)+\frac 5{25}-\frac 9{25}$$ $$P(2\leq X<4)=1-\left(\frac 1{25}+\frac 3{25}+\frac 5{25}\right)+\frac 5{25}-\frac 9{25}=$$
+$$P(2\leq X<4)=F_X(4)-F_X(2)+f_X(2)-f_X(4)=\left(f(0)+f(1)+f(2)+f(3)+f(4)\right)-\left(f(0)+f(1)+f(2)\right)+\frac 5{25}-\frac 9{25}$$ $$P(2\leq X<4)=1-\left(\frac 1{25}+\frac 3{25}+\frac 5{25}\right)+\frac 5{25}-\frac 9{25}=1-\frac {18}{25}+\frac {5}{25}=1-\frac {13}{25}=\frac {12}{25}$$
+- d)
+The probability of being over -10 is _1_, since the domain is defined for 0, 1, 2, 3, 4.
+
+Verify that the following functions are cumulative distribution functions, and determine the probability mass function and the requested probabilities.
+![[Pasted image 20260911111755.png]]
+
+ $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$7$$x\leq y,\text{ så }F_X(x)\leq F_X(y)$$$$0\leq F_X(x)\leq 1, \quad \lim_{x\rightarrow -\infty}F_X(x)=0, \quad \lim_{x\rightarrow \infty}F_X(x)=1$$
+
+The function is defined within $0\leq F_X(x)\leq 1$, so we know that that requirement is fulfilled.
+
+
 
 
 ---

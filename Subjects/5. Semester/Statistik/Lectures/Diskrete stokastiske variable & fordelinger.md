@@ -66,6 +66,10 @@ På dansk: **fordelingsfunktion** (ikke vidt brugt term, brug hellere engelsk)
  ![[Pasted image 20260911083621.png|472]]
  
 $$0\leq F_X(x)\leq 1, \quad \lim_{x\rightarrow -\infty}F_X(x)=0, \quad \lim_{x\rightarrow \infty}F_X(x)=1$$
+
+Hvis
+$$x\leq y,\text{ så }F_X(x)\leq F_X(y)$$
+
 $$P(x_i< X\leq x_j)=F_X(x_j)-F_X(x_i)$$
 Hvis vi derimod også vil have $x_i$ med, skal vi få dens sandsynlighed med også.
 $$P(x_i\leq X\leq x_j)=F_X(x_j)-F(x_i)+f_X(x_i)$$
