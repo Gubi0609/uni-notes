@@ -114,7 +114,12 @@ $$P(-10<X<10)=F_X(10)-F_X(-10)-f_X(10)=0.25-0.25-0=0$$
 $$\mu_X=E[X]:=\sum\text{mulige udfald} \cdot \text{sandsynlighed}=\sum_{x_o\in S} x_i\cdot f_X(x_i)$$
 $$\mu_X=\sum_{x_o\in S} x_i\cdot f_X(x_i)=0.2\cdot0+0.2\cdot1+0.2\cdot2+0.2\cdot3+0.2\cdot4=2$$
 $$\sigma_X^2=V[X]=E[(X-\mu_X)^2]=\sum_{x_i\in S}(x_i-\mu_X)^2\cdot f_X(x_i)\geq 0$$
-$$\sigma_X^2=\sum_{x_i\in S}(x_i-\mu_X)^2\cdot f_X(x_i)\geq 0$$
+$$\sigma_X^2=\sum_{x_i\in S}(x_i-\mu_X)^2\cdot f_X(x_i)=(0-2)^2\cdot0.2+(1-2)^2\cdot0.2+(2-2)^2\cdot0.2+(3-2)^2\cdot0.2+(4-2)^2\cdot0.2=2$$
+
+![[Pasted image 20260911114843.png]]
+$$\mu_X=\sum_{x_o\in S} x_i\cdot f_X(x_i)=0\cdot0.2+1\cdot0.2+2\cdot0.2+3\cdot0.2+x\cdot0.2=6$$
+$$6=0.2+0.4+0.6+0.2\cdotx=6+x\Leftrightarrow x=0$$
+
 
 ---
 #lecture 
