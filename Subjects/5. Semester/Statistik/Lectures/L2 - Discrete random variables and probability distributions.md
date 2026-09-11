@@ -55,8 +55,11 @@ $$P(x_i\leq X<x_j)=F_X(x_j)-F_X(x_i)+f_X(x_i)-f_X(x_j)$$
 $$\mu_X=E[X]:=\sum\text{mulige udfald} \cdot \text{sandsynlighed}=\sum_{x_o\in S} x_i\cdot f_X(x_i)$$
 $E$ står for _expectation_
 
-Kan opfattes som et **tyngdepunkt** eller __
+Kan opfattes som et **tyngdepunkt** eller _center of gravity **COG**_ (tror jeg)
+![[Pasted image 20260911085610.png|444]]
 
+$$E[aX+b]=E[aX]+E[b]=a\cdot\mu_X+b$$
+$$E[h(X)]=\sum_{x_i\in S}h(x_i)+f_X(x_i)$$
 
 
 ---
