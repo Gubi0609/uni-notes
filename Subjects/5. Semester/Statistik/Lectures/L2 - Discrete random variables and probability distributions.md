@@ -75,9 +75,16 @@ The probability of being over -10 is _1_, since the domain is defined for 0, 1, 
 Verify that the following functions are cumulative distribution functions, and determine the probability mass function and the requested probabilities.
 ![[Pasted image 20260911111755.png]]
 
- $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$7$$x\leq y,\text{ så }F_X(x)\leq F_X(y)$$$$0\leq F_X(x)\leq 1, \quad \lim_{x\rightarrow -\infty}F_X(x)=0, \quad \lim_{x\rightarrow \infty}F_X(x)=1$$
+ $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$$$x\leq y,\text{ så }F_X(x)\leq F_X(y)$$$$0\leq F_X(x)\leq 1, \quad \lim_{x\rightarrow -\infty}F_X(x)=0, \quad \lim_{x\rightarrow \infty}F_X(x)=1$$
 
-The function is defined within $0\leq F_X(x)\leq 1$, so we know that that requirement is fulfilled.
+The function is defined within $0\leq F_X(x)\leq 1$, so we know that that requirement is fulfilled. We can also see, that $x\leq y$ leads to $F(x)\leq F(y)$ from the definition above.
+
+We will now find the PMF
+$$f(x)=P(X=x)=F_X(x)-F_X(x^-)$$
+Where $x^-$ means, that we look at the limit of the CMF coming from the left. Looking at the boundary values in the CMF, we get
+$$F(-10^-)=0,F(-10)=0.25\rightarrow f(-10)=0.25$$
+$$F(30^-)=0.25,F(30)=0.75\rightarrow f(30)=0.75-0.25=0.5$$
+$$F(50^-)=0.75,F(50)=1\rightarrow f$$
 
 
 
