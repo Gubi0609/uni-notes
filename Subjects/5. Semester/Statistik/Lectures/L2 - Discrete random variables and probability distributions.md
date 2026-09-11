@@ -83,7 +83,7 @@ $\sim$ betyder _"fordelt som"_, $UD$ er _navn_ og $a,b$ er _parametre_
 
 $$\text{antal udfald} = b-a+1$$
 **[[#Probability mass function, PMF|PMF]]**
-$$f_X(x)=\frac 1 {b-a+1},\quad a\leq x\leq b, \quad 0, \quad \text{ellers},\quad x\in \mathbb Z$$
+$$f_X(x)=\left\{\begin{array} & \frac 1 {b-a+1}, & a\leq x\leq b \\ 0, & \text{ellers}\end{array}\right., \quad x\in \mathbb Z$$
 **[[#Middelværdi (Mean) af X|Middelværdi]]**
 $$\mu_X=E[X]=\frac {a+b} 2$$
 **[[#Varians (Variance) af X|Varians]]**
@@ -117,7 +117,7 @@ hvor $p^x$ er succeserne, og $(1-p)^{n-x}$ sørger for, at resten er fiasko
 
 Vi mangler stadig at tjekke hvor mange forskellige metoder de kan kombineres på
 $$P(X=x)=f_X(x)=\left(\begin{array}& n \\ x\end{array}\right)p^x(1-p)^{n-x},\quad 0\leq x\leq n$$
-Dette er vores **[[#Probability mass function, PMF|PMF]]**, hvor
+Dette er vores **[[#Probability mass function, PMF|PMF]]**, hvor $x$ er antallet af forsøg (tror jeg...), i ovenstående er
 $$\left(\begin{array}& n \\ x\end{array}\right)=\frac {n!}{(n-x)!x!}$$
 **[[#Middelværdi (Mean) af X|Middelværdi]]**
 $$\mu_X=n\cdot p$$
@@ -133,7 +133,15 @@ $$X:\text{ antal forsøg indtil første succes}$$
 _Vi stopper forsøget, når vi får vores første succes_
 
 **[[#Probability mass function, PMF|PMF]]**
-$$_X(x)=1-p^{x-1}\cdot p,\quad 1\leq x\leq \infty$$
+$$f_X(x)=1-p^{x-1}\cdot p,\quad 1\leq x\leq \infty$$
+hvor $x$ er antal forsøg
+
+**[[#Middelværdi (Mean) af X|Middelværdi]]**
+$$\mu_X=E[X]=\frac 1 p$$
+
+**[[#Varians (Variance) af X|Varians]]**
+$$\sigma_X^2=V[X]=\frac {1-p}{p^2}$$
+
 
 ---
 #lecture 
