@@ -142,6 +142,17 @@ $$\mu_X=E[X]=\frac 1 p$$
 **[[#Varians (Variance) af X|Varians]]**
 $$\sigma_X^2=V[X]=\frac {1-p}{p^2}$$
 
+## Case 4: Poisson fordeling
+Bruges til **ankomstprocesser**
+
+Vi måler **ankomstintensiteten** $\lambda$ med enheden $s^{-1}$
+
+$$X\sim \text{Poisson}(\lambda),\quad \lambda \geq 0$$
+$$f_X(x)=P(\text{x ankomster i }[0,t])=\frac {(\lambda t)}{},\quad 0\leq x\leq\infty, \quad x\in\mathbb N$$
+
+
+
+
 
 ---
 #lecture 
