@@ -42,6 +42,7 @@ På dansk: **fordelingsfunktion** (ikke vidt brugt term, brug hellere engelsk)
 
  $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$
  ![[Pasted image 20260911083621.png|472]]
+ 
 $$0\leq F_X(x)\leq 1, \quad \lim_{x\rightarrow -\infty}F_X(x)=0, \quad \lim_{x\rightarrow \infty}F_X(x)=1$$
 $$P(x_i< X\leq x_j)=F_X(x_j)-F_X(x_i)$$
 Hvis vi derimod også vil have $x_i$ med, skal vi få dens sandsynlighed med også.
@@ -65,7 +66,8 @@ Forskellige sandsynlighedsfordelinger, kan have samme middelværdi _hvis de e.g.
 ## Varians (Variance) af X
 Beskriver spredningen af sandsynlighedsfordelingen
 $$\sigma_X^2=V[X]=E[(X-\mu_X)^2]=\sum_{x_i\in S}(x_i-\mu_X)^2\cdot f_X(x_i)\geq 0$$
-![[Pasted image 20260911090308.png|349]]![[Pasted image 20260911090315.png|353]]
+![[Pasted image 20260911090308.png|349]]![[Pasted image 20260911090315.png|350]]
+
 $$\sigma_X^2=E[X^2]+E[\mu_X^2]-2\mu_XE[X]=E[X^2]+\mu_X^2-2\mu_X\cdot\mu_X=E[X^2]-\mu_X^2=\sum_{x_i\in S}x_i^2\cdot f_X(x_i)-\mu_X^2$$
 Ligesom før, kan vi lave ekstra matematik med variansen
 $$V[aX+b]=V[aX]+V[b]=a^2\sigma_X^2+0$$
@@ -74,7 +76,9 @@ $$V[aX+b]=V[aX]+V[b]=a^2\sigma_X^2+0$$
 $$\sigma_X=+\sqrt{\sigma_X^2}$$
 Har samme enhed som X
 
-
+## Case 1: Uniform fordeling
+$$X\sim UD(a,b),\quad a,b\in \mathbb{Z}$$
+$\sim$ betyder _"fordelt som"_, $UD$ er _navn_ og $a,b$ er _parametre_
 
 
 ---
