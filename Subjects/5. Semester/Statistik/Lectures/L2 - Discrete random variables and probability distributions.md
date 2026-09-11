@@ -85,7 +85,7 @@ $$\text{antal udfald} = b-a+1$$
 **[[#Probability mass function, PMF|PMF]]**
 $$f_X(x)=\frac 1 {b-a+1},\quad a\leq x\leq b, \quad 0, \quad \text{ellers},\quad x\in \mathbb Z$$
 **[[#Middelværdi (Mean) af X|Middelværdi]]**
-$$E[X]=\frac {a+b} 2$$
+$$\mu_X=E[X]=\frac {a+b} 2$$
 **[[#Varians (Variance) af X|Varians]]**
 $$\sigma_X^2=\frac {(b-a+1)^2-1}{12}$$
 
@@ -96,13 +96,16 @@ $$X\sim \text{Bin}(n,p)$$
 $\text{Bin}$ er navnet for _binomial_, $n$ er _antal forsøg_, $p$ er _succes rate_
 
 ### Bernouilly forsøg
-Betyder: **udført kun _1_ gang**
+Betyder: **udført kun _1_ gang**, $n=1$
 
 $$f_X(x)=p\quad x=1, \quad \text{succes}, \quad 1-p\quad x=0,\quad \text{fiasko}$$
 
-
+**[[#Middelværdi (Mean) af X|Middelværdi]]**
 $$\mu_X=E[X]=\sum_{x_i}x_if_X(x_i)=1\cdotp+0\cdot(1-p)=p$$
-$$$$
+**[[#Varians (Variance) af X|Varians]]**
+$$E[X^2]=\sum_{x_i}x_i^2f_X(x_i)=1^2\cdot p+0^2(1-p)=p$$
+$$\sigma_X^2=V[X]=p-p^2=p(1-p)$$
+![[Pasted image 20260911094235.png|379]]
 
 
 
