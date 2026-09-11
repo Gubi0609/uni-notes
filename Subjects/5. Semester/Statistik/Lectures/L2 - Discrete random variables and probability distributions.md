@@ -84,7 +84,17 @@ $$f(x)=P(X=x)=F_X(x)-F_X(x^-)$$
 Where $x^-$ means, that we look at the limit of the CMF coming from the left. Looking at the boundary values in the CMF, we get
 $$F(-10^-)=0,F(-10)=0.25\rightarrow f(-10)=0.25$$
 $$F(30^-)=0.25,F(30)=0.75\rightarrow f(30)=0.75-0.25=0.5$$
-$$F(50^-)=0.75,F(50)=1\rightarrow f$$
+$$F(50^-)=0.75,F(50)=1\rightarrow f(50)=1-0.75=0.25$$
+Then we get the PMF
+$$f(x)=\left\{\begin{array}&0.25, & x=-10 \\ 0.5, & x=30 \\0.25 & x=50 \\ 0, & \text{ellers}\end{array}\right.$$
+- a)
+From the CMF definition we have
+$$P(X\leq 50)=1$$
+- b)
+From the CMF definition we have
+$$P(X\leq 40)=0.75$$
+- c)
+
 
 
 
