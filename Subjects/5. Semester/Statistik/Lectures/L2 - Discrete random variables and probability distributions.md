@@ -79,6 +79,19 @@ Har samme enhed som X
 ## Case 1: Uniform fordeling
 $$X\sim UD(a,b),\quad a,b\in \mathbb{Z}$$
 $\sim$ betyder _"fordelt som"_, $UD$ er _navn_ og $a,b$ er _parametre_
+![[Pasted image 20260911092919.png]]
+
+$$\text{antal udfald} = b-a+1$$
+**[[#Probability mass function, PMF|PMF]]**
+$$f_X(x)=\frac 1 {b-a+1},\quad a\leq x\leq b, \quad 0, \quad \text{ellers},\quad x\in \mathbb Z$$
+**[[#Middelværdi (Mean) af X|Middelværdi]]**
+$$E[X]=\frac {a+b} 2$$
+**[[#Varians (Variance) af X|Varians]]**
+$$\sigma_X^2=\frac {(b-a+1)^2-1}{12}$$
+
+## Case 2: Binomial fordeling
+_Kun 2 mulige udfald:_ **Succes eller fiasko**
+
 
 
 ---
