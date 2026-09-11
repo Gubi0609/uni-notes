@@ -51,6 +51,11 @@ $$P(x_i<X<x_j)=F_X(x_j)-F_X(x_i)-f_X(x_j)$$
 Til sidst, hvis det kun er $x_i$ der er med, og ikke $x_j$
 $$P(x_i\leq X<x_j)=F_X(x_j)-F_X(x_i)+f_X(x_i)-f_X(x_j)$$
 
+## Middelværdi (Mean) af X
+$$\mu_X=E[X]:=\sum\text{mulige udfald} \cdot \text{sandsynlighed}=\sum_{x_o\in S} x_i\cdot f_X(x_i)$$
+$E$ står for _expectation_
+
+Kan opfattes som et **tyngdepunkt** eller __
 
 
 
