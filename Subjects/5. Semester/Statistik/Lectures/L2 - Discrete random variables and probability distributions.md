@@ -115,6 +115,15 @@ Udfør $n$ uafhængige af [[#Bernouilly forsøg|Bernouilly forsøg]]
 $$P(X=x)=P(\text{x succeser blandt n forsøg})=f_X(x)=p^x(1-p)^{n-x}, \quad 0\leq x\leq n$$
 hvor $p^x$ er succeserne, og $(1-p)^{n-x}$ sørger for, at resten er fiasko
 
+Vi mangler stadig at tjekke hvor mange forskellige metoder de kan kombineres på
+$$P(X=x)=f_X(x)=\left(\begin{array}& n \\ x\end{array}\right)p^x(1-p)^{n-x},\quad 0\leq x\leq n$$
+Dette er vores **[[#Probability mass function, PMF|PMF]]**, hvor
+$$\left(\begin{array}& n \\ x\end{array}\right)=\frac {n!}{(n-x)!x!}$$
+**[[#Middelværdi (Mean) af X|Middelværdi]]**
+$$\mu_X=n\cdot p$$
+**[[#Varians (Variance) af X|Varians]]**
+$$\sigma_X^2=n\cdot p(1-p)$$
+
 
 ---
 #lecture 
