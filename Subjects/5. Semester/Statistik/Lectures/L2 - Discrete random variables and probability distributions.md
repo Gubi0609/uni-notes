@@ -21,6 +21,9 @@
 
 # Notes
 
+# Diskrete stokastiske variable & fordelinger
+
+
 
 ---
 #lecture 
