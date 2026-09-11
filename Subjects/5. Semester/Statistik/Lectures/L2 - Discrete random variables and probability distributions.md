@@ -20,6 +20,10 @@
 [[Diskrete stokastiske variable & fordelinger]]
 
 # Notes
+For Exercises 3.1.10 to 3.1.12, verify that the following functions are probability mass functions, and determine the requested probabilities.
+![[Pasted image 20260911103736.png]]
+
+
 
 
 ---

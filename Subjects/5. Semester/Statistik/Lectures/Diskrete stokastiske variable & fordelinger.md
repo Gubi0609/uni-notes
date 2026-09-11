@@ -1,3 +1,4 @@
+
 > [!help] Case 1: Uniform fordeling
 > $$X\sim UD(a,b),\quad a,b\in \mathbb{Z}$$
 > $$\text{antal udfald} = b-a+1$$
@@ -41,7 +42,6 @@ $$X\sim \text{Poisson}(\lambda),\quad \lambda \geq 0$$
 $$f_X(x)=P(\text{x ankomster i }[0,t])=\frac {(\lambda t)^x}{x!}e^{-\lambda t},\quad 0\leq x\leq\infty, \quad x\in\mathbb N$$
 **[[#Middelværdi (Mean) af X|Middelværdi]]** og **[[#Varians (Variance) af X|Varians]]**
 $$\mu_X = E[X]=\sigma^2_X = V[X]=\lambda t$$
-
 
 ---
 Vi har et _stokastisk eksperiment_ med udfaldsrummet (sample space) S. I S har vi vores udfald e.g. $a_1$
