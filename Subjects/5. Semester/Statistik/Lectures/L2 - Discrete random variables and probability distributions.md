@@ -148,7 +148,10 @@ Bruges til **ankomstprocesser**
 Vi måler **ankomstintensiteten** $\lambda$ med enheden $s^{-1}$
 
 $$X\sim \text{Poisson}(\lambda),\quad \lambda \geq 0$$
-$$f_X(x)=P(\text{x ankomster i }[0,t])=\frac {(\lambda t)}{},\quad 0\leq x\leq\infty, \quad x\in\mathbb N$$
+**[[#Probability mass function, PMF|PMF]]**
+$$f_X(x)=P(\text{x ankomster i }[0,t])=\frac {(\lambda t)^x}{x!}e^{-\lambda t},\quad 0\leq x\leq\infty, \quad x\in\mathbb N$$
+**[[#Middelværdi (Mean) af X|Middelværdi]]** og **[[#Varians (Variance) af X|Varians]]**
+$$E[X]=V[X]=\lambda t$$
 
 
 
