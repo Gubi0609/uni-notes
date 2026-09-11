@@ -64,7 +64,11 @@ $$P(X=4)=f(4)=\frac 9 {25}$$
 - b)
 We use CMF
  $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$
- $$P(X$$
+ $$P(X\leq 1)=\sum_{x_i\leq 1}f_X(x_i)=f(0)+f(1)=\frac 1 {25}+\frac 3{25}=\frac 4{25}$$
+ - c)
+Again, CMF
+$$P(x_i\leq X<x_j)=F_X(x_j)-F_X(x_i)+f_X(x_i)-f_X(x_j)$$
+$$P(2\leq X<4)=F_X(4)-F_X(2)+f_X(2)-f_X(4)=\left(f(0)+f(1)+f(2)+f(3)+f(4)\right)-\left(f(0)+f(1)+f(2)\right)+\frac 5{25}-\frac 9{25}$$ $$P(2\leq X<4)=1-\left(\frac 1{25}+\frac 3{25}+\frac 5{25}\right)+\frac 5{25}-\frac 9{25}=$$
 
 
 ---
