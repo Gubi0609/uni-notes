@@ -19,6 +19,28 @@
 
 # Notes
 
+# Opgaver om Big O
+
+## Opgave 1
+Hvad er Store O tidskompleksiteten af nedenstående metode. Begrund dit svar.
+```cs
+public static int myMethod( int[] arr )
+{
+	int x = 0;
+	for (int i = 0; i < arr.length; i++)
+		for (int j = 0; j < arr.length/2; j++)
+			for (int k = 0; k < arr.length; k++)
+			{
+				x++;
+				if (k==1)
+					break;
+			}
+	return x;
+}
+```
+
+
+
 
 ---
 #lecture 
