@@ -39,8 +39,28 @@ public static int myMethod( int[] arr )
 }
 ```
 
+- Yderste for-loop er `O(n)`
+- Nr. 2 for-loop er `O(n)`
+- Inderste for-loop er `O(2)`, da den kun går fra `k=0` til `k=1` før den breaker.
+- **Samlet set: `O(n)*O(n)*O(2) = O(n^2)`** da vi ikke må skrive konstanter såsom `O(2)`
 
-
+## Opgave 2
+Hvad er Store O tidskompleksiteten af nedenstående metode. Begrund dit svar.
+```cs
+public static int myMethod1( int[] arr )
+{
+	int x = 0;
+	for (int i = 0; i < arr.length/2; i++)
+		for (int j = 0; j < arr.length; j++)
+			for (int k = 0; k < arr.length; k++)
+			{
+				x++;
+				if (k==arr.length/2)
+					break;
+			}
+return x;
+}
+```
 
 ---
 #lecture 
