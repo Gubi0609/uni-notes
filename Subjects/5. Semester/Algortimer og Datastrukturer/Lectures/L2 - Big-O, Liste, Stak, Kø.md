@@ -20,7 +20,6 @@
 # Notes
 
 # Opgaver om Big O
-
 ## Opgave 1
 Hvad er Store O tidskompleksiteten af nedenstående metode. Begrund dit svar.
 ```cs
@@ -89,7 +88,8 @@ public static int func1(int N)
 
 - `func2` er `O(n)`
 - `func1` for-loop er i sig selv `O(n)`
-- **For-loop i `func1`
+- **For-loop i `func1` kalder `func2` en gang pr loop. Dette gør det til et nested for-loop, altså `O(n) * O(n) = O(n^2)`**  
+
 
 ---
 #lecture 
