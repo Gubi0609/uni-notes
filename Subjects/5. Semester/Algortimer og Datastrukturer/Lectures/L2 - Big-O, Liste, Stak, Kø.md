@@ -58,9 +58,38 @@ public static int myMethod1( int[] arr )
 				if (k==arr.length/2)
 					break;
 			}
-return x;
+	return x;
 }
 ```
+
+- Yderste for-loop er `O(n)`
+- Nr. 2 for-loop er `O(n)`
+- Inderste for-loop er `O(n/2)`, da den kun kører til `n/2`.
+- **Samlet set: `O(n)*O(n)*O(n/2) = O(n^3)`** da vi ikke må skrive konstanter såsom `O(1/2)`
+
+## Opgave 3
+Hvad er Store O tidskompleksiteten af metoden `func1`. Begrund dit svar.
+```cs
+public static int func2(int N)
+{
+	int res = 0;
+	for (int i = 0; i < N; i++)
+		res = res + 1;
+	return res;
+}
+
+public static int func1(int N)
+{
+	int x = 0;
+	for (int i = 0; i < N; i++)
+		x = x + func2(N);
+	return x;
+}
+```
+
+- `func2` er `O(n)`
+- `func1` for-loop er i sig selv `O(n)`
+- **For-loop i `func1`
 
 ---
 #lecture 
