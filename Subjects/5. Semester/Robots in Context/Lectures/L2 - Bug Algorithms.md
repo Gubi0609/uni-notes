@@ -265,6 +265,3 @@ Order of preference:
 
 ---
 #lecture 
-
-
-```
