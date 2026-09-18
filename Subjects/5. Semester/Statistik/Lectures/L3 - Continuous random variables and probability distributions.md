@@ -113,7 +113,8 @@ Kommer af den generelle formel for [[#Varians (Variance) af X|Varians]], men vi 
 $$X\sim N(\mu, \sigma^2)$$
 Her bruger vi [[#Middelværdi (Mean) af X|middelværdien]] og [[#Varians (Variance) af X|variansen]] direkte som parametre.
 
-> Lineære kombinationer af normalfordelinger giver ny
+> Lineære kombinationer af normalfordelinger giver nye normal fordelinger med summeret middelværdier og summeret varians fra lineær kombinations komponenter. $X_1, ..., X_n$ uafhængige $X_i \sim N(\mu_i, \sigma^2_i)$
+> $$Y=\sum_{i=1}^n a_iX_i=a_1X_1+...+a_nX_n\sim N\left(\sum_{i=1}^n a_i\mu_i=\mu_y, \sum_{i=1}^n a_i^2\sigma_i^2=\sigma_y^2\right)$$
 ## PDF
 $$f_X(x)=\frac 1 {\sqrt{2\pi}\cdot\sigma}e^{-\frac 1 2(\frac {x-\mu} {\sigma})^2}$$
 ![[Pasted image 20260918093345.png|317]]
@@ -147,6 +148,9 @@ $$\bar X=\frac 1 n \sum_{i=1}^n X_i\rightarrow^{n\rightarrow \infty} \bar X\sim 
 $\bar X$ er _gennemsnittet_ af $X$.
 
 Vi kan tage enhver form for fordeling, og tilpasse det [[#Normal (Gaussian) fordeling]].
+
+Kan også bruges i sammenhæng med ovenstående [[#Normal (Gaussian) fordeling|lineær kombination]].
+$$\bar X=\frac 1 n \sum_{i=1}^nX_i\sim N($$
 
 
 ---
