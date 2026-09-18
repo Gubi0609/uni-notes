@@ -24,7 +24,7 @@
 Ligesom [[Diskrete stokastiske variable & fordelinger]] har vi et sample space $S$ og et sæt af stokastiske variable $X$.
 $$X: S\rightarrow I\subseteq \mathbb R$$
 
-# Probability *Density* Function
+# Probability *Density* Function, PDF
 På dansk kunne man kalde det en sandsynligheds-*tætheds* funktion
 
 Skrevet $f_X(x)$ ligesom [[Diskrete stokastiske variable & fordelinger#Probability mass function, PMF|PMF]].
@@ -37,7 +37,17 @@ $$P(a\leq X\leq b)=\int_a^b f_X(x)dx$$
 $f_X(x)$ er _likelihood_.
 
 Der gælder
-$$\int_{-\infty}^\infty f_X(x)dx
+$$\int_{-\infty}^\infty f_X(x)dx=1\quad [P(s)=1]$$
+$$f_X(x)\geq 0$$
+
+Da vi bruger integraler her, gælder der også
+$$P(X=x)=0$$
+Da arealet for et specifikt x-punkt er 0.
+
+# Cumulative Probability Density Function, CDF
+På dansk: fordelingsfunktion
+
+Skrevet $F_X(x)$.
 
 
 ---
