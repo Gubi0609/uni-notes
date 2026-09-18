@@ -64,6 +64,11 @@ $$F_X(x)\left[-\frac 1 {x^2}\right]_{-\infty}^x=-\frac 1 {x^2}-\left(-\frac 1 {(
 Vi bruger
 $$\mu_X=E[X]=\int_{-\infty}^\infty x\cdot f_X(x)=\int_{-1}^1 x\cdot 1.5\cdot x^2$$
 og løser i matlab
+$$\mu_X=0$$
+
+Til varians, bruger vi
+$$\sigma^2=V[X]:=E[(X-\mu_X)^2]=E[X^2]-\mu_X^2 =\int_{-\infty}^\infty (x-\mu_X)^2\cdot f_X(x) dx\geq 0$$
+$$\sigma^2=\int_{-1}^1(x-0)^2\cdot1.5x^2=0.6$$
 
 
 ![[Pasted image 20260918102433.png]]
