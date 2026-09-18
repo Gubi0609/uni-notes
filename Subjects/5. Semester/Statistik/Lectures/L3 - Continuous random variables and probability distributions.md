@@ -66,8 +66,14 @@ I modsætning til [[Diskrete stokastiske variable & fordelinger#Cumulative proba
 # Middelværdi (Mean) af X
 Skrevet $\mu_X$
 
-$$\mu_X=E[X]=x\cdot f_X(x)$$
+$$\mu_X=E[X]=\int_{-\infty}^\infty x\cdot f_X(x)$$
 Hvor $E[X]$ er _forventet værdi_ eller _expectancy_
+![[Pasted image 20260918084209.png|369]]
+
+Man kan også tænke på middelværdien som _tyngdepunkt_. Hvis vi have en længere hale, ville tyngdepunktet blive påvirket meget af den, og altså rykke sig længere langs den.
+
+$$E[h(x)]=\int_{-\infty}^\infty h(x)\cdot f_X(x)dx$$
+hvor $h(x)$ er en tilfældig funktion af 
 
 
 ---
