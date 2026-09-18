@@ -29,7 +29,7 @@ $$P(a\leq X\leq b)=\int_a^b f_X(x)dx$$
 Nedre grænse må være $1$ (se opgave beskrivelse) og øvre grænse må være $\infty$
 
 - a.
-$$P(1\leq X<2)=\int_{1}^2 \frac 2 {x^3} dx=[x^3]$$
+$$P(1\leq X<2)=\int_{1}^2 \frac 2 {x^3} dx=[-\frac 1 {x^2}]_1^2$$
 
 
 ![[Pasted image 20260918102358.png]]
