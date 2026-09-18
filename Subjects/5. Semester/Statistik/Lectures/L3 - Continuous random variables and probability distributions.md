@@ -118,6 +118,20 @@ $$f_X(x)=\frac 1 {\sqrt{2\pi}\cdot\sigma}e^{-\frac 1 2(\frac {x-\mu} {\sigma})^2
 ![[Pasted image 20260918093345.png|317]]
 
 $$\mu\pm3\sigma :99.7\%$$
+Ovenstående betyder at 99.7% af alle udfald ligger indenfor det beskrevne område.
+
+## Standard Normal Fordeling
+Skrevet $Z$
+$$Z\sim N(\mu=0, \sigma^2=1)$$
+Den er normal fordelt, men har en middelværdi på 0 og en varians på 1.
+
+## Standardisering
+Vi normerer en normal fordeling til at blive til en standard normal fordeling
+$$X\sim N(\mu,\sigma^2)\Rightarrow Z=\frac {X-\mu}{\sigma}\sim N(0,1)$$
+
+Vi kan så finde sandsynligheden for at være mellem a og b
+$$P(a\leq X\leq b)=P(\frac {a-\mu}\sigma \leq X\leq \frac {b-\mu}\sigma=$$
+
 
 
 ---
