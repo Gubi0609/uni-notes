@@ -110,5 +110,7 @@ $$\sigma^2=V[X]=\frac {(b-a)^2}{12}$$
 Kommer af den generelle formel for [[#Varians (Variance) af X|Varians]], men vi gider ikke udlede det.
 
 
+
+
 ---
 #lecture 
