@@ -73,6 +73,14 @@ $$\sigma^2=\int_{-1}^1(x-0)^2\cdot1.5x^2=0.6$$
 
 ![[Pasted image 20260918102433.png]]
 
+**Middelværdi**
+$$\mu_X=E[X]=\frac {a+b}2\rightarrow \frac {-1 + 1} 2=0$$ 
+**Varians**
+ $$\sigma^2=V[X]=\frac {(b-a)^2}{12}\rightarrow \frac {(1 -(-1))^2}{12}=\frac 1{12}$$
+**Standardafvigelse**
+$$\sigma=+\sqrt{\frac 1 {12}}=0.28$$
+
+
 ![[Pasted image 20260918102444.png]]
 
 ![[Pasted image 20260918102459.png]]
