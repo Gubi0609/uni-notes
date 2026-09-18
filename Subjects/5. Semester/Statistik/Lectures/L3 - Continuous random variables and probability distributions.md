@@ -155,8 +155,21 @@ $$\bar X=\frac 1 n \sum_{i=1}^nX_i\sim N\left(\sum_{i=1}^n\frac 1 n\mu,\sum_{i=1
 # Eksponentiel fordeling
 $$X\sim \text{Exp}(\lambda)$$
 Hvor $\lambda$ er _ankomst intensitet_. (Minder om [[Diskrete stokastiske variable & fordelinger#Case 4 Poisson fordeling|Poisson fordeling]]). Lambda har enheden $s^{-1}$
-$$P(\text{x nye ankomster i intervalet }[0,t])
 
+Vi har variablen $T$ som er _ventetid til næste ankomst_.
+$$P(T>t)=P(\text{0 ankomster i }[0,t])=e^{-\lambda t}$$
+
+## CDF
+$$F_T(t)=P(T\leq t)=1-e^{-\lambda t}$$
+![[Pasted image 20260918100541.png|330]]
+## PDF
+$$f_T(t)=\frac {dF_T(t)}{dt}=\lambda e^{-\lambda t}$$
+![[Pasted image 20260918100515.png|350]]
+
+## Middelværdi
+$$\mu=E[T]=\frac 1 \lambda$$
+## Varians
+$$\sigma^2=V[T]=\frac 1 {\lambda^2}$$
 
 
 ---
