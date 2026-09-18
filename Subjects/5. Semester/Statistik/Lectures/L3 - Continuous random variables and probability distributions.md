@@ -86,6 +86,16 @@ Hvis vi i stedet for $X^2$ bruger $X^3$ hedder det _skewness_, men det bruger vi
 $$\sigma_X=+\sqrt{\sigma_X^2}$$
 Har samme enhed som $X$.
 
+# Case 1: Uniform fordeling
+_Continuos uniform distribution_
+Betyder at alle udfald er lige sandsynlige
+$$X\sim U(a,b)\quad a,b\in \mathbb R$$
+![[Pasted image 20260918085853.png|366]]
+
+Arealet under grafen er 1. Dette er i henhold til [[#Probability *Density* Function, PDF|PDF]].
+
+$$f_X(x)=\left\{\begin{array} &  \frac 1 {b-a} & a\leq x \leq b \\ 0 & ellers \end{array}\right.$$
+
 
 
 
