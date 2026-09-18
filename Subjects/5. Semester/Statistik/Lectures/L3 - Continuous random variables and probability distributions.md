@@ -149,8 +149,14 @@ $\bar X$ er _gennemsnittet_ af $X$.
 
 Vi kan tage enhver form for fordeling, og tilpasse det [[#Normal (Gaussian) fordeling]].
 
-Kan også bruges i sammenhæng med ovenstående [[#Normal (Gaussian) fordeling|lineær kombination]].
-$$\bar X=\frac 1 n \sum_{i=1}^nX_i\sim N($$
+Kan også bruges i sammenhæng med [[#Normal (Gaussian) fordeling|lineær kombination]].
+$$\bar X=\frac 1 n \sum_{i=1}^nX_i\sim N\left(\sum_{i=1}^n\frac 1 n\mu,\sum_{i=1}^n\left(\frac 1 n\right)^2\sigma^2\right)\sim N\left(\mu, \frac {\sigma^2}n\right)$$
+
+# Eksponentiel fordeling
+$$X\sim \text{Exp}(\lambda)$$
+Hvor $\lambda$ er _ankomst intensitet_. (Minder om [[Diskrete stokastiske variable & fordelinger#Case 4 Poisson fordeling|Poisson fordeling]]). Lambda har enheden $s^{-1}$
+$$P(\text{x nye ankomster i intervalet }[0,t])
+
 
 
 ---
