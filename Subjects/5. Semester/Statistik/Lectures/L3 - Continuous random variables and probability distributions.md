@@ -56,10 +56,15 @@ $$x=4.47214$$
 $$F_X(x):=F(X\leq x)=\int_{-\infty}^xf_X(u)du$$
 
 Vi har allerede integreret, så vi skal bare indsætte variablerne
-$$
+$$F_X(x)\left[-\frac 1 {x^2}\right]_{-\infty}^x=-\frac 1 {x^2}-\left(-\frac 1 {(-\infty)^2}\right)=- \frac 1 {x^2}$$
 
 
 ![[Pasted image 20260918102420.png]]
+
+Vi bruger
+$$\mu_X=E[X]=\int_{-\infty}^\infty x\cdot f_X(x)=\int_{-1}^1 x\cdot 1.5\cdot x^2$$
+og løser i matlab
+
 
 ![[Pasted image 20260918102433.png]]
 
