@@ -110,7 +110,14 @@ $$\sigma^2=V[X]=\frac {(b-a)^2}{12}$$
 Kommer af den generelle formel for [[#Varians (Variance) af X|Varians]], men vi gider ikke udlede det.
 
 # Normal (Gaussian) fordeling
-$$X\sim N$$
+$$X\sim N(\mu, \sigma^2)$$
+Her bruger vi [[#Middelværdi (Mean) af X|middelværdien]] og [[#Varians (Variance) af X|variansen]] direkte som parametre.
+
+## PDF
+$$f_X(x)=\frac 1 {\sqrt{2\pi}\cdot\sigma}e^{-\frac 1 2(\frac {x-\mu} {\sigma})^2}$$
+![[Pasted image 20260918093345.png|317]]
+
+$$\mu\pm3\sigma :99.7\%$$
 
 
 ---
