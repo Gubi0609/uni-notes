@@ -78,12 +78,19 @@ $$\mu_X=E[X]=\frac {a+b}2\rightarrow \frac {-1 + 1} 2=0$$
 **Varians**
  $$\sigma^2=V[X]=\frac {(b-a)^2}{12}\rightarrow \frac {(1 -(-1))^2}{12}=\frac 1{12}$$
 **Standardafvigelse**
-$$\sigma=+\sqrt{\frac 1 {12}}=0.28$$
-
+$$\sigma=+\sqrt{\frac 1 {12}}=0.289$$
 
 ![[Pasted image 20260918102444.png]]
 
 ![[Pasted image 20260918102459.png]]
+
+- a.
+$$P(a\leq X\leq b)=P(\frac {a-\mu}\sigma \leq \frac {X-\mu}\sigma\leq \frac {b-\mu}\sigma)=F_Z\left(\frac {b-\mu}{\sigma}\right)-F_Z\left(\frac {a-\mu}\sigma\right)$$
+$$P(13<X<\infty)=F_Z\left(\frac {\infty-12}{0.5}\right)-F_Z\left(\frac {13-12}{0.5}\right)$$
+
+Det kræver noget lidt avanceret regning, så det bliver i matlab
+
+
 
 ![[Pasted image 20260918102514.png]]
 
