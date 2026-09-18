@@ -24,6 +24,14 @@
 # Exercises
 ![[Pasted image 20260918102344.png]]
 
+Til alle opgaverne bruges
+$$P(a\leq X\leq b)=\int_a^b f_X(x)dx$$
+Nedre grænse må være $1$ (se opgave beskrivelse) og øvre grænse må være $\infty$
+
+- a.
+$$P(1\leq X<2)=\int_{1}^2 \frac 2 {x^3} dx=[x^3]$$
+
+
 ![[Pasted image 20260918102358.png]]
 
 ![[Pasted image 20260918102420.png]]
