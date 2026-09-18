@@ -125,13 +125,24 @@ Skrevet $Z$
 $$Z\sim N(\mu=0, \sigma^2=1)$$
 Den er normal fordelt, men har en middelværdi på 0 og en varians på 1.
 
+[[#Probability *Density* Function, PDF|PDF]] skrives også $f_Z(z)=\phi(z)$ (kaldet _normpdf_) og [[#Cumulative Probability Density Function, CDF|CDF]] skrives $F_Z(z)=\Phi(z)$ (kaldet _normcdf_)
+
 ## Standardisering
 Vi normerer en normal fordeling til at blive til en standard normal fordeling
 $$X\sim N(\mu,\sigma^2)\Rightarrow Z=\frac {X-\mu}{\sigma}\sim N(0,1)$$
 
-Vi kan så finde sandsynligheden for at være mellem a og b
-$$P(a\leq X\leq b)=P(\frac {a-\mu}\sigma \leq X\leq \frac {b-\mu}\sigma=$$
+Vi kan så finde sandsynligheden for at være mellem a og b ved bruge standardisering.
+$$P(a\leq X\leq b)=P(\frac {a-\mu}\sigma \leq \frac {X-\mu}\sigma\leq \frac {b-\mu}\sigma)=F_Z\left(\frac {b-\mu}{\sigma}\right)-F_Z\left(\frac {a-\mu}\sigma\right)$$
 
+# Central Limit Theorem
+På dansk: Central grænseværdi sætning
+Vi har $X_1, X_2, ..., X_n$ som er _uafhængige_ og kommer fra _samme fordeling_
+$$E[X]=\mu$$
+$$V[X]=\sigma^2$$
+
+Behøver _ikke_ være normalfordel
+
+$$\bar X=\frac 1 n \sum$$
 
 
 ---
