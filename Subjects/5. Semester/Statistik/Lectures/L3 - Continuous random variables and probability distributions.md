@@ -90,13 +90,24 @@ Har samme enhed som $X$.
 _Continuos uniform distribution_
 Betyder at alle udfald er lige sandsynlige
 $$X\sim U(a,b)\quad a,b\in \mathbb R$$
-![[Pasted image 20260918085853.png|366]]
 
+I matlab, skrives `x=a+b*rand`. `rand` generer et tilfældigt tal mellem 0 og 1.
+
+## PDF
+![[Pasted image 20260918085853.png|366]]
 Arealet under grafen er 1. Dette er i henhold til [[#Probability *Density* Function, PDF|PDF]].
 
 $$f_X(x)=\left\{\begin{array} &  \frac 1 {b-a} & a\leq x \leq b \\ 0 & ellers \end{array}\right.$$
 
+## CMF
+![[Pasted image 20260918090124.png|357]]
 
+## Middelværdi
+Middelværdien ligger nødvendigvis i midten, da alle udfald i mellem a og b er lige sandsynlige
+$$\mu_X=E[X]=\frac {a+b}2$$
+## Varians
+$$\sigma^2=V[X]=\frac {(b-a)^2}{12}$$
+Kommer af den generelle formel for [[#Varians (Variance) af X|Varians]], men vi gider ikke udlede det.
 
 
 ---
