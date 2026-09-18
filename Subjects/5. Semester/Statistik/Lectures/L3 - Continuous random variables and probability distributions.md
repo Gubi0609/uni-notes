@@ -79,9 +79,15 @@ hvor $h(x)$ er en tilfældig funktion af $x$.
 Bruges til at beskrive spredningen(ikke helt sikker på, at det er det rigtige ord at bruge), da flere kan have samme [[#Middelværdi (Mean) af X|middelværdi]] men anderledes varians
 ![[Pasted image 20260918084723.png]]
 
-$$\sigma^2=V[X]:=E[(X-\mu_X)^2]=\int_{-\infty}^\infty (x-\mu_X)^2\cdot f_X(x) dx\geq 0$$
+$$\sigma^2=V[X]:=E[(X-\mu_X)^2]=E[X^2]-\mu_X^2 =\int_{-\infty}^\infty (x-\mu_X)^2\cdot f_X(x) dx\geq 0$$
+
+Hvis vi i stedet for $X^2$ bruger $X^3$ hedder det _skewness_, men det bruger vi ikke rigtig.
 ## Standardafvigelse
-$$\sigma
+$$\sigma_X=+\sqrt{\sigma_X^2}$$
+Har samme enhed som $X$.
+
+
+
 
 ---
 #lecture 
