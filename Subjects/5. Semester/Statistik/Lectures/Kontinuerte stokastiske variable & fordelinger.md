@@ -1,3 +1,8 @@
+
+> [!help] Central Limit Theorem
+> Bruges til at kunne lave en hvilken som helst fordeling om til _normal fordeling_.
+> Se [[#Central Limit Theorem]]
+
 > [!help] Case 1: [[#Case 1 Uniform fordeling|Uniform fordeling]]
 > $$X\sim U(a,b)\quad a,b\in \mathbb R$$
 > 
@@ -21,6 +26,31 @@
 > 
 > **Standard Normal Fordeling**
 > $$Z\sim N(\mu=0, \sigma^2=1)$$
+> $$P(a\leq X\leq b)=P(\frac {a-\mu}\sigma \leq \frac {X-\mu}\sigma\leq \frac {b-\mu}\sigma)=F_Z\left(\frac {b-\mu}{\sigma}\right)-F_Z\left(\frac {a-\mu}\sigma\right)$$
+> 
+> **Lineær Kombination**
+> $$Y=\sum_{i=1}^n a_iX_i=a_1X_1+...+a_nX_n\sim N\left(\sum_{i=1}^n a_i\mu_i=\mu_y, \sum_{i=1}^n a_i^2\sigma_i^2=\sigma_y^2\right)$$
+
+> [!help] Case 3: [[#Case 3 Eksponentiel fordeling|Eksponentiel fordeling]]
+> $$X\sim \text{Exp}(\lambda)$$
+> 
+> **CDF**
+> $$F_T(t)=P(T\leq t)=1-e^{-\lambda t}$$
+> 
+> **PDF**
+> $$f_T(t)=\frac {dF_T(t)}{dt}=\lambda e^{-\lambda t}$$
+> 
+> **Middelværdi**
+> $$\mu=E[T]=\frac 1 \lambda$$
+> **Varians**
+> $$\sigma^2=V[T]=\frac 1 {\lambda^2}$$
+
+> [!help] Case 4: [[#Case 4 Binomial fordeling|Binomial fordeling]]
+> $$X\sim \text{Bin}(n, p)$$
+hvor $np>>1$ og $np(1-p)>> 1$.
+$$Z=\frac {X-np} {\sqrt{np(1-np)}}\sim N(0,1)$$
+
+> [!help] Case 5: [[#Case 4 Poisson fordeling|Pois]]
 
 ---
 Ligesom [[Diskrete stokastiske variable & fordelinger]] har vi et sample space $S$ og et sæt af stokastiske variable $X$.
@@ -140,7 +170,7 @@ $$P(a\leq X\leq b)=P(\frac {a-\mu}\sigma \leq \frac {X-\mu}\sigma\leq \frac {b-\
 
 # Central Limit Theorem
 På dansk: Central grænseværdi sætning
-Vi har $X_1, X_2, ..., X_n$ som er _uafhængige_ og kommer fra _samme fordeling_
+Vi har $x_1, x_2, ..., x_n$ som er _uafhængige_ og kommer fra _samme fordeling_
 $$E[X]=\mu$$
 $$V[X]=\sigma^2$$
 
