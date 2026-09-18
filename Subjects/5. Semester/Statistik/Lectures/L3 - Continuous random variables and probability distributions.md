@@ -58,6 +58,16 @@ $$f_X(x)=\frac {dF_X(x)}{dx}\geq 0$$
 
 $$\lim_{x\rightarrow -\infty}F_X(x)=0$$
 $$\lim_{x\rightarrow \infty}F_X(x)=1$$
+Det ovenover skriver bare, at den starter i 0 og slutter i 1.
+
+$$P(a\leq X\leq b)=\int_a^b f_X(x)dx=F_X(b)-F_X(a)$$
+I modsætning til [[Diskrete stokastiske variable & fordelinger#Cumulative probability function, CMF|CMF]] behøver vi ikke fire forskellige udgaver af ovenstående formel. Noget med Dirac Delta, som vi ikke bruger. Anyways, det virker bare!
+
+# Middelværdi (Mean) af X
+Skrevet $\mu_X$
+
+$$\mu_X=E[X]=x\cdot f_X(x)$$
+Hvor $E[X]$ er _forventet værdi_ eller _expectancy_
 
 
 ---
