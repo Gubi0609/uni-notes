@@ -21,6 +21,22 @@
 
 # Notes
 
+# Exercises
+![[Pasted image 20260918102344.png]]
+
+![[Pasted image 20260918102358.png]]
+
+![[Pasted image 20260918102420.png]]
+
+![[Pasted image 20260918102433.png]]
+
+![[Pasted image 20260918102444.png]]
+
+![[Pasted image 20260918102459.png]]
+
+![[Pasted image 20260918102514.png]]
+
+![[Pasted image 20260918102528.png]]
 
 ---
 #lecture 

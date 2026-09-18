@@ -50,7 +50,9 @@
 hvor $np>>1$ og $np(1-p)>> 1$.
 $$Z=\frac {X-np} {\sqrt{np(1-np)}}\sim N(0,1)$$
 
-> [!help] Case 5: [[#Case 4 Poisson fordeling|Pois]]
+> [!help] Case 5: [[#Case 4 Poisson fordeling|Poisson fordeling]]
+> $$X\sim\text{Poisson}(\lambda)$$
+$$Z=\frac {X-\lambda}{\sqrt{\lambda}}\sim N(0,1)$$
 
 ---
 Ligesom [[Diskrete stokastiske variable & fordelinger]] har vi et sample space $S$ og et sæt af stokastiske variable $X$.
@@ -208,6 +210,6 @@ $$\sigma^2=V[T]=\frac 1 {\lambda^2}$$
 $$X\sim \text{Bin}(n, p)$$
 hvor $np>>1$ og $np(1-p)>> 1$.
 $$Z=\frac {X-np} {\sqrt{np(1-np)}}\sim N(0,1)$$
-# Case 4: Poisson fordeling
+# Case 5: Poisson fordeling
 $$X\sim\text{Poisson}(\lambda)$$
 $$Z=\frac {X-\lambda}{\sqrt{\lambda}}\sim N(0,1)$$
