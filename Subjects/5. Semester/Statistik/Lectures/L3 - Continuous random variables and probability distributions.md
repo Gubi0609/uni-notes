@@ -109,7 +109,8 @@ $$\mu_X=E[X]=\frac {a+b}2$$
 $$\sigma^2=V[X]=\frac {(b-a)^2}{12}$$
 Kommer af den generelle formel for [[#Varians (Variance) af X|Varians]], men vi gider ikke udlede det.
 
-
+# Normal (Gaussian) fordeling
+$$X\sim N$$
 
 
 ---
