@@ -48,6 +48,16 @@ Da arealet for et specifikt x-punkt er 0.
 På dansk: fordelingsfunktion
 
 Skrevet $F_X(x)$.
+$$F_X(x):=F(X\leq x)=\int_{-\infty}^xf_X(u)du$$
+![[Pasted image 20260918083233.png|323]]
+
+_Svagt monoton_, stiger langsomt. Starter i 0, og stiger til 1.
+
+Vi kan finde $f_X(x)$ fra $F_X(x)$
+$$f_X(x)=\frac {dF_X(x)}{dx}\geq 0$$
+
+$$\lim_{x\rightarrow -\infty}F_X(x)=0$$
+$$\lim_{x\rightarrow \infty}F_X(x)=1$$
 
 
 ---
