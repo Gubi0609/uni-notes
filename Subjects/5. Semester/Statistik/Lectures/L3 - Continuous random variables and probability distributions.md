@@ -17,7 +17,7 @@
 [[Solutions lecture 03 v3.pdf]]
 
 # Topics
-
+[[Kontin]]
 
 # Notes
 
@@ -154,7 +154,8 @@ $$\bar X=\frac 1 n \sum_{i=1}^nX_i\sim N\left(\sum_{i=1}^n\frac 1 n\mu,\sum_{i=1
 
 # Eksponentiel fordeling
 $$X\sim \text{Exp}(\lambda)$$
-Hvor $\lambda$ er _ankomst intensitet_. (Minder om [[Diskrete stokastiske variable & fordelinger#Case 4 Poisson fordeling|Poisson fordeling]]). Lambda har enheden $s^{-1}$
+Hvor $\lambda$ er _ankomst intensitet_. (Bruges i sammenhæng med [[Diskrete stokastiske variable & fordelinger#Case 4 Poisson fordeling|Poisson fordeling]], der tæller ankomster). Lambda har enheden $s^{-1}$.
+Eksponentiel fordeling tæller _ventetid_.
 
 Vi har variablen $T$ som er _ventetid til næste ankomst_.
 $$P(T>t)=P(\text{0 ankomster i }[0,t])=e^{-\lambda t}$$
@@ -170,6 +171,14 @@ $$f_T(t)=\frac {dF_T(t)}{dt}=\lambda e^{-\lambda t}$$
 $$\mu=E[T]=\frac 1 \lambda$$
 ## Varians
 $$\sigma^2=V[T]=\frac 1 {\lambda^2}$$
+
+# Binomial fordeling
+$$X\sim \text{Bin}(n, p)$$
+hvor $np>>1$ og $np(1-p)>> 1$.
+$$Z=\frac {X-np} {\sqrt{np(1-np)}}\sim N(0,1)$$
+# Poisson fordeling
+$$X\sim\text{Poisson}(\lambda)$$
+$$Z=\frac {X-\lambda}{\sqrt{\lambda}}\sim N(0,1)$$
 
 
 ---
