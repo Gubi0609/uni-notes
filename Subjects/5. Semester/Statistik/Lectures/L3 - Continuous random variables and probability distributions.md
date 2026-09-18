@@ -113,6 +113,7 @@ Kommer af den generelle formel for [[#Varians (Variance) af X|Varians]], men vi 
 $$X\sim N(\mu, \sigma^2)$$
 Her bruger vi [[#Middelværdi (Mean) af X|middelværdien]] og [[#Varians (Variance) af X|variansen]] direkte som parametre.
 
+> Lineære kombinationer af normalfordelinger giver ny
 ## PDF
 $$f_X(x)=\frac 1 {\sqrt{2\pi}\cdot\sigma}e^{-\frac 1 2(\frac {x-\mu} {\sigma})^2}$$
 ![[Pasted image 20260918093345.png|317]]
@@ -140,9 +141,12 @@ Vi har $X_1, X_2, ..., X_n$ som er _uafhængige_ og kommer fra _samme fordeling_
 $$E[X]=\mu$$
 $$V[X]=\sigma^2$$
 
-Behøver _ikke_ være normalfordel
+Skal _ikke_ være normalfordel
 
-$$\bar X=\frac 1 n \sum$$
+$$\bar X=\frac 1 n \sum_{i=1}^n X_i\rightarrow^{n\rightarrow \infty} \bar X\sim N(\mu, \frac {\sigma^2}n)$$
+$\bar X$ er _gennemsnittet_ af $X$.
+
+Vi kan tage enhver form for fordeling, og tilpasse det [[#Normal (Gaussian) fordeling]].
 
 
 ---
