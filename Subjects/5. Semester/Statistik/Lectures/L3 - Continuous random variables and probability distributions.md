@@ -25,6 +25,20 @@ Ligesom [[Diskrete stokastiske variable & fordelinger]] har vi et sample space $
 $$X: S\rightarrow I\subseteq \mathbb R$$
 
 # Probability *Density* Function
+På dansk kunne man kalde det en sandsynligheds-*tætheds* funktion
+
+Skrevet $f_X(x)$ ligesom [[Diskrete stokastiske variable & fordelinger#Probability mass function, PMF|PMF]].
+![[Pasted image 20260918082149.png|284]]
+
+$$f_X(x):=\frac {P(X\in[x,x+dx])}{dx}$$
+![[Pasted image 20260918082328.png|309]]
+$$P(a\leq X\leq b)=\int_a^b f_X(x)dx$$
+
+$f_X(x)$ er _likelihood_.
+
+Der gælder
+$$\int_{-\infty}^\infty f_X(x)dx
+
 
 ---
 #lecture 
