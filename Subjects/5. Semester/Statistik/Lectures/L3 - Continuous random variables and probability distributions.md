@@ -37,7 +37,15 @@ $$P(4<X<8)\left[-\frac 1 {x^2}\right]_4^8=-\frac 1{8^2}-\left(-\frac 1 {4^2}\rig
 
 - d.
 $$P(1<X<4 \text{ or }8<X<\infty)=P(1<X<4)\cup P(8<X<\infty)$$
-Der er tale om [[Sandsynlighed Basics#**Disjoint events** (disjunkt)|disjoint events]] da deres område ikke overlapper. Vi kan derfor bare addere 
+Der er tale om [[Sandsynlighed Basics#**Disjoint events** (disjunkt)|disjoint events]] da deres område ikke overlapper. Vi kan derfor bare addere de individuelle sandsynligheder
+$$P(1<X<4)=\left[-\frac 1 {x^2}\right]_1^4=-\frac 1 {4^2}-\left(-\frac 1 {1^2}\right)=1-\frac 1 8=\frac 7 8$$
+$$P(8<X<\infty)=\left[-\frac 1 {x^2}\right]_8^\infty=-\frac 1 {\infty^2}-\left(\frac 1 {8^2}\right)=0+\frac 1 {64}=\frac 1 {64}$$
+
+$$P(1<X<4 \text{ or }8<X<\infty)=\frac 7 8+\frac 1 {64}=\frac {56}{64}+\frac 1 {64}=\frac {57}{64}$$
+
+- e.
+Vi har
+$$P(1<X<x)=\left[-\frac 1 {x^2}\right]_1^x=-\frac 1 {x^2}-(-\frac$$
 
 
 ![[Pasted image 20260918102358.png]]
