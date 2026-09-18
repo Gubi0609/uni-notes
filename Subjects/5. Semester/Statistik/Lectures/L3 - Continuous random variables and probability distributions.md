@@ -45,10 +45,19 @@ $$P(1<X<4 \text{ or }8<X<\infty)=\frac 7 8+\frac 1 {64}=\frac {56}{64}+\frac 1 {
 
 - e.
 Vi har
-$$P(1<X<x)=\left[-\frac 1 {x^2}\right]_1^x=-\frac 1 {x^2}-(-\frac$$
+$$P(1<X<x)=\left[-\frac 1 {x^2}\right]_1^x=-\frac 1 {x^2}-\left(-\frac 1 {1^2}\right)=1-\frac 1 {x^2}=0.95$$
+Hvor vi skal isolere $x$. Det gider jeg sgu ikke gøre i hånden, så det bliver matlab.
+$$x=4.47214$$
+
 
 
 ![[Pasted image 20260918102358.png]]
+
+$$F_X(x):=F(X\leq x)=\int_{-\infty}^xf_X(u)du$$
+
+Vi har allerede integreret, så vi skal bare indsætte variablerne
+$$
+
 
 ![[Pasted image 20260918102420.png]]
 
