@@ -73,8 +73,15 @@ Hvor $E[X]$ er _forventet værdi_ eller _expectancy_
 Man kan også tænke på middelværdien som _tyngdepunkt_. Hvis vi have en længere hale, ville tyngdepunktet blive påvirket meget af den, og altså rykke sig længere langs den.
 
 $$E[h(x)]=\int_{-\infty}^\infty h(x)\cdot f_X(x)dx$$
-hvor $h(x)$ er en tilfældig funktion af 
+hvor $h(x)$ er en tilfældig funktion af $x$.
 
+# Varians (Variance) af X
+Bruges til at beskrive spredningen(ikke helt sikker på, at det er det rigtige ord at bruge), da flere kan have samme [[#Middelværdi (Mean) af X|middelværdi]] men anderledes varians
+![[Pasted image 20260918084723.png]]
+
+$$\sigma^2=V[X]:=E[(X-\mu_X)^2]=\int_{-\infty}^\infty (x-\mu_X)^2\cdot f_X(x) dx\geq 0$$
+## Standardafvigelse
+$$\sigma
 
 ---
 #lecture 
