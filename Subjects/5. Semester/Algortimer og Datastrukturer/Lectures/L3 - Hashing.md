@@ -159,8 +159,22 @@ Vi starter med at tjekke at de nuværende elementer er indsat rigtigt
 | 22  |     |     |     | **27** | 5   | 16  |     |     |     |     |
 
 Indsæt dernæst **1**, **12**, **23**, min alder (**22**), mit eksamens nummer (**566211937**)
+- $1\%11=1$ _Unoccupied_
+- $12\%11=1$
+	- $1+1^2=2$ _Unoccupied_
+- $23\%11=1$
+	- $1+1^2=2$
+	- $1+2^2=5$
+	- $1+3^2=10$ _Unoccupied_
+- Min alder **22** er allerede indsat. Vi indsætter en arbitrær alder, **24** i stedet: $24\%11=2$
+	- $2+1^2=3$ _Unoccupied_
+- $566211937\%11=5$
+	- $5+1^2=6$
+	- $5+2^2=9$ _Unoccupied_
 
-
+| 0   | 1   | 2   | 3   | 4      | 5   | 6   | 7   | 8   | 9         | 10  |
+| --- | --- | --- | --- | ------ | --- | --- | --- | --- | --------- | --- |
+| 22  | 1   | 12  | 24  | **27** | 5   | 16  |     |     | 566211937 | 23  |
 
 ---
 #lecture 
