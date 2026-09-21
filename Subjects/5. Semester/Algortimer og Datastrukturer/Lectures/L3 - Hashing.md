@@ -179,16 +179,98 @@ Indsæt dernæst **1**, **12**, **23**, min alder (**22**), mit eksamens nummer 
 ## Exercise 2
 ![[Pasted image 20260921153304.png]]
 
-### Table 1
+Jeg valgte at gøre dette udelukkende i python, fordi fuck da at gøre det i hånden. Resultat er her:
+### Source code
+```python
+hash1 = [None] * 16 # Empty list with size 16
+hash2 = [None] * 16 # Empty list with size 16
 
-| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-- **D**: $(11*4)\%16=44\%16=12$
-- **E**: $(11*5)\&16=55\%16=7$
-- **M**: $(11*18)\%16=198\%16=6$
-- **O**: 
+alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
+keys1 = ["D", "E", "M", "O", "C", "R", "A", "T"]
+keys2 = ["R", "E", "P", "U", "B", "L", "I", "C", "A", "N"]
+
+def hashFunc(alphIndex):
+    val = (11*alphIndex) % 11
+    return val
+
+def linProb(index, iteration, arrSize):
+    val = (index + iteration) % arrSize
+    return val
+
+def quadProb(index, iteration, arrSize):
+    val = (index + iteration*iteration) % arrSize
+    return val
+
+def fillHash1():
+    for letter in keys1:
+        val = hashFunc(alphabet.index(letter) + 1)
+        if hash1[val]:
+            iteration = 1
+            while hash1[val] is not None:
+                val = linProb(val, iteration, len(hash1))
+                iteration += 1
+            hash1[val] = letter
+            print("{} was indexed to {} after linear probing. Iteration: {}".format(letter, val, iteration))
+        else:
+            hash1[val] = letter
+            print("{} was indexed to {} directly!".format(letter, val))
+    print(hash1)
+
+def fillHash2():
+    for letter in keys2:
+        val = hashFunc(alphabet.index(letter) + 1)
+        if hash2[val]:
+            iteration = 1
+            while hash2[val] is not None:
+                val = linProb(val, iteration, len(hash2))
+                iteration += 1
+            hash2[val] = letter
+            print("{} was indexed to {} after linear probing. Iteration: {}".format(letter, val, iteration))
+        else:
+            hash2[val] = letter
+            print("{} was indexed to {} directly!".format(letter, val))
+    print(hash2)
+
+def main():
+    print("Filling hashtable 1\n")
+    fillHash1()
+
+    print("\n Filling hashtable 2\n")
+    fillHash2()
+
+if __name__ == "__main__":
+    main()
+```
+
+### Output
+```bash
+Filling hashtable 1
+
+D was indexed to 0 directly!
+E was indexed to 1 after linear probing. Iteration: 2
+M was indexed to 3 after linear probing. Iteration: 3
+O was indexed to 6 after linear probing. Iteration: 4
+C was indexed to 10 after linear probing. Iteration: 5
+R was indexed to 15 after linear probing. Iteration: 6
+A was indexed to 5 after linear probing. Iteration: 7
+T was indexed to 12 after linear probing. Iteration: 8
+['D', 'E', None, 'M', None, 'A', 'O', None, None, None, 'C', None, 'T', None, None, 'R']
+
+ Filling hashtable 2
+
+R was indexed to 0 directly!
+E was indexed to 1 after linear probing. Iteration: 2
+P was indexed to 3 after linear probing. Iteration: 3
+U was indexed to 6 after linear probing. Iteration: 4
+B was indexed to 10 after linear probing. Iteration: 5
+L was indexed to 15 after linear probing. Iteration: 6
+I was indexed to 5 after linear probing. Iteration: 7
+C was indexed to 12 after linear probing. Iteration: 8
+A was indexed to 4 after linear probing. Iteration: 9
+N was indexed to 13 after linear probing. Iteration: 10
+['R', 'E', None, 'P', 'A', 'I', 'U', None, None, None, 'B', None, 'C', 'N', None, 'L']
+```
 
 ---
 #lecture 
