@@ -191,7 +191,7 @@ keys1 = ["D", "E", "M", "O", "C", "R", "A", "T"]
 keys2 = ["R", "E", "P", "U", "B", "L", "I", "C", "A", "N"]
 
 def hashFunc(alphIndex):
-    val = (11*alphIndex) % 11
+    val = (11*alphIndex) % 16
     return val
 
 def linProb(index, iteration, arrSize):
@@ -207,11 +207,13 @@ def fillHash1():
         val = hashFunc(alphabet.index(letter) + 1)
         if hash1[val]:
             iteration = 1
+            original_val = val
             while hash1[val] is not None:
-                val = linProb(val, iteration, len(hash1))
+                val = linProb(original_val, iteration, len(hash1))
                 iteration += 1
             hash1[val] = letter
-            print("{} was indexed to {} after linear probing. Iteration: {}".format(letter, val, iteration))
+            # We print iteration -1, since we plus 1 for each operation, resulting in a wrong print
+            print("{} was indexed to {} after linear probing. Iteration: {}".format(letter, val, iteration-1))
         else:
             hash1[val] = letter
             print("{} was indexed to {} directly!".format(letter, val))
@@ -222,11 +224,13 @@ def fillHash2():
         val = hashFunc(alphabet.index(letter) + 1)
         if hash2[val]:
             iteration = 1
+            original_val = val
             while hash2[val] is not None:
-                val = linProb(val, iteration, len(hash2))
+                val = quadProb(original_val, iteration, len(hash2))
                 iteration += 1
             hash2[val] = letter
-            print("{} was indexed to {} after linear probing. Iteration: {}".format(letter, val, iteration))
+			# We print iteration -1, since we plus 1 for each operation, resulting in a wrong print
+            print("{} was indexed to {} after quadratic probing. Iteration: {}".format(letter, val, iteration-1))
         else:
             hash2[val] = letter
             print("{} was indexed to {} directly!".format(letter, val))
@@ -247,29 +251,29 @@ if __name__ == "__main__":
 ```bash
 Filling hashtable 1
 
-D was indexed to 0 directly!
-E was indexed to 1 after linear probing. Iteration: 2
-M was indexed to 3 after linear probing. Iteration: 3
-O was indexed to 6 after linear probing. Iteration: 4
-C was indexed to 10 after linear probing. Iteration: 5
-R was indexed to 15 after linear probing. Iteration: 6
-A was indexed to 5 after linear probing. Iteration: 7
-T was indexed to 12 after linear probing. Iteration: 8
-['D', 'E', None, 'M', None, 'A', 'O', None, None, None, 'C', None, 'T', None, None, 'R']
+D was indexed to 12 directly!
+E was indexed to 7 directly!
+M was indexed to 15 directly!
+O was indexed to 5 directly!
+C was indexed to 1 directly!
+R was indexed to 6 directly!
+A was indexed to 11 directly!
+T was indexed to 13 after linear probing. Iteration: 1
+[None, 'C', None, None, None, 'O', 'R', 'E', None, None, None, 'A', 'D', 'T', None, 'M']
 
  Filling hashtable 2
 
-R was indexed to 0 directly!
-E was indexed to 1 after linear probing. Iteration: 2
-P was indexed to 3 after linear probing. Iteration: 3
-U was indexed to 6 after linear probing. Iteration: 4
-B was indexed to 10 after linear probing. Iteration: 5
-L was indexed to 15 after linear probing. Iteration: 6
-I was indexed to 5 after linear probing. Iteration: 7
-C was indexed to 12 after linear probing. Iteration: 8
-A was indexed to 4 after linear probing. Iteration: 9
-N was indexed to 13 after linear probing. Iteration: 10
-['R', 'E', None, 'P', 'A', 'I', 'U', None, None, None, 'B', None, 'C', 'N', None, 'L']
+R was indexed to 6 directly!
+E was indexed to 7 directly!
+P was indexed to 0 directly!
+U was indexed to 8 after quadratic probing. Iteration: 1
+B was indexed to 10 after quadratic probing. Iteration: 2
+L was indexed to 4 directly!
+I was indexed to 3 directly!
+C was indexed to 1 directly!
+A was indexed to 11 directly!
+N was indexed to 14 after quadratic probing. Iteration: 2
+['P', 'C', None, 'I', 'L', None, 'R', 'E', 'U', None, 'B', 'A', None, None, 'N', None]
 ```
 
 ---
