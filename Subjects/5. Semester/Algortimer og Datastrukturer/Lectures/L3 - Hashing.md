@@ -31,18 +31,29 @@ En hashtabel har plads til 16 elementer. Indsæt fem elementer, som alle hasher 
 | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-
-
 ### Step 2: Insert element **20**
 | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 20  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-
 ### Step 3: Insert element **30**
+- Also hashes to index _0_. So use **Quadratic probing:** $\text{hash}(x)+i^2=\text{new hash}$
+	- $0+1^2=1$: New hash is _1_ since it is unoccupied
+
 | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| 20  | 30  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+### Step 4: Insert element **40**
+- Also hashes to index _0_. So use **Quadratic probing**
+	- $0+1^2=1$: Already occupied, continue iteration
+	- $0+2^2=4$: New hash is _4_ since it is unoccupied
 
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 20  | 30  |     |     | 40  |     |     |     |     |     |     |     |     |     |     |     |
+### Step 5: Insert element **50**
+- Also hashes to index _0_. **Quadratic probing** used
+	- $0+1^2=1$: Occupied, continue
+	- $0+2^2=
 
 
 ---
