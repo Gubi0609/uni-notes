@@ -66,6 +66,18 @@ En hashtabel har plads til 16 elementer. Indsæt fem elementer, som alle hasher 
 	- $0+3^2=9$: Occupied
 	- $0+4^2=16$: Unoccupied, but not within reach!
 
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 20  | 30  |     |     | 40  |     |     |     |     | 50  |     |     |     |     |     |     |
+- Even with wrap around using `mod table_size`, we get the same slots already occupied...
+
+## Exercise 2
+En hashtabel har plads til 11 elementer. Indsæt seks elementer, som alle hasher til samme position i tabellen med quadratic probing.
+
+| 0   | 1   | 2   | 3   | 4   |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |     |     |     |     |     |
+
 
 ---
 #lecture 
