@@ -136,7 +136,8 @@ En hashtabel har plads til 11 elementer. Indsæt seks elementer, som alle hasher
 
 ## Exercise 3
 Hvordan skal man håndtere sletninger, hvis der anvendes probing/open addressing?
-
+- Til lookup ved disse metoder, bruger man en form for search and probe metode, hvor man egentlig kører samme iteration som oppe ovenover (eller hvilken anden metode man nu implementerer) og stopper når man støder på et _empty slot_, da det må betyde at det man leder efter ikke er der.
+	- Det betyder at hvis man via quadratic probing har placeret noget på $\text{hash}+3^2$ og $\text{hash}+4^2$ og derefter sletter det på $\text{hash}+3^2$, vil man aldrig mere kunne tilgå det på $\text{hash}+4^2$
 
 
 ---
