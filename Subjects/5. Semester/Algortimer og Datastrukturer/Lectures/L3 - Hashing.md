@@ -144,8 +144,21 @@ Hvordan skal man håndtere sletninger, hvis der anvendes probing/open addressing
 ![[Pasted image 20260921152200.png|652]]
 
 Vi starter med at tjekke at de nuværende elementer er indsat rigtigt
-### Element 22
-- $22\%11=
+- $22\%11=0$. Correct
+- $5\%11=5$. Correct
+- $16\%11=5$
+	- $5+1^2=6$ Correct
+- $27\%11=5$
+	- $5+1^2=6$
+	- $5+2²=5+9=15$ Out of range! Wrap around with `mod`
+		- $15\%11=4$ _Incorrect!_ 27 should be placed at index **4**
+
+
+| 0   | 1   | 2   | 3   | 4      | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | ------ | --- | --- | --- | --- | --- | --- |
+| 22  |     |     |     | **27** | 5   | 16  |     |     |     |     |
+
+Indsæt dernæst **1**, **12**, **23**, min alder (**22**), mit eksamens nummer (**566211937**)
 
 
 
