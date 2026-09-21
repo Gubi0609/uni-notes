@@ -126,7 +126,16 @@ En hashtabel har plads til 11 elementer. Indsæt seks elementer, som alle hasher
 	- $0+2^2=4$
 	- $0+3^2=9$
 	- $0+4^2=16$: Out of range! Wrap around with `mod table_size`
-		- $16\%11=5$: Occupie
+		- $16\%11=5$: Occupied
+	- $0+5^2=25$: Out of range! Wrap around
+		- $25\%11=3$: Unoccupied!
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10  | 20  |     | 60  | 30  | 50  |     |     |     | 40  |     |
+
+## Exercise 3
+Hvordan skal man håndtere sletninger, hvis der anvendes probing/open addressing?
 
 
 
