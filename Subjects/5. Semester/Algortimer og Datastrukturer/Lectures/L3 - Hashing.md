@@ -74,9 +74,60 @@ En hashtabel har plads til 16 elementer. Indsæt fem elementer, som alle hasher 
 ## Exercise 2
 En hashtabel har plads til 11 elementer. Indsæt seks elementer, som alle hasher til samme position i tabellen med quadratic probing.
 
-| 0   | 1   | 2   | 3   | 4   |     |     |     |     |     |     |
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |     |     |
+
+### Step 1: Insert element **10**
+- Hashes to _0_
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10  |     |     |     |     |     |     |     |     |     |     |
+### Step 2: Insert element **20**
+- Hashes to _0_. Occupied, so use **Quadratic probing**
+	- $0+1^2=1$
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10  | 20  |     |     |     |     |     |     |     |     |     |
+### Step 3: Insert element **30**
+- Hashes to _0_. Occupied
+	- $0+1^2=1$: Occupied
+	- $0+2^2=4$: Unoccupied
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10  | 20  |     |     | 30  |     |     |     |     |     |     |
+
+### Step 4: Insert element **40**
+- Hashes to _0_. Occupied
+	- $0+1^2=1$: Occupied
+	- $0+2^2=4$: Occupied
+	- $0+3^2=9$: Unccoupied
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10  | 20  |     |     | 30  |     |     |     |     | 40  |     |
+### Step 5: Insert element **50**
+- Hashes to _0_
+	- $0+1^2=1$
+	- $0+2^2=4$
+	- $0+3^2=9$
+	- $0+4^2=16$: Out of range! Wrap around with `mod table_size`
+		- $16\%11=5$: Unoccupied
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10  | 20  |     |     | 30  | 50  |     |     |     | 40  |     |
+### Step 6: Insert element **60**
+- Hashes to _0_
+	- $0+1^2=1$
+	- $0+2^2=4$
+	- $0+3^2=9$
+	- $0+4^2=16$: Out of range! Wrap around with `mod table_size`
+		- $16\%11=5$: Occupie
+
 
 
 ---
