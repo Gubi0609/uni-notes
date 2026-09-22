@@ -28,8 +28,12 @@
 cd ~/ros2_ws
 colcon build --packages-select brushfire_interfaces brushfire_pkg my_map_pkg
 
-ros2 run my_map_pkg map_publisher
-ros2 run brushfire_pkg brushfire_node
+ros2 run my_map_pkg map_publisher # Publish white/black map as 0/100 occupancy grid
+ros2 run brushfire_pkg brushfire_node # Run algorithm to generat brushfire
+ros2 run brushfire_pkg colorizer_node # Colorize in HSV red to blue color range
+
+# See visualized brushfire in rqt
+ros2 run rqt_image_view rqt_image_view
 ```
 
 
