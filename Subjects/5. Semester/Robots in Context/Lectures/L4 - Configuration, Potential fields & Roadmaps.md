@@ -24,6 +24,14 @@
 
 # Notes
 
+```bash
+cd ~/ros2_ws
+colcon build --packages-select brushfire_interfaces brushfire_pkg my_map_pkg
+
+ros2 run my_map_pkg map_publisher
+ros2 run brushfire_pkg brushfire_node
+```
+
 
 ---
 #lecture 
