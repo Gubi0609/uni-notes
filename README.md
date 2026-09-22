@@ -6,5 +6,6 @@ To ensure, correct operation, please download the same Obsidian Community Plugin
 - Git
 - Pandoc Plugin
 - Templater
+- Excalidraw
 
 Happy reading!
