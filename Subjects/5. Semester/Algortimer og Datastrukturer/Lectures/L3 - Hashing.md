@@ -205,16 +205,16 @@ def quadProb(index, iteration, arrSize):
 def fillHash1():
     for letter in keys1:
         val = hashFunc(alphabet.index(letter) + 1)
-        if hash1[val]:
+        if hash1[val]: # Check if there is an element present
             iteration = 1
             original_val = val
-            while hash1[val] is not None:
+            while hash1[val] is not None: # Iterate while index is occupied
                 val = linProb(original_val, iteration, len(hash1))
                 iteration += 1
             hash1[val] = letter
             # We print iteration -1, since we plus 1 for each operation, resulting in a wrong print
             print("{} was indexed to {} after linear probing. Iteration: {}".format(letter, val, iteration-1))
-        else:
+        else: # No element already present! Insert
             hash1[val] = letter
             print("{} was indexed to {} directly!".format(letter, val))
     print(hash1)
@@ -222,16 +222,16 @@ def fillHash1():
 def fillHash2():
     for letter in keys2:
         val = hashFunc(alphabet.index(letter) + 1)
-        if hash2[val]:
+        if hash2[val]: # Check if there is an element present
             iteration = 1
             original_val = val
-            while hash2[val] is not None:
+            while hash2[val] is not None: # Iterate while index is occupied
                 val = quadProb(original_val, iteration, len(hash2))
                 iteration += 1
             hash2[val] = letter
 			# We print iteration -1, since we plus 1 for each operation, resulting in a wrong print
             print("{} was indexed to {} after quadratic probing. Iteration: {}".format(letter, val, iteration-1))
-        else:
+        else: # No element already present! Insert
             hash2[val] = letter
             print("{} was indexed to {} directly!".format(letter, val))
     print(hash2)
