@@ -1,6 +1,6 @@
 
 ---
-**Date:** YYYY-MM-DD
+**Date:** 2026-09-23
 
 ## Preparation
 
@@ -12,7 +12,7 @@
 
 ---
 # Relevant documents
-
+[[2026-09-23 - Fuzzy Logic Control 3.pdf]]
 
 # Topics
 
