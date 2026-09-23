@@ -18,6 +18,7 @@
 
 
 # Notes
+==Opgaven fra i dag skal med til eksamen, så vigtig at lave!!==
 
 
 ---
