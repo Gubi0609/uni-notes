@@ -36,6 +36,8 @@ ros2 run brushfire_pkg colorizer_node # Colorize in HSV red to blue color range
 ros2 run rqt_image_view rqt_image_view
 ```
 
+## Example of brushfired map (NO GVD)
+![[map1-brushfired.png|680]]
 
 ---
 #lecture 
