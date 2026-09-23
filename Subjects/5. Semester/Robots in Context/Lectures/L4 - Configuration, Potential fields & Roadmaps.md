@@ -38,6 +38,7 @@ ros2 run rqt_image_view rqt_image_view
 
 ## Example of brushfired map (NO GVD)
 ![[map1-brushfired.png|680]]
+![[map2-brushfired.png|681]]
 
 ---
 #lecture 
