@@ -86,8 +86,13 @@ For to uafhængige sæt af stokastiske variable $X$ og $Y$, kan vi kombinere dem
 $$f_{X,Y}(x,y)=f_X(x)f_Y(y)$$
 
 ## Momenter for (X,Y)
-$X$ : Middelværdi
-$$\mu
+Nedenstående regler for middelværdi og varians kan overføres mellem $x$ og $y$ ved bare at erstatte variablen.
+
+### Middelværdi
+$$\mu_x=E[X]=\int xf_X(x)dx$$
+### Varians
+$$\sigma_x^2=V[X]=E[(X-\mu_x)^2]=\int (x-\mu_x)^2f_x(x)dx=E[X^2]-\mu_x^2=\int x^2f_X(x)-\mu_x^2 dx$$
+### Covariance (Covarians)
 
 
 
