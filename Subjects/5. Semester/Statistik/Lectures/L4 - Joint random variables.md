@@ -141,6 +141,10 @@ Givet
 
 Så har stokastisk variabel $Y$ [[Kontinuerte stokastiske variable & fordelinger#Probability *Density* Function, PDF|PDF]]
 $$f_Y(y)=\left|\frac {dh^{-1}(y)}{dy}\right|f_X(h^{-1}(y))$$
+![[Pasted image 20260925100350.png|442]]
+
+Vi kan også finde [[Kontinuerte stokastiske variable & fordelinger#Cumulative Probability Density Function, CDF|CDF]] for $Y$
+$$F_Y(y)=P(Y\leq y)=P(h(X)\leq y)=P(X\leq h^{-1}(y))=F_X(h^{-1}(y))$$
 
 
 
