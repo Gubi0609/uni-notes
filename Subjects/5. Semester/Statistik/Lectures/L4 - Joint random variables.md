@@ -66,8 +66,11 @@ Som sagt i opgave _e_
 > Da der kun er 1 række af $y$ værdier og 1 række af $x$ værdier, er $f_X(x)=f_Y(y)=f_{XY}(x,y)$.
 
 
-
 ![[Pasted image 20260925102325.png]]
+
+$$\int_{-\infty}^\infty\int_{-\infty}^\infty f_{XY}(x,y)dxdy=1\quad [P(s)=1]$$
+$$f_X(x)\geq 0$$
+
 
 
 ![[Pasted image 20260925102342.png]]
