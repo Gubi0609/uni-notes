@@ -76,10 +76,10 @@ $$c\cdot\frac {81}{4}=1\Leftrightarrow c=\frac 4 {81}$$
 
 $$f_{XY}(x,y)=\frac 4 {81}xy$$
 - a - f
-	- ==Se løsninger til forrige opgave for fremgangs metode, for fuck da om jeg gider det igen...==
+	- ==Se løsninger til forrige opgave for fremgangs metode, for det gider jeg da godt nok ikke igen==
 
 - g
-$$f_X(x)=\int_y f_{XY}(x,y)dy=\int_0^3\frac 4 {81}xydy=\frac {4}{81}x\int_0^3ydy=\frac 4 {81}x+\left[\frac 1 2y^2\right]_0^3=\frac 4{81}x+\left(\frac 1 2\cdot 3^2-\frac 1 2\cdot 0^2\right)=\frac 4 {81}x+\frac 9 2$$
+$$f_X(x)=\int_{y\in\mathbb R} f_{XY}(x,y)dy=\int_0^3\frac 4 {81}xydy=\frac {4}{81}x\int_0^3ydy=\frac 4 {81}x+\left[\frac 1 2y^2\right]_0^3=\frac 4{81}x+\left(\frac 1 2\cdot 3^2-\frac 1 2\cdot 0^2\right)=\frac 4 {81}x+\frac 9 2$$
 
 
 ![[Pasted image 20260925102342.png]]
