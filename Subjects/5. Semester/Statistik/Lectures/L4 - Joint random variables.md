@@ -38,10 +38,13 @@ $$\sum_x\sum_y f_{X,Y}(x,y)=1$$
 | $Y=y_1$        | ...     | $P(x_2,y_1)$ | ... | ...     |
 | $Y=y_2$        | ...     | ...          | ... | ...     |
 | ...            | ...     | ...          | ... | ...     |
-| $Y=y_3$        | ...     | ...          | ... | ...     |
+| $Y=y_n$        | ...     | ...          | ... | ...     |
 
-### Marginal sandsynligheds funktion
-Marginal betyder _at man kun kigger på d_
+### Marginal PMF
+Marginal betyder _at man kun kigger på den ene af de stokastiske variable_
+$$f_X(x)=\sum_y f_{X,Y}(x,y)$$
+
+
 
 
 
