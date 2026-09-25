@@ -71,7 +71,10 @@ Som sagt i opgave _e_
 $$\int_{-\infty}^\infty\int_{-\infty}^\infty f_{XY}(x,y)dxdy=1$$
 $$f_{XY}(x,y)\geq 0$$
 
-$$\int_{x=0}^{$$
+$$\int_{x=0}^{x=3}\int_{y=0}^{y=3}cxydydx=c\int_{x=0}^{x=3}xdx\int_{y=0}^{y=3}ydy=c\left[\frac 1 2x^2\right]_{x=0}^{x=3}\left[\frac 1 2y^2\right]_{y=0}^{y=3}=c\left(\frac 1 2\cdot 3^2-\frac 1 2\cdot0^2\right)\left(\frac 1 2\cdot 3^2-\frac 1 2\cdot0^2\right)=c\left(\frac 9 2\right)\left(\frac 9 2\right)=c\cdot\frac {81}{4}$$
+$$c\cdot\frac {81}{4}=1\Leftrightarrow c=\frac 4 {81}$$
+
+$$f_{XY}(x,y)=\frac 4 {81}$$
 
 
 
