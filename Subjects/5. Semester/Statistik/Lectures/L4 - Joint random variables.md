@@ -43,7 +43,7 @@ $$\sum_x\sum_y f_{X,Y}(x,y)=1$$
 ### Marginal PMF
 Marginal betyder _at man kun kigger på den ene af de stokastiske variable_
 $$f_X(x)=\sum_y f_{X,Y}(x,y)$$
-Ved at summere over $y$ fjerner vi dens indflydelse på resultatet. Vi kan gøre de
+Ved at summere over $y$ fjerner vi dens indflydelse på resultatet. Vi kan summere over $x$ for at finde $f_Y(y)$.
 
 ### Betinget PMF
 _Hvad er sandsynligheden for at $y$ har en bestemt værdi, hvis jeg kender $x$ værdien?_
@@ -52,7 +52,10 @@ $$P(Y|X)=f_{Y|X}(y|x)=\frac {f_{X,Y}(x,y)}{f_X(x)}$$
 
 Samme den modsatte vej
 $$P(X|Y)=f_{X|Y}(x|y)=\frac {f_{X,Y}(x,y)}{f_Y(y)}$$
-
+## Kontinuert (x,y)
+Vi har en [[Kontinuerte stokastiske variable & fordelinger#Probability *Density* Function, PDF|simultan PDF]].
+$$f_{X,Y}(x,y)\geq 0$$
+$$\int\int_{\mathbb R^2} f_{X,Y}(x,y)=1$$
 
 
 
