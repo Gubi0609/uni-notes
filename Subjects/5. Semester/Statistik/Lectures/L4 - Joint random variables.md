@@ -126,6 +126,21 @@ $$V[Y]=\sum_{i=1}^nc_i^2V[X_i]$$
 $$V[Y]=E[(Y-\mu_Y)^2]=c_1^2\sigma_1^2+c_2^2\sigma_2^2+2c_ac_2\text{Cov}(X_1,X_2)$$
 Hvis $X_1$ og $X_2$ var uafhængige, ville der ikke være nogen korrelation, så det led ville forsvinde af sig selv.
 
+### Ofte brugt linear kombination (gennemsnit af observationer)
+$$\bar X:=\frac 1 n\sum_{i=1}^nX_i$$
+med uafhængig $X_i$, $E[X_i]=\mu$, $V[X_i]=\sigma^2$.
+
+$$E[\bar X]=\mu$$
+$$V[\bar X]=\frac {\sigma^2}n$$
+
+## Non-linear funktion af stokastisk variabel
+Givet 
+- $X$ med [[Kontinuerte stokastiske variable & fordelinger#Probability *Density* Function, PDF|PDF]] $f_X(x)$
+- Non-linear funktion $y=h(x)$
+- Ny stokastisk variable $Y=h(X)$
+
+Så har stokastisk variabel $Y$ [[Kontinuerte stokastiske variable & fordelinger#Probability *Density* Function, PDF|PDF]]
+$$f_Y(y)=\left|\frac {dh^{-1}(y)}{dy}\right|f_X(h^{-1}(y))$$
 
 
 
