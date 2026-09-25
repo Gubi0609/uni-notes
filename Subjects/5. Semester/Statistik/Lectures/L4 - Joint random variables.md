@@ -45,6 +45,14 @@ $$P(Y<1.5)=\sum_{x_i}\sum_{y_i<1.5}f_{XY}(x_i,y_i)=\frac 1 8+\frac 1 4+\frac 1 2
 $$P(X>0.25,Y<4.5)=\sum_{x_i>0.25}\sum_{y<4.5}f_{XY}(x_i,y_i)=\frac 1 2+\frac 1 8=\frac 5 8$$
 
 - e.
+$$f_X(x)=\sum_y f_{X,Y}(x,y)$$
+$$\mu_x=E[X]=\sum xf_X(x)dx$$
+$$\sigma_x^2=V[X]=\sum x^2f_X(x)-\mu_x^2 dx$$
+
+
+Da der kun er 1 række af $y$ værdier og 1 række af $x$ værdier, er $f_X(x)=f_Y(y)=f_{XY}(x,y)$.
+
+$$\mu_x=\sum_xx_if_{XY}(x_i,y)=$$
 
 
 
