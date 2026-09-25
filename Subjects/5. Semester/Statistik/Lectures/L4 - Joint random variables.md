@@ -67,7 +67,19 @@ $$P((X,Y)\in A)=\int\int_{A\subseteq \mathbb R^2}f_{X,Y}(x,y)dxdy$$
 Marginal betyder _at man kun kigger på den ene af de stokastiske variable_
 $$f_X(x)=\int_{y\in\mathbb R} f_{X,Y}(x,y)dy$$
 Det samme kan gøres ved  at integrere over $x$ for at finde $f_Y(y)$.
-Der gælder selvfølgelig det samme for denne PDF som for en normal [[|PDF]].
+Der gælder selvfølgelig det samme for denne PDF som for en normal [[Kontinuerte stokastiske variable & fordelinger#Probability *Density* Function, PDF|PDF]].
+
+### Betinget PDF
+_Hvad er sandsynligheden for at $y$ har en bestemt værdi, hvis jeg kender $x$ værdien?_
+Vi bruger her [[Betinget Sandsynlighed]].
+$$P(Y|X)=f_{Y|X}(y|x)=\frac {f_{X,Y}(x,y)}{f_X(x)}$$
+
+Samme den modsatte vej
+$$P(X|Y)=f_{X|Y}(x|y)=\frac {f_{X,Y}(x,y)}{f_Y(y)}$$
+
+## Uafhængige X, Y
+Uafhængighed er ikke noget man kan bevise, men noget man skal _argumentere for_. Se eventuelt [[Sandsynlighed Basics#]]
+$$f_{X,Y}(x,y)=f_X(x)f_Y(y)$$
 
 
 ---
