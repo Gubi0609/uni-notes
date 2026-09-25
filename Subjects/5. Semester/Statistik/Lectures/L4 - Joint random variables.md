@@ -33,7 +33,18 @@ _Alle regler er opfyldt._
 - a.
 Til dette skal vi bruge dens [[Diskrete stokastiske variable & fordelinger#Cumulative probability function, CMF|CMF]].
  $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$
- $$P(X<0.5,Y<1.5)=\sum_{x_i<0.5}\sum_{y_i<1.5}f_{XY}(x_i, y_i)=\frac 1 8+\frac 1 4=$$
+ $$P(X<0.5,Y<1.5)=\sum_{x_i<0.5}\sum_{y_i<1.5}f_{XY}(x_i, y_i)=\frac 1 8+\frac 1 4=\frac 3 8$$
+
+- b.
+$P(X<0.5)$. Det er det samme svar som i opgave _a_, da vi der også kun gik op til værdier af $x$ som var under $0.5$.
+
+- c.
+$$P(Y<1.5)=\sum_{x_i}\sum_{y_i<1.5}f_{XY}(x_i,y_i)=\frac 1 8+\frac 1 4+\frac 1 2=\frac 7 8$$
+
+- d.
+$$P(X>0.25,Y<4.5)=\sum_{x_i>0.25}\sum_{y<4.5}f_{XY}(x_i,y_i)=\frac 1 2+\frac 1 8=\frac 5 8$$
+
+- e.
 
 
 
