@@ -52,7 +52,8 @@ $$\sigma_x^2=V[X]=\sum x^2f_X(x)-\mu_x^2 dx$$
 
 Da der kun er 1 række af $y$ værdier og 1 række af $x$ værdier, er $f_X(x)=f_Y(y)=f_{XY}(x,y)$.
 
-$$\mu_x=\sum_xx_if_{XY}(x_i,y)=$$
+$$\mu_x=\sum_xx_if_{X}(x_i)=-1\cdot \frac 1 8-0.5\cdot \frac 1 4+0.5\cdot \frac 1 2+1\cdot\frac 1 8=\frac 1 8$$
+$$\sigma_x^2=\sum_xx_i^2f_X(x_i)-\mu_x^2=\left((-1)^2\cdot\frac 1 8-\left(\frac 1 8\right)^2\right)+\left((-0.5)^2\cdot\frac 1 4 - \left(\frac 1 8\right)^2\right)+\left(0.5^2\cdot\frac 1 2-\left(\frac 1 8\right)^2\right)+\left(1^2\cdot \frac 1 8-\left(\frac 1 8\right)^2\right)=$$
 
 
 
