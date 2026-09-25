@@ -100,13 +100,18 @@ Gælder når $X$ og $Y$ _ikke_ er uafhængige.
 $$\text{Cov}(X,Y)=\sigma_{xy}:=E[(X-\mu_x)(Y-\mu_y)]$$
 ![[Pasted image 20260925092140.png|247]]
 
-$\text{Cov}(X,Y)>0$: Når $X$ stiger, stiger $Y$ også i _middelværdi_
-$\text{Cov}(X,Y)<0$: Når $X$ stiger, falder $Y$ i _middelværdi_
+$\text{Cov}(X,Y)>0$: Når $X$ stiger, stiger $Y$ også _in the mean sense_
+$\text{Cov}(X,Y)<0$: Når $X$ stiger, falder $Y$ i _in the mean sense_
 $\text{Cov}(X,Y)\approx 0$: $X$ og $Y$ har ikke nogen lineær relation (**uncorrelated**)
 
 Covariansen er _unnormed_, hvilket betyder at det **ikke er invariant overfor ændringer i unit/skalering**
 
 ### Korrelation
+$$\rho_{XY}:=\frac {\sigma_{XY}} {\sigma_x\sigma_y}[]$$
+$$-1\leq\rho_{XY}\leq1$$
+Hvis $X$ og $Y$ er uafhængige, er der _ingen korrelation_:
+$$\sigma_{XY}=0$$
+
 
 
 ---
