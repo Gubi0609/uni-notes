@@ -20,6 +20,26 @@
 
 
 # Notes
+![[Pasted image 20260925102315.png]]
+
+
+![[Pasted image 20260925102325.png]]
+
+
+![[Pasted image 20260925102342.png]]
+
+
+![[Pasted image 20260925102356.png]]
+![[Pasted image 20260925102407.png]]
+
+
+![[Pasted image 20260925102427.png]]
+
+
+![[Pasted image 20260925102449.png]]
+
+
+![[Pasted image 20260925102504.png]]
 
 
 
