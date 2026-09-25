@@ -68,8 +68,10 @@ Som sagt i opgave _e_
 
 ![[Pasted image 20260925102325.png]]
 
-$$\int_{-\infty}^\infty\int_{-\infty}^\infty f_{XY}(x,y)dxdy=1\quad [P(s)=1]$$
-$$f_X(x)\geq 0$$
+$$\int_{-\infty}^\infty\int_{-\infty}^\infty f_{XY}(x,y)dxdy=1$$
+$$f_{XY}(x,y)\geq 0$$
+
+$$\int_{x=0}^{$$
 
 
 
