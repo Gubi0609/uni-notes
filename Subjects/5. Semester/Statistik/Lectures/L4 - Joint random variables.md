@@ -111,8 +111,15 @@ $$\rho_{XY}:=\frac {\sigma_{XY}} {\sigma_x\sigma_y}[]$$
 $$-1\leq\rho_{XY}\leq1$$
 Hvis $X$ og $Y$ er uafhængige, er der _ingen korrelation_:
 $$\sigma_{XY}=0$$
+## Linear kombinationer af stokastiske variable
+Vi har $X_1, X_2, ..., X_n$, $E[X_i]=\mu_i$, $V[X_i]=\sigma_1^2$
 
-
+Vi definerer et nyt sæt $Y$
+$$Y:=c_1X_1+c_2X_2+...+c_nX_n=\sum_{i=1}^nc_iX_i$$
+Som har
+$$E[Y]=\sum_{i=1}^nc_iE[X_i]$$
+$$V[Y]=\sum_{i=1}^nc_i^2V[X_i]+\sum_{i=1}^n\sum_{j\neq i}c_ic_j\text{Cov}[X_i,X_j]$$
+**Hvis $X_1, ..., X_n$ er _uafhængige_:**
 
 ---
 #lecture 
