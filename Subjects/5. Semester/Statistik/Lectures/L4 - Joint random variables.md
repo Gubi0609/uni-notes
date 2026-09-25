@@ -118,8 +118,13 @@ Vi definerer et nyt sæt $Y$
 $$Y:=c_1X_1+c_2X_2+...+c_nX_n=\sum_{i=1}^nc_iX_i$$
 Som har
 $$E[Y]=\sum_{i=1}^nc_iE[X_i]$$
-$$V[Y]=\sum_{i=1}^nc_i^2V[X_i]+\sum_{i=1}^n\sum_{j\neq i}c_ic_j\text{Cov}[X_i,X_j]$$
-**Hvis $X_1, ..., X_n$ er _uafhængige_:**
+$$V[Y]=\sum_{i=1}^nc_i^2V[X_i]+\sum_{i=1}^n\sum_{j\neq i}^nc_ic_j\text{Cov}[X_i,X_j]$$
+### Hvis $X_1, ..., X_n$ er _uafhængige_
+$$V[Y]=\sum_{i=1}^nc_i^2V[X_i]$$
+
+
+
+
 
 ---
 #lecture 
