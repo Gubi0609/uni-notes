@@ -92,7 +92,13 @@ Nedenstående regler for middelværdi og varians kan overføres mellem $x$ og $y
 $$\mu_x=E[X]=\int xf_X(x)dx$$
 ### Varians
 $$\sigma_x^2=V[X]=E[(X-\mu_x)^2]=\int (x-\mu_x)^2f_x(x)dx=E[X^2]-\mu_x^2=\int x^2f_X(x)-\mu_x^2 dx$$
+Skrives også $\sigma_{xx}$
 ### Covariance (Covarians)
+_Hvordan varierer $X$ og $Y$ sammen **i middel**?_
+Gælder når $X$ og $Y$ _ikke_ er uafhængige.
+
+$$\text{Cov}(X,Y)=\sigma_{xy}:=E[(X-\mu_x)(Y-\mu_y)]$$
+![[Pasted image 20260925092140.png|247]]
 
 
 
