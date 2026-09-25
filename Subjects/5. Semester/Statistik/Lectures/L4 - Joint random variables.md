@@ -27,6 +27,8 @@ $$(x,u):S\rightarrow \mathbb R^2$$
 
 ![[Pasted image 20260925082115.png|590]]
 
+**Kan også overføres til flere dimensioner end bare 2D**
+
 ## Diskret (x, y)
 Vi har en [[Diskrete stokastiske variable & fordelinger#Probability mass function, PMF|simultan PMF]]
 $$f_{X,Y}(x,y):=P(X=x, Y=y)$$
@@ -78,8 +80,16 @@ Samme den modsatte vej
 $$P(X|Y)=f_{X|Y}(x|y)=\frac {f_{X,Y}(x,y)}{f_Y(y)}$$
 
 ## Uafhængige X, Y
-Uafhængighed er ikke noget man kan bevise, men noget man skal _argumentere for_. Se eventuelt [[Sandsynlighed Basics#]]
+Uafhængighed er ikke noget man kan bevise, men noget man skal _argumentere for_. Se eventuelt [[Sandsynlighed Basics#**Disjoint events** (disjunkt)|Disjoint events]] for sandsynligheder.
+
+For to uafhængige sæt af stokastiske variable $X$ og $Y$, kan vi kombinere dem.
 $$f_{X,Y}(x,y)=f_X(x)f_Y(y)$$
+
+## Momenter for (X,Y)
+$X$ : Middelværdi
+$$\mu
+
+
 
 
 ---
