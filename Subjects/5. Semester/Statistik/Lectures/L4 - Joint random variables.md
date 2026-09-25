@@ -21,6 +21,12 @@
 
 # Notes
 
+# Simultane stokastiske variable
+Vi har et stokastisk udfald $a_1$ i sample space $S$ som vi mapper til en $x$ og $y$ værdi
+$$(x,u):S\rightarrow \mathbb R^2$$
+
+
+
 
 ---
 #lecture 
