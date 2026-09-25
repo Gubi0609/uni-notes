@@ -54,11 +54,16 @@ Da der kun er 1 række af $y$ værdier og 1 række af $x$ værdier, er $f_X(x)=f
 
 $$\mu_x=\sum_xx_if_{X}(x_i)=-1\cdot \frac 1 8-0.5\cdot \frac 1 4+0.5\cdot \frac 1 2+1\cdot\frac 1 8=\frac 1 8$$
 $$\sigma_x^2=\sum_xx_i^2f_X(x_i)-\mu_x^2=\left((-1)^2\cdot\frac 1 8\right)+\left((-0.5)^2\cdot\frac 1 4\right)+\left(0.5^2\cdot\frac 1 2\right)+\left(1^2\cdot \frac 1 8\right)-\left(\frac 1 8\right)^2$$
-$$\sigma_x^2=\left(\frac 1 8-\frac 1 {16}\right)+\left(0.25\cdot\frac 1 4-\frac 1 {16}\right)+\left(0.25\cdot\frac 1 2-\frac 1 {16}\right)+\left(\frac 1 8-\frac 1 {16}\right)=\frac 1{16}+0+\frac 1{16}+\frac 1{16}=\frac 3 {16}$$
+$$\sigma_x^2=\frac 1 8+\frac 1 4\cdot \frac 1 4+\frac 1 4\cdot \frac 1 2+\frac 1 8-\frac 1{64}=\frac 1 8+\frac 1 {16}+\frac 1 8+\frac 1 8-\frac 1 {64}=\frac 7 {16}-\frac 1 {64}=\frac {27}{64}$$
 
 $$\mu_y=\sum_yy_if_{y}(y_i)=-2\cdot\frac 1 8-1\cdot\frac 1 4+1\cdot\frac 1 2+2\cdot\frac 1 8=\frac 1 4$$
 $$\sigma_y^2=\sum_yy_i^2f_Y(y_i)-\mu_y^2=\left((-2)^2\cdot\frac 1 8\right)+\left((-1)^2\cdot\frac 1 4\right)+\left(1^2\cdot\frac 1 2\right)+\left(2^2\cdot\frac 1 8\right)-\left(\frac 1 4\right)^2$$
 $$\sigma_y^2=\frac 4 8+\frac 1 4+\frac 1 2+\frac 4 8-\frac 1 {16}=\frac 7 4-\frac 1 {16}=\frac {27}{16}$$
+
+- f.
+$$f_X(x)=\sum_y f_{X,Y}(x,y)$$
+Som sagt i opgave _e_ 
+> Da der kun er 1 række af $y$ værdier og 1 række af $x$ værdier, er $f_X(x)=f_Y(y)=f_{XY}(x,y)$.
 
 
 
