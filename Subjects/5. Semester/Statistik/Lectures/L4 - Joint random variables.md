@@ -31,7 +31,9 @@ $$\sum_x\sum_y f_{X,Y}(x,y)=\frac 1 8+\frac 2 8+ \frac 4 8+\frac 1 8=\frac 8 8 =
 _Alle regler er opfyldt._
 
 - a.
-
+Til dette skal vi bruge dens [[Diskrete stokastiske variable & fordelinger#Cumulative probability function, CMF|CMF]].
+ $$F_X(x_i):=P(X\leq x_i)=\sum_{x_j\leq x_i} P(X=x_j)=\sum_{x_j \leq x_i} f_X(x_j)$$
+ $$P(X<0.5,Y<1.5)=\sum_{x_i<0.5}\sum_{y_i<1.5}f_{XY}(x_i, y_i)=\frac 1 8+\frac 1 4=$$
 
 
 
