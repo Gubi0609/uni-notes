@@ -22,6 +22,18 @@
 # Notes
 ![[Pasted image 20260925102315.png]]
 
+$$f_{X,Y}(x,y):=P(X=x, Y=y)$$
+$$0\leq f_{X,Y}(x,y)\leq 1$$
+$$\sum_x\sum_y f_{X,Y}(x,y)=1$$
+
+Alle værdier af $f_{XY}(x,y)$ er mellem 0 og 1, så _check_.
+$$\sum_x\sum_y f_{X,Y}(x,y)=\frac 1 8+\frac 2 8+ \frac 4 8+\frac 1 8=\frac 8 8 =1$$
+_Alle regler er opfyldt._
+
+- a.
+
+
+
 
 ![[Pasted image 20260925102325.png]]
 
