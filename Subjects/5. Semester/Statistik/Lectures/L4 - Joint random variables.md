@@ -110,7 +110,7 @@ Covariansen er _unnormed_, hvilket betyder at det **ikke er invariant overfor æ
 $$\rho_{XY}:=\frac {\sigma_{XY}} {\sigma_x\sigma_y}[]$$
 $$-1\leq\rho_{XY}\leq1$$
 Hvis $X$ og $Y$ er uafhængige, er der _ingen korrelation_:
-$$\sigma_{XY}=0$$
+$$\rho_{XY}=0$$
 ## Linear kombinationer af stokastiske variable
 Vi har $X_1, X_2, ..., X_n$, $E[X_i]=\mu_i$, $V[X_i]=\sigma_1^2$
 
@@ -122,6 +122,9 @@ $$V[Y]=\sum_{i=1}^nc_i^2V[X_i]+\sum_{i=1}^n\sum_{j\neq i}^nc_ic_j\text{Cov}[X_i,
 ### Hvis $X_1, ..., X_n$ er _uafhængige_
 $$V[Y]=\sum_{i=1}^nc_i^2V[X_i]$$
 
+### Special case: $Y=c_1X_1+c_2X_2$ **IKKE** uafhængig
+$$V[Y]=E[(Y-\mu_Y)^2]=c_1^2\sigma_1^2+c_2^2\sigma_2^2+2c_ac_2\text{Cov}(X_1,X_2)$$
+Hvis $X_1$ og $X_2$ var uafhængige, ville der ikke være nogen korrelation, så det led ville forsvinde af sig selv.
 
 
 
