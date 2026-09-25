@@ -44,6 +44,20 @@ $$f_X(x)=P(\text{x ankomster i }[0,t])=\frac {(\lambda t)^x}{x!}e^{-\lambda t},\
 $$\mu_X = E[X]=\sigma^2_X = V[X]=\lambda t$$
 
 ---
+- [[#Probability mass function, PMF|Probability mass function, PMF]]
+- [[#Cumulative probability function, CMF|Cumulative probability function, CMF]]
+- [[#Middelværdi (Mean) af X|Middelværdi (Mean) af X]]
+- [[#Varians (Variance) af X|Varians (Variance) af X]]
+	- [[#Varians (Variance) af X#Standardafvigelsen|Standardafvigelsen]]
+- [[#Case 1: Uniform fordeling|Case 1: Uniform fordeling]]
+- [[#Case 2: Binomial fordeling|Case 2: Binomial fordeling]]
+	- [[#Case 2: Binomial fordeling#Bernouilly forsøg|Bernouilly forsøg]]
+	- [[#Case 2: Binomial fordeling#For $n>1$|For $n>1$]]
+- [[#Case 3: Geometrisk fordeling|Case 3: Geometrisk fordeling]]
+- [[#Case 4: Poisson fordeling|Case 4: Poisson fordeling]]
+---
+
+
 Vi har et _stokastisk eksperiment_ med udfaldsrummet (sample space) S. I S har vi vores udfald e.g. $a_1$
 
 **Stokastiske variable skrives $X$**

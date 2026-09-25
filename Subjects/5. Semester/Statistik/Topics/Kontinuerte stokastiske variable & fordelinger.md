@@ -55,6 +55,19 @@ $$Z=\frac {X-np} {\sqrt{np(1-np)}}\sim N(0,1)$$
 $$Z=\frac {X-\lambda}{\sqrt{\lambda}}\sim N(0,1)$$
 
 ---
+- [[#Standardafvigelse|Standardafvigelse]]
+- [[#PDF|PDF]]
+- [[#CMF|CMF]]
+- [[#Middelværdi|Middelværdi]]
+- [[#Varians|Varians]]
+- [[#PDF|PDF]]
+- [[#Standard Normal Fordeling|Standard Normal Fordeling]]
+- [[#Standardisering|Standardisering]]
+- [[#CDF|CDF]]
+- [[#PDF|PDF]]
+- [[#Middelværdi|Middelværdi]]
+- [[#Varians|Varians]]
+---
 Ligesom [[Diskrete stokastiske variable & fordelinger]] har vi et sample space $S$ og et sæt af stokastiske variable $X$.
 $$X: S\rightarrow I\subseteq \mathbb R$$
 
