@@ -57,6 +57,17 @@ Vi har en [[Kontinuerte stokastiske variable & fordelinger#Probability *Density*
 $$f_{X,Y}(x,y)\geq 0$$
 $$\int\int_{\mathbb R^2} f_{X,Y}(x,y)=1$$
 
+Hvis vi har et område $A$ i vores x y-område
+![[Pasted image 20260925084218.png|251]]
+
+kan vi finde sandsynligheden for at være i det område som
+$$P((X,Y)\in A)=\int\int_{A\subseteq \mathbb R^2}f_{X,Y}(x,y)dxdy$$
+
+### Marginal PDF
+Marginal betyder _at man kun kigger på den ene af de stokastiske variable_
+$$f_X(x)=\int_{y\in\mathbb R} f_{X,Y}(x,y)dy$$
+Det samme kan gøres ved  at integrere over $x$ for at finde $f_Y(y)$.
+Der gælder selvfølgelig det samme for denne PDF som for en normal [[|PDF]].
 
 
 ---
