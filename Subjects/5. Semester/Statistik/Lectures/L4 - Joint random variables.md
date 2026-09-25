@@ -57,7 +57,8 @@ $$\sigma_x^2=\sum_xx_i^2f_X(x_i)-\mu_x^2=\left((-1)^2\cdot\frac 1 8-\left(\frac 
 $$\sigma_x^2=\left(\frac 1 8-\frac 1 {16}\right)+\left(0.25\cdot\frac 1 4-\frac 1 {16}\right)+\left(0.25\cdot\frac 1 2-\frac 1 {16}\right)+\left(\frac 1 8-\frac 1 {16}\right)=\frac 1{16}+0+\frac 1{16}+\frac 1{16}=\frac 3 {16}$$
 
 $$\mu_y=\sum_yy_if_{y}(y_i)=-2\cdot\frac 1 8-1\cdot\frac 1 4+1\cdot\frac 1 2+2\cdot\frac 1 8=\frac 3 4$$
-$$\sigma_y^2=\sum_yy_i^2f_Y(y_i)-\mu_y^2=$$
+$$\sigma_y^2=\sum_yy_i^2f_Y(y_i)-\mu_y^2=\left((-2)^2\cdot\frac 1 8\right)+\left((-1)^2\cdot\frac 1 4\right)+\left(1^2\cdot\frac 1 2\right)+\left(2^2\cdot\frac 1 8\right)-\left(\frac 3 4\right)^2$$
+$$\sigma_y^2=\left(\frac 4 8-\frac 9 {16}\right)+\left(\frac 1 4-\frac 9 {16}\right)+\left(\frac 1 2-\frac 9 {16}\right)+\left(\frac 4 8-\frac 9 {16}\right)=\frac {-1}{16}$$
 
 
 
