@@ -44,7 +44,7 @@ ros2 run rqt_image_view rqt_image_view
 ## GVD Error
 ![[Pasted image 20260929112414.png|596]]
 
-Formodet fejl: Pixel resultat er muligvis anderledes fra object til ob
+Formodet fejl: Pixel resultat er muligvis anderledes fra object til object / object til edge på grund af decimal-værdi. Skal tjekke om decimal forskel mellem værdier er mindre end 1.
 ## Til præsentation
 - Visualisering af ROS netværk (noder og topics)
 - Gennemgang af individuelle ROS noder
