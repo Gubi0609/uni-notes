@@ -14,6 +14,8 @@
 # Relevant documents
 [[weekly5_E26.pdf]]
 [[RIC_5_Coverage_E26.pdf]]
+[[RIC_PE_AStar_E26.pdf]]
+[[AStar_map.png]]
 
 # Topics
 
