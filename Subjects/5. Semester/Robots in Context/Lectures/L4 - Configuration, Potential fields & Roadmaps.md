@@ -43,7 +43,13 @@ ros2 run rqt_image_view rqt_image_view
 
 ## Til præsentation
 - Visualisering af ROS netværk (noder og topics)
-- 
+- Gennemgang af individuelle ROS noder
+	- Fremgangsmetode
+	- Algoritme
+		- E,g, GVD: Sammenlign mindsteværdi, hvis flere mindsteværdier, tilføj til GVD
+- Gennemgang af custom ROS topic
+- Resultat
+- Reflektion??
 
 ---
 #lecture 
