@@ -41,6 +41,10 @@ ros2 run rqt_image_view rqt_image_view
 ![[map2-brushfired.png|681]]
 
 
+## GVD Error
+![[Pasted image 20260929112414.png|596]]
+
+Formodet fejl: Pixel resultat er muligvis anderledes fra object til ob
 ## Til præsentation
 - Visualisering af ROS netværk (noder og topics)
 - Gennemgang af individuelle ROS noder
