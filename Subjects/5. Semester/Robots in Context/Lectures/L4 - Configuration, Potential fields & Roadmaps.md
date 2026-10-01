@@ -49,6 +49,12 @@ Formodet fejl: Pixel resultat er muligvis anderledes fra object til object / obj
 ### With object to object
 ![[Pasted image 20260929113956.png|545]]
 Same error as described above.
+
+
+## Working GVD
+![[brushfire-GVD-map2.png]]
+
+Fix: Instead of finding minimum at each pixel, find smallest value and second smallest value at each pixel, and find the difference between them. If difference is less than tolerance (_1_), it must be GVD square. Also exclude squares, where minimum is 0.
 ## Til præsentation
 - Visualisering af ROS netværk (noder og topics)
 - Gennemgang af individuelle ROS noder
