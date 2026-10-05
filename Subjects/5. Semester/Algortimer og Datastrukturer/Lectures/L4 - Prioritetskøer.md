@@ -43,7 +43,9 @@
 ![[Pasted image 20261005143946.png|403]]
 
 ## Exercise 5
+![[Pasted image 20261005144402.png|479]]
 
+No it cannot, because _24_ is NOT bigger than _25_,
 
 
 
