@@ -28,8 +28,9 @@
 ## Exercise 2
 ![[Pasted image 20261005141842.png]]
 
-**No it can not**. The ordering is all wrong for both a max heap and a min heap.
-It follows the correct ordering for the root, and its childs, but
+![[Pasted image 20261005142526.png|434]]
+
+**Yes it can.** Each parent is bigger than its child. No wrong ordering is present.
  
 
 ---
