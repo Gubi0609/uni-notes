@@ -13,6 +13,7 @@
 ---
 # Relevant documents
 [[04 - Kapitel 6 - prioritetskøer.pdf]]
+[[Exercises in priority queues.pdf]]
 
 # Topics
 
