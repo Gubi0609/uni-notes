@@ -31,6 +31,15 @@
 ![[Pasted image 20261005142526.png|434]]
 
 **Yes it can.** Each parent is bigger than its child. No wrong ordering is present.
+
+## Exercise 3
+![[Pasted image 20261005143035.png]]
+
+
+|     | 7   | 9   | 11  | 14  | 18  | 15  | 21  | 33  | 17  | 27  |     | 19  |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+
  
 
 ---
