@@ -23,6 +23,13 @@
 
 ## Exercise 1
 ![[Pasted image 20261005141319.png]]
+![[Pasted image 20261005141736.png|832]]
+
+## Exercise 2
+![[Pasted image 20261005141842.png]]
+
+**No it can not**. The ordering is all wrong for both a max heap and a min heap.
+It follows the correct ordering for the root, and its childs, but
  
 
 ---
