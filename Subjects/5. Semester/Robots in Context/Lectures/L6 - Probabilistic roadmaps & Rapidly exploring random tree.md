@@ -13,6 +13,7 @@
 ---
 # Relevant documents
 [[weekly6_E26.pdf]]
+[[RIC_Planning_E26.pdf]]
 [[KaramanFrazzoli.pdf]]
 [[kuffner_icra2000.pdf]]
 
