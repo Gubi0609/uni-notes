@@ -16,6 +16,8 @@
 [[RIC_Planning_E26.pdf]]
 [[KaramanFrazzoli.pdf]]
 [[kuffner_icra2000.pdf]]
+[[RIC_PE_RRTStar_E26.pdf]]
+[[RIC_PE_PRM_E26.pdf]]
 
 # Topics
 
