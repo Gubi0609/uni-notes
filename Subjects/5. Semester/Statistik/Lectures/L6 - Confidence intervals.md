@@ -113,7 +113,7 @@ $$CI:\quad \left[\bar X\pm t_{n-1,\alpha/2}\cdot \frac s {\sqrt n}\right]$$
 hvor $t_{n-1, \alpha/2}=2.2010$ fundet i MATLAB via `tinv(1 - alpha/2, n - 1)` med `alpha = 0.05` og `n = 12.
 $\bar X=2259.9$.
 
-
+$$ S^2=\frac 1{n-1}\sum_{i=1}^n(x_i-\bar X)^2\Rightarrow S=\sqrt{\frac 1{n-1}\sum_{i=1}^n(x_i-\bar X)^2}=4.0665\cdot 10^{-7}$$
 
 
 ![[Pasted image 20261009103645.png]]

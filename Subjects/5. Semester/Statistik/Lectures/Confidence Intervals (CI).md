@@ -75,7 +75,7 @@ Vi har normalfordeling $N(\mu,\sigma^2)$
 Test statistic
 $$Z:=\frac {\bar X-\mu}{\sigma/\sqrt n}\sim N(0,1)$$
 Vi kender dog ikke $\sigma$, så vi må estimere.
-$$\hat {\sigma^2}=S^2=\frac 1{n-1}\sum_{i=1}^n(x_i-\bar x)\sim?$$
+$$\hat {\sigma^2}=S^2=\frac 1{n-1}\sum_{i=1}^n(x_i-\bar x)^2\sim?$$
 Vi introducerer en ny fordeling, 
 ## _Chi i anden_, $\mathcal X^2$
 $$\mathcal X^2(n):=z_1,...,z_n,\sim N(0,1)\Rightarrow \sum_{i=1}^n z_i^2\sim\mathcal X^2(n)$$
