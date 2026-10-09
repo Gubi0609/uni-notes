@@ -100,8 +100,15 @@ Test statistic
 $$Z:=\frac {\bar X-\mu}{\sigma/\sqrt n}\sim N(0,1)$$
 Vi kender dog ikke $\sigma$, så vi må estimere.
 $$\hat {\sigma^2}=S^2=\frac 1{n-1}\sum_{i=1}^n(x_i-\bar x)\sim?$$
-Vi introducerer en ny fordeling
-$$\mathcal X^2(n$$
+Vi introducerer en ny fordeling, 
+## _Chi i anden_, $\mathcal X^2$
+$$\mathcal X^2(n):=z_1,...,z_n,\sim N(0,1)\Rightarrow \sum_{i=1}^n z_i^2\sim\mathcal X^2(n)$$
+hvor $n$ er frihedsgrader. $z_1,...,z_n$ er normalfordelt.
+Dette har PDF'en
+![[Pasted image 20261009090418.png|338]]
+(Linjen krydser aldrig 0, jeg er bare dårlig til at tegne)
+
+Desuden introducerer vi endnu en ny fordeling,
 
 
 ---
