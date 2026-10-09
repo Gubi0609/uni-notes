@@ -125,7 +125,14 @@ $$\frac {\frac {\bar X-\mu}{\sigma/\sqrt n}}{\sqrt{\frac {S^2}{\sigma^2}}}=\frac
 Vi har dermed vores student-t fordeling
 ![[Pasted image 20261009093152.png|348]]
 
+I MATLAB kan vi finde $t(n-1)_{\alpha/2}$ ved `tinv(1 - alpha/2, n-1)`.
 
+På samme måde er der også en $-t(n-1)_{\alpha/2}$ ved venstre side. Denne kan også findes i matlab som `tinv(alpha/2, n-1)`.
+
+$$P\left(-t(n-1)_{\alpha/2}\leq \frac {\bar X -\mu}{S/\sqrt n}\leq t(n-1)_{\alpha/2}\right)=1-\alpha$$
+
+Vi kan så finde CI for $\mu$
+$$\left[\bar X \pm t(n-1)_{\alpha/2}\cdot \right]
 
 
 ---
