@@ -26,7 +26,17 @@
 
 Vi har en stokastisk variabel $X$ og en _antaget fordeling_
 Vi har desuden en eller flere ukendte parametre $\theta$.
-Der laves et estimat
+Der laves et estimat $\hat\theta=h(x_1,...x_n)$ hvor $h$ er en funktion af vores observationer $x_1,...,x_n$.
+
+$$\text{CI:}=[A,B]\text{ omkring }\hat\theta$$
+
+Så $\theta$ med konfidens $100\cdot (1-\alpha)\%$ ligger i CI.
+- $\alpha$: SIgnifikantsniveau
+- $1-\alpha$: Konfidensniveau
+
+Typiske værdier for $\alpha$ er $1\%$, $5\%$, og $10\%$, hvor $5\%$ er mest typisk.
+- Det fører til et konfidensniveau på hhv. $99\%$, $95\%$, og $90\%$.
+
 
 
 
