@@ -179,8 +179,21 @@ $$P\left(-t(n-1)_{\alpha/2}\leq \frac {\bar X - x_{n+1}}{\sqrt{S^2\left(1+\frac 
 
 Vi har så konfidensintervallet for $x_{n+1}$
 $$CI:\quad \left[\bar X\pm t(n-1)_{\alpha/2}\cdot \sqrt{S^2\left(1+\frac 1 n\right)} \quad\right]$$
+# Case 5: Confidence Interval for $p$ in binomial distribution
+Model: $X\sim \text{Bin}(n,p)$
+
+Estimate:
+$$\hat p = \frac x n \sim \frac 1 n \text{Bin}(n,p)$$
+$$E[\hat p]=p$$
+$$V[\hat p]=\frac {p(1-p)} n$$
+
+På grund af Ceentral Limit Theorem, for $np >> 1$,  $n(1-p) >> 1$:
+$$\hat p\sim N\left(p, \frac {p(1-p)} n\right), \quad \text{approximately}$$
+$$Z:=\frac {\hat p - p}{\sqrt{\frac {p(1-p)}n}}\quad \text{approximately}$$
 
 
+Vi har så 2-sidet CI for $p$
+$$CI: \quad \left[\hat p \pm z_{\alpha/2}\sqrt {\frac {\hat p(1-\)}}\right]
 
 ---
 #lecture 
