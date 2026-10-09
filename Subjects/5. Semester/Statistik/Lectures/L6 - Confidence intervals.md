@@ -156,7 +156,22 @@ $$P\left(\mathcal X^2(n-1)_{1-\alpha/2}\leq (n-1)\frac {S^2}{\sigma^2}\leq \math
 Vi kan omskrive for at få konfidensintervallet for $\sigma^2$
 $$CI: \quad \left[\frac {(n-1 S^2)}{\mathcal X^2(n-1)_{\alpha/2}}, \frac {(n-1 S^2)}{\mathcal X^2(n-1)_{1-\alpha/2}}\right]$$
 
-# Case 4: 
+# Case 4: Prediction Interval for next observation
+Stadigvæk normalfordeling
+$N(\mu,\sigma^2)$
+- Vi har $n$ observationer
+- Vi finder prediktion af næste observation $x_{n+1}$.
+
+$$x_{n+1}\sim N(\mu, \sigma^2)$$
+$$\hat x_{n+1}=\bar X = N\left(\mu, \frac {\sigma^2} n\right)$$
+
+Vi kan sige at
+$$\hat x_{n+1}-x_{n+1}\sim N\left(0, \sigma^2\left(1+\frac 1 n\right)\right)$$
+
+$$\frac {\hat x_{n+1}-x_{n+1}}{\sqrt{\sigma^2\left(1+\frac 1 n\right)}}\sim N(0,1)$$
+Som er standard normalfordelt.
+
+$$\frac {\hat x_{n+1}-x_{n+1}}{\sqrt{S^2\left(1+\frac 1 n\right)}} \sim t(n-1)
 
 
 
