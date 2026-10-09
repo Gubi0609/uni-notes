@@ -24,9 +24,25 @@
 ![[Pasted image 20261009103543.png]]
 
 - a.
-Siden det er normalfordelt, på 
+Siden det er normalfordelt, på sample mean, være i midten af konfidensintervalerne
+$$\mu=\frac {38.02+61.98} 2=50$$
+$$\mu = \frac {39.95+60.05} 2=50$$
+- b.
+
+Det intercal med 95% sikkerhed må være breddere end det med 90%. Hvis vi derfor finder bredden af hvert interval, kan vi afgøre hvilken er breddest
+$$61.98-38.02=23.96$$
+$$60.05-39.95=20.1$$
+Dermed er intervallet $(38.02,61.98)$ det interval med 95% sikkerhed.
+
 
 ![[Pasted image 20261009103554.png]]
+
+- a.
+Vi kan bruge formlen for CI af normalfordeling med kendt $\sigma$.
+$$CI:\quad \left[\bar X\pm z_{\alpha/2}\cdot \frac \sigma {\sqrt n}\right]$$
+Bredden må så være
+$$\bar X$$
+
 
 ![[Pasted image 20261009103605.png]]
 
