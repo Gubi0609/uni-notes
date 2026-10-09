@@ -134,7 +134,24 @@ $$P\left(-t(n-1)_{\alpha/2}\leq \frac {\bar X -\mu}{S/\sqrt n}\leq t(n-1)_{\alph
 Vi kan så finde CI for $\mu$
 $$CI: \quad \left[\bar X \pm t(n-1)_{\alpha/2}\cdot \frac S {\sqrt n}\right]$$
 
-Vi kan finde upper og lower bound på samme måde som [[#1-sidet CI for $ mu$|1-sidet CI for mu]] med den forskel, at vi har $t(n-1)$ i stedet for $z$
+Vi kan finde upper og lower bound på samme måde som [[#1-sidet CI for $ mu$|1-sidet CI for mu]] med den forskel, at vi har $t(n-1)$ i stedet for $z_\alpha$.
+
+# Case 3: Normalfordeling, $\sigma^2$
+
+Vi har $N(\mu,\sigma^2)$
+- Finder CI for $\sigma^2$
+
+$$\hat {\sigma^2}=S^2=\frac 1 {n-1}\sum_{i=1}^n (x_i-\bar X)^2 \sim \frac {\sigma^2}{n-1}\mathcal X^2(n-1)$$
+
+$$(n-1)\frac {S^2}{\sigma^2}\sim \mathcal X^2(n-1)$$
+![[Pasted image 20261009094623.png]]
+
+Vi kan finde $\mathcal X^2(n-1)_{\alpha/2}$ i MATLAB ved at bruge `chi2inv(1 - alpha/2, n-1)`
+
+Den venstre $\alpha/2
+
+
+
 
 
 ---
