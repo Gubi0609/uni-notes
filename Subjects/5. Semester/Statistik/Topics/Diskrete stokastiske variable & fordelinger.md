@@ -3,7 +3,7 @@
 > $$X\sim UD(a,b),\quad a,b\in \mathbb{Z}$$
 > $$\text{antal udfald} = b-a+1$$
 **[[#Probability mass function, PMF|PMF]]**
-$$f_X(x)=\left\{\begin{array} & \frac 1 {b-a+1}, & a\leq x\leq b \\ 0, & \text{ellers}\end{array}\right., \quad x\in \mathbb Z$$
+$$f_X(x)=\left\{\begin{array}{} \frac 1 {b-a+1}, & a\leq x\leq b \\ 0, & \text{ellers}\end{array}\right., \quad x\in \mathbb Z$$
 **[[#Middelværdi (Mean) af X|Middelværdi]]**
 $$\mu_X=E[X]=\frac {a+b} 2$$
 **[[#Varians (Variance) af X|Varians]]**
@@ -15,7 +15,7 @@ $$X\sim \text{Bin}(n,p)$$
 $\text{Bin}$ er navnet for _binomial_, $n$ er _antal forsøg_, $p$ er _succes rate_
 > 
 **[[#Probability mass function, PMF|PMF]]**
-$$P(X=x)=f_X(x)=\left(\begin{array}& n \\ x\end{array}\right)p^x(1-p)^{n-x},\quad 0\leq x\leq n$$
+$$P(X=x)=f_X(x)=\left(\begin{array}{} n \\ x\end{array}\right)p^x(1-p)^{n-x},\quad 0\leq x\leq n$$
 **[[#Middelværdi (Mean) af X|Middelværdi]]**
 $$\mu_X=n\cdot p$$
 **[[#Varians (Variance) af X|Varians]]**
@@ -123,7 +123,7 @@ $\sim$ betyder _"fordelt som"_, $UD$ er _navn_ og $a,b$ er _parametre_
 
 $$\text{antal udfald} = b-a+1$$
 **[[#Probability mass function, PMF|PMF]]**
-$$f_X(x)=\left\{\begin{array} & \frac 1 {b-a+1}, & a\leq x\leq b \\ 0, & \text{ellers}\end{array}\right., \quad x\in \mathbb Z$$
+$$f_X(x)=\left\{\begin{array} {} \frac 1 {b-a+1}, & a\leq x\leq b \\ 0, & \text{ellers}\end{array}\right., \quad x\in \mathbb Z$$
 **[[#Middelværdi (Mean) af X|Middelværdi]]**
 $$\mu_X=E[X]=\frac {a+b} 2$$
 **[[#Varians (Variance) af X|Varians]]**
@@ -138,7 +138,7 @@ $\text{Bin}$ er navnet for _binomial_, $n$ er _antal forsøg_, $p$ er _succes ra
 ### Bernouilly forsøg
 Betyder: **udført kun _1_ gang**, $n=1$
 
-$$f_X(x)=\left\{\begin{array} & p, & x=1, & \text{succes}\\ 1-p, & x=0, & \text{fiasko}\end{array}\right.$$
+$$f_X(x)=\left\{\begin{array} {} p, & x=1, & \text{succes}\\ 1-p, & x=0, & \text{fiasko}\end{array}\right.$$
 
 **[[#Middelværdi (Mean) af X|Middelværdi]]**
 $$\mu_X=E[X]=\sum_{x_i}x_if_X(x_i)=1\cdotp+0\cdot(1-p)=p$$
@@ -156,9 +156,9 @@ $$P(X=x)=P(\text{x succeser blandt n forsøg})=f_X(x)=p^x(1-p)^{n-x}, \quad 0\le
 hvor $p^x$ er succeserne, og $(1-p)^{n-x}$ sørger for, at resten er fiasko
 
 Vi mangler stadig at tjekke hvor mange forskellige metoder de kan kombineres på
-$$P(X=x)=f_X(x)=\left(\begin{array}& n \\ x\end{array}\right)p^x(1-p)^{n-x},\quad 0\leq x\leq n$$
+$$P(X=x)=f_X(x)=\left(\begin{array}{} n \\ x\end{array}\right)p^x(1-p)^{n-x},\quad 0\leq x\leq n$$
 Dette er vores **[[#Probability mass function, PMF|PMF]]**, hvor $x$ er antallet af forsøg (tror jeg...), i ovenstående er
-$$\left(\begin{array}& n \\ x\end{array}\right)=\frac {n!}{(n-x)!x!}$$
+$$\left(\begin{array}{} n \\ x\end{array}\right)=\frac {n!}{(n-x)!x!}$$
 **[[#Middelværdi (Mean) af X|Middelværdi]]**
 $$\mu_X=n\cdot p$$
 **[[#Varians (Variance) af X|Varians]]**
