@@ -40,11 +40,19 @@ Dermed er intervallet $(38.02,61.98)$ det interval med 95% sikkerhed.
 - a.
 Vi kan bruge formlen for CI af normalfordeling med kendt $\sigma$.
 $$CI:\quad \left[\bar X\pm z_{\alpha/2}\cdot \frac \sigma {\sqrt n}\right]$$
-Bredden må så være
-$$\left(\bar X + z_{\alpha/2} \frac \sigma {\sqrt n}\right)-\left(\bar X - z_{\alpha/2} \frac \sigma {\sqrt n}\right)=40$$
-
 Hvor $z_{\alpha/2}$ findes i matlab ved `norminv(1 - alpha/2)` med `alpha=0.05`
-$$z_{\alpha/2}=1.96
+$$z_{\alpha/2}=1.96$$
+
+Vi kan isolere for $n$, siden vi ved at CI skal have en bredde på 40.
+Fordi mean er i midten af intervallet, kan vi finde $n$ fra halvdelen af længden af intervallet $40/2=20$.
+$$20=z_{\alpha/2}\frac \sigma {\sqrt n}\Rightarrow n=\left(z_{\alpha/2} \frac \sigma {20}\right)^2=\left(1.96\frac {20} {20}\right)^2=1.96^2=3.84\approx4$$
+
+- b.
+Samme fremgangsmetode som før. Vi bruger MATLAB igen med `alpha = 0.01`
+$$z_{\alpha/2}=2.5758$$
+
+$$n=(2.5758\frac $$
+
 
 
 ![[Pasted image 20261009103605.png]]
