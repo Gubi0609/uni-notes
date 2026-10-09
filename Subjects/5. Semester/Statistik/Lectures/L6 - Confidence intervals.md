@@ -45,7 +45,7 @@ Vi kan opnå et smalt konfidensinterval (CI) ved
 - At have et lavt konfidensniveau
 - Eller have en _større stikprøve_.
 
-# Case 1: Normalfordeling
+# Case 1: Normalfordeling, $\mu$
 Vi har normalfordeling $N(\mu, \sigma^2)$
 - $\sigma^2$ er _kendt_
 - CI for $\mu$ er ukendt
@@ -79,7 +79,7 @@ $$\left\{ \begin{array}{} & n {\text{ larger} \\ (1-\alpha} \text{smaller}\end{a
 
 ## 1-sidet CI for $\mu$
 
-Vi har en PDF for $Z$
+Vi har en PDF for $Z$. **Billedet er genbrugt fra ovenover, men det skulle faktisk være $\alpha$ i stedet for $\alpha/2$. Bare lav den erstatning i hovedet.**
 ![[Pasted image 20261009083541.png|390]]
 
 Så kan vi finde _lower bound_ CI for $\mu$. Forvirrende nok kalder nogen det også _upper CI_.
@@ -89,7 +89,7 @@ Vi kan finde _upper bound_ CI for $\mu$. Lige så forvirrende, er der nogen der 
 $$\left]-\infty, \bar X z_{\alpha} \frac \sigma {\sqrt n} \right]$$
 
 
-
+I MATLAB kan man bruge `ztest` til at gøre det hele automatisk
 
 
 ---
