@@ -70,9 +70,15 @@ $\bar X$ er gennemsnittet af datasættet
 $$\bar X=3.372$$
 
 Så finder vi konfidensintervallet
-$$CI:\quad \left[3.372\pm 1.96\cdot \frac \sigma {\sqrt n}\right]$$
+$$CI:\quad \left[3.372\pm 1.96\cdot \frac {0.66} {\sqrt 5}\right]=\left[2.793, 3.951\right]$$
+
+- b.
+Vi kan ud fra konfidensintervallet isolere $n$
+$$n=\left(z_{\alpha/2} \frac {\sigma}{\text{width}/2}\right)^2=\left(1.96\cdot \frac {0.66}{0.55/2}\right)^2=22.128\approx 22$$
 
 ![[Pasted image 20261009103617.png]]
+
+
 
 ![[Pasted image 20261009103630.png]]
 
