@@ -148,9 +148,15 @@ $$(n-1)\frac {S^2}{\sigma^2}\sim \mathcal X^2(n-1)$$
 
 Vi kan finde $\mathcal X^2(n-1)_{\alpha/2}$ i MATLAB ved at bruge `chi2inv(1 - alpha/2, n-1)`
 
-Den venstre $\alpha/2
+Den venstre $\alpha/2$ har selvfølgelig også en $\mathcal X^2$, med den forskel at subskriptet er ændret: $\mathcal X^2(n-1)_{1-\alpha/2}$.
+- Denne kan også findes i MATLAB: `chi2inv(alpha/2, n-1)`
 
 
+$$P\left(\mathcal X^2(n-1)_{1-\alpha/2}\leq (n-1)\frac {S^2}{\sigma^2}\leq \mathcal X^2(n-1)_{\alpha/2}\right)=1-\alpha$$
+Vi kan omskrive for at få konfidensintervallet for $\sigma^2$
+$$CI: \quad \left[\frac {(n-1 S^2)}{\mathcal X^2(n-1)_{\alpha/2}}, \frac {(n-1 S^2)}{\mathcal X^2(n-1)_{1-\alpha/2}}\right]$$
+
+# Case 4: 
 
 
 
