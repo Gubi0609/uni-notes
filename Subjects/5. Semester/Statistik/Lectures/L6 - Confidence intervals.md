@@ -78,6 +78,13 @@ $$n=\left(z_{\alpha/2} \frac {\sigma}{\text{width}/2}\right)^2=\left(1.96\cdot \
 
 ![[Pasted image 20261009103617.png]]
 
+$x$
+$n = 10$
+$\mu=\sum_{i=1}^n x_i/n=25.1848$ 
+
+$\sigma=1.605$
+$\sigma^2 =\sigma^2=1.605^2=2.576$
+$\sum_{i=1}^n x_i = 251.848$
 
 
 ![[Pasted image 20261009103630.png]]
