@@ -60,7 +60,13 @@ Det oventående er en _test statistic_.
 
 ![[Pasted image 20261009083541.png|390]]
 
-For at finde $
+For at finde $Z_{\alpha/2}$ i MATLAB, skal vi bruge `norminv(1 - alpha/2)`.
+
+$$P(-z_{\alpha/2}\leq Z\leq z_{\alpha/2})=1-\alpha$$
+$$P(-z_{\alpha/2}\leq \frac {\bar X -\mu}{\sigma /sqrt n}\leq z_{\alpha/2}) = 1-\alpha$$
+
+Vi ville gerne have et konfidens interval for $\mu$, så vi omskriver
+$$P(\bar X-z_{\alpha/2}\cdot \frac \sigma {\sqrt n} \leq \mu \leq \bar X+z_{\alpha/2}\cdot \frac \sigma {\sqrt n})=1-\alpha$$
 
 ---
 #lecture 
