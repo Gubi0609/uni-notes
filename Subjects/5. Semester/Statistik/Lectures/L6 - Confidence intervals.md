@@ -58,7 +58,19 @@ $$n=\left(2.5758\frac {20} {20}\right)^2=2.5758^2=6.635\approx7$$
 ![[Pasted image 20261009103605.png]]
 
 - a.
+$\sigma=0.66$
+$2.69, 5.76, 2.67, 1.62, 4.12$
 
+Vi bruger
+$$CI:\quad \left[\bar X\pm z_{\alpha/2}\cdot \frac \sigma {\sqrt n}\right]$$
+
+Og bruger MATLAB til at finde $z_{\alpha/2}=1.96$ for $\alpha=0.05$.
+$n$ må være 5m, siden vi har 5 datapunkter.
+$\bar X$ er gennemsnittet af datasættet
+$$\bar X=3.372$$
+
+Så finder vi konfidensintervallet
+$$CI:\quad \left[3.372\pm 1.96\cdot \frac \sigma {\sqrt n}\right]$$
 
 ![[Pasted image 20261009103617.png]]
 
