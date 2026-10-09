@@ -68,5 +68,14 @@ $$P(-z_{\alpha/2}\leq \frac {\bar X -\mu}{\sigma /sqrt n}\leq z_{\alpha/2}) = 1-
 Vi ville gerne have et konfidens interval for $\mu$, så vi omskriver
 $$P(\bar X-z_{\alpha/2}\cdot \frac \sigma {\sqrt n} \leq \mu \leq \bar X+z_{\alpha/2}\cdot \frac \sigma {\sqrt n})=1-\alpha$$
 
+Konfidensintervallet er så
+$$CI:\quad \left[\bar X\pm z_{\alpha/2}\cdot \frac \sigma {\sqrt n}\right]$$
+
+Hvis vi vil have et breddere interval:
+$$2z_{\alpha/2}\frac \sigma {\sqrt{n}}$$
+
+Hvis vi vil have et _smallere_ interval
+$$\left\{ \begin{array}{} & n {\text{ larger} \\ (1-\alpha} \text{smaller}\end{array}\right.$$
+
 ---
 #lecture 

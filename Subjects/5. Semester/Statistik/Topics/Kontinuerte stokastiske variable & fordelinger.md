@@ -7,7 +7,7 @@
 > $$X\sim U(a,b)\quad a,b\in \mathbb R$$
 > 
 > **PDF**
-> $$f_X(x)=\left\{\begin{array} &  \frac 1 {b-a} & a\leq x \leq b \\ 0 & ellers \end{array}\right.$$
+> $$f_X(x)=\left\{\begin{array}{} &  \frac 1 {b-a} & a\leq x \leq b \\ 0 & ellers \end{array}\right.$$
 > 
 > **CDF**
 > Bare integrer PDF
