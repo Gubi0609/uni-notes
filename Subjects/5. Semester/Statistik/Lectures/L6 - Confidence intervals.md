@@ -89,7 +89,19 @@ Vi kan finde _upper bound_ CI for $\mu$. Lige så forvirrende, er der nogen der 
 $$\left]-\infty, \bar X z_{\alpha} \frac \sigma {\sqrt n} \right]$$
 
 
-I MATLAB kan man bruge `ztest` til at gøre det hele automatisk
+I MATLAB kan man bruge `ztest` til at gøre det hele automatisk.
+
+# Case 2: Normalfordeling, $\sigma$ ukendt
+Vi har normalfordeling $N(\mu,\sigma^2)$
+- $\sigma^2$ er ukendt
+- CI for $\mu$
+
+Test statistic
+$$Z:=\frac {\bar X-\mu}{\sigma/\sqrt n}\sim N(0,1)$$
+Vi kender dog ikke $\sigma$, så vi må estimere.
+$$\hat {\sigma^2}=S^2=\frac 1{n-1}\sum_{i=1}^n(x_i-\bar x)\sim?$$
+Vi introducerer en ny fordeling
+$$\mathcal X^2(n$$
 
 
 ---
