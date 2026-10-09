@@ -117,5 +117,6 @@ hvor $n$ er frihedsgrader.
 
 
 
+
 ---
 #lecture 
