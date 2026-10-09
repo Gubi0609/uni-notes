@@ -132,7 +132,9 @@ På samme måde er der også en $-t(n-1)_{\alpha/2}$ ved venstre side. Denne kan
 $$P\left(-t(n-1)_{\alpha/2}\leq \frac {\bar X -\mu}{S/\sqrt n}\leq t(n-1)_{\alpha/2}\right)=1-\alpha$$
 
 Vi kan så finde CI for $\mu$
-$$\left[\bar X \pm t(n-1)_{\alpha/2}\cdot \right]
+$$CI: \quad \left[\bar X \pm t(n-1)_{\alpha/2}\cdot \frac S {\sqrt n}\right]$$
+
+Vi kan finde upper og lower bound på samme måde som [[#1-sidet CI for $ mu$|1-sidet CI for mu]] med den forskel, at vi har $t(n-1)$ i stedet for $z$
 
 
 ---
