@@ -75,7 +75,7 @@ Hvis vi vil have et breddere interval:
 $$2z_{\alpha/2}\frac \sigma {\sqrt{n}}$$
 
 Hvis vi vil have et _smallere_ interval
-$$\left\{ \begin{array}{} & n {\text{ larger} \\ (1-\alpha} \text{smaller}\end{array}\right.$$
+$$\left\{ \begin{array}{} n {\text{ larger} \\ (1-\alpha} \text{smaller}\end{array}\right.$$
 
 ## 1-sidet CI for $\mu$
 
@@ -109,6 +109,12 @@ Dette har PDF'en
 (Linjen krydser aldrig 0, jeg er bare dårlig til at tegne)
 
 Desuden introducerer vi endnu en ny fordeling,
+## _Student t_, $t$
+$$t(n):=\left\{\begin{array}{}Z\sim N(0,1)\\ V\sim \mathcal X^2(n)\end{array}\right.\Rightarrow T=\frac Z{\sqrt{\frac V n}}\sim t(n)$$
+
+hvor $n$ er frihedsgrader.
+![[Pasted image 20261009091053.png]]
+
 
 
 ---
