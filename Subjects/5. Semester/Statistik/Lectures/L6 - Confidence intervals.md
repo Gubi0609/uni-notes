@@ -53,7 +53,14 @@ Vi har normalfordeling $N(\mu, \sigma^2)$
 Model:
 - $x_1,...x_n$ er uafhængige hvor $x_i\sim (\mu,\sigma^2)$ 
 
-Vi estimerer $\mu$,
+Vi estimerer $\mu$. Estimatet er $\hat\mu=\bar X=\frac 1 n \sum^n_{i=1}x_i\sim N(\mu,\frac {\sigma^2}n)$
+
+$$Z=\frac {\bar X-\mu}{\sigma /\sqrt n} \sim N(0, 1)$$
+Det oventående er en _test statistic_.
+
+![[Pasted image 20261009083541.png|390]]
+
+For at finde $
 
 ---
 #lecture 
