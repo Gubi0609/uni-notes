@@ -37,8 +37,23 @@ Så $\theta$ med konfidens $100\cdot (1-\alpha)\%$ ligger i CI.
 Typiske værdier for $\alpha$ er $1\%$, $5\%$, og $10\%$, hvor $5\%$ er mest typisk.
 - Det fører til et konfidensniveau på hhv. $99\%$, $95\%$, og $90\%$.
 
+Vi vil gerne have et så smalt som muligt konfidensinterval, men vi vil også gerne have en høj konfidens
+![[Pasted image 20261009082635.png|450]]
 
+Konfidensinterval og konfidensniveau arbejder altså lidt i mod hinanden...
+Vi kan opnå et smalt konfidensinterval (CI) ved
+- At have et lavt konfidensniveau
+- Eller have en _større stikprøve_.
 
+# Case
+Vi har normalfordeling $N(\mu, \sigma^2)$
+- $\sigma^2$ er _kendt_
+- CI for $\mu$ er ukendt
+
+Model:
+- $x_1,...x_n$ er uafhængige hvor $x_i\sim (\mu,\sigma^2)$ 
+
+Vi estimerer $\mu$,
 
 ---
 #lecture 
