@@ -100,7 +100,12 @@ $$CI:\quad \left[25.1848\pm 1.96\cdot \frac {1.605}{\sqrt{10}}\right]=\left[24.1
 
 ![[Pasted image 20261009103630.png]]
 
+- a.
+Bliver løst i matlab ved at bruge `normplot(data)`
 
+![[Pasted image 20261009113854.png|485]]
+
+Vi kan se at datapunkterne ligger retr lineært langs 
 
 ![[Pasted image 20261009103645.png]]
 
