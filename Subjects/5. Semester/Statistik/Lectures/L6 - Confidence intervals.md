@@ -92,10 +92,15 @@ Vi bruger
 $$CI:\quad \left[\bar X\pm z_{\alpha/2}\cdot \frac \sigma {\sqrt n}\right]$$
 
 hvor $z_{\alpha/2}=1.96$ fundet i MATLAB som i forrige opgaver.
+$\bar X=\mu=25.1848$.
+
+$$CI:\quad \left[25.1848\pm 1.96\cdot \frac {1.605}{\sqrt{10}}\right]=\left[24.19,26.18\right]$$
 
 
 
 ![[Pasted image 20261009103630.png]]
+
+
 
 ![[Pasted image 20261009103645.png]]
 
