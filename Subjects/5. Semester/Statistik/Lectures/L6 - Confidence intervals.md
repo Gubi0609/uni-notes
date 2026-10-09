@@ -41,7 +41,10 @@ Dermed er intervallet $(38.02,61.98)$ det interval med 95% sikkerhed.
 Vi kan bruge formlen for CI af normalfordeling med kendt $\sigma$.
 $$CI:\quad \left[\bar X\pm z_{\alpha/2}\cdot \frac \sigma {\sqrt n}\right]$$
 Bredden må så være
-$$\bar X$$
+$$\left(\bar X + z_{\alpha/2} \frac \sigma {\sqrt n}\right)-\left(\bar X - z_{\alpha/2} \frac \sigma {\sqrt n}\right)=40$$
+
+Hvor $z_{\alpha/2}$ findes i matlab ved `norminv(1 - alpha/2)` med `alpha=0.05`
+$$z_{\alpha/2}=1.96
 
 
 ![[Pasted image 20261009103605.png]]
