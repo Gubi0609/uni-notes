@@ -89,12 +89,12 @@ $\sum_{i=1}^n x_i = 251.848$
 
 - b.
 Vi bruger åbenbart den for student t fordeling nu, fordi vi af en eller anden grund _estimerer_ variansen.
-$$CI:\quad \left[\bar X\pm t_{n-1,\alpha/2}\cdot \frac \sigma {\sqrt n}\right]$$
+$$CI:\quad \left[\bar X\pm t_{n-1,\alpha/2}\cdot \frac s {\sqrt n}\right]$$
 
 hvor $t_{n-1, \alpha/2}=2.2622$ fundet i MATLAB via `tinv(1 - alpha/2, n - 1)` med `alpha = 0.05`.
 $\bar X=\mu=25.1848$.
 
-$$CI:\quad \left[25.1848\pm 2.2622\cdot \frac {1.605}{\sqrt{10}}\right]=\left[24.19,26.18\right]$$
+$$CI:\quad \left[25.1848\pm 2.2622\cdot \frac {1.605}{\sqrt{10}}\right]=\left[24.04,26.33\right]$$
 
 
 
@@ -105,12 +105,14 @@ Bliver løst i matlab ved at bruge `normplot(data)`
 
 ![[Pasted image 20261009113854.png|485]]
 
-Vi kan se at datapunkterne ligger retr lineært langs linjen. Vi kan derfor sige at det med god sandsynlighed kan antages at være normalfordelt.
+Vi kan se at datapunkterne ligger ret lineært langs linjen. Vi kan derfor sige at det med god sandsynlighed kan antages at være normalfordelt.
 
 - b.
-Vi bruger
-$$CI:\quad \left[\bar X\pm z_{\alpha/2}\cdot \frac \sigma {\sqrt n}\right]$$
-hvor $z_{\alpha/2}=1.96$ fundet i MATLAB som i forrige opgaver.
+Vi bruger fordi vi estimerer variansen
+$$CI:\quad \left[\bar X\pm t_{n-1,\alpha/2}\cdot \frac s {\sqrt n}\right]$$
+hvor $t_{n-1, \alpha/2}=2.2010$ fundet i MATLAB via `tinv(1 - alpha/2, n - 1)` med `alpha = 0.05` og `n = 12.
+$\bar X=2259.9$.
+
 
 
 
