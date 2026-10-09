@@ -170,8 +170,15 @@ $$\hat x_{n+1}-x_{n+1}\sim N\left(0, \sigma^2\left(1+\frac 1 n\right)\right)$$
 
 $$\frac {\hat x_{n+1}-x_{n+1}}{\sqrt{\sigma^2\left(1+\frac 1 n\right)}}\sim N(0,1)$$
 Som er standard normalfordelt.
+Vi kan også skrive en student-t fordeling.
+$$\frac {\hat x_{n+1}-x_{n+1}}{\sqrt{S^2\left(1+\frac 1 n\right)}} \sim t(n-1)$$
 
-$$\frac {\hat x_{n+1}-x_{n+1}}{\sqrt{S^2\left(1+\frac 1 n\right)}} \sim t(n-1)
+![[Pasted image 20261009095905.png|350]]
+
+$$P\left(-t(n-1)_{\alpha/2}\leq \frac {\bar X - x_{n+1}}{\sqrt{S^2\left(1+\frac 1 n\right)}}\leq t(n-1)_{\alpha/2}\right)=1-\alpha$$
+
+Vi har så konfidensintervallet for $x_{n+1}$
+$$CI:\quad \left[\bar X\pm t(n-1)_{\alpha/2}\cdot \sqrt{S^2\left(1+\frac 1 n\right)} \quad\right]$$
 
 
 
