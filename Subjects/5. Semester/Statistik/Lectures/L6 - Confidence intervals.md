@@ -51,11 +51,14 @@ $$20=z_{\alpha/2}\frac \sigma {\sqrt n}\Rightarrow n=\left(z_{\alpha/2} \frac \s
 Samme fremgangsmetode som før. Vi bruger MATLAB igen med `alpha = 0.01`
 $$z_{\alpha/2}=2.5758$$
 
-$$n=(2.5758\frac $$
+$$n=\left(2.5758\frac {20} {20}\right)^2=2.5758^2=6.635\approx7$$
 
 
 
 ![[Pasted image 20261009103605.png]]
+
+- a.
+
 
 ![[Pasted image 20261009103617.png]]
 
