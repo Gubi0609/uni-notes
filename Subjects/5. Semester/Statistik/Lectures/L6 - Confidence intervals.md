@@ -115,6 +115,16 @@ $$t(n):=\left\{\begin{array}{}Z\sim N(0,1)\\ V\sim \mathcal X^2(n)\end{array}\ri
 hvor $n$ er frihedsgrader.
 ![[Pasted image 20261009091053.png]]
 
+Vi ved at nedenstående udtryk er en normalfordeling
+$$\frac {\bar X-\mu} {\sigma/\sqrt n}\sim N(0,1)$$
+Vi kan skrive
+$$\frac {S^2}{\sigma^2}\sim \frac {\mathcal X^2(n-1)}{n-1}$$
+Og bruge de to udtryk til at få
+$$\frac {\frac {\bar X-\mu}{\sigma/\sqrt n}}{\sqrt{\frac {S^2}{\sigma^2}}}=\frac {\bar X-\mu}{S/\sqrt n}\sim t(n-1)$$
+
+Vi har dermed vores student-t fordeling
+![[Pasted image 20261009093152.png|348]]
+
 
 
 
