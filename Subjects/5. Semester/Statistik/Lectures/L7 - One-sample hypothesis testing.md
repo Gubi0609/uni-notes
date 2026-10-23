@@ -45,6 +45,15 @@ $$H_0:\quad \mu \leq \mu_0$$
 Og til dette en alternativ hypotese
 $$H_1:\quad \mu > \mu_0$$
 
+**Formålet** med disse hypoteswer er at tage vores _data_ og lave en _test_ som fører til en _konklusion_.
+Ud fra testen kan vi konkludere om enten $H_0$ (_ikke signifikant_) eller $H_1$ (_signifikant_) gælder.
+- Hvis $H_1$ gælder forkaster vi $H_0$ og må så ændre vores antagelser om systemet. Derfor er det signifikant, da vores antagelser så ikke gælder længere.
+
+### Estimat, $\hat \mu$
+Estimatet $\hat \mu$ skrives
+$$\hat \mu = \bar X = \frac 1 n \sum_{i=1}^n x_i \sim N\left(\mu, \frac {\sigma^2} n\right)$$
+Vi vil gerne opstille det som en sta
+#### Test statistic
 
 
 ---
