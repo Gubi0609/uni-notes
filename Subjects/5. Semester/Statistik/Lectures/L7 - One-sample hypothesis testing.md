@@ -89,14 +89,26 @@ For at sørge for at vores fejl ikke er for stor, laver vi et **signifikansnivea
 $\alpha$ er typisk $1\%$, $5\%$, eller $10\%$. Den mest normale er $5\%$.
 $$\alpha :=\text{max acceptable }P(\text{Type 1 error})$$
 
+På den her måde laver vi højest $\alpha$ procent af gangene en Type 1 fejl.
 ## Fra signifikansniveau til accept og kritisk område
+
+### To-sidet test
 ![[Pasted image 20261023085427.png]]
 
 For de typiske værdier af $\alpha$ (1%, 5%, 10%), er $z_{\alpha/2}:
-$$\alpha = 1\% \rightarrow z_{\alpha/2}=2.58$$$$\alpha = 5\% \rightarrow z_{\alpha/2}=1.96$$$$\alpha = 10\% \rightarrow z_{\alpha/2}=1.65$$
+$$\alpha = 1\% \rightarrow z_{\alpha/2}=2.58$$
+$$\alpha = 5\% \rightarrow z_{\alpha/2}=1.96$$
+$$\alpha = 10\% \rightarrow z_{\alpha/2}=1.65$$
 
 Ud fra ovenstående tegning af vores _test statistic PDF_ kan vi sige
-$$C:\quad |z_
+$$C:\quad |z_0|>z_{\alpha/2}\Rightarrow \text{forkast }H_0$$
+$$A:\quad |z_0|\leq z_{\alpha/2}\Rightarrow \text{accepter }H_0$$
+
+### Et-sidet test
+![[Pasted image 20261023090030.png|703]]
+
+Ud fra vores _test statistic PDF_ ovenover, kan vi sige
+$$C:\quad z_0 < z_\alpha \Rightarrow \text{}
 
 ---
 #lecture 
