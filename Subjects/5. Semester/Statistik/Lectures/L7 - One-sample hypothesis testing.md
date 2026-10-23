@@ -128,6 +128,8 @@ Ligesom $\beta$ er dette _ikke et tal_ men en funktion af den sande $\mu$.
 
 
 ## P-værdi (alternativ til en valgt $\alpha$)
+
+### 2-sidet
 Beregn $z_0$
 ![[Pasted image 20261023093827.png|509]]
 
@@ -139,7 +141,25 @@ Eksemperl: $p=3\%$
 - $\alpha = 5\% \Rightarrow \text{forkast }H_0$
 - $\alpha = 1\% \Rightarrow \text{accepter }H_0$
 
-> p-værdien er _sandsynligheden_ for at en værdi af 
+> p-værdien er _sandsynligheden_ for at en værdi af _test statistic_ (af dataen) er **mindst lige så sjælden som den beregnede** for dataen, _**givet at $H_0$ er sand**_.
+
+### 1-sidet test
+$$H_0:\quad \mu\leq \mu_0$$
+$$H_1:\quad \mu >\mu_0$$
+Fra test statistic PDF
+$$p=P(Z>z_0)\rightarrow p=1-P(Z\leq z_0)=1-\Phi(z_0)$$
+
+For omvendt, er det det samme bare uden $1-$.
+
+
+## Case 2: Normalfordelt data, ukendt $\mu$
+Vi har normalfordelt data $X\sim N(\mu,\sigma^2)$.
+- Vi _tester_ for $\mu$ som er ukendt
+- $\sigma^2$ er også ukendt.
+
+### Test statistic
+$$Z_0=\frac {\bar X-\mu_0}{\sigma/\sqrt n}\sim N(0,1)$$
+
 
 
 ---
