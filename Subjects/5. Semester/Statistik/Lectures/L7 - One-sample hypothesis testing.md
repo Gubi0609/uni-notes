@@ -90,9 +90,13 @@ $\alpha$ er typisk $1\%$, $5\%$, eller $10\%$. Den mest normale er $5\%$.
 $$\alpha :=\text{max acceptable }P(\text{Type 1 error})$$
 
 ## Fra signifikansniveau til accept og kritisk område
+![[Pasted image 20261023085427.png]]
 
+For de typiske værdier af $\alpha$ (1%, 5%, 10%), er $z_{\alpha/2}:
+$$\alpha = 1\% \rightarrow z_{\alpha/2}=2.58$$$$\alpha = 5\% \rightarrow z_{\alpha/2}=1.96$$$$\alpha = 10\% \rightarrow z_{\alpha/2}=1.65$$
 
-
+Ud fra ovenstående tegning af vores _test statistic PDF_ kan vi sige
+$$C:\quad |z_
 
 ---
 #lecture 
