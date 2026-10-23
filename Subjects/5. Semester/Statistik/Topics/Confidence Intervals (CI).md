@@ -67,7 +67,7 @@ $$\left]-\infty, \bar X z_{\alpha} \frac \sigma {\sqrt n} \right]$$
 
 I MATLAB kan man bruge `ztest` til at gøre det hele automatisk.
 
-# Case 2: Normalfordeling, $\sigma$ ukendt
+# Case 2: Normalfordeling, $\sigma^2$ ukendt
 Vi har normalfordeling $N(\mu,\sigma^2)$
 - $\sigma^2$ er ukendt
 - CI for $\mu$
