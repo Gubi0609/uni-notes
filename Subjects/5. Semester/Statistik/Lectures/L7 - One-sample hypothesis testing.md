@@ -163,6 +163,15 @@ $$\hat \sigma^2=s^2=\frac 1 {n-1}\sum_{i=1}^n(X_i-\bar X)^2\sim \frac {\sigma^2}
 ### Test statistic
 $$Z_0=\frac {\bar X-\mu_0}{\sigma/\sqrt n}\sim N(0,1)$$
 $$T_0:=\frac {\bar X-\mu_0}{s/\sqrt n}\sim t(n-1)$$
+![[Pasted image 20261023095314.png|567]]
+
+$$C:\quad |t_0|>t(n-1)_{\alpha/2}\Rightarrow \text{forkast }H_0$$
+### Beregn p-værdi
+![[Pasted image 20261023095540.png|476]]
+
+$$p=2P(t(n-1)>|t_0|)=2(1-P(t(n-1)\leq |t_0|))$$
+$P(t(n-1)\leq |t_0|)$ kan fås ved `tcdf(t|t_0|, n-1)`.
+
 
 
 
