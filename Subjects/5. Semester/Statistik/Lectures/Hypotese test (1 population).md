@@ -147,8 +147,8 @@ $$H_0:\quad \mu\leq \mu_0$$
 $$H_1:\quad \mu >\mu_0$$
 Fra test statistic PDF
 $$p=P(Z>z_0)\rightarrow p=1-P(Z\leq z_0)=1-\Phi(z_0)$$
-
-For omvendt, er det det samme bare uden $1-$.
+Vi kan finde $\Phi(z_0)$ i MATLAB ved at bruge `normcdf(z_0)`.
+For omvendt (lower tailed), er det det samme bare uden $1-$.
 
 
 ## Case 2: Normalfordelt data, ukendt $\sigma^2$

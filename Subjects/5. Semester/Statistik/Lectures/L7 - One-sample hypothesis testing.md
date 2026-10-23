@@ -143,6 +143,12 @@ p_two_sided = 2*(1-tcdf(abs(T_0), N-1)) % 0.6507
 
 ![[Pasted image 20261023102955.png]]
 
+Da vi har $H_0:\quad \mu = 10$ og $H_1:\quad \mu > 10$ har vi en _one-sided, upper tailed_ test.
+- Varians er kendt
+
+Ud fra alt dette kan vi bruge [[Hypotese test (1 population)#1-sidet test|p-værdi for 1-sidet test]].
+$$p=P(Z>z_0)\rightarrow p=1-P(Z\leq z_0)=1-\Phi(z_0)$$
+
 ![[Pasted image 20261023103006.png]]
 
 ![[Pasted image 20261023103014.png]]
