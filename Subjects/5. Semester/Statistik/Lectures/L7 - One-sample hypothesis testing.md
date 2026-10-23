@@ -27,7 +27,14 @@ Signifikans niveau: $\alpha$
 $H_0:\quad \mu=5$
 $H_1:\quad \mu<5$
 
+Ud fra vores hypoteser, kan vi opstille områderne
 
+$$C:\quad z_0 < z_\alpha \Rightarrow \text{forkast }H_0$$
+$$A:\quad z_0= z_\alpha \Rightarrow \text{accepter }H_0$$
+Hvor
+$$z_\alpha\rightarrow \text{norminv}(\alpha)$$
+
+Dette kan vi gøre da $\sigma^2$ er _kendt_, hvilket betyder at $Z_0$ følger normalfordelingen. Derfor kan vi løse problemet ved at bruge _standard normal fordelingen_. Ud fra hypotesen kan vi se at det er en _lower one-sided test_ altså kan vi opstille de områder vi har gjort ovenfor.
 
 ![[Pasted image 20261023102942.png]]
 
