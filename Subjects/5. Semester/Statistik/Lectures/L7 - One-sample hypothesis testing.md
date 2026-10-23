@@ -103,6 +103,28 @@ $H_1: \quad \mu>20$
 
 $H_1$ er den afgørende faktor. Hvis $H_1:\quad \mu \neq 20$ ville det være en to-sidet.
 
+- c.
+Vi kan bruge [[Confidence Intervals (CI)#Case 2 Normalfordeling, $ sigma 2$ ukendt|CI, Case 2: Normalfordeling, varians ukendt]].
+$$CI: \quad \left[\bar X \pm t(n-1)_{\alpha/2}\cdot \frac S {\sqrt n}\right]$$
+Hvor $t(n-1)_{\alpha/2}$ findes med `tinv(1 - alpha/2, n-1)`.
+
+Via Matlab får vi så
+$$CI:\quad \left[19.3529,\quad 20.4251\right]$$
+
+```matlab
+% Fortsættelse af matlab-blokken ovenover
+
+alpha = 0.05; % 95% confidence level
+
+% Find t(n-1)_alpha/2
+t_alpha_2 = tinv(1-alpha/2, N - 1) % 2.2622
+t_alpha_2_neg = -t_alpha_2 % -2.2622
+
+C_low = Mean - t_alpha_2 * s/sqrt(N) % 19.3529
+C_up = Mean + t_alpha_2 * s/sqrt(N) % 20.4251
+```
+
+
 ![[Pasted image 20261023102955.png]]
 
 ![[Pasted image 20261023103006.png]]
