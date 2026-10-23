@@ -60,7 +60,10 @@ ans =
 ![[Pasted image 20261023102942.png]]
 
 - a.
-
+Fra [[Kontinuerte stokastiske variable & fordelinger#Central Limit Theorem|Central Limit Theorem (CLT)]] ved vi at for et stort antal sampels $n$, kan gennemsnittet $\bar X$ approximeres som normalfordelt
+$$\bar X\sim N\left(\mu, \frac {\sigma^2} n\right)$$
+Hvilket betyder at vi kan finde vores standard afvigelse $s$ fra SE mean (_Standard Error mean_ eller _Standard Deviation of the mean_)
+$$\text{SE mean}=\frac s {\sqrt N}\Rightarrow s=\text {SE mean}\cdot \sqrt N$$
 
 - b.
 Det er en _et-sidet_ test da hypoteserne er
