@@ -181,7 +181,12 @@ $$H_1:\quad \sigma^2\neq \sigma_0^2$$
 ### Estimat, $\hat \sigma^2$
 $$\hat\sigma^2=s^2\frac 1 {n-1}\sum_{i=1}^n(X_i-\bar X)^2\sim\frac {\sigma^2} {n-1} \mathcal X^2(n-1)$$
 ### Test statistic
-$$X_0^2
+$$X_0^2:=\frac {(n-1)s^2}{\sigma^2}=^{H_0} \frac {(n-1)s^2}{\sigma_0^2}\sim \mathcal X^2(n-1)$$
+Data bliver så $X_0^2=x_0^2$.
+
+![[Pasted image 20261023101059.png|548]]
+
+### Vælg $\alpha$
 
 
 ---
