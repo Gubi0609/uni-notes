@@ -191,7 +191,7 @@ $$C:\quad x_0>\mathcal X^2(n-1)_{\alpha/2} \quad \vee \quad x_0<\mathcal X^2(n-1
 
 ### Beregn p-værdi
 $$p=2\cdot \min\left[P(\mathcal X^2(n-1)>x_0), \quad P(\mathcal X^2(n-1) < x_0)\right]$$
-De to sandsynligheder finder vi med `chi2cdf`.
+De to sandsynligheder finder vi med hhv. `(1 - chi2cdf(x_0, n-1))` og `chi2cdf(x_0, n-1).
 
 
 
