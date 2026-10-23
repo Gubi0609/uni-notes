@@ -128,7 +128,18 @@ Ligesom $\beta$ er dette _ikke et tal_ men en funktion af den sande $\mu$.
 
 
 ## P-værdi (alternativ til en valgt $\alpha$)
-Beregn $\z_0$
+Beregn $z_0$
+![[Pasted image 20261023093827.png|509]]
+
+$$p/2=P(Z>|z_0|)\rightarrow p=2(1-P(Z\leq |z_0|))=2(1-\Phi(|z_0|))$$
+Hvis $p$ er _lille_ **forkaster** vi $H_0$.
+Hvis $p$ er _stor_ **accepterer** vi $H_0$.
+
+Eksemperl: $p=3\%$
+- $\alpha = 5\% \Rightarrow \text{forkast }H_0$
+- $\alpha = 1\% \Rightarrow \text{accepter }H_0$
+
+> p-værdien er _sandsynligheden_ for at en værdi af 
 
 
 ---
