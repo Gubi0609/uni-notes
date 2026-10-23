@@ -1,6 +1,6 @@
 
 ---
-**Date:** YYYY-MM-DD
+**Date:** 2026-10-23
 
 ## Preparation
 
@@ -27,7 +27,7 @@
 ## Case 1: Normalfordelt data
 Vi har $X \sim N(\mu, \sigma^2)$.
 Vi vil gerne teste for middelværdien $\mu$
-- $\sigma^2$ er ukendt
+- $\sigma^2$ er _kendt_
 
 Model: $x_1, ..., x_n$, uafhængige. Kommer fra en normalfordeling $X_i\sim N(\mu,\sigma^2)$
 - Observation: $x_1, ..., x_n$ (data)
@@ -152,10 +152,10 @@ $$p=P(Z>z_0)\rightarrow p=1-P(Z\leq z_0)=1-\Phi(z_0)$$
 For omvendt, er det det samme bare uden $1-$.
 
 
-## Case 2: Normalfordelt data, ukendt $\mu$
+## Case 2: Normalfordelt data, ukendt $\sigma^2$
 Vi har normalfordelt data $X\sim N(\mu,\sigma^2)$.
 - Vi _tester_ for $\mu$ som er ukendt
-- $\sigma^2$ er også ukendt.
+- $\sigma^2$ er også _ukendt_.
 
 ### Estimat, $\hat \sigma^2$
 $$\hat \sigma^2=s^2=\frac 1 {n-1}\sum_{i=1}^n(X_i-\bar X)^2\sim \frac {\sigma^2}{n-1} \mathcal X^2(n-1)$$
