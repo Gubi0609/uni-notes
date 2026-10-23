@@ -169,10 +169,13 @@ p3 = 1 - normcdf(z0_3) % 0.3446
 ![[Pasted image 20261023103006.png]]
 
 Siden $H_0:\quad \mu=3$ og $H_1:\quad \mu\neq 3$ er det en _to-sidet_ test.
-Varians er ukendt, men standard afvigelse $\sigma=0.9$ er kendt.
+Varians $\sigma=0.9$ er kendt.
 Vi ved også at dataen er normal fordelt.
 Vi ved også at $\alpha = 0.05$.
 
+Derfor kan vi bruge [[Hypotese test (1 population)#Test statistic|Case 1: Kendt varians, Test statistic]]
+$$Z_0:=\frac {\bar X - \mu} {\sigma/\sqrt n}=^{H_0} \frac {\bar X - \mu_0} {\sigma /\sqrt n}\sim N(0,1)$$
+Vi vil også finde $z_{\alpha/2}$
 
 
 
