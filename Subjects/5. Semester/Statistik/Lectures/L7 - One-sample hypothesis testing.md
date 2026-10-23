@@ -157,8 +157,12 @@ Vi har normalfordelt data $X\sim N(\mu,\sigma^2)$.
 - Vi _tester_ for $\mu$ som er ukendt
 - $\sigma^2$ er også ukendt.
 
+### Estimat, $\hat \sigma^2$
+$$\hat \sigma^2=s^2=\frac 1 {n-1}\sum_{i=1}^n(X_i-\bar X)^2\sim \frac {\sigma^2}{n-1} \mathcal X^2(n-1)$$
+
 ### Test statistic
 $$Z_0=\frac {\bar X-\mu_0}{\sigma/\sqrt n}\sim N(0,1)$$
+$$T_0:=\frac {\bar X-\mu_0}{s/\sqrt n}\sim t(n-1)$$
 
 
 
