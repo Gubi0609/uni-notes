@@ -144,7 +144,7 @@ I matlab, skrives `x=a+b*rand`. `rand` generer et tilfældigt tal mellem 0 og 1.
 ![[Pasted image 20260918085853.png|366]]
 Arealet under grafen er 1. Dette er i henhold til [[#Probability *Density* Function, PDF|PDF]].
 
-$$f_X(x)=\left\{\begin{array} &  \frac 1 {b-a} & a\leq x \leq b \\ 0 & ellers \end{array}\right.$$
+$$f_X(x)=\left\{\begin{array}{}  \frac 1 {b-a} & a\leq x \leq b \\ 0 & ellers \end{array}\right.$$
 
 ## CMF
 ![[Pasted image 20260918090124.png|357]]

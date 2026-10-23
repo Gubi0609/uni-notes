@@ -59,6 +59,16 @@ ans =
 
 ![[Pasted image 20261023102942.png]]
 
+- a.
+
+
+- b.
+Det er en _et-sidet_ test da hypoteserne er
+$H_0: \quad \mu=20$
+$H_1: \quad \mu>20$
+
+$H_1$ er den afgørende faktor. Hvis $H_1:\quad \mu \neq 20$ ville det være en to-sidet.
+
 ![[Pasted image 20261023102955.png]]
 
 ![[Pasted image 20261023103006.png]]
