@@ -11,6 +11,7 @@
 > - [ ] 
 
 ---
+
 # Relevant documents
 [[Agenda lecture 07.pdf]]
 [[Lektion 7 slides.pdf]]
@@ -86,7 +87,9 @@ Type 1 fejl er den **mest alvorlige**, fordi vi da laver et _forkert stærkt uds
 
 For at sørge for at vores fejl ikke er for stor, laver vi et **signifikansniveau** $\alpha$.
 $\alpha$ er typisk $1\%$, $5\%$, eller $10\%$. Den mest normale er $5\%$.
-$$\alpha :=
+$$\alpha :=\text{max acceptable }P(\text{Type 1 error})$$
+
+## Fra signifikansniveau til accept og kritisk område
 
 
 
