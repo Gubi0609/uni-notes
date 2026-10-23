@@ -63,6 +63,23 @@ Til dette gælder
 - $z_0 \in A\rightarrow$ vi _accepterer_ $H_0$.
 - $z_0 \in C \rightarrow$ vi _forkaster_ $H_0$.
 
+#### To sidet kritisk område
+![[Pasted image 20261023083726.png|467]]
+
+#### Et sidet kritisk område
+![[Pasted image 20261023083929.png|464]]
+
+Som vi kan se, kan accept området ligge forskelligt an på hvad $H_0$ er.
+Der er lidt fejl på tegningen... Det skulle selvfølgelig være
+$$H_0:\quad \mu\leq \mu_0$$
+og omvendt for den nederste.
+
+
+### Fejl typer
+
+
+
+
 
 ---
 #lecture 
