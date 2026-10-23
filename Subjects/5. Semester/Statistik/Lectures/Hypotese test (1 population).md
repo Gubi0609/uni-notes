@@ -165,11 +165,26 @@ $$T_0:=\frac {\bar X-\mu_0}{s/\sqrt n}\sim t(n-1)$$
 ![[Pasted image 20261023095314.png|567]]
 
 $$C:\quad |t_0|>t(n-1)_{\alpha/2}\Rightarrow \text{forkast }H_0$$
-### Beregn p-værdi
+### Beregn p-værdi (2-sidet)
 ![[Pasted image 20261023095540.png|476]]
 
 $$p=2P(t(n-1)>|t_0|)=2(1-P(t(n-1)\leq |t_0|))$$
 $P(t(n-1)\leq |t_0|)$ kan fås ved `tcdf(|t_0|, n-1)`.
+
+### Beregn p-værdi (1-sidet)
+
+#### Upper tail ($H_1:\quad \mu > \mu_0$)
+$$\alpha = P(t_0\in C | H_0 \text{ sand})$$
+Fra test statistic
+$$C:\quad t_0 > t(n-1)_\alpha$$
+$$A:\quad t_0\leq t(n-1)_\alpha$$
+p-værdien er så
+$$p=1-P(t(n-1)\leq t_0)$$
+
+#### Lower tail ($H_1:\quad \mu<\mu_0$)
+$$\alpha=P(t_0\in C|H_0 \text{ sand})$$
+Fra test stati
+$$p=P(t(n-1)\leq t_0)$$
 
 ## Case 3: Normalfordeling, test for ukendt $\sigma^2$
 Vi har normalfordelign $X\sim N(\mu, \sigma^2)$ hvor $\sigma^2$ er ukendt og er den vi tester for.

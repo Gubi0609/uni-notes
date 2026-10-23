@@ -113,6 +113,7 @@ $$CI:\quad \left[19.3529,\quad 20.4251\right]$$
 
 ```matlab
 % Fortsættelse af matlab-blokken ovenover
+% c
 
 alpha = 0.05; % 95% confidence level
 
@@ -123,6 +124,13 @@ t_alpha_2_neg = -t_alpha_2 % -2.2622
 C_low = Mean - t_alpha_2 * s/sqrt(N) % 19.3529
 C_up = Mean + t_alpha_2 * s/sqrt(N) % 20.4251
 ```
+
+- d.
+Hvis $H_1:\quad \mu \neq 20$ har vi istedet en to-sidet test.
+Da kan p-værdien beregnes som
+
+$$p=2P(t(n-1)>|t_0|)=2(1-P(t(n-1)\leq |t_0|))$$
+$P(t(n-1)\leq |t_0|)$ kan fås ved `tcdf(|t_0|, n-1)`.
 
 
 ![[Pasted image 20261023102955.png]]
