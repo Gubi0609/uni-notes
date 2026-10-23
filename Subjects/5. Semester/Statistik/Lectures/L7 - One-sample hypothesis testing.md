@@ -172,7 +172,16 @@ $$C:\quad |t_0|>t(n-1)_{\alpha/2}\Rightarrow \text{forkast }H_0$$
 $$p=2P(t(n-1)>|t_0|)=2(1-P(t(n-1)\leq |t_0|))$$
 $P(t(n-1)\leq |t_0|)$ kan fås ved `tcdf(t|t_0|, n-1)`.
 
+## Case 3: Normalfordeling, test for ukendt $\sigma^2$
+Vi har normalfordelign $X\sim N(\mu, \sigma^2)$ hvor $\sigma^2$ er ukendt og er den vi tester for.
 
+$$H_0:\quad \sigma^2=\sigma_0^2$$
+$$H_1:\quad \sigma^2\neq \sigma_0^2$$
+
+### Estimat, $\hat \sigma^2$
+$$\hat\sigma^2=s^2\frac 1 {n-1}\sum_{i=1}^n(X_i-\bar X)^2\sim\frac {\sigma^2} {n-1} \mathcal X^2(n-1)$$
+### Test statistic
+$$X_0^2
 
 
 ---
