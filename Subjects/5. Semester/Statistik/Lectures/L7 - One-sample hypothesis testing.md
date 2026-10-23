@@ -131,6 +131,14 @@ Da kan p-værdien beregnes som
 
 $$p=2P(t(n-1)>|t_0|)=2(1-P(t(n-1)\leq |t_0|))$$
 $P(t(n-1)\leq |t_0|)$ kan fås ved `tcdf(|t_0|, n-1)`.
+Så bliver p-værdien
+$$p=0.6507$$
+```matlab
+% Fortsættelse af matlab-blokken ovenover
+% d
+
+p_two_sided = 2*(1-tcdf(abs(T_0), N-1)) % 0.6507
+```
 
 
 ![[Pasted image 20261023102955.png]]

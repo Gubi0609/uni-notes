@@ -180,11 +180,16 @@ $$C:\quad t_0 > t(n-1)_\alpha$$
 $$A:\quad t_0\leq t(n-1)_\alpha$$
 p-værdien er så
 $$p=1-P(t(n-1)\leq t_0)$$
+I MATLAB `tcdf(t_0, n-1)`
 
 #### Lower tail ($H_1:\quad \mu<\mu_0$)
 $$\alpha=P(t_0\in C|H_0 \text{ sand})$$
-Fra test stati
+Fra test statistic
+$$C:\quad t_0< -t(n-1)_\alpha$$
+$$A:\quad t_0\geq -t(n-1)_\alpha$$
+p-værdien er så
 $$p=P(t(n-1)\leq t_0)$$
+I MATLAB `tcdf(..., n-1)` ==Jeg ved faktisk ikke hvad der skal stå...==
 
 ## Case 3: Normalfordeling, test for ukendt $\sigma^2$
 Vi har normalfordelign $X\sim N(\mu, \sigma^2)$ hvor $\sigma^2$ er ukendt og er den vi tester for.
