@@ -94,7 +94,7 @@ På den her måde laver vi højest $\alpha$ procent af gangene en Type 1 fejl.
 ### To-sidet test
 ![[Pasted image 20261023085427.png|694]]
 
-For de typiske værdier af $\alpha$ (1%, 5%, 10%), er $z_{\alpha/2}:
+For de typiske værdier af $\alpha$ (1%, 5%, 10%), er $z_{\alpha/2}$:
 $$\alpha = 1\% \rightarrow z_{\alpha/2}=2.58$$
 $$\alpha = 5\% \rightarrow z_{\alpha/2}=1.96$$
 $$\alpha = 10\% \rightarrow z_{\alpha/2}=1.65$$

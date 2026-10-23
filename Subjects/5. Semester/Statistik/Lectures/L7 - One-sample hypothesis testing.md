@@ -23,7 +23,11 @@
 # Notes
 ![[Pasted image 20261023102927.png]]
 
-Signifikans
+Signifikans niveau: $\alpha$
+$H_0:\quad \mu=5$
+$H_1:\quad \mu<5$
+
+
 
 ![[Pasted image 20261023102942.png]]
 
