@@ -68,7 +68,9 @@ $$\text{SE mean}=\frac s {\sqrt N}\Rightarrow s=\text {SE mean}\cdot \sqrt N=0.7
 Vi har ukendt varians, så vi kan bruge [[Hypotese test (1 population)#Case 2 Normalfordelt data, ukendt $ sigma 2$|Case 2: Ukendt Varians]] til at opstille vores test statistic
 $$T_0:=\frac {\bar X-\mu_0}{s/\sqrt n}=-0.4684$$
 Vi har en _upper-tailed one sided test_ da $H_1:\quad \mu>20$.
-
+Så kan vi få p-værdien ved (se [[Lektion 7 slides.pdf#page=6|slides]])
+$$p=2P(t(n-1)>t_0)=(1-P(t(n-1)\leq t_0))$$
+$P(t(n-1)\leq t_0)$ kan fås ved `tcdf(t_0, n-1)`.
 
 
 - b.
