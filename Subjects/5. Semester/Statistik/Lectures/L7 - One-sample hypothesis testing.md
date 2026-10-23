@@ -52,8 +52,16 @@ Ud fra testen kan vi konkludere om enten $H_0$ (_ikke signifikant_) eller $H_1$ 
 ### Estimat, $\hat \mu$
 Estimatet $\hat \mu$ skrives
 $$\hat \mu = \bar X = \frac 1 n \sum_{i=1}^n x_i \sim N\left(\mu, \frac {\sigma^2} n\right)$$
-Vi vil gerne opstille det som en sta
+Vi vil gerne opstille det som en standard normalfordeling, da PDF'en så er nemmere at tegne. Vi opstiller derfor en test statistic
 #### Test statistic
+$$Z_0:=\frac {\bar X - \mu} {\sigma/\sqrt n}=^{H_0} \frac {\bar X - \mu_0} {\sigma /\sqrt n}\sim N(0,1)$$
+Dataen bliver så $Z_0 = z_0$.
+Hvis $Z_0$ er et lille tal, altså at forskellen mellem $\bar X$ og $\mu_0$ er lille, tror vi på $H_0$. Hvis forskellen derimod er stor, forkaster vi $H_0$ og tror i stedet på $H_1$.
+
+Vi har til dette et _accept område_ $A$ og et _kritisk område_ $C$.
+Til dette gælder
+- $z_0 \in A\rightarrow$ vi _accepterer_ $H_0$.
+- $z_0 \in C \rightarrow$ vi _forkaster_ $H_0$.
 
 
 ---
