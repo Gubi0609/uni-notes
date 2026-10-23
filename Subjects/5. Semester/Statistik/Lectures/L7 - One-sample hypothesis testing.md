@@ -36,7 +36,7 @@ $$z_\alpha\rightarrow \text{norminv}(\alpha)$$
 
 Dette kan vi gøre da $\sigma^2$ er _kendt_, hvilket betyder at $Z_0$ følger normalfordelingen. Derfor kan vi løse problemet ved at bruge _standard normal fordelingen_. Ud fra hypotesen kan vi se at det er en _lower one-sided test_ altså kan vi opstille de områder vi har gjort ovenfor.
 
-```
+```matlab
 >> norminv(0.01)
 
 ans =
@@ -69,8 +69,31 @@ Vi har ukendt varians, så vi kan bruge [[Hypotese test (1 population)#Case 2 No
 $$T_0:=\frac {\bar X-\mu_0}{s/\sqrt n}=-0.4684$$
 Vi har en _upper-tailed one sided test_ da $H_1:\quad \mu>20$.
 Så kan vi få p-værdien ved (se [[Lektion 7 slides.pdf#page=6|slides]])
-$$p=2P(t(n-1)>t_0)=(1-P(t(n-1)\leq t_0))$$
+$$p=(1-P(t(n-1)\leq t_0))$$
 $P(t(n-1)\leq t_0)$ kan fås ved `tcdf(t_0, n-1)`.
+Så er p-værdien
+$$p=0.6747$$
+Så har vi altså de manglende parametre:
+SE Mean: $0.7495$
+Z: $T_0=-0.4684$
+P: $0.6747$
+
+```matlab
+%% 9.2.3
+N = 10;
+Mean = 19.889;
+SEMean = 0.237;
+mu0 = 20;
+
+% Assumed standard deviation
+s = SEMean * sqrt(N) % 0.7495
+
+% Test statistic: Unknown variance (Case 2)
+T_0 = (Mean - mu0)/(s/sqrt(N)) % -0.4684
+
+% p-value
+p = 1 - tcdf(T_0, N-1) % 0.6747
+```
 
 
 - b.
