@@ -170,7 +170,7 @@ $$C:\quad |t_0|>t(n-1)_{\alpha/2}\Rightarrow \text{forkast }H_0$$
 ![[Pasted image 20261023095540.png|476]]
 
 $$p=2P(t(n-1)>|t_0|)=2(1-P(t(n-1)\leq |t_0|))$$
-$P(t(n-1)\leq |t_0|)$ kan fås ved `tcdf(t|t_0|, n-1)`.
+$P(t(n-1)\leq |t_0|)$ kan fås ved `tcdf(|t_0|, n-1)`.
 
 ## Case 3: Normalfordeling, test for ukendt $\sigma^2$
 Vi har normalfordelign $X\sim N(\mu, \sigma^2)$ hvor $\sigma^2$ er ukendt og er den vi tester for.
@@ -184,9 +184,17 @@ $$\hat\sigma^2=s^2\frac 1 {n-1}\sum_{i=1}^n(X_i-\bar X)^2\sim\frac {\sigma^2} {n
 $$X_0^2:=\frac {(n-1)s^2}{\sigma^2}=^{H_0} \frac {(n-1)s^2}{\sigma_0^2}\sim \mathcal X^2(n-1)$$
 Data bliver så $X_0^2=x_0^2$.
 
-![[Pasted image 20261023101059.png|548]]
+![[Pasted image 20261023101318.png|566]]
 
 ### Vælg $\alpha$
+$$C:\quad x_0>\mathcal X^2(n-1)_{\alpha/2} \quad \vee \quad x_0<\mathcal X^2(n-1)_{1-\alpha/2}$$
+
+### Beregn p-værdi
+$$p=2\cdot \min\left[P(\mathcal X^2(n-1)>x_0), \quad P(\mathcal X^2(n-1) < x_0)\right]$$
+De to sandsynligheder finder vi med `chi2cdf`.
+
+
+
 
 
 ---
