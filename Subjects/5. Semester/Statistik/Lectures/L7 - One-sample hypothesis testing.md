@@ -93,7 +93,7 @@ På den her måde laver vi højest $\alpha$ procent af gangene en Type 1 fejl.
 ## Fra signifikansniveau til accept og kritisk område
 
 ### To-sidet test
-![[Pasted image 20261023085427.png]]
+![[Pasted image 20261023085427.png|694]]
 
 For de typiske værdier af $\alpha$ (1%, 5%, 10%), er $z_{\alpha/2}:
 $$\alpha = 1\% \rightarrow z_{\alpha/2}=2.58$$
@@ -124,7 +124,7 @@ Det er vigtigt her at sige, at dette _ikke_ giver et tal, men er en _funktion af
 ### Power
 Nogle gange bruger vi en _power_
 $$\gamma = \gamma(\mu)=1-\beta(\mu)=P(z_0\in C |H_0 \text{ falsk})$$
-Ligesom $\beta$ er dette _ikke et tal_ men en funktion 
+Ligesom $\beta$ er dette _ikke et tal_ men en funktion af den sande $\mu$.
 
 
 ---
