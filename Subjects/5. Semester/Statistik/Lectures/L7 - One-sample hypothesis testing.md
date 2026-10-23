@@ -36,6 +36,27 @@ $$z_\alpha\rightarrow \text{norminv}(\alpha)$$
 
 Dette kan vi gøre da $\sigma^2$ er _kendt_, hvilket betyder at $Z_0$ følger normalfordelingen. Derfor kan vi løse problemet ved at bruge _standard normal fordelingen_. Ud fra hypotesen kan vi se at det er en _lower one-sided test_ altså kan vi opstille de områder vi har gjort ovenfor.
 
+```
+>> norminv(0.01)
+
+ans =
+
+   -2.3263
+
+>> norminv(0.05)
+
+ans =
+
+   -1.6449
+
+>> norminv(0.10)
+
+ans =
+
+   -1.2816
+```
+
+
 ![[Pasted image 20261023102942.png]]
 
 ![[Pasted image 20261023102955.png]]
