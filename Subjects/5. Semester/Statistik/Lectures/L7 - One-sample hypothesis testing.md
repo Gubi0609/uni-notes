@@ -148,8 +148,27 @@ Da vi har $H_0:\quad \mu = 10$ og $H_1:\quad \mu > 10$ har vi en _one-sided, upp
 
 Ud fra alt dette kan vi bruge [[Hypotese test (1 population)#1-sidet test|p-værdi for 1-sidet test]].
 $$p=P(Z>z_0)\rightarrow p=1-P(Z\leq z_0)=1-\Phi(z_0)$$
+Vi kan finde $\Phi(z_0)$ i MATLAB ved at bruge `normcdf(z_0)`.
+
+Alle opgaverne løses så i matlab
+
+```matlab
+%% 9.2.4
+clc; clear; close all;
+
+z0_1 = 2.05;
+z0_2 = -1.84;
+z0_3 = 0.4;
+
+p1 = 1 - normcdf(z0_1) % 0.0202
+p2 = 1 - normcdf(z0_2) % 0.9671
+p3 = 1 - normcdf(z0_3) % 0.3446
+```
+
 
 ![[Pasted image 20261023103006.png]]
+
+
 
 ![[Pasted image 20261023103014.png]]
 
