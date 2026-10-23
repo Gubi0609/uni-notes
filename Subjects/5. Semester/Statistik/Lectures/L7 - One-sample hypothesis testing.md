@@ -108,7 +108,24 @@ $$A:\quad |z_0|\leq z_{\alpha/2}\Rightarrow \text{accepter }H_0$$
 ![[Pasted image 20261023090030.png|703]]
 
 Ud fra vores _test statistic PDF_ ovenover, kan vi sige
-$$C:\quad z_0 < z_\alpha \Rightarrow \text{}
+$$C:\quad z_0 > z_\alpha \Rightarrow \text{forkast }H_0$$
+$$A:\quad z_0\leq z_\alpha \Rightarrow \text{accepter }H_0$$
+
+Vi kan også tegne en omvendt PDF (bare spejlvend den) hvor der så gælder
+$$C:\quad z_0 < -z_\alpha \Rightarrow \text{forkast }H_0$$
+$$A:\quad z_0\geq -z_\alpha \Rightarrow \text{accepter }H_0$$
+Der skal vi også omvende formlen for $z_\alpha$ fra tegningen:
+$$z_{1-\alpha}=-z_\alpha\rightarrow \text{norminv}(\alpha)$$
+### Type 2 fejl
+Hvis vi istedet for at kigge på type 1 fejl, vil kigge på type 2 fejl bruger vi $\beta$
+$$\beta=\beta(\mu)=P(z_0\in A|H_0 \text{ falsk})$$
+Det er vigtigt her at sige, at dette _ikke_ giver et tal, men er en _funktion af den sande_ $\mu$.
+
+### Power
+Nogle gange bruger vi en _power_
+$$\gamma = \gamma(\mu)=1-\beta(\mu)=P(z_0\in C |H_0 \text{ falsk})$$
+Ligesom $\beta$ er dette _ikke et tal_ men en funktion 
+
 
 ---
 #lecture 
