@@ -175,8 +175,26 @@ Vi ved også at $\alpha = 0.05$.
 
 Derfor kan vi bruge [[Hypotese test (1 population)#Test statistic|Case 1: Kendt varians, Test statistic]]
 $$Z_0:=\frac {\bar X - \mu} {\sigma/\sqrt n}=^{H_0} \frac {\bar X - \mu_0} {\sigma /\sqrt n}\sim N(0,1)$$
-Vi vil også finde $z_{\alpha/2}$
+Vi vil også finde $z_{\alpha/2}$. Det gør vi i MATLAB
+Ud fra det kan vi bruge følgende til at forkaste eller acceptere $H_0$
+$$C:\quad |z_0|>z_{\alpha/2}\Rightarrow \text{forkast }H_0$$
+$$A:\quad |z_0|\leq z_{\alpha/2}\Rightarrow \text{accepter }H_0$$
+```matlab
+%% 9.2.6
+clc; clear; close all;
 
+Mean = 2.78;
+N = 15;
+Variance = 0.9;
+mu_0 = 3;
+alpha = 0.05;
+
+z_0 = (Mean - mu_0)/(Variance/sqrt(N)) % -0.9467
+
+z_alpha_2 = norminv(1 - alpha/2) % 1.96
+```
+
+**Eftersom $|z_0| \leq z_{\alpha/2}$ accepterer vio $H_0$.**
 
 
 ![[Pasted image 20261023103014.png]]
