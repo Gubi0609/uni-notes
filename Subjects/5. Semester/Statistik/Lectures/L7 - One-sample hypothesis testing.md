@@ -127,6 +127,9 @@ $$\gamma = \gamma(\mu)=1-\beta(\mu)=P(z_0\in C |H_0 \text{ falsk})$$
 Ligesom $\beta$ er dette _ikke et tal_ men en funktion af den sande $\mu$.
 
 
+## P-værdi (alternativ til en valgt $\alpha$)
+Beregn $\z_0$
+
 
 ---
 #lecture 
