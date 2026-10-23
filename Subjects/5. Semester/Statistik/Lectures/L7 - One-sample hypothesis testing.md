@@ -168,6 +168,12 @@ p3 = 1 - normcdf(z0_3) % 0.3446
 
 ![[Pasted image 20261023103006.png]]
 
+Siden $H_0:\quad \mu=3$ og $H_1:\quad \mu\neq 3$ er det en _to-sidet_ test.
+Varians er ukendt, men standard afvigelse $\sigma=0.9$ er kendt.
+Vi ved også at dataen er normal fordelt.
+Vi ved også at $\alpha = 0.05$.
+
+
 
 
 ![[Pasted image 20261023103014.png]]
