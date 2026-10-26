@@ -239,7 +239,7 @@ int main() {
 
 Kompleksiteten bliver så
 $$O(N^3)+O(N^3)\cdot O(\log (M))=O(N^3+N^3\cdot \log(M))=\boxed{O(N^3\cdot\log(M))}$$
-
+hvor $M$ er den største sum i `sumVec`
 ## Ændring
 Hvis man ændrede i de 3 nestede for loops så man har
 ```cpp
@@ -272,3 +272,19 @@ int myMethod(int N)
 	return x;
 }
 ```
+
+## Svar
+- Yderste for loop har tidskompleksitete $O(\sqrt N)$.
+- For loop nummer 2 har kompleksitet $O(N)$.
+- Inderste for loop har kompleksitet $O(\log (N))$.
+
+Alt i alt giver det
+$$O(\sqrt N \cdot N \cdot \log(N))=\boxed{O(N^{3/2}\cdot \log(N))}$$
+# Opgave 6
+Skriv en rekursiv algoritme med følgende signatur:
+$$\texttt{int sumDivisibleBy3(int N)}$$
+Algoritmen returnerer summen af heltal større end 0 og mindre end eller lig med N, som er dividérbare
+med 3.
+Kaldt med N = 12 er den korrekte returværdi 30 (3+6+9+12). Kaldt med N = 14 er den korrekte
+returværdi også 30.
+Din algoritme skal optimeres således, at overflødige rekursive kald undgås.
