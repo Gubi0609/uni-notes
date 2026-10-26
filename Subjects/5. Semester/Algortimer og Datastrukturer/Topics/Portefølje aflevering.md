@@ -288,3 +288,41 @@ med 3.
 Kaldt med N = 12 er den korrekte returværdi 30 (3+6+9+12). Kaldt med N = 14 er den korrekte
 returværdi også 30.
 Din algoritme skal optimeres således, at overflødige rekursive kald undgås.
+
+## Kode
+```cpp
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+
+
+int sumDivisibleBy3 (int N) {
+    
+    // Numbers lower than 3 are not divisible by 3, so return 0
+    if (N < 3) return 0;
+
+    // While N is not divisible by 3, subtract 1
+    while (N % 3 != 0) N--;
+
+    return N + sumDivisibleBy3(N - 3);
+
+}
+
+
+int main() {
+
+    int testNum1 = 12;
+    int testNum2 = 14;
+
+    std::cout << sumDivisibleBy3(testNum1) << std::endl;
+    std::cout << sumDivisibleBy3(testNum2) << std::endl;
+
+    return 0;
+}
+```
+
+## Output
+```
+
+```
