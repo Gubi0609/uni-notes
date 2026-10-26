@@ -466,7 +466,10 @@ public static long myMethod(int n)
 ```
 
 ## Svar
-
+Dette er et eksempel på rekurensen
+$$T(n)=T(n-1)+T(n-2)+O(n)$$
+Antallet af kald gror i takt med fibonacci sekvensen
+$$F(\^n$$
 
 # Opgave 10
 Skriv en rekursiv metode med følgende signatur:
