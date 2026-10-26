@@ -528,3 +528,99 @@ Opgaven går ud på at skrive en algoritme, som kaldt med tabellen og eventuelt 
 I eksemplet opnåede ingen af kandidaterne flertal, og der returneres -1.
 
 Hvad er din algoritmes tidskompleksitet?
+
+## Kode
+```cpp
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+
+int partition(std::vector<int>& vec, int low, int high) {
+    
+    // Select the last element as the pivot
+    int pivot = vec[high];
+
+    // Index of the element smaller than the pivot
+    int i = low - 1;
+    
+
+    for (int j = low; j < high; j++) {
+
+        // If the current element is smaller than or equal to the pivot
+        if (vec[j] <= pivot) {
+            i++;
+            std::swap(vec[i], vec[j]);
+        }
+    }
+
+    // Place the pivot in its correct position
+    std::swap(vec[i + 1], vec[high]);
+
+    // Return the partition index
+    return i + 1;
+
+}
+
+void quickSort(std::vector<int>& vec, int low, int high) {
+
+    // Base case
+    if (low < high) {
+
+        // Partition the array
+        int parti = partition(vec, low, high);
+
+        // Sort elements before the pivot recursively
+        quickSort(vec, low, parti - 1);
+
+        // Sort elements after the pivot recursively
+        quickSort(vec, parti + 1, high);
+    }
+}
+
+int isLandslide (std::vector<int> sortedVec) {
+
+    // If vector is empty, no candidates got more than 50%
+    if (sortedVec.empty()) return -1;
+
+    int sizeOfVec = sortedVec.size();
+
+    // If candidate fills more than 50% of the vector, they got over 50%
+    if (sortedVec[0] == sortedVec[sizeOfVec / 2 + 1]) return sortedVec[0];
+
+    // Find and erase all elements matching that on index 0
+    auto firstDifferent = std::upper_bound(sortedVec.begin(), sortedVec.end(), sortedVec[0]);
+    sortedVec.erase(sortedVec.begin(), firstDifferent);
+
+    return isLandslide(sortedVec);
+
+}
+
+int main() {
+
+    std::vector<int> candidates1 = {7,4,3,5,3,1,6,4,5,1,7,5};
+    quickSort(candidates1, 0, candidates1.size() - 1);
+
+    std::cout << isLandslide(candidates1) << std::endl;
+
+    std::vector<int> candidates2 = {5,7,7,3,2,7,5,1,7,8,7};
+    quickSort(candidates2, 0, candidates2.size() - 1);
+
+    std::cout << isLandslide(candidates2) << std::endl;
+
+    return 0;
+}
+```
+
+## Output
+```
+-1
+7
+```
+
+## Tidskompleksitet
+Før kandidaterne tjekkes, køres quicksort, som har en tidskompleksitet på $O(N\cdot \log(N))$
+
+I funktion `isLandslide` bruges både `std::upper_bound` og `vector.erase` som har hhv $O(\log(N))$ og $O(N)$ tidskompleksitet, svarende til $O(\log(N) + N)=O(N)$.
+
+Til sidst er der rekurens delen, som er lidt sværere at afgøre, da det kommer an på antallet af kandidater.
