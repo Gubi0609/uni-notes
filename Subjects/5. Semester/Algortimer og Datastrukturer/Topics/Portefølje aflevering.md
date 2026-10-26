@@ -75,3 +75,15 @@ $$O(\log(N))\cdot O(\log(N))\cdot O(N\cdot \sqrt N)+O(N^2)=O(\log^2(N)\cdot N^{3
 
 Siden $O(N^2)$ var størst i den sidste, har den størst indflydelse, og er derfor det endelige resultat.
 
+
+# Opgave 3
+Skriv en rekursiv algoritme med følgende signatur:
+$$\texttt{bool additive(String s)}$$
+Parameteren indeholder en streng bestående af cifre, fx. “82842605”.
+
+Algoritmen returnerer true, hvis parameteren indeholder en substring af tre på hinanden efterfølgende tal,
+hvor det tredje ciffer er lig med summen af de to forrige.
+
+I ovenstående eksempel returneres true, fordi indeks 5 (6) er summen af indeks 3 og 4 (4 plus 2).
+
+Tip: ASCII-værdien af karakteren ‘7’ er 55.
