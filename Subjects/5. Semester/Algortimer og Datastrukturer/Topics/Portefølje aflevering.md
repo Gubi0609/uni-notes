@@ -87,3 +87,54 @@ hvor det tredje ciffer er lig med summen af de to forrige.
 I ovenstående eksempel returneres true, fordi indeks 5 (6) er summen af indeks 3 og 4 (4 plus 2).
 
 Tip: ASCII-værdien af karakteren ‘7’ er 55.
+
+## Kode
+```cpp
+#include <iostream>
+#include <string>
+
+bool additive(std::string s) {
+
+    if (s.size() < 3) return false;
+
+    // Sum together the first and second and convert to int by subtracting
+    // ASCII value of '0'
+    int sum = (s[0] - 48) + (s[1] - 48);
+
+    bool result = (s[2] - 48) == sum;
+
+    // Remove first character
+    s.erase(0,1);
+
+    return result + additive(s);
+
+}
+
+
+
+int main() {
+
+    std::string testString = "82842605";
+
+    std::string result = additive(testString) ? "contains an additive string" : "does not contain an additive string";
+
+    std::cout << "The string \"" << testString << "\" " << result << std::endl;
+
+    return 0;
+}
+```
+
+## Output
+```
+The string "82842605" contains an additive string
+```
+
+# Opgave 4
+Skriv en algoritme, der har et array af usorterede, entydige naturlige tal som input og find de tre tal i
+arrayet, hvis sum er tættest på en potens af 2. Det samme tal kan må bruges én gang.
+Algoritmens returværdi skal være et heltalsarray, som først indeholder de tre tal og dernæst den tilhørende
+potens af to (fx 512).
+Kaldt med arrayet {23,56,22,11,65,89,3,44,87,910,45,35,98}, returneres de tre tal 89, 3, 35 og potensen af
+2: 128.
+Hvad er Store-O tidskompleksiteten af din algoritme? Begrund dit svar og diskuter mulighederne for at
+optimere din løsning yderligere.
