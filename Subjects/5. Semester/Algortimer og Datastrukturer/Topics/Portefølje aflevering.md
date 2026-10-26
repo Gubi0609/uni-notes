@@ -71,4 +71,4 @@ return x+y;
 - For loop nummer 4 i bunden har kompleksitet O(n^2)
 
 Samlet set er det
-$$O(\log(N))\cdot O(\$$
+$$O(\log(N))\cdot O(\log(N))\cdot O(N\cdot \sqrt N)+O(N^2)=O(\log^2(N)\cdot N^{3/2}+N^2)=\begin{frame}O(N^2)\end{frame}$$
