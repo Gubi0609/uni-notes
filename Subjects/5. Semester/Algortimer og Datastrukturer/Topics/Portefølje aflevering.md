@@ -453,3 +453,15 @@ Så vi indsætter H på plads 0
 | H   |     | V   | R   |     |     | P   | Q   | E   | C   | F   |
 
 # Opgave 9
+Hvad er Store-O tidskompleksiteten for nedenstående metode? Dit svar må godt være baseret på udførte
+tests. Hvis du vælger at give et svar uden tests, skal svaret begrundes.
+```java
+public static long myMethod(int n)
+{
+	if (n <= 1)
+		return 1;
+	else
+		return myMethod(n-1) + myMethod(n-2);
+}
+```
+
