@@ -234,8 +234,9 @@ int main() {
 
 ## Diskussion
 - Nuværende implementation har 3 nested for loops, så tids-kompleksiteten er $O(N^3)$.
-- Dernæst er der endnu et for loop med kompleksiteten $O(N)$
+- Dernæst er der endnu et for loop med kompleksiteten $O(N^3)$, da størrelsen kommer direkte fra kompleksiteten af det første for loop.
 	- Inden i er der et while loop med kompleksiteten $O(\log(M))$ hvor $M$ er den største sum i `sumVec`
 
 Kompleksiteten bliver så
-$$O(N^3)+O(N)\cdot O(\log (M))=O(N^3+N\cdot \log(M))=\boxed{O(N^3\cdot\log(M))}$$
+$$O(N^3)+O(N^3)\cdot O(\log (M))=O(N^3+N^3\cdot \log(M))=\boxed{O(N^3\cdot\log(M))}$$
+
