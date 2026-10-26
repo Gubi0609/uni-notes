@@ -340,3 +340,73 @@ Algoritmens returværdi skal designes således, at følgende information kan udl
 
 Algoritmen skal optimeres under antagelsen af, at maksimumværdien for Z og minimumsværdierne for X og
 Y aldrig ændrer sig.
+
+## Kode
+```cpp
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+
+std::vector<int> getPotenseForm (int z) {
+    
+    // z out of range
+    if (z >= 100000) return {0, 0};
+    
+    int x = 2;
+    int y = 2;
+
+    std::vector<int> xValidVec;
+    std::vector<int> yValidVex;
+
+    while (x < std::sqrt(z)) {
+    
+        y = 2; // Make sure to reset to 2 for every iteration
+        int result = std::pow(x, y); // Starting power for current x
+
+        while (result < z) {
+            y++;
+
+            result = std::pow(x, y);
+
+            if (result == z) {
+                xValidVec.push_back(x);
+                yValidVex.push_back((y));
+            }
+
+        }
+
+        // Increment x for next iteration
+        x++;
+    }
+
+    // No valid potense form for z
+    if (xValidVec.empty()) return {0, 0};
+
+    // Find index of largest element in xValidVec
+    auto it = std::max_element(std::begin(xValidVec), std::end(xValidVec));
+    std::size_t index = it - xValidVec.begin();
+
+    // Return largest x and matching y
+    return {xValidVec[index], yValidVex[index]};
+
+}
+
+
+int main() {
+
+    int testNum = 6561;
+    std::vector<int> result = getPotenseForm(testNum);
+
+    std::cout << result[0] << ", " << result[1] << std::endl;
+
+    return 0;
+}
+```
+
+## Output
+```
+9, 4
+```
+
+# Opgave 8
