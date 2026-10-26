@@ -624,3 +624,9 @@ Før kandidaterne tjekkes, køres quicksort, som har en tidskompleksitet på $O(
 I funktion `isLandslide` bruges både `std::upper_bound` og `vector.erase` som har hhv $O(\log(N))$ og $O(N)$ tidskompleksitet, svarende til $O(\log(N) + N)=O(N)$.
 
 Til sidst er der rekurens delen, som er lidt sværere at afgøre, da det kommer an på antallet af kandidater.
+Worst case er, at hver kandidat kun fremgår én gang, hvilket fører til en rekurens på
+$$T(n)=O(n)+O(n-1)+O(n-2)+...+O(1)$$
+Hvilket fører til en tidskompleksitet på
+$$O(n^2)$$
+
+Samlet set er 
