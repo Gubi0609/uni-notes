@@ -410,3 +410,17 @@ int main() {
 ```
 
 # Opgave 8
+Tabellen nedenfor er en hash tabel, hvor der anvendes quadratic probing til collision resolution.
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     | V   | R   |     |     | P   |     | E   |     | F   |
+Indeks 0, 1, 4, 5, 7 og 9 er ledige. Vis hvordan tabellen ser ud, efter at elementerne Q, C and H, som hasher
+til henholdsvis indeks 7, 8 and 2 er indsat. Begrund dit svar.
+
+## Svar
+Vi tager dem fra en ende af. Følgende formel bruges til quadratic probing
+$$(index + n^2)\mod size$$
+hvor index er den index, der er udregnet ved hashing (allerede givet af opgaven), $n$ er iterationen af quadratic probing. $n$ starter med at være $1$. Til sidst tages modulus størrelsen af tabellen for at introducere wrap-around.
+
+### Q, has
