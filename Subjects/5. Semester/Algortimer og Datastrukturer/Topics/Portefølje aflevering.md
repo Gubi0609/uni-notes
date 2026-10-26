@@ -423,4 +423,33 @@ Vi tager dem fra en ende af. Følgende formel bruges til quadratic probing
 $$(index + n^2)\mod size$$
 hvor index er den index, der er udregnet ved hashing (allerede givet af opgaven), $n$ er iterationen af quadratic probing. $n$ starter med at være $1$. Til sidst tages modulus størrelsen af tabellen for at introducere wrap-around.
 
-### Q, has
+### Q, hash 7
+Index 7 er frit, så vi kan frit indsætte Q direkte.
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     | V   | R   |     |     | P   | Q   | E   |     | F   |
+
+### C, hash 8
+Plads 8 er optaget, så vi begynder quadratic probing
+- $(8+1^2)\mod 11 = 9$
+
+Plads 9 er fri, så vi indsætter C her
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     | V   | R   |     |     | P   | Q   | E   | C   | F   |
+
+### H, hash 2
+Plads 2 er optaget, så vi begynder quadratic probing
+- $(2+1^2)\mod 11=3$, stadig _optaget_
+- $(2+2^2)\mod 11 = 6$, stadig _optaget_
+- $(2+3^2)\mod 11 = 0$, **ledig**
+
+Så vi indsætter H på plads 0
+
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| H   |     | V   | R   |     |     | P   | Q   | E   | C   | F   |
+
+# Opgave 9
