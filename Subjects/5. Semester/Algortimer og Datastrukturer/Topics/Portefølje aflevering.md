@@ -2,7 +2,7 @@
 kriv en rekursiv algoritme, som har et naturligt tal som parameter og returnerer summen af de ulige tals
 kvadrater fra 1 til N.
 
-Eksempel: kaldt med parameteren 8 returneres 84 ($1^2+3^2 +5^2 + 7`2$).
+Eksempel: kaldt med parameteren 8 returneres 84 ($1^2+3^2 +5^2 + 7^2$).
 
 Det er vigtigt at optimere algoritmen, så overflødige rekursive kald undgås.
 
@@ -73,7 +73,7 @@ return x+y;
 Samlet set er det
 $$O(\log(N))\cdot O(\log(N))\cdot O(N\cdot \sqrt N)+O(N^2)=O(\log^2(N)\cdot N^{3/2}+N^2)=\boxed{O(N^2)}$$
 
-Siden $O(N^2)$ var størst i den sidste, har den størst indflydelse, og er derfor det endelige resultat.
+Siden $O(N^2)$ var størst i den sidste og er summeret på resten, har den størst indflydelse, og er derfor det endelige resultat.
 
 
 # Opgave 3
@@ -324,5 +324,8 @@ int main() {
 
 ## Output
 ```
-
+30
+30
 ```
+
+# Opgave 7
