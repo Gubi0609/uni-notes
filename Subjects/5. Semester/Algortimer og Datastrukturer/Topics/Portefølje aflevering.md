@@ -465,3 +465,27 @@ public static long myMethod(int n)
 }
 ```
 
+# Opgave 10
+Skriv en rekursiv metode med følgende signatur:
+$$\texttt{int logTo(int N)}$$
+Algoritmen returner totals-logaritmen af N, og det er en forudsætning, at N er et naturligt tal og en potens
+af 2.
+
+Kaldt med N = 32 returneres 5, og med N = 4096 returneres 12
+
+## Kode
+```cpp
+int logTwo(int N) {
+    
+    // If N is 1, it can't be divided anymore, so we exit with return code 1
+    if (N == 1) {
+        return 0;
+    }
+
+    // We sum with 1, because else the log2 would be one integer too small
+    return 1 + logTwo(N / 2);
+
+}
+```
+
+
