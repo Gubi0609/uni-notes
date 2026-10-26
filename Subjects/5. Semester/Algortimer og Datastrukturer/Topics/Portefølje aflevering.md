@@ -329,3 +329,14 @@ int main() {
 ```
 
 # Opgave 7
+6561 er et eksempel på et naturligt tal, som kan skrives som $X^Y$ hvor X og Y er heltal, dvs. $9^4$. Et andet eksempel er 3125 ($5^5$).
+Skriv en algoritme, som kan afgøre om et givent naturligt tal Z < 100,000 (algoritmens parameter) kan skrives som $Z=X^Y$ hvor X og Y er heltal, hvorom det gælder, at X > 2 og Y > 2.
+
+Algoritmens returværdi skal designes således, at følgende information kan udledes fra den:
+- Værdien af X (i tilfældet 6561 er X=9).
+- Værdien af Y (i tilfældet 6561 er Y=4).
+- For det givne Z kan der være flere løsningspar (X,Y). For 3125 er der kun et løsningspar; men for 6561 er X=3 og Y=8 også en mulighed. Hvis der er mere end én løsning, skal den med den største X-værdi returneres.
+- Hvis det givne Z ikke har noget løsningspar (X,Y) eller Z indeholder en ulovlig værdi, returneres en dummy eller default værdi.
+
+Algoritmen skal optimeres under antagelsen af, at maksimumværdien for Z og minimumsværdierne for X og
+Y aldrig ændrer sig.
