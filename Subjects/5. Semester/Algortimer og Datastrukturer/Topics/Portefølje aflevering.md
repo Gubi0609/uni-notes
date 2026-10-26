@@ -65,5 +65,10 @@ return x+y;
 ```
 
 ## Svar
-- Yderste for loop er O(n), men fordi man i for loopet har linjen `i += i` bliver det O(n/2), som dog stadig er O(n) efter forkortning.
-- For loop nummer 2 er O(n), men fordi man har linjen `j *= 2`, bliver det O(log n), da
+- Yderste for loop er O(n), men fordi man i for loopet har linjen `i += i` bliver det O(log n).
+- For loop nummer 2 er O(n), men fordi man har linjen `j *= 2`, bliver det også O(log n).
+- For loop nummer 3 har kompleksitet O(n * sqrt(n)), hvilket nemt kan aflæses i for loopets start.
+- For loop nummer 4 i bunden har kompleksitet O(n^2)
+
+Samlet set er det
+$$O(\log(N))\cdot O(\$$
