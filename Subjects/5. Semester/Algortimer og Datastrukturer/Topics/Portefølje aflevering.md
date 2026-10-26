@@ -65,10 +65,13 @@ return x+y;
 ```
 
 ## Svar
-- Yderste for loop er O(n), men fordi man i for loopet har linjen `i += i` bliver det O(log n).
-- For loop nummer 2 er O(n), men fordi man har linjen `j *= 2`, bliver det også O(log n).
-- For loop nummer 3 har kompleksitet O(n * sqrt(n)), hvilket nemt kan aflæses i for loopets start.
-- For loop nummer 4 i bunden har kompleksitet O(n^2)
+- Yderste for loop er O(n), men fordi man i for loopet har linjen `i += i` bliver det $O(\log n)$.
+- For loop nummer 2 er O(n), men fordi man har linjen `j *= 2`, bliver det også $O(\log n)$.
+- For loop nummer 3 har kompleksitet $O(n * \sqrt(n))$, hvilket nemt kan aflæses i for loopets start.
+- For loop nummer 4 i bunden har kompleksitet $O(n^2)$.
 
 Samlet set er det
-$$O(\log(N))\cdot O(\log(N))\cdot O(N\cdot \sqrt N)+O(N^2)=O(\log^2(N)\cdot N^{3/2}+N^2)=\begin{frame}O(N^2)\end{frame}$$
+$$O(\log(N))\cdot O(\log(N))\cdot O(N\cdot \sqrt N)+O(N^2)=O(\log^2(N)\cdot N^{3/2}+N^2)=\boxed{O(N^2)}$$
+
+Siden $O(N^2)$ var størst i den sidste, har den størst indflydelse, og er derfor det endelige resultat.
+
