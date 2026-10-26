@@ -240,3 +240,35 @@ int main() {
 Kompleksiteten bliver så
 $$O(N^3)+O(N^3)\cdot O(\log (M))=O(N^3+N^3\cdot \log(M))=\boxed{O(N^3\cdot\log(M))}$$
 
+## Ændring
+Hvis man ændrede i de 3 nestede for loops så man har
+```cpp
+for (int i = 0; i < arr.size()-2; i++) {
+	for (int j = i+1; j < arr.size()-1; j++) {
+		for (int k = j+1; k < arr.size(); k++) {
+		}
+	}
+}
+```
+
+Kunne man undgå kombinationerne `{a, b, c}`, `{b, a, c}`, osv.
+Dette kunne nedsætte tids-kompleksiteten.
+
+# Opgave 5
+Hvad er Store-O tidskompleksiteten af nedenstående metode? Begrund dit svar.
+```java
+int myMethod(int N)
+{
+	int x = 0;
+	for (int i = 1; i <= Math.sqrt(N); i++) //square root; C++: #include <math.h>
+	{
+		for (int j = 1; j <= N; j++)
+			for (int k = 1; k < N;)
+			{
+				x++;
+				k = k * 2;
+			}
+	}
+	return x;
+}
+```
