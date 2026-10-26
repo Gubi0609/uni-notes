@@ -49,16 +49,21 @@ public static int myMethod( int N )
 		for (int j = 0; j < N; j++)
 		{
 			for (int k = 0; k < N*Math.sqrt(N); k++)
-		//square root; C++: #include <math.h>
-{
-x++;
+			//square root; C++: #include <math.h>
+			{
+				x++;
+			}
+			j *= 2;
+		}
+		i += i;
 }
-j *= 2;
-}
-i += i;
-}
+
 for (int i = 0; i < N*N; i++)
-y++;
+	y++;
 return x+y;
 }
 ```
+
+## Svar
+- Yderste for loop er O(n), men fordi man i for loopet har linjen `i += i` bliver det O(n/2), som dog stadig er O(n) efter forkortning.
+- For loop nummer 2 er O(n), men fordi man har linjen `j *= 2`, bliver det O(log n), da
