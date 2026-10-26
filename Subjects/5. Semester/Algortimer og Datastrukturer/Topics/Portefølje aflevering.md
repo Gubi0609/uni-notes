@@ -141,3 +141,96 @@ Kaldt med arrayet {23,56,22,11,65,89,3,44,87,910,45,35,98}, returneres de tre ta
 
 Hvad er Store-O tidskompleksiteten af din algoritme? Begrund dit svar og diskuter mulighederne for at
 optimere din løsning yderligere.
+
+## Kode
+```cpp
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+
+
+std::vector<int> nearest2potent(std::vector<int> arr) {
+
+    std::vector<std::vector<int>> sumVec;
+
+    // Go through array and sum up all combinations. Store sum and combination in sumVec.
+    // Ignore combinations that include the same number twice
+    for (int i = 0; i < arr.size(); i++) {
+        int integer1 = arr[i];
+
+        for (int j = 0; j < arr.size(); j++) {
+            int integer2 = arr[j];
+
+            if (integer2 == integer1) continue;
+
+            for (int k = 0; k < arr.size(); k++) {
+                int integer3 = arr[k];
+
+                if (integer3 == integer2 || integer3 == integer1) continue;
+
+                sumVec.push_back({integer1, integer2, integer3, integer1 + integer2 + integer3});
+
+            }
+
+        }
+    }
+
+    // Vector to hold the difference between sum and nearest potent of 2
+    std::vector<int> diffVec;
+    std::vector<int> potentVec;
+
+    // Go through all sums and find the nearest potent of 2
+    for (int i = 0; i < sumVec.size(); i++) {
+        int currentSum = sumVec[i][3];
+
+        int currentPotent = 1;
+
+        int currentPotentOf2 = std::pow(2, currentPotent);
+        int currentDiff = currentSum - currentPotentOf2;
+        int smallestDiff = currentDiff;
+
+        do {
+            currentPotent++;
+            currentPotentOf2 = std::pow(2, currentPotent);
+            currentDiff = currentSum - currentPotentOf2;
+
+            // Check to see if the current difference is smallest
+            if (abs(currentDiff) < smallestDiff) smallestDiff = abs(currentDiff);
+
+        } while (currentDiff > 0);
+
+        diffVec.push_back(smallestDiff);
+        potentVec.push_back(currentPotentOf2);
+
+    }
+
+    // Find index of smallest value in diffVec
+    auto it = std::min_element(std::begin(diffVec), std::end(diffVec));
+    std::size_t index = it - diffVec.begin();
+
+    return {sumVec[index][0], sumVec[index][1], sumVec[index][2], potentVec[index]};
+
+}
+
+
+
+
+int main() {
+
+    std::vector<int> testVec = {23,56,22,11,65,89,3,44,87,910,45,35,98};
+    std::vector<int> result = nearest2potent(testVec);
+
+    std::cout << result[0] << ", " << result[1] << ", " << result[2] << ", " << result[3] << std::endl;
+
+    return 0;
+}
+```
+
+## Output
+```
+89, 3, 35, 128
+```
+
+## Diskussion
+Nuværende implementation ha
