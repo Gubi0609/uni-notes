@@ -465,6 +465,9 @@ public static long myMethod(int n)
 }
 ```
 
+## Svar
+
+
 # Opgave 10
 Skriv en rekursiv metode med følgende signatur:
 $$\texttt{int logTo(int N)}$$
@@ -475,7 +478,7 @@ Kaldt med N = 32 returneres 5, og med N = 4096 returneres 12
 
 ## Kode
 ```cpp
-int logTwo(int N) {
+int logTo(int N) {
     
     // If N is 1, it can't be divided anymore, so we exit with return code 1
     if (N == 1) {
@@ -483,9 +486,23 @@ int logTwo(int N) {
     }
 
     // We sum with 1, because else the log2 would be one integer too small
-    return 1 + logTwo(N / 2);
+    return 1 + logTo(N / 2);
 
+}
+
+int main() {
+
+    int n1 = 32;
+    int n2 = 4096;
+    std::cout << "Log2 of " << n1 << " is: " << logTo(n1) << std::endl;
+    std::cout << "Log2 of " << n2 << " is: " << logTo(n2) << std::endl;
+    
+    return 0;   
 }
 ```
 
-
+## Output
+```
+Log2 of 32 is: 5
+Log2 of 4096 is: 12
+```
