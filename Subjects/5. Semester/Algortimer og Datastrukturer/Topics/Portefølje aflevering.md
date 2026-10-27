@@ -629,4 +629,5 @@ $$T(n)=O(n)+O(n-1)+O(n-2)+...+O(1)$$
 Hvilket fører til en tidskompleksitet på
 $$O(n^2)$$
 
-Samlet set er 
+Samlet set er tidskompleksiteten
+$$O(N\cdot \log (N))+O(N)\cdot O(N^2)=O(N)\cdot O(N^2) = O(N^3)$$
