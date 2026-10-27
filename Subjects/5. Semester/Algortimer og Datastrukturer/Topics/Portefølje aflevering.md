@@ -586,7 +586,7 @@ int isLandslide (std::vector<int> sortedVec) {
     int sizeOfVec = sortedVec.size();
 
     // If candidate fills more than 50% of the vector, they got over 50%
-    if (sortedVec[0] == sortedVec[sizeOfVec / 2 + 1]) return sortedVec[0];
+    if (sortedVec[0] == sortedVec[sizeOfVec / 2]) return sortedVec[0];
 
     // Find and erase all elements matching that on index 0
     auto firstDifferent = std::upper_bound(sortedVec.begin(), sortedVec.end(), sortedVec[0]);
