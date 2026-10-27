@@ -12,7 +12,8 @@
 
 ---
 # Relevant documents
-
+[[weekly7_E26.pdf]]
+[[RIC_Localizaztion_1_E26_B.pdf]]
 
 # Topics
 
