@@ -8,7 +8,7 @@
 > - Kompetencer
 
 ## Resources
-- Books / Links
+- [[RLbook2020.pdf]]
 ## Lectures
 ``` dataview
 list
