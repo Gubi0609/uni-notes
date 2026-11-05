@@ -23,6 +23,5 @@
 Ligesom hvis vi nu ved hvor hurtigt jeg løber i forhold til underviseren, kan _jeg_ løbe 5km og på den måde kan vi estimere hvor hurtigt underviseren kan løbe samme distance.
 
 
-
 ---
 #lecture 
