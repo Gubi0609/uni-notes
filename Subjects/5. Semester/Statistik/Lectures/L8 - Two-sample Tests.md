@@ -201,7 +201,14 @@ p = 1 - tcdf(abs(t0), v)
 
 hvor $p=5.7188\cdot 10^{-5}\approx0.00005$
 
-Eftersom $p<<\alpha$ _forkaster_ vi $H_0$
+Eftersom $p<<\alpha$ _forkaster_ vi $H_0$. Vi konkluderer derfor at _mean impact strength er højere for supplier 2_.
+
+- b.
+Samme test, men med $\Delta_0 = 25$. $H_1$ ændres også lidt: $H_1:\quad \mu_1 - \mu_2 > \Delta_0$.
+
+Vi skifter samtidig også til konfidens interval, hvor grænsen er $t_{\alpha,v}$.
+Vi forkaster $H_0$ hvis $t_0>t_{\alpha,v}$
+
 
 
 ![[Pasted image 20261106101209.png]]
