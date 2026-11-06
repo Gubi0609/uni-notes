@@ -57,7 +57,20 @@ $$(\bar x_1-\bar x_2)\sim N(\mu_1-\mu_2, \frac {\sigma_1^2} {n_1} + \frac {\sigm
 Vi kan så definere test-statistic
 $$Z_0:= \frac {(\bar x_1 - \bar x_2)-(\mu_1-\mu_2)}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}=^{H_0}\frac {(\bar x_1 - \bar x_2)-\Delta_0}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}\sim N(0,1)$$
 
+### Indsæt data og $H_0$
 Vi indsættet estimatorer og $H_0$: $Z_0=z_0$
+
+![[Pasted image 20261106083340.png]]
+
+Vi forkaster $H_0$ for $|z_0|>_{\alpha/2}$.
+
+Eller for $p$-værdi
+![[Pasted image 20261106083553.png]]
+
+$$p=2P(Z>|z_0|)=2(1-P(Z<|z_0|))$$
+Hvor $P(Z<|z_0|)$ kan findes med `normcdf(|z_0|)`.
+
+
 
 
 ---
