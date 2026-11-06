@@ -97,6 +97,15 @@ Eftersom $\Delta_0$ ligger i $CI$ kan vi acceptere $H_0$.
 
 ![[Pasted image 20261106101050.png]]
 
+- a.
+Vi får givet nul hypotesen $H_0: \quad \mu_1 = \mu_2 \Leftrightarrow \mu_1 - \mu_2 = \Delta_0, \quad \Delta_0 = 0$. Eftersom $\sigma_1^2 =\sigma_2^2$ er ukendt, kan vi bruge [[Hypotese test (2 populationer)#Case 2 Non-paired test (forskel i middelværdi) med _ukendt men ens_ varians|Non-paired med ukendt varians]].
+
+Vi kender allerede estimaterne $s_1^2$ og $s_2^2$, så vi kan starte med at poole dem for at finde $S_P^2$ og 
+derefter $S_P=\sqrt {S_P^2}$.
+$$S_P^2=\frac {(n_1-1)S^2_1 + (n_2 - 1) S_2^2}{n_1 + n_2 - 2}\sim \frac {\sigma^2}{n_1 + n_2 - 2}\mathcal X^2(n_1 + n_2 - 2)$$
+
+Vi kan bruge dette til at finde vores test statistic, som er en _student t fordeling_
+$${T_0:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{S_P\sqrt{\frac 1 {n_1 + \frac 1 {n_2}}}}\sim t(n_1+n_2-2)}$$
 
 
 
