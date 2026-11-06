@@ -162,7 +162,9 @@ Eftersom $\Delta_0 \notin CI$ kan vi _forkaste_ $H_0$.
 ![[Pasted image 20261106101100.png]]
 ![[Pasted image 20261106101114.png]]
 
-
+- a.
+Vi opstiller hypoteserne
+$$H_0:\quad \mu_1-\mu_2 <0,\quad H_1:\quad \mu_1 - \mu_2\leq \Delta_0,\quad \Delta_0 <0$$
 
 ![[Pasted image 20261106101209.png]]
 
