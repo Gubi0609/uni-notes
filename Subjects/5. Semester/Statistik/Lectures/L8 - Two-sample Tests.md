@@ -208,8 +208,8 @@ $$C:\quad f_0> F(n_1-1,n_2-1)_{\alpha/2} \quad\vee\quad f_0 < F(n_1-1,n_2-1)_{1-
 
 ### p-værdi
 $$p=2\min\{P(F(n_1-1,n_2-1)> f_0),\quad P(F(n_1-1,n_2-1)<f_0)\}$$
-
-
+### [[Confidence Intervals (CI)]]
+$$CI:\quad \left[\frac {\frac {S_1^2}{S_2^2}}{F(n_1-1,n_2-1)_{\alpha/2}},\frac {\frac {S_1^2}{S_2^2}}{F(n_1-1,n_2-1)_{1-\alpha/2}}\right]$$
 
 ---
 #lecture 
