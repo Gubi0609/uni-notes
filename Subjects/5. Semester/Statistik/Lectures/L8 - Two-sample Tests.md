@@ -89,8 +89,12 @@ Vi tjekker om modellen er sandsynlig ved model-check.
 ## Test statistic
 Vi genbruger $Z_0$ fra forrige case:
 $$Z_0:= \frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sigma\sqrt{\frac {1}{n_1}+\frac {1}{n_2}}}\sim N(0,1)$$
-Vi ka
-
+Vi kan estimere $\sigma^2$:
+$$S_1^2=\frac 1 {n_1-1} \sum_{i=1} ^{n_1} (X_{1i}-\bar X_1)^2\sim \frac {\sigma^2}{n_1-1}\mathcal X^2(n_1-1)$$
+Eller ved brug af $X_2$
+$$S_2^2=\frac 1 {n_2-1} \sum_{i=1} ^{n_2} (X_{2i}-\bar X_2)^2\sim \frac {\sigma^2}{n_2-1}\mathcal X^2(n_2-1)$$
+Vi kan kombinere dem (_pooling_) for at lave en fælles estimator. Dette bliver et _vægtet gennemsnit_ af $S_1^2$ og $S_2^2$.
+$$S_P^2=\frac {(n_1-1)S^2_1 + (n_2 - 1) S_2^2}{n_1 + n_2 - 2}\sim \frac {\sigma^2}{n_1 + n_2 - 2}\mathcal X^2(n_1 + n_2 - 2)$$
 
 ---
 #lecture 
