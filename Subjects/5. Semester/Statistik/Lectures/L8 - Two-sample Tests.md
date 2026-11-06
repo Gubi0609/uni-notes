@@ -81,9 +81,22 @@ $$CI:\quad \left[(\bar X_1 - \bar X_2)\pm z_{\alpha/2}\sqrt{\frac {\sigma_1^2}{n
 
 og tjekke om $z_0$ falder inden for dette område.
 
+```matlab
+% Confidence Interval
+z_alpha2 = norminv(1 - alpha/2);
+CI_low = diff_x1_x2 - z_alpha2*sqrt(sigma1^2/n1 + sigma2^2/n2);
+CI_up = diff_x1_x2 + z_alpha2*sqrt(sigma1^2/n1 + sigma2^2/n2);
 
+CI = [CI_low, CI_up]
+```
+
+$z_0=-0.9076$
+$CI:\quad \left[-9.7946, 3.5946\right]$
+
+Eftersom $z_0$ ligger i $CI$ kan vi acceptere $H_0$.
 
 ![[Pasted image 20261106101050.png]]
+
 
 
 
