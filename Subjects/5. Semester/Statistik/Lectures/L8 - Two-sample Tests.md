@@ -23,7 +23,7 @@
 
 # Hypotese test (2 populationer)
 
-## Recept
+# Recept
 - Model + model check
 - $H_0$, $H_1$
 - Estimatere de størrelser der indgår i hypoteserne
@@ -32,20 +32,21 @@
 - _Enten_ vælg $\alpha$ og find A og C områder
 - _Eller_ beregn p-værdi
 
-## Case 1: Non-paired test (forskel i middelværdier) med _kendt_ varians
+# Case 1: Non-paired test (forskel i middelværdier) med _kendt_ varians
 Vi har normalfordelt data:
 - $X_{1i}\sim N(\mu_i, \sigma_1^2)$, $i=1,...,n_1$
 - $X_{2i} \sim N(\mu_2,\sigma_2^2)$, $i=1,...,n_2$
 
 Vi tjekker om modellen er sandsynlig ved model-check
 
-### Hypoteser
+> Ved at finde forskellen i middelværdierne kan vi tjekke om en ny model er bedrte end den gamle (e.g. hvis data repræsenterer tid, kan vi tjekke hvilken der er hurtigst).
+## Hypoteser
 $$H_0:\quad \mu_1-\mu_2=\Delta_0$$
 hvor $\Delta_0$ er den postulerede størrelse. _$\Delta_0$ er ofte ligmed 0_.
 $$H_1:\quad \mu_1-\mu_2\neq \Delta_0$$
 Vi kan se ud fra $H_1$ at dette er en _to-sidet test_, da vi bruger $\neq$.
 
-### Estimatorer
+## Estimatorer
 Vi estimerer $\mu_1$
 $$\hat\mu_1=\bar X_1 = \frac 1 n \sum_{i=1}^{n_1} x_{1i}\sim N(\mu_1, \sigma_1^2)$$
 og $\mu_2$
@@ -53,21 +54,21 @@ $$\hat\mu_2=\bar X_2 = \frac 1 n \sum_{i=1}^{n_2} x_{2i}\sim N(\mu_2, \sigma_2^2
 
 Vi kan så også finde forskellen i de to normalfordelinger
 $$(\bar x_1-\bar x_2)\sim N(\mu_1-\mu_2, \frac {\sigma_1^2} {n_1} + \frac {\sigma_2^2} {n_2})$$
-### Test statistic
+## Test statistic
 Vi kan så definere test-statistic
 $$Z_0:= \frac {(\bar X_1 - \bar X_2)-(\mu_1-\mu_2)}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}=^{H_0}\frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}\sim N(0,1)$$
 
-### Indsæt data og $H_0$
+## Indsæt data og $H_0$
 Vi indsættet estimatorer og $H_0$: $Z_0=z_0$
 
 ![[Pasted image 20261106083340.png]]
 
-Vi forkaster $H_0$ for $|z_0|>_{\alpha/2}$.
+Vi forkaster $H_0$ for $|z_0|>z_{\alpha/2}$.
 
 Og et [[Confidence Intervals (CI)]] kan opsættes for $\mu_1 - \mu_2$.
 $$P\left(-z_{\alpha/2} < \frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}} < z_{\alpha_2}\right) = 1-\alpha \Rightarrow$$
 $$CI:\quad \left[(\bar X_1 - \bar X_2)\pm z_{\alpha/2}\sqrt{\frac {\sigma_1^2}{n_1} + \frac {\sigma_2^2}{n_2}}\right]$$
-_Hvis $H_0$ forkastes
+_Hvis $H_0$ forkastes er $\Delta_0$ ikke indeholdt i CI._
 
 
 Eller for $p$-værdi
@@ -76,7 +77,19 @@ Eller for $p$-værdi
 $$p=2P(Z>|z_0|)=2(1-P(Z<|z_0|))$$
 Hvor $P(Z<|z_0|)$ kan findes med `normcdf(|z_0|)`.
 
+# Case 2: Hypoteste test (forskel i middelværdi) med _ukendt men ens_ varians
+Vi har normalfordelt data:
+- $X_{1i}\sim N(\mu_i, \sigma_1^2)$, $i=1,...,n_1$
+- $X_{2i} \sim N(\mu_2,\sigma_2^2)$, $i=1,...,n_2$
 
+hvor $\sigma_1^2=\sigma_2^2=\sigma^2$
+
+Vi tjekker om modellen er sandsynlig ved model-check.
+
+## Test statistic
+Vi genbruger $Z_0$ fra forrige case:
+$$Z_0:= \frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sigma\sqrt{\frac {1}{n_1}+\frac {1}{n_2}}}\sim N(0,1)$$
+Vi ka
 
 
 ---
