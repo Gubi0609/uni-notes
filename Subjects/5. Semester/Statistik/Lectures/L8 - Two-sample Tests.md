@@ -47,7 +47,17 @@ Vi kan se ud fra $H_1$ at dette er en _to-sidet test_, da vi bruger $\neq$.
 
 ### Estimatorer
 Vi estimerer $\mu_1$
-$$\hat\mu_1=\bar x_1 = \frac 1 n \sum_{i=1}^{n_1}
+$$\hat\mu_1=\bar X_1 = \frac 1 n \sum_{i=1}^{n_1} x_{1i}\sim N(\mu_1, \sigma_1^2)$$
+og $\mu_2$
+$$\hat\mu_2=\bar X_2 = \frac 1 n \sum_{i=1}^{n_2} x_{2i}\sim N(\mu_2, \sigma_2^2)$$
+
+Vi kan så også finde forskellen i de to normalfordelinger
+$$(\bar x_1-\bar x_2)\sim N(\mu_1-\mu_2, \frac {\sigma_1^2} {n_1} + \frac {\sigma_2^2} {n_2})$$
+### Test statistic
+Vi kan så definere test-statistic
+$$Z_0:= \frac {(\bar x_1 - \bar x_2)-(\mu_1-\mu_2)}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}=^{H_0}\frac {(\bar x_1 - \bar x_2)-\Delta_0}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}\sim N(0,1)$$
+
+Vi indsættet estimatorer og $H_0$: $Z_0=z_0$
 
 
 ---
