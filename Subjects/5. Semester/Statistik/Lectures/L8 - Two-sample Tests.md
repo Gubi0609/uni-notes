@@ -180,7 +180,15 @@ $$\hat \sigma_1^2=S_1^2=\frac 1 {n_1-1} \sum_{i=1} ^{n_1} (X_{1i}-\bar X_1)^2\si
 $$\hat \sigma_2^2=S_2^2=\frac 1 {n_2-1} \sum_{i=1} ^{n_2} (X_{2i}-\bar X_2)^2\sim \frac {\sigma_2^2}{n_2-1}\mathcal X^2(n_2-1)$$
 
 ## Test statistic
-Vi introducerer en n
+Vi introducerer en ny test statistic og fordeling: **Fisher-fordeling**
+$$F_0:=\frac {\frac {S_1^2} {\sigma_1^2}}{\frac {S_2^2} {\sigma_2^2}}=^{H_0}\frac {S_1^2}{S_2^2}\sim F(n_1-1, n_2-1)$$
+Hvis resultatet er omkring _1_, kan vi tro på vores nul-hypotese.
+
+#### Defination af Fisher fordeling
+![[Pasted image 20261106094630.png]]
+
+$$\left\{\begin{array}{}U\sim\mathcal X^2(p)\\V\sim \mathcal X^2(q)\end{array}\right.\Rightarrow \frac {\frac U p}{\frac V q}:\sim F(p,q)$$
+hvor $p$ og $q$ er _frihedsgrader_.
 
 ---
 #lecture 
