@@ -119,8 +119,24 @@ $$Z_0^*:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sqrt{\frac {s_1^2}{n_1}+\frac {
 
 ## Parvise data $(X_{1i}, X_{2i})$
 Vi tager data parvist, så begge modeller har samme antal tests
-$$(X_{1i}, X_{2i}),\quad i
+$$(X_{1i}, X_{2i}),\quad i=1,...,n$$
+$X_{1i}\sim N(\mu_1, \sigma_1^2)$
+$X_{2i}\sim N(\mu_2, \sigma_2^2)$
 
+> Paret test er altid bedre en non-paired, da man så bedre kan sammenligne, **men vi kan ikke altid lave en paret test**.
+
+> Paret test er muligt, når hvert test-objekt kan splittes i to dele for "behandling" 1 og 2.
+
+### Difference model
+$$D_i=X_{1i}-X_{2i}\sim N(\mu_1 - \mu_2, \sigma_D^2)$$
+hvor $\sigma_D^2$ er ukendt.
+
+### Nul-hypotese
+Vi opsætter en nul-hypotese
+$$H_0:\quad \mu_1-\mu_2=\Delta_0$$
+$$H_1:\quad \mu_1-\mu_2\neq\Delta_0$$
+### Estimatorer
+$$\bar D=\frac 1 n \sum_{i=1}^n D_i\sim N(\mu_1 - \mu_2)
 
 ---
 #lecture 
