@@ -98,8 +98,19 @@ $$S_P^2=\frac {(n_1-1)S^2_1 + (n_2 - 1) S_2^2}{n_1 + n_2 - 2}\sim \frac {\sigma^
 
 Nu hvor vi har estimeret den ukendte varians, kan vi opstille en ny test-statistic. _Nu bliver det en Student T fordeling, eftersom vi bruger estimeret varians_.
 $$\boxed {T_0:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{S_P\sqrt{\frac 1 {n_1 + \frac 1 {n_2}}}}\sim t(n_1+n_2-2)}$$
-Vi indsætter estimatorer, så:
+Vi indsætter estimatorer, så: $T_0=t_0$
+![[Pasted image 20261106085913.png]]
 
+Vi forkaster $H_0$ for $|t_0|>t(n_1+n_2-2)_{\alpha/2}$.
+
+Vi kan ligesom før opstille et [[Confidence Intervals (CI)]]
+$$CI:\quad \left[(\bar X_1 - \bar X_2)\pm t(n_1+n_2-2)_{\alpha/2\right]$$
+
+Eller for $p$-værdi
+![[Pasted image 20261106090053.png]]
+
+$$p=2P(t(n_1+n_2-2)>|t_0|)=2(1-P(t(n_1+n_2-2)\leq |t_0|))$$
+hvor $P(t(n_1+n_2-2)\leq |t_0|)$ kan findes med `tcdf`.
 
 ---
 #lecture 
