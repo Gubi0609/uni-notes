@@ -79,7 +79,7 @@ Da $p>>\alpha$ kan vi _acceptere $H_0$_ ([[Hypotese test (1 population)#P-værdi
 Hvis vi ville gøre det med et confidens interval i stedet kunne vi bruger formlen:
 $$CI:\quad \left[(\bar X_1 - \bar X_2)\pm z_{\alpha/2}\sqrt{\frac {\sigma_1^2}{n_1} + \frac {\sigma_2^2}{n_2}}\right]$$
 
-og tjekke om $z_0$ falder inden for dette område.
+og tjekke om $\Delta_0 = 0$ falder inden for dette område.
 
 ```matlab
 % Confidence Interval
@@ -90,10 +90,10 @@ CI_up = diff_x1_x2 + z_alpha2*sqrt(sigma1^2/n1 + sigma2^2/n2);
 CI = [CI_low, CI_up]
 ```
 
-$z_0=-0.9076$
+$\Delta_0=0$
 $CI:\quad \left[-9.7946, 3.5946\right]$
 
-Eftersom $z_0$ ligger i $CI$ kan vi acceptere $H_0$.
+Eftersom $\Delta_0$ ligger i $CI$ kan vi acceptere $H_0$.
 
 ![[Pasted image 20261106101050.png]]
 
