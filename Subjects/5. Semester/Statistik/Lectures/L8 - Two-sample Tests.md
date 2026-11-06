@@ -165,14 +165,43 @@ Eftersom $\Delta_0 \notin CI$ kan vi _forkaste_ $H_0$.
 - a.
 Vi opstiller hypoteserne
 $$H_0:\quad \mu_1-\mu_2 =\Delta_0,\quad H_1:\quad \mu_1 - \mu_2< \Delta_0,\quad \Delta_0=0$$
-Vi får så en 1-sidet 2-populations test.
-Fremgangsmetoden for 1 sidet er meget den samme som den vi har set for 2 sidet, bortset fra at vi _ikke tager det absolute_ af test statistic når vi udregner p-værdien.
+
 
 Eftersom varians er ukendt og uens, bruger vi [[Applied Statistics and Probability for Engineers, 7th .pdf#page=275|Case 2 fra bogens side 257 (pdf 275)]]
 ![[Pasted image 20261106112922.png]]
 
+Vi kan finde p-værdien med
+$$p=1-P(t(v)\leq |t_0|)$$
+Alt dette gøres i MATLAB
+```matlab
+%% 10.2.6
+clear; clc; close all;
 
+n1 = 10;
+n2 = 16;
 
+bar_x1 = 290;
+bar_x2 = 321;
+
+s1 = 12;
+s2 = 22;
+
+alpha = 0.05;
+delta0 = 0;
+
+% Test statistic
+t0 = (bar_x1 - bar_x2 - delta0)/sqrt(s1^2/n1 + s2^2/n2);
+
+% v rounding down using fix()
+v = fix(((s1^2/n1 + s2^2/n2)^2)/(((s1^2/n1)^2)/(n1-1)+((s2^2/n2)^2)/(n2-1)));
+
+% p-value
+p = 1 - tcdf(abs(t0), v)
+```
+
+hvor $p=5.7188\cdot 10^{-5}\approx0.00005$
+
+Eftersom $p<<\alpha$ _forkaster_ vi $H_0$
 
 
 ![[Pasted image 20261106101209.png]]
