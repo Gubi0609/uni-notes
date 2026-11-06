@@ -6,3 +6,6 @@ Books/
 conflict-files-obsidian-git.md
 External/
 copilot/
+.copilot/
+.opencode/
+
