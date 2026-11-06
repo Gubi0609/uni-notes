@@ -209,6 +209,41 @@ Samme test, men med $\Delta_0 = 25$. $H_1$ ændres også lidt: $H_1:\quad \mu_1 
 Vi skifter samtidig også til konfidens interval, hvor grænsen er $t_{\alpha,v}$.
 Vi forkaster $H_0$ hvis $t_0>t_{\alpha,v}$
 
+```matlab
+%% 10.2.6
+clear; clc; close all;
+
+n1 = 10;
+n2 = 16;
+
+bar_x1 = 290;
+bar_x2 = 321;
+
+s1 = 12;
+s2 = 22;
+
+alpha = 0.05;
+delta0 = 25;
+
+% Test statistic
+t0 = (bar_x1 - bar_x2 - delta0)/sqrt(s1^2/n1 + s2^2/n2)
+
+% v rounding down using fix()
+v = fix(((s1^2/n1 + s2^2/n2)^2)/(((s1^2/n1)^2)/(n1-1)+((s2^2/n2)^2)/(n2-1)));
+
+% CI limit
+t_alpha = tinv(alpha, v)
+```
+
+```
+t0 = -8.3806
+
+t_alpha = -1.7139
+```
+
+Eftersom $t_0<t_{\alpha,v}$ kan vi _ikke forkaste_ $H_0$, og kan derfor ikke konkludere at mean impact strength af supplier 2 er mindst 25 foot-pounds højere.
+
+- c.
 
 
 ![[Pasted image 20261106101209.png]]
