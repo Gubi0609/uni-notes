@@ -201,6 +201,15 @@ hvor $p$ og $q$ er _frihedsgrader_.
 ## Test
 Vi indsætter estimatorer: $F_0=f_0$.
 
+![[Pasted image 20261106095524.png]]
+
+Vi forkaster $H_0$ hvis vi ligger i **C** områderne
+$$C:\quad f_0> F(n_1-1,n_2-1)_{\alpha/2} \quad\vee\quad f_0 < F(n_1-1,n_2-1)_{1-\alpha/2}$$
+
+### p-værdi
+$$p=2\min\{P(F(n_1-1,n_2-1)> f_0),\quad P(F(n_1-1,n_2-1)<f_0)\}$$
+
+
 
 ---
 #lecture 
