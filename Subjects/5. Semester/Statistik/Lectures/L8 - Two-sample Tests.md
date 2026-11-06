@@ -55,7 +55,7 @@ Vi kan så også finde forskellen i de to normalfordelinger
 $$(\bar x_1-\bar x_2)\sim N(\mu_1-\mu_2, \frac {\sigma_1^2} {n_1} + \frac {\sigma_2^2} {n_2})$$
 ### Test statistic
 Vi kan så definere test-statistic
-$$Z_0:= \frac {(\bar x_1 - \bar x_2)-(\mu_1-\mu_2)}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}=^{H_0}\frac {(\bar x_1 - \bar x_2)-\Delta_0}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}\sim N(0,1)$$
+$$Z_0:= \frac {(\bar X_1 - \bar X_2)-(\mu_1-\mu_2)}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}=^{H_0}\frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}}\sim N(0,1)$$
 
 ### Indsæt data og $H_0$
 Vi indsættet estimatorer og $H_0$: $Z_0=z_0$
@@ -63,6 +63,12 @@ Vi indsættet estimatorer og $H_0$: $Z_0=z_0$
 ![[Pasted image 20261106083340.png]]
 
 Vi forkaster $H_0$ for $|z_0|>_{\alpha/2}$.
+
+Og et [[Confidence Intervals (CI)]] kan opsættes for $\mu_1 - \mu_2$.
+$$P\left(-z_{\alpha/2} < \frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sqrt{\frac {\sigma_1^2}{n_1}+\frac {\sigma_2^2}{n_2}}} < z_{\alpha_2}\right) = 1-\alpha \Rightarrow$$
+$$CI:\quad \left[(\bar X_1 - \bar X_2)\pm z_{\alpha/2}\sqrt{\frac {\sigma_1^2}{n_1} + \frac {\sigma_2^2}{n_2}}\right]$$
+_Hvis $H_0$ forkastes
+
 
 Eller for $p$-værdi
 ![[Pasted image 20261106083553.png]]
