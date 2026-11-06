@@ -115,6 +115,11 @@ hvor $P(t(n_1+n_2-2)\leq |t_0|)$ kan findes med `tcdf`.
 # Case 3: Non-paired test (forskel i middelværdi) med _ukendt og uens_ varians
 Large sample approximate test statistic:
 $$Z_0^*:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sqrt{\frac {s_1^2}{n_1}+\frac {s_2^2}{n_2}}}$$
+# Paired test for $\mu_1-\mu_2$
+
+## Parvise data $(X_{1i}, X_{2i})$
+Vi tager data parvist, så begge modeller har samme antal tests
+$$(X_{1i}, X_{2i}),\quad i
 
 
 ---
