@@ -168,8 +168,10 @@ $$H_0:\quad \mu_1-\mu_2 =\Delta_0,\quad H_1:\quad \mu_1 - \mu_2< \Delta_0,\quad 
 Vi får så en 1-sidet 2-populations test.
 Fremgangsmetoden for 1 sidet er meget den samme som den vi har set for 2 sidet, bortset fra at vi _ikke tager det absolute_ af test statistic når vi udregner p-værdien.
 
-Eftersom varians er ukendt og uens, bruger vi [[Hypotese test (2 populationer)#Case 3 Non-paired test (forskel i middelværdi) med _ukendt og uens_ varians|non-paired med ukendt og uens varians]].
-$$Z_0^*:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sqrt{\frac {s_1^2}{n_1}+\frac {s_2^2}{n_2}}}$$
+Eftersom varians er ukendt og uens, bruger vi [[Applied Statistics and Probability for Engineers, 7th .pdf#page=275|Case 2 fra bogens side 257 (pdf 275)]]
+![[Pasted image 20261106112922.png]]
+
+
 
 
 
