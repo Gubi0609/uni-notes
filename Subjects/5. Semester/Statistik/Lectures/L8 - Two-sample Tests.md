@@ -77,7 +77,7 @@ Eller for $p$-værdi
 $$p=2P(Z>|z_0|)=2(1-P(Z<|z_0|))$$
 Hvor $P(Z<|z_0|)$ kan findes med `normcdf(|z_0|)`.
 
-# Case 2: Hypoteste test (forskel i middelværdi) med _ukendt men ens_ varians
+# Case 2: Non-paired test (forskel i middelværdi) med _ukendt men ens_ varians
 Vi har normalfordelt data:
 - $X_{1i}\sim N(\mu_i, \sigma_1^2)$, $i=1,...,n_1$
 - $X_{2i} \sim N(\mu_2,\sigma_2^2)$, $i=1,...,n_2$
@@ -104,13 +104,18 @@ Vi indsætter estimatorer, så: $T_0=t_0$
 Vi forkaster $H_0$ for $|t_0|>t(n_1+n_2-2)_{\alpha/2}$.
 
 Vi kan ligesom før opstille et [[Confidence Intervals (CI)]]
-$$CI:\quad \left[(\bar X_1 - \bar X_2)\pm t(n_1+n_2-2)_{\alpha/2\right]$$
+$$CI:\quad \left[(\bar X_1 - \bar X_2)\pm t(n_1+n_2-2)_{\alpha/2} S_P\sqrt{\frac 1 {n_1} + \frac 1 {n_2}}\right]$$
 
 Eller for $p$-værdi
 ![[Pasted image 20261106090053.png]]
 
 $$p=2P(t(n_1+n_2-2)>|t_0|)=2(1-P(t(n_1+n_2-2)\leq |t_0|))$$
 hvor $P(t(n_1+n_2-2)\leq |t_0|)$ kan findes med `tcdf`.
+
+# Case 3: Non-paired test (forskel i middelværdi) med _ukendt og uens_ varians
+Large sample approximate test statistic:
+$$Z_0^*:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{\sqrt{\frac {s_1^2}{n_1}+\frac {s_2^2}{n_2}}}$$
+
 
 ---
 #lecture 
