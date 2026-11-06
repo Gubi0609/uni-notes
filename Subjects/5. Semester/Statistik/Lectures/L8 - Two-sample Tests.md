@@ -22,16 +22,28 @@
 # Notes
 ![[Pasted image 20261106101031.png]]
 
+
+
 ![[Pasted image 20261106101050.png]]
+
+
 
 ![[Pasted image 20261106101100.png]]
 ![[Pasted image 20261106101114.png]]
 
+
+
 ![[Pasted image 20261106101209.png]]
+
+
 
 ![[Pasted image 20261106101225.png]]
 
+
+
 ![[Pasted image 20261106101240.png]]
+
+
 
 ---
 #lecture 
