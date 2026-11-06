@@ -102,7 +102,7 @@ Vi kan kombinere dem (_pooling_) for at lave en fælles estimator. Dette bliver 
 $$S_P^2=\frac {(n_1-1)S^2_1 + (n_2 - 1) S_2^2}{n_1 + n_2 - 2}\sim \frac {\sigma^2}{n_1 + n_2 - 2}\mathcal X^2(n_1 + n_2 - 2)$$
 
 Nu hvor vi har estimeret den ukendte varians, kan vi opstille en ny test-statistic. _Nu bliver det en Student T fordeling, eftersom vi bruger estimeret varians_.
-$$\boxed {T_0:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{S_P\sqrt{\frac 1 {n_1 + \frac 1 {n_2}}}}\sim t(n_1+n_2-2)}$$
+$$\boxed {T_0:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{S_P\sqrt{\frac 1 {n_1} + \frac 1 {n_2}}}\sim t(n_1+n_2-2)}$$
 Vi indsætter estimatorer, så: $T_0=t_0$
 
 ### Test

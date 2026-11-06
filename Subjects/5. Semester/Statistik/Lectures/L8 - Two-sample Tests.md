@@ -105,8 +105,44 @@ derefter $S_P=\sqrt {S_P^2}$.
 $$S_P^2=\frac {(n_1-1)S^2_1 + (n_2 - 1) S_2^2}{n_1 + n_2 - 2}\sim \frac {\sigma^2}{n_1 + n_2 - 2}\mathcal X^2(n_1 + n_2 - 2)$$
 
 Vi kan bruge dette til at finde vores test statistic, som er en _student t fordeling_
-$${T_0:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{S_P\sqrt{\frac 1 {n_1 + \frac 1 {n_2}}}}\sim t(n_1+n_2-2)}$$
+$${T_0:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{S_P\sqrt{\frac 1 {n_1} + \frac 1 {n_2}}}\sim t(n_1+n_2-2)}$$
+Til sidst kan vi finde p-værdien
+$$p=2P(t(n_1+n_2-2)>|t_0|)=2(1-P(t(n_1+n_2-2)\leq |t_0|))$$
 
+Gjort i MATLAB får vi
+```matlab
+%% 10.2.2
+clear; clc; close all;
+
+n1 = 15;
+n2 = 15;
+
+bar_x1 = 4.7;
+bar_x2 = 7.8;
+
+s1_2 = 4;
+s2_2 = 6.25;
+
+alpha = 0.05;
+delta0 = 0;
+
+% Pool s
+SP_2 = ((n1-1)*s1_2 + (n2 - 1)*s2_2)/(n1 + n2 - 2);
+SP = sqrt(SP_2);
+
+% Student T distribution
+T0 = (bar_x1 - bar_x2 - delta0)/(SP*sqrt(1/n1+1/n2));
+
+% p-value
+p = 2*(1- tcdf(abs(T0), n1 + n2 - 2))
+```
+
+hvor $p=8.1775\cdot 10^{-4}$.
+
+Eftersom $p<<\alpha$ kan vi _forkaste_ $H_0$. ([[Hypotese test (1 population)#P-værdi (alternativ til en valgt $ alpha$)|p-værdi]])
+
+- b.
+Vi kan opstille 
 
 
 ![[Pasted image 20261106101100.png]]
