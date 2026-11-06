@@ -182,13 +182,25 @@ $$\hat \sigma_2^2=S_2^2=\frac 1 {n_2-1} \sum_{i=1} ^{n_2} (X_{2i}-\bar X_2)^2\si
 ## Test statistic
 Vi introducerer en ny test statistic og fordeling: **Fisher-fordeling**
 $$F_0:=\frac {\frac {S_1^2} {\sigma_1^2}}{\frac {S_2^2} {\sigma_2^2}}=^{H_0}\frac {S_1^2}{S_2^2}\sim F(n_1-1, n_2-1)$$
-Hvis resultatet er omkring _1_, kan vi tro på vores nul-hypotese.
+> Hvis resultatet er tæt på _1_, kan vi tro på vores nul-hypotese.
+
+#### Udledning af fisher fordeling for modellen
+$$\frac {S_1^2}{\sigma_1^2}\sim \frac 1 {n_1-1}\mathcal X^2(n_1-1)$$
+$$\frac {S_2^2}{\sigma_1^2}\sim \frac 1 {n_2-1}\mathcal X^2(n_2-1)$$
+
+Vi kan altså se at både tæller og nævner af ovenstående test statistic er _chi i anden fordelt_, hvilket giver os en _fisher fordeling_.
 
 #### Defination af Fisher fordeling
 ![[Pasted image 20261106094630.png]]
 
+Vi har to modeller, der begge er _chi i anden fordelt_.
+
 $$\left\{\begin{array}{}U\sim\mathcal X^2(p)\\V\sim \mathcal X^2(q)\end{array}\right.\Rightarrow \frac {\frac U p}{\frac V q}:\sim F(p,q)$$
 hvor $p$ og $q$ er _frihedsgrader_.
+
+## Test
+Vi indsætter estimatorer: $F_0=f_0$.
+
 
 ---
 #lecture 
