@@ -142,7 +142,21 @@ hvor $p=8.1775\cdot 10^{-4}$.
 Eftersom $p<<\alpha$ kan vi _forkaste_ $H_0$. ([[Hypotese test (1 population)#P-værdi (alternativ til en valgt $ alpha$)|p-værdi]])
 
 - b.
-Vi kan opstille 
+Vi kan opstille CI
+$$CI:\quad \left[(\bar X_1 - \bar X_2)\pm t(n_1+n_2-2)_{\alpha/2} S_P\sqrt{\frac 1 {n_1} + \frac 1 {n_2}}\right]$$
+Og tjekke om $\Delta_0 = 0$ ligger i intervallet.
+```matlab
+% Confidence Interval
+t_alpha2 = tinv(1-alpha/2, n1 + n2 - 2);
+CI_low = bar_x1 - bar_x2 - t_alpha2*SP*sqrt(1/n1 + 1/n2);
+CI_up = bar_x1 - bar_x2 + t_alpha2*SP*sqrt(1/n1 + 1/n2);
+
+CI = [CI_low, CI_up]
+```
+
+$CI: \left[-4.7933, -1.4067\right]$
+
+Eftersom $\Delta_0 \notin CI$ kan vi _forkaste_ $H_0$.
 
 
 ![[Pasted image 20261106101100.png]]
