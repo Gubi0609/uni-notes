@@ -99,6 +99,8 @@ $$S_P^2=\frac {(n_1-1)S^2_1 + (n_2 - 1) S_2^2}{n_1 + n_2 - 2}\sim \frac {\sigma^
 Nu hvor vi har estimeret den ukendte varians, kan vi opstille en ny test-statistic. _Nu bliver det en Student T fordeling, eftersom vi bruger estimeret varians_.
 $$\boxed {T_0:=\frac {(\bar X_1 - \bar X_2)-\Delta_0}{S_P\sqrt{\frac 1 {n_1 + \frac 1 {n_2}}}}\sim t(n_1+n_2-2)}$$
 Vi indsætter estimatorer, så: $T_0=t_0$
+
+### Test
 ![[Pasted image 20261106085913.png]]
 
 Vi forkaster $H_0$ for $|t_0|>t(n_1+n_2-2)_{\alpha/2}$.
@@ -149,8 +151,18 @@ Samtidigt bliver $T_0=t_0$.
 _Vi kan så se at vi får om-defineret til en [[Hypotese test (1 population)|population 1 test]]_.
 
 ### Test
+
+> **Figurerne er de samme som set tidligere i denne note: [[#Test]].
 #### $\alpha$
 Forkast $H_0$ for $|t_0|>t(n-1)_{\alpha/2}$
+
+#### $p$-værdi
+$$p=2(1-P(t(n-1)\leq |t_0|))$$
+
+#### [[Confidence Intervals (CI)]]
+Vi kan også for denne opstille et CI for $\mu_1-\ mu_2$
+$$CI:\quad \left[\bar D \pm t(n-1)_{\alpha/2} \frac {S_D}{\sqrt n}\right]$$
+
 
 
 ---
