@@ -136,7 +136,22 @@ Vi opsætter en nul-hypotese
 $$H_0:\quad \mu_1-\mu_2=\Delta_0$$
 $$H_1:\quad \mu_1-\mu_2\neq\Delta_0$$
 ### Estimatorer
-$$\bar D=\frac 1 n \sum_{i=1}^n D_i\sim N(\mu_1 - \mu_2)
+$$\bar D=\frac 1 n \sum_{i=1}^n D_i\sim N(\mu_1 - \mu_2, \frac {\sigma_D^2} n)$$
+$$\hat \sigma_D^2=S_D^2=\frac 1 {n-1}\sum_{i=1}^n (D_i-\bar D)^2$$
+
+### Test statistic
+$$\boxed{T_0:= \frac {\bar D - (\mu_1 - \mu_2)}{S_D/\sqrt n}\sim t(n-1)}$$
+
+Vi indsætter $H_0$
+$$T_0=\frac {\bar D - \Delta_0}{S_D/\sqrt n}\sim t(n-1)$$
+Samtidigt bliver $T_0=t_0$.
+
+_Vi kan så se at vi får om-defineret til en [[Hypotese test (1 population)|population 1 test]]_.
+
+### Test
+#### $\alpha$
+Forkast $H_0$ for $|t_0|>t(n-1)_{\alpha/2}$
+
 
 ---
 #lecture 
