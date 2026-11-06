@@ -162,8 +162,25 @@ $$p=2(1-P(t(n-1)\leq |t_0|))$$
 #### [[Confidence Intervals (CI)]]
 Vi kan også for denne opstille et CI for $\mu_1-\ mu_2$
 $$CI:\quad \left[\bar D \pm t(n-1)_{\alpha/2} \frac {S_D}{\sqrt n}\right]$$
+# Hypotese test for varianser fra population 1 og 2 (homoscedasticity)
 
+> Ofte bare en _hjælpe test_ til at kunne sammenligne middelværdierne bagefter
 
+Vi har modellerne
+$X_{1i}\sim N(\mu_1, \sigma_1^2)$
+$X_{2i}\sim N(\mu_2, \sigma_2^2)$
+
+For nu er vi ikke interreseret i middelværdierne.
+
+## Nul-hypotese
+$$H_0:\quad \sigma_1^2=\sigma_2^2$$
+$$H_1:\quad \sigma_1^2\neq\sigma_2^2$$
+## Estimatorer
+$$\hat \sigma_1^2=S_1^2=\frac 1 {n_1-1} \sum_{i=1} ^{n_1} (X_{1i}-\bar X_1)^2\sim \frac {\sigma_1^2}{n_1-1}\mathcal X^2(n_1-1)$$
+$$\hat \sigma_2^2=S_2^2=\frac 1 {n_2-1} \sum_{i=1} ^{n_2} (X_{2i}-\bar X_2)^2\sim \frac {\sigma_2^2}{n_2-1}\mathcal X^2(n_2-1)$$
+
+## Test statistic
+Vi introducerer en n
 
 ---
 #lecture 
