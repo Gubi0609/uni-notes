@@ -23,6 +23,7 @@
 
 # Simple Linear Regression
 
+# Introduktion til lineær regression
 Vi har parvise data $(x_i,y_i),\quad i=1,..., n$.
 
 Vi laver et _scatter plot_ mellem $x$ og $y$.
@@ -30,7 +31,19 @@ Vi laver et _scatter plot_ mellem $x$ og $y$.
 
 De røde og blå datapunkter har en tydelige lineær sammenhæng. Den grønne er ikke lineær, men vi kan muligvis godt bruge den stadigvæk. Den orange samling har ingen sammenhæng, så der kan vi _ikke lave nogen regression._
 
+## Mål med lineær regression
+- Find "bedste" (lineære) sammenhæng mellem $x$ og $y$
+- Estimer modellens parametre
+- Model check
+- Vurder model fit ($R^2$)
 
+For alt det ovenstående er der **ingen antagelse om fordeling**.
+
+# Foranalyse: Giver det mening at lave en SLR model?
+- 1. Lav scatter plot
+- 2. Beregn _sample correlationskoefficient_.
+	- Teoretisk covarians $\sigma_{xy}=\text{cov}(x,y)$ 
+	- 
 
 ---
 #lecture 
