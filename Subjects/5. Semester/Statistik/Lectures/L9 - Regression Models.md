@@ -21,6 +21,10 @@
 
 # Notes
 
+# Simple Linear Regression
+
+Vi har parvise data $(x,y)$
+
 
 ---
 #lecture 

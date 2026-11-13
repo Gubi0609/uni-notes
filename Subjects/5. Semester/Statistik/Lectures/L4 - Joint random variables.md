@@ -17,7 +17,7 @@
 [[Solutions lecture 04 v3.pdf]]
 
 # Topics
-[[Kombinatorik]]
+[[Simultane stokastiske variable]]
 
 # Notes
 ![[Pasted image 20260925102315.png]]
