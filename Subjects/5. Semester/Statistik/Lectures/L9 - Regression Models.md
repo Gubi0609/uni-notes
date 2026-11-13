@@ -121,6 +121,12 @@ $R^2$ hedder egentlig _coefficient of determination_, men alle kalder det bare $
 
 Vi kan lave **Sum of Squares Decomposition**
 $$\sum_{i=1}^n(Y_i-\bar Y)^2=\sum_{i=1}^n(Y_i-\hat Y_i)^2+\sum_{i=1}^n(\hat Y_i-\bar Y)^2$$
+For lige at give navne til ligningens dele (fra venstre til højre): $SS_{TOTAL}=SST$, $SS_{ERROR}=SSE$, $SS_{REGRESS}=SSR$.
+
+Vi kan så finde $R^2$
+$$R^2=\frac {SSR}{SST}=\frac {\sum_{i=1}^n(\hat Y_i-\bar Y)^2}{\sum_{i=1}^n(Y_i-\bar Y)^2} = 1- \frac {SSE}{SST}=1-\frac {\sum_{i=1}^n(Y_i-\hat Y_i)^2}{\sum_{i=1}^n(Y_i-\bar Y)^2},\quad 0\leq R^2\leq 1$$
+
+Vi har et _godt fit_ hvis $R^2\gapprox 0.8$.
 
 
 
