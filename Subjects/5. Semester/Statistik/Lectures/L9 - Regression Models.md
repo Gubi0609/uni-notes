@@ -33,8 +33,9 @@ Efter det, starter vi med at finde $\hat  \beta_1$. Ledet $S_{xx}$ kan omskrives
 $$\sum_{i=1}^nx_i^2-n\bar x^2=\sum_{i=1}^nx_i^2-n\left(\frac{\sum x_i}{n}\right)^2=\sum_{i=1}^nx_i^2-\frac {(\sum x_i)^2}{n}$$
 $S_{xy}$ skal også omskrives.
 Det kan vi gøre lidt på samme måde, ved at gøre brug af hvordan $\bar x$ og $\bar y$ findes.
-$$\sum_{i=1}^nx_iy_i-n\bar x\bar y=\sum_{i=1}^nx_iy_i-n\left(\frac {\sum x_i}{n}\frac{\sum y_i}{n}\right)=\sum_{i=1}^nx_iy_i-\sum x_i\sum y_i$$
+$$\sum_{i=1}^nx_iy_i-n\bar x\bar y=\sum_{i=1}^nx_iy_i-n\left(\frac {\sum x_i}{n}\frac{\sum y_i}{n}\right)=\sum_{i=1}^nx_iy_i-\frac {\sum x_i\sum y_i} n$$
 
+Disse omskrivelser kan også ses i bogen som ligning [[Applied Statistics and Probability for Engineers, 7th .pdf#page=286|]]
 
 ![[Pasted image 20261113101234.png]]
 
