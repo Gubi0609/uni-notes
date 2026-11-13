@@ -134,6 +134,6 @@ SSE kan også skrives
 $$SSE=SST-\hat\beta_1 S_{xY}$$
 
 
-Vi har et _godt fit_ hvis $R^2\gtrapprox 0.8$.
+Vi har et _godt fit_ hvis $R^2\gtrapprox 0.8$. 
 
 ![[Pasted image 20261113095102.png|350]]![[Pasted image 20261113095138.png|350]]
