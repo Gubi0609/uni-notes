@@ -31,6 +31,14 @@ Vi laver et _scatter plot_ mellem $x$ og $Y$.
 
 De røde og blå datapunkter har en tydelige lineær sammenhæng. Den grønne er ikke lineær, men vi kan muligvis godt bruge den stadigvæk. Den orange samling har ingen sammenhæng, så der kan vi _ikke lave nogen regression._
 
+At vi har lineær regression betyder _IKKE_ at modellen er lineær i $x_i$, men at den er lineær _i regressions koefficenterne_ $\beta_0$ og $\beta_1$.
+E.g. modellen $Y_i=\beta_0+\beta_1 x_i^2+\varepsilon_i$ er ikke lineær i $x_i$.
+- Vi kan definere $z_i:=x_i^2$ og omskrive til $Y_i=\beta_0+\beta_1z_i+\varepsilon_i$.
+- Så kan lineær regression teknikken bruges på datasættet $(z_i, Y_i)$ og producerer i dette eksempel den bedst passende parabel til $(x_i^2, Y_i)$.
+
+## Non-linear regression
+Nogen (men ikke alle) regressions modeller som _ik_
+
 ## Mål med lineær regression
 - Find "bedste" (lineære) sammenhæng mellem $x$ og $Y$
 - Estimer modellens parametre
@@ -134,6 +142,7 @@ $$R^2=\frac {SSR}{SST}=\frac {\sum_{i=1}^n(\hat Y_i-\bar Y)^2}{\sum_{i=1}^n(Y_i-
 Vi har et _godt fit_ hvis $R^2\gtrapprox 0.8$.
 
 ![[Pasted image 20261113095102.png|350]]![[Pasted image 20261113095138.png|350]]
+
 
 
 
