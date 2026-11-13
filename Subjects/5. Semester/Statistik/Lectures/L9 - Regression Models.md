@@ -37,8 +37,14 @@ E.g. modellen $Y_i=\beta_0+\beta_1 x_i^2+\varepsilon_i$ er ikke lineær i $x_i$.
 - Så kan lineær regression teknikken bruges på datasættet $(z_i, Y_i)$ og producerer i dette eksempel den bedst passende parabel til $(x_i^2, Y_i)$.
 
 ## Non-linear regression
-Nogen (men ikke alle) regressions modeller som _ik_
+Nogen (men ikke alle) regressions modeller som _ikke er lineære i regressions koefficienterne_ kan omskrives til en _lineær model ved at omskrive variablene_.
 
+E.g. Modellen $Y_i=\beta_0 e^{\beta_1x_i}$. Kan omskrives:
+$$\log Y_i=\log \beta_0 + \beta_1 x_i\rightarrow Y_i^* = \beta_0^*+\beta_1^*x_i$$
+![[Pasted image 20261113100652.png|370]]
+
+Vi kan så lave SLR på $(Y_i^*, x_i)=(\log Y_i, x_i)$.
+$$\hat\beta_0^*,\quad \hat \beta_1^*\rightarrow \left\{\begin{array}{}\hat\beta_0 = e\hat\beta_0^* \\ \hat\beta_1=\hat\beta_1^*\end{array}\right.$$
 ## Mål med lineær regression
 - Find "bedste" (lineære) sammenhæng mellem $x$ og $Y$
 - Estimer modellens parametre
@@ -46,7 +52,6 @@ Nogen (men ikke alle) regressions modeller som _ik_
 - Vurder model fit ($R^2$)
 
 For alt det ovenstående er der **ingen antagelse om fordeling**.
-
 # Foranalyse: Giver det mening at lave en SLR model?
 - 1. Lav scatter plot
 - 2. Beregn _sample correlationskoefficient_.
