@@ -68,8 +68,16 @@ $$E[\epsilon_i]=0$$
 Vi antager også at variansen af fejlene er _konstant_, men ukendt
 $$V[\epsilon_i]=\sigma^2$$
 ## Least Squares estimation of regression coefficients
-Vi opstiller
 
+Vi opstiller en _least squares cost fkunktion_, **Sum of Squared Errors**
+$$SSE=\sum_{i=1}^n \hat \epsilon_i^2 = \sum_{i=1}^n\left(Y_i-\left(\hat\beta_0+\hat\beta_1x_i\right)\right)^2$$
+hvor $\hat \epsilon_i$ er fejlen mellem det estimeret punkt (i følge linjen) $(x_i, \hat Y_i)$ og det målte punkt $(x_i, Y_i)$.
+
+![[Pasted image 20261113084825.png]]
+
+Vores projektion er
+
+Vi vil gerne minimere vores SSE, som derved giver os $\hat\beta_0$ og $\hat\beta_1$.
 
 ---
 #lecture 
