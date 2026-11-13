@@ -65,8 +65,11 @@ $\beta_0$ og $\beta_1$ er ukendt skæring og hældning.
 
 Fejlens middel skal være _0_. Det vil sige at linjen skal gå i gennem midten af punkterne
 $$E[\epsilon_i]=0$$
-Vi antager også at variansen af fejlene er _konstant_
+Vi antager også at variansen af fejlene er _konstant_, men ukendt
 $$V[\epsilon_i]=\sigma^2$$
+## Least Squares estimation of regression coefficients
+Vi opstiller
+
 
 ---
 #lecture 
