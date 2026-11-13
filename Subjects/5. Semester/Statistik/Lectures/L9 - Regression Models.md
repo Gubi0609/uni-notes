@@ -23,7 +23,13 @@
 
 # Simple Linear Regression
 
-Vi har parvise data $(x,y)$
+Vi har parvise data $(x_i,y_i),\quad i=1,..., n$.
+
+Vi laver et _scatter plot_ mellem $x$ og $y$.
+![[Pasted image 20261113082105.png]]
+
+De røde og blå datapunkter har en tydelige lineær sammenhæng. Den grønne er ikke lineær, men vi kan muligvis godt bruge den stadigvæk. Den orange samling har ingen sammenhæng, så der kan vi _ikke lave nogen regression._
+
 
 
 ---
