@@ -35,7 +35,11 @@ $S_{xy}$ skal også omskrives.
 Det kan vi gøre lidt på samme måde, ved at gøre brug af hvordan $\bar x$ og $\bar y$ findes.
 $$\sum_{i=1}^nx_iy_i-n\bar x\bar y=\sum_{i=1}^nx_iy_i-n\left(\frac {\sum x_i}{n}\frac{\sum y_i}{n}\right)=\sum_{i=1}^nx_iy_i-\frac {\sum x_i\sum y_i} n$$
 
-Disse omskrivelser kan også ses i bogen som ligning [[Applied Statistics and Probability for Engineers, 7th .pdf#page=286|]]
+Disse omskrivelser kan også ses i bogen som ligning [[Applied Statistics and Probability for Engineers, 7th .pdf#page=304|11.10 og 11.11]]
+
+Vi kan så gøre alt dette i matlab og plotte til sidst
+```matlab
+```
 
 ![[Pasted image 20261113101234.png]]
 
