@@ -101,6 +101,11 @@ $$\boxed{\hat\beta_1=\frac {\sum_{i=1}^nx_iY_i-n\bar x\bar Y}{\sum_{i=1}^nx_i^2-
 Ved at kombinere disse to ligninger, **kan vi finde $\hat\beta_0$ og $\hat\beta_1$**.
 I MATLAB kan vi bare bruge `regress`.
 
+Man skal give funktionen i MATLAB en $Y$ søjle vektor og en matrix, der indeholder en søjle vektor med 1 taller og en søjle vektor med $x$ værdierner.
+$$\left[\begin{array}{}Y_1\\Y_2\\...\\Y_n\end{array}\right]=\left[\begin{array}{}1 & x_1\\1 & x_2\\ ...&...\\1 & x_n\end{array}\right]\left[\begin{array}{}\beta_0\\ \beta_1\end{array}\right]$$
+
+`regress(Y', [ones(size(x')) x'])`. **MATLAB giver ikke en fejlmeldning hvis man glemmer det, men svaret bliver forkert.**
+
 ## Estimation af $\sigma^2$
 For at kunne sige hvor sikker vi er på vores fundne linje, skal vi også kunne sige hvor _usikker_ vi er på den. Det gør vi via. **varians**.
 Vi husker vores [[#Antagelser|antagelser]].
