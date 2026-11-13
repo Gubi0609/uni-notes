@@ -237,6 +237,51 @@ res =
 
 ![[Pasted image 20261113101247.png]]
 
+- a.
+![[Pasted image 20261113114437.png]]
+
+Jeg vurderer at det godt kan fungere med SLR her, da datapunkterne allerede danner en nogenlunde lineær linje med en hvis spredning.
+```matlab
+%% 11.2.6
+clear; clc; close all;
+
+y = [4.4, 6.6, 9.7, 10.6, 10.8, 10.9, 11.8, 12.1, 14.3, 14.7, 15.0, 17.3, 19.2, 23.1, 27.4, 27.7, 31.8, 39.5]
+x = [0.19, 0.15, 0.57, 0.70, 0.67, 0.63, 0.47, 0.70, 0.60, 0.78, 0.81, 0.78, 0.69, 1.3, 1.05, 1.06, 1.74, 1.62]
+
+plot(x, y, "*r")
+hold on
+xlabel("Roadway area in watershed")
+ylabel("Chloride concentration (mg/L)")
+hold off
+```
+
+- b.
+Samme fremgangsmetode som før.
+
+Vi skal bruge formlerne
+$$\boxed{\hat\beta_1=\frac {\sum_{i=1}^nx_iY_i-n\bar x\bar Y}{\sum_{i=1}^nx_i^2-n\bar x^2}=\frac {\sum_{i=1}^n(x_i-\bar x)(Y_i-\bar Y)}{\sum_{i=1}^n(x_i-\bar x)^2}=\frac {S_{xY}}{S_{xx}}}$$
+og
+$$\boxed{\hat \beta_0=\bar Y-\hat\beta_1\bar x}$$
+
+Til dette skal vi bruge mean af $x$ og $y$.
+Efter det, starter vi med at finde $\hat  \beta_1$. Ledet $S_{xx}$ kan omskrives til
+$$\sum_{i=1}^nx_i^2-n\bar x^2=\sum_{i=1}^nx_i^2-n\left(\frac{\sum x_i}{n}\right)^2=\sum_{i=1}^nx_i^2-\frac {(\sum x_i)^2}{n}$$
+$S_{xy}$ skal også omskrives.
+Det kan vi gøre lidt på samme måde, ved at gøre brug af hvordan $\bar x$ og $\bar y$ findes.
+$$\sum_{i=1}^nx_iy_i-n\bar x\bar y=\sum_{i=1}^nx_iy_i-n\left(\frac {\sum x_i}{n}\frac{\sum y_i}{n}\right)=\sum_{i=1}^nx_iy_i-\frac {\sum x_i\sum y_i} n$$
+
+Disse omskrivelser kan også ses i bogen som ligning [[Applied Statistics and Probability for Engineers, 7th .pdf#page=304|11.10 og 11.11]]
+
+Estimationen af $\sigma^2$ finder vi ved
+$$\hat\sigma^2=\frac 1 {n-2} \sum_{i=1}^n \hat\varepsilon_i^2=\frac {SSE}{n-2}$$
+SSE findes ved
+$$SSE=SST-\hat\beta_1 S_{xY}$$
+hvor SST er
+$$SST=\sum_{i=1}^n(Y_i-\bar Y)^2=\sum_{i=1}^ny_i^2-n\bar y^2=\sum_{i=1}^ny_i^2-\frac {(\sum y_i)^2}{n}$$
+
+Vi gør alt det her i MATLAB
+
+
 ![[Pasted image 20261113101303.png]]
 
 ![[Pasted image 20261113101322.png]]
