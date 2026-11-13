@@ -73,11 +73,21 @@ Vi opstiller en _least squares cost fkunktion_, **Sum of Squared Errors**
 $$SSE=\sum_{i=1}^n \hat \epsilon_i^2 = \sum_{i=1}^n\left(Y_i-\left(\hat\beta_0+\hat\beta_1x_i\right)\right)^2$$
 hvor $\hat \epsilon_i$ er fejlen mellem det estimeret punkt (i følge linjen) $(x_i, \hat Y_i)$ og det målte punkt $(x_i, Y_i)$.
 
+> Vi har ikke $\hat\beta_0$ eller $\hat\beta_1$ endnu, men det er dem vi skal til at finde...
+
 ![[Pasted image 20261113084825.png]]
 
 Vores projektion er
+$$\hat Y_i=\hat \beta_0 + \hat\beta_1x_i$$
 
-Vi vil gerne minimere vores SSE, som derved giver os $\hat\beta_0$ og $\hat\beta_1$.
+og residuel er
+$$\hat \epsilon_i=Y_i-\hat Y_i$$
+
+**Vi vil gerne minimere vores SSE, som derved giver os $\hat\beta_0$ og $\hat\beta_1$.**
+Det gør vi ved at sætte gradienten (to variabel differentiering...) lig med 0
+$$\nabla SSE=0\Leftrightarrow \left\{\begin{array}{}\frac {\delta SSE}{\delta \hat\beta_0} = 0\\ \frac {\delta SSE}{\delta \hat\beta_1}=0\end{array}\right.$$
+$$\frac {\delta SSE}{\delta \hat \beta_0}=-2\sum_$$
+
 
 ---
 #lecture 
