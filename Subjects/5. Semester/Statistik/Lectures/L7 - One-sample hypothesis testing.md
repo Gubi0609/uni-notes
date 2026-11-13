@@ -18,7 +18,7 @@
 [[Solutions lecture 07 v3.pdf]]
 
 # Topics
-
+[[Hypotese test (1 population)]]
 
 # Notes
 ![[Pasted image 20261023102927.png]]

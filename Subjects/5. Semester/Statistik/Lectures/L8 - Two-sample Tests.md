@@ -17,7 +17,7 @@
 [[Solutions lecture 08 v2.pdf]]
 
 # Topics
-
+[[Hypotese test (2 populationer)]]
 
 # Notes
 ![[Pasted image 20261106101031.png]]

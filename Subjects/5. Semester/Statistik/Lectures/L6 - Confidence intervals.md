@@ -17,7 +17,7 @@
 [[Solutions lecture 06 v3.pdf]]
 
 # Topics
-
+[[Confidence Intervals (CI)]]
 
 # Notes
 
