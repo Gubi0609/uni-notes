@@ -108,8 +108,19 @@ $$V[\varepsilon_i]:=E[(\varepsilon_i-E[\varepsilon_i])^2]=E[\varepsilon_i^2]$$
 $$\hat\sigma^2=\frac 1 {n-2} \sum_{i=1}^n \hat\varepsilon_i^2=\frac {SSE}{n-2}$$
 
 ## Model check
-Vi laver et _residual plot_
-![[Pasted image 20261113093837.png]]
+Vi laver et _residual plot_ for både $i$ og $Y_i$ (**de er ikke rent faktisk ens, jeg har bare været doven da jeg tegnede dem**)
+
+![[Pasted image 20261113093837.png|449]]![[Pasted image 20261113093924.png|458]]
+
+Vi kigger efter _uafhængighed_ og _konstant varians_.
+Det skal gerne være lidt **kaotisk**. Altså ikke alle de små til venstre, eller andre mønstre der nu måtte være.
+
+## Mål for model fit $R^2$
+
+$R^2$ hedder egentlig _coefficient of determination_, men alle kalder det bare $R^2$.
+
+Vi kan lave **Sum of Squares Decomposition**
+$$\sum_{i=1}^n(Y_i-\bar Y)^2=\sum_{i=1}^n(Y_i-\hat Y_i)^2+\sum_{i=1}^n(\hat Y_i-\bar Y)^2$$
 
 
 
