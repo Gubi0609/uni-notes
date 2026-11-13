@@ -30,7 +30,11 @@ $$\boxed{\hat \beta_0=\bar Y-\hat\beta_1\bar x}$$
 
 Til dette skal vi bruge mean af $x$ og $y$.
 Efter det, starter vi med at finde $\hat  \beta_1$. Ledet $S_{xx}$ kan omskrives til
-$$\sum_{i=1}^nx_i^2-n\bar x^2=\sum_{i=1}^nx_i^2-n\left(\frac{\sum x_i}{n}\right)^2=\sum_{i=1}^nx_i^2-\frac {\sum x_i}{n}$$
+$$\sum_{i=1}^nx_i^2-n\bar x^2=\sum_{i=1}^nx_i^2-n\left(\frac{\sum x_i}{n}\right)^2=\sum_{i=1}^nx_i^2-\frac {(\sum x_i)^2}{n}$$
+$S_{xy}$ skal også omskrives.
+Det kan vi gøre lidt på samme måde, ved at gøre brug af hvordan $\bar x$ og $\bar y$ findes.
+$$\sum_{i=1}^nx_iy_i-n\bar x\bar y=\sum_{i=1}^nx_iy_i-n\left(\frac {\sum x_i}{n}\frac{\sum y_i}{n}\right)=\sum_{i=1}^nx_iy_i-\sum x_i\sum y_i$$
+
 
 ![[Pasted image 20261113101234.png]]
 
