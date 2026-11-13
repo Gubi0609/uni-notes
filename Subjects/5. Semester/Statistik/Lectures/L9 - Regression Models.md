@@ -70,8 +70,8 @@ $$V[\epsilon_i]=\sigma^2$$
 ## Least Squares estimation of regression coefficients
 
 Vi opstiller en _least squares cost fkunktion_, **Sum of Squared Errors**
-$$SSE=\sum_{i=1}^n \hat \epsilon_i^2 = \sum_{i=1}^n\left(Y_i-\left(\hat\beta_0+\hat\beta_1x_i\right)\right)^2$$
-hvor $\hat \epsilon_i$ er fejlen mellem det estimeret punkt (i følge linjen) $(x_i, \hat Y_i)$ og det målte punkt $(x_i, Y_i)$.
+$$SSE=\sum_{i=1}^n \hat \varepsilon_i^2 = \sum_{i=1}^n\left(Y_i-\left(\hat\beta_0+\hat\beta_1x_i\right)\right)^2$$
+hvor $\hat \varepsilon_i$ er fejlen mellem det estimeret punkt (i følge linjen) $(x_i, \hat Y_i)$ og det målte punkt $(x_i, Y_i)$.
 
 > Vi har ikke $\hat\beta_0$ eller $\hat\beta_1$ endnu, men det er dem vi skal til at finde...
 
@@ -81,7 +81,7 @@ Vores projektion er
 $$\hat Y_i=\hat \beta_0 + \hat\beta_1x_i$$
 
 og residuel er
-$$\hat \epsilon_i=Y_i-\hat Y_i$$
+$$\hat \varepsilon_i=Y_i-\hat Y_i$$
 
 **Vi vil gerne minimere vores SSE, som derved giver os $\hat\beta_0$ og $\hat\beta_1$.**
 Det gør vi ved at sætte gradienten (to variabel differentiering...) lig med 0
@@ -101,8 +101,17 @@ $$\boxed{\hat\beta_1=\frac {\sum_{i=1}^nx_iY_i-n\bar x\bar Y}{\sum_{i=1}^nx_i^2-
 Ved at kombinere disse to ligninger, **kan vi finde $\hat\beta_0$ og $\hat\beta_1$**.
 I MATLAB kan vi bare bruge `regress`.
 
+## Estimation af $\sigma^2$
 For at kunne sige hvor sikker vi er på vores fundne linje, skal vi også kunne sige hvor _usikker_ vi er på den. Det gør vi via. **varians**.
-Vi husker vores [[#Antagelser]]
+Vi husker vores [[#Antagelser|antagelser]].
+$$V[\varepsilon_i]:=E[(\varepsilon_i-E[\varepsilon_i])^2]=E[\varepsilon_i^2]$$
+$$\hat\sigma^2=\frac 1 {n-2} \sum_{i=1}^n \hat\varepsilon_i^2=\frac {SSE}{n-2}$$
+
+## Model check
+Vi laver et _residual plot_
+![[Pasted image 20261113093837.png]]
+
+
 
 
 ---
