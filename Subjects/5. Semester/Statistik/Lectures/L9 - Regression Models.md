@@ -101,7 +101,8 @@ $$\boxed{\hat\beta_1=\frac {\sum_{i=1}^nx_iY_i-n\bar x\bar Y}{\sum_{i=1}^nx_i^2-
 Ved at kombinere disse to ligninger, **kan vi finde $\hat\beta_0$ og $\hat\beta_1$**.
 I MATLAB kan vi bare bruge `regress`.
 
-
+For at kunne sige hvor sikker vi er på vores fundne linje, skal vi også kunne sige hvor _usikker_ vi er på den. Det gør vi via. **varians**.
+Vi husker vores [[#Antagelser]]
 
 
 ---
