@@ -39,7 +39,72 @@ Disse omskrivelser kan også ses i bogen som ligning [[Applied Statistics and Pr
 
 Vi kan så gøre alt dette i matlab og plotte til sidst
 ```matlab
+%% 11.2.1
+clear; clc; close all;
+
+sum_x = 6322.28;
+sum_x_squared = 162674.18;
+
+sum_y = 4757.90;
+sum_y_squared = 107679.27;
+
+sum_xy = 125471.10;
+
+n = 250;
+
+% calculate means
+bar_x = sum_x / n;
+bar_y = sum_y / n;
+
+% S_xx and S_xy
+S_xx = sum_x_squared - (sum_x)^2/n;
+
+S_xy = sum_xy - (sum_x*sum_y)/n;
+
+% calculate hat_beta_1
+hat_beta_1 = S_xy/S_xx
+
+% calculate hat_beta_0
+hat_beta_0 = bar_y - hat_beta_1*bar_x
+
+% Define hat Y
+hat_Y = @(x) hat_beta_1*x + hat_beta_0;
+
+% Plot the linear regression model
+fplot(hat_Y, [0, 50])
+hold on
+xlabel("BMI")
+ylabel("Body fat %")
 ```
+
+![[Pasted image 20261113110635.png]]
+
+```
+hat_beta_1 =
+    1.8456
+
+hat_beta_0 =
+  -27.6429
+```
+
+- b.
+Vi indsætter simpelthen bare en BMI på 30 i vores $\hat Y$ og observerer resultatet.
+
+```matlab
+hat_Y(30)
+```
+
+```
+ans =
+   27.7262
+```
+
+- c.
+Residual er fejlen mellem observeret resultat og det man får ved lineær regression:
+$$\hat \varepsilon_i=Y_i-\hat Y_i$$
+
+Vi udregner det i matlab igen
+
 
 ![[Pasted image 20261113101234.png]]
 
