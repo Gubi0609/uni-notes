@@ -104,9 +104,38 @@ Residual er fejlen mellem observeret resultat og det man får ved lineær regres
 $$\hat \varepsilon_i=Y_i-\hat Y_i$$
 
 Vi udregner det i matlab igen
+```matlab
+res = 25 - hat_Y(25)
+```
 
+```
+res =
+    6.5020
+```
+
+- d.
+Det må have været et _underestimat_, siden den aktuelle værdi minus den estimerede værdi er positiv, er den **estimerede værdi altså lavere** end den aktuelle. 
 
 ![[Pasted image 20261113101234.png]]
+
+- a.
+Til meget af dette, kan vi bruge samme fremgangsmetode som i forrige opgave:
+Vi skal bruge formlerne
+$$\boxed{\hat\beta_1=\frac {\sum_{i=1}^nx_iY_i-n\bar x\bar Y}{\sum_{i=1}^nx_i^2-n\bar x^2}=\frac {\sum_{i=1}^n(x_i-\bar x)(Y_i-\bar Y)}{\sum_{i=1}^n(x_i-\bar x)^2}=\frac {S_{xY}}{S_{xx}}}$$
+og
+$$\boxed{\hat \beta_0=\bar Y-\hat\beta_1\bar x}$$
+
+Til dette skal vi bruge mean af $x$ og $y$.
+Efter det, starter vi med at finde $\hat  \beta_1$. Ledet $S_{xx}$ kan omskrives til
+$$\sum_{i=1}^nx_i^2-n\bar x^2=\sum_{i=1}^nx_i^2-n\left(\frac{\sum x_i}{n}\right)^2=\sum_{i=1}^nx_i^2-\frac {(\sum x_i)^2}{n}$$
+$S_{xy}$ skal også omskrives.
+Det kan vi gøre lidt på samme måde, ved at gøre brug af hvordan $\bar x$ og $\bar y$ findes.
+$$\sum_{i=1}^nx_iy_i-n\bar x\bar y=\sum_{i=1}^nx_iy_i-n\left(\frac {\sum x_i}{n}\frac{\sum y_i}{n}\right)=\sum_{i=1}^nx_iy_i-\frac {\sum x_i\sum y_i} n$$
+
+Disse omskrivelser kan også ses i bogen som ligning [[Applied Statistics and Probability for Engineers, 7th .pdf#page=304|11.10 og 11.11]]
+
+Estimationen af $\sigma^2$ finder vi ved
+$$\hat\sigma^2=\frac 1 {n-2} \sum_{i=1}^n \hat\varepsilon_i^2=\frac {SSE}{n-2}$$
 
 ![[Pasted image 20261113101247.png]]
 
