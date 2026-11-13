@@ -280,6 +280,72 @@ hvor SST er
 $$SST=\sum_{i=1}^n(Y_i-\bar Y)^2=\sum_{i=1}^ny_i^2-n\bar y^2=\sum_{i=1}^ny_i^2-\frac {(\sum y_i)^2}{n}$$
 
 Vi gør alt det her i MATLAB
+```matlab
+% 11.2.6.b
+sum_x = sum(x);
+sum_x_squared = sum(x.^2);
+
+sum_y = sum(y);
+sum_y_squared = sum(y.^2);
+
+sum_xy = sum(x.*y);
+
+n = length(x)
+
+% calculate means
+bar_x = sum_x / n;
+bar_y = sum_y / n;
+
+% S_xx and S_xy
+S_xx = sum_x_squared - (sum_x)^2/n;
+
+S_xy = sum_xy - (sum_x*sum_y)/n;
+
+% calculate hat_beta_1
+hat_beta_1 = S_xy/S_xx
+
+% calculate hat_beta_0
+hat_beta_0 = bar_y - hat_beta_1*bar_x
+
+% Define hat Y
+hat_Y = @(x) hat_beta_1*x + hat_beta_0;
+
+% find sigma^2
+SST = sum_y_squared - (sum_y)^2/n;
+SSE = SST - hat_beta_1*S_xy;
+
+sigma_squared = SSE/(n-2)
+
+fplot(hat_Y, [min(x)-0.5 max(x)+0.5])
+hold on
+plot(x, y, "*r")
+xlabel("Roadway area in watershed")
+ylabel("Chloride concentration (mg/L)")
+```
+
+```
+hat_beta_1 =
+   20.5673
+
+hat_beta_0 =
+    0.4705
+
+sigma_squared =
+   13.8092
+```
+
+![[Pasted image 20261113115336.png]]
+
+- c.
+Det gøres meget simpelt i matlab
+```matlab
+hat_Y(0.01)
+```
+
+```
+ans =
+    0.6761
+```
 
 
 ![[Pasted image 20261113101303.png]]
