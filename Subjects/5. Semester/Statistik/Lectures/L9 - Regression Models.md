@@ -86,7 +86,15 @@ $$\hat \epsilon_i=Y_i-\hat Y_i$$
 **Vi vil gerne minimere vores SSE, som derved giver os $\hat\beta_0$ og $\hat\beta_1$.**
 Det gør vi ved at sætte gradienten (to variabel differentiering...) lig med 0
 $$\nabla SSE=0\Leftrightarrow \left\{\begin{array}{}\frac {\delta SSE}{\delta \hat\beta_0} = 0\\ \frac {\delta SSE}{\delta \hat\beta_1}=0\end{array}\right.$$
-$$\frac {\delta SSE}{\delta \hat \beta_0}=-2\sum_$$
+$$\frac {\delta SSE}{\delta \hat \beta_0}=-2\sum_{i=1}^n\left(Y_i-(\hat\beta_0+\hat\beta_1x_i)\right)=0$$
+$$\sum_{i=1}^n Y_i=n\cdot\hat\beta_0+\hat\beta_1\sum_{i=1}^nx_i$$
+$$\boxed{\bar Y = \hat\beta_0 + \hat\beta_1 \bar x}$$
+
+
+$$\frac {\delta SSE}{\delta \hat\beta_1}=2\sum_{i=1}^n \left(Y_i - (\hat\beta_0+\hat\beta_1x_i)\right)x_i=0$$
+$$\sum_{i=1}^n x_iY_i=\hat\beta_0 \sum_{i=1}^n x_i+\hat\beta_1\sum_{i=1}^n x_i^2$$
+Vi indsætter fra den ovenstående funktion for $\bar Y$
+$$\sum_{i=1}^n x_iY_i=\left(\bar Y - \hat\beta_1\bar x\right)\sum_{i=1}^nx_i+\hat\beta_1\sum_{i=1}
 
 
 ---
