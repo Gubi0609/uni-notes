@@ -96,7 +96,7 @@ $$\sum_{i=1}^n x_iY_i=\hat\beta_0 \sum_{i=1}^n x_i+\hat\beta_1\sum_{i=1}^n x_i^2
 Vi indsætter fra den ovenstående funktion for $\bar Y$
 $$\sum_{i=1}^n x_iY_i=\left(\bar Y - \hat\beta_1\bar x\right)\sum_{i=1}^nx_i+\hat\beta_1\sum_{i=1}^nx_i^2$$
 $$\sum_{i=1}^nx_iY_i-\bar Y\sum_{i=1}^n x_i=\hat\beta_1\left(\sum_{i=1}^nx_i^2-\bar x\sum_{i=1}^nx_i\right)$$
-$$\boxed{\hat\beta_1=\frac {\sum_{i=1}^nx_iY_i-n\bar x\bar Y}{\sum_{i=1}^nx_i^2-n\bar x^2}=\frac {\sum_{i=1}^n(x_i-\bar x)(Y_i-\bar Y)}{\sum_{i=1}^n(x_i\bar x)^2}=\frac {S_{xY}}{S_{xx}}}$$
+$$\boxed{\hat\beta_1=\frac {\sum_{i=1}^nx_iY_i-n\bar x\bar Y}{\sum_{i=1}^nx_i^2-n\bar x^2}=\frac {\sum_{i=1}^n(x_i-\bar x)(Y_i-\bar Y)}{\sum_{i=1}^n(x_i-\bar x)^2}=\frac {S_{xY}}{S_{xx}}}$$
 
 Ved at kombinere disse to ligninger, **kan vi finde $\hat\beta_0$ og $\hat\beta_1$**.
 I MATLAB kan vi bare bruge `regress`.
