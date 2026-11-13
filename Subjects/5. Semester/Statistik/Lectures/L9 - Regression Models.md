@@ -136,6 +136,8 @@ Disse omskrivelser kan også ses i bogen som ligning [[Applied Statistics and Pr
 
 Estimationen af $\sigma^2$ finder vi ved
 $$\hat\sigma^2=\frac 1 {n-2} \sum_{i=1}^n \hat\varepsilon_i^2=\frac {SSE}{n-2}$$
+SSE findes ved
+$$SSE=\sum_{i=1}^n \hat \varepsilon_i^2 = \sum_{i=1}^n\left(Y_i-\left(\hat\beta_0+\hat\beta_1x_i\right)\right)^2=\sum_{i=1}^n(y_i-((\bar y-\hat \beta_1\bar x)+\frac {S_{xy}}{S_{xx}}x_i))^2=\sum_{i=1}^ny_i-\frac {sum$$
 
 ![[Pasted image 20261113101247.png]]
 
