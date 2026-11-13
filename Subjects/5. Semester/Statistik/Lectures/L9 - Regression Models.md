@@ -102,5 +102,7 @@ Ved at kombinere disse to ligninger, **kan vi finde $\hat\beta_0$ og $\hat\beta_
 I MATLAB kan vi bare bruge `regress`.
 
 
+
+
 ---
 #lecture 
