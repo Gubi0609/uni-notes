@@ -99,6 +99,7 @@ $$\sum_{i=1}^nx_iY_i-\bar Y\sum_{i=1}^n x_i=\hat\beta_1\left(\sum_{i=1}^nx_i^2-\
 $$\boxed{\hat\beta_1=\frac {\sum_{i=1}^nx_iY_i-n\bar x\bar Y}{\sum_{i=1}^nx_i^2-n\bar x^2}=\frac {\sum_{i=1}^n(x_i-\bar x)(Y_i-\bar Y)}{\sum_{i=1}^n(x_i\bar x)^2}}$$
 
 Ved at kombinere disse to ligninger, **kan vi finde $\hat\beta_0$ og $\hat\beta_1$**.
+I MATLAB kan vi bare bruge `regress`.
 
 
 ---
