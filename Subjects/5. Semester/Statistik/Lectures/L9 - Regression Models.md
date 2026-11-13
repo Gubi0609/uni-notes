@@ -139,7 +139,67 @@ $$\hat\sigma^2=\frac 1 {n-2} \sum_{i=1}^n \hat\varepsilon_i^2=\frac {SSE}{n-2}$$
 SSE findes ved
 $$SSE=SST-\hat\beta_1 S_{xY}$$
 hvor SST er
-$$SST=\sum_{i=1}^n(Y_i-\bar Y)^2=\sum_{i$$
+$$SST=\sum_{i=1}^n(Y_i-\bar Y)^2=\sum_{i=1}^ny_i^2-n\bar y^2=\sum_{i=1}^ny_i^2-\frac {(\sum y_i)^2}{n}$$
+
+Vi gør alt det her i MATLAB
+```matlab
+%% 11.2.3
+clear; clc; close all;
+
+sum_x = 43;
+sum_x_squared = 157.42;
+
+sum_y = 572;
+sum_y_squared = 23530;
+
+sum_xy = 1697.80;
+
+n = 14;
+
+% calculate means
+bar_x = sum_x / n;
+bar_y = sum_y / n;
+
+% S_xx and S_xy
+S_xx = sum_x_squared - (sum_x)^2/n;
+
+S_xy = sum_xy - (sum_x*sum_y)/n;
+
+% calculate hat_beta_1
+hat_beta_1 = S_xy/S_xx
+
+% calculate hat_beta_0
+hat_beta_0 = bar_y - hat_beta_1*bar_x
+
+% Define hat Y
+hat_Y = @(x) hat_beta_1*x + hat_beta_0;
+
+% find sigma^2
+SST = sum_y_squared - (sum_y)^2/n;
+SSE = SST - hat_beta_1*S_xy;
+
+sigma_squared = SSE/(n-2)
+
+fplot(hat_Y, [0, 100])
+hold on
+xlabel("Compressive strength")
+ylabel("Intrinsic permeability")
+```
+
+```
+hat_beta_1 =
+   -2.3298
+
+
+hat_beta_0 =
+   48.0130
+
+
+sigma_squared =
+    1.8436
+```
+
+
 
 ![[Pasted image 20261113101247.png]]
 
