@@ -199,7 +199,41 @@ sigma_squared =
     1.8436
 ```
 
+![[Pasted image 20261113113624.png]]
 
+- b.
+Det gøres bare i MATLAB
+```matlab
+hat_Y(4.3)
+```
+
+```
+37.9948
+```
+
+- c.
+Bare det samme igen...
+```matlab
+hat_Y(3.7)
+```
+
+```
+39.3927
+```
+
+- d.
+Vi bruger formlen for residual
+$$\hat \varepsilon_i=Y_i-\hat Y_i$$
+
+og gør det i matlab
+```matlab
+res = 46.1 - hat_Y(3.7)
+```
+
+```
+res =
+    6.7073
+```
 
 ![[Pasted image 20261113101247.png]]
 
