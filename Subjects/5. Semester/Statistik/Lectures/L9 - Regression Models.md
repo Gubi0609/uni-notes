@@ -48,8 +48,17 @@ For alt det ovenstående er der **ingen antagelse om fordeling**.
 	- Sample covarians: $$\hat \sigma_{xy}=s_{xy} = \frac 1 {n-1}\sum_{i=1}^n(x_i-\bar x)(y_i-\bar y)$$
 		- Sample covarians, har samme fortegn som den teoretiske covarians.
 
-Med sample covarians fundet, kan vi omskrive correlationskoefficienten
-$$\hat \varrho_{xy}=r_{xy}=
+Med sample covarians fundet, kan vi finde _sample correlationskoefficienten_
+$$\hat \varrho_{xy}=r_{xy}=\frac {s_{xy}}{s_xs_y},\quad -1\leq \hat\varrho_{xy}\leq 1$$
+
+> Hvis scatterplot er "OK" og $|r_{xy}|>\text{ca }75-80\%$ kan vi lave lineær regression.
+> 	Fjern eventuelle outliers (hvis de kan fjernes)
+
+# Model
+
+Vi vil gerne finde en lineær sammenhæng mellem $x$ og $y$:
+$$y_i=\beta_0+\beta_1x_i+\epsilon_i$$
+hvor $\epsilon_i$ er en mulig 
 
 ---
 #lecture 
