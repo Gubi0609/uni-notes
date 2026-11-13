@@ -88,13 +88,17 @@ Det gør vi ved at sætte gradienten (to variabel differentiering...) lig med 0
 $$\nabla SSE=0\Leftrightarrow \left\{\begin{array}{}\frac {\delta SSE}{\delta \hat\beta_0} = 0\\ \frac {\delta SSE}{\delta \hat\beta_1}=0\end{array}\right.$$
 $$\frac {\delta SSE}{\delta \hat \beta_0}=-2\sum_{i=1}^n\left(Y_i-(\hat\beta_0+\hat\beta_1x_i)\right)=0$$
 $$\sum_{i=1}^n Y_i=n\cdot\hat\beta_0+\hat\beta_1\sum_{i=1}^nx_i$$
-$$\boxed{\bar Y = \hat\beta_0 + \hat\beta_1 \bar x}$$
+$$\bar Y = \hat\beta_0 + \hat\beta_1 \bar x\Leftrightarrow\boxed{\hat \beta_0=\bar Y-\hat\beta_1\bar x}$$
 
 
 $$\frac {\delta SSE}{\delta \hat\beta_1}=2\sum_{i=1}^n \left(Y_i - (\hat\beta_0+\hat\beta_1x_i)\right)x_i=0$$
 $$\sum_{i=1}^n x_iY_i=\hat\beta_0 \sum_{i=1}^n x_i+\hat\beta_1\sum_{i=1}^n x_i^2$$
 Vi indsætter fra den ovenstående funktion for $\bar Y$
-$$\sum_{i=1}^n x_iY_i=\left(\bar Y - \hat\beta_1\bar x\right)\sum_{i=1}^nx_i+\hat\beta_1\sum_{i=1}
+$$\sum_{i=1}^n x_iY_i=\left(\bar Y - \hat\beta_1\bar x\right)\sum_{i=1}^nx_i+\hat\beta_1\sum_{i=1}^nx_i^2$$
+$$\sum_{i=1}^nx_iY_i-\bar Y\sum_{i=1}^n x_i=\hat\beta_1\left(\sum_{i=1}^nx_i^2-\bar x\sum_{i=1}^nx_i\right)$$
+$$\boxed{\hat\beta_1=\frac {\sum_{i=1}^nx_iY_i-n\bar x\bar Y}{\sum_{i=1}^nx_i^2-n\bar x^2}=\frac {\sum_{i=1}^n(x_i-\bar x)(Y_i-\bar Y)}{\sum_{i=1}^n(x_i\bar x)^2}}$$
+
+Ved at kombinere disse to ligninger, **kan vi finde $\hat\beta_0$ og $\hat\beta_1$**.
 
 
 ---
