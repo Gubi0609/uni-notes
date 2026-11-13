@@ -51,7 +51,7 @@ For alt det ovenstående er der **ingen antagelse om fordeling**.
 Med sample covarians fundet, kan vi finde _sample correlationskoefficienten_
 $$\hat \varrho_{xY}=r_{xY}=\frac {s_{xY}}{s_xs_Y},\quad -1\leq \hat\varrho_{xY}\leq 1$$
 
-> Hvis scatterplot er "OK" og $|r_{xy}|>\text{ca }75-80\%$ kan vi lave lineær regression.
+> Hvis scatterplot er "OK" og $|r_{xy}|\gtrapprox 75-80\%$ kan vi lave lineær regression.
 > 	Fjern eventuelle outliers (hvis de kan fjernes)
 
 # Model
@@ -126,7 +126,9 @@ For lige at give navne til ligningens dele (fra venstre til højre): $SS_{TOTAL}
 Vi kan så finde $R^2$
 $$R^2=\frac {SSR}{SST}=\frac {\sum_{i=1}^n(\hat Y_i-\bar Y)^2}{\sum_{i=1}^n(Y_i-\bar Y)^2} = 1- \frac {SSE}{SST}=1-\frac {\sum_{i=1}^n(Y_i-\hat Y_i)^2}{\sum_{i=1}^n(Y_i-\bar Y)^2},\quad 0\leq R^2\leq 1$$
 
-Vi har et _godt fit_ hvis $R^2\gapprox 0.8$.
+Vi har et _godt fit_ hvis $R^2\gtrapprox 0.8$.
+
+![[Pasted image 20261113095102.png|350]]![[Pasted image 20261113095138.png|350]]
 
 
 
