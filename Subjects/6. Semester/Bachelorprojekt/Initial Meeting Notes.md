@@ -24,8 +24,9 @@ Skriv og lav projekt samtidig.
 Check hvad universitetet vil give os.
 - Penge, jetson nano, raspberry pi, lidar, osv osv.
 
-Vi skal rapportere hvad vi skal bruge, adminstration, osv hvis vi vil arbejde med robotarmen
-- Det er mere værd for ham hvis vi tager robotarmen med...
+Vi skal rapportere hvad vi skal bruge, adminstration, osv
+
+Det er mere værd for ham hvis vi tager robotarmen med...
 
 Vil vi arbejde med SLAM kun?
 Adminstration (underskrivelser, SDUs formaliteter)
@@ -42,3 +43,7 @@ Vi finder selv ud af hvad vi har brug for til projektet
 
 Snak med Leon om hvad vi skal gøre/bruge til det her.
 Snak med sekretær om evt dokumenter.
+
+Hvad er MODBUS??
+Hvad er Jetson Nano??
+Hvad skal vi bruge til projektet?
