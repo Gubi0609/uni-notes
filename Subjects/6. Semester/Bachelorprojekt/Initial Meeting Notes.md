@@ -39,3 +39,6 @@ Bachelorprojekt behøver ikke engang noget der rent faktisk fungerer, vi skal ba
 Vi finder selv ud af hvad vi har brug for til projektet
 - LiDAR, Raspberry Pi, måske jetson nano? IDK, har ikke arbejdet med jetson før...
 - Vi skal bruge et modbus modul/converter til vores dele, så vi kan forbinde til robotten.
+
+Snak med Leon om hvad vi skal gøre/bruge til det her.
+Snak med sekretær om evt dokumenter.
