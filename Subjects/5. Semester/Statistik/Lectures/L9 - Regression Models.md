@@ -334,19 +334,34 @@ sigma_squared =
    13.8092
 ```
 
-![[Pasted image 20261113115336.png]]
+![[Pasted image 20261113115748.png]]
 
 - c.
 Det gøres meget simpelt i matlab
 ```matlab
-hat_Y(0.01)
+hat_Y(1)
 ```
 
 ```
 ans =
-    0.6761
+    21.0378
 ```
 
+- d.
+Gøres i MATLAB. Den aktuelle værdi finder vi i tabellen givet af opgaven
+```matlab
+% 11.2.6.d
+hat_Y(0.47)
+res = 11.8 - hat_Y(0.47)
+```
+
+```
+ans =
+   10.1371
+
+res =
+    1.6629
+```
 
 ![[Pasted image 20261113101303.png]]
 
