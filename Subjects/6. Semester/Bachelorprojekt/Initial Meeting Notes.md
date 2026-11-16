@@ -18,3 +18,7 @@ Skriv og lav projekt samtidig.
 
 Check hvad universitetet vil give os.
 - Penge, jetson nano, raspberry pi, lidar, osv osv.
+
+
+Vi skal rapportere hvad vi skal bruge, adminstration, osv hvis vi vil arbejde med robotarmen
+- Det er mere værd for ham hvis vi tager robotarmen med...
