@@ -4,9 +4,9 @@ Robot arm på toppen af robotten??
 
 Ellers så bare fokuser på SLAM LiDAR
 
-MODBUS
+MODBUS forbindelser mellem forskellige dele
 
 Test enviroment?
-
+- Don't even need real robot. Have simulation
 
 Data sheet?
