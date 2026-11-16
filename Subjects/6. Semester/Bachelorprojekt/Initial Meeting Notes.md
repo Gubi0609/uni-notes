@@ -10,3 +10,11 @@ Test enviroment?
 - Don't even need real robot. Have simulation
 
 Data sheet?
+
+Online ting til formattering, data grafer osv.
+- Generer også PDF for os.
+
+Skriv og lav projekt samtidig.
+
+Check hvad universitetet vil give os.
+- Penge, jetson nano, raspberry pi, lidar, osv osv.
