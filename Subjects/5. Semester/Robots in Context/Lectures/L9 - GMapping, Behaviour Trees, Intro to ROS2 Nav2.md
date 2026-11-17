@@ -24,6 +24,7 @@
 # Notes
 Global planner til generel A til B.
 Local planner til obstacle avoidance.
+GMapping til SLAM. Er allerede en del af ROS.
 
 ---
 #lecture 
