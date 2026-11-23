@@ -59,6 +59,8 @@ En **videns-baseret agent** har tre trin:
 - Repræsentationen skal manipuleres af kognitive processer, som afleder en _ny_ intern repræsentation
 - Disse oversættes tilbage til en handling.
 
+Udviklingen i AI stoppede op, da man gik fra _microworlds_ med meget få mulige udfald/states til problemer såsom skak, der har tonsevis af udfald/states.
+
 
 
 
