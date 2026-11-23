@@ -79,6 +79,10 @@ Rationalitet måles på _performance_ (hvor godt var et valg?)
 
 > For each possible percept sequence, a rational agent should select an action that is expected to maximize its performance measure, given the evidence provided by the percept sequence and whatever built-in knowledge the agent has.
 
+En agent kan ikke være _omniscient_ (alt vidende) da den ikke i forvejen kender alle udfald, men kan _gætte_ med god sandsynlighed på udfald.
+
+For at få viden om verden og dens udfald, må en agent _undersøge_ eller **explore**.
+
 
 
 
