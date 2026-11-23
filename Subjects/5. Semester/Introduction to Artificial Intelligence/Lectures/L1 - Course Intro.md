@@ -88,6 +88,9 @@ Hvis en agent bare opfører sig på baggrund af _designerens viden_ og ikke på 
 **Task enviroment** indeholder miljø, performance measure, aktuatorer og sensorer.
 - **PEAS** **P**erformance, **E**nvironment, **A**ctuators, **S**ensors
 
+Hvis en agents sensorer giver den adgang til _complete state_ af miljøet på hvert tidspunkt, er opgaven **fully obsevable**
+- I praksis er det kun de states, der er vigtige for valget af action, der gør om opgaven er fully observable eller ej
+
 
 
 
