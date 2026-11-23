@@ -38,7 +38,11 @@ En **total turing test** er ligesom ovenstående, men robotten skal kunne intere
 
 Der hvor man ikke har _regler_ for logik (skak har fx regler, mens politik er mere tåget) kan vi bruge _statistik_
 
-En **rationel agent** er en der tager et valg, der fører til det bedste udfald. Eller hvis der er usikkered det bedst
+En **rationel agent** er en der tager et valg, der fører til det bedste udfald. Eller hvis der er usikkered det bedst _forventede_ udfald
+
+Rationelitet er ofte bedre end logik, da det er matematisk defineret (bedste valg fx)
+
+
 
 
 ---
