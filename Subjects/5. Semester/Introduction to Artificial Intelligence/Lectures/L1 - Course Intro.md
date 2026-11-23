@@ -61,7 +61,9 @@ En **videns-baseret agent** har tre trin:
 
 Udviklingen i AI stoppede op, da man gik fra _microworlds_ med meget få mulige udfald/states til problemer såsom skak, der har tonsevis af udfald/states.
 
-Introdu
+Introduktionen af **Big Data** (store dataset såsom WWW), har ført til gigantisk udvikling i AI, og store dataset er ofte bedre end at "tweake" sin model.
+
+
 
 
 
