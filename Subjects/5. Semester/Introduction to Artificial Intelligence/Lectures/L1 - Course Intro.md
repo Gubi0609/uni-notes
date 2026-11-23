@@ -75,7 +75,11 @@ En action på et givet tidspunkt er taget på baggrund af alt det agenten _har_ 
 **Agent function** er en matematisk beskrivelse af en agent
 **Agent program** er en konkret implementation, der kører på et fysisk system.
 
-Rationalitet måles på _pe_
+Rationalitet måles på _performance_ (hvor godt var et valg?)
+
+> For each possible percept sequence, a rational agent should select an action that is expected to maximize its performance measure, given the evidence provided by the percept sequence and whatever built-in knowledge the agent has.
+
+
 
 
 
