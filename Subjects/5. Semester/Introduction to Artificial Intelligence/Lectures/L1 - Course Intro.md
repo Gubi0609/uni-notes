@@ -36,7 +36,7 @@ En **total turing test** er ligesom ovenstående, men robotten skal kunne intere
 - Tale genkendelse for at kunne høre
 - Robot-manipulatorer for at interegere med verden
 
-Der hvor man ikke har _regler_ for logik (skak har fx regler, mens politik er mere tåget) kan vi bruge _statistik_
+Der hvor man ikke har _regler_ for logik (skak har fx regler, mens politik er mere tåget) kan vi bruge _statistik/sandsynlighed_
 
 En **rationel agent** er en der tager et valg, der fører til det bedste udfald. Eller hvis der er usikkered det bedst _forventede_ udfald
 
@@ -47,6 +47,8 @@ At _gøre det rigtige_ kaldes **standard model**
 **Value allignment problem** er når vi giver AI et mål, vi tror stemmer overens med hvad vi gerne vil have, men som måske ikke gør. Dette opstår tit i komplekse systemer såsom selvkørende biler.
 - hvis det sker i laboratorie, kan vi bare genstarte, men i den virkelige verden er der konsekvenser.
 - Vi skal i stedet have agenter, der vil opfylde _vores mål_, men som er usikker på hvad de er. Den vil derfor være forsigtig og spørge om lov.
+
+Vi kan opdatere sandsynlighederne baseret på ny info fra eksperimenter/erfaring
 
 
 
