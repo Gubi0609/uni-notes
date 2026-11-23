@@ -72,7 +72,10 @@ Selvom der kan være flere typer data (e.g. hele universet) er vi kun interesser
 
 En action på et givet tidspunkt er taget på baggrund af alt det agenten _har_ målt (**percept sequence**), men ikke på fremtidige målninger.
 
+**Agent function** er en matematisk beskrivelse af en agent
+**Agent program** er en konkret implementation, der kører på et fysisk system.
 
+Rationalitet måles på _pe_
 
 
 
