@@ -63,7 +63,7 @@ Udviklingen i AI stoppede op, da man gik fra _microworlds_ med meget få mulige 
 
 Introduktionen af **Big Data** (store dataset såsom WWW), har ført til gigantisk udvikling i AI, og store dataset er ofte bedre end at "tweake" sin model.
 
-
+Selvom der kan være flere måle
 
 
 
