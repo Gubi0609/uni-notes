@@ -50,6 +50,10 @@ At _gøre det rigtige_ kaldes **standard model**
 
 Vi kan opdatere sandsynlighederne baseret på ny info fra eksperimenter/erfaring
 
+_Computability_ er hvorvidt en funktion kan udregnes med en effektiv procedure.
+
+_Tractability_ er om et problem vokser eksponentielt når instances vokser. Et intractable problem kan ikke løses i god tid for moderat store instances.
+
 
 
 
