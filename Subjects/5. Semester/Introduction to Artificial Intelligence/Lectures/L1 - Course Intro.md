@@ -46,6 +46,8 @@ At _gøre det rigtige_ kaldes **standard model**
 
 **Value allignment problem** er når vi giver AI et mål, vi tror stemmer overens med hvad vi gerne vil have, men som måske ikke gør. Dette opstår tit i komplekse systemer såsom selvkørende biler.
 - hvis det sker i laboratorie, kan vi bare genstarte, men i den virkelige verden er der konsekvenser.
+- Vi skal i stedet have agenter, der vil opfylde _vores mål_, men som er usikker på hvad de er. Den vil derfor være forsigtig og spørge om lov.
+
 
 
 
