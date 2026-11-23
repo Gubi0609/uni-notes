@@ -42,6 +42,12 @@ En **rationel agent** er en der tager et valg, der fører til det bedste udfald.
 
 Rationelitet er ofte bedre end logik, da det er matematisk defineret (bedste valg fx)
 
+At _gøre det rigtige_ kaldes **standard model**
+
+**Value allignment problem** er når vi giver AI et mål, vi tror stemmer overens med hvad vi gerne vil have, men som måske ikke gør. Dette opstår tit i komplekse systemer såsom selvkørende biler.
+- hvis det sker i laboratorie, kan vi bare genstarte, men i den virkelige verden er der konsekvenser.
+
+
 
 
 
