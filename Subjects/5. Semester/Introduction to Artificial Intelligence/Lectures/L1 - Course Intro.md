@@ -54,6 +54,11 @@ _Computability_ er hvorvidt en funktion kan udregnes med en effektiv procedure.
 
 _Tractability_ er om et problem vokser eksponentielt når instances vokser. Et intractable problem kan ikke løses i god tid for moderat store instances.
 
+En **videns-baseret agent** har tre trin:
+- Stimulus må oversættes til en intern repræsentation
+- Repræsentationen skal manipuleres af kognitive processer, som afleder en _ny_ intern repræsentation
+- Disse oversættes tilbage til en handling.
+
 
 
 
