@@ -61,7 +61,7 @@ En **videns-baseret agent** har tre trin:
 
 Udviklingen i AI stoppede op, da man gik fra _microworlds_ med meget få mulige udfald/states til problemer såsom skak, der har tonsevis af udfald/states.
 
-
+Introdu
 
 
 
