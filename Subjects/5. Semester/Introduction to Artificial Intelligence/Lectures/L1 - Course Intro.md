@@ -28,7 +28,15 @@ Nogen betragter AI i forhold til menneskers _performance_ mens andre fokuserer p
 Turing testen er en test hvor en computer skal lade som om den er menneske via skreven tekst. For at kunne det, skal den bruge
 - Naturlig sprog processering for at kommunikere succefuldt
 - Videns representation for at gemme hvad den ved og "hører"
-- Automatiseret 
+- Automatiseret _reasonging_ for at svare på spørgsmål og drage nye konklusioner
+- Machine learning for at kunne tilpasse nye tilfælde og genkende mønstre
+
+En **total turing test** er ligesom ovenstående, men robotten skal kunne interegere med mennesker og objekter i den virkelgie verden. Til det skal den bruge
+- Copmuter vision for at kunne se
+- Tale genkendelse for at kunne høre
+- Robot-manipulatorer for at interegere med verden
+
+
 
 
 ---
