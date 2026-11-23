@@ -95,8 +95,13 @@ Om et miljø er **single-agent** eller **multi-agent** kommer an på om vi opfat
 - E.g. en agent-taxa: er andre billister agenter eller objekter? Eftersom de tager valg på bagrund af agent-taxaens valg, er de også agenter.
 
 Hvis næste state er bestemt _fuldstændig på baggrund_ af nuværende state og den valgte action er miljøet **deterministisk**
-Hvis ikke, er det **nondeterninistic**.
+Hvis ikke, er det **nondeterninistic** eller **stochastic**.
+- Nogen bruger **stochastic** til når et miljø _kun_ har at gøre med sandsynlighed (e.g. hvor sandsynligt er det, at det vil regne i morgen?)
 
+Hvis agenten på et bestemt tidspunkt er i en state og tager en aktion, men udfaldet _ikke er afhængigt af tidligere states_, er miljøet **episodic**.
+Ellers er det **sequential** hvor actions påvirker senere states (e.g. skak)
+
+Hvis et miljø kan ændre sig mens agent tænker, er miljøet **dynamisk**
 
 
 
