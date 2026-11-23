@@ -5,7 +5,7 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ] Sections 2.3.1 - 2.3.2 and 2.3.7 - 2.4 in Fuzzy Control
+>- [ ] Sections 2.3.1 - 2.3.2 and 2.3.7 - 2.4 in [[Passino - FLC.pdf|Fuzzy Control]]
 
 > [!DANGER] EXERCISES
 > - [ ] 
