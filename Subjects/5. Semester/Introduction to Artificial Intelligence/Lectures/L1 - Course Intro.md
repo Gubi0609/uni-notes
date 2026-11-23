@@ -102,6 +102,15 @@ Hvis agenten på et bestemt tidspunkt er i en state og tager en aktion, men udfa
 Ellers er det **sequential** hvor actions påvirker senere states (e.g. skak)
 
 Hvis et miljø kan ændre sig mens agent tænker, er miljøet **dynamisk**
+Ellers er det **statisk**
+
+Hvis der er et fast antal af adskilte states og tidspunkter, er miljøet **discrete**. 
+Ellers er det **continuous**.
+- Skak er _discrete_, taxa-agent er _continuous_.
+
+Hvis i et kendt miljø udfaldende for hver action er givet er miljøet **known**.
+Ellers er det **unknown**
+- I et _unknown_ miljø, skal en agent selvfølgelig lærer hvad udfaldende er.
 
 
 
