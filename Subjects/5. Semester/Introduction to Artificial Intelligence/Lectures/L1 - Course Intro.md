@@ -63,7 +63,15 @@ Udviklingen i AI stoppede op, da man gik fra _microworlds_ med meget få mulige 
 
 Introduktionen af **Big Data** (store dataset såsom WWW), har ført til gigantisk udvikling i AI, og store dataset er ofte bedre end at "tweake" sin model.
 
-Selvom der kan være flere måle
+Agenter senser og påvirker deres miljø
+
+Selvom der kan være flere typer data (e.g. hele universet) er vi kun interesseret i få ting (e.g. lyd) når vi designer en agent.
+- Den del som agenter senser og den del den påvirker
+
+![[Pasted image 20261123155902.png]]
+
+En action på et givet tidspunkt er taget på baggrund af alt det agenten _har_ målt (**percept sequence**), men ikke på fremtidige målninger.
+
 
 
 
