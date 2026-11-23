@@ -83,6 +83,12 @@ En agent kan ikke være _omniscient_ (alt vidende) da den ikke i forvejen kender
 
 For at få viden om verden og dens udfald, må en agent _undersøge_ eller **explore**.
 
+Hvis en agent bare opfører sig på baggrund af _designerens viden_ og ikke på baggrund af dens egen opfattelse, har den ikke **autonomi**
+
+**Task enviroment** indeholder miljø, performance measure, aktuatorer og sensorer.
+- **PEAS** **P**erformance, **E**nvironment, **A**ctuators, **S**ensors
+
+
 
 
 
