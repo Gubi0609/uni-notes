@@ -5,7 +5,7 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ] 
+>- [ ] Chapter 1 - 2 in [[RLbook2020.pdf]]
 
 > [!DANGER] EXERCISES
 > - [ ] 

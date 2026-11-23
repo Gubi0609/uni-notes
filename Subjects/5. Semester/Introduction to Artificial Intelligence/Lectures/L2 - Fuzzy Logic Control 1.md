@@ -5,7 +5,7 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ] 
+>- [ ] Chapter 1 in Fuzzy Control
 
 > [!DANGER] EXERCISES
 > - [ ] 

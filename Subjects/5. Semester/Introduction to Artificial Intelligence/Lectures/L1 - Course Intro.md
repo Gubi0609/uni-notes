@@ -5,7 +5,7 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ] 
+>- [ ]  Chapter 1 and Sections 2.1 - 2.3 in Artificial Intelligence: A Modern Approach 3rd Edition
 
 > [!DANGER] EXERCISES
 > - [ ] 

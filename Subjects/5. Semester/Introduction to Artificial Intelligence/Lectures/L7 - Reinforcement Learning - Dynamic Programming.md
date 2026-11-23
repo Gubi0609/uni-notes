@@ -5,7 +5,7 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ] 
+>- [ ] Chapter 4 -5 (5.8  - 5.9 can be skipped) in [[[RLbook2020.pdf]]]
 
 > [!DANGER] EXERCISES
 > - [ ] 
