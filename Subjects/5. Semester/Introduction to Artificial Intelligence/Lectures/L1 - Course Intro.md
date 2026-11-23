@@ -91,7 +91,11 @@ Hvis en agent bare opfører sig på baggrund af _designerens viden_ og ikke på 
 Hvis en agents sensorer giver den adgang til _complete state_ af miljøet på hvert tidspunkt, er opgaven **fully obsevable**
 - I praksis er det kun de states, der er vigtige for valget af action, der gør om opgaven er fully observable eller ej
 
+Om et miljø er **single-agent** eller **multi-agent** kommer an på om vi opfatter miljøet som _genstande/objekter_ eller _agenter_
+- E.g. en agent-taxa: er andre billister agenter eller objekter? Eftersom de tager valg på bagrund af agent-taxaens valg, er de også agenter.
 
+Hvis næste state er bestemt _fuldstændig på baggrund_ af nuværende state og den valgte action er miljøet **deterministisk**
+Hvis ikke, er det **nondeterninistic**.
 
 
 
