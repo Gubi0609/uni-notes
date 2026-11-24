@@ -5,7 +5,7 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ]  Chapter 1 and Sections 2.1 - 2.3 in [[Artificial Intelligence_ A Modern Approach (4th Edition).pdf|Artificial Intelligence: A Modern Approach 4th]]
+>- [x]  Chapter 1 and Sections 2.1 - 2.3 in [[Artificial Intelligence_ A Modern Approach (4th Edition).pdf|Artificial Intelligence: A Modern Approach 4th]]
 
 > [!DANGER] EXERCISES
 > - [ ] 
@@ -90,6 +90,7 @@ Hvis en agent bare opfører sig på baggrund af _designerens viden_ og ikke på 
 
 Hvis en agents sensorer giver den adgang til _complete state_ af miljøet på hvert tidspunkt, er opgaven **fully obsevable**
 - I praksis er det kun de states, der er vigtige for valget af action, der gør om opgaven er fully observable eller ej
+Hvis ikke, er miljøet **partially observable** eller **unobservable** an på hvad agenten kan sanse.
 
 Om et miljø er **single-agent** eller **multi-agent** kommer an på om vi opfatter miljøet som _genstande/objekter_ eller _agenter_
 - E.g. en agent-taxa: er andre billister agenter eller objekter? Eftersom de tager valg på bagrund af agent-taxaens valg, er de også agenter.
