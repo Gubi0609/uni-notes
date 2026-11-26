@@ -23,6 +23,8 @@
 
 I stedet for som i classical control theory at skulle have en hel model af systemet, går fuzzy control mere ud på at få en _intuitiv forståelse af hvordan man bedst kontrollerer processen_ og så bruge den information direkte i fuzzy controlleren.
 
+Fuzzy control bruger _heuristics_ og _regler_ til at vide hvordan systemet skal kontrolleres.
+
 
 
 
