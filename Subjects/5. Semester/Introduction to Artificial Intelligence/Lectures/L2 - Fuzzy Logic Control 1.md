@@ -47,6 +47,9 @@ Reglerne er egentlig **_hvis** plant output og reference input er på en bestemt
 
 Det siges ofte at en af fordelene ved fuzzy control er at vi _ikke behøver en model_. Det er dog **ikke helt sandt**... Vi skal for eksempel bruge en model af en art, når vi skal simulere systemet. Og vi må have en eller anden forudforståelse af systemet før vi kan beslutte hvordan vi bedst kontrollerer det.
 
+Den primære forskel på fuzzy og klassisk kontrol er at _fuzzy bruger regler_ mens _klassisk bruger ODE_ (ordinary differential equations).
+- En af fordelene ved regler er at de kan være nemmere at forstå end en matematisk model/ODE. Ud fra det kan man nemt se _**hvis** condition, **så** output_.
+
 
 
 
