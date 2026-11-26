@@ -25,6 +25,10 @@ I stedet for som i classical control theory at skulle have en hel model af syste
 
 Fuzzy control bruger _heuristics_ og _regler_ til at vide hvordan systemet skal kontrolleres.
 
+For classical control er der mathematical, simulation, og experimental investigations når vi skal evaluere om vores controller virker.
+
+De fleste modeller af et fysisk system er for komplekse til at implementere klassisk kontrol på. Man bruger derfor ofte for-simplede modeller og ad hoc tuning af controller parametre.
+
 
 
 
