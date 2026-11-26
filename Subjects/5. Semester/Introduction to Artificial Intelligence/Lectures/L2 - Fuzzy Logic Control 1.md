@@ -50,7 +50,14 @@ Det siges ofte at en af fordelene ved fuzzy control er at vi _ikke behøver en m
 Den primære forskel på fuzzy og klassisk kontrol er at _fuzzy bruger regler_ mens _klassisk bruger ODE_ (ordinary differential equations).
 - En af fordelene ved regler er at de kan være nemmere at forstå end en matematisk model/ODE. Ud fra det kan man nemt se _**hvis** condition, **så** output_.
 
+Desto flere og detaljerede regler, desto bedre performance
 
+Fuzzy controller er en _nonlinear controller_.
+- Af den grund, kan vi også teste performance på samme måde som vi gør med klassisk kontrol
+	- Overshoot, rise time, settling time, steady state error osv osv
+
+Der er nogle ulemper ved fuzzy control, som det meste literatur ikke kigger nærmere på...
+- Vil observeret opførsel som bliver brugt til at lave reglerne indeholde alle tilfæl
 
 
 ## Notes from class
