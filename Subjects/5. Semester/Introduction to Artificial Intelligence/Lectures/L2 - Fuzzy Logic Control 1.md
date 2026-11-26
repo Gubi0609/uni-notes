@@ -29,7 +29,13 @@ For classical control er der mathematical, simulation, og experimental investiga
 
 De fleste modeller af et fysisk system er for komplekse til at implementere klassisk kontrol på. Man bruger derfor ofte for-simplede modeller og ad hoc tuning af controller parametre.
 
+Fuzzy control giver en formel metode for hvordan man _repræsenterer_, _manipulerer_, og _implementerer_ et mennesked heuristiske viden om hvordan man kontrollerer et system.
 
+![[Pasted image 20261126142007.png]]
+
+Der er fire komponenter til fuzzy controlleren
+- (1) **rule-base**: har viden om hvordan man bedst kontrollerer systemet i form af et _sæt af regler_
+- (2) **Inference mechanism**: Beslutter hvilke af reglerne der gælder på det givet tidspunkt og beslutter ud fra det hvad input $u(t)$ til 
 
 
 
