@@ -41,6 +41,13 @@ Der er fire komponenter til fuzzy controlleren
 
 Simpelt: Fuzzy controlleren er en digital _beslutningstager_ der opererer i et _closed loop_ system. Den får inputs fra plantens output ($y(t)$) som den sammenligner med reference inputtet ($r(t)$) og beslutter ud fra det hvilket input ($u(t)$) planten skal have.
 
+For at designe en fuzzy controller, skal designeren have en forståelse af systemets kontrol regler. Det kan enten gøres ved at observere en menneskelig operatør eller ved at designeren forstår plantens dynamik og ud fra det laver et sæt af regler.
+
+Reglerne er egentlig **_hvis** plant output og reference input er på en bestemt måde, **så** skal input til plant være noget bestemt. _
+
+Det siges ofte at en af fordelene ved fuzzy control er at vi _ikke behøver en model_. Det er dog **ikke helt sandt**... Vi skal for eksempel bruge en model af en art, når vi skal simulere systemet. Og vi må have en eller anden forudforståelse af systemet før vi kan beslutte hvordan vi bedst kontrollerer det.
+
+
 
 
 ## Notes from class
