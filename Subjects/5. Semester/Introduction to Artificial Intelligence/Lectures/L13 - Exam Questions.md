@@ -19,6 +19,8 @@
 
 # Notes
 
+Formler er godt at have med, men man skal så også kunne dem.
+- Hvis vi ikke selv går i detaljer, skal eksaminator/censor i hvertfald nok spørge
 
 ---
 #lecture 
