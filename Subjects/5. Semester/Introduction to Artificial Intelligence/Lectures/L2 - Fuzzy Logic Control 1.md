@@ -35,7 +35,11 @@ Fuzzy control giver en formel metode for hvordan man _repræsenterer_, _manipule
 
 Der er fire komponenter til fuzzy controlleren
 - (1) **rule-base**: har viden om hvordan man bedst kontrollerer systemet i form af et _sæt af regler_
-- (2) **Inference mechanism**: Beslutter hvilke af reglerne der gælder på det givet tidspunkt og beslutter ud fra det hvad input $u(t)$ til 
+- (2) **Inference mechanism**: Beslutter hvilke af reglerne der gælder på det givet tidspunkt og beslutter ud fra det hvad input $u(t)$ til plant skal være.
+- (3) **Fuzzification interface**: Modificerer input til controlleren ($r(t)$) så de kan forstås og sammenlignes i forhold til til reglerne i rule-base
+- (4) **Defuzzification interface**: Converterer fra inference mechanismens konklusion til et input som kan gives til plant
+
+Simpelt: Fuzzy controlleren er en digital _beslutningstager_ der opererer i et _closed loop_ system. Den får inputs fra plantens output ($y(t)$) som den sammenligner med reference inputtet ($r(t)$) og beslutter ud fra det hvilket input ($u(t)$) planten skal have.
 
 
 
