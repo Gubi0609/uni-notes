@@ -57,7 +57,13 @@ Fuzzy controller er en _nonlinear controller_.
 	- Overshoot, rise time, settling time, steady state error osv osv
 
 Der er nogle ulemper ved fuzzy control, som det meste literatur ikke kigger nærmere på...
-- Vil observeret opførsel som bliver brugt til at lave reglerne indeholde alle tilfæl
+- Vil observeret opførsel som bliver brugt til at lave reglerne indeholde alle tilfælde der kan opstå? (e.g. disturbances, noise eller variation i plant parametre)
+- Kan menneskelig ekspert realistisk forudse problemer der kan opstå ved closed-loop system ustabiliteter eller limit cycles?
+- Kan en menneskelig ekspert effektivt indkorporere stabilitet og performance kriterier (rise time, overshoot osv) ind i et regel sæt?
+
+Fejl i regelsæt eller stabilitets/performance kriterier kan især være problematiske _hvis fejl i systemet kan føre til drastiske konsekvenser_.
+
+
 
 
 ## Notes from class
