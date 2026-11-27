@@ -131,6 +131,19 @@ Så kan vi ud fra $p$-værdien sige
 $$p\text{-value "lille"}\Rightarrow \text{forkast }H_0$$
 Vi overlader det så til brugeren at foholde sig til $p$-værdien og ud fra det acceptere eller forkaste $H_0$.
 
+# ANOVA tabel
+ANOVA tabellen er en måde at samle al dataen i en let overskuelig tabel.
+
+ANOVA tabellen er opbygget som følgende.
+
+| Variation | $SS$   | $df$  | $S^2$   | $F$               |
+| --------- | ------ | ----- | ------- | ----------------- |
+| Between   | $SS_B$ | $a-1$ | $S_B^2$ | $F_0=S_B^2/S_W^2$ |
+| Within    | $SS_W$ | $N-a$ | $S_W^2$ |                   |
+| Total     | $SS_T$ | $N-1$ | $S_T^2$ |                   |
+
+# Accept $H_0$
+
 
 
 ---
