@@ -153,7 +153,20 @@ hvor $\bar X$ er [[#Notation og sample means|over all sample mean]].
 $$\widehat \sigma^2 = S_T^2=\frac {SS_T} {N-1}$$
 Vi bruger det totale [[#Variansestimater|varians estimat]], da den har flest frihedsgrader.
 
-Vi kan så også o
+Vi kan så også opstille et [[Confidence Intervals (CI)|konfidensinterval]].
+$$\frac {\bar X - \mu}{\sqrt{\widehat \sigma^2 / N}}\Rightarrow CI:\quad \left[\bar X \pm t(N-1)_{\alpha/2}\sqrt{\frac {\widehat \sigma^2} N}\right]$$
+
+# Reject $H_0$
+Da vi ikke kan tro på at vores $\mu_i$ er ens ([[#Hypotese|hypotese]]), er modellen
+$$X_{ij}\sim N(\mu_i, \sigma^2)$$
+
+Vi kan så også finde $\widehat \mu_i$ og $\widehat \sigma^2$
+$$\widehat \mu_i = \bar X_i \sim N(\mu_i, \frac {\sigma^2} {n_i})\quad i=1,2,...,a$$
+hvor $\bar X_i$ er population-wise [[#Notation og sample means|sample mean]].
+
+$$\widehat \sigma^2=S^2_W=\frac {SS_W}{N-a}$$
+Vi bruger $SS_W$ da, hvis vi kigger på dens [[#Variansestimater|udregninger]], 
+
 
 ---
 #lecture 
