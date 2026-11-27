@@ -23,7 +23,13 @@
 ![[Pasted image 20261127100827.png]]![[Pasted image 20261127101251.png]]
 
 - a.
+Ved at kigge på fakta kassen [[ANOVA 1#ANOVA tabel|i ANOVA 1]] kan vi se at DF Error og DF Total er udregnet som
+$$DF_E = a(n-1)$$
+$$DF_T=an-1$$
+Da vi har resultaterne for dette, har vi to ligninger med to ukendte. Vi kan så udregne antallet af faktor niveauer $a$
 
+$$a(n-1)=16$$
+$$an-1=19$$
 
 
 ![[Pasted image 20261127100838.png]]
