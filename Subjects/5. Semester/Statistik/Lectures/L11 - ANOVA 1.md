@@ -33,6 +33,7 @@ Bredden (??) af populationer er vores _faktorlevel_
 For hver populationer har vi punkterne $x_{i1}, ... x_{in}$.
 Antallet af de samlede punkter i populationerne er
 $$N=\sum_{i=1}^a n_i$$
+hvor $n_i$ er det samlede antal punkter i population $i$.
 
 Fordelingen er
 $$X_{ij}\sim N(\mu_i, \sigma^2)$$
@@ -91,7 +92,21 @@ $$S_T^2:=\frac {SS_{total}} {N-1}=\frac {SS_T} {df_T}=\widehat \sigma_T^2$$
 For $SS_{within}$
 $$S_W^2:=\frac {SS_W} {N-a} = \frac {SS_W}{df_W}=\widehat \sigma_W^2$$
 For $SS_{between}$
-$$S_B^2=
+$$S_B^2=:=\frac {SS_B}{a-1}=\frac {SS_{B}}{df_B}=\widehat \sigma_B^2$$
+
+## Test statistic
+Vi laver nu en test statistic for at sammenligne størrelser af varianser (??)
+$$F_0:=\frac {S_B^2}{S_W^2}\sim F(a-1, N-a)$$
+Da hver $S$ er chi i anden fordelt, og vi tager brøken mellem dem, er fordelingen af $F_0$ _fischer fordelt_ hvor parametrene er frihedsgraderne af hhv. $SS_B$ og $SS_W$.
+
+### Interpretation
+Vi indsætter vores data så
+$$F_0=f_0,\quad f_0\in [0,\infty[$$
+hvor $f_0$ er en talværdi.
+
+Hvis
+$$f_0 \text {lille}\rightarrow H_0 \text{ is "probably}
+
 
 ---
 #lecture 
