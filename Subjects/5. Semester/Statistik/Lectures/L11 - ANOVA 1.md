@@ -142,6 +142,7 @@ ANOVA tabellen er opbygget som følgende.
 | Within    | $SS_W$ | $N-a$ | $S_W^2$ |                   |
 | Total     | $SS_T$ | $N-1$ | $S_T^2$ |                   |
 
+I MATLAB kan man bruge `anova1(X)` hvor `X` er sættet af populationer.
 # Accept $H_0$
 Vi kan omskrive vores model, da $H_0$ så er bevist, behøver vi ikke $i$ på $\mu_i$ ([[#Hypotese|hypotese]])
 $$X_{ij}\sim N(\mu, \sigma^2)$$
