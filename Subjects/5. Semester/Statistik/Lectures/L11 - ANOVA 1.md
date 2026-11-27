@@ -99,9 +99,16 @@ p = 1 - fcdf(f_0, a-1, N-a)
 
 - d.
 
+Vi kan se fra factor level means i ANOVA tabellen, at der ikke er betydelig forskel. Derfor kan vi ikke forkaste $H_0$.
 
 
 ![[Pasted image 20261127100838.png]]
+
+- a.
+
+Vi ved at 
+$$MS_{Tm}=\frac {}
+
 
 ![[Pasted image 20261127100850.png]]
 
