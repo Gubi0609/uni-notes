@@ -38,7 +38,7 @@ Fordelingen er
 $$X_{ij}\sim N(\mu_i, \sigma^2)$$
 Hvor $X_{ij}$ er _faktorevel_, $j$ er observations nummer (tror jeg...), og $\sigma^2$ er en fælles ukendt.
 
-Hypotese:
+## Hypotese
 $$H_0:\quad \text{alle }\mu_i=\mu$$
 $$H_1:\quad \text{mindst }2\text{ } \mu_i \text{ forskellige}$$
 eller
@@ -58,7 +58,17 @@ $$H_1:\quad \text{mindst en }t_i \neq 0\rightarrow\quad \exists t_i\neq 0$$
 | $i=a$  | $x_{aj}$ | $n_a£  | $\bar x_a$  |
 
 Population-wise:
-$$\bar X_i=\frac 1 {n_i} \sum_{j=1}^n
+$$\bar X_i=\frac 1 {n_i} \sum_{j=1}^{n_i} X_{ij}$$
+Overall:
+$$\bar X = \frac 1 N \sum_{i=1}^a \sum_{j=1}^{n_i}X_{ij}$$
+
+## SS (sum of squares) decomposition
+Tilsvarende til $R^2$ hvor godt en linje fitter til puntker...
+
+$$\sum_{i=1}^a\sum_{j=1}^{n_i}(X_{ij}-\bar X)^2 = \sum_{i=1}^a\sum_{j=1}^{n_i}(X_{ij}-\bar X_i)^2+(\bar X_i - \bar X)^2$$
+hvor $(X_{ij}-\bar X_i)$ er en _tilfældig variation_ og $(\bar X_i - \bar X)$ er en _systematisk variation_.
+Vi genkender, at vi bruger populations wise og overall udregningerne fra før.
+
 
 
 
