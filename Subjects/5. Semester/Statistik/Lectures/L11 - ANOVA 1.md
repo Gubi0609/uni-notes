@@ -105,7 +105,13 @@ $$F_0=f_0,\quad f_0\in [0,\infty[$$
 hvor $f_0$ er en talværdi.
 
 Hvis
-$$f_0 \text {lille}\rightarrow H_0 \text{ is "probably}
+$$f_0 \text{ lille}\rightarrow H_0 \text{ is "probably" true}$$
+ellers hvis
+$$f_0\text{ stor} \rightarrow H_0 \text { is "probably" false}$$
+> Grunden til at vi forkaster $H_0$ hvis $f_0$ er stor, er at fordelingen _mellem populationer_ derved er betydeligt større end fordelingen inden i populationer.
+
+## Test
+Vi vælger enten et signifikans niveau $\alpha$ eller en $p$-værdi
 
 
 ---
