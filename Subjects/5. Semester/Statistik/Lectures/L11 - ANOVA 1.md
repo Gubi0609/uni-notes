@@ -124,7 +124,14 @@ $$f_0>F(a-1, N-1)_\alpha \Rightarrow \text{forkast }H_0$$
 ![[Pasted image 20261127090142.png]]
 
 p-værdien er så sandsynligheden for at ende ude i halen:
-$$
+$$p\text{-value}=P(F(a-1,N-1)>f_0)=1-P(F(a-1,N-1)<f_0)$$
+Hvor sandsynligheden i sidste udregning kan findes i MATLAB ved `fcdf(f_0, a-1, N-a)`.
+
+Så kan vi ud fra $p$-værdien sige
+$$p\text{-value "lille"}\Rightarrow \text{forkast }H_0$$
+Vi overlader det så til brugeren at foholde sig til $p$-værdien og ud fra det acceptere eller forkaste $H_0$.
+
+
 
 ---
 #lecture 
