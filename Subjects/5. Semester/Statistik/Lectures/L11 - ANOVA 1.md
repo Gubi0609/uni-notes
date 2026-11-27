@@ -113,6 +113,18 @@ $$f_0\text{ stor} \rightarrow H_0 \text { is "probably" false}$$
 ## Test
 Vi vælger enten et signifikans niveau $\alpha$ eller en $p$-værdi
 
+### $\alpha$
+![[Pasted image 20261127085917.png]]
+
+Ud fra vores [[#Hypotese|hypotese]] er det en _et-sidet_ test.
+
+Så har vi altså defineret, hvad vi mener med "stor":
+$$f_0>F(a-1, N-1)_\alpha \Rightarrow \text{forkast }H_0$$
+### $p$-værdi
+![[Pasted image 20261127090142.png]]
+
+p-værdien er så sandsynligheden for at ende ude i halen:
+$$
 
 ---
 #lecture 
