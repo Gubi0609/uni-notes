@@ -115,11 +115,23 @@ $$n=8$$
 
 - b.
 
+Vi starter med at finde Degrees of Freedom, da de er nemme.
+$$DF_F = a-1 = 3$$
+$$DF_E = a(n-1)=28$$
+
+Med den information vi har indtil videre kan vi nu finde $p$-værdien
+$$P(F_0>f_0)=1-P(F(a-1,N-1)<f_0)$$
+Den kan vi finde i MATLAB `fcdf(f_0, a-1, N-a)`.
+$$p=0.0115$$
+
+Vi kan nu u
+
+
 | Source | DF  | SS       | MS       | F    | P-value |
 | ------ | --- | -------- | -------- | ---- | ------- |
 | Factor | 3   | 991.4148 | 330.4716 | 4.42 | 0.0115  |
 | Error  | 28  | 2093.5   | 74.7673  |      |         |
-| Total  | 31  |          |          |      |         |
+| Total  | 31  | 3084.9   |          |      |         |
 
 
 
