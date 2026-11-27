@@ -146,6 +146,7 @@ Da standarden for en "lille" p-værdi er 5% og $p<0.05$ samtidig med at der er e
 
 ![[Pasted image 20261127100850.png]]
 
+- a.
 
 
 ![[Pasted image 20261127100908.png]]
