@@ -124,14 +124,23 @@ $$P(F_0>f_0)=1-P(F(a-1,N-1)<f_0)$$
 Den kan vi finde i MATLAB `fcdf(f_0, a-1, N-a)`.
 $$p=0.0115$$
 
-Vi kan nu u
+Vi kan nu udregne $MS_E$
+$$F_0=MS_{Tm}/MS_E\Leftrightarrow MS_E=MS_{Tm}/F_0=\frac{330.4716}{4.42}=74.7673$$
 
+Til sidst har vi nu alt den information vi skal bruge for at udregne Sum of Squares ($SS$) for alle felter
+$$SS_{Tm}=MS_{Tm}\cdot DF_F=330.4716\cdot 3=991.4148$$
+$$SS_E=MS_E\cdot DF_E = 74.7673\cdot28 = 2093.5$$
+$$SS_T=SS_{Tm}+SS_E=991.4148+2093.5=3084.9$$
+
+Vi kan så udfylde tabellen.
 
 | Source | DF  | SS       | MS       | F    | P-value |
 | ------ | --- | -------- | -------- | ---- | ------- |
 | Factor | 3   | 991.4148 | 330.4716 | 4.42 | 0.0115  |
 | Error  | 28  | 2093.5   | 74.7673  |      |         |
 | Total  | 31  | 3084.9   |          |      |         |
+
+- c.
 
 
 
