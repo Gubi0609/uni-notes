@@ -44,7 +44,21 @@ $$H_1:\quad \text{mindst }2\text{ } \mu_i \text{ forskellige}$$
 eller
 $$\mu_i=\mu+\tau_i$$
 hvor $\mu$ er et fælles led og $\tau_i$ er en _faktoreffekt_.
-Ud fra dette kan vi omskrive hypotesr
+Ud fra dette kan vi omskrive hypoteserne
+$$H_0: \quad \text{alle } t_i=0\rightarrow \quad \forall t_i=0$$
+$$H_1:\quad \text{mindst en }t_i \neq 0\rightarrow\quad \exists t_i\neq 0$$
+
+## Notation og sample means
+
+| Faktor | obs      | \# obs | sample mean |
+| ------ | -------- | ------ | ----------- |
+| $i=1$  | $x_{1j}$ | $n_1$  | $\bar x_1$  |
+| $i=2$  | $x_{2j}$ | $n_2$  | $\bar x_2$  |
+| $...$  | $...$    | $...$  | $...$       |
+| $i=a$  | $x_{aj}$ | $n_a£  | $\bar x_a$  |
+
+Population-wise:
+$$\bar X_i=\frac 1 {n_i} \sum_{j=1}^n
 
 
 
