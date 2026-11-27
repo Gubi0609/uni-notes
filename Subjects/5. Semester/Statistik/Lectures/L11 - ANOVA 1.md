@@ -74,11 +74,24 @@ Navnene giver lidt sig selv. _Within_ referer til at det er sum of squares _inde
 
 Da $SS_{between}$ ikke har nogle $j$ punkter, kan vi skrive det lidt mere kompakt:
 $$SS_{between}=\sum_{i=1}^a n_i(\bar X_i - \bar X)$$
+> For nedenstående bruges $SS_{total}$ osv og deres forkortelser frit. Forkortelsen gør bare brug af første bogstav i subscript ($SS_{total}=SS_t$)
 
+### Frihedsgrader ($df$)
 Ud fra $SS_{total}$ kan vi skrive $df=N-1$. Da vi først må finde overall sample mean $\bar X$ mister vi en frihedsgrad.
-På samme måde kan vi for $S_{within}$ skrive $df=N-a$. På samme måde som før, mister vi $a$ 
 
+På samme måde kan vi for $S_{within}$ skrive $df=N-a$. På samme måde som før, mister vi $a$ frihedsgrader, da vi skal finde population-wise sample mean først.
 
+For den sidste, $SS_{between}$ kan vi skrive $df=a-1$.
+
+## Variansestimater
+Vi kan bruge frihedsgraderne til at finde estimater for variansen
+
+For $SS_{total}$
+$$S_T^2:=\frac {SS_{total}} {N-1}=\frac {SS_T} {df_T}=\widehat \sigma_T^2$$
+For $SS_{within}$
+$$S_W^2:=\frac {SS_W} {N-a} = \frac {SS_W}{df_W}=\widehat \sigma_W^2$$
+For $SS_{between}$
+$$S_B^2=
 
 ---
 #lecture 
