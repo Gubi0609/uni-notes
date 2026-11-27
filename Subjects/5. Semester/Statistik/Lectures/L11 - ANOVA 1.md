@@ -173,7 +173,15 @@ For at vide dette, må vi opskrive [[Confidence Intervals (CI)|konfidensinterval
 $$\frac {\bar X_i - \mu_i} {\sqrt {\sigma^2 /n_i}}\sim N(0,1)\Rightarrow \frac {\bar X_i - \mu_i} {\sqrt {S_W^2 /n_i}}\sim t(N-a)$$
 ![[Pasted image 20261127094735.png]]
 
-$$CI:\qua
+$$CI:\quad \left[\bar X_i \pm t(N-a)_{\alpha/2}\sqrt {\frac {S_W^2}{n_i}}  \right]$$
+![[Pasted image 20261127094936.png]]
+
+Vi holder så øje med hvor konfidensintervallerne ikke overlapper for at finde vores outlier. Hvis $CI$ for $\mu_3$ måske er vores nye metode, kan vi bruge det til at konkludere, om den nye metode er bedre end de gamle.
+
+Vi kan også finde konfidensintervallet for forskellen mellem $\mu_i$ og $\mu_k$ $(\mu_i-\mu_k)$.
+$$CI:\quad \left[(\bar X_i - \bar X_k)\pm t(N-a)_{\alpha/2}\sqrt{\widehat \sigma^2 \left(\frac 1 {n_i} + \frac 1 {n_k} \right)} \right]$$
+
+
 
 
 ---
