@@ -181,6 +181,10 @@ Vi holder så øje med hvor konfidensintervallerne ikke overlapper for at finde 
 Vi kan også finde konfidensintervallet for forskellen mellem $\mu_i$ og $\mu_k$ $(\mu_i-\mu_k)$.
 $$CI:\quad \left[(\bar X_i - \bar X_k)\pm t(N-a)_{\alpha/2}\sqrt{\widehat \sigma^2 \left(\frac 1 {n_i} + \frac 1 {n_k} \right)} \right]$$
 
+Det på _højre side_ af $\pm$ er **LSD** (**L**east **S**ignificant **D**ifference).
+
+![[Pasted image 20261127095342.png]]
+
 
 
 
