@@ -61,9 +61,19 @@ $$F_0:=\frac {S_B^2}{S_W^2}\sim F(a-1, N-a)$$
 $MS$ er det samme som de $S$ vi ser her. Oversættelsen er $S_W^2\rightarrow MS_E$, $S_B^2\rightarrow MS_{Tm}$.
 $$f_0=\frac {MS_{Tm}} {MS_E}=\frac {39.1} {24.8}=1.5766$$
 $p$-værdien er 
-$$P(F_0>f_0)$$
-Den kan vi finde i MATLAB
-1-P(F(a-1,N-1)
+$$P(F_0>f_0)=1-P(F(a-1,N-1)<f_0)$$
+Den kan vi finde i MATLAB `fcdf(f_0, a-1, N-a)`.
+$$p\text{-value}=0.7660$$
+
+Tabellen bliver så
+
+| Source | DF  | SS  | MS  | F   | P-value |
+| ------ | --- | --- | --- | --- | ------- |
+| Factor |     |     |     |     |         |
+| Error  |     |     |     |     |         |
+| Total  |     |     |     |     |         |
+
+
 
 
 ![[Pasted image 20261127100838.png]]
