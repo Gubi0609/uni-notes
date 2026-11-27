@@ -107,7 +107,13 @@ Vi kan se fra factor level means i ANOVA tabellen, at der ikke er betydelig fors
 - a.
 
 Vi ved at 
-$$MS_{Tm}=\frac {}
+$$DF_T=31=an-1$$
+
+Siden vi kender $a=4$ fra opgave beskrivelsen, kan vi bare løse for n
+$$n=8$$
+
+- b.
+
 
 
 ![[Pasted image 20261127100850.png]]
