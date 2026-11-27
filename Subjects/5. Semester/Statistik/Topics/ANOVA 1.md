@@ -47,7 +47,7 @@ $$H_1:\quad \text{mindst en }t_i \neq 0\rightarrow\quad \exists t_i\neq 0$$
 | $i=1$  | $x_{1j}$ | $n_1$  | $\bar x_1$  |
 | $i=2$  | $x_{2j}$ | $n_2$  | $\bar x_2$  |
 | $...$  | $...$    | $...$  | $...$       |
-| $i=a$  | $x_{aj}$ | $n_a£  | $\bar x_a$  |
+| $i=a$  | $x_{aj}$ | $n_a$  | $\bar x_a$  |
 
 Population-wise:
 $$\bar X_i=\frac 1 {n_i} \sum_{j=1}^{n_i} X_{ij}$$
