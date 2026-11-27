@@ -100,6 +100,7 @@ p = 1 - fcdf(f_0, a-1, N-a)
 - d.
 
 Vi kan se fra factor level means i ANOVA tabellen, at der ikke er betydelig forskel. Derfor kan vi ikke forkaste $H_0$.
+Standard for en "lille" p-værdi er 5%. Vi har nu en på 23.4%, så den er altså _ikke_ lille, og vi kan ikke forkaste $H_0$.
 
 
 ![[Pasted image 20261127100838.png]]
@@ -113,6 +114,12 @@ Siden vi kender $a=4$ fra opgave beskrivelsen, kan vi bare løse for n
 $$n=8$$
 
 - b.
+
+| Source | DF  | SS  | MS       | F    | P-value |
+| ------ | --- | --- | -------- | ---- | ------- |
+| Factor |     |     | 330.4716 | 4.42 | 0.234   |
+| Error  |     |     |          |      |         |
+| Total  | 31  |     |          |      |         |
 
 
 
