@@ -149,6 +149,14 @@ Da standarden for en "lille" p-værdi er 5% og $p<0.05$ samtidig med at der er e
 - a.
 ![[Pasted image 20261127112837.png|419]]
 
+Ved at bruge `anova1(data')` i matlab får vi et lignende boxplot samt ANOVA tabellen
+
+![[Pasted image 20261127113123.png]]
+![[Screenshot from 2026-11-27 11-31-32.png|437]]
+
+Fra ANOVA tabellen kan vi se at der er en betydelig forskel på MS samt at $p$ er betydelig under 5%.
+Vi kan altså _forkaste_ $H_0$.
+
 
 
 ![[Pasted image 20261127100908.png]]
