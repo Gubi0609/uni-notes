@@ -141,10 +141,12 @@ Vi kan så udfylde tabellen.
 | Total  | 31  | 3084.9   |          |      |         |
 
 - c.
-
+Da standarden for en "lille" p-værdi er 5% og $p<0.05$ samtidig med at der er en betydelig forskel i de to $MS$ værdier, kan vi konkludere, at vi _forkaster_ $H_0$.
 
 
 ![[Pasted image 20261127100850.png]]
+
+
 
 ![[Pasted image 20261127100908.png]]
 
