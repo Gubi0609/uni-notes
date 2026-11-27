@@ -143,8 +143,17 @@ ANOVA tabellen er opbygget som følgende.
 | Total     | $SS_T$ | $N-1$ | $S_T^2$ |                   |
 
 # Accept $H_0$
+Vi kan omskrive vores model, da $H_0$ så er bevist, behøver vi ikke $i$ på $\mu_i$ ([[#Hypotese|hypotese]])
+$$X_{ij}\sim N(\mu, \sigma^2)$$
 
+Vi kan så også finde $\widehat \mu$ og $\widehat \sigma^2$ ud fra vores forrige udregninger
+$$\widehat \mu = \bar X\sim N(\mu, \frac {\sigma^2} N)$$
+hvor $\bar X$ er [[#Notation og sample means|over all sample mean]].
 
+$$\widehat \sigma^2 = S_T^2=\frac {SS_T} {N-1}$$
+Vi bruger det totale [[#Variansestimater|varians estimat]], da den har flest frihedsgrader.
+
+Vi kan så også o
 
 ---
 #lecture 
