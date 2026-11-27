@@ -65,10 +65,18 @@ $$\bar X = \frac 1 N \sum_{i=1}^a \sum_{j=1}^{n_i}X_{ij}$$
 ## SS (sum of squares) decomposition
 Tilsvarende til $R^2$ hvor godt en linje fitter til puntker...
 
-$$\sum_{i=1}^a\sum_{j=1}^{n_i}(X_{ij}-\bar X)^2 = \sum_{i=1}^a\sum_{j=1}^{n_i}(X_{ij}-\bar X_i)^2+(\bar X_i - \bar X)^2$$
+$$\sum_{i=1}^a\sum_{j=1}^{n_i}(X_{ij}-\bar X)^2 = \sum_{i=1}^a\sum_{j=1}^{n_i}(X_{ij}-\bar X_i)^2+\sum_{i=1}^a\sum_{j=1}^{n_i}(\bar X_i - \bar X)^2$$
 hvor $(X_{ij}-\bar X_i)$ er en _tilfældig variation_ og $(\bar X_i - \bar X)$ er en _systematisk variation_.
 Vi genkender, at vi bruger populations wise og overall udregningerne fra før.
 
+Ovenstående udregning kalder vi $SS_{total}$. På højre side af lighedstegnet er det (venstre mod højre) $SS_{within}$ og $SS_{between}$.
+Navnene giver lidt sig selv. _Within_ referer til at det er sum of squares _inden for_ populationerne, og _between_ referer til at det er sum of squares _i mellem_ populationerne.
+
+Da $SS_{between}$ ikke har nogle $j$ punkter, kan vi skrive det lidt mere kompakt:
+$$SS_{between}=\sum_{i=1}^a n_i(\bar X_i - \bar X)$$
+
+Ud fra $SS_{total}$ kan vi skrive $df=N-1$. Da vi først må finde overall sample mean $\bar X$ mister vi en frihedsgrad.
+På samme måde kan vi for $S_{within}$ skrive $df=N-a$. På samme måde som før, mister vi $a$ 
 
 
 
