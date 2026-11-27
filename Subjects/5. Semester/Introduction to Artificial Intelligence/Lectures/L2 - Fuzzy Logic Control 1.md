@@ -5,7 +5,7 @@
 ## Preparation
 
 >[!TODO] HOMEWORK
->- [ ] Chapter 1 in [[Passino - FLC.pdf|Fuzzy Control]]
+>- [x] Chapter 1 in [[Passino - FLC.pdf|Fuzzy Control]]
 
 > [!DANGER] EXERCISES
 > - [ ] 
