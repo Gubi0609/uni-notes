@@ -63,16 +63,41 @@ $$f_0=\frac {MS_{Tm}} {MS_E}=\frac {39.1} {24.8}=1.5766$$
 $p$-værdien er 
 $$P(F_0>f_0)=1-P(F(a-1,N-1)<f_0)$$
 Den kan vi finde i MATLAB `fcdf(f_0, a-1, N-a)`.
-$$p\text{-value}=0.7660$$
+$$p\text{-value}=0.2340$$
 
 Tabellen bliver så
 
-| Source | DF  | SS  | MS  | F   | P-value |
-| ------ | --- | --- | --- | --- | ------- |
-| Factor |     |     |     |     |         |
-| Error  |     |     |     |     |         |
-| Total  |     |     |     |     |         |
+| Source | DF  | SS    | MS   | F      | P-value |
+| ------ | --- | ----- | ---- | ------ | ------- |
+| Factor | 3   | 117.4 | 39.1 | 1.5766 | 0.2340  |
+| Error  | 16  | 396.8 | 24.8 |        |         |
+| Total  | 19  | 514.2 |      |        |         |
 
+```matlab
+a = 4;
+n = 5;
+
+N = a*n;
+
+MS_Tm = 39.1;
+
+SS_F = 117.4;
+SS_E = 396.8;
+SS_T = 514.2;
+
+DF_E = 16;
+DF_T = 19;
+
+DF_F = a-1
+
+MSE = 396.8/(4*(5-1))
+
+f_0 = MS_Tm/MSE
+
+p = 1 - fcdf(f_0, a-1, N-a)
+```
+
+- d.
 
 
 
