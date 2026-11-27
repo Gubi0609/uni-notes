@@ -20,6 +20,18 @@
 
 
 # Notes
+![[Pasted image 20261127100827.png]]![[Pasted image 20261127101251.png]]
+
+- a.
+
+
+
+![[Pasted image 20261127100838.png]]
+
+![[Pasted image 20261127100850.png]]
+
+![[Pasted image 20261127100908.png]]
+
 
 
 ---
