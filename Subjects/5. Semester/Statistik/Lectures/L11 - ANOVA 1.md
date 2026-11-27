@@ -165,7 +165,15 @@ $$\widehat \mu_i = \bar X_i \sim N(\mu_i, \frac {\sigma^2} {n_i})\quad i=1,2,...
 hvor $\bar X_i$ er population-wise [[#Notation og sample means|sample mean]].
 
 $$\widehat \sigma^2=S^2_W=\frac {SS_W}{N-a}$$
-Vi bruger $SS_W$ da, hvis vi kigger på dens [[#Variansestimater|udregninger]], 
+Vi bruger $SS_W$ da, hvis vi kigger på dens [[#SS (sum of squares) decomposition|udregninger]], kan vi se, at den gør brug af population wise sample mean samt datapunkter i hvert population... tror det er derfor i hvert fald.
+
+## Hvorfor blev $H_0$ forkastet?
+
+For at vide dette, må vi opskrive [[Confidence Intervals (CI)|konfidensintervaler]] for $\mu_i$. (for alle $a$ populationer)
+$$\frac {\bar X_i - \mu_i} {\sqrt {\sigma^2 /n_i}}\sim N(0,1)\Rightarrow \frac {\bar X_i - \mu_i} {\sqrt {S_W^2 /n_i}}\sim t(N-a)$$
+![[Pasted image 20261127094735.png]]
+
+$$CI:\qua
 
 
 ---
